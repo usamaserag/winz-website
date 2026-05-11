@@ -1,0 +1,57 @@
+{
+  "hero": {
+    "badge": "Shipment Tracking",
+    "title": "Track Your Shipment in Real Time",
+    "subtitle": "Enter your tracking number below to get live updates on the location and status of your shipment."
+  },
+  "form": {
+    "label": "Tracking Number",
+    "placeholder": "e.g. WINZ-2024-00123456",
+    "button": "Track Now",
+    "hint": "Your tracking number can be found in your shipping confirmation email."
+  },
+  "status": {
+    "title": "Shipment Status",
+    "id": "Tracking ID",
+    "origin": "Origin",
+    "destination": "Destination",
+    "eta": "Estimated Arrival",
+    "weight": "Weight",
+    "type": "Shipment Type"
+  },
+  "timeline": {
+    "title": "Shipment Timeline",
+    "orderPlaced": "Order Placed",
+    "orderPlacedDesc": "Your shipment order has been received and confirmed.",
+    "pickedUp": "Picked Up",
+    "pickedUpDesc": "Package collected from sender location.",
+    "inTransit": "In Transit",
+    "inTransitDesc": "Package is on its way to the destination hub.",
+    "outForDelivery": "Out for Delivery",
+    "outForDeliveryDesc": "Package is with our courier for final delivery.",
+    "delivered": "Delivered",
+    "deliveredDesc": "Package successfully delivered to recipient."
+  },
+  "features": {
+    "title": "Why Track with WINZ?",
+    "realtime": {
+      "title": "Real-Time Updates",
+      "desc": "Live GPS tracking with automatic notifications at every milestone."
+    },
+    "notifications": {
+      "title": "Smart Notifications",
+      "desc": "Get SMS and email alerts so you're always informed, without checking manually."
+    },
+    "history": {
+      "title": "Full History",
+      "desc": "Access the complete journey of every shipment from pickup to final delivery."
+    }
+  },
+  "demo": {
+    "originCity": "Dubai, UAE",
+    "destCity": "Riyadh, KSA",
+    "etaValue": "May 14, 2026",
+    "weightValue": "12.5 kg",
+    "typeValue": "Express Cargo"
+  }
+}

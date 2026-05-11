@@ -1,0 +1,67 @@
+{
+  "hero": {
+    "badge": "Our Services",
+    "title": "End-to-End Logistics Solutions",
+    "subtitle": "From local last-mile delivery to complex international freight, WINZ has you covered with reliable, fast, and scalable logistics services."
+  },
+  "services": {
+    "title": "What We Offer",
+    "subtitle": "A complete suite of logistics services designed to meet every business need.",
+    "local": {
+      "title": "Local Shipping",
+      "desc": "Same-day and next-day delivery across the city and surrounding regions. Optimized routes ensure your packages arrive on time, every time.",
+      "tag": "Fast & Reliable"
+    },
+    "international": {
+      "title": "International Cargo",
+      "desc": "Seamless cross-border shipping solutions covering sea, air, and land freight. We handle documentation, customs, and last-mile delivery worldwide.",
+      "tag": "Global Reach"
+    },
+    "express": {
+      "title": "Express Delivery",
+      "desc": "When time is critical, our express service guarantees priority handling and delivery within hours. Dedicated couriers for your most urgent shipments.",
+      "tag": "Priority Service"
+    },
+    "warehousing": {
+      "title": "Warehousing & Storage",
+      "desc": "State-of-the-art storage facilities with real-time inventory management. Climate-controlled options available for sensitive goods.",
+      "tag": "Smart Storage"
+    },
+    "customs": {
+      "title": "Customs Clearance",
+      "desc": "Expert customs agents handling all import and export clearance requirements. We ensure full compliance and minimize delays at every border.",
+      "tag": "Expert Handling"
+    },
+    "supply": {
+      "title": "Supply Chain Solutions",
+      "desc": "End-to-end supply chain management with full visibility. From procurement to delivery, we optimize every link in your supply chain.",
+      "tag": "Full Visibility"
+    }
+  },
+  "process": {
+    "badge": "How It Works",
+    "title": "Simple. Fast. Reliable.",
+    "subtitle": "Getting started with WINZ is straightforward. Here's how we handle your shipment from start to finish.",
+    "step1": {
+      "title": "Request a Quote",
+      "desc": "Fill in your shipment details and receive a tailored, transparent quote within minutes."
+    },
+    "step2": {
+      "title": "Schedule Pickup",
+      "desc": "Choose a convenient pickup time and our team will arrive at your location ready to handle your cargo."
+    },
+    "step3": {
+      "title": "Real-Time Tracking",
+      "desc": "Track your shipment 24/7 with live updates via our platform, SMS, or email notifications."
+    },
+    "step4": {
+      "title": "Safe Delivery",
+      "desc": "Your cargo is delivered securely and on schedule. Proof of delivery is sent immediately."
+    }
+  },
+  "cta": {
+    "title": "Need a custom logistics solution?",
+    "subtitle": "Our team of experts is ready to design a plan tailored specifically to your business.",
+    "button": "Get a Free Quote"
+  }
+}

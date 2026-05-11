@@ -1,0 +1,26 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "tracking": "Tracking",
+    "contact": "Contact Us"
+  },
+  "footer": {
+    "description": "Your Lightning Fast Delivery Partner. Providing reliable, secure, and fast logistics solutions globally.",
+    "quickLinks": "Quick Links",
+    "contactInfo": "Contact Info",
+    "rights": "All Rights Reserved.",
+    "newsletter": {
+      "title": "Newsletter",
+      "subtitle": "Subscribe for latest logistics news and updates.",
+      "placeholder": "Email address",
+      "button": "Subscribe"
+    }
+  },
+  "buttons": {
+    "getQuote": "Get a Quote",
+    "trackShipment": "Track Shipment",
+    "learnMore": "Learn More"
+  }
+}

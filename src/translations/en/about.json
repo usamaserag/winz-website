@@ -1,0 +1,67 @@
+{
+  "hero": {
+    "badge": "About WINZ",
+    "title": "Delivering Trust, Speed & Excellence",
+    "subtitle": "Since our founding, WINZ has been redefining what it means to be a logistics partner. We don't just move cargo — we move businesses forward."
+  },
+  "story": {
+    "badge": "Our Story",
+    "title": "Born from a Vision to Connect the World",
+    "p1": "WINZ was established with a singular mission: to make global logistics simple, fast, and reliable for businesses of every size. What started as a regional delivery service quickly grew into a comprehensive international logistics network.",
+    "p2": "Today, we operate across multiple continents, serving thousands of clients ranging from local SMEs to global enterprises. Our technology-driven approach and dedicated team ensure that every shipment is handled with the utmost care and precision.",
+    "yearsLabel": "Years of Experience",
+    "countriesLabel": "Countries Covered",
+    "teamLabel": "Team Members"
+  },
+  "mission": {
+    "badge": "Mission & Vision",
+    "title": "What Drives Us Every Day",
+    "mission": {
+      "title": "Our Mission",
+      "desc": "To provide fast, reliable, and innovative logistics solutions that empower businesses to compete on a global scale — delivered with integrity and a commitment to excellence."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "desc": "To become the world's most trusted logistics partner, known for speed, transparency, and technology-driven efficiency that sets the new standard in global shipping."
+    }
+  },
+  "values": {
+    "badge": "Our Values",
+    "title": "The Principles We Live By",
+    "speed": {
+      "title": "Speed",
+      "desc": "Every second counts in logistics. We engineer our operations for maximum efficiency and minimal delay."
+    },
+    "integrity": {
+      "title": "Integrity",
+      "desc": "We operate with full transparency. Our clients always know the status and condition of their shipments."
+    },
+    "innovation": {
+      "title": "Innovation",
+      "desc": "We continuously invest in technology to bring smarter, faster solutions to our clients' logistics challenges."
+    },
+    "partnership": {
+      "title": "Partnership",
+      "desc": "We treat every client relationship as a long-term partnership, not just a transaction."
+    },
+    "global": {
+      "title": "Global Mindset",
+      "desc": "With a worldwide network, we understand the unique demands of international shipping and navigate them with expertise."
+    },
+    "reliability": {
+      "title": "Reliability",
+      "desc": "Our clients depend on us to deliver. We take that responsibility seriously, every single day."
+    }
+  },
+  "stats": {
+    "shipments": "Shipments Delivered",
+    "clients": "Happy Clients",
+    "countries": "Countries Served",
+    "satisfaction": "Client Satisfaction"
+  },
+  "cta": {
+    "title": "Ready to partner with WINZ?",
+    "subtitle": "Let us handle your logistics so you can focus on growing your business.",
+    "button": "Get in Touch"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "hero": {
+    "title": "Your Lightning Fast Delivery Partner",
+    "subtitle": "Global logistics solutions designed for speed, security, and scalability.",
+    "cta": "Start Shipping Now"
+  },
+  "features": {
+    "title": "Why Choose WINZ",
+    "speed": {
+      "title": "Lightning Fast",
+      "desc": "Optimized routing for the quickest delivery times."
+    },
+    "global": {
+      "title": "Global Reach",
+      "desc": "Connecting businesses across borders seamlessly."
+    },
+    "secure": {
+      "title": "Secure Cargo",
+      "desc": "State-of-the-art tracking and security for your goods."
+    }
+  },
+  "ctaSection": {
+    "title": "Ready to ship your first cargo with us?",
+    "subtitle": "Join thousands of businesses that trust WINZ for their logistics needs.",
+    "button": "Contact Us Today"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "title": "اتصل بنا",
+  "subtitle": "نحن هنا للمساعدة والإجابة على أي سؤال قد يكون لديك. نتطلع للاستماع منك.",
+  "info": {
+    "addressLabel": "العنوان",
+    "phoneLabel": "الهاتف",
+    "emailLabel": "البريد الإلكتروني",
+    "address": "١٢٣ شارع اللوجستيات، حي الأعمال، المدينة العالمية",
+    "phone": "+1 (555) 123-4567",
+    "email": "info@winz-logistics.com"
+  },
+  "form": {
+    "name": "الاسم الكامل",
+    "namePlaceholder": "محمد أحمد",
+    "email": "البريد الإلكتروني",
+    "emailPlaceholder": "example@example.com",
+    "subject": "الموضوع",
+    "subjectPlaceholder": "كيف يمكننا مساعدتك؟",
+    "message": "رسالتك",
+    "messagePlaceholder": "اكتب رسالتك هنا...",
+    "submit": "إرسال الرسالة"
+  }
+}
