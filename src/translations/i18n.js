@@ -1,6 +1,5 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
-import LanguageDetector from 'i18next-browser-languagedetector';
 
 import enCommon   from './en/common.json';
 import enHome     from './en/home.json';
@@ -36,29 +35,15 @@ const resources = {
 };
 
 i18n
-  .use(LanguageDetector)
   .use(initReactI18next)
   .init({
     resources,
-    // Supported languages – prevents detector from picking unsupported locales
+    lng:          'en',        // always start in English
+    fallbackLng:  'en',
     supportedLngs: ['en', 'ar'],
-    // Fallback if detected language is not supported
-    fallbackLng: 'en',
-    // All namespaces
-    ns: ['common', 'home', 'contact', 'about', 'services', 'tracking'],
-    defaultNS: 'common',
-    // Language detector configuration
-    detection: {
-      // Order in which to detect the language
-      order: ['localStorage', 'navigator', 'htmlTag'],
-      // Key name used in localStorage
-      lookupLocalStorage: 'winz_lang',
-      // Save the chosen language to localStorage so it persists on reload
-      caches: ['localStorage'],
-    },
-    interpolation: {
-      escapeValue: false,
-    },
+    ns:           ['common', 'home', 'contact', 'about', 'services', 'tracking'],
+    defaultNS:    'common',
+    interpolation: { escapeValue: false },
   });
 
 export default i18n;

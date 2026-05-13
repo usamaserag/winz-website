@@ -15,13 +15,11 @@ import Transport  from './pages/Transport/Transport';
 import WarehousePage from './pages/Warehouse/Warehouse';
 
 function App() {
-  const { i18n } = useTranslation();
-
+  // Language is always English — set document attributes once on mount
   useEffect(() => {
-    // Apply RTL if language is Arabic
-    document.documentElement.dir = i18n.language === "ar" ? "rtl" : "ltr";
-    document.documentElement.lang = i18n.language;
-  }, [i18n.language]);
+    document.documentElement.dir  = 'ltr';
+    document.documentElement.lang = 'en';
+  }, []);
 
   return (
     <BrowserRouter>
