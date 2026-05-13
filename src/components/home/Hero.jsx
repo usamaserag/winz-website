@@ -26,12 +26,12 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <span className="inline-block py-1 px-3 rounded-full bg-brand-500/20 text-brand-400 font-semibold text-sm mb-6 border border-brand-500/30 backdrop-blur-sm">
+            <span className="inline-block py-1 px-3 rounded-full bg-primary-500/20 text-primary-400 font-semibold text-sm mb-6 border border-primary-500/30 backdrop-blur-sm">
               WINZ Logistics Solutions
             </span>
             <h1 className="text-5xl md:text-7xl font-black text-white leading-tight mb-6">
               {t('hero.title')} <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-brand-600">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-primary-600">
                 {t('hero.highlight')}
               </span>
             </h1>
@@ -40,7 +40,7 @@ const Hero = () => {
             </p>
 
             <div className="flex flex-wrap gap-4 items-center">
-              <Link to="/contact" className="bg-brand-500 hover:bg-brand-600 text-white px-8 py-4 rounded-full font-bold text-lg transition-all transform hover:-translate-y-1 shadow-xl shadow-brand-500/30 flex items-center gap-2">
+              <Link to="/contact" className="bg-primary-500 hover:bg-primary-600 text-white px-8 py-4 rounded-full font-bold text-lg transition-all transform hover:-translate-y-1 shadow-xl shadow-primary-500/30 flex items-center gap-2">
                 {t('hero.cta_primary')}
                 <ArrowRight className={isRtl ? 'rotate-180' : ''} size={20} />
               </Link>
@@ -68,7 +68,7 @@ const Hero = () => {
       </div>
       
       {/* Decorative element */}
-      <div className="absolute bottom-0 right-0 w-1/3 h-1/2 bg-gradient-to-tl from-brand-500/20 to-transparent blur-3xl rounded-tl-[100%] pointer-events-none" />
+      <div className="absolute bottom-0 right-0 w-1/3 h-1/2 bg-gradient-to-tl from-primary-500/20 to-transparent blur-3xl rounded-tl-[100%] pointer-events-none" />
     </section>
   );
 };

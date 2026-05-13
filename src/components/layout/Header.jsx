@@ -34,8 +34,8 @@ const Header = () => {
     <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md py-3' : 'bg-white/80 backdrop-blur-md py-5'}`}>
       <div className="container mx-auto px-4 md:px-8 flex justify-between items-center">
         {/* Logo */}
-        <NavLink to="/" className="text-2xl font-black text-brand-600 tracking-tight flex items-center gap-2">
-          <div className="w-8 h-8 bg-brand-500 rounded text-white flex items-center justify-center">W</div>
+        <NavLink to="/" className="text-2xl font-black text-primary-600 tracking-tight flex items-center gap-2">
+          <div className="w-8 h-8 bg-primary-500 rounded text-white flex items-center justify-center">W</div>
           WINZ
         </NavLink>
 
@@ -45,7 +45,7 @@ const Header = () => {
             <NavLink 
               key={link.path} 
               to={link.path}
-              className={({ isActive }) => `text-sm font-semibold transition-colors duration-200 ${isActive ? 'text-brand-600' : 'text-gray-700 hover:text-brand-500'}`}
+              className={({ isActive }) => `text-sm font-semibold transition-colors duration-200 ${isActive ? 'text-primary-600' : 'text-gray-700 hover:text-primary-500'}`}
             >
               {link.name}
             </NavLink>
@@ -54,11 +54,11 @@ const Header = () => {
 
         {/* Actions */}
         <div className="hidden md:flex items-center gap-4">
-          <button onClick={toggleLanguage} className="flex items-center gap-2 text-gray-700 hover:text-brand-500 font-medium text-sm transition-colors">
+          <button onClick={toggleLanguage} className="flex items-center gap-2 text-gray-700 hover:text-primary-500 font-medium text-sm transition-colors">
             <Globe size={18} />
             {i18n.language === 'en' ? 'العربية' : 'English'}
           </button>
-          <NavLink to="/tracking" className="bg-brand-500 hover:bg-brand-600 text-white px-5 py-2 rounded-full font-semibold text-sm transition-colors shadow-lg shadow-brand-500/30">
+          <NavLink to="/tracking" className="bg-primary-500 hover:bg-primary-600 text-white px-5 py-2 rounded-full font-semibold text-sm transition-colors shadow-lg shadow-primary-500/30">
             {t('hero.cta_secondary')}
           </NavLink>
         </div>
@@ -84,7 +84,7 @@ const Header = () => {
                   key={link.path} 
                   to={link.path}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className={({ isActive }) => `text-lg font-medium p-2 rounded-lg ${isActive ? 'bg-brand-50 text-brand-600' : 'text-gray-800'}`}
+                  className={({ isActive }) => `text-lg font-medium p-2 rounded-lg ${isActive ? 'bg-primary-50 text-primary-600' : 'text-gray-800'}`}
                 >
                   {link.name}
                 </NavLink>

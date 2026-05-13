@@ -16,7 +16,7 @@ const Contact = () => {
           {/* Info */}
           <div className="md:col-span-1 space-y-8">
             <div className="flex items-start gap-4">
-              <div className="w-12 h-12 bg-brand-50 text-brand-500 rounded-full flex items-center justify-center shrink-0">
+              <div className="w-12 h-12 bg-primary-50 text-primary-500 rounded-full flex items-center justify-center shrink-0">
                 <MapPin size={24} />
               </div>
               <div>
@@ -25,7 +25,7 @@ const Contact = () => {
               </div>
             </div>
             <div className="flex items-start gap-4">
-              <div className="w-12 h-12 bg-brand-50 text-brand-500 rounded-full flex items-center justify-center shrink-0">
+              <div className="w-12 h-12 bg-primary-50 text-primary-500 rounded-full flex items-center justify-center shrink-0">
                 <Phone size={24} />
               </div>
               <div>
@@ -34,7 +34,7 @@ const Contact = () => {
               </div>
             </div>
             <div className="flex items-start gap-4">
-              <div className="w-12 h-12 bg-brand-50 text-brand-500 rounded-full flex items-center justify-center shrink-0">
+              <div className="w-12 h-12 bg-primary-50 text-primary-500 rounded-full flex items-center justify-center shrink-0">
                 <Mail size={24} />
               </div>
               <div>
@@ -50,11 +50,11 @@ const Contact = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label className="block text-sm font-semibold text-gray-700 mb-2">Full Name</label>
-                  <input type="text" className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20 outline-none transition-all" />
+                  <input type="text" className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 outline-none transition-all" />
                 </div>
                 <div>
                   <label className="block text-sm font-semibold text-gray-700 mb-2">Email Address</label>
-                  <input type="email" className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20 outline-none transition-all" />
+                  <input type="email" className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 outline-none transition-all" />
                 </div>
               </div>
               <div>
@@ -63,9 +63,9 @@ const Contact = () => {
               </div>
               <div>
                 <label className="block text-sm font-semibold text-gray-700 mb-2">Message</label>
-                <textarea rows="5" className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20 outline-none transition-all"></textarea>
+                <textarea rows="5" className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 outline-none transition-all"></textarea>
               </div>
-              <button className="bg-brand-500 hover:bg-brand-600 text-white px-8 py-4 rounded-xl font-bold text-lg w-full transition-colors">
+              <button className="bg-primary-500 hover:bg-primary-600 text-white px-8 py-4 rounded-xl font-bold text-lg w-full transition-colors">
                 Send Message
               </button>
             </form>

@@ -13,7 +13,7 @@ const fadeLeft = { hidden: { opacity: 0, x: -36 }, visible: { opacity: 1, x: 0, 
 
 /* ── section badge ── */
 const SectionBadge = ({ label }) => (
-  <span className="inline-block py-1 px-4 rounded-full bg-brand-50 text-brand-600 border border-brand-200 text-sm font-semibold tracking-wide mb-4">
+  <span className="inline-block py-1 px-4 rounded-full bg-primary-50 text-primary-600 border border-primary-200 text-sm font-semibold tracking-wide mb-4">
     {label}
   </span>
 );
@@ -29,7 +29,7 @@ const serviceIcons = {
 };
 
 const serviceColors = [
-  'bg-brand-500',
+  'bg-primary-500',
   'bg-blue-500',
   'bg-amber-500',
   'bg-purple-500',
@@ -58,7 +58,7 @@ const Services = () => {
     <div className="flex flex-col min-h-screen">
 
       {/* ─────────────── HERO ─────────────── */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-900 via-brand-900 to-gray-900 pt-28 pb-20">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-900 via-primary-900 to-gray-900 pt-28 pb-20">
         {/* decorative rings */}
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
           <div className="w-[700px] h-[700px] rounded-full border border-white/5" />
@@ -78,7 +78,7 @@ const Services = () => {
         <div className="absolute bottom-1/3 right-10 hidden lg:block">
           <motion.div
             animate={{ y: [0, 12, 0] }} transition={{ repeat: Infinity, duration: 3.5, ease: 'easeInOut' }}
-            className="bg-brand-500/30 backdrop-blur-sm border border-brand-400/30 rounded-xl px-4 py-2 text-white text-sm font-medium"
+            className="bg-primary-500/30 backdrop-blur-sm border border-primary-400/30 rounded-xl px-4 py-2 text-white text-sm font-medium"
           >
             ✈️ International Cargo
           </motion.div>
@@ -105,7 +105,7 @@ const Services = () => {
           <motion.div initial="hidden" animate="visible" variants={fadeUp} transition={{ delay: 0.3 }}>
             <Link
               to="/contact"
-              className="inline-flex items-center gap-2 bg-brand-500 hover:bg-brand-600 text-white font-semibold px-8 py-4 rounded-full shadow-xl shadow-brand-500/30 hover:shadow-brand-500/50 transition-all hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2 bg-primary-500 hover:bg-primary-600 text-white font-semibold px-8 py-4 rounded-full shadow-xl shadow-primary-500/30 hover:shadow-primary-500/50 transition-all hover:-translate-y-0.5"
             >
               {t('common:buttons.getQuote')}
               <ArrowRight className={`w-5 h-5 ${isRTL ? 'rotate-180' : ''}`} />
@@ -125,7 +125,7 @@ const Services = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               {t('services:services.subtitle')}
             </h2>
-            <div className="w-20 h-1 bg-brand-500 mx-auto rounded-full" />
+            <div className="w-20 h-1 bg-primary-500 mx-auto rounded-full" />
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -146,7 +146,7 @@ const Services = () => {
                     {serviceIcons[key]}
                   </div>
                   {/* tag */}
-                  <span className="inline-block text-xs font-semibold text-brand-600 bg-brand-50 px-2.5 py-0.5 rounded-full mb-3">
+                  <span className="inline-block text-xs font-semibold text-primary-600 bg-primary-50 px-2.5 py-0.5 rounded-full mb-3">
                     {t(`services:services.${key}.tag`)}
                   </span>
                   <h3 className="text-xl font-bold text-gray-900 mb-3">
@@ -180,7 +180,7 @@ const Services = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 relative">
             {/* connecting line (desktop only) */}
-            <div className="hidden lg:block absolute top-8 left-[12.5%] right-[12.5%] h-0.5 bg-brand-100 z-0" />
+            <div className="hidden lg:block absolute top-8 left-[12.5%] right-[12.5%] h-0.5 bg-primary-100 z-0" />
 
             {processKeys.map((key, i) => (
               <motion.div
@@ -192,12 +192,12 @@ const Services = () => {
               >
                 {/* step number circle */}
                 <div className="flex justify-center mb-6">
-                  <div className="w-16 h-16 rounded-full bg-brand-500 flex items-center justify-center shadow-lg shadow-brand-500/30 ring-4 ring-white">
+                  <div className="w-16 h-16 rounded-full bg-primary-500 flex items-center justify-center shadow-lg shadow-primary-500/30 ring-4 ring-white">
                     {processIcons[i]}
                   </div>
                 </div>
                 <div className="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-                  <span className="block text-xs font-bold text-brand-500 mb-2">
+                  <span className="block text-xs font-bold text-primary-500 mb-2">
                     {String(i + 1).padStart(2, '0')}
                   </span>
                   <h3 className="text-lg font-bold text-gray-900 mb-2">
@@ -214,7 +214,7 @@ const Services = () => {
       </section>
 
       {/* ─────────────── CTA ─────────────── */}
-      <section className="py-20 bg-gradient-to-br from-brand-600 to-brand-700 relative overflow-hidden">
+      <section className="py-20 bg-gradient-to-br from-primary-600 to-primary-700 relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none opacity-10">
           <div className="absolute top-0 right-0 w-96 h-96 rounded-full bg-white blur-3xl" />
         </div>
@@ -225,10 +225,10 @@ const Services = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             {t('services:cta.title')}
           </h2>
-          <p className="text-brand-100 text-lg mb-8">{t('services:cta.subtitle')}</p>
+          <p className="text-primary-100 text-lg mb-8">{t('services:cta.subtitle')}</p>
           <Link
             to="/contact"
-            className="inline-block bg-white text-brand-600 font-bold px-10 py-4 rounded-full shadow-xl hover:shadow-2xl hover:scale-105 transition-all"
+            className="inline-block bg-white text-primary-600 font-bold px-10 py-4 rounded-full shadow-xl hover:shadow-2xl hover:scale-105 transition-all"
           >
             {t('services:cta.button')}
           </Link>

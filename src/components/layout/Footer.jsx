@@ -17,16 +17,16 @@ const Footer = () => {
               {t('footer.description')}
             </p>
             <div className="flex items-center gap-4">
-              <a href="#" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-brand-500 hover:text-white transition-colors">
+              <a href="#" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary-500 hover:text-white transition-colors">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-brand-500 hover:text-white transition-colors">
+              <a href="#" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary-500 hover:text-white transition-colors">
                 <Twitter className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-brand-500 hover:text-white transition-colors">
+              <a href="#" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary-500 hover:text-white transition-colors">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-brand-500 hover:text-white transition-colors">
+              <a href="#" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary-500 hover:text-white transition-colors">
                 <Linkedin className="w-5 h-5" />
               </a>
             </div>
@@ -37,16 +37,16 @@ const Footer = () => {
             <h3 className="text-white font-semibold text-lg mb-6">{t('footer.quickLinks')}</h3>
             <ul className="space-y-4">
               <li>
-                <Link to="/about" className="hover:text-brand-400 transition-colors">{t('nav.about')}</Link>
+                <Link to="/about" className="hover:text-primary-400 transition-colors">{t('nav.about')}</Link>
               </li>
               <li>
-                <Link to="/services" className="hover:text-brand-400 transition-colors">{t('nav.services')}</Link>
+                <Link to="/services" className="hover:text-primary-400 transition-colors">{t('nav.services')}</Link>
               </li>
               <li>
-                <Link to="/tracking" className="hover:text-brand-400 transition-colors">{t('nav.tracking')}</Link>
+                <Link to="/tracking" className="hover:text-primary-400 transition-colors">{t('nav.tracking')}</Link>
               </li>
               <li>
-                <Link to="/contact" className="hover:text-brand-400 transition-colors">{t('nav.contact')}</Link>
+                <Link to="/contact" className="hover:text-primary-400 transition-colors">{t('nav.contact')}</Link>
               </li>
             </ul>
           </div>
@@ -56,15 +56,15 @@ const Footer = () => {
             <h3 className="text-white font-semibold text-lg mb-6">{t('footer.contactInfo')}</h3>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-brand-500 mt-1 flex-shrink-0" />
+                <MapPin className="w-5 h-5 text-primary-500 mt-1 flex-shrink-0" />
                 <span>123 Logistics Avenue, Business District, Global City</span>
               </li>
               <li className="flex items-center gap-3">
-                <Phone className="w-5 h-5 text-brand-500 flex-shrink-0" />
+                <Phone className="w-5 h-5 text-primary-500 flex-shrink-0" />
                 <span dir="ltr">+1 (555) 123-4567</span>
               </li>
               <li className="flex items-center gap-3">
-                <Mail className="w-5 h-5 text-brand-500 flex-shrink-0" />
+                <Mail className="w-5 h-5 text-primary-500 flex-shrink-0" />
                 <span>info@winz-logistics.com</span>
               </li>
             </ul>
@@ -79,11 +79,11 @@ const Footer = () => {
                 type="email" 
                 placeholder={t('footer.newsletter.placeholder')}
                 dir="ltr"
-                className="w-full px-4 py-2.5 bg-gray-800 border border-gray-700 rounded-md focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 text-white"
+                className="w-full px-4 py-2.5 bg-gray-800 border border-gray-700 rounded-md focus:outline-none focus:border-primary-500 focus:ring-1 focus:ring-primary-500 text-white"
               />
               <button 
                 type="submit"
-                className="w-full bg-brand-500 hover:bg-brand-600 text-white font-medium py-2.5 rounded-md transition-colors"
+                className="w-full bg-primary-500 hover:bg-primary-600 text-white font-medium py-2.5 rounded-md transition-colors"
               >
                 {t('footer.newsletter.button')}
               </button>

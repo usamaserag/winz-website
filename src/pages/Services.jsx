@@ -24,7 +24,7 @@ const Services = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {servicesList.map((service, index) => (
             <div key={index} className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-shadow border border-gray-100">
-              <div className="w-20 h-20 bg-brand-50 text-brand-500 rounded-2xl flex items-center justify-center mb-6">
+              <div className="w-20 h-20 bg-primary-50 text-primary-500 rounded-2xl flex items-center justify-center mb-6">
                 {service.icon}
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">{service.title}</h3>

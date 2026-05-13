@@ -42,8 +42,8 @@ const Contact = () => {
             <div className="bg-white p-8 rounded-2xl shadow-lg shadow-gray-200/50 border border-gray-100 flex flex-col gap-8">
 
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-brand-50 rounded-full flex items-center justify-center flex-shrink-0">
-                  <MapPin className="w-6 h-6 text-brand-600" />
+                <div className="w-12 h-12 bg-primary-50 rounded-full flex items-center justify-center flex-shrink-0">
+                  <MapPin className="w-6 h-6 text-primary-600" />
                 </div>
                 <div>
                   <h3 className="font-bold text-gray-900 mb-1">{t('contact:info.addressLabel')}</h3>
@@ -52,8 +52,8 @@ const Contact = () => {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-brand-50 rounded-full flex items-center justify-center flex-shrink-0">
-                  <Phone className="w-6 h-6 text-brand-600" />
+                <div className="w-12 h-12 bg-primary-50 rounded-full flex items-center justify-center flex-shrink-0">
+                  <Phone className="w-6 h-6 text-primary-600" />
                 </div>
                 <div>
                   <h3 className="font-bold text-gray-900 mb-1">{t('contact:info.phoneLabel')}</h3>
@@ -62,8 +62,8 @@ const Contact = () => {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-brand-50 rounded-full flex items-center justify-center flex-shrink-0">
-                  <Mail className="w-6 h-6 text-brand-600" />
+                <div className="w-12 h-12 bg-primary-50 rounded-full flex items-center justify-center flex-shrink-0">
+                  <Mail className="w-6 h-6 text-primary-600" />
                 </div>
                 <div>
                   <h3 className="font-bold text-gray-900 mb-1">{t('contact:info.emailLabel')}</h3>
@@ -88,7 +88,7 @@ const Contact = () => {
                   <input
                     type="text"
                     dir={isRTL ? 'rtl' : 'ltr'}
-                    className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-500/50 focus:border-brand-500 transition-all"
+                    className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-500/50 focus:border-primary-500 transition-all"
                     placeholder={t('contact:form.namePlaceholder')}
                   />
                 </div>
@@ -97,7 +97,7 @@ const Contact = () => {
                   <input
                     type="email"
                     dir="ltr"
-                    className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-500/50 focus:border-brand-500 transition-all"
+                    className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-500/50 focus:border-primary-500 transition-all"
                     placeholder={t('contact:form.emailPlaceholder')}
                   />
                 </div>
@@ -108,7 +108,7 @@ const Contact = () => {
                 <input
                   type="text"
                   dir={isRTL ? 'rtl' : 'ltr'}
-                  className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-500/50 focus:border-brand-500 transition-all"
+                  className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-500/50 focus:border-primary-500 transition-all"
                   placeholder={t('contact:form.subjectPlaceholder')}
                 />
               </div>
@@ -118,7 +118,7 @@ const Contact = () => {
                 <textarea
                   rows="5"
                   dir={isRTL ? 'rtl' : 'ltr'}
-                  className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-500/50 focus:border-brand-500 transition-all resize-none"
+                  className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-500/50 focus:border-primary-500 transition-all resize-none"
                   placeholder={t('contact:form.messagePlaceholder')}
                 />
               </div>
@@ -126,7 +126,7 @@ const Contact = () => {
               <button
                 type="submit"
                 dir="ltr"
-                className="w-full sm:w-auto px-8 py-4 bg-brand-500 hover:bg-brand-600 text-white font-bold rounded-xl shadow-lg shadow-brand-500/30 hover:shadow-brand-500/50 hover:-translate-y-0.5 transition-all flex items-center justify-center gap-2"
+                className="w-full sm:w-auto px-8 py-4 bg-primary-500 hover:bg-primary-600 text-white font-bold rounded-xl shadow-lg shadow-primary-500/30 hover:shadow-primary-500/50 hover:-translate-y-0.5 transition-all flex items-center justify-center gap-2"
               >
                 {isRTL ? (
                   <>

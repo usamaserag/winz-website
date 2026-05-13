@@ -5,32 +5,21 @@ import About from '../pages/About';
 import Services from '../pages/Services';
 import Tracking from '../pages/Tracking';
 import Contact from '../pages/Contact';
+import Import from '../pages/Import/Import';
+import Export from '../pages/Export/Export';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <MainLayout />,
     children: [
-      {
-        index: true,
-        element: <Home />
-      },
-      {
-        path: 'about',
-        element: <About />
-      },
-      {
-        path: 'services',
-        element: <Services />
-      },
-      {
-        path: 'tracking',
-        element: <Tracking />
-      },
-      {
-        path: 'contact',
-        element: <Contact />
-      }
+      { index: true, element: <Home /> },
+      { path: 'about',    element: <About /> },
+      { path: 'services', element: <Services /> },
+      { path: 'import',   element: <Import /> },
+      { path: 'export',   element: <Export /> },
+      { path: 'tracking', element: <Tracking /> },
+      { path: 'contact',  element: <Contact /> },
     ]
   }
 ]);

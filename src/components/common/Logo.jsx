@@ -1,16 +1,17 @@
-import { Link } from 'react-router-dom';
-import logoImage from '../../assets/images/WhatsApp_Image_2025-01-28_at_20.49.53_7afb9577-removebg-preview.png';
+import { Link } from "react-router-dom";
+import logoColored from "../../assets/images/WhatsApp_Image_2026-05-13_at_12.54.03_AM-removebg-preview.png";
+import logoWhite   from "../../assets/images/Icon-removebg-preview.png";
 
-const Logo = ({ className = 'w-12 h-auto', onClick }) => {
-  return (
-    <Link to="/" onClick={onClick} className="flex items-center gap-2">
-      <img 
-        src={logoImage} 
-        alt="WINZ Logo" 
-        className={`${className} object-contain`} 
-      />
-    </Link>
-  );
-};
+// variant="white"   → white logo  (use on dark/colored hero backgrounds)
+// variant="default" → colored logo (use on white nav backgrounds)
+const Logo = ({ className = "h-10 w-28", onClick, variant = "default" }) => (
+  <Link to="/" onClick={onClick} className="flex items-center">
+    <img
+      src={variant === "white" ? logoWhite : logoColored}
+      alt="WINZ Logo"
+      className={`${className} object-contain`}
+    />
+  </Link>
+);
 
 export default Logo;
