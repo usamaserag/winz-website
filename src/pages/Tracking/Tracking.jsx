@@ -126,49 +126,14 @@ const Tracking = () => {
             {t('tracking:hero.subtitle')}
           </motion.p>
 
-          {/* Search Box */}
+          {/* Search Box / Unavailable Message */}
           <motion.div
             initial="hidden" animate="visible" variants={fadeUp}
             transition={{ delay: 0.3 }}
           >
-            <form onSubmit={handleTrack} className="relative">
-              <div className="flex flex-col sm:flex-row gap-3 bg-white/10 backdrop-blur-md p-3 rounded-2xl border border-white/20 shadow-2xl">
-                <div className="flex-1 relative">
-                  <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400 pointer-events-none" />
-                  <input
-                    type="text"
-                    dir="ltr"
-                    value={inputValue}
-                    onChange={(e) => setInputValue(e.target.value)}
-                    placeholder={t('tracking:form.placeholder')}
-                    className="w-full pl-12 pr-4 py-3.5 bg-white rounded-xl text-gray-900 font-medium placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-500"
-                  />
-                </div>
-                <button
-                  type="submit"
-                  disabled={tracking}
-                  className="flex items-center justify-center gap-2 bg-primary-500 hover:bg-primary-600 disabled:opacity-70 text-white font-bold px-8 py-3.5 rounded-xl transition-all shadow-lg shadow-primary-500/30 whitespace-nowrap"
-                >
-                  {tracking ? (
-                    <span className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin" />
-                  ) : (
-                    <>
-                      {t('tracking:form.button')}
-                      <ArrowRight className={`w-4 h-4 ${isRTL ? 'rotate-180' : ''}`} />
-                    </>
-                  )}
-                </button>
-              </div>
-              <p className="text-gray-400 text-xs mt-3">{t('tracking:form.hint')}</p>
-            </form>
-
-            {/* Quick fill demo */}
-            <button
-              onClick={() => setInputValue(DEMO_ID)}
-              className="mt-4 text-primary-400 hover:text-primary-300 text-sm underline underline-offset-2 transition-colors"
-            >
-              Try demo: {DEMO_ID}
-            </button>
+            <div className="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20 shadow-2xl">
+               <p className="text-white text-lg font-medium">Online tracking is currently unavailable. Please contact our support for your shipment status.</p>
+            </div>
           </motion.div>
         </div>
       </section>

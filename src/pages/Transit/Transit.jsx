@@ -208,12 +208,7 @@ const Transit = () => {
           <p className="text-primary-100 text-lg mb-8 max-w-2xl mx-auto">
             Leveraging 14 years of experience and the region's most extensive neutral customs network, Winz Logistics ensures your shipments move compliant, on time, and worry-free.
           </p>
-          <Link
-            to="/contact"
-            className="inline-block bg-white text-primary-600 font-bold px-10 py-4 rounded-full shadow-xl hover:shadow-2xl hover:scale-105 transition-all"
-          >
-            Contact Our Transit Team
-          </Link>
+
         </motion.div>
       </section>
 

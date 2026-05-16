@@ -25,9 +25,6 @@ const Header = () => {
   const navLinks = [
     { name: t('nav.home'), path: '/' },
     { name: t('nav.about'), path: '/about' },
-    { name: t('nav.services'), path: '/services' },
-    { name: t('nav.tracking'), path: '/tracking' },
-    { name: t('nav.contact'), path: '/contact' },
   ];
 
   return (
@@ -58,9 +55,6 @@ const Header = () => {
             <Globe size={18} />
             {i18n.language === 'en' ? 'العربية' : 'English'}
           </button>
-          <NavLink to="/tracking" className="bg-primary-500 hover:bg-primary-600 text-white px-5 py-2 rounded-full font-semibold text-sm transition-colors shadow-lg shadow-primary-500/30">
-            {t('hero.cta_secondary')}
-          </NavLink>
         </div>
 
         {/* Mobile Menu Toggle */}

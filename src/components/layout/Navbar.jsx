@@ -43,10 +43,10 @@ const Navbar = () => {
 
   const isActive = (path) => location.pathname === path;
   const isServicesActive = ['/services', '/import', '/export', '/transit', '/transport', '/warehouse'].includes(location.pathname);
-  const isContact = location.pathname === '/contact';
-  const isTransparent = !isContact && !scrolled;
+  const isLightPage = location.pathname === '/contact' || location.pathname === '/import';
+  const isTransparent = !isLightPage && !scrolled;
 
-  const navBg = isContact
+  const navBg = isLightPage
     ? (scrolled ? 'bg-white shadow-md py-3' : 'bg-white py-5')
     : (isTransparent ? 'bg-transparent py-5' : 'bg-white shadow-md py-3');
 

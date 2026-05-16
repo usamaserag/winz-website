@@ -289,12 +289,7 @@ const About = () => {
           <p className="text-primary-100 text-lg mb-8 max-w-2xl mx-auto">
             Contact us today to handle your logistics seamlessly. We take care of the complexity so you can focus on growing your business.
           </p>
-          <Link
-            to="/contact"
-            className="inline-block bg-white text-primary-600 font-bold px-10 py-4 rounded-full shadow-xl hover:shadow-2xl hover:scale-105 transition-all"
-          >
-            Contact Us Today
-          </Link>
+
         </motion.div>
       </section>
 

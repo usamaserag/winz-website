@@ -6,9 +6,20 @@ import {
 } from 'lucide-react';
 import usePageTitle from '../../hooks/usePageTitle';
 
-const fadeUp   = { hidden: { opacity: 0, y: 28 }, visible: { opacity: 1, y: 0, transition: { duration: 0.55 } } };
+const fadeUp   = { hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } } };
 const fadeLeft = { hidden: { opacity: 0, x: -36 }, visible: { opacity: 1, x: 0, transition: { duration: 0.6  } } };
 const fadeRight= { hidden: { opacity: 0, x:  36 }, visible: { opacity: 1, x: 0, transition: { duration: 0.6  } } };
+
+const staggerContainer = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.15,
+      delayChildren: 0.2,
+    }
+  }
+};
 
 /* ── Journey service cards ── */
 const services = [
@@ -75,45 +86,64 @@ const Home = () => {
     <div className="flex flex-col min-h-screen overflow-x-hidden">
 
       {/* ─── HERO ─── */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-900 via-primary-900 to-gray-900">
-        {/* Decorative rings */}
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-900 via-primary-900 to-gray-900">
+        
+        {/* Globe and Planetary System */}
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-          <div className="w-[800px] h-[800px] rounded-full border border-white/5 animate-[spin_60s_linear_infinite]" />
-        </div>
-        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-          <div className="w-[550px] h-[550px] rounded-full border border-white/5 animate-[spin_40s_linear_infinite_reverse]" />
-        </div>
-        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-          <div className="w-[320px] h-[320px] rounded-full border border-primary-500/10" />
+          {/* Outer Ring */}
+          <div className="absolute w-[800px] h-[800px] rounded-full border border-white/5 animate-[spin_60s_linear_infinite]">
+            <div className="absolute top-[14%] right-[14%] w-6 h-6 rounded-full bg-gradient-to-br from-indigo-400 to-purple-600 shadow-[0_0_30px_rgba(99,102,241,0.8)]"></div>
+          </div>
+          
+          {/* Middle Ring */}
+          <div className="absolute w-[550px] h-[550px] rounded-full border border-white/10 border-dashed animate-[spin_40s_linear_infinite_reverse]">
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-5 h-5 rounded-full bg-white shadow-[0_0_20px_white]"></div>
+            
+            {/* Small Moon orbiting the middle planet */}
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 animate-[spin_4s_linear_infinite]">
+               <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-1.5 h-1.5 rounded-full bg-white/80"></div>
+            </div>
+          </div>
+
+          {/* Inner Ring */}
+          <div className="absolute w-[320px] h-[320px] rounded-full border border-primary-500/20 animate-[spin_25s_linear_infinite]">
+            <div className="absolute top-1/2 right-0 translate-x-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-primary-400 shadow-[0_0_25px_rgba(56,189,248,0.9)]"></div>
+          </div>
+          
+          {/* Core glow */}
+          <div className="absolute w-40 h-40 rounded-full bg-primary-500/20 blur-[60px]"></div>
         </div>
 
-        <div className="relative z-10 max-w-5xl mx-auto px-4 text-center mt-16">
+        <motion.div 
+          variants={staggerContainer}
+          initial="hidden" 
+          animate="visible"
+          className="relative z-10 max-w-5xl mx-auto px-4 text-center mt-16"
+        >
           <motion.span
-            initial="hidden" animate="visible" variants={fadeUp}
-            className="inline-block py-1 px-4 rounded-full bg-primary-500/20 text-primary-300 border border-primary-500/30 text-sm font-semibold tracking-widest mb-6 uppercase"
+            variants={fadeUp}
+            className="inline-block py-1.5 px-5 rounded-full bg-primary-500/20 text-primary-300 border border-primary-500/30 text-sm font-semibold tracking-widest mb-8 uppercase shadow-[0_0_15px_rgba(56,189,248,0.15)] backdrop-blur-sm"
           >
             Winz Logistics
           </motion.span>
 
           <motion.h1
-            initial="hidden" animate="visible" variants={fadeUp}
-            transition={{ delay: 0.1 }}
-            className="text-5xl md:text-7xl font-extrabold text-white tracking-tight leading-tight mb-6"
+            variants={fadeUp}
+            className="text-5xl md:text-7xl font-extrabold text-white tracking-tight leading-tight mb-6 drop-shadow-lg"
           >
-            Your Trusted Partner in{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-primary-300">
+            Your Trusted Partner in <br/>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-blue-300">
               European Logistics
             </span>
           </motion.h1>
 
           <motion.p
-            initial="hidden" animate="visible" variants={fadeUp}
-            transition={{ delay: 0.2 }}
-            className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed"
+            variants={fadeUp}
+            className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed mt-8"
           >
             14 years of expertise in customs clearance, container transport, and warehousing across Europe.
           </motion.p>
-        </div>
+        </motion.div>
       </section>
 
       {/* ─── STATS STRIP ─── */}
