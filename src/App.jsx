@@ -13,7 +13,11 @@ import Export from "./pages/Export/Export";
 import Transit from "./pages/Transit/Transit";
 import Transport from "./pages/Transport/Transport";
 import WarehousePage from "./pages/Warehouse/Warehouse";
+import Blog from "./pages/Blog/Blog";
+import BlogDetail from "./pages/Blog/BlogDetail";
+import FAQ from "./pages/FAQ/FAQ";
 import { useVisitorTracker } from "./hooks/useVisitorTracker";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   // Track visitors periodically every 3 minutes starting immediately on load
@@ -27,6 +31,7 @@ function App() {
 
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<MainLayout />}>
           <Route index element={<Home />} />
@@ -37,6 +42,9 @@ function App() {
           <Route path="transit" element={<Transit />} />
           <Route path="transport" element={<Transport />} />
           <Route path="warehouse" element={<WarehousePage />} />
+          <Route path="blog" element={<Blog />} />
+          <Route path="blog/:slug" element={<BlogDetail />} />
+          <Route path="faq" element={<FAQ />} />
         </Route>
       </Routes>
     </BrowserRouter>

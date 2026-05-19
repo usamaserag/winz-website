@@ -141,6 +141,14 @@ const Navbar = () => {
               <Link to="/warehouse" className={linkClass('/warehouse')}>
                 Warehouse
               </Link>
+
+              <Link to="/blog" className={linkClass('/blog')}>
+                Blog
+              </Link>
+
+              <Link to="/faq" className={linkClass('/faq')}>
+                FAQ
+              </Link>
             </div>
 
           </div>
@@ -227,6 +235,8 @@ const Navbar = () => {
                 {[
                   { name: 'Transport', path: '/transport' },
                   { name: 'Warehouse', path: '/warehouse' },
+                  { name: 'Blog',      path: '/blog' },
+                  { name: 'FAQ',       path: '/faq' },
                 ].map((link) => (
                   <Link
                     key={link.path}
