@@ -1,10 +1,8 @@
 import { motion } from 'framer-motion';
 import { Truck, Container, MapPin, Clock, CheckCircle2, ShieldCheck, Globe, ArrowRight } from 'lucide-react';
 import usePageTitle from '../../hooks/usePageTitle';
-
-const fadeUp    = { hidden: { opacity: 0, y: 28  }, visible: { opacity: 1, y: 0, transition: { duration: 0.55 } } };
-const fadeLeft  = { hidden: { opacity: 0, x: -36 }, visible: { opacity: 1, x: 0, transition: { duration: 0.6  } } };
-const fadeRight = { hidden: { opacity: 0, x:  36 }, visible: { opacity: 1, x: 0, transition: { duration: 0.6  } } };
+import PageHero from '../../components/logistics/PageHero';
+import { fadeUp, fadeLeft, fadeRight } from '../../components/logistics/motionVariants';
 
 const containerSizes = [
   { size: '20ft', desc: 'Standard container for general cargo and dry goods.' },
@@ -36,42 +34,12 @@ const Transport = () => {
   return (
     <div className="flex flex-col min-h-screen overflow-x-hidden">
 
-      {/* ── HERO ── */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-900 via-primary-900 to-gray-900 pt-28 pb-20">
-        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-          <div className="w-[700px] h-[700px] rounded-full border border-white/5" />
-        </div>
-        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-          <div className="w-[450px] h-[450px] rounded-full border border-white/5" />
-        </div>
-
-        <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
-          <motion.div initial="hidden" animate="visible" variants={fadeUp}>
-            <span className="inline-block py-1 px-4 rounded-full bg-primary-500/20 text-primary-300 border border-primary-500/30 text-sm font-semibold tracking-wide mb-6">
-              Container Transport & Haulage
-            </span>
-          </motion.div>
-
-          <motion.h1
-            initial="hidden" animate="visible" variants={fadeUp}
-            transition={{ delay: 0.1 }}
-            className="text-4xl md:text-6xl font-extrabold text-white tracking-tight leading-tight mb-6"
-          >
-            Full-Scale Container Haulage{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-primary-300">
-              Solutions
-            </span>
-          </motion.h1>
-
-          <motion.p
-            initial="hidden" animate="visible" variants={fadeUp}
-            transition={{ delay: 0.2 }}
-            className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed"
-          >
-            From Port Terminals to Your Doorstep with Winz Logistics
-          </motion.p>
-        </div>
-      </section>
+      <PageHero
+        badge="Container Transport & Haulage"
+        title="Full-Scale Container Haulage"
+        highlight="Solutions"
+        description="From port terminals to your doorstep with Winz Logistics."
+      />
 
       {/* ── INTRO ── */}
       <section className="py-24 bg-white">
@@ -102,9 +70,9 @@ const Transport = () => {
                   key={c.size}
                   initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}
                   transition={{ delay: i * 0.1 }}
-                  className="flex items-center gap-6 bg-gray-50 rounded-2xl p-6 border border-gray-100 hover:border-primary-200 hover:shadow-lg hover:shadow-primary-500/10 transition-all"
+                className="flex items-center gap-6 bg-gray-50 rounded-2xl p-6 border border-gray-100 hover:border-primary-200 hover:shadow-md transition-all"
                 >
-                  <div className="w-16 h-16 bg-primary-500 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg shadow-primary-500/30">
+                  <div className="w-16 h-16 bg-primary-500 rounded-2xl flex items-center justify-center flex-shrink-0">
                     <Container className="w-8 h-8 text-white" />
                   </div>
                   <div>
@@ -140,7 +108,6 @@ const Transport = () => {
                 key={f.title}
                 initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}
                 transition={{ delay: i * 0.07 }}
-                whileHover={{ y: -8 }}
                 className="group p-8 rounded-2xl border border-gray-100 hover:border-primary-200 hover:shadow-xl hover:shadow-primary-500/10 transition-all bg-white"
               >
                 <div className="w-12 h-12 bg-primary-50 group-hover:bg-primary-500 rounded-xl flex items-center justify-center mb-5 transition-colors duration-300">

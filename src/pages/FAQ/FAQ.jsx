@@ -6,6 +6,7 @@ import {
 } from 'lucide-react';
 import { getFAQs } from '../../data/siteData';
 import { useSEOMeta } from '../../hooks/useSEOMeta';
+import PageHero from '../../components/logistics/PageHero';
 
 const SectionBadge = ({ label }) => (
   <span className="inline-block py-1 px-4 rounded-full bg-primary-50 text-primary-600 border border-primary-200 text-sm font-semibold tracking-wide mb-4">
@@ -84,42 +85,13 @@ export default function FAQ() {
 
   return (
     <div className="flex flex-col min-h-screen bg-gray-50/50">
-      {/* Hero */}
-      <section className="relative min-h-[45vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-900 via-primary-900 to-gray-900 pt-28 pb-20">
-        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-          <div className="w-[800px] h-[800px] rounded-full border border-white/5" />
-        </div>
-        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-          <div className="w-[500px] h-[500px] rounded-full border border-white/5" />
-        </div>
-
-        <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
-          <motion.div initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
-            <SectionBadge label="Got Questions?" />
-          </motion.div>
-
-          <motion.h1
-            initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1, duration: 0.4 }}
-            className="text-3xl md:text-5xl font-extrabold text-white tracking-tight leading-tight mb-6"
-          >
-            Customs Clearance{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-primary-300">
-              FAQs & Help Center
-            </span>
-          </motion.h1>
-
-          <motion.p
-            initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2, duration: 0.4 }}
-            className="text-base md:text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed"
-          >
-            Detailed answers regarding customs regulations, documents, import procedures, and fiscal matters in Belgium, Netherlands, Germany, and France.
-          </motion.p>
-        </div>
-      </section>
+      <PageHero
+        size="compact"
+        badge="Got Questions?"
+        title="Customs Clearance"
+        highlight="FAQs & Help Center"
+        description="Detailed answers regarding customs regulations, documents, import procedures, and fiscal matters in Belgium, Netherlands, Germany, and France."
+      />
 
       {/* Main Content */}
       <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 flex-grow w-full">

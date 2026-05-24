@@ -3,15 +3,13 @@ import { Link } from 'react-router-dom';
 import {
   ShieldCheck, Globe, Truck, Warehouse, Package,
   CheckCircle2, ArrowRight, Snowflake, FileText,
-  Ship, Star, Clock
+  Ship, Award, Clock
 } from 'lucide-react';
 import usePageTitle from '../../hooks/usePageTitle';
+import PageHero from '../../components/logistics/PageHero';
+import { fadeUp, fadeLeft, fadeRight } from '../../components/logistics/motionVariants';
 
 /* ─── animation variants ─── */
-const fadeUp    = { hidden: { opacity: 0, y: 28  }, visible: { opacity: 1, y: 0, transition: { duration: 0.55 } } };
-const fadeLeft  = { hidden: { opacity: 0, x: -36 }, visible: { opacity: 1, x: 0, transition: { duration: 0.6  } } };
-const fadeRight = { hidden: { opacity: 0, x:  36 }, visible: { opacity: 1, x: 0, transition: { duration: 0.6  } } };
-
 const SectionBadge = ({ label }) => (
   <span className="inline-block py-1 px-4 rounded-full bg-primary-50 text-primary-600 border border-primary-200 text-sm font-semibold tracking-wide mb-4">
     {label}
@@ -21,7 +19,7 @@ const SectionBadge = ({ label }) => (
 /* ─── Why Choose data ─── */
 const reasons = [
   {
-    icon: <Star       className="w-6 h-6 text-primary-500" />,
+    icon: <Award className="w-6 h-6 text-primary-500" />,
     title: '14+ Years of Expertise',
     desc:  'Deep knowledge of EU customs legislation and border procedures built over a decade of dedicated practice.',
   },
@@ -97,41 +95,12 @@ const About = () => {
   return (
     <div className="flex flex-col min-h-screen overflow-x-hidden">
 
-      {/* ─── HERO ─── */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-900 via-primary-900 to-gray-900 pt-28 pb-20">
-        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-          <div className="w-[700px] h-[700px] rounded-full border border-white/5" />
-        </div>
-        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-          <div className="w-[450px] h-[450px] rounded-full border border-white/5" />
-        </div>
-
-        <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
-          <motion.div initial="hidden" animate="visible" variants={fadeUp}>
-            <SectionBadge label="About Winz Logistics" />
-          </motion.div>
-
-          <motion.h1
-            initial="hidden" animate="visible" variants={fadeUp}
-            transition={{ delay: 0.1 }}
-            className="text-4xl md:text-6xl font-extrabold text-white tracking-tight leading-tight mb-6"
-          >
-            Your Trusted Partner in{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-primary-300">
-              European Customs & Logistics
-            </span>
-          </motion.h1>
-
-          <motion.p
-            initial="hidden" animate="visible" variants={fadeUp}
-            transition={{ delay: 0.2 }}
-            className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-10 leading-relaxed"
-          >
-            Over 14 years of dedicated experience in customs clearance and international logistics — bridging the gap between global suppliers and the European Union.
-          </motion.p>
-
-        </div>
-      </section>
+      <PageHero
+        badge="About Winz Logistics"
+        title="Your Trusted Partner in"
+        highlight="European Customs & Logistics"
+        description="14+ years of expertise in customs clearance, transport, and warehousing across Europe."
+      />
 
       {/* ─── STATS ─── */}
       <section className="py-14 bg-white border-b border-gray-100">
@@ -215,7 +184,6 @@ const About = () => {
                 key={r.title}
                 initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}
                 transition={{ delay: i * 0.07 }}
-                whileHover={{ y: -8 }}
                 className="group p-8 rounded-2xl border border-gray-100 hover:border-primary-200 hover:shadow-xl hover:shadow-primary-500/10 transition-all bg-white"
               >
                 <div className="w-12 h-12 bg-primary-50 group-hover:bg-primary-500 rounded-xl flex items-center justify-center mb-5 transition-colors duration-300">

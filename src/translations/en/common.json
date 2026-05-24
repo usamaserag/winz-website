@@ -22,5 +22,100 @@
     "getQuote": "Get a Quote",
     "trackShipment": "Track Shipment",
     "learnMore": "Learn More"
+  },
+  "contactCta": {
+    "badge": "Logistics experts on standby",
+    "title": "Ready to optimise your European supply chain?",
+    "subtitle": "Contact WINZ for customs clearance, container transport, warehousing, and tailored logistics solutions for your business.",
+    "button": "Contact Us",
+    "secondary": "View FAQs"
+  },
+  "cookies": {
+    "banner": {
+      "title": "We value your privacy",
+      "description": "We use cookies to improve your experience, analyze site traffic, and enhance performance. Learn more in our",
+      "privacyPolicy": "Privacy Policy",
+      "cookiesPolicy": "Cookies Policy",
+      "and": "and",
+      "acceptAll": "Accept All",
+      "rejectNonEssential": "Reject Non-Essential",
+      "managePreferences": "Manage Preferences"
+    },
+    "modal": {
+      "title": "Cookie Preferences",
+      "description": "Choose which cookies you allow. You can update these settings at any time from the footer.",
+      "alwaysEnabled": "Always enabled",
+      "savePreferences": "Save Preferences",
+      "close": "Close cookie preferences"
+    },
+    "categories": {
+      "necessary": {
+        "title": "Necessary Cookies",
+        "description": "Required for core site functionality such as security, network management, and accessibility. These cannot be disabled."
+      },
+      "analytics": {
+        "title": "Analytics Cookies",
+        "description": "Help us understand how visitors use the website so we can improve performance and user experience."
+      },
+      "marketing": {
+        "title": "Marketing Cookies",
+        "description": "Used to deliver relevant content and measure the effectiveness of marketing campaigns."
+      },
+      "preferences": {
+        "title": "Preference Cookies",
+        "description": "Remember your choices such as language or region to provide a more personalized experience."
+      }
+    },
+    "footer": {
+      "settings": "Cookie Settings"
+    },
+    "legal": {
+      "privacy": {
+        "pageTitle": "Privacy Policy | WINZ Logistics",
+        "badge": "Legal",
+        "heading": "Privacy Policy",
+        "intro": "This policy explains how WINZ Logistics collects, uses, and protects personal information when you use our website.",
+        "sections": [
+          {
+            "title": "Information we collect",
+            "body": "We may collect technical data such as browser type, device information, and pages visited when you interact with our website or contact us."
+          },
+          {
+            "title": "How we use information",
+            "body": "We use collected information to operate our services, respond to inquiries, improve website performance, and comply with legal obligations."
+          },
+          {
+            "title": "Cookies and tracking",
+            "body": "We use cookies and similar technologies for essential functionality, analytics, and optional preferences. You can manage non-essential cookies through our cookie banner or Cookie Settings link."
+          },
+          {
+            "title": "Your rights",
+            "body": "Depending on applicable law, you may request access, correction, or deletion of your personal data by contacting us at info@winz.be."
+          }
+        ]
+      },
+      "cookies": {
+        "pageTitle": "Cookies Policy | WINZ Logistics",
+        "badge": "Legal",
+        "heading": "Cookies Policy",
+        "intro": "This policy describes the types of cookies used on the WINZ website and how you can control them.",
+        "manageTitle": "Manage your cookie choices",
+        "manageBody": "You can accept, reject, or customize non-essential cookies at any time.",
+        "sections": [
+          {
+            "title": "What are cookies?",
+            "body": "Cookies are small text files stored on your device that help websites function, remember preferences, and understand usage patterns."
+          },
+          {
+            "title": "Cookie categories",
+            "body": "We use necessary cookies for core functionality, and optional analytics, marketing, and preference cookies that only run with your consent."
+          },
+          {
+            "title": "How to change preferences",
+            "body": "Use the Cookie Settings link in the website footer or the manage preferences option in the cookie banner to update your choices at any time."
+          }
+        ]
+      }
+    }
   }
 }

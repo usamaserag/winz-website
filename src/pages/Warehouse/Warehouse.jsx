@@ -1,10 +1,8 @@
 import { motion } from 'framer-motion';
 import { Warehouse, Package, ShieldCheck, Clock, CheckCircle2, BarChart3, RefreshCw, Box } from 'lucide-react';
 import usePageTitle from '../../hooks/usePageTitle';
-
-const fadeUp    = { hidden: { opacity: 0, y: 28  }, visible: { opacity: 1, y: 0, transition: { duration: 0.55 } } };
-const fadeLeft  = { hidden: { opacity: 0, x: -36 }, visible: { opacity: 1, x: 0, transition: { duration: 0.6  } } };
-const fadeRight = { hidden: { opacity: 0, x:  36 }, visible: { opacity: 1, x: 0, transition: { duration: 0.6  } } };
+import PageHero from '../../components/logistics/PageHero';
+import { fadeUp, fadeLeft, fadeRight } from '../../components/logistics/motionVariants';
 
 const services = [
   {
@@ -56,42 +54,12 @@ const WarehousePage = () => {
   return (
     <div className="flex flex-col min-h-screen overflow-x-hidden">
 
-      {/* ── HERO ── */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-900 via-primary-900 to-gray-900 pt-28 pb-20">
-        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-          <div className="w-[700px] h-[700px] rounded-full border border-white/5" />
-        </div>
-        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-          <div className="w-[450px] h-[450px] rounded-full border border-white/5" />
-        </div>
-
-        <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
-          <motion.div initial="hidden" animate="visible" variants={fadeUp}>
-            <span className="inline-block py-1 px-4 rounded-full bg-primary-500/20 text-primary-300 border border-primary-500/30 text-sm font-semibold tracking-wide mb-6">
-              Warehousing & Value-Added Services
-            </span>
-          </motion.div>
-
-          <motion.h1
-            initial="hidden" animate="visible" variants={fadeUp}
-            transition={{ delay: 0.1 }}
-            className="text-4xl md:text-6xl font-extrabold text-white tracking-tight leading-tight mb-6"
-          >
-            Advanced Warehousing &{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-primary-300">
-              Value-Added Services
-            </span>
-          </motion.h1>
-
-          <motion.p
-            initial="hidden" animate="visible" variants={fadeUp}
-            transition={{ delay: 0.2 }}
-            className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed"
-          >
-            Comprehensive Storage Solutions by Winz Logistics
-          </motion.p>
-        </div>
-      </section>
+      <PageHero
+        badge="Warehousing & Value-Added Services"
+        title="Advanced Warehousing &"
+        highlight="Value-Added Services"
+        description="Strategic storage and fulfillment across the European supply chain."
+      />
 
       {/* ── INTRO ── */}
       <section className="py-24 bg-white">

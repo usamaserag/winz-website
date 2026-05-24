@@ -1,23 +1,90 @@
 {
+  "metaTitle": "Contact Us | WINZ Logistics",
   "title": "Contact Us",
-  "subtitle": "We're here to help and answer any question you might have. We look forward to hearing from you.",
+  "subtitle": "We're here to help with customs clearance, transport, and warehousing across Europe.",
+  "hero": {
+    "badge": "Get in Touch",
+    "title": "Let's Move Your Cargo",
+    "highlight": "Across Europe",
+    "description": "Speak with our logistics specialists about customs clearance, inland transport, warehousing, and end-to-end supply chain support."
+  },
   "info": {
-    "addressLabel": "Address",
-    "phoneLabel": "Phone",
+    "sectionBadge": "Contact Details",
+    "heading": "How to Reach Us",
+    "subheading": "Our team is ready to assist with shipments, compliance questions, and partnership inquiries.",
     "emailLabel": "Email",
-    "address": "123 Logistics Avenue, Business District, Global City",
-    "phone": "+1 (555) 123-4567",
-    "email": "info@winz-logistics.com"
+    "emailValue": "info@winz.be",
+    "phoneLabel": "Phone",
+    "phoneValue": "+32 496 32 24 67",
+    "addressLabel": "Office Address",
+    "addressValue": "Gentsesteenweg 102 D4, 9240 Zele, Belgium",
+    "hoursLabel": "Working Hours",
+    "hoursValue": "Monday – Friday: 08:00 – 18:00 (CET)\nSaturday: By appointment"
   },
   "form": {
+    "heading": "Send Us a Message",
+    "subheading": "Complete the form below and our team will respond as soon as possible.",
     "name": "Full Name",
-    "namePlaceholder": "John Doe",
+    "namePlaceholder": "Your full name",
     "email": "Email Address",
-    "emailPlaceholder": "john@example.com",
+    "emailPlaceholder": "you@company.com",
+    "phone": "Phone Number",
+    "phonePlaceholder": "+32 ...",
+    "company": "Company Name",
+    "companyPlaceholder": "Optional",
     "subject": "Subject",
-    "subjectPlaceholder": "How can we help?",
-    "message": "Your Message",
-    "messagePlaceholder": "Write your message here...",
-    "submit": "Send Message"
+    "subjectPlaceholder": "e.g. Import clearance inquiry",
+    "message": "Message",
+    "messagePlaceholder": "Tell us about your shipment, route, or logistics requirements...",
+    "submit": "Send Message",
+    "submitting": "Sending...",
+    "success": "Thank you for your message. Our logistics team will get back to you shortly.",
+    "errorSummary": "Please correct the highlighted fields before submitting."
+  },
+  "sidebar": {
+    "inquiryTitle": "Shipment Inquiry",
+    "inquiryText": "Need urgent customs or transport support? Call our operations desk for faster assistance on active shipments.",
+    "callNow": "Call operations desk",
+    "supportTitle": "Logistics Support",
+    "support": {
+      "shipment": {
+        "title": "Shipment coordination",
+        "desc": "Import, export, and transit clearance at European ports and borders."
+      },
+      "compliance": {
+        "title": "Compliance guidance",
+        "desc": "Documentation, duties, and regulatory support for EU trade."
+      },
+      "support": {
+        "title": "Dedicated specialists",
+        "desc": "Personal account support for ongoing logistics partnerships."
+      }
+    }
+  },
+  "map": {
+    "badge": "Our Location",
+    "title": "European Operations Hub",
+    "directions": "Open in Google Maps",
+    "iframeTitle": "WINZ Logistics office location in Zele, Belgium"
+  },
+  "faq": {
+    "badge": "Quick Answers",
+    "heading": "Common Questions",
+    "subheading": "Short answers before you reach out — visit our full FAQ for more detail.",
+    "viewAll": "View all FAQs",
+    "items": {
+      "customs": {
+        "q": "Which customs services do you provide?",
+        "a": "We handle import, export, and transit clearance across European seaports and border crossings, plus inland transport and warehousing."
+      },
+      "quote": {
+        "q": "How do I request a quote?",
+        "a": "Submit the contact form with your route, cargo type, and timeline. Our team will prepare a tailored logistics proposal."
+      },
+      "response": {
+        "q": "How quickly will you respond?",
+        "a": "We aim to reply to business inquiries within one business day. Urgent shipment matters can be directed to our phone line."
+      }
+    }
   }
 }

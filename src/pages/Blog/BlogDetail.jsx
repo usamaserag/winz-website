@@ -7,6 +7,8 @@ import {
 } from 'lucide-react';
 import { getBlogBySlug } from '../../data/siteData';
 import { useSEOMeta } from '../../hooks/useSEOMeta';
+import PageHeroShell from '../../components/logistics/PageHeroShell';
+import PageHero from '../../components/logistics/PageHero';
 
 // ─── Helpers ────────────────────────────────────────────────────────────────
 const clean = (str) => (str || '').trim().replace(/:+$/, '');
@@ -233,51 +235,34 @@ export default function BlogDetail() {
   return (
     <div className="flex flex-col min-h-screen bg-gray-50/50">
 
-      {/* Dark Hero Banner — matches Blog & FAQ page style */}
-      <section className="relative min-h-[40vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-900 via-primary-900 to-gray-900 pt-28 pb-16">
-        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-          <div className="w-[800px] h-[800px] rounded-full border border-white/5" />
-        </div>
-        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-          <div className="w-[500px] h-[500px] rounded-full border border-white/5" />
-        </div>
-
-        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 w-full text-center">
-          {/* Breadcrumbs inside hero */}
-          <nav className="flex items-center justify-center gap-2 text-xs text-white/50 mb-6" aria-label="Breadcrumb">
-            <Link to="/" className="hover:text-white/80 transition-colors">Home</Link>
+      <PageHeroShell size="compact" className="pb-12">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 w-full text-center">
+          <nav className="flex items-center justify-center gap-2 text-xs text-white/60 mb-6" aria-label="Breadcrumb">
+            <Link to="/" className="hover:text-white transition-colors">Home</Link>
             <ChevronRight className="w-3 h-3 opacity-50" />
-            <Link to="/blog" className="hover:text-white/80 transition-colors">Blog</Link>
+            <Link to="/blog" className="hover:text-white transition-colors">Blog</Link>
             <ChevronRight className="w-3 h-3 opacity-50" />
-            <span className="text-white/70 line-clamp-1 max-w-[200px]">{title}</span>
+            <span className="text-white/80 line-clamp-1 max-w-[200px]">{title}</span>
           </nav>
 
-          {/* Category & Keyword badges */}
           <div className="flex flex-wrap items-center justify-center gap-2 mb-5">
-            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-500/20 text-primary-300 border border-primary-500/30 text-xs font-semibold">
+            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-500/15 text-primary-200 border border-primary-400/25 text-xs font-semibold">
               <Bookmark className="w-3.5 h-3.5" />
               Customs Guide
             </span>
             {keywords && (
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 text-white/70 border border-white/20 text-xs font-medium">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 text-white/80 border border-white/15 text-xs font-medium">
                 <Tag className="w-3.5 h-3.5" />
                 {keywords}
               </span>
             )}
           </div>
 
-          {/* Article Title */}
-          <motion.h1
-            initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4 }}
-            className="text-2xl md:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight mb-6"
-          >
+          <h1 className="text-2xl md:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight mb-6">
             {title}
-          </motion.h1>
+          </h1>
 
-          {/* Meta info */}
-          <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-white/50">
+          <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-slate-400">
             <div className="flex items-center gap-2">
               <Calendar className="w-4 h-4" />
               <span>May 19, 2026</span>
@@ -288,7 +273,7 @@ export default function BlogDetail() {
             </div>
           </div>
         </div>
-      </section>
+      </PageHeroShell>
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-12 pb-20">
 

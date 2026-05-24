@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { Menu, X, Globe, ChevronDown, PackagePlus, PackageOpen, Route } from 'lucide-react';
+import { Menu, X, ChevronDown, PackagePlus, PackageOpen, Route } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Logo from '../common/Logo';
 
@@ -16,9 +16,14 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
+    handleScroll();
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  useEffect(() => {
+    setScrolled(window.scrollY > 50);
+  }, [location.pathname]);
 
   // Close dropdown on outside click
   useEffect(() => {
@@ -43,30 +48,28 @@ const Navbar = () => {
 
   const isActive = (path) => location.pathname === path;
   const isServicesActive = ['/services', '/import', '/export', '/transit', '/transport', '/warehouse'].includes(location.pathname);
-  const isLightPage = location.pathname === '/contact' || location.pathname === '/import';
-  const isTransparent = !isLightPage && !scrolled;
 
-  const navBg = isLightPage
-    ? (scrolled ? 'bg-white shadow-md py-3' : 'bg-white py-5')
-    : (isTransparent ? 'bg-transparent py-5' : 'bg-white shadow-md py-3');
+  const navBg = scrolled
+    ? 'bg-white/95 backdrop-blur-md shadow-sm border-b border-primary-100 py-3'
+    : 'bg-white/90 backdrop-blur-md border-b border-primary-50 py-4';
+
+  const navLinkBase = 'text-sm font-medium transition-colors';
+  const navLinkActive = 'text-primary-600 font-semibold';
+  const navLinkIdle = 'text-slate-600 hover:text-primary-500';
 
   const linkClass = (path) =>
-    `text-sm font-medium transition-colors hover:text-primary-500 ${
-      (!isTransparent)
-        ? (isActive(path) ? 'text-primary-600' : 'text-gray-700')
-        : (isActive(path) ? 'text-primary-300' : 'text-white/90')
-    }`;
+    `${navLinkBase} ${isActive(path) ? navLinkActive : navLinkIdle}`;
 
-  const servicesLabelClass = `text-sm font-medium transition-colors hover:text-primary-500 cursor-pointer flex items-center gap-1 ${
-    (!isTransparent)
-      ? (isServicesActive ? 'text-primary-600' : 'text-gray-700')
-      : (isServicesActive ? 'text-primary-300' : 'text-white/90')
+  const servicesLabelClass = `${navLinkBase} cursor-pointer flex items-center gap-1 ${
+    isServicesActive ? navLinkActive : navLinkIdle
   }`;
 
-  const langBtnColor = !isTransparent
-    ? 'border-gray-200 text-gray-700 hover:bg-gray-50'
-    : 'border-white/30 text-white hover:bg-white/10';
-  const hamburgerColor = !isTransparent ? 'text-gray-900' : 'text-white';
+  const chevronClass = `w-4 h-4 text-primary-500 transition-transform duration-200 ${
+    servicesOpen ? 'rotate-180' : ''
+  }`;
+
+  const hamburgerClass =
+    'p-2 rounded-md text-primary-600 hover:text-primary-700 hover:bg-primary-50';
 
   const serviceItems = [
     { label: 'Import',  path: '/import',  icon: <PackagePlus className="w-5 h-5" /> },
@@ -78,7 +81,7 @@ const Navbar = () => {
     <nav className={`fixed w-full z-50 transition-all duration-300 ${navBg}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
-          <Logo className="h-10 w-28" variant={isTransparent ? 'white' : 'default'} />
+          <Logo className="h-10 w-28" variant="default" />
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
@@ -100,9 +103,7 @@ const Navbar = () => {
                   aria-expanded={servicesOpen}
                 >
                   Customs Clearance Services
-                  <ChevronDown
-                    className={`w-4 h-4 transition-transform duration-200 ${servicesOpen ? 'rotate-180' : ''}`}
-                  />
+                  <ChevronDown className={chevronClass} aria-hidden="true" />
                 </button>
 
                 <AnimatePresence>
@@ -120,10 +121,10 @@ const Navbar = () => {
                           to={item.path}
                           onClick={() => setServicesOpen(false)}
                           className={`flex items-center gap-3 px-5 py-3.5 text-sm font-medium transition-colors hover:bg-primary-50 hover:text-primary-600 ${
-                            isActive(item.path) ? 'bg-primary-50 text-primary-600' : 'text-gray-700'
+                            isActive(item.path) ? 'bg-primary-50 text-primary-600 font-semibold' : 'text-slate-600'
                           }`}
                         >
-                          <span className={`${isActive(item.path) ? 'text-primary-500' : 'text-gray-400'}`}>
+                          <span className={isActive(item.path) ? 'text-primary-500' : 'text-primary-300'}>
                             {item.icon}
                           </span>
                           {i18n.language === 'ar' ? item.labelAr : item.label}
@@ -149,6 +150,10 @@ const Navbar = () => {
               <Link to="/faq" className={linkClass('/faq')}>
                 FAQ
               </Link>
+
+              <Link to="/contact" className={linkClass('/contact')}>
+                {t('nav.contact')}
+              </Link>
             </div>
 
           </div>
@@ -156,8 +161,10 @@ const Navbar = () => {
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center">
             <button
+              type="button"
               onClick={() => setIsOpen(!isOpen)}
-              className={`p-2 rounded-md ${hamburgerColor}`}
+              className={hamburgerClass}
+              aria-label={isOpen ? 'Close menu' : 'Open menu'}
             >
               {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
@@ -186,8 +193,10 @@ const Navbar = () => {
                     key={link.path}
                     to={link.path}
                     onClick={() => setIsOpen(false)}
-                    className={`block px-3 py-2.5 rounded-md text-base font-medium ${
-                      isActive(link.path) ? 'bg-primary-50 text-primary-600' : 'text-gray-900 hover:bg-gray-50'
+                    className={`block px-3 py-2.5 rounded-md text-base font-medium transition-colors ${
+                      isActive(link.path)
+                        ? 'bg-primary-50 text-primary-600 font-semibold'
+                        : 'text-slate-700 hover:text-primary-500 hover:bg-primary-50/50'
                     }`}
                   >
                     {link.name}
@@ -198,12 +207,16 @@ const Navbar = () => {
                 <div>
                   <button
                     onClick={() => setMobileServicesOpen((o) => !o)}
-                    className={`w-full flex items-center justify-between px-3 py-2.5 rounded-md text-base font-medium ${
-                      isServicesActive ? 'bg-primary-50 text-primary-600' : 'text-gray-900 hover:bg-gray-50'
+                    className={`w-full flex items-center justify-between px-3 py-2.5 rounded-md text-base font-medium transition-colors ${
+                      isServicesActive
+                        ? 'bg-primary-50 text-primary-600 font-semibold'
+                        : 'text-slate-700 hover:text-primary-500 hover:bg-primary-50/50'
                     }`}
                   >
                     Customs Clearance Services
-                    <ChevronDown className={`w-4 h-4 transition-transform ${mobileServicesOpen ? 'rotate-180' : ''}`} />
+                    <ChevronDown
+                      className={`w-4 h-4 text-primary-500 transition-transform ${mobileServicesOpen ? 'rotate-180' : ''}`}
+                    />
                   </button>
 
                   <AnimatePresence>
@@ -220,7 +233,9 @@ const Navbar = () => {
                             to={item.path}
                             onClick={() => setIsOpen(false)}
                             className={`flex items-center gap-3 pl-7 pr-3 py-2.5 text-sm font-medium rounded-md transition-colors ${
-                              isActive(item.path) ? 'text-primary-600 bg-primary-50' : 'text-gray-700 hover:bg-gray-50'
+                              isActive(item.path)
+                                ? 'text-primary-600 bg-primary-50 font-semibold'
+                                : 'text-slate-600 hover:text-primary-500 hover:bg-primary-50/50'
                             }`}
                           >
                             {item.icon}
@@ -237,13 +252,16 @@ const Navbar = () => {
                   { name: 'Warehouse', path: '/warehouse' },
                   { name: 'Blog',      path: '/blog' },
                   { name: 'FAQ',       path: '/faq' },
+                  { name: t('nav.contact'), path: '/contact' },
                 ].map((link) => (
                   <Link
                     key={link.path}
                     to={link.path}
                     onClick={() => setIsOpen(false)}
-                    className={`block px-3 py-2.5 rounded-md text-base font-medium ${
-                      isActive(link.path) ? 'bg-primary-50 text-primary-600' : 'text-gray-900 hover:bg-gray-50'
+                    className={`block px-3 py-2.5 rounded-md text-base font-medium transition-colors ${
+                      isActive(link.path)
+                        ? 'bg-primary-50 text-primary-600 font-semibold'
+                        : 'text-slate-700 hover:text-primary-500 hover:bg-primary-50/50'
                     }`}
                   >
                     {link.name}

@@ -7,17 +7,9 @@ import {
   Zap, Bell, History, ChevronRight, ArrowRight
 } from 'lucide-react';
 import usePageTitle from '../../hooks/usePageTitle';
-
-/* ── animation variants ── */
-const fadeUp  = { hidden: { opacity: 0, y: 24 }, visible: { opacity: 1, y: 0, transition: { duration: 0.5 } } };
-const fadeIn  = { hidden: { opacity: 0 },         visible: { opacity: 1,      transition: { duration: 0.45 } } };
-
-/* ── helper ── */
-const SectionBadge = ({ label }) => (
-  <span className="inline-block py-1 px-4 rounded-full bg-primary-50 text-primary-600 border border-primary-200 text-sm font-semibold tracking-wide mb-4">
-    {label}
-  </span>
-);
+import PageHeroShell from '../../components/logistics/PageHeroShell';
+import SectionBadge from '../../components/logistics/SectionBadge';
+import { fadeUp } from '../../components/logistics/motionVariants';
 
 /* demo timeline steps */
 const DEMO_ID = 'WINZ-2024-00123456';
@@ -98,45 +90,22 @@ const Tracking = () => {
   return (
     <div className="flex flex-col min-h-screen">
 
-      {/* ─────────────── HERO + SEARCH ─────────────── */}
-      <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-gradient-to-br from-gray-900 via-primary-900 to-gray-900 pt-28 pb-20">
-        {/* decorative rings */}
-        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-          <div className="w-[700px] h-[700px] rounded-full border border-white/5" />
-        </div>
-
-        <div className="relative z-10 w-full max-w-3xl mx-auto px-4 text-center">
-          <motion.div initial="hidden" animate="visible" variants={fadeUp}>
-            <SectionBadge label={t('tracking:hero.badge')} />
-          </motion.div>
-
-          <motion.h1
-            initial="hidden" animate="visible" variants={fadeUp}
-            transition={{ delay: 0.1 }}
-            className="text-4xl md:text-6xl font-extrabold text-white tracking-tight leading-tight mb-6"
-          >
+      <PageHeroShell size="full">
+        <div className="w-full max-w-3xl mx-auto px-4 text-center">
+          <SectionBadge label={t('tracking:hero.badge')} variant="dark" />
+          <h1 className="text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight mb-6 mt-4">
             {t('tracking:hero.title')}
-          </motion.h1>
-
-          <motion.p
-            initial="hidden" animate="visible" variants={fadeUp}
-            transition={{ delay: 0.2 }}
-            className="text-lg text-gray-300 mb-10"
-          >
+          </h1>
+          <p className="text-lg text-slate-300 mb-10">
             {t('tracking:hero.subtitle')}
-          </motion.p>
-
-          {/* Search Box / Unavailable Message */}
-          <motion.div
-            initial="hidden" animate="visible" variants={fadeUp}
-            transition={{ delay: 0.3 }}
-          >
-            <div className="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20 shadow-2xl">
-               <p className="text-white text-lg font-medium">Online tracking is currently unavailable. Please contact our support for your shipment status.</p>
-            </div>
-          </motion.div>
+          </p>
+          <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/15">
+            <p className="text-white text-lg font-medium">
+              Online tracking is currently unavailable. Please contact our support for your shipment status.
+            </p>
+          </div>
         </div>
-      </section>
+      </PageHeroShell>
 
       {/* ─────────────── TRACKING RESULT ─────────────── */}
       <AnimatePresence>
@@ -217,7 +186,6 @@ const Tracking = () => {
                 initial="hidden" whileInView="visible" viewport={{ once: true }}
                 variants={fadeUp}
                 transition={{ delay: i * 0.1 }}
-                whileHover={{ y: -8 }}
                 className="group p-8 rounded-2xl border border-gray-100 hover:border-primary-200 hover:shadow-xl hover:shadow-primary-500/10 transition-all bg-white text-center"
               >
                 <div className="w-16 h-16 bg-primary-50 group-hover:bg-primary-500 rounded-2xl flex items-center justify-center mx-auto mb-6 transition-colors duration-300">

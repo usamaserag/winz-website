@@ -16,12 +16,14 @@ import WarehousePage from "./pages/Warehouse/Warehouse";
 import Blog from "./pages/Blog/Blog";
 import BlogDetail from "./pages/Blog/BlogDetail";
 import FAQ from "./pages/FAQ/FAQ";
-import { useVisitorTracker } from "./hooks/useVisitorTracker";
 import ScrollToTop from "./components/ScrollToTop";
+import { CookieProvider } from "./context/CookieContext";
+import CookieConsentManager from "./components/cookies/CookieConsentManager";
+import ConsentAwareVisitorTracker from "./components/cookies/ConsentAwareVisitorTracker";
+import PrivacyPolicy from "./pages/Legal/PrivacyPolicy";
+import CookiesPolicy from "./pages/Legal/CookiesPolicy";
 
 function App() {
-  // Track visitors periodically every 3 minutes starting immediately on load
-  useVisitorTracker();
 
   // Language is always English — set document attributes once on mount
   useEffect(() => {
@@ -30,24 +32,31 @@ function App() {
   }, []);
 
   return (
-    <BrowserRouter>
-      <ScrollToTop />
-      <Routes>
-        <Route path="/" element={<MainLayout />}>
-          <Route index element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="services" element={<Services />} />
-          <Route path="import" element={<Import />} />
-          <Route path="export" element={<Export />} />
-          <Route path="transit" element={<Transit />} />
-          <Route path="transport" element={<Transport />} />
-          <Route path="warehouse" element={<WarehousePage />} />
-          <Route path="blog" element={<Blog />} />
-          <Route path="blog/:slug" element={<BlogDetail />} />
-          <Route path="faq" element={<FAQ />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <CookieProvider>
+      <ConsentAwareVisitorTracker />
+      <BrowserRouter>
+        <ScrollToTop />
+        <Routes>
+          <Route path="/" element={<MainLayout />}>
+            <Route index element={<Home />} />
+            <Route path="about" element={<About />} />
+            <Route path="services" element={<Services />} />
+            <Route path="import" element={<Import />} />
+            <Route path="export" element={<Export />} />
+            <Route path="transit" element={<Transit />} />
+            <Route path="transport" element={<Transport />} />
+            <Route path="warehouse" element={<WarehousePage />} />
+            <Route path="blog" element={<Blog />} />
+            <Route path="blog/:slug" element={<BlogDetail />} />
+            <Route path="faq" element={<FAQ />} />
+            <Route path="contact" element={<Contact />} />
+            <Route path="privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="cookies-policy" element={<CookiesPolicy />} />
+          </Route>
+        </Routes>
+        <CookieConsentManager />
+      </BrowserRouter>
+    </CookieProvider>
   );
 }
 

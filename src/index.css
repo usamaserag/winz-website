@@ -15,3 +15,29 @@
     font-family: 'Inter', sans-serif;
   }
 }
+
+@keyframes route-flow {
+  to {
+    stroke-dashoffset: -24;
+  }
+}
+
+.route-line {
+  stroke-dasharray: 6 8;
+  animation: route-flow 14s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .route-line {
+    animation: none !important;
+  }
+}

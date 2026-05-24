@@ -1,81 +1,178 @@
+import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { ArrowRight, Package, HelpCircle, ShieldCheck } from 'lucide-react';
 import usePageTitle from '../../hooks/usePageTitle';
+import PageHero from '../../components/logistics/PageHero';
+import SectionBadge from '../../components/logistics/SectionBadge';
+import ContactInfoCards from '../../components/contact/ContactInfoCards';
+import ContactForm from '../../components/contact/ContactForm';
+import ContactMap from '../../components/contact/ContactMap';
+import { fadeUp } from '../../components/logistics/motionVariants';
+
+const SUPPORT_POINTS = [
+  { icon: Package, key: 'shipment' },
+  { icon: ShieldCheck, key: 'compliance' },
+  { icon: HelpCircle, key: 'support' },
+];
+
+const MINI_FAQ_KEYS = ['customs', 'quote', 'response'];
 
 const Contact = () => {
-  const { t, i18n } = useTranslation(['contact']);
-  const isRTL = i18n.language === 'ar';
-  usePageTitle(t('contact:title'));
+  const { t } = useTranslation(['contact', 'common']);
+  usePageTitle(t('contact:metaTitle'));
 
   return (
-    <div className="min-h-screen bg-gray-50 pt-28 pb-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.35 }}
+      className="flex flex-col"
+    >
+      <PageHero
+        size="medium"
+        badge={t('contact:hero.badge')}
+        title={t('contact:hero.title')}
+        highlight={t('contact:hero.highlight')}
+        description={t('contact:hero.description')}
+      />
 
-        {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <motion.h1
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6"
-          >
-            {t('contact:title')}
-          </motion.h1>
-          <motion.p
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1 }}
-            className="text-lg text-gray-600"
-          >
-            {t('contact:subtitle')}
-          </motion.p>
-        </div>
-
-        <div className="max-w-3xl mx-auto">
-          {/* Contact Information */}
+      <section className="py-16 md:py-20 bg-slate-50 border-b border-slate-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
-            className="space-y-8"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeUp}
+            className="text-center max-w-2xl mx-auto mb-12"
           >
-            <div className="bg-white p-8 md:p-12 rounded-2xl shadow-xl shadow-gray-200/50 border border-gray-100 flex flex-col gap-10">
+            <SectionBadge label={t('contact:info.sectionBadge')} />
+            <h2 className="text-3xl font-bold text-navy-900 mb-3">
+              {t('contact:info.heading')}
+            </h2>
+            <p className="text-slate-600">{t('contact:info.subheading')}</p>
+          </motion.div>
+          <ContactInfoCards />
+        </div>
+      </section>
 
-              <div className="flex items-start gap-6">
-                <div className="w-14 h-14 bg-primary-50 rounded-full flex items-center justify-center flex-shrink-0">
-                  <MapPin className="w-7 h-7 text-primary-600" />
-                </div>
-                <div>
-                  <h3 className="font-bold text-gray-900 text-lg mb-2">{t('contact:info.addressLabel')}</h3>
-                  <p className="text-gray-600 text-base leading-relaxed">{t('contact:info.address')}</p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-6">
-                <div className="w-14 h-14 bg-primary-50 rounded-full flex items-center justify-center flex-shrink-0">
-                  <Phone className="w-7 h-7 text-primary-600" />
-                </div>
-                <div>
-                  <h3 className="font-bold text-gray-900 text-lg mb-2">{t('contact:info.phoneLabel')}</h3>
-                  <p className="text-gray-600 text-base" dir="ltr">{t('contact:info.phone')}</p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-6">
-                <div className="w-14 h-14 bg-primary-50 rounded-full flex items-center justify-center flex-shrink-0">
-                  <Mail className="w-7 h-7 text-primary-600" />
-                </div>
-                <div>
-                  <h3 className="font-bold text-gray-900 text-lg mb-2">{t('contact:info.emailLabel')}</h3>
-                  <p className="text-gray-600 text-base">{t('contact:info.email')}</p>
-                </div>
-              </div>
-
+      <section className="py-16 md:py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-12">
+            <div className="lg:col-span-2">
+              <ContactForm />
             </div>
+
+            <motion.aside
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={fadeUp}
+              className="space-y-6"
+            >
+              <div className="rounded-2xl border border-primary-200 bg-primary-50 p-6">
+                <h3 className="text-lg font-bold text-navy-900 mb-2">
+                  {t('contact:sidebar.inquiryTitle')}
+                </h3>
+                <p className="text-sm text-slate-600 leading-relaxed mb-4">
+                  {t('contact:sidebar.inquiryText')}
+                </p>
+                <a
+                  href={`tel:${t('contact:info.phoneValue').replace(/\s/g, '')}`}
+                  className="text-sm font-semibold text-primary-600 hover:text-primary-700"
+                >
+                  {t('contact:sidebar.callNow')}
+                </a>
+              </div>
+
+              <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6">
+                <h3 className="text-lg font-bold text-navy-900 mb-4">
+                  {t('contact:sidebar.supportTitle')}
+                </h3>
+                <ul className="space-y-4">
+                  {SUPPORT_POINTS.map(({ icon: Icon, key }) => (
+                    <li key={key} className="flex gap-3">
+                      <div className="w-9 h-9 rounded-lg bg-white border border-slate-200 flex items-center justify-center shrink-0">
+                        <Icon className="w-4 h-4 text-primary-600" aria-hidden="true" />
+                      </div>
+                      <div>
+                        <p className="text-sm font-semibold text-navy-900">
+                          {t(`contact:sidebar.support.${key}.title`)}
+                        </p>
+                        <p className="text-xs text-slate-600 mt-0.5 leading-relaxed">
+                          {t(`contact:sidebar.support.${key}.desc`)}
+                        </p>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </motion.aside>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 md:py-20 bg-slate-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <ContactMap />
+        </div>
+      </section>
+
+      <section className="py-16 md:py-20 bg-white border-t border-slate-200">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeUp}
+            className="text-center mb-10"
+          >
+            <SectionBadge label={t('contact:faq.badge')} />
+            <h2 className="text-2xl md:text-3xl font-bold text-navy-900 mb-3">
+              {t('contact:faq.heading')}
+            </h2>
+            <p className="text-slate-600">{t('contact:faq.subheading')}</p>
+          </motion.div>
+
+          <div className="space-y-3">
+            {MINI_FAQ_KEYS.map((key, i) => (
+              <motion.div
+                key={key}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={fadeUp}
+                transition={{ delay: i * 0.06 }}
+                className="rounded-xl border border-slate-200 bg-slate-50 px-5 py-4"
+              >
+                <h3 className="text-sm font-semibold text-navy-900 mb-1">
+                  {t(`contact:faq.items.${key}.q`)}
+                </h3>
+                <p className="text-sm text-slate-600 leading-relaxed">
+                  {t(`contact:faq.items.${key}.a`)}
+                </p>
+              </motion.div>
+            ))}
+          </div>
+
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeUp}
+            className="text-center mt-8"
+          >
+            <Link
+              to="/faq"
+              className="inline-flex items-center gap-2 text-sm font-semibold text-primary-600 hover:text-primary-700 transition-colors"
+            >
+              {t('contact:faq.viewAll')}
+              <ArrowRight className="w-4 h-4" aria-hidden="true" />
+            </Link>
           </motion.div>
         </div>
-      </div>
-    </div>
+      </section>
+    </motion.div>
   );
 };
 

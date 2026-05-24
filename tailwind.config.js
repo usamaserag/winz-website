@@ -8,16 +8,29 @@ export default {
     extend: {
       colors: {
         primary: {
-          50:  '#edf8ff', // near-white tint — ultra-light backgrounds, hover surfaces
-          100: '#d6efff', // very light — disabled backgrounds, subtle highlights
-          200: '#aedeff', // light — light-mode card borders, soft badges
-          300: '#72cbff', // medium-light — placeholder text, muted icons
-          400: '#3dbcff', // medium — secondary buttons, active indicators
-          500: '#31b7ff', // BASE — primary buttons, key CTAs, brand identity
-          600: '#0a9de8', // medium-dark — hover states for primary buttons
-          700: '#0880c2', // dark — focus rings, active nav links, pressed states
-          800: '#0a6499', // deep — headings on light bg, dark text accents
-          900: '#0b4a72', // deepest — high-contrast text on white, dark-mode bases
+          50:  '#edf8ff',
+          100: '#d6efff',
+          200: '#aedeff',
+          300: '#72cbff',
+          400: '#3dbcff',
+          500: '#31b7ff',
+          600: '#0a9de8',
+          700: '#0880c2',
+          800: '#0a6499',
+          900: '#0b4a72',
+        },
+        navy: {
+          50:  '#f4f7fb',
+          100: '#e8eef6',
+          200: '#cdd9ea',
+          300: '#a3b8d4',
+          400: '#6f8fb3',
+          500: '#4a6f94',
+          600: '#375a7a',
+          700: '#2d4963',
+          800: '#1e3348',
+          900: '#152638',
+          950: '#0c1826',
         },
       },
       fontFamily: {
