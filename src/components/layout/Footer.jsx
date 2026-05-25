@@ -102,7 +102,7 @@ const Footer = () => {
                     to="/import"
                     className="text-slate-600 hover:text-primary-600 transition-colors"
                   >
-                    Import Clearance
+                    {t("nav.clearance.import")}
                   </Link>
                 </li>
                 <li>
@@ -110,7 +110,7 @@ const Footer = () => {
                     to="/export"
                     className="text-slate-600 hover:text-primary-600 transition-colors"
                   >
-                    Export Clearance
+                    {t("nav.clearance.export")}
                   </Link>
                 </li>
                 <li>
@@ -118,7 +118,7 @@ const Footer = () => {
                     to="/transit"
                     className="text-slate-600 hover:text-primary-600 transition-colors"
                   >
-                    Transit Clearance
+                    {t("nav.clearance.transit")}
                   </Link>
                 </li>
               </ul>

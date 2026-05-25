@@ -4,6 +4,14 @@ import { useTranslation } from 'react-i18next';
 import { Menu, X, ChevronDown, PackagePlus, PackageOpen, Route } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Logo from '../common/Logo';
+import LogisticsGridPattern from '../logistics/LogisticsGridPattern';
+import { pageHasDarkHero, HERO_NAV_BG } from '../../lib/pageHasDarkHero';
+
+const CLEARANCE_SERVICES = [
+  { key: 'import', path: '/import', Icon: PackagePlus },
+  { key: 'export', path: '/export', Icon: PackageOpen },
+  { key: 'transit', path: '/transit', Icon: Route },
+];
 
 const Navbar = () => {
   const { t, i18n } = useTranslation(['common']);
@@ -25,16 +33,18 @@ const Navbar = () => {
     setScrolled(window.scrollY > 50);
   }, [location.pathname]);
 
-  // Close dropdown on outside click
+  // Close dropdown on outside click (click — not mousedown — so toggle still works)
   useEffect(() => {
+    if (!servicesOpen) return undefined;
+
     const handler = (e) => {
       if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
         setServicesOpen(false);
       }
     };
-    document.addEventListener('mousedown', handler);
-    return () => document.removeEventListener('mousedown', handler);
-  }, []);
+    document.addEventListener('click', handler);
+    return () => document.removeEventListener('click', handler);
+  }, [servicesOpen]);
 
   // Close mobile menu on route change
   useEffect(() => {
@@ -49,13 +59,22 @@ const Navbar = () => {
   const isActive = (path) => location.pathname === path;
   const isServicesActive = ['/services', '/import', '/export', '/transit', '/transport', '/warehouse'].includes(location.pathname);
 
-  const navBg = scrolled
-    ? 'bg-white/95 backdrop-blur-md shadow-sm border-b border-primary-100 py-3'
-    : 'bg-white/90 backdrop-blur-md border-b border-primary-50 py-4';
+  const onDarkHero = pageHasDarkHero(location.pathname);
+  const useHeroNav = onDarkHero && !scrolled;
+
+  const navBg = useHeroNav
+    ? `${HERO_NAV_BG} py-4`
+    : scrolled
+      ? 'bg-white/95 backdrop-blur-md shadow-sm border-b border-primary-100 py-3'
+      : 'bg-white/90 backdrop-blur-md border-b border-primary-50 py-4';
 
   const navLinkBase = 'text-sm font-medium transition-colors';
-  const navLinkActive = 'text-primary-600 font-semibold';
-  const navLinkIdle = 'text-slate-600 hover:text-primary-500';
+  const navLinkActive = useHeroNav
+    ? 'text-primary-400 font-semibold'
+    : 'text-primary-600 font-semibold';
+  const navLinkIdle = useHeroNav
+    ? 'text-slate-200 hover:text-white'
+    : 'text-slate-600 hover:text-primary-500';
 
   const linkClass = (path) =>
     `${navLinkBase} ${isActive(path) ? navLinkActive : navLinkIdle}`;
@@ -64,24 +83,24 @@ const Navbar = () => {
     isServicesActive ? navLinkActive : navLinkIdle
   }`;
 
-  const chevronClass = `w-4 h-4 text-primary-500 transition-transform duration-200 ${
-    servicesOpen ? 'rotate-180' : ''
-  }`;
+  const chevronClass = `w-4 h-4 transition-transform duration-200 ${
+    useHeroNav ? 'text-primary-400' : 'text-primary-500'
+  } ${servicesOpen ? 'rotate-180' : ''}`;
 
-  const hamburgerClass =
-    'p-2 rounded-md text-primary-600 hover:text-primary-700 hover:bg-primary-50';
-
-  const serviceItems = [
-    { label: 'Import',  path: '/import',  icon: <PackagePlus className="w-5 h-5" /> },
-    { label: 'Export',  path: '/export',  icon: <PackageOpen className="w-5 h-5" /> },
-    { label: 'Transit', path: '/transit', icon: <Route       className="w-5 h-5" /> },
-  ];
+  const hamburgerClass = useHeroNav
+    ? 'p-2 rounded-md text-white hover:text-white hover:bg-white/10'
+    : 'p-2 rounded-md text-primary-600 hover:text-primary-700 hover:bg-primary-50';
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${navBg}`}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav className={`fixed w-full z-50 transition-all duration-300 overflow-visible ${navBg}`}>
+      {useHeroNav && (
+        <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">
+          <LogisticsGridPattern variant="dark" className="opacity-80" />
+        </div>
+      )}
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
-          <Logo className="h-10 w-28" variant="default" />
+          <Logo className="h-10 w-28" variant={useHeroNav ? 'white' : 'default'} />
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
@@ -98,11 +117,13 @@ const Navbar = () => {
               {/* Services Dropdown */}
               <div className="relative" ref={dropdownRef}>
                 <button
+                  type="button"
                   className={servicesLabelClass}
                   onClick={() => setServicesOpen((o) => !o)}
                   aria-expanded={servicesOpen}
+                  aria-haspopup="true"
                 >
-                  Customs Clearance Services
+                  {t('nav.customsClearance')}
                   <ChevronDown className={chevronClass} aria-hidden="true" />
                 </button>
 
@@ -113,21 +134,31 @@ const Navbar = () => {
                       animate={{ opacity: 1, y: 0, scale: 1 }}
                       exit={{ opacity: 0, y: 8, scale: 0.97 }}
                       transition={{ duration: 0.18 }}
-                      className="absolute top-full mt-3 left-0 w-52 bg-white rounded-2xl shadow-xl shadow-gray-200/60 border border-gray-100 overflow-hidden"
+                      className={`absolute top-full z-[60] mt-3 left-0 min-w-[15rem] w-60 rounded-2xl shadow-xl overflow-hidden border ${
+                        useHeroNav
+                          ? 'bg-navy-900 border-white/10 shadow-black/30'
+                          : 'bg-white border-gray-100 shadow-gray-200/60'
+                      }`}
                     >
-                      {serviceItems.map((item) => (
+                      {CLEARANCE_SERVICES.map(({ key, path, Icon }) => (
                         <Link
-                          key={item.path}
-                          to={item.path}
+                          key={path}
+                          to={path}
                           onClick={() => setServicesOpen(false)}
-                          className={`flex items-center gap-3 px-5 py-3.5 text-sm font-medium transition-colors hover:bg-primary-50 hover:text-primary-600 ${
-                            isActive(item.path) ? 'bg-primary-50 text-primary-600 font-semibold' : 'text-slate-600'
+                          className={`flex items-center gap-3 px-5 py-3.5 text-sm font-medium transition-colors ${
+                            isActive(path)
+                              ? useHeroNav
+                                ? 'bg-white/10 text-primary-400 font-semibold'
+                                : 'bg-primary-50 text-primary-600 font-semibold'
+                              : useHeroNav
+                                ? 'text-slate-200 hover:bg-white/10 hover:text-white'
+                                : 'text-slate-600 hover:bg-primary-50 hover:text-primary-600'
                           }`}
                         >
-                          <span className={isActive(item.path) ? 'text-primary-500' : 'text-primary-300'}>
-                            {item.icon}
+                          <span className={isActive(path) ? 'text-primary-400' : useHeroNav ? 'text-primary-500/70' : 'text-primary-300'}>
+                            <Icon className="w-5 h-5" aria-hidden="true" />
                           </span>
-                          {i18n.language === 'ar' ? item.labelAr : item.label}
+                          {t(`nav.clearance.${key}`)}
                         </Link>
                       ))}
                     </motion.div>
@@ -136,19 +167,19 @@ const Navbar = () => {
               </div>
 
               <Link to="/transport" className={linkClass('/transport')}>
-                Transport
+                {t('nav.transport')}
               </Link>
 
               <Link to="/warehouse" className={linkClass('/warehouse')}>
-                Warehouse
+                {t('nav.warehouse')}
               </Link>
 
               <Link to="/blog" className={linkClass('/blog')}>
-                Blog
+                {t('nav.blog')}
               </Link>
 
               <Link to="/faq" className={linkClass('/faq')}>
-                FAQ
+                {t('nav.faq')}
               </Link>
 
               <Link to="/contact" className={linkClass('/contact')}>
@@ -179,10 +210,18 @@ const Navbar = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-white border-t border-gray-100 shadow-xl overflow-hidden"
+            className={`md:hidden border-t shadow-xl overflow-hidden ${
+              useHeroNav
+                ? 'bg-navy-950 border-white/10'
+                : 'bg-white border-gray-100'
+            }`}
           >
             <div className="px-4 py-6 space-y-1">
-              <Logo className="h-10 w-28" variant="default" onClick={() => setIsOpen(false)} />
+              <Logo
+                className="h-10 w-28"
+                variant={useHeroNav ? 'white' : 'default'}
+                onClick={() => setIsOpen(false)}
+              />
 
               <div className="pt-4 space-y-1">
                 {[
@@ -195,8 +234,12 @@ const Navbar = () => {
                     onClick={() => setIsOpen(false)}
                     className={`block px-3 py-2.5 rounded-md text-base font-medium transition-colors ${
                       isActive(link.path)
-                        ? 'bg-primary-50 text-primary-600 font-semibold'
-                        : 'text-slate-700 hover:text-primary-500 hover:bg-primary-50/50'
+                        ? useHeroNav
+                          ? 'bg-white/10 text-primary-400 font-semibold'
+                          : 'bg-primary-50 text-primary-600 font-semibold'
+                        : useHeroNav
+                          ? 'text-slate-200 hover:text-white hover:bg-white/10'
+                          : 'text-slate-700 hover:text-primary-500 hover:bg-primary-50/50'
                     }`}
                   >
                     {link.name}
@@ -206,16 +249,21 @@ const Navbar = () => {
                 {/* Mobile Services accordion */}
                 <div>
                   <button
+                    type="button"
                     onClick={() => setMobileServicesOpen((o) => !o)}
                     className={`w-full flex items-center justify-between px-3 py-2.5 rounded-md text-base font-medium transition-colors ${
                       isServicesActive
-                        ? 'bg-primary-50 text-primary-600 font-semibold'
-                        : 'text-slate-700 hover:text-primary-500 hover:bg-primary-50/50'
+                        ? useHeroNav
+                          ? 'bg-white/10 text-primary-400 font-semibold'
+                          : 'bg-primary-50 text-primary-600 font-semibold'
+                        : useHeroNav
+                          ? 'text-slate-200 hover:text-white hover:bg-white/10'
+                          : 'text-slate-700 hover:text-primary-500 hover:bg-primary-50/50'
                     }`}
                   >
-                    Customs Clearance Services
+                    {t('nav.customsClearance')}
                     <ChevronDown
-                      className={`w-4 h-4 text-primary-500 transition-transform ${mobileServicesOpen ? 'rotate-180' : ''}`}
+                      className={`w-4 h-4 transition-transform ${useHeroNav ? 'text-primary-400' : 'text-primary-500'} ${mobileServicesOpen ? 'rotate-180' : ''}`}
                     />
                   </button>
 
@@ -227,19 +275,23 @@ const Navbar = () => {
                         exit={{ opacity: 0, height: 0 }}
                         className="overflow-hidden"
                       >
-                        {serviceItems.map((item) => (
+                        {CLEARANCE_SERVICES.map(({ key, path, Icon }) => (
                           <Link
-                            key={item.path}
-                            to={item.path}
+                            key={path}
+                            to={path}
                             onClick={() => setIsOpen(false)}
                             className={`flex items-center gap-3 pl-7 pr-3 py-2.5 text-sm font-medium rounded-md transition-colors ${
-                              isActive(item.path)
-                                ? 'text-primary-600 bg-primary-50 font-semibold'
-                                : 'text-slate-600 hover:text-primary-500 hover:bg-primary-50/50'
+                              isActive(path)
+                                ? useHeroNav
+                                  ? 'text-primary-400 bg-white/10 font-semibold'
+                                  : 'text-primary-600 bg-primary-50 font-semibold'
+                                : useHeroNav
+                                  ? 'text-slate-200 hover:text-white hover:bg-white/10'
+                                  : 'text-slate-600 hover:text-primary-500 hover:bg-primary-50/50'
                             }`}
                           >
-                            {item.icon}
-                            {i18n.language === 'ar' ? item.labelAr : item.label}
+                            <Icon className="w-5 h-5 shrink-0" aria-hidden="true" />
+                            {t(`nav.clearance.${key}`)}
                           </Link>
                         ))}
                       </motion.div>
@@ -248,10 +300,10 @@ const Navbar = () => {
                 </div>
 
                 {[
-                  { name: 'Transport', path: '/transport' },
-                  { name: 'Warehouse', path: '/warehouse' },
-                  { name: 'Blog',      path: '/blog' },
-                  { name: 'FAQ',       path: '/faq' },
+                  { name: t('nav.transport'), path: '/transport' },
+                  { name: t('nav.warehouse'), path: '/warehouse' },
+                  { name: t('nav.blog'), path: '/blog' },
+                  { name: t('nav.faq'), path: '/faq' },
                   { name: t('nav.contact'), path: '/contact' },
                 ].map((link) => (
                   <Link
@@ -260,8 +312,12 @@ const Navbar = () => {
                     onClick={() => setIsOpen(false)}
                     className={`block px-3 py-2.5 rounded-md text-base font-medium transition-colors ${
                       isActive(link.path)
-                        ? 'bg-primary-50 text-primary-600 font-semibold'
-                        : 'text-slate-700 hover:text-primary-500 hover:bg-primary-50/50'
+                        ? useHeroNav
+                          ? 'bg-white/10 text-primary-400 font-semibold'
+                          : 'bg-primary-50 text-primary-600 font-semibold'
+                        : useHeroNav
+                          ? 'text-slate-200 hover:text-white hover:bg-white/10'
+                          : 'text-slate-700 hover:text-primary-500 hover:bg-primary-50/50'
                     }`}
                   >
                     {link.name}

@@ -3,6 +3,16 @@
     "home": "Home",
     "about": "About Us",
     "services": "Services",
+    "customsClearance": "Customs Clearance Services",
+    "clearance": {
+      "import": "Import Clearance",
+      "export": "Export Clearance",
+      "transit": "Transit Clearance"
+    },
+    "transport": "Transport",
+    "warehouse": "Warehouse",
+    "blog": "Blog",
+    "faq": "FAQ",
     "tracking": "Tracking",
     "contact": "Contact Us"
   },
@@ -31,6 +41,9 @@
     "secondary": "View FAQs"
   },
   "cookies": {
+    "gate": {
+      "loading": "Loading…"
+    },
     "banner": {
       "title": "We value your privacy",
       "description": "We use cookies to improve your experience, analyze site traffic, and enhance performance. Learn more in our",

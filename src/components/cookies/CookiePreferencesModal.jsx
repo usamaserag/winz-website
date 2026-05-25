@@ -14,6 +14,7 @@ const CookiePreferencesModal = () => {
   const {
     isPreferencesOpen,
     closePreferences,
+    canDismissPreferences,
     consent,
     categories,
     savePreferences,
@@ -33,7 +34,7 @@ const CookiePreferencesModal = () => {
   }, [isPreferencesOpen, consent]);
 
   useEffect(() => {
-    if (!isPreferencesOpen) return;
+    if (!isPreferencesOpen || !canDismissPreferences) return;
 
     const handleEscape = (event) => {
       if (event.key === 'Escape') closePreferences();
@@ -41,7 +42,7 @@ const CookiePreferencesModal = () => {
 
     document.addEventListener('keydown', handleEscape);
     return () => document.removeEventListener('keydown', handleEscape);
-  }, [isPreferencesOpen, closePreferences]);
+  }, [isPreferencesOpen, canDismissPreferences, closePreferences]);
 
   const handleCategoryChange = (categoryId, enabled) => {
     setDraft((prev) => ({ ...prev, [categoryId]: enabled }));
@@ -67,7 +68,7 @@ const CookiePreferencesModal = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
-            onClick={closePreferences}
+            onClick={canDismissPreferences ? closePreferences : undefined}
           />
 
           <motion.div
@@ -97,14 +98,16 @@ const CookiePreferencesModal = () => {
                   {t('cookies.modal.description')}
                 </p>
               </div>
-              <button
-                type="button"
-                onClick={closePreferences}
-                className="rounded-lg p-2 text-slate-500 transition-colors hover:bg-slate-100 hover:text-slate-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500"
-                aria-label={t('cookies.modal.close')}
-              >
-                <X className="h-5 w-5" aria-hidden="true" />
-              </button>
+              {canDismissPreferences && (
+                <button
+                  type="button"
+                  onClick={closePreferences}
+                  className="rounded-lg p-2 text-slate-500 transition-colors hover:bg-slate-100 hover:text-slate-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500"
+                  aria-label={t('cookies.modal.close')}
+                >
+                  <X className="h-5 w-5" aria-hidden="true" />
+                </button>
+              )}
             </div>
 
             <div className="flex-1 space-y-4 overflow-y-auto px-5 py-5 sm:px-6">

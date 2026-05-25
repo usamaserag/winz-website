@@ -18,7 +18,7 @@ import BlogDetail from "./pages/Blog/BlogDetail";
 import FAQ from "./pages/FAQ/FAQ";
 import ScrollToTop from "./components/ScrollToTop";
 import { CookieProvider } from "./context/CookieContext";
-import CookieConsentManager from "./components/cookies/CookieConsentManager";
+import CookieConsentGate from "./components/cookies/CookieConsentGate";
 import ConsentAwareVisitorTracker from "./components/cookies/ConsentAwareVisitorTracker";
 import PrivacyPolicy from "./pages/Legal/PrivacyPolicy";
 import CookiesPolicy from "./pages/Legal/CookiesPolicy";
@@ -36,25 +36,26 @@ function App() {
       <ConsentAwareVisitorTracker />
       <BrowserRouter>
         <ScrollToTop />
-        <Routes>
-          <Route path="/" element={<MainLayout />}>
-            <Route index element={<Home />} />
-            <Route path="about" element={<About />} />
-            <Route path="services" element={<Services />} />
-            <Route path="import" element={<Import />} />
-            <Route path="export" element={<Export />} />
-            <Route path="transit" element={<Transit />} />
-            <Route path="transport" element={<Transport />} />
-            <Route path="warehouse" element={<WarehousePage />} />
-            <Route path="blog" element={<Blog />} />
-            <Route path="blog/:slug" element={<BlogDetail />} />
-            <Route path="faq" element={<FAQ />} />
-            <Route path="contact" element={<Contact />} />
-            <Route path="privacy-policy" element={<PrivacyPolicy />} />
-            <Route path="cookies-policy" element={<CookiesPolicy />} />
-          </Route>
-        </Routes>
-        <CookieConsentManager />
+        <CookieConsentGate>
+          <Routes>
+            <Route path="/" element={<MainLayout />}>
+              <Route index element={<Home />} />
+              <Route path="about" element={<About />} />
+              <Route path="services" element={<Services />} />
+              <Route path="import" element={<Import />} />
+              <Route path="export" element={<Export />} />
+              <Route path="transit" element={<Transit />} />
+              <Route path="transport" element={<Transport />} />
+              <Route path="warehouse" element={<WarehousePage />} />
+              <Route path="blog" element={<Blog />} />
+              <Route path="blog/:slug" element={<BlogDetail />} />
+              <Route path="faq" element={<FAQ />} />
+              <Route path="contact" element={<Contact />} />
+              <Route path="privacy-policy" element={<PrivacyPolicy />} />
+              <Route path="cookies-policy" element={<CookiesPolicy />} />
+            </Route>
+          </Routes>
+        </CookieConsentGate>
       </BrowserRouter>
     </CookieProvider>
   );

@@ -11,6 +11,7 @@ const CookieBanner = () => {
   return (
     <motion.aside
       role="dialog"
+      aria-modal="true"
       aria-labelledby="cookie-banner-title"
       aria-describedby="cookie-banner-description"
       aria-live="polite"
@@ -18,7 +19,7 @@ const CookieBanner = () => {
       animate={{ y: 0, opacity: 1 }}
       exit={{ y: '100%', opacity: 0 }}
       transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
-      className="fixed inset-x-0 bottom-0 z-[90] border-t border-slate-200/80 bg-white/95 shadow-[0_-8px_30px_rgba(15,23,42,0.12)] backdrop-blur-md"
+      className="fixed inset-x-0 bottom-0 z-[90] border-t border-slate-200/80 bg-white shadow-[0_-8px_30px_rgba(15,23,42,0.18)]"
     >
       <div className="mx-auto flex max-w-7xl flex-col gap-5 px-4 py-5 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:gap-8 lg:py-6">
         <div className="flex gap-4 lg:max-w-3xl">

@@ -82,6 +82,8 @@ export function CookieProvider({ children }) {
   );
 
   const showBanner = isReady && consent === null;
+  const requiresConsent = showBanner;
+  const canDismissPreferences = consent !== null;
 
   const value = useMemo(
     () => ({
@@ -89,6 +91,8 @@ export function CookieProvider({ children }) {
       consent,
       categories: COOKIE_CATEGORIES,
       showBanner,
+      requiresConsent,
+      canDismissPreferences,
       isPreferencesOpen,
       acceptAll,
       rejectNonEssential,
@@ -101,6 +105,8 @@ export function CookieProvider({ children }) {
       isReady,
       consent,
       showBanner,
+      requiresConsent,
+      canDismissPreferences,
       isPreferencesOpen,
       acceptAll,
       rejectNonEssential,
