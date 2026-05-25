@@ -1,11 +1,13 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { Send, CheckCircle2, AlertCircle, Loader2 } from 'lucide-react';
+import { Send, AlertCircle, Loader2 } from 'lucide-react';
 import {
   INITIAL_CONTACT_FORM,
   validateContactForm,
 } from '../../lib/contactFormValidation';
+import { useToast } from '../../context/ToastContext';
+import { submitContactForm } from '../../services/contactService';
 import { fadeUp } from '../logistics/motionVariants';
 
 const fieldClass = (hasError) =>
@@ -15,6 +17,7 @@ const fieldClass = (hasError) =>
 
 const ContactForm = () => {
   const { t } = useTranslation('contact');
+  const { showToast } = useToast();
   const [values, setValues] = useState(INITIAL_CONTACT_FORM);
   const [errors, setErrors] = useState({});
   const [status, setStatus] = useState('idle');
@@ -28,7 +31,7 @@ const ContactForm = () => {
         return next;
       });
     }
-    if (status === 'error' || status === 'success') {
+    if (status === 'error') {
       setStatus('idle');
     }
   };
@@ -45,10 +48,18 @@ const ContactForm = () => {
     setStatus('submitting');
     setErrors({});
 
-    await new Promise((resolve) => setTimeout(resolve, 900));
-
-    setStatus('success');
-    setValues(INITIAL_CONTACT_FORM);
+    try {
+      const { message } = await submitContactForm(values);
+      const displayMessage = message || t('form.success');
+      showToast(displayMessage, 'success');
+      setStatus('idle');
+      setValues(INITIAL_CONTACT_FORM);
+    } catch (err) {
+      const displayMessage =
+        err instanceof Error && err.message ? err.message : t('form.submitError');
+      showToast(displayMessage, 'error');
+      setStatus('idle');
+    }
   };
 
   return (
@@ -61,16 +72,6 @@ const ContactForm = () => {
     >
       <h2 className="text-2xl font-bold text-navy-900 mb-2">{t('form.heading')}</h2>
       <p className="text-slate-600 text-sm mb-8">{t('form.subheading')}</p>
-
-      {status === 'success' && (
-        <div
-          role="status"
-          className="mb-6 flex items-start gap-3 rounded-lg border border-green-200 bg-green-50 p-4 text-green-800"
-        >
-          <CheckCircle2 className="w-5 h-5 shrink-0 mt-0.5" aria-hidden="true" />
-          <p className="text-sm leading-relaxed">{t('form.success')}</p>
-        </div>
-      )}
 
       {status === 'error' && Object.keys(errors).length > 0 && (
         <div
@@ -219,6 +220,7 @@ const ContactForm = () => {
         <button
           type="submit"
           disabled={status === 'submitting'}
+          aria-busy={status === 'submitting'}
           className="inline-flex w-full sm:w-auto items-center justify-center gap-2 rounded-lg bg-primary-500 px-8 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-primary-600 disabled:opacity-70 disabled:cursor-not-allowed focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2"
         >
           {status === 'submitting' ? (

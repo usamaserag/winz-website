@@ -112,11 +112,11 @@ const Contact = () => {
         </div>
       </section>
 
-      <section className="py-16 md:py-20 bg-slate-50">
+      {/* <section className="py-16 md:py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <ContactMap />
         </div>
-      </section>
+      </section> */}
 
       <section className="py-16 md:py-20 bg-white border-t border-slate-200">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">

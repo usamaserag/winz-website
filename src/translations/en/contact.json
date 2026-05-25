@@ -39,6 +39,7 @@
     "submit": "Send Message",
     "submitting": "Sending...",
     "success": "Thank you for your message. Our logistics team will get back to you shortly.",
+    "submitError": "We could not send your message. Please try again or contact us by phone.",
     "errorSummary": "Please correct the highlighted fields before submitting."
   },
   "sidebar": {
