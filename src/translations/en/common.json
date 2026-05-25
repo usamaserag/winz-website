@@ -28,6 +28,12 @@
       "button": "Subscribe"
     }
   },
+  "contact": {
+    "phone": "+32 496 32 24 67"
+  },
+  "whatsapp": {
+    "ariaLabel": "Chat on WhatsApp at {{phone}}"
+  },
   "buttons": {
     "getQuote": "Get a Quote",
     "trackShipment": "Track Shipment",

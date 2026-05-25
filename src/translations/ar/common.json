@@ -28,6 +28,12 @@
       "button": "اشترك"
     }
   },
+  "contact": {
+    "phone": "+32 496 32 24 67"
+  },
+  "whatsapp": {
+    "ariaLabel": "تواصل عبر واتساب على {{phone}}"
+  },
   "buttons": {
     "getQuote": "اطلب تسعيرة",
     "trackShipment": "تتبع الشحنة",
