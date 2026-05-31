@@ -1,0 +1,160 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "services": "Services",
+    "customsClearance": "Services de dédouanement",
+    "yourCommunity": "Votre communauté",
+    "clearance": {
+      "import": "Dédouanement import",
+      "export": "Dédouanement export",
+      "transit": "Dédouanement transit"
+    },
+    "transport": "Transport",
+    "warehouse": "Entrepôt",
+    "blog": "Blog",
+    "faq": "FAQ",
+    "tracking": "Suivi",
+    "contact": "Contactez-nous"
+  },
+  "language": {
+    "switcherLabel": "Changer de langue"
+  },
+  "a11y": {
+    "menuOpen": "Ouvrir le menu",
+    "menuClose": "Fermer le menu",
+    "dismissNotification": "Fermer la notification"
+  },
+  "footer": {
+    "description": "Votre partenaire de livraison ultra-rapide. Des solutions logistiques fiables, sécurisées et efficaces à l'échelle internationale.",
+    "quickLinks": "Liens rapides",
+    "contactInfo": "Coordonnées",
+    "address": "Gentsesteenweg 102 D4, 9240 Zele, Belgium",
+    "email": "info@winz.be",
+    "rights": "Tous droits réservés.",
+    "newsletter": {
+      "title": "Newsletter",
+      "subtitle": "Abonnez-vous pour recevoir les dernières actualités logistiques.",
+      "placeholder": "Adresse e-mail",
+      "button": "S'abonner"
+    }
+  },
+  "contact": {
+    "phone": "+32 496 32 24 67"
+  },
+  "whatsapp": {
+    "ariaLabel": "Discuter sur WhatsApp au {{phone}}"
+  },
+  "buttons": {
+    "getQuote": "Demander un devis",
+    "trackShipment": "Suivre un envoi",
+    "learnMore": "En savoir plus"
+  },
+  "shared": {
+    "learnMore": "En savoir plus",
+    "discoverStory": "Découvrir notre histoire"
+  },
+  "badges": {
+    "customsClearance": "Dédouanement",
+    "inlandLogistics": "Logistique intérieure",
+    "storageValueAdded": "Stockage & services à valeur ajoutée"
+  },
+  "contactCta": {
+    "badge": "Des experts logistiques à votre écoute",
+    "title": "Prêt à optimiser votre chaîne d'approvisionnement européenne ?",
+    "subtitle": "Contactez WINZ pour le dédouanement, le transport de conteneurs, l'entreposage et des solutions logistiques sur mesure.",
+    "button": "Contactez-nous",
+    "secondary": "Consulter la FAQ"
+  },
+  "cookies": {
+    "gate": {
+      "loading": "Chargement…"
+    },
+    "banner": {
+      "title": "Nous respectons votre vie privée",
+      "description": "Nous utilisons des cookies pour améliorer votre expérience, analyser le trafic et optimiser les performances. En savoir plus dans notre",
+      "privacyPolicy": "Politique de confidentialité",
+      "cookiesPolicy": "Politique relative aux cookies",
+      "and": "et",
+      "acceptAll": "Tout accepter",
+      "rejectNonEssential": "Refuser les cookies non essentiels",
+      "managePreferences": "Gérer les préférences"
+    },
+    "modal": {
+      "title": "Préférences cookies",
+      "description": "Choisissez les cookies que vous autorisez. Vous pouvez modifier ces paramètres à tout moment depuis le pied de page.",
+      "alwaysEnabled": "Toujours activé",
+      "savePreferences": "Enregistrer les préférences",
+      "close": "Fermer les préférences cookies"
+    },
+    "categories": {
+      "necessary": {
+        "title": "Cookies nécessaires",
+        "description": "Indispensables au fonctionnement du site (sécurité, réseau, accessibilité). Ils ne peuvent pas être désactivés."
+      },
+      "analytics": {
+        "title": "Cookies analytiques",
+        "description": "Nous aident à comprendre comment les visiteurs utilisent le site afin d'améliorer les performances et l'expérience utilisateur."
+      },
+      "marketing": {
+        "title": "Cookies marketing",
+        "description": "Utilisés pour proposer du contenu pertinent et mesurer l'efficacité des campagnes marketing."
+      },
+      "preferences": {
+        "title": "Cookies de préférences",
+        "description": "Mémorisent vos choix (langue, région) pour une expérience plus personnalisée."
+      }
+    },
+    "footer": {
+      "settings": "Paramètres cookies"
+    },
+    "legal": {
+      "privacy": {
+        "pageTitle": "Politique de confidentialité | WINZ Logistics",
+        "badge": "Mentions légales",
+        "heading": "Politique de confidentialité",
+        "intro": "Cette politique explique comment WINZ Logistics collecte, utilise et protège les informations personnelles lorsque vous utilisez notre site web.",
+        "sections": [
+          {
+            "title": "Informations collectées",
+            "body": "Nous pouvons collecter des données techniques telles que le type de navigateur, les informations sur l'appareil et les pages visitées lorsque vous interagissez avec notre site ou nous contactez."
+          },
+          {
+            "title": "Utilisation des informations",
+            "body": "Nous utilisons les informations collectées pour exploiter nos services, répondre aux demandes, améliorer les performances du site et respecter nos obligations légales."
+          },
+          {
+            "title": "Cookies et suivi",
+            "body": "Nous utilisons des cookies et technologies similaires pour les fonctionnalités essentielles, l'analyse et les préférences optionnelles. Vous pouvez gérer les cookies non essentiels via notre bannière ou le lien Paramètres cookies."
+          },
+          {
+            "title": "Vos droits",
+            "body": "Selon la législation applicable, vous pouvez demander l'accès, la rectification ou la suppression de vos données personnelles en nous contactant à info@winz.be."
+          }
+        ]
+      },
+      "cookies": {
+        "pageTitle": "Politique relative aux cookies | WINZ Logistics",
+        "badge": "Mentions légales",
+        "heading": "Politique relative aux cookies",
+        "intro": "Cette politique décrit les types de cookies utilisés sur le site WINZ et la manière dont vous pouvez les contrôler.",
+        "manageTitle": "Gérer vos choix cookies",
+        "manageBody": "Vous pouvez accepter, refuser ou personnaliser les cookies non essentiels à tout moment.",
+        "sections": [
+          {
+            "title": "Que sont les cookies ?",
+            "body": "Les cookies sont de petits fichiers texte stockés sur votre appareil qui aident les sites web à fonctionner, mémoriser les préférences et comprendre les habitudes d'utilisation."
+          },
+          {
+            "title": "Catégories de cookies",
+            "body": "Nous utilisons des cookies nécessaires pour les fonctionnalités de base, ainsi que des cookies analytiques, marketing et de préférences optionnels qui ne s'exécutent qu'avec votre consentement."
+          },
+          {
+            "title": "Modifier vos préférences",
+            "body": "Utilisez le lien Paramètres cookies dans le pied de page ou l'option de gestion des préférences dans la bannière cookies pour mettre à jour vos choix à tout moment."
+          }
+        ]
+      }
+    }
+  }
+}

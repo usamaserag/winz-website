@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "title": "European Customs & Logistics Blog | WINZ Logistics"
+  },
+  "seo": {
+    "description": "Read the latest updates, professional guidelines, and technical articles on European customs clearance, container logistics, and fiscal regulations.",
+    "ogTitle": "Customs & Logistics Insights Blog - WINZ Logistics",
+    "ogDescription": "Read the latest updates and professional guidelines on European customs clearance and logistics."
+  },
+  "listing": {
+    "hero": {
+      "badge": "WINZ Logistics Insights",
+      "title": "Customs & Logistics",
+      "highlight": "Insights & Articles",
+      "description": "Stay up to date with professional customs clearance procedures, transport updates, and supply chain strategies in the European Union."
+    },
+    "searchPlaceholder": "Search articles by title, topic, or keywords...",
+    "emptyState": {
+      "title": "No matching articles found",
+      "description": "Try searching for terms like \"Belgium\", \"import\" or \"clearance\"."
+    },
+    "countLabel": "{{count}} articles",
+    "categoryBadge": "Customs Guide",
+    "untitledArticle": "Untitled Article",
+    "readFullArticle": "Read Full Article",
+    "fallbackExcerpt": "Professional customs clearance guidelines, required EU documentation, compliance filings, and logistics support for {{title}} in Belgium, Netherlands, Germany, and France.",
+    "fallbackExcerptDefaultTitle": "customs declarations"
+  },
+  "detail": {
+    "notFound": {
+      "title": "Article Not Found",
+      "description": "The requested blog post could not be found.",
+      "backToBlog": "Back to Blog"
+    },
+    "breadcrumbs": {
+      "home": "Home",
+      "blog": "Blog"
+    },
+    "categoryBadge": "Customs Guide",
+    "publishedDate": "May 19, 2026",
+    "author": "WINZ Logistics Specialist Team",
+    "articleContentTitle": "Article Content",
+    "faqTitle": "Frequently Asked Questions",
+    "inlineFaq": {
+      "requiredDocumentsQ": "What documents are required for {{title}}?",
+      "requiredDocumentsA": "Standard clearance requires a Commercial Invoice, Packing List, Certificate of Origin, and transport declarations (T1, T2, or CMR). Sector-specific licences may apply depending on product type (food, pharma, electronics, etc.).",
+      "durationQ": "How long does {{title}} typically take?",
+      "durationA": "With all documents in order and pre-lodgement filings completed, most EU customs clearance processes take between 1–4 hours. Delays occur due to document errors, inspections, or missing EORI/VAT registration.",
+      "winzHandlingQ": "How does WINZ Logistics handle {{title}}?",
+      "winzHandlingA": "WINZ Logistics uses automated customs interface systems connected directly to the Port of Antwerp, Port of Rotterdam, Hamburg, and other major European entry points — enabling faster filings and real-time clearance status updates."
+    },
+    "fallbackArticle": {
+      "h1": "Comprehensive Guide to {{name}}",
+      "intro": "Managing {{nameLower}} in Europe requires deep expertise in EU import/export regulations, local tax compliance, and transit procedures. At WINZ Logistics, our dedicated customs brokers ensure your shipments clear customs quickly and efficiently.",
+      "docsTitle": "Key Documentation Requirements",
+      "docsIntro": "To ensure seamless clearance for {{name}}, the following standard documentation must be prepared and validated prior to port arrival:",
+      "docItems": [
+        "Commercial Invoice detailing buyer/seller info and incoterms",
+        "Detailed Packing List specifying weights, packaging, and item counts",
+        "Transport documents (CMR, Bill of Lading, or Air Waybill)",
+        "Customs Declarations (SAD / Single Administrative Document)",
+        "HS Code classification confirmation from a licensed customs broker"
+      ],
+      "operationsTitle": "Port Operations & Customs Brokerage",
+      "operationsIntro": "Our teams operate directly at major European cargo hubs including the Port of Antwerp, Port of Rotterdam, Hamburg, and Paris CDG. We handle:",
+      "operationItems": [
+        "Import Customs Declarations (direct and indirect representation)",
+        "Transit documents (T1, T2) for goods moving through non-EU states",
+        "Fiscal representation for foreign entities importing into the EU",
+        "Customs audits and HS Code classification advice"
+      ],
+      "complianceTitle": "Compliance & Regulatory Requirements",
+      "complianceBody": "All shipments subject to {{nameLower}} must comply with current EU Customs Union regulations, including EORI registration, VAT reporting obligations, and any sector-specific licences (food safety, CE marking, CITES, etc.). WINZ Logistics monitors regulatory updates continuously to keep your operations compliant.",
+      "whyWinzTitle": "Why Choose WINZ Logistics?",
+      "whyWinzBody": "With decades of combined experience in EU trade regulations, WINZ Logistics provides end-to-end support for freight forwarding, warehousing, and border filings. Contact our team today to streamline your supply chain and prevent costly customs delays."
+    },
+    "noContentAvailable": "No content available for this article.",
+    "seoDescription": "Detailed guide on {{title}}. Learn about {{titleLower}} requirements, processes, and best practices for European customs clearance. Keywords: {{keywords}}.",
+    "seoOgTitle": "{{title}} - Customs Clearance Article",
+    "seoPageTitle": "{{title}} | Customs & Logistics Blog",
+    "schemaFaq": {
+      "docsQuestion": "What documents are required for {{title}}?",
+      "docsAnswer": "Standard documents for {{title}} include: Commercial Invoice, Packing List, Certificate of Origin, transport declarations (T1, T2, CMR), and HS Code classification. Additional sector licences may apply.",
+      "supportQuestion": "How does WINZ Logistics support {{title}}?",
+      "supportAnswer": "WINZ Logistics offers direct brokerage, transit documentation filing (T1/T2), customs document audits, and complete customs clearance at European ports (Antwerp, Rotterdam, Hamburg, Paris)."
+    }
+  }
+}

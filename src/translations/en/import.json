@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "title": "Import Customs Clearance"
+  },
+  "hero": {
+    "badge": "Inbound Logistics Excellence",
+    "title": "Master European Import Compliance with",
+    "highlight": "Winz Logistics",
+    "description": "Optimizing your supply chain through expert customs solutions.",
+    "stats": {
+      "headline": "14+ Years",
+      "subline": "of specialised expertise",
+      "footerLabel": "Shipment flow efficiency"
+    }
+  },
+  "landscape": {
+    "badge": "Import Clearance",
+    "title": "Navigating the European Import Landscape",
+    "paragraph1": "Navigating the European import landscape is often a daunting task. Between the intricate EU regulatory frameworks, stringent documentation standards, and the nuances of individual national procedures, businesses are frequently exposed to costly delays and compliance risks.",
+    "paragraph2": "Winz Logistics removes these barriers, offering seamless import customs clearance services across the continent."
+  },
+  "features": {
+    "compliance": {
+      "title": "Full EU Compliance",
+      "desc": "Complete adherence to EU regulatory frameworks and national procedures."
+    },
+    "speed": {
+      "title": "Fast Processing",
+      "desc": "Minimise delays with our streamlined digital customs workflows."
+    },
+    "network": {
+      "title": "Pan-European Network",
+      "desc": "The region's most extensive neutral customs network at your service."
+    },
+    "accuracy": {
+      "title": "Document Accuracy",
+      "desc": "Zero-error documentation standards that keep your cargo moving."
+    }
+  },
+  "benefits": {
+    "title": "Why Choose Winz for Import",
+    "items": [
+      "Reduction in customs processing time",
+      "Full compliance with EU import regulations",
+      "Dedicated customs specialist assigned to your account",
+      "Real-time shipment status updates",
+      "Seamless coordination with EU port authorities",
+      "Cost-optimised duty and tax management"
+    ]
+  }
+}

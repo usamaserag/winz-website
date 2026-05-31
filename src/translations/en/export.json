@@ -1,0 +1,54 @@
+{
+  "meta": {
+    "title": "Export Customs Clearance"
+  },
+  "hero": {
+    "badge": "Outbound Operations",
+    "title": "Secure Your Global Reach with",
+    "highlight": "Winz Logistics",
+    "description": "Empowering European businesses to export with confidence, compliance, and zero friction."
+  },
+  "risk": {
+    "title": "The Cost of Non-Compliance:",
+    "description": "A minor documentation error can quickly escalate into stranded shipments. Choose Winz to ensure your cargo remains compliant and schedules stay on track."
+  },
+  "clearance": {
+    "badge": "Export Clearance",
+    "title": "The Path to Global Markets",
+    "description": "Every successful export is a milestone of growth. However, the path is often obstructed by a complex maze of dual-use controls, preferential origin requirements, and strict VAT proof-of-exit regulations."
+  },
+  "features": {
+    "dualUse": {
+      "title": "Dual-Use Controls",
+      "desc": "Expert handling of dual-use goods regulations and licensing requirements."
+    },
+    "origin": {
+      "title": "Preferential Origin",
+      "desc": "Accurate preferential origin documentation to unlock trade agreement benefits."
+    },
+    "presence": {
+      "title": "Pan-European Presence",
+      "desc": "Comprehensive coverage across all EU member states and beyond."
+    },
+    "digital": {
+      "title": "Digital Infrastructure",
+      "desc": "Advanced digital systems for real-time customs tracking and reporting."
+    }
+  },
+  "benefits": {
+    "title": "Export With Certainty",
+    "subtitle": "Why industry leaders trust Winz Logistics.",
+    "items": [
+      "VAT proof-of-exit compliance guaranteed",
+      "Zero documentation errors policy",
+      "Preferred customs partner status at key EU ports",
+      "Proactive regulatory change management",
+      "Full audit trail for every export transaction",
+      "Strategic advice on export licensing"
+    ]
+  },
+  "cta": {
+    "title": "Grow Without Borders",
+    "description": "We provide the strategic expertise required to navigate shifting standards. Your cargo stays compliant, your schedules stay on track."
+  }
+}

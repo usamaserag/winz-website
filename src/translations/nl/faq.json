@@ -1,0 +1,35 @@
+{
+  "meta": {
+    "title": "Veelgestelde vragen douane-inklaring | WINZ Logistics"
+  },
+  "seo": {
+    "description": "Vind antwoorden op veelgestelde vragen over douane-inklaring, vereiste documenten, processen, import-/exportaangiften en fiscale vertegenwoordiging in Europa.",
+    "ogTitle": "Veelgestelde vragen douane-inklaring - WINZ Logistics",
+    "ogDescription": "Vind antwoorden op veelgestelde vragen over douane-inklaring, vereiste documenten, processen en aangiften in Europa."
+  },
+  "hero": {
+    "badge": "Vragen?",
+    "title": "Douane-inklaring",
+    "highlight": "FAQ & helpcentrum",
+    "description": "Gedetailleerde antwoorden over douaneregels, documenten, importprocedures en fiscale zaken in België, Nederland, Duitsland en Frankrijk."
+  },
+  "searchPlaceholder": "Zoek FAQ's op vraag, proces of documentnaam...",
+  "emptyState": {
+    "title": "Geen overeenkomende FAQ's gevonden",
+    "description": "Probeer te zoeken op termen zoals \"ENS\", \"aangifte\" of \"douane\"."
+  },
+  "countLabel": "{{count}} veelgestelde vragen",
+  "dynamicTemplates": {
+    "question": {
+      "documents": "Welke documenten zijn vereist voor {{name}}?",
+      "duration": "Hoe lang duurt {{name}}?",
+      "procedure": "Wat is de procedure voor {{name}}?",
+      "certificate": "Wat is {{name}} en waarom is het vereist?",
+      "declaration": "Hoe werkt {{name}} met de douane?",
+      "number": "Wat is {{name}} en hoe werkt het?",
+      "customs": "Wat houdt {{name}} in?",
+      "default": "Wat betekent {{name}}?"
+    },
+    "answerFallback": "{{name}} is een belangrijk onderdeel van het Europese douaneproces. Het omvat correcte documentatie, naleving van regelgeving en coördinatie met douaneautoriteiten. WINZ Logistics regelt alle aspecten van {{researchLower}} om ervoor te zorgen dat uw goederen zonder vertragingen of boetes worden ingeklaard."
+  }
+}

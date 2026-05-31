@@ -1,0 +1,35 @@
+{
+  "meta": {
+    "title": "Customs Clearance FAQs | WINZ Logistics"
+  },
+  "seo": {
+    "description": "Find answers to common customs clearance questions, required documents, processes, import/export filings, and fiscal representation in Europe.",
+    "ogTitle": "Customs Clearance FAQs - WINZ Logistics",
+    "ogDescription": "Find answers to common customs clearance questions, required documents, processes, and filings in Europe."
+  },
+  "hero": {
+    "badge": "Got Questions?",
+    "title": "Customs Clearance",
+    "highlight": "FAQs & Help Center",
+    "description": "Detailed answers regarding customs regulations, documents, import procedures, and fiscal matters in Belgium, Netherlands, Germany, and France."
+  },
+  "searchPlaceholder": "Search FAQs by question, process, or document name...",
+  "emptyState": {
+    "title": "No matching FAQs found",
+    "description": "Try searching for terms like \"ENS\", \"aangifte\" or \"douane\"."
+  },
+  "countLabel": "{{count}} Frequently Asked Questions",
+  "dynamicTemplates": {
+    "question": {
+      "documents": "What documents are required for {{name}}?",
+      "duration": "How long does {{name}} take?",
+      "procedure": "What is the procedure for {{name}}?",
+      "certificate": "What is {{name}} and why is it required?",
+      "declaration": "How does {{name}} work with customs?",
+      "number": "What is {{name}} and how does it work?",
+      "customs": "What does {{name}} involve?",
+      "default": "What does {{name}} mean?"
+    },
+    "answerFallback": "{{name}} is an important part of the European customs process. It involves correct documentation, regulatory compliance, and coordination with customs authorities. WINZ Logistics handles all aspects of {{researchLower}} to ensure your goods are cleared without delays or penalties."
+  }
+}

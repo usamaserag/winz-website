@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "title": "Accueil"
+  },
+  "hero": {
+    "badge": "Logistique & douane européennes",
+    "titlePrefix": "Partenaire de confiance pour",
+    "titleHighlight": "le fret transfrontalier",
+    "description": "14 ans de dédouanement, transport de conteneurs et entreposage en Europe — conçus pour la rapidité, la conformité et la fiabilité.",
+    "ctaPrimary": "Demander un devis",
+    "ctaSecondary": "Nos services",
+    "highlights": {
+      "haulage": {
+        "label": "Transport intérieur",
+        "value": "Dans toute l'UE"
+      },
+      "ports": {
+        "label": "Couverture portuaire",
+        "value": "Tous les grands ports"
+      },
+      "compliance": {
+        "label": "Conformité",
+        "value": "100 % UE"
+      }
+    }
+  },
+  "stats": {
+    "experience": "Années d'expérience",
+    "compliance": "Conformité UE",
+    "ports": "Ports européens",
+    "services": "Services de dédouanement"
+  },
+  "aboutPreview": {
+    "badge": "Qui sommes-nous",
+    "title": "Winz Logistics — Votre partenaire douane de confiance en Europe",
+    "description": "Au service du marché européen, nous faisons le lien entre les fournisseurs mondiaux et l'Union européenne. Avec plus de 14 ans d'expérience, nous gérons toutes les formalités douanières dans chaque port et passage frontalier européen — pour que vous puissiez vous concentrer sur votre cœur de métier.",
+    "cta": "Découvrir notre histoire"
+  },
+  "services": {
+    "badge": "Nos services",
+    "title": "Chaque étape du parcours de votre marchandise",
+    "description": "Du dédouanement au transport intérieur et au stockage sécurisé — nous gérons chaque phase pour que votre chaîne d'approvisionnement ne connaisse aucune interruption.",
+    "cards": {
+      "import": {
+        "title": "Import",
+        "badge": "Dédouanement",
+        "desc": "Dédouanement import fluide dans tous les ports et passages frontaliers européens — entièrement conforme et entièrement géré."
+      },
+      "export": {
+        "title": "Export",
+        "badge": "Dédouanement",
+        "desc": "Maîtrisez les contrôles dual-use, l'origine préférentielle et la preuve de sortie TVA avec un accompagnement expert."
+      },
+      "transit": {
+        "title": "Transit",
+        "badge": "Dédouanement",
+        "desc": "Mouvement transfrontalier ininterrompu avec déclarations T1/T2 et dépôt NCTS numérique gérés de bout en bout."
+      },
+      "transport": {
+        "title": "Transport",
+        "badge": "Logistique intérieure",
+        "desc": "Transport de conteneurs 20, 40 et 45 pieds — du terminal portuaire à votre porte."
+      },
+      "warehouse": {
+        "title": "Entrepôt",
+        "badge": "Stockage & services à valeur ajoutée",
+        "desc": "Stockage sous douane, solutions court et long terme, pick-and-pack, palettisation et report de droits — le tout sous un même toit."
+      }
+    },
+    "cta": "En savoir plus"
+  },
+  "whyChoose": {
+    "badge": "Pourquoi nous choisir",
+    "title": "Pourquoi les entreprises font confiance à Winz Logistics",
+    "pillars": {
+      "expertise": {
+        "title": "Plus de 14 ans d'expertise",
+        "desc": "Connaissance approfondie de la législation douanière UE et des procédures transfrontalières."
+      },
+      "compliance": {
+        "title": "Conformité totale garantie",
+        "desc": "Chaque envoi traité selon les normes réglementaires les plus strictes — sans exception."
+      },
+      "network": {
+        "title": "Réseau paneuropéen",
+        "desc": "Le réseau douanier neutre le plus étendu de la région, à chaque port et passage frontalier."
+      },
+      "cargo": {
+        "title": "Tous types de marchandises",
+        "desc": "Des denrées périssables aux marchandises générales et au fret surdimensionné."
+      },
+      "solutions": {
+        "title": "Solutions de bout en bout",
+        "desc": "Dédouanement, transport et entreposage — entièrement intégrés sous un seul partenaire."
+      },
+      "team": {
+        "title": "Spécialistes dédiés",
+        "desc": "Une équipe d'experts douaniers assignée à la gestion personnalisée de votre compte."
+      }
+    }
+  }
+}

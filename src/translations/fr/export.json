@@ -1,0 +1,54 @@
+{
+  "meta": {
+    "title": "Dédouanement export"
+  },
+  "hero": {
+    "badge": "Opérations sortantes",
+    "title": "Sécurisez votre présence internationale avec",
+    "highlight": "Winz Logistics",
+    "description": "Permettre aux entreprises européennes d'exporter en toute confiance, conformité et fluidité."
+  },
+  "risk": {
+    "title": "Le coût de la non-conformité :",
+    "description": "Une simple erreur documentaire peut rapidement se transformer en marchandises bloquées. Choisissez Winz pour garantir la conformité de vos cargaisons et le respect de vos plannings."
+  },
+  "clearance": {
+    "badge": "Dédouanement export",
+    "title": "La voie vers les marchés internationaux",
+    "description": "Chaque export réussi est une étape de croissance. Cependant, le chemin est souvent entravé par un labyrinthe de contrôles à double usage, d'exigences en matière d'origine préférentielle et de réglementations strictes sur la preuve de sortie de TVA."
+  },
+  "features": {
+    "dualUse": {
+      "title": "Contrôles à double usage",
+      "desc": "Gestion experte des réglementations sur les biens à double usage et des exigences en matière de licences."
+    },
+    "origin": {
+      "title": "Origine préférentielle",
+      "desc": "Documentation d'origine préférentielle précise pour bénéficier des accords commerciaux."
+    },
+    "presence": {
+      "title": "Présence paneuropéenne",
+      "desc": "Couverture complète dans tous les États membres de l'UE et au-delà."
+    },
+    "digital": {
+      "title": "Infrastructure numérique",
+      "desc": "Systèmes numériques avancés pour le suivi et le reporting douaniers en temps réel."
+    }
+  },
+  "benefits": {
+    "title": "Exportez en toute certitude",
+    "subtitle": "Pourquoi les leaders du secteur font confiance à Winz Logistics.",
+    "items": [
+      "Conformité garantie en matière de preuve de sortie de TVA",
+      "Politique zéro erreur documentaire",
+      "Statut de partenaire douanier privilégié dans les principaux ports de l'UE",
+      "Gestion proactive des évolutions réglementaires",
+      "Piste d'audit complète pour chaque opération d'export",
+      "Conseil stratégique en matière de licences d'export"
+    ]
+  },
+  "cta": {
+    "title": "Développez-vous sans frontières",
+    "description": "Nous apportons l'expertise stratégique nécessaire pour naviguer dans l'évolution des normes. Vos cargaisons restent conformes, vos plannings respectés."
+  }
+}

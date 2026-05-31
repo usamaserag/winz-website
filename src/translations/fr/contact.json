@@ -1,0 +1,102 @@
+{
+  "metaTitle": "Contactez-nous | WINZ Logistics",
+  "title": "Contactez-nous",
+  "subtitle": "Nous sommes à votre disposition pour le dédouanement, le transport et l'entreposage en Europe.",
+  "hero": {
+    "badge": "Contactez-nous",
+    "title": "Faisons avancer votre marchandise",
+    "highlight": "À travers l'Europe",
+    "description": "Échangez avec nos spécialistes logistiques sur le dédouanement, le transport intérieur, l'entreposage et l'accompagnement supply chain de bout en bout."
+  },
+  "info": {
+    "sectionBadge": "Coordonnées",
+    "heading": "Comment nous joindre",
+    "subheading": "Notre équipe est prête à vous aider pour vos envois, questions de conformité et demandes de partenariat.",
+    "emailLabel": "E-mail",
+    "emailValue": "info@winz.be",
+    "phoneLabel": "Téléphone",
+    "phoneValue": "+32 496 32 24 67",
+    "addressLabel": "Adresse du bureau",
+    "addressValue": "Gentsesteenweg 102 D4, 9240 Zele, Belgium",
+    "hoursLabel": "Heures d'ouverture",
+    "hoursValue": "Lundi – Vendredi : 08h00 – 18h00 (CET)\nSamedi : Sur rendez-vous"
+  },
+  "form": {
+    "heading": "Envoyez-nous un message",
+    "subheading": "Remplissez le formulaire ci-dessous et notre équipe vous répondra dans les plus brefs délais.",
+    "name": "Nom complet",
+    "namePlaceholder": "Votre nom complet",
+    "email": "Adresse e-mail",
+    "emailPlaceholder": "vous@entreprise.com",
+    "phone": "Numéro de téléphone",
+    "phonePlaceholder": "+32 ...",
+    "company": "Nom de l'entreprise",
+    "companyPlaceholder": "Facultatif",
+    "subject": "Objet",
+    "subjectPlaceholder": "ex. Demande de dédouanement import",
+    "message": "Message",
+    "messagePlaceholder": "Parlez-nous de votre envoi, itinéraire ou besoins logistiques...",
+    "submit": "Envoyer le message",
+    "submitting": "Envoi en cours...",
+    "success": "Merci pour votre message. Notre équipe logistique vous répondra sous peu.",
+    "submitError": "Impossible d'envoyer votre message. Veuillez réessayer ou nous contacter par téléphone.",
+    "errorSummary": "Veuillez corriger les champs signalés avant d'envoyer.",
+    "validation": {
+      "fullNameRequired": "Le nom complet est obligatoire.",
+      "fullNameMin": "Veuillez saisir au moins 2 caractères.",
+      "emailRequired": "L'adresse e-mail est obligatoire.",
+      "emailInvalid": "Veuillez saisir une adresse e-mail valide.",
+      "phoneInvalid": "Veuillez saisir un numéro de téléphone valide.",
+      "subjectRequired": "L'objet est obligatoire.",
+      "subjectMin": "L'objet doit comporter au moins 3 caractères.",
+      "messageRequired": "Le message est obligatoire.",
+      "messageMin": "Le message doit comporter au moins 10 caractères."
+    }
+  },
+  "sidebar": {
+    "inquiryTitle": "Demande d'envoi",
+    "inquiryText": "Besoin urgent de dédouanement ou de transport ? Appelez notre desk opérations pour une assistance rapide sur les envois en cours.",
+    "callNow": "Appeler le desk opérations",
+    "supportTitle": "Support logistique",
+    "support": {
+      "shipment": {
+        "title": "Coordination des envois",
+        "desc": "Dédouanement import, export et transit dans les ports et aux frontières européennes."
+      },
+      "compliance": {
+        "title": "Conseil en conformité",
+        "desc": "Documentation, droits et accompagnement réglementaire pour le commerce UE."
+      },
+      "support": {
+        "title": "Spécialistes dédiés",
+        "desc": "Accompagnement personnalisé pour les partenariats logistiques durables."
+      }
+    }
+  },
+  "map": {
+    "badge": "Notre emplacement",
+    "title": "Centre opérationnel européen",
+    "directions": "Ouvrir dans Google Maps",
+    "iframeTitle": "Bureau WINZ Logistics à Zele, Belgique"
+  },
+  "faq": {
+    "badge": "Réponses rapides",
+    "heading": "Questions fréquentes",
+    "subheading": "Des réponses courtes avant de nous contacter — consultez notre FAQ complète pour plus de détails.",
+    "viewAll": "Voir toutes les FAQ",
+    "items": {
+      "customs": {
+        "q": "Quels services douaniers proposez-vous ?",
+        "a": "Nous gérons le dédouanement import, export et transit dans les ports et passages frontaliers européens, ainsi que le transport intérieur et l'entreposage."
+      },
+      "quote": {
+        "q": "Comment demander un devis ?",
+        "a": "Remplissez le formulaire de contact avec votre itinéraire, type de marchandise et délais. Notre équipe préparera une proposition logistique sur mesure."
+      },
+      "response": {
+        "q": "Quel est votre délai de réponse ?",
+        "a": "Nous visons une réponse aux demandes professionnelles sous un jour ouvré. Les urgences liées aux envois peuvent être adressées par téléphone."
+      }
+    }
+  }
+}

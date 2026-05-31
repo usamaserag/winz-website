@@ -1,78 +1,92 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useCallback } from 'react';
+import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   HelpCircle, Search, X, ChevronDown,
-  AlertTriangle
 } from 'lucide-react';
 import { getFAQs } from '../../data/siteData';
 import { useSEOMeta } from '../../hooks/useSEOMeta';
+import usePageTitle from '../../hooks/usePageTitle';
 import PageHero from '../../components/logistics/PageHero';
-
-const SectionBadge = ({ label }) => (
-  <span className="inline-block py-1 px-4 rounded-full bg-primary-50 text-primary-600 border border-primary-200 text-sm font-semibold tracking-wide mb-4">
-    {label}
-  </span>
-);
 
 const clean = (str) => (str || '').trim().replace(/:+$/, '');
 const isUrl = (str) => typeof str === 'string' && str.trim().startsWith('http');
 
-const generateQuestion = (rawName) => {
-  const name = clean(rawName);
-  const lower = name.toLowerCase();
-  if (lower.includes('documenten') || lower.includes('document')) return `Welke documenten zijn nodig voor ${name}?`;
-  if (lower.includes('tijd') || lower.includes('duration') || lower.includes('duur')) return `Hoe lang duurt ${name}?`;
-  if (lower.includes('proces') || lower.includes('procedure') || lower.includes('process')) return `Wat is de procedure voor ${name}?`;
-  if (lower.includes('certificaat') || lower.includes('certificate')) return `Wat is een ${name} en waarom is het vereist?`;
-  if (lower.includes('aangifte') || lower.includes('declaration')) return `Hoe werkt de ${name} bij douane?`;
-  if (lower.includes('nummer') || lower.includes('number')) return `Wat is een ${name} en hoe werkt het?`;
-  if (/customs|port|import|export|transit|warehouse|broker|freight|clearance/i.test(name)) return `What does ${name} involve?`;
-  return `Wat houdt ${name} in?`;
-};
-
-const generateAnswer = (item) => {
-  const struct = item['content structurs'] || '';
-  if (struct && !isUrl(struct)) return struct.replace(/^[hH][123]:\s*/, '');
-  const name = clean(item.name);
-  const research = isUrl(item.research || '') ? name : clean(item.research || name);
-  return `${name} is een belangrijk onderdeel van het Europese douaneproces. Het omvat correcte documentatie, naleving van regelgeving en coördinatie met de douaneautoriteiten. WINZ Logistics verzorgt alle aspecten van ${research.toLowerCase()} om ervoor te zorgen dat uw goederen zonder vertragingen of boetes worden ingeklaard.`;
-};
-
-// All FAQ data — bundled at build time, no network fetch
 const allFaqs = getFAQs();
 
 export default function FAQ() {
+  const { t } = useTranslation('faq');
+  usePageTitle(t('faq:meta.title'));
+
   const [searchTerm, setSearchTerm] = useState('');
   const [expandedIndex, setExpandedIndex] = useState(null);
+
+  const generateQuestion = useCallback((rawName) => {
+    const name = clean(rawName);
+    const lower = name.toLowerCase();
+    if (lower.includes('documenten') || lower.includes('document')) {
+      return t('dynamicTemplates.question.documents', { name });
+    }
+    if (lower.includes('tijd') || lower.includes('duration') || lower.includes('duur')) {
+      return t('dynamicTemplates.question.duration', { name });
+    }
+    if (lower.includes('proces') || lower.includes('procedure') || lower.includes('process')) {
+      return t('dynamicTemplates.question.procedure', { name });
+    }
+    if (lower.includes('certificaat') || lower.includes('certificate')) {
+      return t('dynamicTemplates.question.certificate', { name });
+    }
+    if (lower.includes('aangifte') || lower.includes('declaration')) {
+      return t('dynamicTemplates.question.declaration', { name });
+    }
+    if (lower.includes('nummer') || lower.includes('number')) {
+      return t('dynamicTemplates.question.number', { name });
+    }
+    if (/customs|port|import|export|transit|warehouse|broker|freight|clearance/i.test(name)) {
+      return t('dynamicTemplates.question.customs', { name });
+    }
+    return t('dynamicTemplates.question.default', { name });
+  }, [t]);
+
+  const generateAnswer = useCallback((item) => {
+    const struct = item['content structurs'] || '';
+    if (struct && !isUrl(struct)) return struct.replace(/^[hH][123]:\s*/, '');
+    const name = clean(item.name);
+    const research = isUrl(item.research || '') ? name : clean(item.research || name);
+    return t('dynamicTemplates.answerFallback', {
+      name,
+      researchLower: research.toLowerCase(),
+    });
+  }, [t]);
 
   const filteredFaqs = useMemo(() => {
     const term = searchTerm.trim().toLowerCase();
     if (!term) return allFaqs;
-    return allFaqs.filter(item => {
+    return allFaqs.filter((item) => {
       const q = generateQuestion(item.name).toLowerCase();
       const a = generateAnswer(item).toLowerCase();
       const kw = clean(item.research || '').toLowerCase();
       return q.includes(term) || a.includes(term) || kw.includes(term);
     });
-  }, [searchTerm]);
+  }, [searchTerm, generateQuestion, generateAnswer]);
 
   const faqSchema = useMemo(() => ({
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
-    mainEntity: filteredFaqs.slice(0, 30).map(item => ({
+    mainEntity: filteredFaqs.slice(0, 30).map((item) => ({
       '@type': 'Question',
       name: generateQuestion(item.name),
       acceptedAnswer: { '@type': 'Answer', text: generateAnswer(item) },
     })),
-  }), [filteredFaqs]);
+  }), [filteredFaqs, generateQuestion, generateAnswer]);
 
   useSEOMeta({
-    title: 'Customs Clearance FAQs | WINZ Logistics',
-    description: 'Find answers to common customs clearance questions, required documents, processes, import/export filings, and fiscal representation in Europe.',
+    title: t('meta.title'),
+    description: t('seo.description'),
     keywords: 'customs faq, import documents, export clearance belgium, transit customs europe, customs process rotterdam',
     canonical: `${window.location.origin}/faq`,
-    ogTitle: 'Customs Clearance FAQs - WINZ Logistics',
-    ogDescription: 'Find answers to common customs clearance questions, required documents, processes, and filings in Europe.',
+    ogTitle: t('seo.ogTitle'),
+    ogDescription: t('seo.ogDescription'),
     ogImage: `${window.location.origin}/logo.png`,
     ogUrl: `${window.location.origin}/faq`,
     ogType: 'website',
@@ -87,15 +101,13 @@ export default function FAQ() {
     <div className="flex flex-col min-h-screen bg-gray-50/50">
       <PageHero
         size="compact"
-        badge="Got Questions?"
-        title="Customs Clearance"
-        highlight="FAQs & Help Center"
-        description="Detailed answers regarding customs regulations, documents, import procedures, and fiscal matters in Belgium, Netherlands, Germany, and France."
+        badge={t('hero.badge')}
+        title={t('hero.title')}
+        highlight={t('hero.highlight')}
+        description={t('hero.description')}
       />
 
-      {/* Main Content */}
       <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 flex-grow w-full">
-        {/* Search */}
         <div className="mb-12">
           <div className="relative max-w-xl mx-auto">
             <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
@@ -103,7 +115,7 @@ export default function FAQ() {
             </div>
             <input
               type="text"
-              placeholder="Search FAQs by question, process, or document name..."
+              placeholder={t('searchPlaceholder')}
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               className="block w-full pl-11 pr-10 py-3.5 border border-gray-200 rounded-2xl bg-white shadow-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all text-sm"
@@ -112,6 +124,7 @@ export default function FAQ() {
               <button
                 onClick={() => setSearchTerm('')}
                 className="absolute inset-y-0 right-0 pr-3.5 flex items-center text-gray-400 hover:text-gray-600"
+                aria-label={t('searchPlaceholder')}
               >
                 <X className="h-5 w-5" />
               </button>
@@ -119,19 +132,16 @@ export default function FAQ() {
           </div>
         </div>
 
-        {/* FAQ Accordion */}
         {filteredFaqs.length === 0 ? (
           <div className="text-center py-16">
             <HelpCircle className="h-12 w-12 text-gray-400 mx-auto mb-4" />
-            <h3 className="text-lg font-bold text-gray-900 mb-1">No matching FAQs found</h3>
-            <p className="text-sm text-gray-500">
-              Try searching for terms like &quot;ENS&quot;, &quot;aangifte&quot; or &quot;douane&quot;.
-            </p>
+            <h3 className="text-lg font-bold text-gray-900 mb-1">{t('emptyState.title')}</h3>
+            <p className="text-sm text-gray-500">{t('emptyState.description')}</p>
           </div>
         ) : (
           <div className="space-y-4">
             <p className="text-sm font-semibold text-gray-500 mb-6 text-center">
-              {filteredFaqs.length} Frequently Asked Questions
+              {t('countLabel', { count: filteredFaqs.length })}
             </p>
 
             {filteredFaqs.map((item, index) => {

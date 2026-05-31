@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "title": "Home"
+  },
+  "hero": {
+    "badge": "Europese logistiek & douane",
+    "titlePrefix": "Betrouwbare partner voor",
+    "titleHighlight": "grensoverschrijdend vrachtvervoer",
+    "description": "14 jaar douane-inklearing, containertransport en opslag in Europa — gebouwd voor snelheid, compliance en betrouwbaarheid.",
+    "ctaPrimary": "Offerte aanvragen",
+    "ctaSecondary": "Onze diensten",
+    "highlights": {
+      "haulage": {
+        "label": "Binnenlands vervoer",
+        "value": "EU-breed"
+      },
+      "ports": {
+        "label": "Havendekking",
+        "value": "Alle grote havens"
+      },
+      "compliance": {
+        "label": "Compliance",
+        "value": "100 % EU"
+      }
+    }
+  },
+  "stats": {
+    "experience": "Jaar ervaring",
+    "compliance": "EU-compliance",
+    "ports": "Europese havens",
+    "services": "Inklaringsdiensten"
+  },
+  "aboutPreview": {
+    "badge": "Wie wij zijn",
+    "title": "Winz Logistics — Uw betrouwbare Europese douanepartner",
+    "description": "Wij bedienen de Europese markt en verbinden wereldwijde leveranciers met de EU. Met meer dan 14 jaar ervaring regelen wij alle douaneformaliteiten in elke Europese zeehaven en grensovergang — zodat u zich op uw kernactiviteit kunt richten.",
+    "cta": "Ontdek ons verhaal"
+  },
+  "services": {
+    "badge": "Onze diensten",
+    "title": "Elke stap in de reis van uw vracht",
+    "description": "Van douane-inklearing tot binnenlands vervoer en veilige opslag — wij beheren elke fase zodat uw supply chain nooit stilvalt.",
+    "cards": {
+      "import": {
+        "title": "Import",
+        "badge": "Douane-inklearing",
+        "desc": "Naadloze importinklearing in alle Europese zeehavens en grensovergangen — volledig conform en volledig beheerd."
+      },
+      "export": {
+        "title": "Export",
+        "badge": "Douane-inklearing",
+        "desc": "Navigeer dual-use controles, preferentiële oorsprong en BTW-uitvoerbewijzen met professionele exportinklearing."
+      },
+      "transit": {
+        "title": "Transit",
+        "badge": "Douane-inklearing",
+        "desc": "Ononderbroken grensoverschrijdend vervoer met T1/T2-aangiften en NCTS-digitale indiening van begin tot eind."
+      },
+      "transport": {
+        "title": "Transport",
+        "badge": "Binnenlandse logistiek",
+        "desc": "Containervervoer voor 20-, 40- en 45-voets containers — van haventerminal tot aan uw deur."
+      },
+      "warehouse": {
+        "title": "Magazijn",
+        "badge": "Opslag & meerwaardediensten",
+        "desc": "Douane-opslag, korte en lange termijn oplossingen, pick-and-pack, palletiseren en rechtenuitstel — alles onder één dak."
+      }
+    },
+    "cta": "Meer info"
+  },
+  "whyChoose": {
+    "badge": "Waarom kiezen voor ons",
+    "title": "Waarom bedrijven Winz Logistics vertrouwen",
+    "pillars": {
+      "expertise": {
+        "title": "Meer dan 14 jaar expertise",
+        "desc": "Diepgaande kennis van EU-douanewetgeving en grensoverschrijdende procedures."
+      },
+      "compliance": {
+        "title": "Volledige compliance gegarandeerd",
+        "desc": "Elke zending verwerkt volgens de hoogste regelgevingsnormen — zonder uitzondering."
+      },
+      "network": {
+        "title": "Paneuropees netwerk",
+        "desc": "Het meest uitgebreide neutrale douanenetwerk in de regio, op elke haven en grensovergang."
+      },
+      "cargo": {
+        "title": "Alle vrachttypes",
+        "desc": "Van bederfelijke voeding tot algemene goederen en oversized vracht."
+      },
+      "solutions": {
+        "title": "End-to-end oplossingen",
+        "desc": "Douane-inklearing, vervoer en opslag — volledig geïntegreerd bij één partner."
+      },
+      "team": {
+        "title": "Toegewijde specialisten",
+        "desc": "Een team douane-experts dat uw account persoonlijk beheert."
+      }
+    }
+  }
+}

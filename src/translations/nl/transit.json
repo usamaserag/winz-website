@@ -1,0 +1,65 @@
+{
+  "meta": {
+    "title": "Transitinklearing"
+  },
+  "hero": {
+    "badge": "Transitinklearing",
+    "title": "Ononderbroken transit door Europa met",
+    "highlight": "Winz Logistics",
+    "description": "Naadloze grensoverschrijdende verplaatsing van uw wereldwijde vracht."
+  },
+  "challenge": {
+    "badge": "De uitdaging",
+    "title": "Navigeren door het complexe Europese transitlandschap",
+    "paragraph1": "Europese grenzen passeren vereist meer dan alleen transport — het vraagt om precies transitbeheer. Tussen T1/T2-aangiften, complexe garantievereisten en strikte NCTS-deadlines voor digitale indiening kunnen transitprocedures snel een knelpunt worden.",
+    "paragraph2": "Zonder deskundig toezicht leiden deze regelgevingscontroles vaak tot administratieve lasten, onverwachte kosten en kostbare leveringsvertragingen. Winz Logistics houdt uw supply chain in beweging door de frictie bij grensovergangen weg te nemen."
+  },
+  "features": {
+    "declarations": {
+      "title": "T1 / T2-aangiften",
+      "desc": "Precieze opstelling en indiening van T1- en T2-transitaangiften, volledig conform EU-vereisten."
+    },
+    "guarantee": {
+      "title": "Garantiefaciliteiten",
+      "desc": "Robuust garantiebeheer om douanerechten te dekken en ononderbroken grensoverschrijdende verplaatsing te waarborgen."
+    },
+    "ncts": {
+      "title": "NCTS digitale indiening",
+      "desc": "Deskundige afhandeling van New Computerised Transit System (NCTS)-protocollen en strikte deadlines voor elektronische indiening."
+    },
+    "coverage": {
+      "title": "Paneuropese dekking",
+      "desc": "Het meest uitgebreide neutrale douanenetwerk in de regio, met dekking van alle Europese grenzen en overgangen."
+    },
+    "delivery": {
+      "title": "Levering op tijd",
+      "desc": "Strikte naleving van planningen zorgt ervoor dat uw vracht zonder vertragingen of knelpunten op de bestemming aankomt."
+    },
+    "experience": {
+      "title": "14 jaar ervaring",
+      "desc": "Diepgaande expertise in transitprocedures, opgebouwd in 14 jaar complexe grensoverschrijdende verplaatsingen."
+    }
+  },
+  "risk": {
+    "title": "De kosten van transitvertragingen",
+    "description": "Administratieve knelpunten bij grenscontroles kosten niet alleen tijd — ze kosten geld. Gemiste NCTS-deadlines, onvoldoende garantiedekking of onjuiste T1/T2-documentatie kunnen leiden tot zendingblokkades, financiële boetes en beschadigde klantrelaties. Met Winz Logistics worden deze risico's geëlimineerd voordat ze ontstaan."
+  },
+  "solution": {
+    "badge": "Onze oplossing",
+    "title": "Wat u krijgt met Winz transitdiensten",
+    "benefits": [
+      "Volledig beheer van T1- & T2-transitaangiften",
+      "NCTS-conforme digitale indiening",
+      "Uitgebreide garantiedekking",
+      "Realtime zendingtracking over grenzen heen",
+      "Nul administratieve knelpunten",
+      "Toegewijde transitspecialisten voor elke zending",
+      "Naleving bij alle Europese grenscontroles",
+      "Zorgeloze, tijdige levering gegarandeerd"
+    ]
+  },
+  "cta": {
+    "title": "Verplaats uw vracht door Europa — zonder problemen",
+    "description": "Met 14 jaar ervaring en het meest uitgebreide neutrale douanenetwerk in de regio zorgt Winz Logistics ervoor dat uw zendingen conform, op tijd en zorgeloos verlopen."
+  }
+}

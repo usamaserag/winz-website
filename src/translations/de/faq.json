@@ -1,0 +1,35 @@
+{
+  "meta": {
+    "title": "Zoll-FAQ | WINZ Logistics"
+  },
+  "seo": {
+    "description": "Antworten auf häufige Fragen zur Zollabfertigung, erforderlichen Dokumenten, Import-/Exportverfahren und fiskalischer Vertretung in Europa.",
+    "ogTitle": "Zoll-FAQ - WINZ Logistics",
+    "ogDescription": "Antworten auf häufige Fragen zur Zollabfertigung, Dokumenten und Verfahren in Europa."
+  },
+  "hero": {
+    "badge": "Fragen?",
+    "title": "Zollabfertigung",
+    "highlight": "FAQ & Hilfe-Center",
+    "description": "Ausführliche Antworten zu Zollvorschriften, Dokumenten, Importverfahren und steuerlichen Fragen in Belgien, den Niederlanden, Deutschland und Frankreich."
+  },
+  "searchPlaceholder": "FAQs nach Frage, Verfahren oder Dokumentname suchen...",
+  "emptyState": {
+    "title": "Keine passenden FAQs gefunden",
+    "description": "Versuchen Sie Begriffe wie „ENS“, „Anmeldung“ oder „Zoll“."
+  },
+  "countLabel": "{{count}} häufig gestellte Fragen",
+  "dynamicTemplates": {
+    "question": {
+      "documents": "Welche Dokumente sind für {{name}} erforderlich?",
+      "duration": "Wie lange dauert {{name}}?",
+      "procedure": "Wie läuft das Verfahren für {{name}} ab?",
+      "certificate": "Was ist {{name}} und warum ist es erforderlich?",
+      "declaration": "Wie funktioniert {{name}} mit dem Zoll?",
+      "number": "Was ist {{name}} und wie funktioniert es?",
+      "customs": "Worum geht es bei {{name}}?",
+      "default": "Was bedeutet {{name}}?"
+    },
+    "answerFallback": "{{name}} ist ein wichtiger Bestandteil des europäischen Zollprozesses. Es umfasst korrekte Dokumentation, regulatorische Compliance und die Koordination mit den Zollbehörden. WINZ Logistics übernimmt alle Aspekte von {{researchLower}}, damit Ihre Waren ohne Verzögerungen oder Strafen abgefertigt werden."
+  }
+}

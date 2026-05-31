@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "title": "Solutions d'entreposage"
+  },
+  "hero": {
+    "badge": "Entreposage et services à valeur ajoutée",
+    "title": "Entreposage avancé et",
+    "highlight": "services à valeur ajoutée",
+    "description": "Stockage stratégique et fulfillment à travers la chaîne d'approvisionnement européenne."
+  },
+  "intro": {
+    "badge": "Bien plus que de l'espace",
+    "title": "Un écosystème d'entreposage stratégique",
+    "paragraph1": "Winz Logistics propose bien plus que de l'espace. Nous offrons un écosystème d'entreposage stratégique conçu pour fluidifier votre chaîne d'approvisionnement et réduire vos charges fixes. Nos installations sont équipées pour gérer votre inventaire avec précision, que ce soit pour quelques jours ou plusieurs mois.",
+    "paragraph2": "Avec Winz Logistics, vos marchandises sont stockées dans un environnement sécurisé et conforme, soutenu par une équipe d'experts prête à exécuter des opérations de pick-and-pack à tout moment.",
+    "visualTitle": "Écosystème d'entreposage stratégique",
+    "visualSubtitle": "Sécurisé · Conforme · Efficace",
+    "floatingCardTitle": "Entrepôt sous douane",
+    "floatingCardSubtitle": "Report de droits et TVA"
+  },
+  "services": {
+    "badge": "Nos services",
+    "title": "Capacités d'entreposage complètes",
+    "bonded": {
+      "title": "Entreposage sous douane",
+      "desc": "Optimisez votre trésorerie en stockant des marchandises non dédouanées et en reportant le paiement des droits et de la TVA jusqu'à l'entrée sur le marché local."
+    },
+    "storage": {
+      "title": "Stockage court et long terme",
+      "desc": "Solutions évolutives adaptées à vos cycles d'inventaire et à la saisonnalité — de quelques jours à plusieurs mois."
+    },
+    "valueAdded": {
+      "title": "Services à valeur ajoutée",
+      "desc": "Reconditionnement, étiquetage et palettisation professionnels pour que vos marchandises soient prêtes à la vente ou préparées pour un transit sécurisé."
+    },
+    "pickPack": {
+      "title": "Opérations pick & pack",
+      "desc": "Équipe experte prête à exécuter des opérations de pick-and-pack à tout moment, avec une précision et un soin total."
+    },
+    "inventory": {
+      "title": "Gestion des stocks",
+      "desc": "Suivi et gestion précis de l'inventaire pour maintenir votre chaîne d'approvisionnement en fonctionnement permanent."
+    },
+    "unloading": {
+      "title": "Déchargement de conteneurs",
+      "desc": "Services professionnels de déballage et de déchargement de conteneurs intégrés à votre flux de réception."
+    }
+  },
+  "benefits": {
+    "badge": "Avantages clés",
+    "title": "Tout ce dont votre inventaire a besoin",
+    "items": [
+      "Environnement de stockage sécurisé et conforme",
+      "Report de droits en entrepôt sous douane",
+      "Solutions évolutives court et long terme",
+      "Reconditionnement et étiquetage professionnels",
+      "Services de palettisation experts",
+      "Pick-and-pack à la demande",
+      "Gestion précise des stocks",
+      "Déchargement de conteneurs inclus"
+    ]
+  },
+  "cta": {
+    "title": "Vos marchandises. Stockées en sécurité. Prêtes instantanément.",
+    "description": "Avec Winz Logistics, votre inventaire est géré avec précision dans une installation sécurisée et entièrement conforme — soutenu par une équipe prête à intervenir à tout moment."
+  }
+}

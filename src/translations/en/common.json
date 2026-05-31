@@ -4,6 +4,7 @@
     "about": "About Us",
     "services": "Services",
     "customsClearance": "Customs Clearance Services",
+    "yourCommunity": "Your Community",
     "clearance": {
       "import": "Import Clearance",
       "export": "Export Clearance",
@@ -16,10 +17,20 @@
     "tracking": "Tracking",
     "contact": "Contact Us"
   },
+  "language": {
+    "switcherLabel": "Switch language"
+  },
+  "a11y": {
+    "menuOpen": "Open menu",
+    "menuClose": "Close menu",
+    "dismissNotification": "Dismiss notification"
+  },
   "footer": {
     "description": "Your Lightning Fast Delivery Partner. Providing reliable, secure, and fast logistics solutions globally.",
     "quickLinks": "Quick Links",
     "contactInfo": "Contact Info",
+    "address": "Gentsesteenweg 102 D4, 9240 Zele, Belgium",
+    "email": "info@winz.be",
     "rights": "All Rights Reserved.",
     "newsletter": {
       "title": "Newsletter",
@@ -38,6 +49,15 @@
     "getQuote": "Get a Quote",
     "trackShipment": "Track Shipment",
     "learnMore": "Learn More"
+  },
+  "shared": {
+    "learnMore": "Learn More",
+    "discoverStory": "Discover Our Story"
+  },
+  "badges": {
+    "customsClearance": "Customs Clearance",
+    "inlandLogistics": "Inland Logistics",
+    "storageValueAdded": "Storage & Value-Added"
   },
   "contactCta": {
     "badge": "Logistics experts on standby",

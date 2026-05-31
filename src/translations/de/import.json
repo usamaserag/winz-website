@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "title": "Import-Zollabfertigung"
+  },
+  "hero": {
+    "badge": "Exzellenz in der eingehenden Logistik",
+    "title": "Meistern Sie die europäische Import-Compliance mit",
+    "highlight": "Winz Logistics",
+    "description": "Optimierung Ihrer Lieferkette durch professionelle Zolllösungen.",
+    "stats": {
+      "headline": "Über 14 Jahre",
+      "subline": "spezialisierte Expertise"
+    }
+  },
+  "landscape": {
+    "badge": "Importabfertigung",
+    "title": "Navigation durch die europäische Importlandschaft",
+    "paragraph1": "Die Navigation durch die europäische Importlandschaft ist oft eine anspruchsvolle Aufgabe. Zwischen den komplexen EU-Regulierungsrahmen, strengen Dokumentationsstandards und den Besonderheiten nationaler Verfahren sind Unternehmen häufig kostspieligen Verzögerungen und Compliance-Risiken ausgesetzt.",
+    "paragraph2": "Winz Logistics beseitigt diese Hindernisse und bietet nahtlose Import-Zollabfertigungsdienste auf dem gesamten Kontinent."
+  },
+  "features": {
+    "compliance": {
+      "title": "Vollständige EU-Compliance",
+      "desc": "Lückenlose Einhaltung der EU-Regulierungsrahmen und nationaler Verfahren."
+    },
+    "speed": {
+      "title": "Schnelle Bearbeitung",
+      "desc": "Minimieren Sie Verzögerungen durch unsere optimierten digitalen Zoll-Workflows."
+    },
+    "network": {
+      "title": "Europaweites Netzwerk",
+      "desc": "Das umfangreichste neutrale Zollnetzwerk der Region steht Ihnen zur Verfügung."
+    },
+    "accuracy": {
+      "title": "Dokumentationsgenauigkeit",
+      "desc": "Fehlerfreie Dokumentationsstandards, die Ihre Fracht in Bewegung halten."
+    }
+  },
+  "benefits": {
+    "title": "Warum Winz für Import",
+    "items": [
+      "Reduzierung der Zollbearbeitungszeit",
+      "Vollständige Einhaltung der EU-Importvorschriften",
+      "Dedizierter Zollspezialist für Ihr Konto",
+      "Echtzeit-Updates zum Sendungsstatus",
+      "Nahtlose Koordination mit EU-Hafenbehörden",
+      "Kostenoptimiertes Zoll- und Steuermanagement"
+    ]
+  }
+}

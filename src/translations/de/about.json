@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "title": "Über uns"
+  },
+  "hero": {
+    "badge": "Über Winz Logistics",
+    "title": "Ihr vertrauenswürdiger Partner für",
+    "highlight": "europäischen Zoll & Logistik",
+    "description": "Über 14 Jahre Expertise in Zollabfertigung, Transport und Lagerung in ganz Europa."
+  },
+  "stats": {
+    "experience": "Jahre Erfahrung",
+    "complianceRate": "EU-Compliance-Rate",
+    "portsCovered": "Abgedeckte europäische Häfen",
+    "services": "Abfertigungsdienste"
+  },
+  "welcome": {
+    "badge": "Willkommen bei Winz Logistics",
+    "title": "14 Jahre unvergleichliche Zollexpertise",
+    "paragraph1": "Für den europäischen Markt positioniert, schließen wir die Lücke zwischen globalen Lieferanten und der Europäischen Union und gewährleisten einen nahtlosen, schnellen und konformen Warenverkehr.",
+    "paragraph2": "Wir wissen, dass die Navigation durch Zollvorschriften komplex sein kann. Deshalb bieten wir ein umfassendes Zolldienstleistungspaket und übernehmen alle Formalitäten in allen europäischen Seehäfen und Grenzübergängen. Unser Ziel ist es, die logistische Komplexität zu übernehmen, damit Sie sich auf Ihr Kerngeschäft konzentrieren können.",
+    "networkTitle": "Europaweites Zollnetzwerk",
+    "networkSubtitle": "Alle Häfen & Grenzübergänge",
+    "badgeTitle": "Schnelle Abfertigung",
+    "badgeSubtitle": "Verzögerungen minimieren"
+  },
+  "whyChoose": {
+    "badge": "Warum Winz Logistics",
+    "title": "Warum Winz Logistics wählen?",
+    "reasons": {
+      "expertise": {
+        "title": "Über 14 Jahre Expertise",
+        "desc": "Tiefes Wissen über EU-Zollgesetzgebung und Grenzverfahren, aufgebaut über ein Jahrzehnt engagierter Praxis."
+      },
+      "customs": {
+        "title": "Umfassende Zolldienstleistungen",
+        "desc": "Spezialisiert auf Import-, Export- und Transitformalitäten mit vollständiger Compliance in jedem Schritt."
+      },
+      "coverage": {
+        "title": "Strategische europäische Abdeckung",
+        "desc": "Bearbeitung von Dokumentation und Abfertigung in allen wichtigen europäischen Häfen und Grenzübergängen."
+      },
+      "food": {
+        "title": "Spezialisierte Lebensmittelhandhabung",
+        "desc": "Fachgerechte Abwicklung von Tiefkühl-, Kühl- und Frischwaren, einschließlich Gemüse und verderblicher Güter."
+      },
+      "cargo": {
+        "title": "Alle Frachtarten",
+        "desc": "Von Containerfracht bis zur allgemeinen Fracht — wir managen alle Produkttypen aus der ganzen Welt."
+      },
+      "warehousing": {
+        "title": "Lagerlösungen",
+        "desc": "Sichere Lageroptionen einschließlich Zolllager zur Optimierung Ihrer Lieferkette."
+      }
+    }
+  },
+  "coreServices": {
+    "badge": "Was wir tun",
+    "title": "Unsere Kernleistungen",
+    "customs": {
+      "title": "Professionelle Zollabfertigung in Europa",
+      "desc": "Wir übernehmen alle Zollangelegenheiten für Waren, die aus der ganzen Welt nach Europa gelangen.",
+      "items": [
+        "Tiefkühl- & Kühlwaren — Spezialisierte Handhabung für temperaturempfindliche Fracht (Lebensmittel & Gemüse).",
+        "Allgemeine Waren — Effiziente Abfertigung für alle Frachtarten.",
+        "Dokumentation — Handelsrechnungen, Packlisten, Ursprungszeugnisse und Transitdokumentation T1–T2."
+      ]
+    },
+    "transport": {
+      "title": "Containertransport & Versand",
+      "desc": "Mit einem starken Netzwerk steuern wir den gesamten See- oder Landtransportprozess und stellen sicher, dass Ihre Waren sicher und pünktlich ankommen."
+    },
+    "warehouse": {
+      "title": "Umfassende Lagerung",
+      "desc": "Ob kurzfristige Lagerung während der Abfertigung oder langfristige Lösungen — wir bieten:",
+      "items": [
+        "Sichere Lagerung.",
+        "Zolllager-Einrichtungen.",
+        "Auspack- und Containerentladedienste."
+      ]
+    }
+  },
+  "cta": {
+    "title": "Winz Logistics vereinfacht Ihren internationalen Handel",
+    "description": "Kontaktieren Sie uns noch heute für eine nahtlose Abwicklung Ihrer Logistik. Wir übernehmen die Komplexität, damit Sie sich auf das Wachstum Ihres Unternehmens konzentrieren können."
+  }
+}

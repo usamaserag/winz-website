@@ -1,0 +1,102 @@
+{
+  "metaTitle": "Contact | WINZ Logistics",
+  "title": "Contact",
+  "subtitle": "Wij staan klaar voor douane-inklearing, transport en opslag in heel Europa.",
+  "hero": {
+    "badge": "Neem contact op",
+    "title": "Laten we uw vracht",
+    "highlight": "Door Europa brengen",
+    "description": "Praat met onze logistieke specialisten over douane-inklearing, binnenlands transport, opslag en end-to-end supply chain ondersteuning."
+  },
+  "info": {
+    "sectionBadge": "Contactgegevens",
+    "heading": "Hoe u ons bereikt",
+    "subheading": "Ons team staat klaar voor vragen over zendingen, compliance en partnerschappen.",
+    "emailLabel": "E-mail",
+    "emailValue": "info@winz.be",
+    "phoneLabel": "Telefoon",
+    "phoneValue": "+32 496 32 24 67",
+    "addressLabel": "Kantooradres",
+    "addressValue": "Gentsesteenweg 102 D4, 9240 Zele, Belgium",
+    "hoursLabel": "Openingstijden",
+    "hoursValue": "Maandag – Vrijdag: 08:00 – 18:00 (CET)\nZaterdag: Op afspraak"
+  },
+  "form": {
+    "heading": "Stuur ons een bericht",
+    "subheading": "Vul het formulier in en ons team neemt zo snel mogelijk contact met u op.",
+    "name": "Volledige naam",
+    "namePlaceholder": "Uw volledige naam",
+    "email": "E-mailadres",
+    "emailPlaceholder": "u@bedrijf.com",
+    "phone": "Telefoonnummer",
+    "phonePlaceholder": "+32 ...",
+    "company": "Bedrijfsnaam",
+    "companyPlaceholder": "Optioneel",
+    "subject": "Onderwerp",
+    "subjectPlaceholder": "bijv. Importinklearing aanvraag",
+    "message": "Bericht",
+    "messagePlaceholder": "Vertel ons over uw zending, route of logistieke vereisten...",
+    "submit": "Bericht verzenden",
+    "submitting": "Verzenden...",
+    "success": "Bedankt voor uw bericht. Ons logistieke team neemt binnenkort contact met u op.",
+    "submitError": "We konden uw bericht niet verzenden. Probeer het opnieuw of bel ons.",
+    "errorSummary": "Corrigeer de gemarkeerde velden voordat u verzendt.",
+    "validation": {
+      "fullNameRequired": "Volledige naam is verplicht.",
+      "fullNameMin": "Voer minimaal 2 tekens in.",
+      "emailRequired": "E-mailadres is verplicht.",
+      "emailInvalid": "Voer een geldig e-mailadres in.",
+      "phoneInvalid": "Voer een geldig telefoonnummer in.",
+      "subjectRequired": "Onderwerp is verplicht.",
+      "subjectMin": "Onderwerp moet minimaal 3 tekens bevatten.",
+      "messageRequired": "Bericht is verplicht.",
+      "messageMin": "Bericht moet minimaal 10 tekens bevatten."
+    }
+  },
+  "sidebar": {
+    "inquiryTitle": "Zendingaanvraag",
+    "inquiryText": "Dringende douane- of transportondersteuning nodig? Bel onze operations desk voor snellere hulp bij actieve zendingen.",
+    "callNow": "Operations desk bellen",
+    "supportTitle": "Logistieke ondersteuning",
+    "support": {
+      "shipment": {
+        "title": "Zendingcoördinatie",
+        "desc": "Import-, export- en transitinklearing in Europese havens en aan grenzen."
+      },
+      "compliance": {
+        "title": "Compliance-begeleiding",
+        "desc": "Documentatie, heffingen en regelgevingsondersteuning voor EU-handel."
+      },
+      "support": {
+        "title": "Toegewijde specialisten",
+        "desc": "Persoonlijke accountondersteuning voor langdurige logistieke partnerschappen."
+      }
+    }
+  },
+  "map": {
+    "badge": "Onze locatie",
+    "title": "Europees operationscentrum",
+    "directions": "Openen in Google Maps",
+    "iframeTitle": "WINZ Logistics kantoor in Zele, België"
+  },
+  "faq": {
+    "badge": "Snelle antwoorden",
+    "heading": "Veelgestelde vragen",
+    "subheading": "Korte antwoorden voordat u contact opneemt — bekijk onze volledige FAQ voor meer details.",
+    "viewAll": "Alle FAQ's bekijken",
+    "items": {
+      "customs": {
+        "q": "Welke douanediensten bieden jullie aan?",
+        "a": "Wij verzorgen import-, export- en transitinklearing in Europese zeehavens en grensovergangen, plus binnenlands transport en opslag."
+      },
+      "quote": {
+        "q": "Hoe vraag ik een offerte aan?",
+        "a": "Dien het contactformulier in met route, vrachttype en planning. Ons team stelt een logistiek voorstel op maat samen."
+      },
+      "response": {
+        "q": "Hoe snel reageren jullie?",
+        "a": "We streven ernaar zakelijke aanvragen binnen één werkdag te beantwoorden. Urgente zendingen kunnen telefonisch worden behandeld."
+      }
+    }
+  }
+}

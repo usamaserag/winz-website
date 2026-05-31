@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "title": "Suivi d'envoi | WINZ Logistics"
+  },
+  "hero": {
+    "badge": "Suivi d'envoi",
+    "title": "Suivez votre envoi en temps réel",
+    "subtitle": "Saisissez votre numéro de suivi ci-dessous pour obtenir des mises à jour en direct sur la localisation et le statut de votre envoi.",
+    "unavailableMessage": "Le suivi en ligne est actuellement indisponible. Veuillez contacter notre support pour connaître le statut de votre envoi."
+  },
+  "form": {
+    "label": "Numéro de suivi",
+    "placeholder": "ex. WINZ-2024-00123456",
+    "button": "Suivre maintenant",
+    "hint": "Votre numéro de suivi se trouve dans l'e-mail de confirmation d'expédition."
+  },
+  "status": {
+    "title": "Statut de l'envoi",
+    "id": "ID de suivi",
+    "origin": "Origine",
+    "destination": "Destination",
+    "eta": "Arrivée estimée",
+    "weight": "Poids",
+    "type": "Type d'envoi"
+  },
+  "timeline": {
+    "title": "Chronologie de l'envoi",
+    "orderPlaced": "Commande passée",
+    "orderPlacedDesc": "Votre commande d'envoi a été reçue et confirmée.",
+    "pickedUp": "Enlevée",
+    "pickedUpDesc": "Colis collecté chez l'expéditeur.",
+    "inTransit": "En transit",
+    "inTransitDesc": "Le colis est en route vers le hub de destination.",
+    "outForDelivery": "En cours de livraison",
+    "outForDeliveryDesc": "Le colis est chez notre coursier pour la livraison finale.",
+    "delivered": "Livrée",
+    "deliveredDesc": "Colis livré avec succès au destinataire."
+  },
+  "features": {
+    "title": "Pourquoi suivre avec WINZ ?",
+    "realtime": {
+      "title": "Mises à jour en temps réel",
+      "desc": "Suivi GPS en direct avec notifications automatiques à chaque étape."
+    },
+    "notifications": {
+      "title": "Notifications intelligentes",
+      "desc": "Recevez des alertes SMS et e-mail pour rester informé sans vérifier manuellement."
+    },
+    "history": {
+      "title": "Historique complet",
+      "desc": "Accédez au parcours complet de chaque envoi, de l'enlèvement à la livraison finale."
+    }
+  },
+  "cta": {
+    "subtitle": "Prêt à expédier ? Contactez notre équipe pour un devis sur mesure."
+  },
+  "demo": {
+    "originCity": "Dubaï, EAU",
+    "destCity": "Riyad, Arabie saoudite",
+    "etaValue": "14 mai 2026",
+    "weightValue": "12,5 kg",
+    "typeValue": "Fret express"
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "title": "Europäischer Zoll & Logistik Blog | WINZ Logistics"
+  },
+  "seo": {
+    "description": "Lesen Sie die neuesten Updates, professionellen Leitfäden und Fachartikel zu europäischer Zollabfertigung, Containerlogistik und steuerlichen Vorschriften.",
+    "ogTitle": "Zoll- & Logistik-Insights Blog - WINZ Logistics",
+    "ogDescription": "Lesen Sie die neuesten Updates und professionellen Leitfäden zu europäischer Zollabfertigung und Logistik."
+  },
+  "listing": {
+    "hero": {
+      "badge": "WINZ Logistics Insights",
+      "title": "Zoll & Logistik",
+      "highlight": "Insights & Artikel",
+      "description": "Bleiben Sie auf dem Laufenden über professionelle Zollabfertigungsverfahren, Transport-Updates und Supply-Chain-Strategien in der Europäischen Union."
+    },
+    "searchPlaceholder": "Artikel nach Titel, Thema oder Stichwort suchen...",
+    "emptyState": {
+      "title": "Keine passenden Artikel gefunden",
+      "description": "Versuchen Sie es mit Begriffen wie „Belgien“, „Import“ oder „Abfertigung“."
+    },
+    "countLabel": "{{count}} Artikel",
+    "categoryBadge": "Zoll-Leitfaden",
+    "untitledArticle": "Unbenannter Artikel",
+    "readFullArticle": "Vollständigen Artikel lesen",
+    "fallbackExcerpt": "Professionelle Leitfäden zur Zollabfertigung, erforderliche EU-Dokumentation, Compliance-Einreichungen und Logistikunterstützung für {{title}} in Belgien, den Niederlanden, Deutschland und Frankreich.",
+    "fallbackExcerptDefaultTitle": "Zollanmeldungen"
+  },
+  "detail": {
+    "notFound": {
+      "title": "Artikel nicht gefunden",
+      "description": "Der angeforderte Blogbeitrag konnte nicht gefunden werden.",
+      "backToBlog": "Zurück zum Blog"
+    },
+    "breadcrumbs": {
+      "home": "Startseite",
+      "blog": "Blog"
+    },
+    "categoryBadge": "Zoll-Leitfaden",
+    "publishedDate": "19. Mai 2026",
+    "author": "WINZ Logistics Spezialistenteam",
+    "articleContentTitle": "Artikelinhalt",
+    "faqTitle": "Häufig gestellte Fragen",
+    "inlineFaq": {
+      "requiredDocumentsQ": "Welche Dokumente werden für {{title}} benötigt?",
+      "requiredDocumentsA": "Für die Standardabfertigung sind Handelsrechnung, Packliste, Ursprungszeugnis und Transportanmeldungen (T1, T2 oder CMR) erforderlich. Branchenspezifische Lizenzen können je nach Produkttyp gelten (Lebensmittel, Pharma, Elektronik usw.).",
+      "durationQ": "Wie lange dauert {{title}} in der Regel?",
+      "durationA": "Bei vollständiger Dokumentation und abgeschlossenen Voranmeldungen dauern die meisten EU-Zollabfertigungsprozesse zwischen 1–4 Stunden. Verzögerungen entstehen durch Dokumentationsfehler, Kontrollen oder fehlende EORI-/MwSt.-Registrierung.",
+      "winzHandlingQ": "Wie bearbeitet WINZ Logistics {{title}}?",
+      "winzHandlingA": "WINZ Logistics nutzt automatisierte Zollschnittstellensysteme, die direkt mit dem Hafen von Antwerpen, dem Hafen Rotterdam, Hamburg und anderen wichtigen europäischen Eintrittspunkten verbunden sind — für schnellere Einreichungen und Echtzeit-Updates zum Abfertigungsstatus."
+    },
+    "fallbackArticle": {
+      "h1": "Umfassender Leitfaden zu {{name}}",
+      "intro": "Die Abwicklung von {{nameLower}} in Europa erfordert tiefes Fachwissen in EU-Import-/Exportvorschriften, lokaler Steuer-Compliance und Transitverfahren. Bei WINZ Logistics stellen unsere dedizierten Zollmakler sicher, dass Ihre Sendungen schnell und effizient abgefertigt werden.",
+      "docsTitle": "Wesentliche Dokumentationsanforderungen",
+      "docsIntro": "Für eine nahtlose Abfertigung von {{name}} müssen die folgenden Standarddokumente vor Ankunft im Hafen vorbereitet und validiert werden:",
+      "docItems": [
+        "Handelsrechnung mit Käufer-/Verkäuferinformationen und Incoterms",
+        "Detaillierte Packliste mit Gewichten, Verpackung und Stückzahlen",
+        "Transportdokumente (CMR, Konnossement oder Luftfrachtbrief)",
+        "Zollanmeldungen (SAD / Single Administrative Document)",
+        "HS-Code-Klassifizierungsbestätigung durch einen lizenzierten Zollmakler"
+      ],
+      "operationsTitle": "Hafenoperationen & Zollmaklerdienste",
+      "operationsIntro": "Unsere Teams sind direkt an wichtigen europäischen Frachtknotenpunkten tätig, darunter der Hafen von Antwerpen, der Hafen Rotterdam, Hamburg und Paris CDG. Wir übernehmen:",
+      "operationItems": [
+        "Import-Zollanmeldungen (direkte und indirekte Vertretung)",
+        "Transitdokumente (T1, T2) für Waren, die durch Nicht-EU-Staaten transportiert werden",
+        "Fiskalvertretung für ausländische Unternehmen, die in die EU importieren",
+        "Zollprüfungen und Beratung zur HS-Code-Klassifizierung"
+      ],
+      "complianceTitle": "Compliance & regulatorische Anforderungen",
+      "complianceBody": "Alle Sendungen, die {{nameLower}} unterliegen, müssen den geltenden Vorschriften der EU-Zollunion entsprechen, einschließlich EORI-Registrierung, MwSt.-Meldepflichten und branchenspezifischer Lizenzen (Lebensmittelsicherheit, CE-Kennzeichnung, CITES usw.). WINZ Logistics überwacht regulatorische Updates kontinuierlich, um Ihre Operationen konform zu halten.",
+      "whyWinzTitle": "Warum WINZ Logistics wählen?",
+      "whyWinzBody": "Mit jahrzehntelanger kombinierter Erfahrung in EU-Handelsvorschriften bietet WINZ Logistics End-to-End-Unterstützung für Spedition, Lagerung und Grenzeinreichungen. Kontaktieren Sie unser Team noch heute, um Ihre Lieferkette zu optimieren und kostspielige Zollverzögerungen zu vermeiden."
+    },
+    "noContentAvailable": "Für diesen Artikel ist kein Inhalt verfügbar.",
+    "schemaFaq": {
+      "docsQuestion": "Welche Dokumente werden für {{title}} benötigt?",
+      "docsAnswer": "Standarddokumente für {{title}} umfassen: Handelsrechnung, Packliste, Ursprungszeugnis, Transportanmeldungen (T1, T2, CMR) und HS-Code-Klassifizierung. Zusätzliche branchenspezifische Lizenzen können erforderlich sein.",
+      "supportQuestion": "Wie unterstützt WINZ Logistics {{title}}?",
+      "supportAnswer": "WINZ Logistics bietet direkte Maklerdienste, Transitdokumentationseinreichung (T1/T2), Zolldokumentenprüfungen und vollständige Zollabfertigung in europäischen Häfen (Antwerpen, Rotterdam, Hamburg, Paris)."
+    }
+  }
+}

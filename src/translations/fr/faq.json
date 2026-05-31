@@ -1,0 +1,35 @@
+{
+  "meta": {
+    "title": "FAQ dédouanement | WINZ Logistics"
+  },
+  "seo": {
+    "description": "Réponses aux questions fréquentes sur le dédouanement, les documents requis, les procédures import/export et la représentation fiscale en Europe.",
+    "ogTitle": "FAQ dédouanement - WINZ Logistics",
+    "ogDescription": "Réponses aux questions courantes sur le dédouanement, les documents et les procédures en Europe."
+  },
+  "hero": {
+    "badge": "Des questions ?",
+    "title": "Dédouanement",
+    "highlight": "FAQ & Centre d'aide",
+    "description": "Réponses détaillées sur la réglementation douanière, les documents, les procédures d'importation et les questions fiscales en Belgique, aux Pays-Bas, en Allemagne et en France."
+  },
+  "searchPlaceholder": "Rechercher par question, procédure ou nom de document...",
+  "emptyState": {
+    "title": "Aucune FAQ correspondante",
+    "description": "Essayez des termes comme « ENS », « déclaration » ou « douane »."
+  },
+  "countLabel": "{{count}} questions fréquemment posées",
+  "dynamicTemplates": {
+    "question": {
+      "documents": "Quels documents sont requis pour {{name}} ?",
+      "duration": "Combien de temps prend {{name}} ?",
+      "procedure": "Quelle est la procédure pour {{name}} ?",
+      "certificate": "Qu'est-ce que {{name}} et pourquoi est-ce requis ?",
+      "declaration": "Comment fonctionne {{name}} auprès des douanes ?",
+      "number": "Qu'est-ce que {{name}} et comment cela fonctionne-t-il ?",
+      "customs": "En quoi consiste {{name}} ?",
+      "default": "Que signifie {{name}} ?"
+    },
+    "answerFallback": "{{name}} est un élément important du processus douanier européen. Il implique une documentation correcte, le respect de la réglementation et la coordination avec les autorités douanières. WINZ Logistics gère tous les aspects de {{researchLower}} pour garantir que vos marchandises sont dédouanées sans retard ni pénalité."
+  }
+}

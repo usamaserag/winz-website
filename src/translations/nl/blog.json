@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "title": "Europese douane & logistiek blog | WINZ Logistics"
+  },
+  "seo": {
+    "description": "Lees de nieuwste updates, professionele richtlijnen en technische artikelen over Europese douane-inklearing, containerlogistiek en fiscale regelgeving.",
+    "ogTitle": "Douane & logistiek insights blog - WINZ Logistics",
+    "ogDescription": "Lees de nieuwste updates en professionele richtlijnen over Europese douane-inklearing en logistiek."
+  },
+  "listing": {
+    "hero": {
+      "badge": "WINZ Logistics Insights",
+      "title": "Douane & logistiek",
+      "highlight": "Insights & artikelen",
+      "description": "Blijf op de hoogte van professionele douane-inklearingsprocedures, transportupdates en supply chain-strategieën in de Europese Unie."
+    },
+    "searchPlaceholder": "Zoek artikelen op titel, onderwerp of trefwoord...",
+    "emptyState": {
+      "title": "Geen overeenkomende artikelen gevonden",
+      "description": "Probeer te zoeken op termen zoals \"België\", \"import\" of \"inklearing\"."
+    },
+    "countLabel": "{{count}} artikelen",
+    "categoryBadge": "Douanegids",
+    "untitledArticle": "Artikel zonder titel",
+    "readFullArticle": "Volledig artikel lezen",
+    "fallbackExcerpt": "Professionele richtlijnen voor douane-inklearing, vereiste EU-documentatie, compliance-aangiften en logistieke ondersteuning voor {{title}} in België, Nederland, Duitsland en Frankrijk.",
+    "fallbackExcerptDefaultTitle": "douaneaangiften"
+  },
+  "detail": {
+    "notFound": {
+      "title": "Artikel niet gevonden",
+      "description": "Het opgevraagde blogartikel kon niet worden gevonden.",
+      "backToBlog": "Terug naar blog"
+    },
+    "breadcrumbs": {
+      "home": "Home",
+      "blog": "Blog"
+    },
+    "categoryBadge": "Douanegids",
+    "publishedDate": "May 19, 2026",
+    "author": "WINZ Logistics Specialist Team",
+    "articleContentTitle": "Artikelinhoud",
+    "faqTitle": "Veelgestelde vragen",
+    "inlineFaq": {
+      "requiredDocumentsQ": "Welke documenten zijn vereist voor {{title}}?",
+      "requiredDocumentsA": "Standaard inklaring vereist een commerciële factuur, paklijst, certificaat van oorsprong en transportaangiften (T1, T2 of CMR). Sectorspecifieke vergunningen kunnen van toepassing zijn afhankelijk van het producttype (voedsel, pharma, elektronica, enz.).",
+      "durationQ": "Hoe lang duurt {{title}} doorgaans?",
+      "durationA": "Met alle documenten in orde en vooraf ingediende aangiften duren de meeste EU-douane-inklearingsprocessen tussen 1–4 uur. Vertragingen ontstaan door documentfouten, inspecties of ontbrekende EORI/BTW-registratie.",
+      "winzHandlingQ": "Hoe handelt WINZ Logistics {{title}} af?",
+      "winzHandlingA": "WINZ Logistics gebruikt geautomatiseerde douaneinterfacesystemen die rechtstreeks zijn gekoppeld aan de haven van Antwerpen, de haven van Rotterdam, Hamburg en andere belangrijke Europese toegangspunten — voor snellere aangiften en realtime updates van inklaringsstatus."
+    },
+    "fallbackArticle": {
+      "h1": "Uitgebreide gids voor {{name}}",
+      "intro": "{{nameLower}} beheren in Europa vereist diepgaande expertise in EU-import-/exportvoorschriften, lokale belastingnaleving en transitprocedures. Bij WINZ Logistics zorgen onze toegewijde douane-expediteurs ervoor dat uw zendingen snel en efficiënt worden ingeklaard.",
+      "docsTitle": "Belangrijkste documentatievereisten",
+      "docsIntro": "Voor naadloze inklaring van {{name}} moet de volgende standaarddocumentatie vóór aankomst in de haven worden voorbereid en gevalideerd:",
+      "docItems": [
+        "Commerciële factuur met koper/verkopergegevens en incoterms",
+        "Gedetailleerde paklijst met gewichten, verpakking en aantallen",
+        "Transportdocumenten (CMR, Bill of Lading of Air Waybill)",
+        "Douaneaangiften (SAD / Single Administrative Document)",
+        "HS-code classificatiebevestiging van een erkende douane-expediteur"
+      ],
+      "operationsTitle": "Havenoperaties & douane-expeditie",
+      "operationsIntro": "Onze teams zijn actief op belangrijke Europese vrachthubs, waaronder de haven van Antwerpen, de haven van Rotterdam, Hamburg en Parijs CDG. Wij regelen:",
+      "operationItems": [
+        "Importdouaneaangiften (directe en indirecte vertegenwoordiging)",
+        "Transitdocumenten (T1, T2) voor goederen die door niet-EU-staten reizen",
+        "Fiscale vertegenwoordiging voor buitenlandse entiteiten die in de EU importeren",
+        "Douaneaudits en advies over HS-code classificatie"
+      ],
+      "complianceTitle": "Naleving & regelgevingsvereisten",
+      "complianceBody": "Alle zendingen onderhevig aan {{nameLower}} moeten voldoen aan de huidige EU-douane-unievoorschriften, inclusief EORI-registratie, BTW-rapportageverplichtingen en sectorspecifieke vergunningen (voedselveiligheid, CE-markering, CITES, enz.). WINZ Logistics volgt regelgevingsupdates continu om uw operaties conform te houden.",
+      "whyWinzTitle": "Waarom WINZ Logistics?",
+      "whyWinzBody": "Met decennia gecombineerde ervaring in EU-handelsvoorschriften biedt WINZ Logistics end-to-end ondersteuning voor freight forwarding, opslag en grensaangiften. Neem vandaag contact op met ons team om uw supply chain te stroomlijnen en kostbare douanevertragingen te voorkomen."
+    },
+    "noContentAvailable": "Geen inhoud beschikbaar voor dit artikel.",
+    "schemaFaq": {
+      "docsQuestion": "Welke documenten zijn vereist voor {{title}}?",
+      "docsAnswer": "Standaarddocumenten voor {{title}} omvatten: commerciële factuur, paklijst, certificaat van oorsprong, transportaangiften (T1, T2, CMR) en HS-code classificatie. Aanvullende sectorvergunningen kunnen van toepassing zijn.",
+      "supportQuestion": "Hoe ondersteunt WINZ Logistics {{title}}?",
+      "supportAnswer": "WINZ Logistics biedt directe expeditie, indiening van transitdocumentatie (T1/T2), douanedocumentaudits en volledige douane-inklearing in Europese havens (Antwerpen, Rotterdam, Hamburg, Parijs)."
+    }
+  }
+}

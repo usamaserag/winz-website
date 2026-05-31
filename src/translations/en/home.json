@@ -1,27 +1,102 @@
 {
-  "hero": {
-    "title": "Your Lightning Fast Delivery Partner",
-    "subtitle": "Global logistics solutions designed for speed, security, and scalability.",
-    "cta": "Start Shipping Now"
+  "meta": {
+    "title": "Home"
   },
-  "features": {
-    "title": "Why Choose WINZ",
-    "speed": {
-      "title": "Lightning Fast",
-      "desc": "Optimized routing for the quickest delivery times."
-    },
-    "global": {
-      "title": "Global Reach",
-      "desc": "Connecting businesses across borders seamlessly."
-    },
-    "secure": {
-      "title": "Secure Cargo",
-      "desc": "State-of-the-art tracking and security for your goods."
+  "hero": {
+    "badge": "European Logistics & Customs",
+    "titlePrefix": "Trusted partner for",
+    "titleHighlight": "cross-border cargo",
+    "description": "14 years of customs clearance, container transport, and warehousing across Europe — built for speed, compliance, and reliability.",
+    "ctaPrimary": "Get a Quote",
+    "ctaSecondary": "Our Services",
+    "highlights": {
+      "haulage": {
+        "label": "Inland haulage",
+        "value": "EU-wide"
+      },
+      "ports": {
+        "label": "Port coverage",
+        "value": "All major"
+      },
+      "compliance": {
+        "label": "Compliance",
+        "value": "100% EU"
+      }
     }
   },
-  "ctaSection": {
-    "title": "Ready to ship your first cargo with us?",
-    "subtitle": "Join thousands of businesses that trust WINZ for their logistics needs.",
-    "button": "Contact Us Today"
+  "stats": {
+    "experience": "Years of Experience",
+    "compliance": "EU Compliance",
+    "ports": "European Ports",
+    "services": "Clearance Services"
+  },
+  "aboutPreview": {
+    "badge": "Who We Are",
+    "title": "Winz Logistics — Your Trusted European Customs Partner",
+    "description": "Headquartered to serve the European market, we specialise in bridging the gap between global suppliers and the EU. With over 14 years of experience, we handle all customs formalities at every European seaport and border crossing — so you can focus on your core business.",
+    "cta": "Discover Our Story"
+  },
+  "services": {
+    "badge": "Our Services",
+    "title": "Every Step of Your Cargo's Journey",
+    "description": "From customs clearance to inland haulage and secure storage — we manage every stage so your supply chain never skips a beat.",
+    "cards": {
+      "import": {
+        "title": "Import",
+        "badge": "Customs Clearance",
+        "desc": "Seamless import customs clearance across all European seaports and border crossings — fully compliant, fully managed."
+      },
+      "export": {
+        "title": "Export",
+        "badge": "Customs Clearance",
+        "desc": "Navigate dual-use controls, preferential origin, and VAT proof-of-exit with expert export clearance support."
+      },
+      "transit": {
+        "title": "Transit",
+        "badge": "Customs Clearance",
+        "desc": "Uninterrupted cross-border movement with T1/T2 declarations and NCTS digital filing handled end-to-end."
+      },
+      "transport": {
+        "title": "Transport",
+        "badge": "Inland Logistics",
+        "desc": "Full-scale container haulage for 20ft, 40ft, and 45ft containers — from port terminal to your doorstep."
+      },
+      "warehouse": {
+        "title": "Warehouse",
+        "badge": "Storage & Value-Added",
+        "desc": "Bonded storage, short & long-term solutions, pick-and-pack, palletising, and duty deferral — all under one roof."
+      }
+    },
+    "cta": "Learn More"
+  },
+  "whyChoose": {
+    "badge": "Why Choose Us",
+    "title": "Why Businesses Trust Winz Logistics",
+    "pillars": {
+      "expertise": {
+        "title": "14+ Years Expertise",
+        "desc": "Deep knowledge of EU customs legislation and cross-border procedures."
+      },
+      "compliance": {
+        "title": "Full Compliance Guaranteed",
+        "desc": "Every shipment processed to the highest regulatory standards — no exceptions."
+      },
+      "network": {
+        "title": "Pan-European Network",
+        "desc": "The region's most extensive neutral customs network at every port and crossing."
+      },
+      "cargo": {
+        "title": "All Cargo Types",
+        "desc": "From perishable food to general merchandise and oversized freight."
+      },
+      "solutions": {
+        "title": "End-to-End Solutions",
+        "desc": "Customs clearance, haulage, and warehousing — fully integrated under one partner."
+      },
+      "team": {
+        "title": "Dedicated Specialists",
+        "desc": "A team of customs experts assigned to manage your account personally."
+      }
+    }
   }
 }

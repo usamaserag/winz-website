@@ -1,4 +1,5 @@
 import { useParams, Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import {
   Calendar, User, Bookmark, Tag, HelpCircle,
@@ -8,7 +9,6 @@ import {
 import { getBlogBySlug } from '../../data/siteData';
 import { useSEOMeta } from '../../hooks/useSEOMeta';
 import PageHeroShell from '../../components/logistics/PageHeroShell';
-import PageHero from '../../components/logistics/PageHero';
 
 // ─── Helpers ────────────────────────────────────────────────────────────────
 const clean = (str) => (str || '').trim().replace(/:+$/, '');
@@ -43,35 +43,32 @@ function parseContent(raw) {
 /**
  * Generate a professional article body when CSV content is a URL or missing.
  */
-function generateArticleContent(name) {
+function generateArticleContent(name, t) {
+  const nameLower = name.toLowerCase();
+  const docItems = t('detail.fallbackArticle.docItems', { returnObjects: true });
+  const operationItems = t('detail.fallbackArticle.operationItems', { returnObjects: true });
+
   return [
-    { type: 'h1', text: `Comprehensive Guide to ${name}` },
-    { type: 'p', text: `Managing ${name.toLowerCase()} in Europe requires deep expertise in EU import/export regulations, local tax compliance, and transit procedures. At WINZ Logistics, our dedicated customs brokers ensure your shipments clear customs quickly and efficiently.` },
-    { type: 'h2', text: 'Key Documentation Requirements' },
-    { type: 'p', text: `To ensure seamless clearance for ${name}, the following standard documentation must be prepared and validated prior to port arrival:` },
-    { type: 'li', text: 'Commercial Invoice detailing buyer/seller info and incoterms' },
-    { type: 'li', text: 'Detailed Packing List specifying weights, packaging, and item counts' },
-    { type: 'li', text: 'Transport documents (CMR, Bill of Lading, or Air Waybill)' },
-    { type: 'li', text: 'Customs Declarations (SAD / Single Administrative Document)' },
-    { type: 'li', text: 'HS Code classification confirmation from a licensed customs broker' },
-    { type: 'h2', text: 'Port Operations & Customs Brokerage' },
-    { type: 'p', text: 'Our teams operate directly at major European cargo hubs including the Port of Antwerp, Port of Rotterdam, Hamburg, and Paris CDG. We handle:' },
-    { type: 'li', text: 'Import Customs Declarations (direct and indirect representation)' },
-    { type: 'li', text: 'Transit documents (T1, T2) for goods moving through non-EU states' },
-    { type: 'li', text: 'Fiscal representation for foreign entities importing into the EU' },
-    { type: 'li', text: 'Customs audits and HS Code classification advice' },
-    { type: 'h2', text: 'Compliance & Regulatory Requirements' },
-    { type: 'p', text: `All shipments subject to ${name.toLowerCase()} must comply with current EU Customs Union regulations, including EORI registration, VAT reporting obligations, and any sector-specific licences (food safety, CE marking, CITES, etc.). WINZ Logistics monitors regulatory updates continuously to keep your operations compliant.` },
-    { type: 'h2', text: 'Why Choose WINZ Logistics?' },
-    { type: 'p', text: 'With decades of combined experience in EU trade regulations, WINZ Logistics provides end-to-end support for freight forwarding, warehousing, and border filings. Contact our team today to streamline your supply chain and prevent costly customs delays.' },
+    { type: 'h1', text: t('detail.fallbackArticle.h1', { name }) },
+    { type: 'p', text: t('detail.fallbackArticle.intro', { nameLower }) },
+    { type: 'h2', text: t('detail.fallbackArticle.docsTitle') },
+    { type: 'p', text: t('detail.fallbackArticle.docsIntro', { name }) },
+    ...(Array.isArray(docItems) ? docItems.map((item) => ({ type: 'li', text: item })) : []),
+    { type: 'h2', text: t('detail.fallbackArticle.operationsTitle') },
+    { type: 'p', text: t('detail.fallbackArticle.operationsIntro') },
+    ...(Array.isArray(operationItems) ? operationItems.map((item) => ({ type: 'li', text: item })) : []),
+    { type: 'h2', text: t('detail.fallbackArticle.complianceTitle') },
+    { type: 'p', text: t('detail.fallbackArticle.complianceBody', { nameLower }) },
+    { type: 'h2', text: t('detail.fallbackArticle.whyWinzTitle') },
+    { type: 'p', text: t('detail.fallbackArticle.whyWinzBody') },
   ];
 }
 
 // Render content segments as React JSX elements
-function ArticleBody({ segments }) {
+function ArticleBody({ segments, noContentLabel }) {
   if (!segments || segments.length === 0) {
     return (
-      <p className="text-gray-400 italic">No content available for this article.</p>
+      <p className="text-gray-400 italic">{noContentLabel}</p>
     );
   }
 
@@ -127,6 +124,7 @@ function ArticleBody({ segments }) {
 
 // ─── Component ───────────────────────────────────────────────────────────────
 export default function BlogDetail() {
+  const { t, i18n } = useTranslation('blog');
   const { slug } = useParams();
 
   // Instant lookup — data is bundled, no network request
@@ -135,12 +133,16 @@ export default function BlogDetail() {
   const title = post ? clean(post.name) : '';
   const keywords = post ? (() => { const r = post.research || ''; return isUrl(r) ? title : clean(r); })() : '';
   const rawStruct = post ? post['content structurs'] || '' : '';
-  const segments = post ? (parseContent(rawStruct) || generateArticleContent(title)) : [];
+  const segments = post ? (parseContent(rawStruct) || generateArticleContent(title, t)) : [];
 
   const canonicalUrl = post ? `${window.location.origin}/blog/${post.slug}` : window.location.href;
   const description = post
-    ? `Detailed guide on ${title}. Learn about ${title.toLowerCase()} requirements, processes, and best practices for European customs clearance. Keywords: ${keywords}.`
-    : 'WINZ Logistics Customs Blog';
+    ? t('detail.seoDescription', {
+        title,
+        titleLower: title.toLowerCase(),
+        keywords,
+      })
+    : t('meta.title');
 
   // Schema objects
   const articleSchema = post ? {
@@ -151,7 +153,7 @@ export default function BlogDetail() {
     keywords,
     url: canonicalUrl,
     mainEntityOfPage: canonicalUrl,
-    inLanguage: 'en',
+    inLanguage: i18n.language || 'en',
     author: { '@type': 'Organization', name: 'WINZ Logistics' },
     publisher: {
       '@type': 'Organization',
@@ -166,8 +168,8 @@ export default function BlogDetail() {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: window.location.origin },
-      { '@type': 'ListItem', position: 2, name: 'Blog', item: `${window.location.origin}/blog` },
+      { '@type': 'ListItem', position: 1, name: t('detail.breadcrumbs.home'), item: window.location.origin },
+      { '@type': 'ListItem', position: 2, name: t('detail.breadcrumbs.blog'), item: `${window.location.origin}/blog` },
       { '@type': 'ListItem', position: 3, name: title, item: canonicalUrl },
     ],
   } : null;
@@ -178,29 +180,29 @@ export default function BlogDetail() {
     mainEntity: [
       {
         '@type': 'Question',
-        name: `What documents are required for ${title}?`,
+        name: t('detail.schemaFaq.docsQuestion', { title }),
         acceptedAnswer: {
           '@type': 'Answer',
-          text: `Standard documents for ${title} include: Commercial Invoice, Packing List, Certificate of Origin, transport declarations (T1, T2, CMR), and HS Code classification. Additional sector licences may apply.`,
+          text: t('detail.schemaFaq.docsAnswer', { title }),
         },
       },
       {
         '@type': 'Question',
-        name: `How does WINZ Logistics support ${title}?`,
+        name: t('detail.schemaFaq.supportQuestion', { title }),
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'WINZ Logistics offers direct brokerage, transit documentation filing (T1/T2), customs document audits, and complete customs clearance at European ports (Antwerp, Rotterdam, Hamburg, Paris).',
+          text: t('detail.schemaFaq.supportAnswer', { title }),
         },
       },
     ],
   } : null;
 
   useSEOMeta(post ? {
-    title: `${title} | Customs & Logistics Blog`,
+    title: t('detail.seoPageTitle', { title }),
     description,
     keywords,
     canonical: canonicalUrl,
-    ogTitle: `${title} - Customs Clearance Article`,
+    ogTitle: t('detail.seoOgTitle', { title }),
     ogDescription: description,
     ogImage: `${window.location.origin}/logo.png`,
     ogUrl: canonicalUrl,
@@ -217,14 +219,14 @@ export default function BlogDetail() {
       <div className="min-h-screen flex items-center justify-center bg-gray-50 px-4">
         <div className="max-w-md w-full text-center py-12 px-6 bg-white border border-gray-100 rounded-3xl shadow-sm">
           <AlertCircle className="h-12 w-12 text-gray-400 mx-auto mb-4" />
-          <h3 className="text-lg font-bold text-gray-900 mb-2">Article Not Found</h3>
-          <p className="text-sm text-gray-500 mb-6">The requested blog post could not be found.</p>
+          <h3 className="text-lg font-bold text-gray-900 mb-2">{t('detail.notFound.title')}</h3>
+          <p className="text-sm text-gray-500 mb-6">{t('detail.notFound.description')}</p>
           <Link
             to="/blog"
             className="inline-flex items-center gap-2 px-5 py-2.5 bg-primary-600 hover:bg-primary-700 text-white rounded-xl font-medium shadow-md transition-colors"
           >
             <ArrowLeft className="h-4 w-4" />
-            Back to Blog
+            {t('detail.notFound.backToBlog')}
           </Link>
         </div>
       </div>
@@ -238,9 +240,9 @@ export default function BlogDetail() {
       <PageHeroShell size="compact" className="pb-12">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 w-full text-center">
           <nav className="flex items-center justify-center gap-2 text-xs text-white/60 mb-6" aria-label="Breadcrumb">
-            <Link to="/" className="hover:text-white transition-colors">Home</Link>
+            <Link to="/" className="hover:text-white transition-colors">{t('detail.breadcrumbs.home')}</Link>
             <ChevronRight className="w-3 h-3 opacity-50" />
-            <Link to="/blog" className="hover:text-white transition-colors">Blog</Link>
+            <Link to="/blog" className="hover:text-white transition-colors">{t('detail.breadcrumbs.blog')}</Link>
             <ChevronRight className="w-3 h-3 opacity-50" />
             <span className="text-white/80 line-clamp-1 max-w-[200px]">{title}</span>
           </nav>
@@ -248,7 +250,7 @@ export default function BlogDetail() {
           <div className="flex flex-wrap items-center justify-center gap-2 mb-5">
             <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-500/15 text-primary-200 border border-primary-400/25 text-xs font-semibold">
               <Bookmark className="w-3.5 h-3.5" />
-              Customs Guide
+              {t('detail.categoryBadge')}
             </span>
             {keywords && (
               <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 text-white/80 border border-white/15 text-xs font-medium">
@@ -265,11 +267,11 @@ export default function BlogDetail() {
           <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-slate-400">
             <div className="flex items-center gap-2">
               <Calendar className="w-4 h-4" />
-              <span>May 19, 2026</span>
+              <span>{t('detail.publishedDate')}</span>
             </div>
             <div className="flex items-center gap-2">
               <User className="w-4 h-4" />
-              <span>WINZ Logistics Specialist Team</span>
+              <span>{t('detail.author')}</span>
             </div>
           </div>
         </div>
@@ -286,10 +288,10 @@ export default function BlogDetail() {
         >
           <div className="flex items-center gap-2 mb-8">
             <ShieldCheck className="w-5 h-5 text-primary-500" />
-            <h2 className="text-xl font-bold text-gray-900">Article Content</h2>
+            <h2 className="text-xl font-bold text-gray-900">{t('detail.articleContentTitle')}</h2>
           </div>
 
-          <ArticleBody segments={segments} />
+          <ArticleBody segments={segments} noContentLabel={t('detail.noContentAvailable')} />
         </motion.article>
 
         {/* Inline FAQ Section */}
@@ -301,34 +303,34 @@ export default function BlogDetail() {
         >
           <div className="flex items-center gap-2 mb-8">
             <HelpCircle className="w-5 h-5 text-primary-500" />
-            <h2 className="text-xl font-bold text-gray-900">Frequently Asked Questions</h2>
+            <h2 className="text-xl font-bold text-gray-900">{t('detail.faqTitle')}</h2>
           </div>
 
           <div className="space-y-5">
             <div className="p-5 bg-gray-50/60 rounded-2xl border border-gray-100">
               <h4 className="font-bold text-gray-900 mb-2 text-sm md:text-base">
-                What documents are required for {title}?
+                {t('detail.inlineFaq.requiredDocumentsQ', { title })}
               </h4>
               <p className="text-sm md:text-base text-gray-600 leading-relaxed">
-                Standard clearance requires a Commercial Invoice, Packing List, Certificate of Origin, and transport declarations (T1, T2, or CMR). Sector-specific licences may apply depending on product type (food, pharma, electronics, etc.).
+                {t('detail.inlineFaq.requiredDocumentsA', { title })}
               </p>
             </div>
 
             <div className="p-5 bg-gray-50/60 rounded-2xl border border-gray-100">
               <h4 className="font-bold text-gray-900 mb-2 text-sm md:text-base">
-                How long does {title} typically take?
+                {t('detail.inlineFaq.durationQ', { title })}
               </h4>
               <p className="text-sm md:text-base text-gray-600 leading-relaxed">
-                With all documents in order and pre-lodgement filings completed, most EU customs clearance processes take between 1–4 hours. Delays occur due to document errors, inspections, or missing EORI/VAT registration.
+                {t('detail.inlineFaq.durationA', { title })}
               </p>
             </div>
 
             <div className="p-5 bg-gray-50/60 rounded-2xl border border-gray-100">
               <h4 className="font-bold text-gray-900 mb-2 text-sm md:text-base">
-                How does WINZ Logistics handle {title}?
+                {t('detail.inlineFaq.winzHandlingQ', { title })}
               </h4>
               <p className="text-sm md:text-base text-gray-600 leading-relaxed">
-                WINZ Logistics uses automated customs interface systems connected directly to the Port of Antwerp, Port of Rotterdam, Hamburg, and other major European entry points — enabling faster filings and real-time clearance status updates.
+                {t('detail.inlineFaq.winzHandlingA', { title })}
               </p>
             </div>
           </div>

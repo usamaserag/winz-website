@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "title": "Sendungsverfolgung | WINZ Logistics"
+  },
+  "hero": {
+    "badge": "Sendungsverfolgung",
+    "title": "Verfolgen Sie Ihre Sendung in Echtzeit",
+    "subtitle": "Geben Sie Ihre Sendungsnummer ein, um Live-Updates zum Standort und Status Ihrer Sendung zu erhalten.",
+    "unavailableMessage": "Die Online-Sendungsverfolgung ist derzeit nicht verfügbar. Bitte kontaktieren Sie unseren Support für den Status Ihrer Sendung."
+  },
+  "form": {
+    "label": "Sendungsnummer",
+    "placeholder": "z. B. WINZ-2024-00123456",
+    "button": "Jetzt verfolgen",
+    "hint": "Ihre Sendungsnummer finden Sie in der Versandbestätigungs-E-Mail."
+  },
+  "status": {
+    "title": "Sendungsstatus",
+    "id": "Tracking-ID",
+    "origin": "Herkunft",
+    "destination": "Ziel",
+    "eta": "Voraussichtliche Ankunft",
+    "weight": "Gewicht",
+    "type": "Sendungstyp"
+  },
+  "timeline": {
+    "title": "Sendungsverlauf",
+    "orderPlaced": "Bestellung aufgegeben",
+    "orderPlacedDesc": "Ihre Sendungsbestellung wurde empfangen und bestätigt.",
+    "pickedUp": "Abgeholt",
+    "pickedUpDesc": "Paket beim Absender abgeholt.",
+    "inTransit": "Unterwegs",
+    "inTransitDesc": "Paket ist auf dem Weg zum Ziel-Hub.",
+    "outForDelivery": "In Zustellung",
+    "outForDeliveryDesc": "Paket befindet sich beim Kurier für die Endzustellung.",
+    "delivered": "Zugestellt",
+    "deliveredDesc": "Paket erfolgreich an den Empfänger zugestellt."
+  },
+  "features": {
+    "title": "Warum mit WINZ verfolgen?",
+    "realtime": {
+      "title": "Echtzeit-Updates",
+      "desc": "Live-GPS-Tracking mit automatischen Benachrichtigungen bei jedem Meilenstein."
+    },
+    "notifications": {
+      "title": "Intelligente Benachrichtigungen",
+      "desc": "SMS- und E-Mail-Alerts, damit Sie immer informiert sind — ohne manuelles Nachschauen."
+    },
+    "history": {
+      "title": "Vollständiger Verlauf",
+      "desc": "Greifen Sie auf die komplette Reise jeder Sendung von der Abholung bis zur Zustellung zu."
+    }
+  },
+  "cta": {
+    "subtitle": "Bereit zu versenden? Kontaktieren Sie unser Team für ein maßgeschneidertes Angebot."
+  },
+  "demo": {
+    "originCity": "Dubai, VAE",
+    "destCity": "Riad, Saudi-Arabien",
+    "etaValue": "14. Mai 2026",
+    "weightValue": "12,5 kg",
+    "typeValue": "Expressfracht"
+  }
+}

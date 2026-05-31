@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "title": "Container Transport"
+  },
+  "hero": {
+    "badge": "Container Transport & Haulage",
+    "title": "Full-Scale Container Haulage",
+    "highlight": "Solutions",
+    "description": "From port terminals to your doorstep with Winz Logistics."
+  },
+  "approach": {
+    "badge": "Our Approach",
+    "title": "Bridging Customs Clearance & Final Delivery",
+    "paragraph1": "At Winz Logistics, we bridge the gap between customs clearance and final delivery. We specialise in coordinating professional container trucking services for all equipment sizes — ensuring your cargo moves swiftly from the port to its final destination.",
+    "paragraph2": "Once your shipment clears customs, our logistics team manages the entire haulage process. Whether you are handling standard dry vans, high cubes, or specialised containers, Winz Logistics guarantees a seamless transition from the quay to your specified address."
+  },
+  "containerSizes": {
+    "twenty": {
+      "size": "20ft",
+      "desc": "Standard container for general cargo and dry goods."
+    },
+    "forty": {
+      "size": "40ft",
+      "desc": "High-capacity haulage for larger shipments."
+    },
+    "fortyFive": {
+      "size": "45ft",
+      "desc": "Extended capacity for bulk or oversized loads."
+    }
+  },
+  "features": {
+    "badge": "What We Offer",
+    "title": "End-to-End Inland Logistics",
+    "allTypes": {
+      "title": "All Container Types",
+      "desc": "Standard dry vans, high cubes, and specialised containers — we handle them all."
+    },
+    "doorDelivery": {
+      "title": "Port-to-Door Delivery",
+      "desc": "Seamless transition from the quay directly to your specified address."
+    },
+    "scheduling": {
+      "title": "Precise Scheduling",
+      "desc": "Reliable transport network with strict schedule adherence to minimise delays."
+    },
+    "security": {
+      "title": "Secure Haulage",
+      "desc": "Full cargo security throughout the inland journey, from port terminal to destination."
+    },
+    "network": {
+      "title": "Wide Network",
+      "desc": "Extensive inland transport coverage across European destinations."
+    },
+    "management": {
+      "title": "End-to-End Management",
+      "desc": "Our logistics team manages every step of the haulage process on your behalf."
+    }
+  },
+  "benefits": {
+    "badge": "Key Benefits",
+    "title": "A Complete Transport Solution",
+    "items": [
+      "Post-clearance haulage coordination",
+      "20ft, 40ft, and 45ft container capability",
+      "Dry van and high cube container support",
+      "Real-time cargo tracking",
+      "Flexible delivery scheduling",
+      "Complete inland logistics management"
+    ]
+  },
+  "cta": {
+    "title": "With Reliable Transport & Precise Scheduling",
+    "description": "We take the complexity out of inland logistics, providing you with a complete, end-to-end solution from port clearance to final delivery."
+  }
+}

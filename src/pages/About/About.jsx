@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import {
   ShieldCheck, Globe, Truck, Warehouse, Package,
-  CheckCircle2, ArrowRight, Snowflake, FileText,
+  CheckCircle2, Snowflake, FileText,
   Ship, Award, Clock
 } from 'lucide-react';
 import usePageTitle from '../../hooks/usePageTitle';
@@ -16,105 +16,70 @@ const SectionBadge = ({ label }) => (
   </span>
 );
 
-/* ─── Why Choose data ─── */
-const reasons = [
-  {
-    icon: <Award className="w-6 h-6 text-primary-500" />,
-    title: '14+ Years of Expertise',
-    desc:  'Deep knowledge of EU customs legislation and border procedures built over a decade of dedicated practice.',
-  },
-  {
-    icon: <ShieldCheck className="w-6 h-6 text-primary-500" />,
-    title: 'Comprehensive Customs Services',
-    desc:  'Specialised in import, export, and transit formalities, ensuring full compliance at every step.',
-  },
-  {
-    icon: <Globe      className="w-6 h-6 text-primary-500" />,
-    title: 'Strategic European Coverage',
-    desc:  'Handling documentation and clearance at all major European ports and border crossings.',
-  },
-  {
-    icon: <Snowflake  className="w-6 h-6 text-primary-500" />,
-    title: 'Specialised Food Handling',
-    desc:  'Expert handling for frozen, chilled, and fresh food products, including vegetables and perishables.',
-  },
-  {
-    icon: <Package    className="w-6 h-6 text-primary-500" />,
-    title: 'All-Cargo Capability',
-    desc:  'From containerised cargo to general freight, we manage all product types from across the globe.',
-  },
-  {
-    icon: <Warehouse  className="w-6 h-6 text-primary-500" />,
-    title: 'Warehousing Solutions',
-    desc:  'Secure storage options including bonded warehousing to optimise your supply chain.',
-  },
-];
+const REASON_KEYS = ['expertise', 'customs', 'coverage', 'food', 'cargo', 'warehousing'];
+const REASON_ICONS = {
+  expertise: Award,
+  customs: ShieldCheck,
+  coverage: Globe,
+  food: Snowflake,
+  cargo: Package,
+  warehousing: Warehouse,
+};
 
-/* ─── Core Services data ─── */
-const services = [
+const SERVICES = [
   {
     icon: <ShieldCheck className="w-7 h-7 text-primary-500" />,
-    title: 'Expert Customs Clearance in Europe',
-    desc:  'We manage all customs matters for goods entering Europe from around the world.',
-    items: [
-      { icon: <Snowflake className="w-4 h-4" />, text: 'Frozen & Chilled Foodstuffs — Specialised handling for temperature-sensitive cargo (food & vegetables).' },
-      { icon: <Package   className="w-4 h-4" />, text: 'General Merchandise — Efficient clearance for all cargo types.' },
-      { icon: <FileText  className="w-4 h-4" />, text: 'Documentation — Commercial Invoices, Packing Lists, Certificates of Origin, and Transit Documentation T1–T2.' },
-    ],
+    key: 'customs',
+    itemIcons: [Snowflake, Package, FileText],
   },
   {
     icon: <Ship className="w-7 h-7 text-primary-500" />,
-    title: 'Container Transport & Shipping',
-    desc:  'Leveraging a strong network, we manage the entire maritime or land transport process, ensuring your goods arrive safely and on time.',
-    items: [],
+    key: 'transport',
+    itemIcons: [],
   },
   {
     icon: <Warehouse className="w-7 h-7 text-primary-500" />,
-    title: 'Comprehensive Warehousing',
-    desc:  'Whether you need short-term storage during clearance or long-term solutions, we provide:',
-    items: [
-      { icon: <CheckCircle2 className="w-4 h-4" />, text: 'Secure storage.' },
-      { icon: <CheckCircle2 className="w-4 h-4" />, text: 'Bonded warehouse facilities.' },
-      { icon: <CheckCircle2 className="w-4 h-4" />, text: 'Unpacking and container unloading services.' },
-    ],
+    key: 'warehouse',
+    itemIcons: [CheckCircle2, CheckCircle2, CheckCircle2],
   },
 ];
 
 /* ─── Stats ─── */
-const stats = [
-  { value: '14+',  label: 'Years of Experience' },
-  { value: '100%', label: 'EU Compliance Rate'  },
-  { value: 'All',  label: 'European Ports Covered' },
-  { value: '24/7', label: 'Support Available'   },
+const STATS = [
+  { value: '14+', key: 'experience' },
+  { value: '100%', key: 'complianceRate' },
+  { value: 'All', key: 'portsCovered' },
+  { value: '3', key: 'services' },
 ];
 
 /* ════════════════════════════════════ PAGE ════════════════════════════════════ */
 const About = () => {
-  usePageTitle('About Us');
+  const { t } = useTranslation('about');
+  usePageTitle(t('about:meta.title'));
 
   return (
     <div className="flex flex-col min-h-screen overflow-x-hidden">
 
       <PageHero
-        badge="About Winz Logistics"
-        title="Your Trusted Partner in"
-        highlight="European Customs & Logistics"
-        description="14+ years of expertise in customs clearance, transport, and warehousing across Europe."
+        badge={t('about:hero.badge')}
+        title={t('about:hero.title')}
+        highlight={t('about:hero.highlight')}
+        description={t('about:hero.description')}
       />
 
       {/* ─── STATS ─── */}
       <section className="py-14 bg-white border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {stats.map((s, i) => (
+            {STATS.map((s, i) => (
               <motion.div
-                key={s.label}
+                key={s.key}
                 initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}
                 transition={{ delay: i * 0.08 }}
                 className="text-center p-8 bg-gray-50 rounded-2xl border border-gray-100"
               >
                 <p className="text-4xl md:text-5xl font-extrabold text-primary-500 mb-2">{s.value}</p>
-                <p className="text-gray-600 font-medium text-sm">{s.label}</p>
+                <p className="text-gray-600 font-medium text-sm">{t(`about:stats.${s.key}`)}</p>
               </motion.div>
             ))}
           </div>
@@ -126,15 +91,15 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeLeft}>
-              <SectionBadge label="Welcome to Winz Logistics" />
+              <SectionBadge label={t('about:welcome.badge')} />
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                14 Years of Unparalleled Customs Expertise
+                {t('about:welcome.title')}
               </h2>
               <p className="text-gray-600 leading-relaxed mb-5 text-lg">
-                Headquartered to serve the European market, we specialise in bridging the gap between global suppliers and the European Union, ensuring seamless, fast, and compliant movement of goods.
+                {t('about:welcome.paragraph1')}
               </p>
               <p className="text-gray-600 leading-relaxed text-lg">
-                We understand that navigating customs regulations can be complex. That is why we provide a <strong className="text-primary-600">comprehensive customs service package</strong>, handling all formalities at all European seaports and border crossings. Our goal is to handle the logistics complexity, allowing you to focus on your core business.
+                {t('about:welcome.paragraph2')}
               </p>
             </motion.div>
 
@@ -145,8 +110,8 @@ const About = () => {
               <div className="rounded-3xl overflow-hidden bg-gradient-to-br from-primary-50 to-primary-100 border border-primary-100 shadow-2xl shadow-primary-500/10 aspect-video flex items-center justify-center">
                 <div className="text-center p-8">
                   <Globe className="w-24 h-24 text-primary-400 mx-auto mb-4 opacity-60" />
-                  <p className="text-primary-700 font-semibold text-lg">Pan-European Customs Network</p>
-                  <p className="text-primary-500 text-sm mt-1">All Ports & Border Crossings</p>
+                  <p className="text-primary-700 font-semibold text-lg">{t('about:welcome.networkTitle')}</p>
+                  <p className="text-primary-500 text-sm mt-1">{t('about:welcome.networkSubtitle')}</p>
                 </div>
               </div>
               {/* floating badge */}
@@ -155,8 +120,8 @@ const About = () => {
                   <Clock className="w-5 h-5 text-white" />
                 </div>
                 <div>
-                  <p className="font-bold text-gray-900 text-sm">Fast Clearance</p>
-                  <p className="text-xs text-gray-500">Minimise Delays</p>
+                  <p className="font-bold text-gray-900 text-sm">{t('about:welcome.badgeTitle')}</p>
+                  <p className="text-xs text-gray-500">{t('about:welcome.badgeSubtitle')}</p>
                 </div>
               </div>
             </motion.div>
@@ -171,30 +136,32 @@ const About = () => {
             initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}
             className="text-center mb-16"
           >
-            <SectionBadge label="Why Choose Us" />
+            <SectionBadge label={t('about:whyChoose.badge')} />
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Why Choose Winz Logistics?
+              {t('about:whyChoose.title')}
             </h2>
             <div className="w-20 h-1 bg-primary-500 mx-auto rounded-full" />
           </motion.div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {reasons.map((r, i) => (
+            {REASON_KEYS.map((key, i) => {
+              const Icon = REASON_ICONS[key];
+              return (
               <motion.div
-                key={r.title}
+                key={key}
                 initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}
                 transition={{ delay: i * 0.07 }}
                 className="group p-8 rounded-2xl border border-gray-100 hover:border-primary-200 hover:shadow-xl hover:shadow-primary-500/10 transition-all bg-white"
               >
                 <div className="w-12 h-12 bg-primary-50 group-hover:bg-primary-500 rounded-xl flex items-center justify-center mb-5 transition-colors duration-300">
                   <div className="[&>svg]:group-hover:text-white transition-colors duration-300">
-                    {r.icon}
+                    <Icon className="w-6 h-6 text-primary-500" />
                   </div>
                 </div>
-                <h3 className="text-lg font-bold text-gray-900 mb-2">{r.title}</h3>
-                <p className="text-gray-500 text-sm leading-relaxed">{r.desc}</p>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">{t(`about:whyChoose.reasons.${key}.title`)}</h3>
+                <p className="text-gray-500 text-sm leading-relaxed">{t(`about:whyChoose.reasons.${key}.desc`)}</p>
               </motion.div>
-            ))}
+            )})}
           </div>
         </div>
       </section>
@@ -206,15 +173,15 @@ const About = () => {
             initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}
             className="text-center mb-16"
           >
-            <SectionBadge label="What We Do" />
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Core Services</h2>
+            <SectionBadge label={t('about:coreServices.badge')} />
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">{t('about:coreServices.title')}</h2>
             <div className="w-20 h-1 bg-primary-500 mx-auto rounded-full" />
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {services.map((s, i) => (
+            {SERVICES.map((s, i) => (
               <motion.div
-                key={s.title}
+                key={s.key}
                 initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}
                 transition={{ delay: i * 0.1 }}
                 className="relative bg-gray-50 rounded-3xl p-8 border border-gray-100 hover:border-primary-200 hover:shadow-xl hover:shadow-primary-500/10 transition-all overflow-hidden"
@@ -223,14 +190,14 @@ const About = () => {
                 <div className="w-14 h-14 bg-primary-50 rounded-2xl flex items-center justify-center mb-6">
                   {s.icon}
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">{s.title}</h3>
-                <p className="text-gray-600 text-sm leading-relaxed mb-5">{s.desc}</p>
-                {s.items.length > 0 && (
+                <h3 className="text-xl font-bold text-gray-900 mb-3">{t(`about:coreServices.${s.key}.title`)}</h3>
+                <p className="text-gray-600 text-sm leading-relaxed mb-5">{t(`about:coreServices.${s.key}.desc`)}</p>
+                {s.itemIcons.length > 0 && (
                   <ul className="space-y-3">
-                    {s.items.map((item) => (
-                      <li key={item.text} className="flex items-start gap-2.5 text-sm text-gray-600">
-                        <span className="text-primary-500 flex-shrink-0 mt-0.5">{item.icon}</span>
-                        {item.text}
+                    {s.itemIcons.map((Icon, itemIdx) => (
+                      <li key={`${s.key}-${itemIdx}`} className="flex items-start gap-2.5 text-sm text-gray-600">
+                        <span className="text-primary-500 flex-shrink-0 mt-0.5"><Icon className="w-4 h-4" /></span>
+                        {t(`about:coreServices.${s.key}.items.${itemIdx}`)}
                       </li>
                     ))}
                   </ul>
@@ -252,10 +219,10 @@ const About = () => {
         >
           <Truck className="w-12 h-12 text-primary-200 mx-auto mb-6" />
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Let Winz Logistics Simplify Your International Trade
+            {t('about:cta.title')}
           </h2>
           <p className="text-primary-100 text-lg mb-8 max-w-2xl mx-auto">
-            Contact us today to handle your logistics seamlessly. We take care of the complexity so you can focus on growing your business.
+            {t('about:cta.description')}
           </p>
 
         </motion.div>

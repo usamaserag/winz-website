@@ -1,0 +1,54 @@
+{
+  "meta": {
+    "title": "Exportinklearing"
+  },
+  "hero": {
+    "badge": "Outbound operaties",
+    "title": "Versterk uw wereldwijde bereik met",
+    "highlight": "Winz Logistics",
+    "description": "Europese bedrijven in staat stellen te exporteren met vertrouwen, naleving en zonder frictie."
+  },
+  "risk": {
+    "title": "De kosten van non-compliance:",
+    "description": "Een kleine documentatiefout kan snel escaleren tot vastgelopen zendingen. Kies Winz om ervoor te zorgen dat uw vracht conform blijft en planningen op schema blijven."
+  },
+  "clearance": {
+    "badge": "Exportinklearing",
+    "title": "De weg naar wereldmarkten",
+    "description": "Elke succesvolle export is een mijlpaal van groei. De weg ernaartoe wordt echter vaak geblokkeerd door een complex labyrint van dual-use controles, preferentiële oorsprongseisen en strikte BTW-bewijzen van uitvoer."
+  },
+  "features": {
+    "dualUse": {
+      "title": "Dual-use controles",
+      "desc": "Deskundige afhandeling van dual-use regelgeving en vergunningsvereisten."
+    },
+    "origin": {
+      "title": "Preferentiële oorsprong",
+      "desc": "Nauwkeurige preferentiële oorsprongsdocumentatie om voordelen uit handelsakkoorden te benutten."
+    },
+    "presence": {
+      "title": "Paneuropese aanwezigheid",
+      "desc": "Volledige dekking in alle EU-lidstaten en daarbuiten."
+    },
+    "digital": {
+      "title": "Digitale infrastructuur",
+      "desc": "Geavanceerde digitale systemen voor realtime douanetracking en rapportage."
+    }
+  },
+  "benefits": {
+    "title": "Exporteren met zekerheid",
+    "subtitle": "Waarom marktleiders Winz Logistics vertrouwen.",
+    "items": [
+      "BTW-bewijs van uitvoer gegarandeerd conform",
+      "Beleid van nul documentatiefouten",
+      "Voorkeurspartnerstatus bij belangrijke EU-havens",
+      "Proactief beheer van regelgevingswijzigingen",
+      "Volledig auditspoor voor elke exporttransactie",
+      "Strategisch advies over exportvergunningen"
+    ]
+  },
+  "cta": {
+    "title": "Groeien zonder grenzen",
+    "description": "Wij bieden de strategische expertise die nodig is om veranderende standaarden te navigeren. Uw vracht blijft conform, uw planningen blijven op schema."
+  }
+}

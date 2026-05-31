@@ -1,0 +1,160 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "about": "Über uns",
+    "services": "Leistungen",
+    "customsClearance": "Zollabfertigungsdienste",
+    "yourCommunity": "Ihre Community",
+    "clearance": {
+      "import": "Importabfertigung",
+      "export": "Exportabfertigung",
+      "transit": "Transitabfertigung"
+    },
+    "transport": "Transport",
+    "warehouse": "Lager",
+    "blog": "Blog",
+    "faq": "FAQ",
+    "tracking": "Sendungsverfolgung",
+    "contact": "Kontakt"
+  },
+  "language": {
+    "switcherLabel": "Sprache wechseln"
+  },
+  "a11y": {
+    "menuOpen": "Menü öffnen",
+    "menuClose": "Menü schließen",
+    "dismissNotification": "Benachrichtigung schließen"
+  },
+  "footer": {
+    "description": "Ihr Partner für blitzschnelle Lieferungen. Zuverlässige, sichere und schnelle Logistiklösungen weltweit.",
+    "quickLinks": "Schnelllinks",
+    "contactInfo": "Kontaktinformationen",
+    "address": "Gentsesteenweg 102 D4, 9240 Zele, Belgium",
+    "email": "info@winz.be",
+    "rights": "Alle Rechte vorbehalten.",
+    "newsletter": {
+      "title": "Newsletter",
+      "subtitle": "Abonnieren Sie aktuelle Logistik-News und Updates.",
+      "placeholder": "E-Mail-Adresse",
+      "button": "Abonnieren"
+    }
+  },
+  "contact": {
+    "phone": "+32 496 32 24 67"
+  },
+  "whatsapp": {
+    "ariaLabel": "Per WhatsApp chatten unter {{phone}}"
+  },
+  "buttons": {
+    "getQuote": "Angebot anfordern",
+    "trackShipment": "Sendung verfolgen",
+    "learnMore": "Mehr erfahren"
+  },
+  "shared": {
+    "learnMore": "Mehr erfahren",
+    "discoverStory": "Unsere Geschichte entdecken"
+  },
+  "badges": {
+    "customsClearance": "Zollabfertigung",
+    "inlandLogistics": "Inlandlogistik",
+    "storageValueAdded": "Lagerung & Mehrwertdienste"
+  },
+  "contactCta": {
+    "badge": "Logistikexperten stehen bereit",
+    "title": "Bereit, Ihre europäische Lieferkette zu optimieren?",
+    "subtitle": "Kontaktieren Sie WINZ für Zollabfertigung, Containertransport, Lagerung und maßgeschneiderte Logistiklösungen.",
+    "button": "Kontakt",
+    "secondary": "FAQ ansehen"
+  },
+  "cookies": {
+    "gate": {
+      "loading": "Wird geladen…"
+    },
+    "banner": {
+      "title": "Wir schätzen Ihre Privatsphäre",
+      "description": "Wir verwenden Cookies, um Ihre Erfahrung zu verbessern, den Website-Traffic zu analysieren und die Leistung zu optimieren. Mehr dazu in unserer",
+      "privacyPolicy": "Datenschutzerklärung",
+      "cookiesPolicy": "Cookie-Richtlinie",
+      "and": "und",
+      "acceptAll": "Alle akzeptieren",
+      "rejectNonEssential": "Nicht essenzielle ablehnen",
+      "managePreferences": "Einstellungen verwalten"
+    },
+    "modal": {
+      "title": "Cookie-Einstellungen",
+      "description": "Wählen Sie, welche Cookies Sie zulassen. Sie können diese Einstellungen jederzeit über die Fußzeile aktualisieren.",
+      "alwaysEnabled": "Immer aktiviert",
+      "savePreferences": "Einstellungen speichern",
+      "close": "Cookie-Einstellungen schließen"
+    },
+    "categories": {
+      "necessary": {
+        "title": "Notwendige Cookies",
+        "description": "Erforderlich für grundlegende Website-Funktionen wie Sicherheit, Netzwerkverwaltung und Barrierefreiheit. Diese können nicht deaktiviert werden."
+      },
+      "analytics": {
+        "title": "Analyse-Cookies",
+        "description": "Helfen uns zu verstehen, wie Besucher die Website nutzen, um Leistung und Benutzererfahrung zu verbessern."
+      },
+      "marketing": {
+        "title": "Marketing-Cookies",
+        "description": "Werden verwendet, um relevante Inhalte bereitzustellen und die Wirksamkeit von Marketingkampagnen zu messen."
+      },
+      "preferences": {
+        "title": "Präferenz-Cookies",
+        "description": "Speichern Ihre Auswahl wie Sprache oder Region für ein personalisiertes Erlebnis."
+      }
+    },
+    "footer": {
+      "settings": "Cookie-Einstellungen"
+    },
+    "legal": {
+      "privacy": {
+        "pageTitle": "Datenschutzerklärung | WINZ Logistics",
+        "badge": "Rechtliches",
+        "heading": "Datenschutzerklärung",
+        "intro": "Diese Richtlinie erklärt, wie WINZ Logistics personenbezogene Daten erhebt, verwendet und schützt, wenn Sie unsere Website nutzen.",
+        "sections": [
+          {
+            "title": "Erhobene Informationen",
+            "body": "Wir können technische Daten wie Browsertyp, Geräteinformationen und besuchte Seiten erfassen, wenn Sie mit unserer Website interagieren oder uns kontaktieren."
+          },
+          {
+            "title": "Verwendung der Informationen",
+            "body": "Wir nutzen die gesammelten Informationen, um unsere Dienste zu betreiben, Anfragen zu beantworten, die Website-Leistung zu verbessern und gesetzliche Pflichten zu erfüllen."
+          },
+          {
+            "title": "Cookies und Tracking",
+            "body": "Wir verwenden Cookies und ähnliche Technologien für wesentliche Funktionen, Analysen und optionale Präferenzen. Nicht essenzielle Cookies können über unser Banner oder den Link Cookie-Einstellungen verwaltet werden."
+          },
+          {
+            "title": "Ihre Rechte",
+            "body": "Je nach geltendem Recht können Sie Zugang, Berichtigung oder Löschung Ihrer personenbezogenen Daten anfordern, indem Sie uns unter info@winz.be kontaktieren."
+          }
+        ]
+      },
+      "cookies": {
+        "pageTitle": "Cookie-Richtlinie | WINZ Logistics",
+        "badge": "Rechtliches",
+        "heading": "Cookie-Richtlinie",
+        "intro": "Diese Richtlinie beschreibt die auf der WINZ-Website verwendeten Cookie-Typen und wie Sie diese steuern können.",
+        "manageTitle": "Cookie-Auswahl verwalten",
+        "manageBody": "Sie können nicht essenzielle Cookies jederzeit akzeptieren, ablehnen oder anpassen.",
+        "sections": [
+          {
+            "title": "Was sind Cookies?",
+            "body": "Cookies sind kleine Textdateien auf Ihrem Gerät, die Websites beim Funktionieren, beim Speichern von Präferenzen und beim Verstehen von Nutzungsmustern helfen."
+          },
+          {
+            "title": "Cookie-Kategorien",
+            "body": "Wir verwenden notwendige Cookies für Kernfunktionen sowie optionale Analyse-, Marketing- und Präferenz-Cookies, die nur mit Ihrer Einwilligung ausgeführt werden."
+          },
+          {
+            "title": "Einstellungen ändern",
+            "body": "Nutzen Sie den Link Cookie-Einstellungen in der Fußzeile oder die Option Einstellungen verwalten im Cookie-Banner, um Ihre Auswahl jederzeit zu aktualisieren."
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "title": "Over ons"
+  },
+  "hero": {
+    "badge": "Over Winz Logistics",
+    "title": "Uw betrouwbare partner voor",
+    "highlight": "Europese douane & logistiek",
+    "description": "Meer dan 14 jaar expertise in douane-inklearing, transport en opslag in heel Europa."
+  },
+  "stats": {
+    "experience": "Jaar ervaring",
+    "complianceRate": "EU-complianceratio",
+    "portsCovered": "Europese havens gedekt",
+    "services": "Inklaringsdiensten"
+  },
+  "welcome": {
+    "badge": "Welkom bij Winz Logistics",
+    "title": "14 jaar ongeëvenaarde douane-expertise",
+    "paragraph1": "Vanuit onze Europese thuisbasis verbinden wij wereldwijde leveranciers met de Europese Unie en zorgen wij voor naadloze, snelle en conforme goederenstromen.",
+    "paragraph2": "Wij begrijpen dat douanevoorschriften complex kunnen zijn. Daarom bieden wij een volledig douanepakket en regelen wij alle formaliteiten in elke Europese zeehaven en grensovergang. Ons doel: de logistieke complexiteit uit handen nemen, zodat u zich op uw kernactiviteit kunt richten.",
+    "networkTitle": "Paneuropees douanenetwerk",
+    "networkSubtitle": "Alle havens & grensovergangen",
+    "badgeTitle": "Snelle inklaring",
+    "badgeSubtitle": "Vertragingen minimaliseren"
+  },
+  "whyChoose": {
+    "badge": "Waarom wij",
+    "title": "Waarom Winz Logistics?",
+    "reasons": {
+      "expertise": {
+        "title": "Meer dan 14 jaar expertise",
+        "desc": "Diepgaande kennis van EU-douanewetgeving en grensprocedures, opgebouwd in meer dan een decennium gerichte praktijk."
+      },
+      "customs": {
+        "title": "Volledige douanediensten",
+        "desc": "Gespecialiseerd in import-, export- en transitformaliteiten, met volledige naleving in elke fase."
+      },
+      "coverage": {
+        "title": "Strategische Europese dekking",
+        "desc": "Documentatie en inklaring in alle belangrijke Europese havens en grensovergangen."
+      },
+      "food": {
+        "title": "Gespecialiseerde voedselafhandeling",
+        "desc": "Expertise in diepvries-, gekoelde en verse voedingsproducten, waaronder groenten en bederfelijke goederen."
+      },
+      "cargo": {
+        "title": "Alle vrachttypes",
+        "desc": "Van gecontaineriseerde vracht tot algemene lading — wij beheren alle producttypes van over de hele wereld."
+      },
+      "warehousing": {
+        "title": "Opslagoplossingen",
+        "desc": "Veilige opslagmogelijkheden, inclusief douane-entrepots, om uw supply chain te optimaliseren."
+      }
+    }
+  },
+  "coreServices": {
+    "badge": "Wat wij doen",
+    "title": "Onze kerndiensten",
+    "customs": {
+      "title": "Expert douane-inklearing in Europa",
+      "desc": "Wij regelen alle douanezaken voor goederen die Europa binnenkomen van over de hele wereld.",
+      "items": [
+        "Diepvries- & gekoelde voedingsmiddelen — Gespecialiseerde afhandeling van temperatuurgevoelige vracht (voedsel & groenten).",
+        "Algemene handelsgoederen — Efficiënte inklaring voor alle vrachttypes.",
+        "Documentatie — Commerciële facturen, paklijsten, certificaten van oorsprong en transitdocumentatie T1–T2."
+      ]
+    },
+    "transport": {
+      "title": "Containertransport & scheepvaart",
+      "desc": "Met een sterk netwerk beheren wij het volledige zee- of landtransportproces, zodat uw goederen veilig en op tijd aankomen."
+    },
+    "warehouse": {
+      "title": "Volledige opslagoplossingen",
+      "desc": "Of u nu kortetermijnopslag tijdens inklaring nodig heeft of langetermijnoplossingen — wij bieden:",
+      "items": [
+        "Veilige opslag.",
+        "Douane-entrepotfaciliteiten.",
+        "Uitpakken en containerlossing."
+      ]
+    }
+  },
+  "cta": {
+    "title": "Laat Winz Logistics uw internationale handel vereenvoudigen",
+    "description": "Neem vandaag contact op voor naadloze logistiek. Wij nemen de complexiteit uit handen, zodat u zich op de groei van uw bedrijf kunt richten."
+  }
+}

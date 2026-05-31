@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "title": "Importinklearing"
+  },
+  "hero": {
+    "badge": "Uitmuntendheid in inbound logistiek",
+    "title": "Beheers Europese importcompliance met",
+    "highlight": "Winz Logistics",
+    "description": "Optimaliseer uw supply chain met deskundige douaneoplossingen.",
+    "stats": {
+      "headline": "14+ jaar",
+      "subline": "gespecialiseerde expertise"
+    }
+  },
+  "landscape": {
+    "badge": "Importinklearing",
+    "title": "Navigeren door het Europese importlandschap",
+    "paragraph1": "Het Europese importlandschap navigeren is vaak een complexe opgave. Tussen ingewikkelde EU-regelgevingskaders, strenge documentatiestandaarden en de nuances van nationale procedures lopen bedrijven regelmatig risico op kostbare vertragingen en complianceproblemen.",
+    "paragraph2": "Winz Logistics neemt deze drempels weg en biedt naadloze importinklearingsdiensten in heel Europa."
+  },
+  "features": {
+    "compliance": {
+      "title": "Volledige EU-naleving",
+      "desc": "Volledige naleving van EU-regelgevingskaders en nationale procedures."
+    },
+    "speed": {
+      "title": "Snelle verwerking",
+      "desc": "Minimaliseer vertragingen met onze gestroomlijnde digitale douaneworkflows."
+    },
+    "network": {
+      "title": "Paneuropees netwerk",
+      "desc": "Het meest uitgebreide neutrale douanenetwerk in de regio tot uw dienst."
+    },
+    "accuracy": {
+      "title": "Documentnauwkeurigheid",
+      "desc": "Foutloze documentatiestandaarden die uw vracht in beweging houden."
+    }
+  },
+  "benefits": {
+    "title": "Waarom Winz voor import",
+    "items": [
+      "Verkorting van douaneverwerkingstijd",
+      "Volledige naleving van EU-importvoorschriften",
+      "Toegewijde douanespecialist voor uw account",
+      "Realtime updates van zendingstatus",
+      "Naadloze coördinatie met EU-havenautoriteiten",
+      "Kostenoptimalisatie van rechten en belastingen"
+    ]
+  }
+}

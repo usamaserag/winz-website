@@ -1,9 +1,10 @@
 import { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { Menu, X, ChevronDown, PackagePlus, PackageOpen, Route } from 'lucide-react';
+import { Menu, X, ChevronDown, PackagePlus, PackageOpen, Route, BookOpen, HelpCircle } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Logo from '../common/Logo';
+import LanguageSwitcher from '../common/LanguageSwitcher';
 import LogisticsGridPattern from '../logistics/LogisticsGridPattern';
 import { pageHasDarkHero, HERO_NAV_BG } from '../../lib/pageHasDarkHero';
 
@@ -13,13 +14,21 @@ const CLEARANCE_SERVICES = [
   { key: 'transit', path: '/transit', Icon: Route },
 ];
 
+const COMMUNITY_LINKS = [
+  { key: 'blog', path: '/blog', Icon: BookOpen },
+  { key: 'faq', path: '/faq', Icon: HelpCircle },
+];
+
 const Navbar = () => {
-  const { t, i18n } = useTranslation(['common']);
+  const { t } = useTranslation(['common']);
   const [isOpen, setIsOpen]           = useState(false);
   const [scrolled, setScrolled]       = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
+  const [communityOpen, setCommunityOpen] = useState(false);
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
-  const dropdownRef = useRef(null);
+  const [mobileCommunityOpen, setMobileCommunityOpen] = useState(false);
+  const servicesDropdownRef = useRef(null);
+  const communityDropdownRef = useRef(null);
   const location = useLocation();
 
   useEffect(() => {
@@ -33,31 +42,32 @@ const Navbar = () => {
     setScrolled(window.scrollY > 50);
   }, [location.pathname]);
 
-  // Close dropdown on outside click (click — not mousedown — so toggle still works)
+  // Close dropdowns on outside click
   useEffect(() => {
-    if (!servicesOpen) return undefined;
+    if (!servicesOpen && !communityOpen) return undefined;
 
     const handler = (e) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
-        setServicesOpen(false);
-      }
+      const inServices = servicesDropdownRef.current?.contains(e.target);
+      const inCommunity = communityDropdownRef.current?.contains(e.target);
+      if (!inServices) setServicesOpen(false);
+      if (!inCommunity) setCommunityOpen(false);
     };
     document.addEventListener('click', handler);
     return () => document.removeEventListener('click', handler);
-  }, [servicesOpen]);
+  }, [servicesOpen, communityOpen]);
 
   // Close mobile menu on route change
   useEffect(() => {
     setIsOpen(false);
     setMobileServicesOpen(false);
+    setMobileCommunityOpen(false);
   }, [location.pathname]);
 
-  const toggleLanguage = () => {
-    i18n.changeLanguage(i18n.language === 'en' ? 'ar' : 'en');
-  };
-
   const isActive = (path) => location.pathname === path;
+  const isBlogActive =
+    location.pathname === '/blog' || location.pathname.startsWith('/blog/');
   const isServicesActive = ['/services', '/import', '/export', '/transit', '/transport', '/warehouse'].includes(location.pathname);
+  const isCommunityActive = isBlogActive || location.pathname === '/faq';
 
   const onDarkHero = pageHasDarkHero(location.pathname);
   const useHeroNav = onDarkHero && !scrolled;
@@ -83,9 +93,35 @@ const Navbar = () => {
     isServicesActive ? navLinkActive : navLinkIdle
   }`;
 
-  const chevronClass = `w-4 h-4 transition-transform duration-200 ${
+  const communityLabelClass = `${navLinkBase} cursor-pointer flex items-center gap-1 ${
+    isCommunityActive ? navLinkActive : navLinkIdle
+  }`;
+
+  const servicesChevronClass = `w-4 h-4 transition-transform duration-200 ${
     useHeroNav ? 'text-primary-400' : 'text-primary-500'
   } ${servicesOpen ? 'rotate-180' : ''}`;
+
+  const communityChevronClass = `w-4 h-4 transition-transform duration-200 ${
+    useHeroNav ? 'text-primary-400' : 'text-primary-500'
+  } ${communityOpen ? 'rotate-180' : ''}`;
+
+  const dropdownPanelClass = `absolute top-full z-[60] mt-3 left-0 min-w-[15rem] w-60 rounded-2xl shadow-xl overflow-hidden border ${
+    useHeroNav
+      ? 'bg-navy-900 border-white/10 shadow-black/30'
+      : 'bg-white border-gray-100 shadow-gray-200/60'
+  }`;
+
+  const dropdownLinkClass = (active) =>
+    active
+      ? useHeroNav
+        ? 'bg-white/10 text-primary-400 font-semibold'
+        : 'bg-primary-50 text-primary-600 font-semibold'
+      : useHeroNav
+        ? 'text-slate-200 hover:bg-white/10 hover:text-white'
+        : 'text-slate-600 hover:bg-primary-50 hover:text-primary-600';
+
+  const dropdownIconClass = (active) =>
+    active ? 'text-primary-400' : useHeroNav ? 'text-primary-500/70' : 'text-primary-300';
 
   const hamburgerClass = useHeroNav
     ? 'p-2 rounded-md text-white hover:text-white hover:bg-white/10'
@@ -115,16 +151,20 @@ const Navbar = () => {
               </Link>
 
               {/* Services Dropdown */}
-              <div className="relative" ref={dropdownRef}>
+              <div className="relative" ref={servicesDropdownRef}>
                 <button
                   type="button"
                   className={servicesLabelClass}
-                  onClick={() => setServicesOpen((o) => !o)}
+                  onClick={() => {
+                    setCommunityOpen(false);
+                    setServicesOpen((o) => !o);
+                  }}
                   aria-expanded={servicesOpen}
                   aria-haspopup="true"
+                  aria-label={t('nav.customsClearance')}
                 >
                   {t('nav.customsClearance')}
-                  <ChevronDown className={chevronClass} aria-hidden="true" />
+                  <ChevronDown className={servicesChevronClass} aria-hidden="true" />
                 </button>
 
                 <AnimatePresence>
@@ -134,28 +174,16 @@ const Navbar = () => {
                       animate={{ opacity: 1, y: 0, scale: 1 }}
                       exit={{ opacity: 0, y: 8, scale: 0.97 }}
                       transition={{ duration: 0.18 }}
-                      className={`absolute top-full z-[60] mt-3 left-0 min-w-[15rem] w-60 rounded-2xl shadow-xl overflow-hidden border ${
-                        useHeroNav
-                          ? 'bg-navy-900 border-white/10 shadow-black/30'
-                          : 'bg-white border-gray-100 shadow-gray-200/60'
-                      }`}
+                      className={dropdownPanelClass}
                     >
                       {CLEARANCE_SERVICES.map(({ key, path, Icon }) => (
                         <Link
                           key={path}
                           to={path}
                           onClick={() => setServicesOpen(false)}
-                          className={`flex items-center gap-3 px-5 py-3.5 text-sm font-medium transition-colors ${
-                            isActive(path)
-                              ? useHeroNav
-                                ? 'bg-white/10 text-primary-400 font-semibold'
-                                : 'bg-primary-50 text-primary-600 font-semibold'
-                              : useHeroNav
-                                ? 'text-slate-200 hover:bg-white/10 hover:text-white'
-                                : 'text-slate-600 hover:bg-primary-50 hover:text-primary-600'
-                          }`}
+                          className={`flex items-center gap-3 px-5 py-3.5 text-sm font-medium transition-colors ${dropdownLinkClass(isActive(path))}`}
                         >
-                          <span className={isActive(path) ? 'text-primary-400' : useHeroNav ? 'text-primary-500/70' : 'text-primary-300'}>
+                          <span className={dropdownIconClass(isActive(path))}>
                             <Icon className="w-5 h-5" aria-hidden="true" />
                           </span>
                           {t(`nav.clearance.${key}`)}
@@ -174,13 +202,54 @@ const Navbar = () => {
                 {t('nav.warehouse')}
               </Link>
 
-              <Link to="/blog" className={linkClass('/blog')}>
-                {t('nav.blog')}
-              </Link>
+              {/* Community Dropdown */}
+              <div className="relative" ref={communityDropdownRef}>
+                <button
+                  type="button"
+                  className={communityLabelClass}
+                  onClick={() => {
+                    setServicesOpen(false);
+                    setCommunityOpen((o) => !o);
+                  }}
+                  aria-expanded={communityOpen}
+                  aria-haspopup="true"
+                  aria-label={t('nav.yourCommunity')}
+                >
+                  {t('nav.yourCommunity')}
+                  <ChevronDown className={communityChevronClass} aria-hidden="true" />
+                </button>
 
-              <Link to="/faq" className={linkClass('/faq')}>
-                {t('nav.faq')}
-              </Link>
+                <AnimatePresence>
+                  {communityOpen && (
+                    <motion.div
+                      initial={{ opacity: 0, y: 8, scale: 0.97 }}
+                      animate={{ opacity: 1, y: 0, scale: 1 }}
+                      exit={{ opacity: 0, y: 8, scale: 0.97 }}
+                      transition={{ duration: 0.18 }}
+                      className={dropdownPanelClass}
+                    >
+                      {COMMUNITY_LINKS.map(({ key, path, Icon }) => {
+                        const active = key === 'blog' ? isBlogActive : isActive(path);
+                        return (
+                          <Link
+                            key={path}
+                            to={path}
+                            onClick={() => setCommunityOpen(false)}
+                            className={`flex items-center gap-3 px-5 py-3.5 text-sm font-medium transition-colors ${dropdownLinkClass(active)}`}
+                          >
+                            <span className={dropdownIconClass(active)}>
+                              <Icon className="w-5 h-5" aria-hidden="true" />
+                            </span>
+                            {t(`nav.${key}`)}
+                          </Link>
+                        );
+                      })}
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
+
+              <LanguageSwitcher useHeroNav={useHeroNav} />
 
               <Link to="/contact" className={linkClass('/contact')}>
                 {t('nav.contact')}
@@ -195,7 +264,7 @@ const Navbar = () => {
               type="button"
               onClick={() => setIsOpen(!isOpen)}
               className={hamburgerClass}
-              aria-label={isOpen ? 'Close menu' : 'Open menu'}
+              aria-label={isOpen ? t('a11y.menuClose') : t('a11y.menuOpen')}
             >
               {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
@@ -241,6 +310,7 @@ const Navbar = () => {
                           ? 'text-slate-200 hover:text-white hover:bg-white/10'
                           : 'text-slate-700 hover:text-primary-500 hover:bg-primary-50/50'
                     }`}
+                    aria-label={t('nav.customsClearance')}
                   >
                     {link.name}
                   </Link>
@@ -260,6 +330,7 @@ const Navbar = () => {
                           ? 'text-slate-200 hover:text-white hover:bg-white/10'
                           : 'text-slate-700 hover:text-primary-500 hover:bg-primary-50/50'
                     }`}
+                    aria-label={t('nav.yourCommunity')}
                   >
                     {t('nav.customsClearance')}
                     <ChevronDown
@@ -299,11 +370,65 @@ const Navbar = () => {
                   </AnimatePresence>
                 </div>
 
+                {/* Mobile Community accordion */}
+                <div>
+                  <button
+                    type="button"
+                    onClick={() => setMobileCommunityOpen((o) => !o)}
+                    className={`w-full flex items-center justify-between px-3 py-2.5 rounded-md text-base font-medium transition-colors ${
+                      isCommunityActive
+                        ? useHeroNav
+                          ? 'bg-white/10 text-primary-400 font-semibold'
+                          : 'bg-primary-50 text-primary-600 font-semibold'
+                        : useHeroNav
+                          ? 'text-slate-200 hover:text-white hover:bg-white/10'
+                          : 'text-slate-700 hover:text-primary-500 hover:bg-primary-50/50'
+                    }`}
+                  >
+                    {t('nav.yourCommunity')}
+                    <ChevronDown
+                      className={`w-4 h-4 transition-transform ${useHeroNav ? 'text-primary-400' : 'text-primary-500'} ${mobileCommunityOpen ? 'rotate-180' : ''}`}
+                    />
+                  </button>
+
+                  <AnimatePresence>
+                    {mobileCommunityOpen && (
+                      <motion.div
+                        initial={{ opacity: 0, height: 0 }}
+                        animate={{ opacity: 1, height: 'auto' }}
+                        exit={{ opacity: 0, height: 0 }}
+                        className="overflow-hidden"
+                      >
+                        {COMMUNITY_LINKS.map(({ key, path, Icon }) => {
+                          const active = key === 'blog' ? isBlogActive : isActive(path);
+                          return (
+                            <Link
+                              key={path}
+                              to={path}
+                              onClick={() => setIsOpen(false)}
+                              className={`flex items-center gap-3 pl-7 pr-3 py-2.5 text-sm font-medium rounded-md transition-colors ${
+                                active
+                                  ? useHeroNav
+                                    ? 'text-primary-400 bg-white/10 font-semibold'
+                                    : 'text-primary-600 bg-primary-50 font-semibold'
+                                  : useHeroNav
+                                    ? 'text-slate-200 hover:text-white hover:bg-white/10'
+                                    : 'text-slate-600 hover:text-primary-500 hover:bg-primary-50/50'
+                              }`}
+                            >
+                              <Icon className="w-5 h-5 shrink-0" aria-hidden="true" />
+                              {t(`nav.${key}`)}
+                            </Link>
+                          );
+                        })}
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
+
                 {[
                   { name: t('nav.transport'), path: '/transport' },
                   { name: t('nav.warehouse'), path: '/warehouse' },
-                  { name: t('nav.blog'), path: '/blog' },
-                  { name: t('nav.faq'), path: '/faq' },
                   { name: t('nav.contact'), path: '/contact' },
                 ].map((link) => (
                   <Link
@@ -323,6 +448,10 @@ const Navbar = () => {
                     {link.name}
                   </Link>
                 ))}
+              </div>
+
+              <div className="pt-4 border-t border-slate-200/80 mt-4">
+                <LanguageSwitcher useHeroNav={useHeroNav} />
               </div>
 
             </div>

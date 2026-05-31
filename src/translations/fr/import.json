@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "title": "Dédouanement import"
+  },
+  "hero": {
+    "badge": "Excellence en logistique entrante",
+    "title": "Maîtrisez la conformité import en Europe avec",
+    "highlight": "Winz Logistics",
+    "description": "Optimisez votre chaîne d'approvisionnement grâce à des solutions douanières expertes.",
+    "stats": {
+      "headline": "Plus de 14 ans",
+      "subline": "d'expertise spécialisée"
+    }
+  },
+  "landscape": {
+    "badge": "Dédouanement import",
+    "title": "Naviguer dans le paysage de l'import en Europe",
+    "paragraph1": "Naviguer dans le paysage de l'import européen est souvent une tâche ardue. Entre les cadres réglementaires complexes de l'UE, les exigences strictes en matière de documentation et les spécificités des procédures nationales, les entreprises sont fréquemment exposées à des retards coûteux et à des risques de non-conformité.",
+    "paragraph2": "Winz Logistics lève ces obstacles en proposant des services de dédouanement import fluides sur l'ensemble du continent."
+  },
+  "features": {
+    "compliance": {
+      "title": "Conformité UE totale",
+      "desc": "Respect complet des cadres réglementaires de l'UE et des procédures nationales."
+    },
+    "speed": {
+      "title": "Traitement rapide",
+      "desc": "Réduisez les retards grâce à nos flux de travail douaniers numériques optimisés."
+    },
+    "network": {
+      "title": "Réseau paneuropéen",
+      "desc": "Le réseau douanier neutre le plus étendu de la région à votre service."
+    },
+    "accuracy": {
+      "title": "Exactitude documentaire",
+      "desc": "Des standards documentaires sans erreur pour maintenir vos marchandises en mouvement."
+    }
+  },
+  "benefits": {
+    "title": "Pourquoi choisir Winz pour l'import",
+    "items": [
+      "Réduction des délais de traitement douanier",
+      "Conformité totale aux réglementations d'import de l'UE",
+      "Spécialiste douanier dédié assigné à votre compte",
+      "Mises à jour du statut d'expédition en temps réel",
+      "Coordination fluide avec les autorités portuaires de l'UE",
+      "Gestion optimisée des droits et taxes"
+    ]
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "title": "Transport de conteneurs"
+  },
+  "hero": {
+    "badge": "Transport et acheminement de conteneurs",
+    "title": "Solutions complètes d'acheminement",
+    "highlight": "de conteneurs",
+    "description": "Des terminaux portuaires jusqu'à votre porte avec Winz Logistics."
+  },
+  "approach": {
+    "badge": "Notre approche",
+    "title": "Relier le dédouanement à la livraison finale",
+    "paragraph1": "Chez Winz Logistics, nous faisons le lien entre le dédouanement et la livraison finale. Nous sommes spécialisés dans la coordination de services professionnels de transport routier de conteneurs pour toutes les tailles d'équipement — garantissant un acheminement rapide de vos marchandises du port à leur destination finale.",
+    "paragraph2": "Une fois votre expédition dédouanée, notre équipe logistique gère l'ensemble du processus d'acheminement. Que vous manipuliez des conteneurs dry van standard, des high cube ou des conteneurs spécialisés, Winz Logistics garantit une transition fluide du quai à l'adresse indiquée."
+  },
+  "containerSizes": {
+    "twenty": {
+      "size": "20ft",
+      "desc": "Conteneur standard pour fret général et marchandises sèches."
+    },
+    "forty": {
+      "size": "40ft",
+      "desc": "Acheminement haute capacité pour les expéditions volumineuses."
+    },
+    "fortyFive": {
+      "size": "45ft",
+      "desc": "Capacité étendue pour les chargements en vrac ou surdimensionnés."
+    }
+  },
+  "features": {
+    "badge": "Ce que nous proposons",
+    "title": "Logistique intérieure de bout en bout",
+    "allTypes": {
+      "title": "Tous types de conteneurs",
+      "desc": "Dry van standard, high cube et conteneurs spécialisés — nous gérons tout."
+    },
+    "doorDelivery": {
+      "title": "Livraison porte-à-porte",
+      "desc": "Transition fluide du quai directement à l'adresse indiquée."
+    },
+    "scheduling": {
+      "title": "Planification précise",
+      "desc": "Réseau de transport fiable avec respect strict des plannings pour minimiser les retards."
+    },
+    "security": {
+      "title": "Acheminement sécurisé",
+      "desc": "Sécurité totale de la cargaison tout au long du trajet intérieur, du terminal portuaire à destination."
+    },
+    "network": {
+      "title": "Réseau étendu",
+      "desc": "Couverture de transport intérieur étendue vers les destinations européennes."
+    },
+    "management": {
+      "title": "Gestion de bout en bout",
+      "desc": "Notre équipe logistique gère chaque étape du processus d'acheminement en votre nom."
+    }
+  },
+  "benefits": {
+    "badge": "Avantages clés",
+    "title": "Une solution de transport complète",
+    "items": [
+      "Coordination de l'acheminement post-dédouanement",
+      "Capacité conteneurs 20ft, 40ft et 45ft",
+      "Prise en charge des conteneurs dry van et high cube",
+      "Suivi de cargaison en temps réel",
+      "Planification de livraison flexible",
+      "Gestion complète de la logistique intérieure"
+    ]
+  },
+  "cta": {
+    "title": "Avec un transport fiable et une planification précise",
+    "description": "Nous simplifions la logistique intérieure en vous proposant une solution complète de bout en bout, du dédouanement portuaire à la livraison finale."
+  }
+}

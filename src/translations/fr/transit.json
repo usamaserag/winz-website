@@ -1,0 +1,65 @@
+{
+  "meta": {
+    "title": "Dédouanement transit"
+  },
+  "hero": {
+    "badge": "Dédouanement transit",
+    "title": "Transit ininterrompu à travers l'Europe avec",
+    "highlight": "Winz Logistics",
+    "description": "Garantir un mouvement transfrontalier fluide pour vos cargaisons internationales."
+  },
+  "challenge": {
+    "badge": "Le défi",
+    "title": "Naviguer dans le paysage complexe du transit en Europe",
+    "paragraph1": "Traverser les frontières européennes exige plus que le seul transport — cela requiert une gestion précise du transit. Entre les déclarations T1/T2, les exigences complexes en matière de garanties et les délais stricts de dépôt numérique NCTS, les procédures de transit peuvent facilement devenir un goulot d'étranglement.",
+    "paragraph2": "Sans supervision experte, ces points de contrôle réglementaires entraînent souvent des charges administratives, des coûts imprévus et des retards de livraison coûteux. Winz Logistics maintient votre chaîne d'approvisionnement en mouvement en éliminant les frictions aux passages frontaliers."
+  },
+  "features": {
+    "declarations": {
+      "title": "Déclarations T1 / T2",
+      "desc": "Préparation et soumission précises des déclarations de transit T1 et T2, entièrement conformes aux exigences de l'UE."
+    },
+    "guarantee": {
+      "title": "Facilités de garantie",
+      "desc": "Gestion robuste des garanties pour couvrir les droits de douane et assurer un mouvement transfrontalier ininterrompu."
+    },
+    "ncts": {
+      "title": "Dépôt numérique NCTS",
+      "desc": "Gestion experte des protocoles du New Computerised Transit System (NCTS) et respect des délais stricts de dépôt électronique."
+    },
+    "coverage": {
+      "title": "Couverture paneuropéenne",
+      "desc": "Le réseau douanier neutre le plus étendu de la région, couvrant l'ensemble des frontières et passages européens."
+    },
+    "delivery": {
+      "title": "Livraison dans les délais",
+      "desc": "Un respect strict des plannings garantit l'arrivée de vos marchandises à destination sans retards ni goulots d'étranglement."
+    },
+    "experience": {
+      "title": "14 ans d'expérience",
+      "desc": "Une expertise approfondie des procédures de transit acquise au fil de 14 ans de gestion de mouvements transfrontaliers complexes."
+    }
+  },
+  "risk": {
+    "title": "Le coût des retards de transit",
+    "description": "Les goulots d'étranglement administratifs aux postes frontières ne coûtent pas seulement du temps — ils coûtent de l'argent. Des délais NCTS manqués, une couverture de garantie insuffisante ou une documentation T1/T2 incorrecte peuvent entraîner des blocages de marchandises, des sanctions financières et des relations clients compromises. Avec Winz Logistics, ces risques sont éliminés avant qu'ils ne surviennent."
+  },
+  "solution": {
+    "badge": "Notre solution",
+    "title": "Ce que vous obtenez avec les services transit Winz",
+    "benefits": [
+      "Gestion complète des déclarations de transit T1 et T2",
+      "Dépôt numérique conforme au NCTS",
+      "Couverture de garantie complète",
+      "Suivi d'expédition en temps réel à travers les frontières",
+      "Zéro goulot d'étranglement administratif",
+      "Spécialistes transit dédiés pour chaque expédition",
+      "Conformité à tous les postes frontaliers européens",
+      "Livraison dans les délais, sans souci, garantie"
+    ]
+  },
+  "cta": {
+    "title": "Faites circuler vos marchandises en Europe — sans encombre",
+    "description": "Forts de 14 ans d'expérience et du réseau douanier neutre le plus étendu de la région, Winz Logistics garantit que vos expéditions circulent en conformité, dans les délais et sans souci."
+  }
+}

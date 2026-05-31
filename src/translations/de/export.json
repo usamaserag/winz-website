@@ -1,0 +1,54 @@
+{
+  "meta": {
+    "title": "Export-Zollabfertigung"
+  },
+  "hero": {
+    "badge": "Ausgehende Operationen",
+    "title": "Sichern Sie Ihre globale Reichweite mit",
+    "highlight": "Winz Logistics",
+    "description": "Europäische Unternehmen exportieren mit Zuversicht, Compliance und ohne Reibungsverluste."
+  },
+  "risk": {
+    "title": "Die Kosten der Non-Compliance:",
+    "description": "Ein kleiner Dokumentationsfehler kann schnell zu feststehenden Sendungen führen. Wählen Sie Winz, damit Ihre Fracht konform bleibt und Ihre Zeitpläne eingehalten werden."
+  },
+  "clearance": {
+    "badge": "Exportabfertigung",
+    "title": "Der Weg zu globalen Märkten",
+    "description": "Jeder erfolgreiche Export ist ein Meilenstein des Wachstums. Der Weg dorthin wird jedoch oft durch ein komplexes Geflecht aus Dual-Use-Kontrollen, präferenziellen Ursprungsanforderungen und strengen MwSt.-Ausfuhrnachweisvorschriften behindert."
+  },
+  "features": {
+    "dualUse": {
+      "title": "Dual-Use-Kontrollen",
+      "desc": "Fachgerechte Abwicklung von Dual-Use-Vorschriften und Lizenzierungsanforderungen."
+    },
+    "origin": {
+      "title": "Präferenzieller Ursprung",
+      "desc": "Präzise präferenzielle Ursprungsdokumentation zur Nutzung von Handelsabkommensvorteilen."
+    },
+    "presence": {
+      "title": "Europaweite Präsenz",
+      "desc": "Umfassende Abdeckung in allen EU-Mitgliedstaaten und darüber hinaus."
+    },
+    "digital": {
+      "title": "Digitale Infrastruktur",
+      "desc": "Fortschrittliche digitale Systeme für Echtzeit-Zollverfolgung und -berichterstattung."
+    }
+  },
+  "benefits": {
+    "title": "Export mit Sicherheit",
+    "subtitle": "Warum Branchenführer Winz Logistics vertrauen.",
+    "items": [
+      "Garantierte MwSt.-Ausfuhrnachweis-Compliance",
+      "Null-Fehler-Dokumentationspolitik",
+      "Bevorzugter Zollpartner-Status in wichtigen EU-Häfen",
+      "Proaktives Management regulatorischer Änderungen",
+      "Vollständiger Prüfpfad für jede Exporttransaktion",
+      "Strategische Beratung zu Exportlizenzen"
+    ]
+  },
+  "cta": {
+    "title": "Wachsen ohne Grenzen",
+    "description": "Wir liefern die strategische Expertise, die für die Navigation durch sich wandelnde Standards erforderlich ist. Ihre Fracht bleibt konform, Ihre Zeitpläne werden eingehalten."
+  }
+}

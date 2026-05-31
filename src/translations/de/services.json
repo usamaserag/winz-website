@@ -1,0 +1,67 @@
+{
+  "hero": {
+    "badge": "Unsere Leistungen",
+    "title": "Ganzheitliche Logistiklösungen",
+    "subtitle": "Von der lokalen Zustellung bis zur komplexen internationalen Fracht — WINZ bietet zuverlässige, schnelle und skalierbare Logistikdienstleistungen."
+  },
+  "services": {
+    "title": "Unser Angebot",
+    "subtitle": "Ein vollständiges Spektrum an Logistikdienstleistungen für jeden geschäftlichen Bedarf.",
+    "local": {
+      "title": "Lokaler Versand",
+      "desc": "Same-Day- und Next-Day-Lieferung in der Stadt und der umliegenden Region. Optimierte Routen stellen sicher, dass Ihre Sendungen pünktlich ankommen.",
+      "tag": "Schnell & Zuverlässig"
+    },
+    "international": {
+      "title": "Internationale Fracht",
+      "desc": "Nahtlose grenzüberschreitende Versandlösungen per See, Luft und Land. Wir übernehmen Dokumentation, Zoll und Zustellung weltweit.",
+      "tag": "Globale Reichweite"
+    },
+    "express": {
+      "title": "Expresszustellung",
+      "desc": "Wenn jede Minute zählt, garantiert unser Expressservice prioritäre Bearbeitung und Zustellung innerhalb von Stunden. Dedizierte Kurierdienste für Ihre dringendsten Sendungen.",
+      "tag": "Prioritätsservice"
+    },
+    "warehousing": {
+      "title": "Lagerung & Aufbewahrung",
+      "desc": "Moderne Lageranlagen mit Echtzeit-Bestandsverwaltung. Klimakontrollierte Optionen für empfindliche Güter verfügbar.",
+      "tag": "Intelligente Lagerung"
+    },
+    "customs": {
+      "title": "Zollabfertigung",
+      "desc": "Erfahrene Zollagenten übernehmen alle Import- und Exportabfertigungsanforderungen. Wir gewährleisten vollständige Compliance und minimieren Verzögerungen an jeder Grenze.",
+      "tag": "Fachgerechte Abwicklung"
+    },
+    "supply": {
+      "title": "Supply-Chain-Lösungen",
+      "desc": "End-to-End-Supply-Chain-Management mit vollständiger Transparenz. Von der Beschaffung bis zur Zustellung optimieren wir jedes Glied Ihrer Lieferkette.",
+      "tag": "Volle Transparenz"
+    }
+  },
+  "process": {
+    "badge": "So funktioniert es",
+    "title": "Einfach. Schnell. Zuverlässig.",
+    "subtitle": "Der Einstieg bei WINZ ist unkompliziert. So bearbeiten wir Ihre Sendung von Anfang bis Ende.",
+    "step1": {
+      "title": "Angebot anfordern",
+      "desc": "Geben Sie Ihre Sendungsdetails ein und erhalten Sie innerhalb weniger Minuten ein maßgeschneidertes, transparentes Angebot."
+    },
+    "step2": {
+      "title": "Abholung planen",
+      "desc": "Wählen Sie einen passenden Abholtermin — unser Team kommt zu Ihnen und übernimmt Ihre Fracht."
+    },
+    "step3": {
+      "title": "Echtzeit-Tracking",
+      "desc": "Verfolgen Sie Ihre Sendung mit Live-Updates über unsere Plattform, per SMS oder E-Mail-Benachrichtigung."
+    },
+    "step4": {
+      "title": "Sichere Zustellung",
+      "desc": "Ihre Fracht wird sicher und termingerecht zugestellt. Der Zustellnachweis wird umgehend übermittelt."
+    }
+  },
+  "cta": {
+    "title": "Benötigen Sie eine individuelle Logistiklösung?",
+    "subtitle": "Unser Expertenteam entwickelt gerne einen Plan, der exakt auf Ihr Unternehmen zugeschnitten ist.",
+    "button": "Kostenloses Angebot anfordern"
+  }
+}

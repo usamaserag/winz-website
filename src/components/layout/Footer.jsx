@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import {
-  Truck,
   Mail,
   Phone,
   MapPin,
@@ -9,7 +8,6 @@ import {
   Twitter,
   Instagram,
   Linkedin,
-  Building,
 } from "lucide-react";
 import Logo from "../common/Logo";
 import { useCookieConsent } from "../../context/CookieContext";
@@ -53,7 +51,7 @@ const Footer = () => {
                     to="/transport"
                     className="text-slate-600 hover:text-primary-600 transition-colors"
                   >
-                    Transport
+                    {t("nav.transport")}
                   </Link>
                 </li>
                 <li>
@@ -61,7 +59,7 @@ const Footer = () => {
                     to="/warehouse"
                     className="text-slate-600 hover:text-primary-600 transition-colors"
                   >
-                    Warehouse
+                    {t("nav.warehouse")}
                   </Link>
                 </li>
                 <li>
@@ -69,7 +67,7 @@ const Footer = () => {
                     to="/blog"
                     className="text-slate-600 hover:text-primary-600 transition-colors"
                   >
-                    Blog
+                    {t("nav.blog")}
                   </Link>
                 </li>
                 <li>
@@ -77,7 +75,7 @@ const Footer = () => {
                     to="/faq"
                     className="text-slate-600 hover:text-primary-600 transition-colors"
                   >
-                    FAQ
+                    {t("nav.faq")}
                   </Link>
                 </li>
                 <li>
@@ -132,19 +130,15 @@ const Footer = () => {
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
                   <MapPin className="w-5 h-5 text-primary-500 mt-1 flex-shrink-0" />
-                  <span className="text-slate-600">Gentsesteenweg 102 D4, 9240 Zele, Belgium</span>
+                  <span className="text-slate-600">{t("footer.address")}</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <Phone className="w-5 h-5 text-primary-500 flex-shrink-0" />
-                  <span className="text-slate-600" dir="ltr">+ 32496322467</span>
+                  <span className="text-slate-600" dir="ltr">{t("contact.phone")}</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <Mail className="w-5 h-5 text-primary-500 flex-shrink-0" />
-                  <span className="text-slate-600">info@winz.be</span>
-                </li>
-                <li className="flex items-center gap-3">
-                  <Building className="w-5 h-5 text-primary-500 flex-shrink-0" />
-                  <span className="text-slate-600">VAT/TVA no: BE1030.165.041</span>
+                  <span className="text-slate-600">{t("footer.email")}</span>
                 </li>
               </ul>
             </div>

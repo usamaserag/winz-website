@@ -1,0 +1,65 @@
+{
+  "meta": {
+    "title": "Transit Customs Clearance"
+  },
+  "hero": {
+    "badge": "Transit Customs Clearance",
+    "title": "Uninterrupted Transit Across Europe with",
+    "highlight": "Winz Logistics",
+    "description": "Ensuring seamless cross-border movement for your global cargo."
+  },
+  "challenge": {
+    "badge": "The Challenge",
+    "title": "Navigating Europe's Complex Transit Landscape",
+    "paragraph1": "Navigating Europe's borders requires more than just transportation — it demands precise transit management. Between T1/T2 declarations, complex guarantee requirements, and strict NCTS digital filing deadlines, transit procedures can easily become a bottleneck.",
+    "paragraph2": "Without expert oversight, these regulatory checkpoints often lead to administrative burdens, unexpected costs, and costly delivery delays. Winz Logistics keeps your supply chain in motion by eliminating the friction of border crossings."
+  },
+  "features": {
+    "declarations": {
+      "title": "T1 / T2 Declarations",
+      "desc": "Precise preparation and submission of T1 and T2 transit declarations, fully compliant with EU requirements."
+    },
+    "guarantee": {
+      "title": "Guarantee Facilities",
+      "desc": "Robust guarantee management to cover customs duties and ensure uninterrupted cross-border movement."
+    },
+    "ncts": {
+      "title": "NCTS Digital Filing",
+      "desc": "Expert handling of New Computerised Transit System (NCTS) protocols and strict electronic filing deadlines."
+    },
+    "coverage": {
+      "title": "Pan-European Coverage",
+      "desc": "The region's most extensive neutral customs network, covering all European borders and crossings."
+    },
+    "delivery": {
+      "title": "On-Time Delivery",
+      "desc": "Strict schedule adherence ensures your cargo reaches its destination without delays or bottlenecks."
+    },
+    "experience": {
+      "title": "14 Years of Experience",
+      "desc": "Deep expertise in transit procedures built over 14 years of managing complex cross-border movements."
+    }
+  },
+  "risk": {
+    "title": "The Cost of Transit Delays",
+    "description": "Administrative bottlenecks at border checkpoints don't just cost time — they cost money. Missed NCTS filing deadlines, insufficient guarantee coverage, or incorrect T1/T2 documentation can result in shipment holds, financial penalties, and damaged client relationships. With Winz Logistics, these risks are eliminated before they arise."
+  },
+  "solution": {
+    "badge": "Our Solution",
+    "title": "What You Get with Winz Transit Services",
+    "benefits": [
+      "Full T1 & T2 transit declaration management",
+      "NCTS compliant digital filing",
+      "Comprehensive guarantee coverage",
+      "Real-time shipment tracking across borders",
+      "Zero administrative bottlenecks",
+      "Dedicated transit specialists for every shipment",
+      "Compliance at all European border checkpoints",
+      "Worry-free, on-time delivery guaranteed"
+    ]
+  },
+  "cta": {
+    "title": "Move Your Cargo Across Europe — Without a Hitch",
+    "description": "Leveraging 14 years of experience and the region's most extensive neutral customs network, Winz Logistics ensures your shipments move compliant, on time, and worry-free."
+  }
+}

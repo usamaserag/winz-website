@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "title": "Zending volgen | WINZ Logistics"
+  },
+  "hero": {
+    "badge": "Zending volgen",
+    "title": "Volg uw zending in realtime",
+    "subtitle": "Voer hieronder uw trackingnummer in voor live updates over de locatie en status van uw zending.",
+    "unavailableMessage": "Online tracking is momenteel niet beschikbaar. Neem contact op met onze support voor de status van uw zending."
+  },
+  "form": {
+    "label": "Trackingnummer",
+    "placeholder": "bijv. WINZ-2024-00123456",
+    "button": "Nu volgen",
+    "hint": "Uw trackingnummer staat in de verzendbevestigingsmail."
+  },
+  "status": {
+    "title": "Zendingsstatus",
+    "id": "Tracking-ID",
+    "origin": "Herkomst",
+    "destination": "Bestemming",
+    "eta": "Verwachte aankomst",
+    "weight": "Gewicht",
+    "type": "Zendingstype"
+  },
+  "timeline": {
+    "title": "Zendingstijdlijn",
+    "orderPlaced": "Bestelling geplaatst",
+    "orderPlacedDesc": "Uw zendingbestelling is ontvangen en bevestigd.",
+    "pickedUp": "Opgehaald",
+    "pickedUpDesc": "Pakket opgehaald bij de afzender.",
+    "inTransit": "Onderweg",
+    "inTransitDesc": "Pakket is onderweg naar de bestemmingshub.",
+    "outForDelivery": "Uit voor levering",
+    "outForDeliveryDesc": "Pakket is bij onze koerier voor de eindlevering.",
+    "delivered": "Geleverd",
+    "deliveredDesc": "Pakket succesvol afgeleverd bij de ontvanger."
+  },
+  "features": {
+    "title": "Waarom volgen met WINZ?",
+    "realtime": {
+      "title": "Realtime updates",
+      "desc": "Live GPS-tracking met automatische meldingen bij elke mijlpaal."
+    },
+    "notifications": {
+      "title": "Slimme meldingen",
+      "desc": "Ontvang SMS- en e-mailalerts zodat u altijd op de hoogte bent zonder handmatig te checken."
+    },
+    "history": {
+      "title": "Volledige geschiedenis",
+      "desc": "Bekijk de volledige reis van elke zending van ophaling tot eindlevering."
+    }
+  },
+  "cta": {
+    "subtitle": "Klaar om te verzenden? Neem contact op met ons team voor een offerte op maat."
+  },
+  "demo": {
+    "originCity": "Dubai, VAE",
+    "destCity": "Riyad, Saoedi-Arabië",
+    "etaValue": "14 mei 2026",
+    "weightValue": "12,5 kg",
+    "typeValue": "Express vracht"
+  }
+}

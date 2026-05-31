@@ -1,67 +1,87 @@
 {
+  "meta": {
+    "title": "About Us"
+  },
   "hero": {
-    "badge": "About WINZ",
-    "title": "Delivering Trust, Speed & Excellence",
-    "subtitle": "Since our founding, WINZ has been redefining what it means to be a logistics partner. We don't just move cargo — we move businesses forward."
-  },
-  "story": {
-    "badge": "Our Story",
-    "title": "Born from a Vision to Connect the World",
-    "p1": "WINZ was established with a singular mission: to make global logistics simple, fast, and reliable for businesses of every size. What started as a regional delivery service quickly grew into a comprehensive international logistics network.",
-    "p2": "Today, we operate across multiple continents, serving thousands of clients ranging from local SMEs to global enterprises. Our technology-driven approach and dedicated team ensure that every shipment is handled with the utmost care and precision.",
-    "yearsLabel": "Years of Experience",
-    "countriesLabel": "Countries Covered",
-    "teamLabel": "Team Members"
-  },
-  "mission": {
-    "badge": "Mission & Vision",
-    "title": "What Drives Us Every Day",
-    "mission": {
-      "title": "Our Mission",
-      "desc": "To provide fast, reliable, and innovative logistics solutions that empower businesses to compete on a global scale — delivered with integrity and a commitment to excellence."
-    },
-    "vision": {
-      "title": "Our Vision",
-      "desc": "To become the world's most trusted logistics partner, known for speed, transparency, and technology-driven efficiency that sets the new standard in global shipping."
-    }
-  },
-  "values": {
-    "badge": "Our Values",
-    "title": "The Principles We Live By",
-    "speed": {
-      "title": "Speed",
-      "desc": "Every second counts in logistics. We engineer our operations for maximum efficiency and minimal delay."
-    },
-    "integrity": {
-      "title": "Integrity",
-      "desc": "We operate with full transparency. Our clients always know the status and condition of their shipments."
-    },
-    "innovation": {
-      "title": "Innovation",
-      "desc": "We continuously invest in technology to bring smarter, faster solutions to our clients' logistics challenges."
-    },
-    "partnership": {
-      "title": "Partnership",
-      "desc": "We treat every client relationship as a long-term partnership, not just a transaction."
-    },
-    "global": {
-      "title": "Global Mindset",
-      "desc": "With a worldwide network, we understand the unique demands of international shipping and navigate them with expertise."
-    },
-    "reliability": {
-      "title": "Reliability",
-      "desc": "Our clients depend on us to deliver. We take that responsibility seriously, every single day."
-    }
+    "badge": "About Winz Logistics",
+    "title": "Your Trusted Partner in",
+    "highlight": "European Customs & Logistics",
+    "description": "14+ years of expertise in customs clearance, transport, and warehousing across Europe."
   },
   "stats": {
-    "shipments": "Shipments Delivered",
-    "clients": "Happy Clients",
-    "countries": "Countries Served",
-    "satisfaction": "Client Satisfaction"
+    "experience": "Years of Experience",
+    "complianceRate": "EU Compliance Rate",
+    "portsCovered": "European Ports Covered",
+    "services": "Clearance Services"
+  },
+  "welcome": {
+    "badge": "Welcome to Winz Logistics",
+    "title": "14 Years of Unparalleled Customs Expertise",
+    "paragraph1": "Headquartered to serve the European market, we specialise in bridging the gap between global suppliers and the European Union, ensuring seamless, fast, and compliant movement of goods.",
+    "paragraph2": "We understand that navigating customs regulations can be complex. That is why we provide a comprehensive customs service package, handling all formalities at all European seaports and border crossings. Our goal is to handle the logistics complexity, allowing you to focus on your core business.",
+    "networkTitle": "Pan-European Customs Network",
+    "networkSubtitle": "All Ports & Border Crossings",
+    "badgeTitle": "Fast Clearance",
+    "badgeSubtitle": "Minimise Delays"
+  },
+  "whyChoose": {
+    "badge": "Why Choose Us",
+    "title": "Why Choose Winz Logistics?",
+    "reasons": {
+      "expertise": {
+        "title": "14+ Years of Expertise",
+        "desc": "Deep knowledge of EU customs legislation and border procedures built over a decade of dedicated practice."
+      },
+      "customs": {
+        "title": "Comprehensive Customs Services",
+        "desc": "Specialised in import, export, and transit formalities, ensuring full compliance at every step."
+      },
+      "coverage": {
+        "title": "Strategic European Coverage",
+        "desc": "Handling documentation and clearance at all major European ports and border crossings."
+      },
+      "food": {
+        "title": "Specialised Food Handling",
+        "desc": "Expert handling for frozen, chilled, and fresh food products, including vegetables and perishables."
+      },
+      "cargo": {
+        "title": "All-Cargo Capability",
+        "desc": "From containerised cargo to general freight, we manage all product types from across the globe."
+      },
+      "warehousing": {
+        "title": "Warehousing Solutions",
+        "desc": "Secure storage options including bonded warehousing to optimise your supply chain."
+      }
+    }
+  },
+  "coreServices": {
+    "badge": "What We Do",
+    "title": "Our Core Services",
+    "customs": {
+      "title": "Expert Customs Clearance in Europe",
+      "desc": "We manage all customs matters for goods entering Europe from around the world.",
+      "items": [
+        "Frozen & Chilled Foodstuffs — Specialised handling for temperature-sensitive cargo (food & vegetables).",
+        "General Merchandise — Efficient clearance for all cargo types.",
+        "Documentation — Commercial Invoices, Packing Lists, Certificates of Origin, and Transit Documentation T1–T2."
+      ]
+    },
+    "transport": {
+      "title": "Container Transport & Shipping",
+      "desc": "Leveraging a strong network, we manage the entire maritime or land transport process, ensuring your goods arrive safely and on time."
+    },
+    "warehouse": {
+      "title": "Comprehensive Warehousing",
+      "desc": "Whether you need short-term storage during clearance or long-term solutions, we provide:",
+      "items": [
+        "Secure storage.",
+        "Bonded warehouse facilities.",
+        "Unpacking and container unloading services."
+      ]
+    }
   },
   "cta": {
-    "title": "Ready to partner with WINZ?",
-    "subtitle": "Let us handle your logistics so you can focus on growing your business.",
-    "button": "Get in Touch"
+    "title": "Let Winz Logistics Simplify Your International Trade",
+    "description": "Contact us today to handle your logistics seamlessly. We take care of the complexity so you can focus on growing your business."
   }
 }

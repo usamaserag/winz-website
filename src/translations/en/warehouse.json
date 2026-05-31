@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "title": "Warehousing Solutions"
+  },
+  "hero": {
+    "badge": "Warehousing & Value-Added Services",
+    "title": "Advanced Warehousing &",
+    "highlight": "Value-Added Services",
+    "description": "Strategic storage and fulfillment across the European supply chain."
+  },
+  "intro": {
+    "badge": "More Than Just Space",
+    "title": "A Strategic Warehousing Ecosystem",
+    "paragraph1": "Winz Logistics offers more than just space. We provide a strategic warehousing ecosystem designed to streamline your supply chain and reduce overhead. Our facilities are equipped to manage your inventory with precision, whether for a few days or several months.",
+    "paragraph2": "With Winz Logistics, your cargo is stored in a secure, compliant environment, backed by an expert team ready to execute pick-and-pack operations at a moment's notice.",
+    "visualTitle": "Strategic Warehousing Ecosystem",
+    "visualSubtitle": "Secure · Compliant · Efficient",
+    "floatingCardTitle": "Bonded Warehouse",
+    "floatingCardSubtitle": "Duty & VAT Deferral"
+  },
+  "services": {
+    "badge": "Our Services",
+    "title": "Complete Warehousing Capabilities",
+    "bonded": {
+      "title": "Bonded Warehousing",
+      "desc": "Optimise your cash flow by storing uncleared goods and deferring duty and VAT payments until the items enter the local market."
+    },
+    "storage": {
+      "title": "Short & Long-Term Storage",
+      "desc": "Scalable solutions tailored to your inventory cycles and seasonal demands — from a few days to several months."
+    },
+    "valueAdded": {
+      "title": "Value-Added Services",
+      "desc": "Professional re-packing, labelling, and palletising to ensure your goods are retail-ready or prepared for safe transit."
+    },
+    "pickPack": {
+      "title": "Pick & Pack Operations",
+      "desc": "Expert team ready to execute pick-and-pack operations at a moment's notice, with full precision and care."
+    },
+    "inventory": {
+      "title": "Inventory Management",
+      "desc": "Precise inventory tracking and management to keep your supply chain running smoothly at all times."
+    },
+    "unloading": {
+      "title": "Container Unloading",
+      "desc": "Professional unpacking and container unloading services integrated into your receiving workflow."
+    }
+  },
+  "benefits": {
+    "badge": "Key Benefits",
+    "title": "Everything Your Inventory Needs",
+    "items": [
+      "Secure, compliant storage environment",
+      "Bonded warehouse duty deferral",
+      "Scalable short & long-term solutions",
+      "Professional re-packing & labelling",
+      "Expert palletising services",
+      "Pick-and-pack on demand",
+      "Precise inventory management",
+      "Container unloading included"
+    ]
+  },
+  "cta": {
+    "title": "Your Cargo. Stored Securely. Ready Instantly.",
+    "description": "With Winz Logistics, your inventory is managed with precision in a secure, fully compliant facility — backed by a team ready to act at a moment's notice."
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "title": "Containertransport"
+  },
+  "hero": {
+    "badge": "Containertransport & wegvervoer",
+    "title": "Volledige containertransport-",
+    "highlight": "oplossingen",
+    "description": "Van haventerminals tot uw deur met Winz Logistics."
+  },
+  "approach": {
+    "badge": "Onze aanpak",
+    "title": "De brug tussen douane-inklearing & eindlevering",
+    "paragraph1": "Bij Winz Logistics sluiten wij de kloof tussen douane-inklearing en eindlevering. Wij zijn gespecialiseerd in het coördineren van professioneel containerwegvervoer voor alle containermaten — zodat uw vracht snel van de haven naar de eindbestemming gaat.",
+    "paragraph2": "Zodra uw zending is ingeklaard, beheert ons logistiek team het volledige transportproces. Of u nu standaard dry vans, high cubes of gespecialiseerde containers afhandelt — Winz Logistics garandeert een naadloze overgang van de kade naar uw opgegeven adres."
+  },
+  "containerSizes": {
+    "twenty": {
+      "size": "20ft",
+      "desc": "Standaardcontainer voor algemene vracht en droge goederen."
+    },
+    "forty": {
+      "size": "40ft",
+      "desc": "Transport met hoge capaciteit voor grotere zendingen."
+    },
+    "fortyFive": {
+      "size": "45ft",
+      "desc": "Uitgebreide capaciteit voor bulk- of oversized lading."
+    }
+  },
+  "features": {
+    "badge": "Wat wij aanbieden",
+    "title": "End-to-end binnenlandse logistiek",
+    "allTypes": {
+      "title": "Alle containertypes",
+      "desc": "Standaard dry vans, high cubes en gespecialiseerde containers — wij regelen ze allemaal."
+    },
+    "doorDelivery": {
+      "title": "Haven-naar-deur levering",
+      "desc": "Naadloze overgang van de kade rechtstreeks naar uw opgegeven adres."
+    },
+    "scheduling": {
+      "title": "Precieze planning",
+      "desc": "Betrouwbaar transportnetwerk met strikte naleving van planningen om vertragingen te minimaliseren."
+    },
+    "security": {
+      "title": "Veilig wegvervoer",
+      "desc": "Volledige vrachtbeveiliging gedurende de binnenlandse reis, van haventerminal tot bestemming."
+    },
+    "network": {
+      "title": "Breed netwerk",
+      "desc": "Uitgebreide dekking van binnenlands transport naar Europese bestemmingen."
+    },
+    "management": {
+      "title": "End-to-end beheer",
+      "desc": "Ons logistiek team beheert elke stap van het transportproces namens u."
+    }
+  },
+  "benefits": {
+    "badge": "Belangrijkste voordelen",
+    "title": "Een complete transportoplossing",
+    "items": [
+      "Coördinatie van transport na inklaring",
+      "Capaciteit voor 20ft-, 40ft- en 45ft-containers",
+      "Ondersteuning voor dry van- en high cube-containers",
+      "Realtime vrachttracking",
+      "Flexibele leveringsplanning",
+      "Volledig binnenlands logistiek beheer"
+    ]
+  },
+  "cta": {
+    "title": "Met betrouwbaar transport & precieze planning",
+    "description": "Wij nemen de complexiteit uit binnenlandse logistiek en bieden u een complete end-to-end oplossing van haveninklearing tot eindlevering."
+  }
+}

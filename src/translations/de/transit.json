@@ -1,0 +1,65 @@
+{
+  "meta": {
+    "title": "Transit-Zollabfertigung"
+  },
+  "hero": {
+    "badge": "Transit-Zollabfertigung",
+    "title": "Ununterbrochener Transit durch Europa mit",
+    "highlight": "Winz Logistics",
+    "description": "Nahtloser grenzüberschreitender Warenverkehr für Ihre globale Fracht."
+  },
+  "challenge": {
+    "badge": "Die Herausforderung",
+    "title": "Navigation durch Europas komplexe Transitlandschaft",
+    "paragraph1": "Die Navigation durch Europas Grenzen erfordert mehr als nur Transport — sie verlangt präzises Transitmanagement. Zwischen T1/T2-Anmeldungen, komplexen Bürgschaftsanforderungen und strengen NCTS-Einreichungsfristen können Transitverfahren leicht zum Engpass werden.",
+    "paragraph2": "Ohne fachkundige Betreuung führen diese regulatorischen Kontrollpunkte oft zu administrativem Aufwand, unerwarteten Kosten und teuren Lieferverzögerungen. Winz Logistics hält Ihre Lieferkette in Bewegung, indem wir die Reibung an Grenzübergängen eliminieren."
+  },
+  "features": {
+    "declarations": {
+      "title": "T1 / T2-Anmeldungen",
+      "desc": "Präzise Erstellung und Einreichung von T1- und T2-Transitanmeldungen, vollständig konform mit EU-Anforderungen."
+    },
+    "guarantee": {
+      "title": "Bürgschaftseinrichtungen",
+      "desc": "Robustes Bürgschaftsmanagement zur Deckung von Zollabgaben und Gewährleistung eines ununterbrochenen grenzüberschreitenden Warenverkehrs."
+    },
+    "ncts": {
+      "title": "NCTS-Digitaleinreichung",
+      "desc": "Fachgerechte Abwicklung der New Computerised Transit System (NCTS)-Protokolle und strikter elektronischer Einreichungsfristen."
+    },
+    "coverage": {
+      "title": "Europaweite Abdeckung",
+      "desc": "Das umfangreichste neutrale Zollnetzwerk der Region, das alle europäischen Grenzen und Übergänge abdeckt."
+    },
+    "delivery": {
+      "title": "Termingerechte Lieferung",
+      "desc": "Strikte Termineinhaltung stellt sicher, dass Ihre Fracht ohne Verzögerungen oder Engpässe ihr Ziel erreicht."
+    },
+    "experience": {
+      "title": "14 Jahre Erfahrung",
+      "desc": "Tiefes Fachwissen in Transitverfahren, aufgebaut über 14 Jahre Management komplexer grenzüberschreitender Transporte."
+    }
+  },
+  "risk": {
+    "title": "Die Kosten von Transitverzögerungen",
+    "description": "Administrative Engpässe an Grenzkontrollpunkten kosten nicht nur Zeit — sie kosten Geld. Verpasste NCTS-Einreichungsfristen, unzureichende Bürgschaftsdeckung oder fehlerhafte T1/T2-Dokumentation können zu Sendungssperren, finanziellen Strafen und geschädigten Kundenbeziehungen führen. Mit Winz Logistics werden diese Risiken eliminiert, bevor sie entstehen."
+  },
+  "solution": {
+    "badge": "Unsere Lösung",
+    "title": "Das erhalten Sie mit Winz Transit-Diensten",
+    "benefits": [
+      "Vollständiges T1- & T2-Transitanmeldungsmanagement",
+      "NCTS-konforme digitale Einreichung",
+      "Umfassende Bürgschaftsdeckung",
+      "Echtzeit-Sendungsverfolgung über Grenzen hinweg",
+      "Keine administrativen Engpässe",
+      "Dedizierte Transitspezialisten für jede Sendung",
+      "Compliance an allen europäischen Grenzkontrollpunkten",
+      "Sorgenfreie, termingerechte Lieferung garantiert"
+    ]
+  },
+  "cta": {
+    "title": "Bewegen Sie Ihre Fracht durch Europa — ohne Probleme",
+    "description": "Mit 14 Jahren Erfahrung und dem umfangreichsten neutralen Zollnetzwerk der Region stellt Winz Logistics sicher, dass Ihre Sendungen konform, pünktlich und sorgenfrei transportiert werden."
+  }
+}

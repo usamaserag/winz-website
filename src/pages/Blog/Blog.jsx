@@ -1,28 +1,25 @@
 import { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
-  Search, X, ArrowRight,
-  AlertTriangle, Tag, HelpCircle
+  Search, X, ArrowRight, Tag, HelpCircle
 } from 'lucide-react';
 import { getBlogs } from '../../data/siteData';
 import { useSEOMeta } from '../../hooks/useSEOMeta';
+import usePageTitle from '../../hooks/usePageTitle';
 import PageHero from '../../components/logistics/PageHero';
-
-const SectionBadge = ({ label }) => (
-  <span className="inline-block py-1 px-4 rounded-full bg-primary-50 text-primary-600 border border-primary-200 text-sm font-semibold tracking-wide mb-4">
-    {label}
-  </span>
-);
 
 const clean = (str) => (str || '').trim().replace(/:+$/, '');
 const isUrl = (str) => typeof str === 'string' && str.trim().startsWith('http');
 
-const getExcerpt = (row) => {
+const getExcerpt = (row, t) => {
   const struct = row['content structurs'] || '';
   if (struct && !isUrl(struct)) return struct.replace(/^[hH][123]:\s*/, '');
   const title = clean(row.name);
-  return `Professional customs clearance guidelines, required EU documentation, compliance filings, and logistics support for ${title || 'customs declarations'} in Belgium, Netherlands, Germany, and France.`;
+  return t('listing.fallbackExcerpt', {
+    title: title || t('listing.fallbackExcerptDefaultTitle'),
+  });
 };
 
 const getTag = (row) => {
@@ -35,6 +32,8 @@ const getTag = (row) => {
 const allBlogs = getBlogs();
 
 export default function Blog() {
+  const { t } = useTranslation('blog');
+  usePageTitle(t('blog:meta.title'));
   const [searchTerm, setSearchTerm] = useState('');
 
   const filteredBlogs = useMemo(() => {
@@ -42,19 +41,19 @@ export default function Blog() {
     if (!term) return allBlogs;
     return allBlogs.filter(row => {
       const name = clean(row.name).toLowerCase();
-      const excerpt = getExcerpt(row).toLowerCase();
+      const excerpt = getExcerpt(row, t).toLowerCase();
       const tag = getTag(row).toLowerCase();
       return name.includes(term) || excerpt.includes(term) || tag.includes(term);
     });
-  }, [searchTerm]);
+  }, [searchTerm, t]);
 
   useSEOMeta({
-    title: 'European Customs & Logistics Blog | WINZ Logistics',
-    description: 'Read the latest updates, professional guidelines, and technical articles on European customs clearance, container logistics, and fiscal regulations.',
+    title: t('meta.title'),
+    description: t('seo.description'),
     keywords: 'customs clearance blog, import logistics europe, container transport belgium, fiscal representation netherlands',
     canonical: `${window.location.origin}/blog`,
-    ogTitle: 'Customs & Logistics Insights Blog - WINZ Logistics',
-    ogDescription: 'Read the latest updates and professional guidelines on European customs clearance and logistics.',
+    ogTitle: t('seo.ogTitle'),
+    ogDescription: t('seo.ogDescription'),
     ogImage: `${window.location.origin}/logo.png`,
     ogUrl: `${window.location.origin}/blog`,
     ogType: 'website',
@@ -64,10 +63,10 @@ export default function Blog() {
     <div className="flex flex-col min-h-screen bg-gray-50/50">
       <PageHero
         size="compact"
-        badge="WINZ Logistics Insights"
-        title="Customs & Logistics"
-        highlight="Insights & Articles"
-        description="Stay up to date with professional customs clearance procedures, transport updates, and supply chain strategies in the European Union."
+        badge={t('listing.hero.badge')}
+        title={t('listing.hero.title')}
+        highlight={t('listing.hero.highlight')}
+        description={t('listing.hero.description')}
       />
 
       {/* Content */}
@@ -80,7 +79,7 @@ export default function Blog() {
             </div>
             <input
               type="text"
-              placeholder="Search articles by title, topic, or keywords..."
+              placeholder={t('listing.searchPlaceholder')}
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               className="block w-full pl-11 pr-10 py-3.5 border border-gray-200 rounded-2xl bg-white shadow-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all text-sm"
@@ -100,22 +99,20 @@ export default function Blog() {
         {filteredBlogs.length === 0 ? (
           <div className="text-center py-16">
             <HelpCircle className="h-12 w-12 text-gray-400 mx-auto mb-4" />
-            <h3 className="text-lg font-bold text-gray-900 mb-1">No matching articles found</h3>
-            <p className="text-sm text-gray-500">
-              Try searching for terms like &quot;Belgium&quot;, &quot;import&quot; or &quot;clearance&quot;.
-            </p>
+            <h3 className="text-lg font-bold text-gray-900 mb-1">{t('listing.emptyState.title')}</h3>
+            <p className="text-sm text-gray-500">{t('listing.emptyState.description')}</p>
           </div>
         ) : (
           <div>
             <p className="text-sm font-semibold text-gray-500 mb-8">
-              {filteredBlogs.length} articles
+              {t('listing.countLabel', { count: filteredBlogs.length })}
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <AnimatePresence>
                 {filteredBlogs.map((row, index) => {
                   const title = clean(row.name);
-                  const excerpt = getExcerpt(row);
+                  const excerpt = getExcerpt(row, t);
                   const tag = getTag(row);
 
                   return (
@@ -131,7 +128,7 @@ export default function Blog() {
                       {/* Category Badge */}
                       <div className="mb-4">
                         <span className="inline-flex items-center gap-1 bg-primary-50 text-primary-600 border border-primary-100 text-xs px-2.5 py-1 rounded-lg font-semibold">
-                          Customs Guide
+                          {t('listing.categoryBadge')}
                         </span>
                       </div>
 
@@ -139,7 +136,7 @@ export default function Blog() {
                       <div className="mb-3 flex-grow">
                         <Link to={`/blog/${row.slug}`}>
                           <h3 className="text-base md:text-lg font-bold text-gray-900 hover:text-primary-600 leading-snug line-clamp-2 transition-colors">
-                            {title || <span className="text-gray-400 italic">Untitled Article</span>}
+                            {title || <span className="text-gray-400 italic">{t('listing.untitledArticle')}</span>}
                           </h3>
                         </Link>
                       </div>
@@ -165,7 +162,7 @@ export default function Blog() {
                           to={`/blog/${row.slug}`}
                           className="flex items-center justify-between w-full px-4 py-2.5 bg-gray-50 hover:bg-primary-600 text-gray-700 hover:text-white rounded-xl text-xs font-bold transition-all group"
                         >
-                          <span>Read Full Article</span>
+                          <span>{t('listing.readFullArticle')}</span>
                           <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
                         </Link>
                       </div>

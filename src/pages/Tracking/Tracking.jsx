@@ -48,7 +48,7 @@ const TimelineStep = ({ icon, title, desc, status, isLast }) => {
 const Tracking = () => {
   const { t, i18n } = useTranslation(['tracking', 'common']);
   const isRTL = i18n.language === 'ar';
-  usePageTitle(t('common:nav.tracking'));
+  usePageTitle(t('tracking:meta.title'));
 
   const [inputValue, setInputValue] = useState('');
   const [tracking, setTracking]     = useState(false);
@@ -101,7 +101,7 @@ const Tracking = () => {
           </p>
           <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/15">
             <p className="text-white text-lg font-medium">
-              Online tracking is currently unavailable. Please contact our support for your shipment status.
+              {t('tracking:hero.unavailableMessage')}
             </p>
           </div>
         </div>
@@ -218,7 +218,7 @@ const Tracking = () => {
             {t('common:buttons.getQuote')}
           </h2>
           <p className="text-primary-100 text-lg mb-8">
-            Ready to ship? Contact our team for a tailored quote.
+            {t('tracking:cta.subtitle')}
           </p>
           <Link
             to="/contact"

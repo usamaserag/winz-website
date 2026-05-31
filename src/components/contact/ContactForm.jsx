@@ -38,7 +38,7 @@ const ContactForm = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const validationErrors = validateContactForm(values);
+    const validationErrors = validateContactForm(values, (key) => t(key));
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors);
       setStatus('error');

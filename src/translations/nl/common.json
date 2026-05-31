@@ -1,0 +1,160 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "Over ons",
+    "services": "Diensten",
+    "customsClearance": "Douane-inklaringsdiensten",
+    "yourCommunity": "Onze community",
+    "clearance": {
+      "import": "Importinklearing",
+      "export": "Exportinklearing",
+      "transit": "Transitinklearing"
+    },
+    "transport": "Transport",
+    "warehouse": "Magazijn",
+    "blog": "Blog",
+    "faq": "FAQ",
+    "tracking": "Tracking",
+    "contact": "Contact"
+  },
+  "language": {
+    "switcherLabel": "Taal wijzigen"
+  },
+  "a11y": {
+    "menuOpen": "Menu openen",
+    "menuClose": "Menu sluiten",
+    "dismissNotification": "Melding sluiten"
+  },
+  "footer": {
+    "description": "Uw partner voor razendsnelle leveringen. Betrouwbare, veilige en snelle logistieke oplossingen wereldwijd.",
+    "quickLinks": "Snelle links",
+    "contactInfo": "Contactgegevens",
+    "address": "Gentsesteenweg 102 D4, 9240 Zele, Belgium",
+    "email": "info@winz.be",
+    "rights": "Alle rechten voorbehouden.",
+    "newsletter": {
+      "title": "Nieuwsbrief",
+      "subtitle": "Abonneer u voor het laatste logistieke nieuws en updates.",
+      "placeholder": "E-mailadres",
+      "button": "Abonneren"
+    }
+  },
+  "contact": {
+    "phone": "+32 496 32 24 67"
+  },
+  "whatsapp": {
+    "ariaLabel": "Chat via WhatsApp op {{phone}}"
+  },
+  "buttons": {
+    "getQuote": "Offerte aanvragen",
+    "trackShipment": "Zending volgen",
+    "learnMore": "Meer info"
+  },
+  "shared": {
+    "learnMore": "Meer info",
+    "discoverStory": "Ontdek ons verhaal"
+  },
+  "badges": {
+    "customsClearance": "Douane-inklearing",
+    "inlandLogistics": "Binnenlandse logistiek",
+    "storageValueAdded": "Opslag & meerwaardediensten"
+  },
+  "contactCta": {
+    "badge": "Logistieke experts staan klaar",
+    "title": "Klaar om uw Europese supply chain te optimaliseren?",
+    "subtitle": "Neem contact op met WINZ voor douane-inklearing, containertransport, opslag en logistieke oplossingen op maat.",
+    "button": "Contact",
+    "secondary": "Bekijk FAQ"
+  },
+  "cookies": {
+    "gate": {
+      "loading": "Laden…"
+    },
+    "banner": {
+      "title": "Wij respecteren uw privacy",
+      "description": "Wij gebruiken cookies om uw ervaring te verbeteren, websiteverkeer te analyseren en de prestaties te optimaliseren. Meer info in ons",
+      "privacyPolicy": "Privacybeleid",
+      "cookiesPolicy": "Cookiebeleid",
+      "and": "en",
+      "acceptAll": "Alles accepteren",
+      "rejectNonEssential": "Niet-essentiële weigeren",
+      "managePreferences": "Voorkeuren beheren"
+    },
+    "modal": {
+      "title": "Cookievoorkeuren",
+      "description": "Kies welke cookies u toestaat. U kunt deze instellingen op elk moment bijwerken via de footer.",
+      "alwaysEnabled": "Altijd ingeschakeld",
+      "savePreferences": "Voorkeuren opslaan",
+      "close": "Cookievoorkeuren sluiten"
+    },
+    "categories": {
+      "necessary": {
+        "title": "Noodzakelijke cookies",
+        "description": "Vereist voor kernfunctionaliteit zoals beveiliging, netwerkbeheer en toegankelijkheid. Deze kunnen niet worden uitgeschakeld."
+      },
+      "analytics": {
+        "title": "Analytische cookies",
+        "description": "Helpen ons te begrijpen hoe bezoekers de website gebruiken om prestaties en gebruikerservaring te verbeteren."
+      },
+      "marketing": {
+        "title": "Marketingcookies",
+        "description": "Gebruikt om relevante content te leveren en de effectiviteit van marketingcampagnes te meten."
+      },
+      "preferences": {
+        "title": "Voorkeurscookies",
+        "description": "Onthouden uw keuzes zoals taal of regio voor een gepersonaliseerde ervaring."
+      }
+    },
+    "footer": {
+      "settings": "Cookie-instellingen"
+    },
+    "legal": {
+      "privacy": {
+        "pageTitle": "Privacybeleid | WINZ Logistics",
+        "badge": "Juridisch",
+        "heading": "Privacybeleid",
+        "intro": "Dit beleid legt uit hoe WINZ Logistics persoonsgegevens verzamelt, gebruikt en beschermt wanneer u onze website gebruikt.",
+        "sections": [
+          {
+            "title": "Informatie die wij verzamelen",
+            "body": "Wij kunnen technische gegevens verzamelen zoals browsertype, apparaatinformatie en bezochte pagina's wanneer u met onze website interageert of contact met ons opneemt."
+          },
+          {
+            "title": "Hoe wij informatie gebruiken",
+            "body": "Wij gebruiken verzamelde informatie om onze diensten te leveren, vragen te beantwoorden, websiteprestaties te verbeteren en wettelijke verplichtingen na te komen."
+          },
+          {
+            "title": "Cookies en tracking",
+            "body": "Wij gebruiken cookies en vergelijkbare technologieën voor essentiële functionaliteit, analyses en optionele voorkeuren. Niet-essentiële cookies kunt u beheren via onze cookiebanner of de link Cookie-instellingen."
+          },
+          {
+            "title": "Uw rechten",
+            "body": "Afhankelijk van de toepasselijke wetgeving kunt u toegang, correctie of verwijdering van uw persoonsgegevens aanvragen via info@winz.be."
+          }
+        ]
+      },
+      "cookies": {
+        "pageTitle": "Cookiebeleid | WINZ Logistics",
+        "badge": "Juridisch",
+        "heading": "Cookiebeleid",
+        "intro": "Dit beleid beschrijft de soorten cookies die op de WINZ-website worden gebruikt en hoe u deze kunt beheren.",
+        "manageTitle": "Uw cookiekeuzes beheren",
+        "manageBody": "U kunt niet-essentiële cookies op elk moment accepteren, weigeren of aanpassen.",
+        "sections": [
+          {
+            "title": "Wat zijn cookies?",
+            "body": "Cookies zijn kleine tekstbestanden op uw apparaat die websites helpen functioneren, voorkeuren onthouden en gebruikspatronen begrijpen."
+          },
+          {
+            "title": "Cookiecategorieën",
+            "body": "Wij gebruiken noodzakelijke cookies voor kernfunctionaliteit en optionele analytische, marketing- en voorkeurscookies die alleen met uw toestemming worden uitgevoerd."
+          },
+          {
+            "title": "Voorkeuren wijzigen",
+            "body": "Gebruik de link Cookie-instellingen in de footer of de optie Voorkeuren beheren in de cookiebanner om uw keuzes op elk moment bij te werken."
+          }
+        ]
+      }
+    }
+  }
+}

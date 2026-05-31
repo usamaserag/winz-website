@@ -1,0 +1,67 @@
+{
+  "hero": {
+    "badge": "Nos services",
+    "title": "Solutions logistiques de bout en bout",
+    "subtitle": "De la livraison locale du dernier kilomètre au fret international complexe, WINZ vous accompagne avec des services logistiques fiables, rapides et évolutifs."
+  },
+  "services": {
+    "title": "Ce que nous proposons",
+    "subtitle": "Une gamme complète de services logistiques conçus pour répondre à chaque besoin professionnel.",
+    "local": {
+      "title": "Expédition locale",
+      "desc": "Livraison le jour même et le lendemain dans la ville et les régions avoisinantes. Des itinéraires optimisés garantissent l'arrivée de vos colis à l'heure, à chaque fois.",
+      "tag": "Rapide et fiable"
+    },
+    "international": {
+      "title": "Fret international",
+      "desc": "Solutions d'expédition transfrontalière couvrant le fret maritime, aérien et terrestre. Nous gérons la documentation, le dédouanement et la livraison du dernier kilomètre dans le monde entier.",
+      "tag": "Portée mondiale"
+    },
+    "express": {
+      "title": "Livraison express",
+      "desc": "Lorsque le temps est critique, notre service express garantit un traitement prioritaire et une livraison en quelques heures. Des coursiers dédiés pour vos expéditions les plus urgentes.",
+      "tag": "Service prioritaire"
+    },
+    "warehousing": {
+      "title": "Entreposage et stockage",
+      "desc": "Installations de stockage de pointe avec gestion d'inventaire en temps réel. Options à température contrôlée disponibles pour les marchandises sensibles.",
+      "tag": "Stockage intelligent"
+    },
+    "customs": {
+      "title": "Dédouanement",
+      "desc": "Agents en douane experts prenant en charge toutes les formalités d'import et d'export. Nous garantissons une conformité totale et minimisons les retards à chaque frontière.",
+      "tag": "Expertise douanière"
+    },
+    "supply": {
+      "title": "Solutions de chaîne d'approvisionnement",
+      "desc": "Gestion de bout en bout de la chaîne d'approvisionnement avec visibilité totale. De l'approvisionnement à la livraison, nous optimisons chaque maillon de votre chaîne logistique.",
+      "tag": "Visibilité complète"
+    }
+  },
+  "process": {
+    "badge": "Comment ça fonctionne",
+    "title": "Simple. Rapide. Fiable.",
+    "subtitle": "Démarrer avec WINZ est simple. Voici comment nous gérons votre expédition de A à Z.",
+    "step1": {
+      "title": "Demander un devis",
+      "desc": "Renseignez les détails de votre expédition et recevez un devis personnalisé et transparent en quelques minutes."
+    },
+    "step2": {
+      "title": "Planifier l'enlèvement",
+      "desc": "Choisissez un créneau d'enlèvement qui vous convient et notre équipe se rendra sur place, prête à prendre en charge votre marchandise."
+    },
+    "step3": {
+      "title": "Suivi en temps réel",
+      "desc": "Suivez votre expédition avec des mises à jour en direct via notre plateforme, par SMS ou par e-mail."
+    },
+    "step4": {
+      "title": "Livraison sécurisée",
+      "desc": "Votre marchandise est livrée en toute sécurité et dans les délais. La preuve de livraison est transmise immédiatement."
+    }
+  },
+  "cta": {
+    "title": "Besoin d'une solution logistique sur mesure ?",
+    "subtitle": "Notre équipe d'experts est prête à concevoir un plan adapté spécifiquement à votre activité.",
+    "button": "Obtenir un devis gratuit"
+  }
+}

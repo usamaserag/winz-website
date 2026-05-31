@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "title": "Startseite"
+  },
+  "hero": {
+    "badge": "Europäische Logistik & Zoll",
+    "titlePrefix": "Vertrauenspartner für",
+    "titleHighlight": "grenzüberschreitende Fracht",
+    "description": "14 Jahre Zollabfertigung, Containertransport und Lagerung in Europa — entwickelt für Geschwindigkeit, Compliance und Zuverlässigkeit.",
+    "ctaPrimary": "Angebot anfordern",
+    "ctaSecondary": "Unsere Leistungen",
+    "highlights": {
+      "haulage": {
+        "label": "Inlandtransport",
+        "value": "EU-weit"
+      },
+      "ports": {
+        "label": "Hafenabdeckung",
+        "value": "Alle großen Häfen"
+      },
+      "compliance": {
+        "label": "Compliance",
+        "value": "100 % EU"
+      }
+    }
+  },
+  "stats": {
+    "experience": "Jahre Erfahrung",
+    "compliance": "EU-Compliance",
+    "ports": "Europäische Häfen",
+    "services": "Abfertigungsdienste"
+  },
+  "aboutPreview": {
+    "badge": "Wer wir sind",
+    "title": "Winz Logistics — Ihr vertrauenswürdiger europäischer Zollpartner",
+    "description": "Für den europäischen Markt verbinden wir globale Lieferanten mit der EU. Mit über 14 Jahren Erfahrung übernehmen wir alle Zollformalitäten in jedem europäischen Seehafen und Grenzübergang — damit Sie sich auf Ihr Kerngeschäft konzentrieren können.",
+    "cta": "Unsere Geschichte entdecken"
+  },
+  "services": {
+    "badge": "Unsere Leistungen",
+    "title": "Jeder Schritt auf dem Weg Ihrer Fracht",
+    "description": "Von der Zollabfertigung über den Inlandtransport bis zur sicheren Lagerung — wir steuern jede Phase, damit Ihre Lieferkette nie stockt.",
+    "cards": {
+      "import": {
+        "title": "Import",
+        "badge": "Zollabfertigung",
+        "desc": "Nahtlose Importzollabfertigung in allen europäischen Seehäfen und Grenzübergängen — vollständig konform und vollständig betreut."
+      },
+      "export": {
+        "title": "Export",
+        "badge": "Zollabfertigung",
+        "desc": "Dual-Use-Kontrollen, präferenzielle Ursprünge und MwSt.-Ausfuhrnachweise mit professioneller Exportabfertigung meistern."
+      },
+      "transit": {
+        "title": "Transit",
+        "badge": "Zollabfertigung",
+        "desc": "Ununterbrochene grenzüberschreitende Bewegung mit T1/T2-Erklärungen und NCTS-Digitalanmeldung von Anfang bis Ende."
+      },
+      "transport": {
+        "title": "Transport",
+        "badge": "Inlandlogistik",
+        "desc": "Containertransport für 20-, 40- und 45-Fuß-Container — vom Hafenterminal bis vor Ihre Tür."
+      },
+      "warehouse": {
+        "title": "Lager",
+        "badge": "Lagerung & Mehrwertdienste",
+        "desc": "Zollager, Kurz- und Langzeitlagerung, Pick-and-Pack, Palettierung und Zollstundung — alles aus einer Hand."
+      }
+    },
+    "cta": "Mehr erfahren"
+  },
+  "whyChoose": {
+    "badge": "Warum uns wählen",
+    "title": "Warum Unternehmen Winz Logistics vertrauen",
+    "pillars": {
+      "expertise": {
+        "title": "Über 14 Jahre Expertise",
+        "desc": "Tiefes Wissen über EU-Zollgesetzgebung und grenzüberschreitende Verfahren."
+      },
+      "compliance": {
+        "title": "Volle Compliance garantiert",
+        "desc": "Jede Sendung wird nach höchsten regulatorischen Standards bearbeitet — ohne Ausnahme."
+      },
+      "network": {
+        "title": "Paneuropäisches Netzwerk",
+        "desc": "Das umfangreichste neutrale Zollnetzwerk der Region an jedem Hafen und Grenzübergang."
+      },
+      "cargo": {
+        "title": "Alle Frachtarten",
+        "desc": "Von verderblichen Lebensmitteln bis zu allgemeiner Ware und übergroßer Fracht."
+      },
+      "solutions": {
+        "title": "End-to-End-Lösungen",
+        "desc": "Zollabfertigung, Transport und Lagerung — vollständig integriert bei einem Partner."
+      },
+      "team": {
+        "title": "Dedizierte Spezialisten",
+        "desc": "Ein Team von Zollexperten, das Ihr Konto persönlich betreut."
+      }
+    }
+  }
+}

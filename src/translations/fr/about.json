@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "title": "À propos"
+  },
+  "hero": {
+    "badge": "À propos de Winz Logistics",
+    "title": "Votre partenaire de confiance en",
+    "highlight": "douane et logistique européennes",
+    "description": "Plus de 14 ans d'expertise en dédouanement, transport et entreposage à travers l'Europe."
+  },
+  "stats": {
+    "experience": "Années d'expérience",
+    "complianceRate": "Taux de conformité UE",
+    "portsCovered": "Ports européens couverts",
+    "services": "Services de dédouanement"
+  },
+  "welcome": {
+    "badge": "Bienvenue chez Winz Logistics",
+    "title": "14 ans d'expertise douanière inégalée",
+    "paragraph1": "Au service du marché européen, nous sommes spécialisés dans la mise en relation entre les fournisseurs internationaux et l'Union européenne, garantissant un flux de marchandises fluide, rapide et conforme.",
+    "paragraph2": "Nous savons que la navigation dans la réglementation douanière peut s'avérer complexe. C'est pourquoi nous proposons une offre complète de services douaniers, en prenant en charge toutes les formalités dans l'ensemble des ports maritimes et passages frontaliers européens. Notre objectif : absorber la complexité logistique pour que vous puissiez vous concentrer sur votre cœur de métier.",
+    "networkTitle": "Réseau douanier paneuropéen",
+    "networkSubtitle": "Tous les ports et passages frontaliers",
+    "badgeTitle": "Dédouanement rapide",
+    "badgeSubtitle": "Réduction des retards"
+  },
+  "whyChoose": {
+    "badge": "Pourquoi nous choisir",
+    "title": "Pourquoi choisir Winz Logistics ?",
+    "reasons": {
+      "expertise": {
+        "title": "Plus de 14 ans d'expertise",
+        "desc": "Une connaissance approfondie de la législation douanière de l'UE et des procédures frontalières, acquise au fil d'une décennie de pratique dédiée."
+      },
+      "customs": {
+        "title": "Services douaniers complets",
+        "desc": "Spécialisés dans les formalités d'import, d'export et de transit, garantissant une conformité totale à chaque étape."
+      },
+      "coverage": {
+        "title": "Couverture stratégique en Europe",
+        "desc": "Gestion de la documentation et du dédouanement dans tous les grands ports et passages frontaliers européens."
+      },
+      "food": {
+        "title": "Manutention spécialisée des produits alimentaires",
+        "desc": "Expertise dans la manutention des produits alimentaires surgelés, réfrigérés et frais, y compris les légumes et denrées périssables."
+      },
+      "cargo": {
+        "title": "Capacité tous types de fret",
+        "desc": "Du fret conteneurisé au fret général, nous gérons tous les types de marchandises en provenance du monde entier."
+      },
+      "warehousing": {
+        "title": "Solutions d'entreposage",
+        "desc": "Options de stockage sécurisées, y compris l'entreposage sous douane, pour optimiser votre chaîne d'approvisionnement."
+      }
+    }
+  },
+  "coreServices": {
+    "badge": "Notre activité",
+    "title": "Nos services essentiels",
+    "customs": {
+      "title": "Expertise en dédouanement en Europe",
+      "desc": "Nous gérons l'ensemble des formalités douanières pour les marchandises entrant en Europe depuis le monde entier.",
+      "items": [
+        "Denrées alimentaires surgelées et réfrigérées — Manutention spécialisée pour les cargaisons sous température dirigée (alimentation et légumes).",
+        "Marchandises générales — Dédouanement efficace pour tous les types de fret.",
+        "Documentation — Factures commerciales, listes de colisage, certificats d'origine et documents de transit T1–T2."
+      ]
+    },
+    "transport": {
+      "title": "Transport et acheminement de conteneurs",
+      "desc": "Forts d'un réseau solide, nous gérons l'ensemble du processus de transport maritime ou terrestre, garantissant l'arrivée de vos marchandises en toute sécurité et dans les délais."
+    },
+    "warehouse": {
+      "title": "Entreposage complet",
+      "desc": "Que vous ayez besoin d'un stockage à court terme pendant le dédouanement ou de solutions à long terme, nous proposons :",
+      "items": [
+        "Stockage sécurisé.",
+        "Installations d'entrepôt sous douane.",
+        "Services de déballage et de déchargement de conteneurs."
+      ]
+    }
+  },
+  "cta": {
+    "title": "Confiez la simplification de votre commerce international à Winz Logistics",
+    "description": "Contactez-nous dès aujourd'hui pour une gestion logistique sans accroc. Nous prenons en charge la complexité pour que vous puissiez vous concentrer sur le développement de votre activité."
+  }
+}

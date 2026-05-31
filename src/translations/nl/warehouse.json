@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "title": "Opslagoplossingen"
+  },
+  "hero": {
+    "badge": "Opslag & meerwaardediensten",
+    "title": "Geavanceerde opslag &",
+    "highlight": "meerwaardediensten",
+    "description": "Strategische opslag en fulfillment in de Europese supply chain."
+  },
+  "intro": {
+    "badge": "Meer dan alleen ruimte",
+    "title": "Een strategisch opslagecosysteem",
+    "paragraph1": "Winz Logistics biedt meer dan alleen ruimte. Wij leveren een strategisch opslagecosysteem dat uw supply chain stroomlijnt en overhead verlaagt. Onze faciliteiten zijn uitgerust om uw voorraad met precisie te beheren, of dat nu enkele dagen of meerdere maanden is.",
+    "paragraph2": "Met Winz Logistics wordt uw vracht opgeslagen in een veilige, conforme omgeving, ondersteund door een expertteam dat pick-and-pack operaties op elk moment kan uitvoeren.",
+    "visualTitle": "Strategisch opslagecosysteem",
+    "visualSubtitle": "Veilig · Conform · Efficiënt",
+    "floatingCardTitle": "Douane-entrepot",
+    "floatingCardSubtitle": "Uitstel van rechten & BTW"
+  },
+  "services": {
+    "badge": "Onze diensten",
+    "title": "Volledige opslagcapaciteiten",
+    "bonded": {
+      "title": "Douane-entrepot",
+      "desc": "Optimaliseer uw cashflow door niet-ingeklaarde goederen op te slaan en rechten- en BTW-betalingen uit te stellen tot de goederen de lokale markt betreden."
+    },
+    "storage": {
+      "title": "Kort- & langetermijnopslag",
+      "desc": "Schaalbare oplossingen afgestemd op uw voorraadcycli en seizoensgebonden vraag — van enkele dagen tot meerdere maanden."
+    },
+    "valueAdded": {
+      "title": "Meerwaardediensten",
+      "desc": "Professioneel herverpakken, etiketteren en palletiseren zodat uw goederen winkelklaar zijn of veilig kunnen worden vervoerd."
+    },
+    "pickPack": {
+      "title": "Pick & pack operaties",
+      "desc": "Expertteam klaar om pick-and-pack operaties op elk moment uit te voeren, met volledige precisie en zorg."
+    },
+    "inventory": {
+      "title": "Voorraadbeheer",
+      "desc": "Precieze voorraadtracking en -beheer om uw supply chain te allen tijde soepel te laten draaien."
+    },
+    "unloading": {
+      "title": "Containerlossing",
+      "desc": "Professioneel uitpakken en containerlossing, geïntegreerd in uw ontvangstproces."
+    }
+  },
+  "benefits": {
+    "badge": "Belangrijkste voordelen",
+    "title": "Alles wat uw voorraad nodig heeft",
+    "items": [
+      "Veilige, conforme opslagomgeving",
+      "Uitstel van rechten via douane-entrepot",
+      "Schaalbare kort- & langetermijnoplossingen",
+      "Professioneel herverpakken & etiketteren",
+      "Expert palletiseringsdiensten",
+      "Pick-and-pack on demand",
+      "Precies voorraadbeheer",
+      "Containerlossing inbegrepen"
+    ]
+  },
+  "cta": {
+    "title": "Uw vracht. Veilig opgeslagen. Direct klaar.",
+    "description": "Met Winz Logistics wordt uw voorraad met precisie beheerd in een veilige, volledig conforme faciliteit — ondersteund door een team dat op elk moment kan handelen."
+  }
+}

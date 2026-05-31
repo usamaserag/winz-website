@@ -1,0 +1,67 @@
+{
+  "hero": {
+    "badge": "Onze diensten",
+    "title": "End-to-end logistieke oplossingen",
+    "subtitle": "Van lokale last-mile levering tot complex internationaal vrachtvervoer — WINZ biedt betrouwbare, snelle en schaalbare logistieke diensten."
+  },
+  "services": {
+    "title": "Wat wij aanbieden",
+    "subtitle": "Een volledig pakket logistieke diensten, ontworpen voor elke zakelijke behoefte.",
+    "local": {
+      "title": "Lokaal vervoer",
+      "desc": "Levering dezelfde dag en volgende dag in de stad en omliggende regio's. Geoptimaliseerde routes zorgen ervoor dat uw pakketten elke keer op tijd aankomen.",
+      "tag": "Snel & betrouwbaar"
+    },
+    "international": {
+      "title": "Internationaal vrachtvervoer",
+      "desc": "Naadloze grensoverschrijdende verzendoplossingen via zee, lucht en land. Wij regelen documentatie, douane en last-mile levering wereldwijd.",
+      "tag": "Wereldwijd bereik"
+    },
+    "express": {
+      "title": "Expresslevering",
+      "desc": "Wanneer tijd cruciaal is, garandeert onze expressdienst prioritaire afhandeling en levering binnen enkele uren. Toegewijde koeriers voor uw meest urgente zendingen.",
+      "tag": "Prioriteitsdienst"
+    },
+    "warehousing": {
+      "title": "Opslag & magazijn",
+      "desc": "State-of-the-art opslagfaciliteiten met realtime voorraadbeheer. Klimaatgecontroleerde opties beschikbaar voor gevoelige goederen.",
+      "tag": "Slimme opslag"
+    },
+    "customs": {
+      "title": "Douane-inklearing",
+      "desc": "Ervaren douane-expediteurs die alle import- en exportinklearingsvereisten afhandelen. Wij garanderen volledige naleving en minimaliseren vertragingen bij elke grens.",
+      "tag": "Expertafhandeling"
+    },
+    "supply": {
+      "title": "Supply chain-oplossingen",
+      "desc": "End-to-end supply chain management met volledige transparantie. Van inkoop tot levering optimaliseren wij elke schakel in uw supply chain.",
+      "tag": "Volledige transparantie"
+    }
+  },
+  "process": {
+    "badge": "Hoe het werkt",
+    "title": "Eenvoudig. Snel. Betrouwbaar.",
+    "subtitle": "Aan de slag gaan met WINZ is eenvoudig. Zo begeleiden wij uw zending van begin tot eind.",
+    "step1": {
+      "title": "Offerte aanvragen",
+      "desc": "Vul uw zendinggegevens in en ontvang binnen enkele minuten een op maat gemaakte, transparante offerte."
+    },
+    "step2": {
+      "title": "Ophaling plannen",
+      "desc": "Kies een geschikt ophaalmoment en ons team komt bij u langs, klaar om uw vracht af te handelen."
+    },
+    "step3": {
+      "title": "Realtime tracking",
+      "desc": "Volg uw zending met live updates via ons platform, SMS of e-mailmeldingen."
+    },
+    "step4": {
+      "title": "Veilige levering",
+      "desc": "Uw vracht wordt veilig en volgens planning geleverd. Het leveringsbewijs wordt onmiddellijk verzonden."
+    }
+  },
+  "cta": {
+    "title": "Een logistieke oplossing op maat nodig?",
+    "subtitle": "Ons team van experts staat klaar om een plan te ontwerpen dat specifiek op uw bedrijf is afgestemd.",
+    "button": "Gratis offerte aanvragen"
+  }
+}

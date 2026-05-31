@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "title": "Blog douane et logistique européennes | WINZ Logistics"
+  },
+  "seo": {
+    "description": "Consultez les dernières actualités, guides professionnels et articles techniques sur le dédouanement en Europe, la logistique conteneurs et la réglementation fiscale.",
+    "ogTitle": "Blog actualités douane et logistique - WINZ Logistics",
+    "ogDescription": "Consultez les dernières actualités et guides professionnels sur le dédouanement et la logistique en Europe."
+  },
+  "listing": {
+    "hero": {
+      "badge": "Actualités WINZ Logistics",
+      "title": "Douane et logistique",
+      "highlight": "Actualités et articles",
+      "description": "Restez informé des procédures professionnelles de dédouanement, des actualités transport et des stratégies de chaîne d'approvisionnement dans l'Union européenne."
+    },
+    "searchPlaceholder": "Rechercher des articles par titre, sujet ou mots-clés...",
+    "emptyState": {
+      "title": "Aucun article correspondant trouvé",
+      "description": "Essayez des termes comme « Belgique », « import » ou « dédouanement »."
+    },
+    "countLabel": "{{count}} articles",
+    "categoryBadge": "Guide douanier",
+    "untitledArticle": "Article sans titre",
+    "readFullArticle": "Lire l'article complet",
+    "fallbackExcerpt": "Guides professionnels de dédouanement, documentation UE requise, déclarations de conformité et accompagnement logistique pour {{title}} en Belgique, aux Pays-Bas, en Allemagne et en France.",
+    "fallbackExcerptDefaultTitle": "déclarations douanières"
+  },
+  "detail": {
+    "notFound": {
+      "title": "Article introuvable",
+      "description": "L'article de blog demandé n'a pas pu être trouvé.",
+      "backToBlog": "Retour au blog"
+    },
+    "breadcrumbs": {
+      "home": "Accueil",
+      "blog": "Blog"
+    },
+    "categoryBadge": "Guide douanier",
+    "publishedDate": "19 mai 2026",
+    "author": "Équipe spécialisée WINZ Logistics",
+    "articleContentTitle": "Contenu de l'article",
+    "faqTitle": "Questions fréquemment posées",
+    "inlineFaq": {
+      "requiredDocumentsQ": "Quels documents sont requis pour {{title}} ?",
+      "requiredDocumentsA": "Le dédouanement standard requiert une facture commerciale, une liste de colisage, un certificat d'origine et des documents de transport (T1, T2 ou CMR). Des licences sectorielles peuvent s'appliquer selon le type de produit (alimentaire, pharmaceutique, électronique, etc.).",
+      "durationQ": "Combien de temps prend généralement {{title}} ?",
+      "durationA": "Avec tous les documents en ordre et les déclarations préalables effectuées, la plupart des processus de dédouanement en UE prennent entre 1 et 4 heures. Les retards sont dus à des erreurs documentaires, des inspections ou l'absence d'enregistrement EORI/TVA.",
+      "winzHandlingQ": "Comment WINZ Logistics gère-t-il {{title}} ?",
+      "winzHandlingA": "WINZ Logistics utilise des systèmes d'interface douanière automatisés connectés directement au Port d'Anvers, au Port de Rotterdam, à Hambourg et à d'autres grands points d'entrée européens — permettant des déclarations plus rapides et des mises à jour du statut de dédouanement en temps réel."
+    },
+    "fallbackArticle": {
+      "h1": "Guide complet sur {{name}}",
+      "intro": "La gestion de {{nameLower}} en Europe requiert une expertise approfondie des réglementations d'import/export de l'UE, de la conformité fiscale locale et des procédures de transit. Chez WINZ Logistics, nos commissionnaires en douane dédiés garantissent un dédouanement rapide et efficace de vos expéditions.",
+      "docsTitle": "Documentation clé requise",
+      "docsIntro": "Pour assurer un dédouanement fluide pour {{name}}, la documentation standard suivante doit être préparée et validée avant l'arrivée au port :",
+      "docItems": [
+        "Facture commerciale détaillant les informations acheteur/vendeur et les incoterms",
+        "Liste de colisage détaillée précisant poids, emballages et quantités",
+        "Documents de transport (CMR, connaissement ou lettre de transport aérien)",
+        "Déclarations en douane (DAU / Document Administratif Unique)",
+        "Confirmation de classification du code SH par un commissionnaire en douane agréé"
+      ],
+      "operationsTitle": "Opérations portuaires et courtage en douane",
+      "operationsIntro": "Nos équipes interviennent directement dans les grands hubs de fret européens, notamment le Port d'Anvers, le Port de Rotterdam, Hambourg et Paris CDG. Nous gérons :",
+      "operationItems": [
+        "Déclarations d'import en douane (représentation directe et indirecte)",
+        "Documents de transit (T1, T2) pour les marchandises transitant par des États non-UE",
+        "Représentation fiscale pour les entités étrangères important en UE",
+        "Audits douaniers et conseil en classification du code SH"
+      ],
+      "complianceTitle": "Conformité et exigences réglementaires",
+      "complianceBody": "Toutes les expéditions soumises à {{nameLower}} doivent respecter la réglementation actuelle de l'Union douanière de l'UE, y compris l'enregistrement EORI, les obligations de déclaration de TVA et toute licence sectorielle (sécurité alimentaire, marquage CE, CITES, etc.). WINZ Logistics surveille en permanence les évolutions réglementaires pour maintenir vos opérations conformes.",
+      "whyWinzTitle": "Pourquoi choisir WINZ Logistics ?",
+      "whyWinzBody": "Forts de décennies d'expérience combinée en réglementation commerciale de l'UE, WINZ Logistics offre un accompagnement de bout en bout pour le transit de fret, l'entreposage et les déclarations frontalières. Contactez notre équipe dès aujourd'hui pour fluidifier votre chaîne d'approvisionnement et éviter des retards douaniers coûteux."
+    },
+    "noContentAvailable": "Aucun contenu disponible pour cet article.",
+    "schemaFaq": {
+      "docsQuestion": "Quels documents sont requis pour {{title}} ?",
+      "docsAnswer": "Les documents standard pour {{title}} comprennent : facture commerciale, liste de colisage, certificat d'origine, documents de transport (T1, T2, CMR) et classification du code SH. Des licences sectorielles supplémentaires peuvent s'appliquer.",
+      "supportQuestion": "Comment WINZ Logistics accompagne-t-il {{title}} ?",
+      "supportAnswer": "WINZ Logistics propose un courtage direct, le dépôt de documents de transit (T1/T2), des audits documentaires douaniers et un dédouanement complet dans les ports européens (Anvers, Rotterdam, Hambourg, Paris)."
+    }
+  }
+}

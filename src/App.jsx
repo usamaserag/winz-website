@@ -1,6 +1,4 @@
-import { useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { useTranslation } from "react-i18next";
 import MainLayout from "./layouts/MainLayout";
 import Home from "./pages/Home/Home";
 import Contact from "./pages/Contact/Contact";
@@ -23,13 +21,10 @@ import ConsentAwareVisitorTracker from "./components/cookies/ConsentAwareVisitor
 import PrivacyPolicy from "./pages/Legal/PrivacyPolicy";
 import CookiesPolicy from "./pages/Legal/CookiesPolicy";
 
-function App() {
+import { useDocumentLanguage } from "./hooks/useDocumentLanguage";
 
-  // Language is always English — set document attributes once on mount
-  useEffect(() => {
-    document.documentElement.dir = "ltr";
-    document.documentElement.lang = "en";
-  }, []);
+function App() {
+  useDocumentLanguage();
 
   return (
     <CookieProvider>

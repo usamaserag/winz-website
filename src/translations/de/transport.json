@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "title": "Containertransport"
+  },
+  "hero": {
+    "badge": "Containertransport & Haulage",
+    "title": "Container-Haulage",
+    "highlight": "in vollem Umfang",
+    "description": "Vom Hafenterminal bis zu Ihrer Haustür mit Winz Logistics."
+  },
+  "approach": {
+    "badge": "Unser Ansatz",
+    "title": "Die Brücke zwischen Zollabfertigung & Endzustellung",
+    "paragraph1": "Bei Winz Logistics schließen wir die Lücke zwischen Zollabfertigung und Endzustellung. Wir koordinieren professionelle Container-Trucking-Dienste für alle Equipmentgrößen und stellen sicher, dass Ihre Fracht schnell vom Hafen zum endgültigen Bestimmungsort gelangt.",
+    "paragraph2": "Sobald Ihre Sendung den Zoll passiert hat, übernimmt unser Logistikteam den gesamten Haulage-Prozess. Ob Standard-Dry-Vans, High Cubes oder Spezialcontainer — Winz Logistics garantiert einen nahtlosen Übergang vom Kai zu Ihrer angegebenen Adresse."
+  },
+  "containerSizes": {
+    "twenty": {
+      "size": "20ft",
+      "desc": "Standardcontainer für allgemeine Fracht und Trockenwaren."
+    },
+    "forty": {
+      "size": "40ft",
+      "desc": "Hochkapazitäts-Haulage für größere Sendungen."
+    },
+    "fortyFive": {
+      "size": "45ft",
+      "desc": "Erweiterte Kapazität für Schüttgut oder übergroße Ladungen."
+    }
+  },
+  "features": {
+    "badge": "Unser Angebot",
+    "title": "End-to-End-Inlandlogistik",
+    "allTypes": {
+      "title": "Alle Containertypen",
+      "desc": "Standard-Dry-Vans, High Cubes und Spezialcontainer — wir bearbeiten sie alle."
+    },
+    "doorDelivery": {
+      "title": "Hafen-zu-Tür-Zustellung",
+      "desc": "Nahtloser Übergang vom Kai direkt zu Ihrer angegebenen Adresse."
+    },
+    "scheduling": {
+      "title": "Präzise Terminplanung",
+      "desc": "Zuverlässiges Transportnetzwerk mit strikter Termineinhaltung zur Minimierung von Verzögerungen."
+    },
+    "security": {
+      "title": "Sicherer Haulage",
+      "desc": "Vollständige Frachtsicherheit während der gesamten Inlandfahrt, vom Hafenterminal bis zum Zielort."
+    },
+    "network": {
+      "title": "Breites Netzwerk",
+      "desc": "Umfassende Inlandtransportabdeckung in ganz Europa."
+    },
+    "management": {
+      "title": "End-to-End-Management",
+      "desc": "Unser Logistikteam steuert jeden Schritt des Haulage-Prozesses in Ihrem Auftrag."
+    }
+  },
+  "benefits": {
+    "badge": "Hauptvorteile",
+    "title": "Eine vollständige Transportlösung",
+    "items": [
+      "Haulage-Koordination nach der Abfertigung",
+      "20ft-, 40ft- und 45ft-Container-Kapazität",
+      "Unterstützung für Dry-Van- und High-Cube-Container",
+      "Echtzeit-Frachtverfolgung",
+      "Flexible Zustellplanung",
+      "Vollständiges Inlandlogistik-Management"
+    ]
+  },
+  "cta": {
+    "title": "Mit zuverlässigem Transport & präziser Terminplanung",
+    "description": "Wir nehmen Ihnen die Komplexität der Inlandlogistik ab und bieten Ihnen eine vollständige End-to-End-Lösung von der Hafenabfertigung bis zur Endzustellung."
+  }
+}

@@ -1,8 +1,12 @@
 {
+  "meta": {
+    "title": "Track Shipment | WINZ Logistics"
+  },
   "hero": {
     "badge": "Shipment Tracking",
     "title": "Track Your Shipment in Real Time",
-    "subtitle": "Enter your tracking number below to get live updates on the location and status of your shipment."
+    "subtitle": "Enter your tracking number below to get live updates on the location and status of your shipment.",
+    "unavailableMessage": "Online tracking is currently unavailable. Please contact our support for your shipment status."
   },
   "form": {
     "label": "Tracking Number",
@@ -46,6 +50,9 @@
       "title": "Full History",
       "desc": "Access the complete journey of every shipment from pickup to final delivery."
     }
+  },
+  "cta": {
+    "subtitle": "Ready to ship? Contact our team for a tailored quote."
   },
   "demo": {
     "originCity": "Dubai, UAE",

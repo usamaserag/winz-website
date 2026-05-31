@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { CheckCircle2, AlertCircle, X } from 'lucide-react';
 
 const VARIANTS = {
@@ -18,6 +19,7 @@ const VARIANTS = {
  * @param {{ message: string, type?: 'success' | 'error', onClose: () => void, duration?: number }} props
  */
 const Toast = ({ message, type = 'success', onClose, duration = 6000 }) => {
+  const { t } = useTranslation('common');
   const [visible, setVisible] = useState(false);
   const variant = VARIANTS[type] || VARIANTS.success;
   const Icon = variant.icon;
@@ -50,7 +52,7 @@ const Toast = ({ message, type = 'success', onClose, duration = 6000 }) => {
           type="button"
           onClick={onClose}
           className="shrink-0 rounded p-1 text-white/80 transition-colors hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white/60"
-          aria-label="Dismiss notification"
+          aria-label={t('a11y.dismissNotification')}
         >
           <X className="w-4 h-4" aria-hidden="true" />
         </button>

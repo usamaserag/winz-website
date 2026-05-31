@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "title": "Lagerlösungen"
+  },
+  "hero": {
+    "badge": "Lagerung & Mehrwertdienste",
+    "title": "Moderne Lagerung &",
+    "highlight": "Mehrwertdienste",
+    "description": "Strategische Lagerung und Fulfillment entlang der europäischen Lieferkette."
+  },
+  "intro": {
+    "badge": "Mehr als nur Fläche",
+    "title": "Ein strategisches Lager-Ökosystem",
+    "paragraph1": "Winz Logistics bietet mehr als nur Lagerfläche. Wir stellen ein strategisches Lager-Ökosystem bereit, das Ihre Lieferkette optimiert und Overhead-Kosten senkt. Unsere Anlagen sind darauf ausgelegt, Ihr Inventar präzise zu verwalten — ob für wenige Tage oder mehrere Monate.",
+    "paragraph2": "Mit Winz Logistics wird Ihre Fracht in einer sicheren, konformen Umgebung gelagert, unterstützt durch ein Expertenteam, das Pick-and-Pack-Operationen jederzeit ausführen kann.",
+    "visualTitle": "Strategisches Lager-Ökosystem",
+    "visualSubtitle": "Sicher · Konform · Effizient",
+    "floatingCardTitle": "Zolllager",
+    "floatingCardSubtitle": "Zoll- & MwSt.-Stundung"
+  },
+  "services": {
+    "badge": "Unsere Leistungen",
+    "title": "Vollständige Lagerkapazitäten",
+    "bonded": {
+      "title": "Zolllagerung",
+      "desc": "Optimieren Sie Ihren Cashflow, indem Sie nicht abgefertigte Waren lagern und Zoll- sowie MwSt.-Zahlungen bis zum Markteintritt stunden."
+    },
+    "storage": {
+      "title": "Kurz- & Langzeitlagerung",
+      "desc": "Skalierbare Lösungen, zugeschnitten auf Ihre Inventarzyklen und saisonale Anforderungen — von wenigen Tagen bis zu mehreren Monaten."
+    },
+    "valueAdded": {
+      "title": "Mehrwertdienste",
+      "desc": "Professionelles Umpacken, Etikettieren und Palettieren, damit Ihre Waren verkaufsfertig sind oder sicher transportiert werden können."
+    },
+    "pickPack": {
+      "title": "Pick-&-Pack-Operationen",
+      "desc": "Expertenteam, das Pick-and-Pack-Operationen jederzeit mit voller Präzision und Sorgfalt ausführt."
+    },
+    "inventory": {
+      "title": "Bestandsverwaltung",
+      "desc": "Präzise Bestandsverfolgung und -verwaltung, damit Ihre Lieferkette jederzeit reibungslos läuft."
+    },
+    "unloading": {
+      "title": "Containerentladung",
+      "desc": "Professionelle Auspack- und Containerentladedienste, integriert in Ihren Wareneingangs-Workflow."
+    }
+  },
+  "benefits": {
+    "badge": "Hauptvorteile",
+    "title": "Alles, was Ihr Inventar braucht",
+    "items": [
+      "Sichere, konforme Lagerumgebung",
+      "Zolllager-Stundung von Abgaben",
+      "Skalierbare Kurz- & Langzeitlösungen",
+      "Professionelles Umpacken & Etikettieren",
+      "Fachgerechte Palettierungsdienste",
+      "Pick-and-Pack auf Abruf",
+      "Präzise Bestandsverwaltung",
+      "Containerentladung inklusive"
+    ]
+  },
+  "cta": {
+    "title": "Ihre Fracht. Sicher gelagert. Sofort einsatzbereit.",
+    "description": "Mit Winz Logistics wird Ihr Inventar präzise in einer sicheren, vollständig konformen Anlage verwaltet — unterstützt durch ein Team, das jederzeit bereit ist."
+  }
+}

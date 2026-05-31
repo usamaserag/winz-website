@@ -1,0 +1,102 @@
+{
+  "metaTitle": "Kontakt | WINZ Logistics",
+  "title": "Kontakt",
+  "subtitle": "Wir helfen Ihnen bei Zollabfertigung, Transport und Lagerung in ganz Europa.",
+  "hero": {
+    "badge": "Kontakt aufnehmen",
+    "title": "Bringen wir Ihre Fracht",
+    "highlight": "Durch Europa",
+    "description": "Sprechen Sie mit unseren Logistikspezialisten über Zollabfertigung, Inlandtransport, Lagerung und ganzheitliche Supply-Chain-Unterstützung."
+  },
+  "info": {
+    "sectionBadge": "Kontaktdaten",
+    "heading": "So erreichen Sie uns",
+    "subheading": "Unser Team unterstützt Sie bei Sendungen, Compliance-Fragen und Partnerschaftsanfragen.",
+    "emailLabel": "E-Mail",
+    "emailValue": "info@winz.be",
+    "phoneLabel": "Telefon",
+    "phoneValue": "+32 496 32 24 67",
+    "addressLabel": "Büroadresse",
+    "addressValue": "Gentsesteenweg 102 D4, 9240 Zele, Belgium",
+    "hoursLabel": "Öffnungszeiten",
+    "hoursValue": "Montag – Freitag: 08:00 – 18:00 (CET)\nSamstag: Nach Vereinbarung"
+  },
+  "form": {
+    "heading": "Senden Sie uns eine Nachricht",
+    "subheading": "Füllen Sie das Formular aus und unser Team meldet sich so schnell wie möglich bei Ihnen.",
+    "name": "Vollständiger Name",
+    "namePlaceholder": "Ihr vollständiger Name",
+    "email": "E-Mail-Adresse",
+    "emailPlaceholder": "sie@unternehmen.com",
+    "phone": "Telefonnummer",
+    "phonePlaceholder": "+32 ...",
+    "company": "Firmenname",
+    "companyPlaceholder": "Optional",
+    "subject": "Betreff",
+    "subjectPlaceholder": "z. B. Anfrage Importabfertigung",
+    "message": "Nachricht",
+    "messagePlaceholder": "Beschreiben Sie Ihre Sendung, Route oder Logistikanforderungen...",
+    "submit": "Nachricht senden",
+    "submitting": "Wird gesendet...",
+    "success": "Vielen Dank für Ihre Nachricht. Unser Logistikteam meldet sich in Kürze bei Ihnen.",
+    "submitError": "Ihre Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es erneut oder rufen Sie uns an.",
+    "errorSummary": "Bitte korrigieren Sie die markierten Felder vor dem Absenden.",
+    "validation": {
+      "fullNameRequired": "Der vollständige Name ist erforderlich.",
+      "fullNameMin": "Bitte geben Sie mindestens 2 Zeichen ein.",
+      "emailRequired": "Die E-Mail-Adresse ist erforderlich.",
+      "emailInvalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+      "phoneInvalid": "Bitte geben Sie eine gültige Telefonnummer ein.",
+      "subjectRequired": "Der Betreff ist erforderlich.",
+      "subjectMin": "Der Betreff muss mindestens 3 Zeichen lang sein.",
+      "messageRequired": "Die Nachricht ist erforderlich.",
+      "messageMin": "Die Nachricht muss mindestens 10 Zeichen lang sein."
+    }
+  },
+  "sidebar": {
+    "inquiryTitle": "Sendungsanfrage",
+    "inquiryText": "Dringender Zoll- oder Transportbedarf? Rufen Sie unseren Operations-Desk für schnellere Hilfe bei laufenden Sendungen an.",
+    "callNow": "Operations-Desk anrufen",
+    "supportTitle": "Logistik-Support",
+    "support": {
+      "shipment": {
+        "title": "Sendungskoordination",
+        "desc": "Import-, Export- und Transitabfertigung an europäischen Häfen und Grenzen."
+      },
+      "compliance": {
+        "title": "Compliance-Beratung",
+        "desc": "Dokumentation, Abgaben und regulatorische Unterstützung für EU-Handel."
+      },
+      "support": {
+        "title": "Dedizierte Spezialisten",
+        "desc": "Persönliche Betreuung für langfristige Logistikpartnerschaften."
+      }
+    }
+  },
+  "map": {
+    "badge": "Unser Standort",
+    "title": "Europäisches Operationszentrum",
+    "directions": "In Google Maps öffnen",
+    "iframeTitle": "WINZ Logistics Büro in Zele, Belgien"
+  },
+  "faq": {
+    "badge": "Schnelle Antworten",
+    "heading": "Häufige Fragen",
+    "subheading": "Kurze Antworten vor Ihrer Kontaktaufnahme — besuchen Sie unsere vollständige FAQ für mehr Details.",
+    "viewAll": "Alle FAQs ansehen",
+    "items": {
+      "customs": {
+        "q": "Welche Zolldienstleistungen bieten Sie an?",
+        "a": "Wir übernehmen Import-, Export- und Transitabfertigung an europäischen Seehäfen und Grenzübergängen sowie Inlandtransport und Lagerung."
+      },
+      "quote": {
+        "q": "Wie fordere ich ein Angebot an?",
+        "a": "Senden Sie das Kontaktformular mit Route, Frachtart und Zeitplan. Unser Team erstellt ein maßgeschneidertes Logistikangebot."
+      },
+      "response": {
+        "q": "Wie schnell antworten Sie?",
+        "a": "Wir bemühen uns, Geschäftsanfragen innerhalb eines Werktags zu beantworten. Dringende Sendungsangelegenheiten können telefonisch geklärt werden."
+      }
+    }
+  }
+}
