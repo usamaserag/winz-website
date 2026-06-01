@@ -11,8 +11,7 @@
   "stats": {
     "experience": "Années d'expérience",
     "complianceRate": "Taux de conformité UE",
-    "portsCovered": "Ports européens couverts",
-    "services": "Services de dédouanement"
+    "portsCovered": "Ports européens couverts"
   },
   "welcome": {
     "badge": "Bienvenue chez Winz Logistics",

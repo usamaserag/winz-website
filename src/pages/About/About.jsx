@@ -49,7 +49,6 @@ const STATS = [
   { value: '14+', key: 'experience' },
   { value: '100%', key: 'complianceRate' },
   { value: 'All', key: 'portsCovered' },
-  { value: '3', key: 'services' },
 ];
 
 /* ════════════════════════════════════ PAGE ════════════════════════════════════ */
@@ -70,7 +69,7 @@ const About = () => {
       {/* ─── STATS ─── */}
       <section className="py-14 bg-white border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
             {STATS.map((s, i) => (
               <motion.div
                 key={s.key}

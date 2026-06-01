@@ -27,8 +27,7 @@
   "stats": {
     "experience": "Années d'expérience",
     "compliance": "Conformité UE",
-    "ports": "Ports européens",
-    "services": "Services de dédouanement"
+    "ports": "Ports européens"
   },
   "aboutPreview": {
     "badge": "Qui sommes-nous",

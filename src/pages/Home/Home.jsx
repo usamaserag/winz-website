@@ -33,7 +33,6 @@ const STAT_ITEMS = [
   { key: 'experience', value: '14+' },
   { key: 'compliance', value: '100%' },
   { key: 'ports', value: 'All' },
-  { key: 'services', value: '3' },
 ];
 
 const PILLAR_KEYS = ['expertise', 'compliance', 'network', 'cargo', 'solutions', 'team'];
@@ -57,7 +56,7 @@ const Home = () => {
 
       <section className="py-12 bg-white border-b border-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
             {STAT_ITEMS.map((s, i) => (
               <motion.div
                 key={s.key}

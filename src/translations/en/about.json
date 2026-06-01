@@ -11,8 +11,7 @@
   "stats": {
     "experience": "Years of Experience",
     "complianceRate": "EU Compliance Rate",
-    "portsCovered": "European Ports Covered",
-    "services": "Clearance Services"
+    "portsCovered": "European Ports Covered"
   },
   "welcome": {
     "badge": "Welcome to Winz Logistics",
