@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import {
@@ -9,7 +8,6 @@ import usePageTitle from '../../hooks/usePageTitle';
 import HomeHero from '../../components/logistics/HomeHero';
 import SectionBadge from '../../components/logistics/SectionBadge';
 import LogisticsGridPattern from '../../components/logistics/LogisticsGridPattern';
-import { fadeUp, fadeLeft, fadeRight } from '../../components/logistics/motionVariants';
 
 const SERVICE_KEYS = ['import', 'export', 'transit', 'transport', 'warehouse'];
 
@@ -57,19 +55,11 @@ const Home = () => {
       <section className="py-12 bg-white border-b border-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
-            {STAT_ITEMS.map((s, i) => (
-              <motion.div
-                key={s.key}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
-                variants={fadeUp}
-                transition={{ delay: i * 0.08 }}
-                className="text-center"
-              >
+            {STAT_ITEMS.map((s) => (
+              <div key={s.key} className="text-center reveal-on-scroll">
                 <p className="text-4xl font-extrabold text-navy-900 mb-1">{s.value}</p>
                 <p className="text-slate-500 text-sm font-medium">{t(`home:stats.${s.key}`)}</p>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -78,7 +68,7 @@ const Home = () => {
       <section className="py-24 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeLeft}>
+            <div className="reveal-on-scroll">
               <SectionBadge label={t('home:aboutPreview.badge')} />
               <h2 className="text-3xl md:text-4xl font-bold text-navy-900 mb-6">
                 {t('home:aboutPreview.title')}
@@ -91,31 +81,20 @@ const Home = () => {
                 className="inline-flex items-center gap-2 text-primary-600 font-semibold hover:text-primary-700 transition-colors group"
               >
                 {t('home:aboutPreview.cta')}
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" aria-hidden="true" />
               </Link>
-            </motion.div>
+            </div>
 
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={fadeRight}
-              className="grid grid-cols-2 gap-5"
-            >
-              {PILLAR_KEYS.slice(0, 4).map((key, i) => {
+            <div className="grid grid-cols-2 gap-5">
+              {PILLAR_KEYS.slice(0, 4).map((key) => {
                 const Icon = PILLAR_ICONS[key];
                 return (
-                  <motion.div
+                  <div
                     key={key}
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true }}
-                    variants={fadeUp}
-                    transition={{ delay: i * 0.08 }}
-                    className="bg-white rounded-2xl p-5 border border-slate-200 hover:border-primary-200 hover:shadow-md transition-all"
+                    className="bg-white rounded-2xl p-5 border border-slate-200 hover:border-primary-200 hover:shadow-md transition-all reveal-on-scroll"
                   >
                     <div className="w-10 h-10 bg-primary-50 rounded-xl flex items-center justify-center mb-3">
-                      <Icon className="w-6 h-6 text-primary-500" />
+                      <Icon className="w-6 h-6 text-primary-500" aria-hidden="true" />
                     </div>
                     <h3 className="font-bold text-navy-900 text-sm mb-1">
                       {t(`home:whyChoose.pillars.${key}.title`)}
@@ -123,23 +102,17 @@ const Home = () => {
                     <p className="text-slate-500 text-xs leading-relaxed">
                       {t(`home:whyChoose.pillars.${key}.desc`)}
                     </p>
-                  </motion.div>
+                  </div>
                 );
               })}
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>
 
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={fadeUp}
-            className="text-center mb-16"
-          >
+          <div className="text-center mb-16 reveal-on-scroll">
             <SectionBadge label={t('home:services.badge')} />
             <h2 className="text-3xl md:text-4xl font-bold text-navy-900 mb-4">
               {t('home:services.title')}
@@ -148,27 +121,22 @@ const Home = () => {
               {t('home:services.description')}
             </p>
             <div className="w-20 h-1 bg-primary-500 mx-auto rounded-full mt-6" />
-          </motion.div>
+          </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
-            {SERVICE_KEYS.map((key, i) => {
+            {SERVICE_KEYS.map((key) => {
               const Icon = SERVICE_ICONS[key];
               return (
-                <motion.div
+                <div
                   key={key}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: true }}
-                  variants={fadeUp}
-                  transition={{ delay: i * 0.08 }}
-                  className="group relative bg-slate-50 rounded-2xl p-8 border border-slate-200 hover:border-primary-200 hover:shadow-lg transition-all overflow-hidden"
+                  className="group relative bg-slate-50 rounded-2xl p-8 border border-slate-200 hover:border-primary-200 hover:shadow-lg transition-all overflow-hidden reveal-on-scroll"
                 >
                   <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary-400 to-primary-600 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left rounded-t-2xl" />
                   <span className="inline-block py-0.5 px-3 rounded-full bg-primary-100 text-primary-700 text-xs font-semibold mb-4">
                     {t(`home:services.cards.${key}.badge`)}
                   </span>
                   <div className="w-14 h-14 bg-white rounded-xl shadow-sm border border-slate-200 flex items-center justify-center mb-5">
-                    <Icon className="w-7 h-7 text-primary-500" />
+                    <Icon className="w-7 h-7 text-primary-500" aria-hidden="true" />
                   </div>
                   <h3 className="text-xl font-bold text-navy-900 mb-3">
                     {t(`home:services.cards.${key}.title`)}
@@ -181,9 +149,9 @@ const Home = () => {
                     className="inline-flex items-center gap-1.5 text-primary-600 font-semibold text-sm hover:text-primary-700 transition-colors group/link"
                   >
                     {t('home:services.cta')}
-                    <ArrowRight className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" />
+                    <ArrowRight className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" aria-hidden="true" />
                   </Link>
-                </motion.div>
+                </div>
               );
             })}
           </div>
@@ -193,35 +161,24 @@ const Home = () => {
       <section className="py-24 bg-navy-950 relative overflow-hidden">
         <LogisticsGridPattern variant="dark" className="opacity-50" />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={fadeUp}
-            className="text-center mb-16"
-          >
+          <div className="text-center mb-16 reveal-on-scroll">
             <SectionBadge label={t('home:whyChoose.badge')} variant="dark" />
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               {t('home:whyChoose.title')}
             </h2>
             <div className="w-20 h-1 bg-primary-500 mx-auto rounded-full" />
-          </motion.div>
+          </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {PILLAR_KEYS.map((key, i) => {
+            {PILLAR_KEYS.map((key) => {
               const Icon = PILLAR_ICONS[key];
               return (
-                <motion.div
+                <div
                   key={key}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: true }}
-                  variants={fadeUp}
-                  transition={{ delay: i * 0.07 }}
-                  className="bg-white/5 border border-white/10 rounded-2xl p-7 hover:bg-white/10 transition-colors"
+                  className="bg-white/5 border border-white/10 rounded-2xl p-7 hover:bg-white/10 transition-colors reveal-on-scroll"
                 >
                   <div className="w-12 h-12 bg-primary-500/20 rounded-xl flex items-center justify-center mb-5">
-                    <Icon className="w-6 h-6 text-primary-500" />
+                    <Icon className="w-6 h-6 text-primary-500" aria-hidden="true" />
                   </div>
                   <h3 className="font-bold text-white mb-2">
                     {t(`home:whyChoose.pillars.${key}.title`)}
@@ -229,7 +186,7 @@ const Home = () => {
                   <p className="text-slate-400 text-sm leading-relaxed">
                     {t(`home:whyChoose.pillars.${key}.desc`)}
                   </p>
-                </motion.div>
+                </div>
               );
             })}
           </div>

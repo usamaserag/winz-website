@@ -1,6 +1,7 @@
-import { motion } from 'framer-motion';
+import { lazy, Suspense } from 'react';
 import LogisticsGridPattern from './LogisticsGridPattern';
-import EuropeRouteMap from './EuropeRouteMap';
+
+const EuropeRouteMap = lazy(() => import('./EuropeRouteMap'));
 
 const sizeClasses = {
   full: 'min-h-screen pt-28 pb-20',
@@ -21,15 +22,10 @@ const PageHeroShell = ({
     className={`relative flex flex-col overflow-hidden bg-gradient-to-br from-navy-950 via-navy-900 to-navy-800 ${sizeClasses[size]} ${centered ? 'items-center justify-center' : ''} ${className}`}
   >
     <LogisticsGridPattern variant="dark" />
-    <EuropeRouteMap className="absolute inset-0 w-full h-full text-primary-400/30 opacity-35 pointer-events-none" />
-    <motion.div
-      initial={{ opacity: 0, y: 16 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.45 }}
-      className="relative z-10 w-full"
-    >
-      {children}
-    </motion.div>
+    <Suspense fallback={null}>
+      <EuropeRouteMap className="absolute inset-0 w-full h-full text-primary-400/30 opacity-35 pointer-events-none" />
+    </Suspense>
+    <div className="relative z-10 w-full">{children}</div>
   </section>
 );
 

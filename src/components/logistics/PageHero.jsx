@@ -1,8 +1,8 @@
-import { motion } from 'framer-motion';
+import { lazy, Suspense } from 'react';
 import LogisticsGridPattern from './LogisticsGridPattern';
-import EuropeRouteMap from './EuropeRouteMap';
 import SectionBadge from './SectionBadge';
-import { fadeUp, staggerContainer } from './motionVariants';
+
+const EuropeRouteMap = lazy(() => import('./EuropeRouteMap'));
 
 const sizeClasses = {
   full: 'min-h-screen pt-28 pb-20',
@@ -11,7 +11,7 @@ const sizeClasses = {
 };
 
 /**
- * Standard corporate hero for inner pages.
+ * Standard corporate hero for inner pages — static markup for immediate LCP.
  */
 const PageHero = ({
   badge,
@@ -27,24 +27,14 @@ const PageHero = ({
     className={`relative flex items-center justify-center overflow-hidden bg-gradient-to-br from-navy-950 via-navy-900 to-navy-800 ${sizeClasses[size]} ${className}`}
   >
     <LogisticsGridPattern variant="dark" />
-    <EuropeRouteMap className="absolute inset-0 w-full h-full text-primary-400/30 opacity-40" />
+    <Suspense fallback={null}>
+      <EuropeRouteMap className="absolute inset-0 w-full h-full text-primary-400/30 opacity-40" />
+    </Suspense>
 
-    <motion.div
-      variants={staggerContainer}
-      initial="hidden"
-      animate="visible"
-      className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center"
-    >
-      {badge && (
-        <motion.div variants={fadeUp}>
-          <SectionBadge label={badge} variant={badgeVariant} />
-        </motion.div>
-      )}
+    <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center">
+      {badge && <SectionBadge label={badge} variant={badgeVariant} />}
 
-      <motion.h1
-        variants={fadeUp}
-        className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight mb-6"
-      >
+      <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight mb-6">
         {title}
         {highlight && (
           <>
@@ -54,23 +44,16 @@ const PageHero = ({
             </span>
           </>
         )}
-      </motion.h1>
+      </h1>
 
       {description && (
-        <motion.p
-          variants={fadeUp}
-          className="text-lg md:text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed"
-        >
+        <p className="text-lg md:text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
           {description}
-        </motion.p>
+        </p>
       )}
 
-      {children && (
-        <motion.div variants={fadeUp} className="mt-8">
-          {children}
-        </motion.div>
-      )}
-    </motion.div>
+      {children && <div className="mt-8">{children}</div>}
+    </div>
   </section>
 );
 

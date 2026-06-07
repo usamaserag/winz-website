@@ -1,4 +1,3 @@
-import { AnimatePresence } from 'framer-motion';
 import { useCookieConsent } from '../../context/CookieContext';
 import CookieBanner from './CookieBanner';
 import CookiePreferencesModal from './CookiePreferencesModal';
@@ -10,9 +9,7 @@ const CookieConsentManager = () => {
 
   return (
     <>
-      <AnimatePresence>
-        {showBanner && <CookieBanner key="cookie-banner" />}
-      </AnimatePresence>
+      {showBanner && <CookieBanner />}
       <CookiePreferencesModal />
     </>
   );

@@ -34,7 +34,7 @@ export default {
         },
       },
       fontFamily: {
-        sans: ['Inter', 'Tajawal', 'sans-serif'],
+        sans: ['Inter Variable', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
       }
     },
   },

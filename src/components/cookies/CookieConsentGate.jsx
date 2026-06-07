@@ -1,21 +1,23 @@
-import { useEffect, useRef } from 'react';
+import { lazy, Suspense, useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useCookieConsent } from '../../context/CookieContext';
 import { useBodyScrollLock } from '../../hooks/useBodyScrollLock';
-import CookieConsentManager from './CookieConsentManager';
+
+const CookieConsentManager = lazy(() => import('./CookieConsentManager'));
 
 /** Legal pages reachable before consent (linked from the cookie banner). */
 const LEGAL_ROUTES = ['/privacy-policy', '/cookies-policy'];
 
 const CookieConsentGate = ({ children }) => {
   const { t } = useTranslation('common');
-  const { isReady, requiresConsent } = useCookieConsent();
+  const { isReady, requiresConsent, isPreferencesOpen, showBanner } = useCookieConsent();
   const { pathname } = useLocation();
+  const contentRef = useRef(null);
 
   const isLegalRoute = LEGAL_ROUTES.includes(pathname);
   const blockApp = requiresConsent && !isLegalRoute;
-  const contentRef = useRef(null);
+  const showCookieUi = showBanner || isPreferencesOpen;
 
   useBodyScrollLock(requiresConsent);
 
@@ -57,7 +59,11 @@ const CookieConsentGate = ({ children }) => {
         />
       )}
 
-      <CookieConsentManager />
+      {showCookieUi && (
+        <Suspense fallback={null}>
+          <CookieConsentManager />
+        </Suspense>
+      )}
     </>
   );
 };

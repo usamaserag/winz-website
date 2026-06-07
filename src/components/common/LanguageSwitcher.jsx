@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { ChevronDown, Globe } from 'lucide-react';
-import { AnimatePresence, motion } from 'framer-motion';
 import { LANGUAGES } from '../../lib/i18n/languages';
 
 const LanguageSwitcher = ({ useHeroNav = false }) => {
@@ -54,45 +53,39 @@ const LanguageSwitcher = ({ useHeroNav = false }) => {
         <span className="hidden lg:inline">{current.nativeLabel}</span>
         <span className="lg:hidden uppercase">{current.code}</span>
         <ChevronDown
-          className={`w-3.5 h-3.5 transition-transform ${open ? 'rotate-180' : ''}`}
+          className={`w-3.5 h-3.5 transition-transform duration-150 ${open ? 'rotate-180' : ''}`}
           aria-hidden="true"
         />
       </button>
 
-      <AnimatePresence>
-        {open && (
-          <motion.ul
-            role="listbox"
-            aria-label={t('language.switcherLabel')}
-            initial={{ opacity: 0, y: 6, scale: 0.98 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            exit={{ opacity: 0, y: 6, scale: 0.98 }}
-            transition={{ duration: 0.15 }}
-            className={`absolute top-full z-[60] mt-2 end-0 min-w-[10.5rem] overflow-hidden rounded-xl border shadow-xl ${panelClass}`}
-          >
-            {LANGUAGES.map(({ code, nativeLabel }) => {
-              const active = i18n.language === code;
-              return (
-                <li key={code} role="option" aria-selected={active}>
-                  <button
-                    type="button"
-                    onClick={() => {
-                      i18n.changeLanguage(code);
-                      setOpen(false);
-                    }}
-                    className={`flex w-full items-center justify-between px-4 py-2.5 text-sm transition-colors ${itemClass(active)}`}
-                  >
-                    <span>{nativeLabel}</span>
-                    {active && (
-                      <span className="text-xs uppercase opacity-70">{code}</span>
-                    )}
-                  </button>
-                </li>
-              );
-            })}
-          </motion.ul>
-        )}
-      </AnimatePresence>
+      {open && (
+        <ul
+          role="listbox"
+          aria-label={t('language.switcherLabel')}
+          className={`absolute top-full z-[60] mt-2 end-0 min-w-[10.5rem] overflow-hidden rounded-xl border shadow-xl origin-top animate-dropdown-in ${panelClass}`}
+        >
+          {LANGUAGES.map(({ code, nativeLabel }) => {
+            const active = i18n.language === code;
+            return (
+              <li key={code} role="option" aria-selected={active}>
+                <button
+                  type="button"
+                  onClick={() => {
+                    i18n.changeLanguage(code);
+                    setOpen(false);
+                  }}
+                  className={`flex w-full items-center justify-between px-4 py-2.5 text-sm transition-colors ${itemClass(active)}`}
+                >
+                  <span>{nativeLabel}</span>
+                  {active && (
+                    <span className="text-xs uppercase opacity-70">{code}</span>
+                  )}
+                </button>
+              </li>
+            );
+          })}
+        </ul>
+      )}
     </div>
   );
 };

@@ -2,7 +2,6 @@ import { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Menu, X, ChevronDown, PackagePlus, PackageOpen, Route, BookOpen, HelpCircle } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
 import Logo from '../common/Logo';
 import LanguageSwitcher from '../common/LanguageSwitcher';
 import LogisticsGridPattern from '../logistics/LogisticsGridPattern';
@@ -136,7 +135,7 @@ const Navbar = () => {
       )}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
-          <Logo className="h-10 w-28" variant={useHeroNav ? 'white' : 'default'} />
+          <Logo className="h-10 w-28" variant={useHeroNav ? 'white' : 'default'} priority />
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
@@ -167,31 +166,23 @@ const Navbar = () => {
                   <ChevronDown className={servicesChevronClass} aria-hidden="true" />
                 </button>
 
-                <AnimatePresence>
-                  {servicesOpen && (
-                    <motion.div
-                      initial={{ opacity: 0, y: 8, scale: 0.97 }}
-                      animate={{ opacity: 1, y: 0, scale: 1 }}
-                      exit={{ opacity: 0, y: 8, scale: 0.97 }}
-                      transition={{ duration: 0.18 }}
-                      className={dropdownPanelClass}
-                    >
-                      {CLEARANCE_SERVICES.map(({ key, path, Icon }) => (
-                        <Link
-                          key={path}
-                          to={path}
-                          onClick={() => setServicesOpen(false)}
-                          className={`flex items-center gap-3 px-5 py-3.5 text-sm font-medium transition-colors ${dropdownLinkClass(isActive(path))}`}
-                        >
-                          <span className={dropdownIconClass(isActive(path))}>
-                            <Icon className="w-5 h-5" aria-hidden="true" />
-                          </span>
-                          {t(`nav.clearance.${key}`)}
-                        </Link>
-                      ))}
-                    </motion.div>
-                  )}
-                </AnimatePresence>
+                {servicesOpen && (
+                  <div className={`${dropdownPanelClass} animate-dropdown-in`}>
+                    {CLEARANCE_SERVICES.map(({ key, path, Icon }) => (
+                      <Link
+                        key={path}
+                        to={path}
+                        onClick={() => setServicesOpen(false)}
+                        className={`flex items-center gap-3 px-5 py-3.5 text-sm font-medium transition-colors ${dropdownLinkClass(isActive(path))}`}
+                      >
+                        <span className={dropdownIconClass(isActive(path))}>
+                          <Icon className="w-5 h-5" aria-hidden="true" />
+                        </span>
+                        {t(`nav.clearance.${key}`)}
+                      </Link>
+                    ))}
+                  </div>
+                )}
               </div>
 
               <Link to="/transport" className={linkClass('/transport')}>
@@ -219,34 +210,26 @@ const Navbar = () => {
                   <ChevronDown className={communityChevronClass} aria-hidden="true" />
                 </button>
 
-                <AnimatePresence>
-                  {communityOpen && (
-                    <motion.div
-                      initial={{ opacity: 0, y: 8, scale: 0.97 }}
-                      animate={{ opacity: 1, y: 0, scale: 1 }}
-                      exit={{ opacity: 0, y: 8, scale: 0.97 }}
-                      transition={{ duration: 0.18 }}
-                      className={dropdownPanelClass}
-                    >
-                      {COMMUNITY_LINKS.map(({ key, path, Icon }) => {
-                        const active = key === 'blog' ? isBlogActive : isActive(path);
-                        return (
-                          <Link
-                            key={path}
-                            to={path}
-                            onClick={() => setCommunityOpen(false)}
-                            className={`flex items-center gap-3 px-5 py-3.5 text-sm font-medium transition-colors ${dropdownLinkClass(active)}`}
-                          >
-                            <span className={dropdownIconClass(active)}>
-                              <Icon className="w-5 h-5" aria-hidden="true" />
-                            </span>
-                            {t(`nav.${key}`)}
-                          </Link>
-                        );
-                      })}
-                    </motion.div>
-                  )}
-                </AnimatePresence>
+                {communityOpen && (
+                  <div className={`${dropdownPanelClass} animate-dropdown-in`}>
+                    {COMMUNITY_LINKS.map(({ key, path, Icon }) => {
+                      const active = key === 'blog' ? isBlogActive : isActive(path);
+                      return (
+                        <Link
+                          key={path}
+                          to={path}
+                          onClick={() => setCommunityOpen(false)}
+                          className={`flex items-center gap-3 px-5 py-3.5 text-sm font-medium transition-colors ${dropdownLinkClass(active)}`}
+                        >
+                          <span className={dropdownIconClass(active)}>
+                            <Icon className="w-5 h-5" aria-hidden="true" />
+                          </span>
+                          {t(`nav.${key}`)}
+                        </Link>
+                      );
+                    })}
+                  </div>
+                )}
               </div>
 
               <LanguageSwitcher useHeroNav={useHeroNav} />
@@ -273,23 +256,20 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Navigation */}
-      <AnimatePresence>
-        {isOpen && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
-            exit={{ opacity: 0, height: 0 }}
-            className={`md:hidden border-t shadow-xl overflow-hidden ${
-              useHeroNav
-                ? 'bg-navy-950 border-white/10'
-                : 'bg-white border-gray-100'
-            }`}
-          >
+      {isOpen && (
+        <div
+          className={`md:hidden border-t shadow-xl overflow-hidden animate-dropdown-in ${
+            useHeroNav
+              ? 'bg-navy-950 border-white/10'
+              : 'bg-white border-gray-100'
+          }`}
+        >
             <div className="px-4 py-6 space-y-1">
               <Logo
                 className="h-10 w-28"
                 variant={useHeroNav ? 'white' : 'default'}
                 onClick={() => setIsOpen(false)}
+                priority
               />
 
               <div className="pt-4 space-y-1">
@@ -338,36 +318,29 @@ const Navbar = () => {
                     />
                   </button>
 
-                  <AnimatePresence>
-                    {mobileServicesOpen && (
-                      <motion.div
-                        initial={{ opacity: 0, height: 0 }}
-                        animate={{ opacity: 1, height: 'auto' }}
-                        exit={{ opacity: 0, height: 0 }}
-                        className="overflow-hidden"
-                      >
-                        {CLEARANCE_SERVICES.map(({ key, path, Icon }) => (
-                          <Link
-                            key={path}
-                            to={path}
-                            onClick={() => setIsOpen(false)}
-                            className={`flex items-center gap-3 pl-7 pr-3 py-2.5 text-sm font-medium rounded-md transition-colors ${
-                              isActive(path)
-                                ? useHeroNav
-                                  ? 'text-primary-400 bg-white/10 font-semibold'
-                                  : 'text-primary-600 bg-primary-50 font-semibold'
-                                : useHeroNav
-                                  ? 'text-slate-200 hover:text-white hover:bg-white/10'
-                                  : 'text-slate-600 hover:text-primary-500 hover:bg-primary-50/50'
-                            }`}
-                          >
-                            <Icon className="w-5 h-5 shrink-0" aria-hidden="true" />
-                            {t(`nav.clearance.${key}`)}
-                          </Link>
-                        ))}
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
+                  {mobileServicesOpen && (
+                    <div className="overflow-hidden">
+                      {CLEARANCE_SERVICES.map(({ key, path, Icon }) => (
+                        <Link
+                          key={path}
+                          to={path}
+                          onClick={() => setIsOpen(false)}
+                          className={`flex items-center gap-3 pl-7 pr-3 py-2.5 text-sm font-medium rounded-md transition-colors ${
+                            isActive(path)
+                              ? useHeroNav
+                                ? 'text-primary-400 bg-white/10 font-semibold'
+                                : 'text-primary-600 bg-primary-50 font-semibold'
+                              : useHeroNav
+                                ? 'text-slate-200 hover:text-white hover:bg-white/10'
+                                : 'text-slate-600 hover:text-primary-500 hover:bg-primary-50/50'
+                          }`}
+                        >
+                          <Icon className="w-5 h-5 shrink-0" aria-hidden="true" />
+                          {t(`nav.clearance.${key}`)}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
                 </div>
 
                 {/* Mobile Community accordion */}
@@ -391,39 +364,32 @@ const Navbar = () => {
                     />
                   </button>
 
-                  <AnimatePresence>
-                    {mobileCommunityOpen && (
-                      <motion.div
-                        initial={{ opacity: 0, height: 0 }}
-                        animate={{ opacity: 1, height: 'auto' }}
-                        exit={{ opacity: 0, height: 0 }}
-                        className="overflow-hidden"
-                      >
-                        {COMMUNITY_LINKS.map(({ key, path, Icon }) => {
-                          const active = key === 'blog' ? isBlogActive : isActive(path);
-                          return (
-                            <Link
-                              key={path}
-                              to={path}
-                              onClick={() => setIsOpen(false)}
-                              className={`flex items-center gap-3 pl-7 pr-3 py-2.5 text-sm font-medium rounded-md transition-colors ${
-                                active
-                                  ? useHeroNav
-                                    ? 'text-primary-400 bg-white/10 font-semibold'
-                                    : 'text-primary-600 bg-primary-50 font-semibold'
-                                  : useHeroNav
-                                    ? 'text-slate-200 hover:text-white hover:bg-white/10'
-                                    : 'text-slate-600 hover:text-primary-500 hover:bg-primary-50/50'
-                              }`}
-                            >
-                              <Icon className="w-5 h-5 shrink-0" aria-hidden="true" />
-                              {t(`nav.${key}`)}
-                            </Link>
-                          );
-                        })}
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
+                  {mobileCommunityOpen && (
+                    <div className="overflow-hidden">
+                      {COMMUNITY_LINKS.map(({ key, path, Icon }) => {
+                        const active = key === 'blog' ? isBlogActive : isActive(path);
+                        return (
+                          <Link
+                            key={path}
+                            to={path}
+                            onClick={() => setIsOpen(false)}
+                            className={`flex items-center gap-3 pl-7 pr-3 py-2.5 text-sm font-medium rounded-md transition-colors ${
+                              active
+                                ? useHeroNav
+                                  ? 'text-primary-400 bg-white/10 font-semibold'
+                                  : 'text-primary-600 bg-primary-50 font-semibold'
+                                : useHeroNav
+                                  ? 'text-slate-200 hover:text-white hover:bg-white/10'
+                                  : 'text-slate-600 hover:text-primary-500 hover:bg-primary-50/50'
+                            }`}
+                          >
+                            <Icon className="w-5 h-5 shrink-0" aria-hidden="true" />
+                            {t(`nav.${key}`)}
+                          </Link>
+                        );
+                      })}
+                    </div>
+                  )}
                 </div>
 
                 {[
@@ -455,9 +421,8 @@ const Navbar = () => {
               </div>
 
             </div>
-          </motion.div>
+          </div>
         )}
-      </AnimatePresence>
     </nav>
   );
 };

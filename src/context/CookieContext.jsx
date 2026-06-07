@@ -2,7 +2,6 @@ import {
   createContext,
   useCallback,
   useContext,
-  useEffect,
   useMemo,
   useState,
 } from 'react';
@@ -31,17 +30,14 @@ function dispatchConsentChange(categories) {
 }
 
 export function CookieProvider({ children }) {
-  const [isReady, setIsReady] = useState(false);
   const [consent, setConsent] = useState(
-    /** @type {StoredConsent | null} */ (null)
+    /** @type {StoredConsent | null} */ (() => {
+      if (typeof window === 'undefined') return null;
+      return loadConsentFromStorage();
+    })
   );
+  const [isReady] = useState(() => typeof window !== 'undefined');
   const [isPreferencesOpen, setIsPreferencesOpen] = useState(false);
-
-  useEffect(() => {
-    const stored = loadConsentFromStorage();
-    setConsent(stored);
-    setIsReady(true);
-  }, []);
 
   const persistConsent = useCallback((categories) => {
     const saved = saveConsentToStorage(categories);

@@ -1,9 +1,9 @@
+import { lazy, Suspense } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { motion } from 'framer-motion';
 import { ArrowRight, Headphones } from 'lucide-react';
-import EuropeRouteMap from '../logistics/EuropeRouteMap';
-import { fadeUp } from '../logistics/motionVariants';
+
+const EuropeRouteMap = lazy(() => import('../logistics/EuropeRouteMap'));
 
 const HIDDEN_ON = ['/contact'];
 
@@ -20,20 +20,16 @@ const ContactCTA = () => {
       className="relative overflow-hidden bg-slate-50 border-t border-slate-200"
       aria-labelledby="contact-cta-heading"
     >
-      <EuropeRouteMap className="absolute inset-0 w-full h-full text-primary-400/30 opacity-40 pointer-events-none" />
+      <Suspense fallback={null}>
+        <EuropeRouteMap className="absolute inset-0 w-full h-full text-primary-400/30 opacity-40 pointer-events-none" />
+      </Suspense>
       <div
         className="absolute inset-0 opacity-[0.04] pointer-events-none bg-[linear-gradient(to_right,#0f172a_1px,transparent_1px),linear-gradient(to_bottom,#0f172a_1px,transparent_1px)] bg-[size:2.5rem_2.5rem]"
         aria-hidden="true"
       />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: '-40px' }}
-          variants={fadeUp}
-          className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-10"
-        >
+        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-10 reveal-on-scroll">
           <div className="max-w-2xl">
             <div className="inline-flex items-center gap-2 rounded-full bg-primary-50 border border-primary-200 px-4 py-1.5 text-sm font-semibold text-slate-600 mb-5">
               <Headphones className="w-4 h-4 text-primary-500" aria-hidden="true" />
@@ -65,7 +61,7 @@ const ContactCTA = () => {
               {t('contactCta.secondary')}
             </Link>
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );
