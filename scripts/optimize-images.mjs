@@ -66,8 +66,22 @@ for (const { input, webp, maxWidth } of targets) {
   }
 }
 
-await copyFile(
-  join(imagesDir, 'Icon-removebg-preview.png'),
-  join(publicDir, 'favicon.png'),
+const faviconSource = join(
+  imagesDir,
+  'WhatsApp_Image_2026-05-13_at_12.54.03_AM-removebg-preview.png',
 );
-console.log('Copied favicon.png to public/');
+const faviconPath = join(publicDir, 'favicon.png');
+
+if (sharp) {
+  await sharp(faviconSource)
+    .resize({ width: 48, height: 48, fit: 'contain', background: { r: 0, g: 0, b: 0, alpha: 0 } })
+    .png()
+    .toFile(faviconPath);
+  console.log('Created favicon.png from colored logo');
+} else if (await fileExists(faviconSource)) {
+  await copyFile(faviconSource, faviconPath);
+  console.log('Copied colored logo to public/favicon.png');
+} else {
+  console.error('Missing colored logo PNG — cannot create favicon.');
+  process.exit(1);
+}
