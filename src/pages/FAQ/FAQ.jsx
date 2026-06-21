@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { HelpCircle, Search, X, ChevronDown, ArrowRight } from 'lucide-react';
 import { communityService } from '../../services/communityService';
-import { useSEOMeta } from '../../hooks/useSEOMeta';
+import { SEOMeta } from '../../components/common/SEOMeta';
 import usePageTitle from '../../hooks/usePageTitle';
 import PageHero from '../../components/logistics/PageHero';
 import EmptyState from '../../components/common/EmptyState';
@@ -107,18 +107,7 @@ export default function FAQ() {
     };
   }, [filteredFaqs, generateQuestion, generateAnswer]);
 
-  useSEOMeta({
-    title: t('meta.title'),
-    description: t('seo.description'),
-    keywords: 'customs faq, import documents, export clearance belgium, transit customs europe, customs process rotterdam',
-    canonical: `${(typeof window !== 'undefined' ? window.location.origin : 'https://trucway.com')}/faq`,
-    ogTitle: t('seo.ogTitle'),
-    ogDescription: t('seo.ogDescription'),
-    ogImage: `${(typeof window !== 'undefined' ? window.location.origin : 'https://trucway.com')}/logo.png`,
-    ogUrl: `${(typeof window !== 'undefined' ? window.location.origin : 'https://trucway.com')}/faq`,
-    ogType: 'website',
-    faqSchema,
-  });
+  
 
   const toggleAccordion = (index) => {
     setExpandedIndex(expandedIndex === index ? null : index);
@@ -126,6 +115,18 @@ export default function FAQ() {
 
   return (
     <div className="flex flex-col min-h-screen bg-gray-50/50">
+      <SEOMeta meta={{
+        title: t('meta.title'),
+        description: t('seo.description'),
+        keywords: 'customs faq, import documents, export clearance belgium, transit customs europe, customs process rotterdam',
+        canonical: `${(typeof window !== 'undefined' ? window.location.origin : 'https://trucway.com')}/faq`,
+        ogTitle: t('seo.ogTitle'),
+        ogDescription: t('seo.ogDescription'),
+        ogImage: `${(typeof window !== 'undefined' ? window.location.origin : 'https://trucway.com')}/logo.png`,
+        ogUrl: `${(typeof window !== 'undefined' ? window.location.origin : 'https://trucway.com')}/faq`,
+        ogType: 'website',
+        faqSchema,
+      }} />
       <PageHero
         size="compact"
         badge={t('hero.badge')}

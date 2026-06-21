@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FolderOpen, ArrowRight, LayoutGrid } from 'lucide-react';
 import { communityService } from '../../services/communityService';
-import { useSEOMeta } from '../../hooks/useSEOMeta';
+import { SEOMeta } from '../../components/common/SEOMeta';
 import usePageTitle from '../../hooks/usePageTitle';
 import PageHero from '../../components/logistics/PageHero';
 import SkeletonCard from '../../components/common/SkeletonCard';
@@ -39,16 +39,7 @@ export default function Categories() {
     fetchCategories();
   }, [i18n.language]);
 
-  useSEOMeta({
-    title: t('nav.categories', { defaultValue: 'Categories - Community' }),
-    description: t('categories.seoDescription', { defaultValue: 'Explore our community categories for the latest blogs, guides, and FAQs.' }),
-    canonical: `${(typeof window !== 'undefined' ? window.location.origin : 'https://trucway.com')}/categories`,
-    ogTitle: t('nav.categories', { defaultValue: 'Categories' }),
-    ogDescription: t('categories.seoDescription', { defaultValue: 'Explore our community categories.' }),
-    ogImage: `${(typeof window !== 'undefined' ? window.location.origin : 'https://trucway.com')}/logo.png`,
-    ogUrl: `${(typeof window !== 'undefined' ? window.location.origin : 'https://trucway.com')}/categories`,
-    ogType: 'website',
-  });
+  
 
   return (
     <div className="flex flex-col min-h-screen bg-gray-50/50">
@@ -61,7 +52,18 @@ export default function Categories() {
       />
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 flex-grow w-full">
-        {loading && (
+        
+      <SEOMeta meta={{
+    title: t('nav.categories', { defaultValue: 'Categories - Community' }),
+    description: t('categories.seoDescription', { defaultValue: 'Explore our community categories for the latest blogs, guides, and FAQs.' }),
+    canonical: `${(typeof window !== 'undefined' ? window.location.origin : 'https://trucway.com')}/categories`,
+    ogTitle: t('nav.categories', { defaultValue: 'Categories' }),
+    ogDescription: t('categories.seoDescription', { defaultValue: 'Explore our community categories.' }),
+    ogImage: `${(typeof window !== 'undefined' ? window.location.origin : 'https://trucway.com')}/logo.png`,
+    ogUrl: `${(typeof window !== 'undefined' ? window.location.origin : 'https://trucway.com')}/categories`,
+    ogType: 'website',
+  }} />
+{loading && (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[1, 2, 3, 4, 5, 6].map((i) => (
               <SkeletonCard key={i} />

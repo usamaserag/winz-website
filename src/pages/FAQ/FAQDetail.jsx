@@ -7,7 +7,7 @@ import {
   Calendar, ShieldCheck
 } from 'lucide-react';
 import { communityService } from '../../services/communityService';
-import { useSEOMeta } from '../../hooks/useSEOMeta';
+import { SEOMeta } from '../../components/common/SEOMeta';
 import PageHeroShell from '../../components/logistics/PageHeroShell';
 import PageLoader from '../../components/common/PageLoader';
 import ErrorState from '../../components/common/ErrorState';
@@ -73,20 +73,7 @@ export default function FAQDetail() {
     ],
   } : null;
 
-  useSEOMeta(faq ? {
-    title: faq?.seo?.title || faq.seoTitle || question,
-    description,
-    keywords: faq?.seo?.focus_keyphrase || keywords,
-    canonical: canonicalUrl,
-    ogTitle: faq?.seo?.title || faq.seoOgTitle || question,
-    ogDescription: description,
-    ogImage: faq.image || `${(typeof window !== 'undefined' ? window.location.origin : 'https://trucway.com')}/logo.png`,
-    ogUrl: canonicalUrl,
-    ogType: 'article',
-    twitterCard: 'summary_large_image',
-    faqSchema: faq?.seo?.schema_markup_type === 'FAQPage' ? faqSchema : null,
-    breadcrumbSchema,
-  } : null);
+  
 
   if (loading) {
     return <PageLoader />;
@@ -121,6 +108,20 @@ export default function FAQDetail() {
 
   return (
     <div className="flex flex-col min-h-screen bg-gray-50/50">
+      <SEOMeta meta={faq ? {
+        title: faq?.seo?.title || faq.seoTitle || question,
+        description,
+        keywords: faq?.seo?.focus_keyphrase || keywords,
+        canonical: canonicalUrl,
+        ogTitle: faq?.seo?.title || faq.seoOgTitle || question,
+        ogDescription: description,
+        ogImage: faq.image || `${(typeof window !== 'undefined' ? window.location.origin : 'https://trucway.com')}/logo.png`,
+        ogUrl: canonicalUrl,
+        ogType: 'article',
+        twitterCard: 'summary_large_image',
+        faqSchema: faq?.seo?.schema_markup_type === 'FAQPage' ? faqSchema : null,
+        breadcrumbSchema,
+      } : null} />
       <PageHeroShell size="compact" className="pb-12">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 w-full text-center">
           <nav className="flex items-center justify-center gap-2 text-xs text-white/60 mb-6" aria-label="Breadcrumb">

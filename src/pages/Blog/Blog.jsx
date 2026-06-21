@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Search, X, ArrowRight, Tag } from 'lucide-react';
 import { communityService } from '../../services/communityService';
-import { useSEOMeta } from '../../hooks/useSEOMeta';
+import { SEOMeta } from '../../components/common/SEOMeta';
 import usePageTitle from '../../hooks/usePageTitle';
 import PageHero from '../../components/logistics/PageHero';
 import SkeletonCard from '../../components/common/SkeletonCard';
@@ -72,20 +72,21 @@ export default function Blog() {
     });
   }, [searchTerm, blogs, t]);
 
-  useSEOMeta({
-    title: t('meta.title'),
-    description: t('seo.description'),
-    keywords: 'customs clearance blog, import logistics europe, container transport belgium, fiscal representation netherlands',
-    canonical: `${(typeof window !== 'undefined' ? window.location.origin : 'https://trucway.com')}/blog`,
-    ogTitle: t('seo.ogTitle'),
-    ogDescription: t('seo.ogDescription'),
-    ogImage: `${(typeof window !== 'undefined' ? window.location.origin : 'https://trucway.com')}/logo.png`,
-    ogUrl: `${(typeof window !== 'undefined' ? window.location.origin : 'https://trucway.com')}/blog`,
-    ogType: 'website',
-  });
+  
 
   return (
     <div className="flex flex-col min-h-screen bg-gray-50/50">
+      <SEOMeta meta={{
+        title: t('meta.title'),
+        description: t('seo.description'),
+        keywords: 'customs clearance blog, import logistics europe, container transport belgium, fiscal representation netherlands',
+        canonical: `${(typeof window !== 'undefined' ? window.location.origin : 'https://trucway.com')}/blog`,
+        ogTitle: t('seo.ogTitle'),
+        ogDescription: t('seo.ogDescription'),
+        ogImage: `${(typeof window !== 'undefined' ? window.location.origin : 'https://trucway.com')}/logo.png`,
+        ogUrl: `${(typeof window !== 'undefined' ? window.location.origin : 'https://trucway.com')}/blog`,
+        ogType: 'website',
+      }} />
       <PageHero
         size="compact"
         badge={t('listing.hero.badge')}
@@ -95,7 +96,8 @@ export default function Blog() {
       />
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 flex-grow w-full">
-        {/* Search */}
+        
+{/* Search */}
         <div className="mb-12">
           <div className="relative max-w-xl mx-auto">
             <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">

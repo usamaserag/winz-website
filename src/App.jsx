@@ -1,5 +1,5 @@
 import { lazy, Suspense } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import MainLayout from './layouts/MainLayout';
 import ScrollToTop from './components/ScrollToTop';
 import { CookieProvider } from './context/CookieContext';
@@ -61,12 +61,10 @@ function App() {
   return (
     <CookieProvider>
       <ConsentAwareVisitorTracker />
-      <BrowserRouter>
-        <ScrollToTop />
-        <CookieConsentGate>
-          <AppRoutes />
-        </CookieConsentGate>
-      </BrowserRouter>
+      <ScrollToTop />
+      <CookieConsentGate>
+        <AppRoutes />
+      </CookieConsentGate>
     </CookieProvider>
   );
 }

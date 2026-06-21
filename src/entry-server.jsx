@@ -1,0 +1,24 @@
+import React from 'react';
+import { renderToString } from 'react-dom/server';
+import { StaticRouter } from 'react-router-dom/server';
+import { HelmetProvider } from 'react-helmet-async';
+import App from './App.jsx';
+import './fonts.css';
+import './index.css';
+import './translations/i18n';
+
+export function render(url, context) {
+  const helmetContext = {};
+
+  const html = renderToString(
+    <React.StrictMode>
+      <HelmetProvider context={helmetContext}>
+        <StaticRouter location={url} context={context}>
+          <App />
+        </StaticRouter>
+      </HelmetProvider>
+    </React.StrictMode>
+  );
+
+  return { html, helmet: helmetContext.helmet };
+}

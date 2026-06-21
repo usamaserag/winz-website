@@ -6,7 +6,7 @@ import {
   AlertTriangle, RefreshCw, Layers, Tag, HelpCircle 
 } from 'lucide-react';
 import { useCSVData } from '../../hooks/useCSVData';
-import usePageTitle from '../../hooks/usePageTitle';
+import { Helmet } from 'react-helmet-async';
 import PageHero from '../../components/logistics/PageHero';
 
 const SectionBadge = ({ label }) => (
@@ -16,7 +16,7 @@ const SectionBadge = ({ label }) => (
 );
 
 export default function Resources() {
-  usePageTitle('Customs Knowledge Base & Resources');
+  
   
   // Fetch and parse the CSV file from the root path
   const { data, loading, error, reload } = useCSVData('/data.csv');
@@ -78,7 +78,9 @@ export default function Resources() {
         description="Access our repository of EU customs clearance processes, documents, and reference guidelines."
       />
 
-      {/* Main Content Area */}
+      
+      <Helmet><title>${'Customs Knowledge Base & Resources'} | WINZ</title></Helmet>
+{/* Main Content Area */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 flex-grow">
         
         {/* Search Panel */}

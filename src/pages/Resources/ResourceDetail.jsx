@@ -6,7 +6,7 @@ import {
   ShieldCheck, AlertCircle, RefreshCw
 } from 'lucide-react';
 import { useCSVData } from '../../hooks/useCSVData';
-import { useSEOMeta } from '../../hooks/useSEOMeta';
+import { SEOMeta } from '../../components/common/SEOMeta';
 
 export default function ResourceDetail() {
   const { slug } = useParams();
@@ -111,7 +111,16 @@ export default function ResourceDetail() {
   } : null;
 
   // Set meta values using the hook
-  useSEOMeta(currentItem ? {
+  
+
+  // Loading UI
+  if (loading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-gray-50">
+        <div className="text-center space-y-4">
+          <div className="w-10 h-10 border-4 border-primary-500 border-t-transparent rounded-full animate-spin mx-auto" />
+          <p className="text-sm font-semibold text-gray-500">
+      <SEOMeta meta={currentItem ? {
     title: `${title} | Customs Clearance Blog`,
     description: metaDescription,
     keywords: keywords,
@@ -124,15 +133,8 @@ export default function ResourceDetail() {
     twitterCard: 'summary_large_image',
     faqSchema,
     articleSchema
-  } : null);
-
-  // Loading UI
-  if (loading) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-gray-50">
-        <div className="text-center space-y-4">
-          <div className="w-10 h-10 border-4 border-primary-500 border-t-transparent rounded-full animate-spin mx-auto" />
-          <p className="text-sm font-semibold text-gray-500">Loading Article Details...</p>
+  } : null} />
+Loading Article Details...</p>
         </div>
       </div>
     );

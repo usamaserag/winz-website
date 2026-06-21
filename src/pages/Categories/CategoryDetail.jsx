@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FolderOpen, ChevronRight, AlertCircle, ArrowLeft, ArrowRight } from 'lucide-react';
 import { communityService } from '../../services/communityService';
-import { useSEOMeta } from '../../hooks/useSEOMeta';
+import { SEOMeta } from '../../components/common/SEOMeta';
 import PageHeroShell from '../../components/logistics/PageHeroShell';
 import PageLoader from '../../components/common/PageLoader';
 import ErrorState from '../../components/common/ErrorState';
@@ -46,16 +46,7 @@ export default function CategoryDetail() {
     ? (category.seoDescription || description || t('categories.seoDescription', { defaultValue: 'Explore our community category.' }))
     : t('meta.title'));
 
-  useSEOMeta(category ? {
-    title: category?.seo?.title || category.seoTitle || title,
-    description: seoDescription,
-    canonical: canonicalUrl,
-    ogTitle: category?.seo?.title || category.seoOgTitle || title,
-    ogDescription: seoDescription,
-    ogImage: category.image ? `${API_BASE_URL}${category.image}` : `${(typeof window !== 'undefined' ? window.location.origin : 'https://trucway.com')}/logo.png`,
-    ogUrl: canonicalUrl,
-    ogType: 'website',
-  } : null);
+  
 
   if (loading) {
     return <PageLoader />;
@@ -90,6 +81,16 @@ export default function CategoryDetail() {
 
   return (
     <div className="flex flex-col min-h-screen bg-gray-50/50">
+      <SEOMeta meta={category ? {
+        title: category?.seo?.title || category.seoTitle || title,
+        description: seoDescription,
+        canonical: canonicalUrl,
+        ogTitle: category?.seo?.title || category.seoOgTitle || title,
+        ogDescription: seoDescription,
+        ogImage: category.image ? `${API_BASE_URL}${category.image}` : `${(typeof window !== 'undefined' ? window.location.origin : 'https://trucway.com')}/logo.png`,
+        ogUrl: canonicalUrl,
+        ogType: 'website',
+      } : null} />
       <PageHeroShell size="compact" className="pb-12">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 w-full text-center">
           <nav className="flex items-center justify-center gap-2 text-xs text-white/60 mb-6" aria-label="Breadcrumb">
