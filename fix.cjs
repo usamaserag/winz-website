@@ -1,0 +1,15 @@
+const fs = require('fs');
+const p = require('path');
+function walk(d) {
+  fs.readdirSync(d).forEach(f => {
+    const pf = p.join(d, f);
+    if (fs.statSync(pf).isDirectory()) walk(pf);
+    else if (pf.endsWith('.jsx')) {
+      let c = fs.readFileSync(pf, 'utf8');
+      c = c.replace(/window\.location\.origin/g, `(typeof window !== 'undefined' ? window.location.origin : 'https://trucway.com')`);
+      c = c.replace(/window\.location\.href/g, `(typeof window !== 'undefined' ? window.location.href : 'https://trucway.com' + (typeof location !== 'undefined' ? location.pathname : ''))`);
+      fs.writeFileSync(pf, c);
+    }
+  });
+}
+walk('src/pages');

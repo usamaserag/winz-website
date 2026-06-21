@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { Menu, X, ChevronDown, PackagePlus, PackageOpen, Route, BookOpen, HelpCircle } from 'lucide-react';
+import { Menu, X, ChevronDown, PackagePlus, PackageOpen, Route, BookOpen, HelpCircle, FolderOpen } from 'lucide-react';
 import Logo from '../common/Logo';
 import LanguageSwitcher from '../common/LanguageSwitcher';
 import LogisticsGridPattern from '../logistics/LogisticsGridPattern';
@@ -14,6 +14,7 @@ const CLEARANCE_SERVICES = [
 ];
 
 const COMMUNITY_LINKS = [
+  { key: 'categories', path: '/categories', Icon: FolderOpen },
   { key: 'blog', path: '/blog', Icon: BookOpen },
   { key: 'faq', path: '/faq', Icon: HelpCircle },
 ];
@@ -66,7 +67,7 @@ const Navbar = () => {
   const isBlogActive =
     location.pathname === '/blog' || location.pathname.startsWith('/blog/');
   const isServicesActive = ['/services', '/import', '/export', '/transit', '/transport', '/warehouse'].includes(location.pathname);
-  const isCommunityActive = isBlogActive || location.pathname === '/faq';
+  const isCommunityActive = isBlogActive || location.pathname === '/faq' || location.pathname.startsWith('/categories');
 
   const onDarkHero = pageHasDarkHero(location.pathname);
   const useHeroNav = onDarkHero && !scrolled;

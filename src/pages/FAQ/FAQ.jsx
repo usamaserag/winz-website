@@ -1,27 +1,49 @@
-import { useState, useMemo, useCallback } from 'react';
+import { useState, useMemo, useCallback, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
-import {
-  HelpCircle, Search, X, ChevronDown,
-} from 'lucide-react';
-import { getFAQs } from '../../data/siteData';
+import { Link } from 'react-router-dom';
+import { HelpCircle, Search, X, ChevronDown, ArrowRight } from 'lucide-react';
+import { communityService } from '../../services/communityService';
 import { useSEOMeta } from '../../hooks/useSEOMeta';
 import usePageTitle from '../../hooks/usePageTitle';
 import PageHero from '../../components/logistics/PageHero';
+import EmptyState from '../../components/common/EmptyState';
+import ErrorState from '../../components/common/ErrorState';
 
 const clean = (str) => (str || '').trim().replace(/:+$/, '');
 const isUrl = (str) => typeof str === 'string' && str.trim().startsWith('http');
 
-const allFaqs = getFAQs();
-
 export default function FAQ() {
-  const { t } = useTranslation('faq');
+  const { t, i18n } = useTranslation('faq');
   usePageTitle(t('faq:meta.title'));
 
   const [searchTerm, setSearchTerm] = useState('');
   const [expandedIndex, setExpandedIndex] = useState(null);
 
-  const generateQuestion = useCallback((rawName) => {
+  const [faqs, setFaqs] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  const fetchFaqs = async () => {
+    try {
+      setLoading(true);
+      setError(null);
+      const data = await communityService.getFAQs(i18n.language);
+      setFaqs(Array.isArray(data) ? data : data.data || []);
+    } catch (err) {
+      setError(err.message || 'Failed to fetch FAQs');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    fetchFaqs();
+  }, [i18n.language]);
+
+  const generateQuestion = useCallback((item) => {
+    if (item.question) return clean(item.question);
+    const rawName = item.title || item.name;
     const name = clean(rawName);
     const lower = name.toLowerCase();
     if (lower.includes('documenten') || lower.includes('document')) {
@@ -49,9 +71,11 @@ export default function FAQ() {
   }, [t]);
 
   const generateAnswer = useCallback((item) => {
+    if (item.answer) return clean(item.answer);
+    if (item.content) return clean(item.content);
     const struct = item['content structurs'] || '';
     if (struct && !isUrl(struct)) return struct.replace(/^[hH][123]:\s*/, '');
-    const name = clean(item.name);
+    const name = clean(item.title || item.name);
     const research = isUrl(item.research || '') ? name : clean(item.research || name);
     return t('dynamicTemplates.answerFallback', {
       name,
@@ -61,34 +85,37 @@ export default function FAQ() {
 
   const filteredFaqs = useMemo(() => {
     const term = searchTerm.trim().toLowerCase();
-    if (!term) return allFaqs;
-    return allFaqs.filter((item) => {
-      const q = generateQuestion(item.name).toLowerCase();
+    if (!term) return faqs;
+    return faqs.filter((item) => {
+      const q = generateQuestion(item).toLowerCase();
       const a = generateAnswer(item).toLowerCase();
-      const kw = clean(item.research || '').toLowerCase();
+      const kw = clean(item?.seo?.focus_keyphrase || item.research || item.category || '').toLowerCase();
       return q.includes(term) || a.includes(term) || kw.includes(term);
     });
-  }, [searchTerm, generateQuestion, generateAnswer]);
+  }, [searchTerm, faqs, generateQuestion, generateAnswer]);
 
-  const faqSchema = useMemo(() => ({
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: filteredFaqs.slice(0, 30).map((item) => ({
-      '@type': 'Question',
-      name: generateQuestion(item.name),
-      acceptedAnswer: { '@type': 'Answer', text: generateAnswer(item) },
-    })),
-  }), [filteredFaqs, generateQuestion, generateAnswer]);
+  const faqSchema = useMemo(() => {
+    if (!filteredFaqs.length) return null;
+    return {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: filteredFaqs.slice(0, 30).map((item) => ({
+        '@type': 'Question',
+        name: generateQuestion(item),
+        acceptedAnswer: { '@type': 'Answer', text: generateAnswer(item) },
+      })),
+    };
+  }, [filteredFaqs, generateQuestion, generateAnswer]);
 
   useSEOMeta({
     title: t('meta.title'),
     description: t('seo.description'),
     keywords: 'customs faq, import documents, export clearance belgium, transit customs europe, customs process rotterdam',
-    canonical: `${window.location.origin}/faq`,
+    canonical: `${(typeof window !== 'undefined' ? window.location.origin : 'https://trucway.com')}/faq`,
     ogTitle: t('seo.ogTitle'),
     ogDescription: t('seo.ogDescription'),
-    ogImage: `${window.location.origin}/logo.png`,
-    ogUrl: `${window.location.origin}/faq`,
+    ogImage: `${(typeof window !== 'undefined' ? window.location.origin : 'https://trucway.com')}/logo.png`,
+    ogUrl: `${(typeof window !== 'undefined' ? window.location.origin : 'https://trucway.com')}/faq`,
     ogType: 'website',
     faqSchema,
   });
@@ -132,26 +159,37 @@ export default function FAQ() {
           </div>
         </div>
 
-        {filteredFaqs.length === 0 ? (
-          <div className="text-center py-16">
-            <HelpCircle className="h-12 w-12 text-gray-400 mx-auto mb-4" />
-            <h3 className="text-lg font-bold text-gray-900 mb-1">{t('emptyState.title')}</h3>
-            <p className="text-sm text-gray-500">{t('emptyState.description')}</p>
+        {/* State Management */}
+        {loading && (
+          <div className="space-y-4">
+            {[1, 2, 3, 4, 5].map((i) => (
+              <div key={i} className="h-16 bg-white border border-gray-100 rounded-2xl shadow-sm animate-pulse" />
+            ))}
           </div>
-        ) : (
+        )}
+
+        {!loading && error && (
+          <ErrorState title="Error Loading FAQs" description={error} onRetry={fetchFaqs} />
+        )}
+
+        {!loading && !error && filteredFaqs.length === 0 && (
+          <EmptyState title={t('emptyState.title')} description={t('emptyState.description')} />
+        )}
+
+        {!loading && !error && filteredFaqs.length > 0 && (
           <div className="space-y-4">
             <p className="text-sm font-semibold text-gray-500 mb-6 text-center">
               {t('countLabel', { count: filteredFaqs.length })}
             </p>
 
             {filteredFaqs.map((item, index) => {
-              const question = generateQuestion(item.name);
+              const question = generateQuestion(item);
               const answer = generateAnswer(item);
               const isExpanded = expandedIndex === index;
 
               return (
                 <motion.div
-                  key={index}
+                  key={item.slug || index}
                   layout
                   className="bg-white border border-gray-100 rounded-2xl shadow-sm overflow-hidden"
                 >
@@ -178,7 +216,17 @@ export default function FAQ() {
                         className="border-t border-gray-50 bg-gray-50/30"
                       >
                         <div className="p-5 text-sm md:text-base text-gray-600 leading-relaxed">
-                          <p>{answer}</p>
+                          <div dangerouslySetInnerHTML={{ __html: answer }} />
+                          {item.slug && (
+                            <div className="mt-4 pt-3 border-t border-gray-100 flex justify-end">
+                              <Link
+                                to={`/faq/${item.slug}`}
+                                className="inline-flex items-center gap-1.5 text-xs font-bold text-primary-600 hover:text-primary-700 transition-colors"
+                              >
+                                Read more <ArrowRight className="w-3.5 h-3.5" />
+                              </Link>
+                            </div>
+                          )}
                         </div>
                       </motion.div>
                     )}

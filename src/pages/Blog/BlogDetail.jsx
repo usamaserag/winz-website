@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
@@ -6,11 +7,15 @@ import {
   ChevronRight, ShieldCheck, AlertCircle,
   CheckCircle2, ArrowLeft
 } from 'lucide-react';
-import { getBlogBySlug } from '../../data/siteData';
+import { communityService } from '../../services/communityService';
 import { useSEOMeta } from '../../hooks/useSEOMeta';
 import PageHeroShell from '../../components/logistics/PageHeroShell';
+import PageLoader from '../../components/common/PageLoader';
+import ErrorState from '../../components/common/ErrorState';
 
 // ─── Helpers ────────────────────────────────────────────────────────────────
+const API_BASE_URL = (import.meta.env.VITE_API_BASE_URL || '').replace(/\/$/, '');
+
 const clean = (str) => (str || '').trim().replace(/:+$/, '');
 const isUrl = (str) => typeof str === 'string' && str.trim().startsWith('http');
 
@@ -65,7 +70,16 @@ function generateArticleContent(name, t) {
 }
 
 // Render content segments as React JSX elements
-function ArticleBody({ segments, noContentLabel }) {
+function ArticleBody({ segments, htmlContent, noContentLabel }) {
+  if (htmlContent) {
+    return (
+      <div 
+        className="prose prose-lg max-w-none text-gray-700 leading-relaxed prose-headings:text-gray-900 prose-a:text-primary-600 hover:prose-a:text-primary-700" 
+        dangerouslySetInnerHTML={{ __html: htmlContent }} 
+      />
+    );
+  }
+
   if (!segments || segments.length === 0) {
     return (
       <p className="text-gray-400 italic">{noContentLabel}</p>
@@ -127,22 +141,41 @@ export default function BlogDetail() {
   const { t, i18n } = useTranslation('blog');
   const { slug } = useParams();
 
-  // Instant lookup — data is bundled, no network request
-  const post = getBlogBySlug(slug);
+  const [post, setPost] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
-  const title = post ? clean(post.name) : '';
-  const keywords = post ? (() => { const r = post.research || ''; return isUrl(r) ? title : clean(r); })() : '';
+  const fetchPost = async () => {
+    try {
+      setLoading(true);
+      setError(null);
+      const data = await communityService.getBlogBySlug(slug, i18n.language);
+      setPost(data?.data || data);
+    } catch (err) {
+      setError(err.message || 'Failed to fetch blog details');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    fetchPost();
+  }, [slug, i18n.language]);
+
+  const title = post ? clean(post.title || post.name) : '';
+  const keywords = post ? clean(post.keywords || post.category || post.research || '') : '';
   const rawStruct = post ? post['content structurs'] || '' : '';
-  const segments = post ? (parseContent(rawStruct) || generateArticleContent(title, t)) : [];
+  const htmlContent = post ? post.content : null;
+  const segments = post && !htmlContent ? (parseContent(rawStruct) || generateArticleContent(title, t)) : [];
 
-  const canonicalUrl = post ? `${window.location.origin}/blog/${post.slug}` : window.location.href;
-  const description = post
-    ? t('detail.seoDescription', {
+  const canonicalUrl = post?.seo?.canonical_url || (post ? `${(typeof window !== 'undefined' ? window.location.origin : 'https://trucway.com')}/blog/${post.slug || slug}` : (typeof window !== 'undefined' ? window.location.href : 'https://trucway.com' + (typeof location !== 'undefined' ? location.pathname : '')));
+  const description = post?.seo?.description || (post
+    ? (post.description || post.summary || post.excerpt || t('detail.seoDescription', {
         title,
         titleLower: title.toLowerCase(),
         keywords,
-      })
-    : t('meta.title');
+      }))
+    : t('meta.title'));
 
   // Schema objects
   const articleSchema = post ? {
@@ -158,18 +191,18 @@ export default function BlogDetail() {
     publisher: {
       '@type': 'Organization',
       name: 'WINZ Logistics',
-      logo: { '@type': 'ImageObject', url: `${window.location.origin}/logo.png` },
+      logo: { '@type': 'ImageObject', url: `${(typeof window !== 'undefined' ? window.location.origin : 'https://trucway.com')}/logo.png` },
     },
-    datePublished: '2026-04-19',
-    dateModified: '2026-05-19',
+    datePublished: post.created_at || post.datePublished || post.createdAt || '2026-04-19',
+    dateModified: post.updated_at || post.dateModified || post.updatedAt || '2026-05-19',
   } : null;
 
   const breadcrumbSchema = post ? {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: t('detail.breadcrumbs.home'), item: window.location.origin },
-      { '@type': 'ListItem', position: 2, name: t('detail.breadcrumbs.blog'), item: `${window.location.origin}/blog` },
+      { '@type': 'ListItem', position: 1, name: t('detail.breadcrumbs.home'), item: (typeof window !== 'undefined' ? window.location.origin : 'https://trucway.com') },
+      { '@type': 'ListItem', position: 2, name: t('detail.breadcrumbs.blog'), item: `${(typeof window !== 'undefined' ? window.location.origin : 'https://trucway.com')}/blog` },
       { '@type': 'ListItem', position: 3, name: title, item: canonicalUrl },
     ],
   } : null;
@@ -198,22 +231,34 @@ export default function BlogDetail() {
   } : null;
 
   useSEOMeta(post ? {
-    title: t('detail.seoPageTitle', { title }),
+    title: post?.seo?.title || post.seoTitle || t('detail.seoPageTitle', { title }),
     description,
-    keywords,
+    keywords: post?.seo?.focus_keyphrase || keywords,
     canonical: canonicalUrl,
-    ogTitle: t('detail.seoOgTitle', { title }),
+    ogTitle: post?.seo?.title || post.seoOgTitle || t('detail.seoOgTitle', { title }),
     ogDescription: description,
-    ogImage: `${window.location.origin}/logo.png`,
+    ogImage: post.image ? `${API_BASE_URL}${post.image}` : `${(typeof window !== 'undefined' ? window.location.origin : 'https://trucway.com')}/logo.png`,
     ogUrl: canonicalUrl,
     ogType: 'article',
     twitterCard: 'summary_large_image',
-    faqSchema,
+    faqSchema: post?.seo?.schema_markup_type === 'FAQPage' ? faqSchema : null,
     articleSchema,
     breadcrumbSchema,
   } : null);
 
-  // ── 404 ────────────────────────────────────────────────────────────────────
+  // ── States ────────────────────────────────────────────────────────────────
+  if (loading) {
+    return <PageLoader />;
+  }
+
+  if (error) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-gray-50 px-4 py-12">
+        <ErrorState title="Failed to load blog" description={error} onRetry={fetchPost} />
+      </div>
+    );
+  }
+
   if (!post) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-gray-50 px-4">
@@ -250,7 +295,7 @@ export default function BlogDetail() {
           <div className="flex flex-wrap items-center justify-center gap-2 mb-5">
             <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-500/15 text-primary-200 border border-primary-400/25 text-xs font-semibold">
               <Bookmark className="w-3.5 h-3.5" />
-              {t('detail.categoryBadge')}
+              {post.category || t('detail.categoryBadge')}
             </span>
             {keywords && (
               <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 text-white/80 border border-white/15 text-xs font-medium">
@@ -267,11 +312,11 @@ export default function BlogDetail() {
           <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-slate-400">
             <div className="flex items-center gap-2">
               <Calendar className="w-4 h-4" />
-              <span>{t('detail.publishedDate')}</span>
+              <span>{post.created_at || post.updated_at || post.datePublished || post.createdAt ? new Date(post.created_at || post.updated_at || post.datePublished || post.createdAt).toLocaleDateString(i18n.language) : t('detail.publishedDate')}</span>
             </div>
             <div className="flex items-center gap-2">
               <User className="w-4 h-4" />
-              <span>{t('detail.author')}</span>
+              <span>{post.author || t('detail.author')}</span>
             </div>
           </div>
         </div>
@@ -279,11 +324,26 @@ export default function BlogDetail() {
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-12 pb-20">
 
+        {post.image && (
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2, duration: 0.35 }}
+            className="mb-8 overflow-hidden rounded-3xl shadow-sm border border-gray-100 bg-white"
+          >
+            <img 
+              src={`${API_BASE_URL}${post.image}`} 
+              alt={post.image_alt || title}
+              className="w-full h-auto max-h-[500px] object-cover"
+            />
+          </motion.div>
+        )}
+
         {/* Article Body */}
         <motion.article
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.1, duration: 0.35 }}
+          transition={{ delay: 0.3, duration: 0.35 }}
           className="bg-white border border-gray-100 rounded-3xl p-6 md:p-10 shadow-sm mb-8"
         >
           <div className="flex items-center gap-2 mb-8">
@@ -291,50 +351,8 @@ export default function BlogDetail() {
             <h2 className="text-xl font-bold text-gray-900">{t('detail.articleContentTitle')}</h2>
           </div>
 
-          <ArticleBody segments={segments} noContentLabel={t('detail.noContentAvailable')} />
+          <ArticleBody segments={segments} htmlContent={htmlContent} noContentLabel={t('detail.noContentAvailable')} />
         </motion.article>
-
-        {/* Inline FAQ Section */}
-        <motion.section
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2, duration: 0.35 }}
-          className="bg-white border border-gray-100 rounded-3xl p-6 md:p-10 shadow-sm"
-        >
-          <div className="flex items-center gap-2 mb-8">
-            <HelpCircle className="w-5 h-5 text-primary-500" />
-            <h2 className="text-xl font-bold text-gray-900">{t('detail.faqTitle')}</h2>
-          </div>
-
-          <div className="space-y-5">
-            <div className="p-5 bg-gray-50/60 rounded-2xl border border-gray-100">
-              <h4 className="font-bold text-gray-900 mb-2 text-sm md:text-base">
-                {t('detail.inlineFaq.requiredDocumentsQ', { title })}
-              </h4>
-              <p className="text-sm md:text-base text-gray-600 leading-relaxed">
-                {t('detail.inlineFaq.requiredDocumentsA', { title })}
-              </p>
-            </div>
-
-            <div className="p-5 bg-gray-50/60 rounded-2xl border border-gray-100">
-              <h4 className="font-bold text-gray-900 mb-2 text-sm md:text-base">
-                {t('detail.inlineFaq.durationQ', { title })}
-              </h4>
-              <p className="text-sm md:text-base text-gray-600 leading-relaxed">
-                {t('detail.inlineFaq.durationA', { title })}
-              </p>
-            </div>
-
-            <div className="p-5 bg-gray-50/60 rounded-2xl border border-gray-100">
-              <h4 className="font-bold text-gray-900 mb-2 text-sm md:text-base">
-                {t('detail.inlineFaq.winzHandlingQ', { title })}
-              </h4>
-              <p className="text-sm md:text-base text-gray-600 leading-relaxed">
-                {t('detail.inlineFaq.winzHandlingA', { title })}
-              </p>
-            </div>
-          </div>
-        </motion.section>
 
       </div>
     </div>

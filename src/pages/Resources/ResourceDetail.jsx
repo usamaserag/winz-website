@@ -57,7 +57,7 @@ export default function ResourceDetail() {
   const parsedLines = parseContentStructure(rawStructure);
 
   // Construct dynamic SEO Meta configuration
-  const canonicalUrl = currentItem ? `${window.location.origin}/resources/${currentItem.slug}` : window.location.href;
+  const canonicalUrl = currentItem ? `${(typeof window !== 'undefined' ? window.location.origin : 'https://trucway.com')}/resources/${currentItem.slug}` : (typeof window !== 'undefined' ? window.location.href : 'https://trucway.com' + (typeof location !== 'undefined' ? location.pathname : ''));
   const metaDescription = currentItem 
     ? `Comprehensive customs guide on ${title}. Outlining ${cleanString(rawStructure).substring(0, 120)}... with research insights on ${keywords}.`
     : 'WINZ Logistics Customs Clearance Guide';
@@ -103,7 +103,7 @@ export default function ResourceDetail() {
       'name': 'WINZ Logistics',
       'logo': {
         '@type': 'ImageObject',
-        'url': `${window.location.origin}/logo.png`
+        'url': `${(typeof window !== 'undefined' ? window.location.origin : 'https://trucway.com')}/logo.png`
       }
     },
     'datePublished': '2026-04-19',
@@ -118,7 +118,7 @@ export default function ResourceDetail() {
     canonical: canonicalUrl,
     ogTitle: `${title} - WINZ Logistics Resources`,
     ogDescription: metaDescription,
-    ogImage: `${window.location.origin}/logo.png`,
+    ogImage: `${(typeof window !== 'undefined' ? window.location.origin : 'https://trucway.com')}/logo.png`,
     ogUrl: canonicalUrl,
     ogType: 'article',
     twitterCard: 'summary_large_image',

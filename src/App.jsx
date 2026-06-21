@@ -19,6 +19,10 @@ const WarehousePage = lazy(() => import('./pages/Warehouse/Warehouse'));
 const Blog = lazy(() => import('./pages/Blog/Blog'));
 const BlogDetail = lazy(() => import('./pages/Blog/BlogDetail'));
 const FAQ = lazy(() => import('./pages/FAQ/FAQ'));
+const FAQDetail = lazy(() => import('./pages/FAQ/FAQDetail'));
+const Categories = lazy(() => import('./pages/Categories/Categories'));
+const CategoryDetail = lazy(() => import('./pages/Categories/CategoryDetail'));
+const SubcategoryDetail = lazy(() => import('./pages/Categories/SubcategoryDetail'));
 const PrivacyPolicy = lazy(() => import('./pages/Legal/PrivacyPolicy'));
 const CookiesPolicy = lazy(() => import('./pages/Legal/CookiesPolicy'));
 
@@ -38,6 +42,10 @@ function AppRoutes() {
           <Route path="blog" element={<Blog />} />
           <Route path="blog/:slug" element={<BlogDetail />} />
           <Route path="faq" element={<FAQ />} />
+          <Route path="faq/:slug" element={<FAQDetail />} />
+          <Route path="categories" element={<Categories />} />
+          <Route path="categories/:slug" element={<CategoryDetail />} />
+          <Route path="subcategories/:slug" element={<SubcategoryDetail />} />
           <Route path="contact" element={<Contact />} />
           <Route path="privacy-policy" element={<PrivacyPolicy />} />
           <Route path="cookies-policy" element={<CookiesPolicy />} />

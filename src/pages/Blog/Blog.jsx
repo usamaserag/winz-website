@@ -1,61 +1,86 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
-import {
-  Search, X, ArrowRight, Tag, HelpCircle
-} from 'lucide-react';
-import { getBlogs } from '../../data/siteData';
+import { Search, X, ArrowRight, Tag } from 'lucide-react';
+import { communityService } from '../../services/communityService';
 import { useSEOMeta } from '../../hooks/useSEOMeta';
 import usePageTitle from '../../hooks/usePageTitle';
 import PageHero from '../../components/logistics/PageHero';
+import SkeletonCard from '../../components/common/SkeletonCard';
+import EmptyState from '../../components/common/EmptyState';
+import ErrorState from '../../components/common/ErrorState';
 
 const clean = (str) => (str || '').trim().replace(/:+$/, '');
 const isUrl = (str) => typeof str === 'string' && str.trim().startsWith('http');
 
 const getExcerpt = (row, t) => {
-  const struct = row['content structurs'] || '';
-  if (struct && !isUrl(struct)) return struct.replace(/^[hH][123]:\s*/, '');
-  const title = clean(row.name);
+  const struct = row.summary || row.excerpt || row.content || '';
+  if (struct && !isUrl(struct)) {
+    // Strip HTML tags if content is HTML
+    const cleanText = struct.replace(/<[^>]+>/g, '').replace(/^[hH][123]:\s*/, '');
+    return cleanText.length > 150 ? cleanText.substring(0, 150) + '...' : cleanText;
+  }
+  const title = clean(row.title || row.name);
   return t('listing.fallbackExcerpt', {
     title: title || t('listing.fallbackExcerptDefaultTitle'),
   });
 };
 
 const getTag = (row) => {
-  const res = row.research || '';
+  const res = row.category || row.research || '';
   if (res && !isUrl(res)) return clean(res);
-  return clean(row.name);
+  return null;
 };
 
-// All blog data — bundled at build time, no network fetch
-const allBlogs = getBlogs();
+const API_BASE_URL = (import.meta.env.VITE_API_BASE_URL || '').replace(/\/$/, '');
 
 export default function Blog() {
-  const { t } = useTranslation('blog');
+  const { t, i18n } = useTranslation('blog');
   usePageTitle(t('blog:meta.title'));
   const [searchTerm, setSearchTerm] = useState('');
 
+  const [blogs, setBlogs] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  const fetchBlogs = async () => {
+    try {
+      setLoading(true);
+      setError(null);
+      const data = await communityService.getBlogs(i18n.language);
+      setBlogs(Array.isArray(data) ? data : data.data || []);
+    } catch (err) {
+      setError(err.message || 'Failed to fetch blogs');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    fetchBlogs();
+  }, [i18n.language]);
+
   const filteredBlogs = useMemo(() => {
     const term = searchTerm.trim().toLowerCase();
-    if (!term) return allBlogs;
-    return allBlogs.filter(row => {
-      const name = clean(row.name).toLowerCase();
+    if (!term) return blogs;
+    return blogs.filter((row) => {
+      const name = clean(row.title || row.name).toLowerCase();
       const excerpt = getExcerpt(row, t).toLowerCase();
       const tag = getTag(row).toLowerCase();
       return name.includes(term) || excerpt.includes(term) || tag.includes(term);
     });
-  }, [searchTerm, t]);
+  }, [searchTerm, blogs, t]);
 
   useSEOMeta({
     title: t('meta.title'),
     description: t('seo.description'),
     keywords: 'customs clearance blog, import logistics europe, container transport belgium, fiscal representation netherlands',
-    canonical: `${window.location.origin}/blog`,
+    canonical: `${(typeof window !== 'undefined' ? window.location.origin : 'https://trucway.com')}/blog`,
     ogTitle: t('seo.ogTitle'),
     ogDescription: t('seo.ogDescription'),
-    ogImage: `${window.location.origin}/logo.png`,
-    ogUrl: `${window.location.origin}/blog`,
+    ogImage: `${(typeof window !== 'undefined' ? window.location.origin : 'https://trucway.com')}/logo.png`,
+    ogUrl: `${(typeof window !== 'undefined' ? window.location.origin : 'https://trucway.com')}/blog`,
     ogType: 'website',
   });
 
@@ -69,7 +94,6 @@ export default function Blog() {
         description={t('listing.hero.description')}
       />
 
-      {/* Content */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 flex-grow w-full">
         {/* Search */}
         <div className="mb-12">
@@ -95,14 +119,25 @@ export default function Blog() {
           </div>
         </div>
 
-        {/* Blog Grid */}
-        {filteredBlogs.length === 0 ? (
-          <div className="text-center py-16">
-            <HelpCircle className="h-12 w-12 text-gray-400 mx-auto mb-4" />
-            <h3 className="text-lg font-bold text-gray-900 mb-1">{t('listing.emptyState.title')}</h3>
-            <p className="text-sm text-gray-500">{t('listing.emptyState.description')}</p>
+        {/* State Management */}
+        {loading && (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[1, 2, 3, 4, 5, 6].map((i) => (
+              <SkeletonCard key={i} />
+            ))}
           </div>
-        ) : (
+        )}
+
+        {!loading && error && (
+          <ErrorState title="Error Loading Blogs" description={error} onRetry={fetchBlogs} />
+        )}
+
+        {!loading && !error && filteredBlogs.length === 0 && (
+          <EmptyState title={t('listing.emptyState.title')} description={t('listing.emptyState.description')} />
+        )}
+
+        {/* Blog Grid */}
+        {!loading && !error && filteredBlogs.length > 0 && (
           <div>
             <p className="text-sm font-semibold text-gray-500 mb-8">
               {t('listing.countLabel', { count: filteredBlogs.length })}
@@ -111,7 +146,7 @@ export default function Blog() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <AnimatePresence>
                 {filteredBlogs.map((row, index) => {
-                  const title = clean(row.name);
+                  const title = clean(row.title || row.name);
                   const excerpt = getExcerpt(row, t);
                   const tag = getTag(row);
 
@@ -125,10 +160,21 @@ export default function Blog() {
                       whileHover={{ y: -6 }}
                       className="flex flex-col bg-white border border-gray-100 rounded-3xl p-6 shadow-sm hover:shadow-xl hover:shadow-gray-200/40 transition-all duration-300"
                     >
+                      {/* Image */}
+                      {row.image && (
+                        <div className="mb-4 aspect-[16/9] w-full overflow-hidden rounded-2xl bg-gray-100">
+                          <img 
+                            src={`${API_BASE_URL}${row.image}`} 
+                            alt={row.image_alt || title}
+                            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                          />
+                        </div>
+                      )}
+
                       {/* Category Badge */}
                       <div className="mb-4">
                         <span className="inline-flex items-center gap-1 bg-primary-50 text-primary-600 border border-primary-100 text-xs px-2.5 py-1 rounded-lg font-semibold">
-                          {t('listing.categoryBadge')}
+                          {row.category || t('listing.categoryBadge')}
                         </span>
                       </div>
 
@@ -147,7 +193,7 @@ export default function Blog() {
                       </p>
 
                       {/* Tag */}
-                      {tag && (
+                      {tag && tag !== row.category && (
                         <div className="mb-5 pt-3 border-t border-gray-50">
                           <span className="inline-flex items-center gap-1 bg-gray-50 text-gray-600 border border-gray-100 text-xs px-2.5 py-1 rounded-lg font-medium">
                             <Tag className="w-3 h-3 text-gray-400" />

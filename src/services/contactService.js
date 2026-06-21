@@ -1,7 +1,7 @@
 import { getResponseMessage } from '../lib/apiMessage';
 
 const API_BASE_URL = (
-  import.meta.env.VITE_API_BASE_URL || 'https://api.winz.be'
+  import.meta.env.VITE_API_BASE_URL || ''
 ).replace(/\/$/, '');
 
 const CONTACT_US_URL = `${API_BASE_URL}/api/contact-us/`;

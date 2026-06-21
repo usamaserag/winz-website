@@ -5,7 +5,8 @@
  * Allows easy modification of headers, payloads, and endpoints.
  */
 
-const VISITOR_STORE_URL = "https://api.winz.be/api/visitors/store/";
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || '';
+const VISITOR_STORE_URL = `${API_BASE_URL}/api/visitors/store/`;
 
 /**
  * Tracks the visitor by sending a POST request to the store endpoint.
