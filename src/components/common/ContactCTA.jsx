@@ -1,7 +1,9 @@
 import { lazy, Suspense } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
+import { Link } from '../routing';
 import { useTranslation } from 'react-i18next';
 import { ArrowRight, Headphones } from 'lucide-react';
+import { stripLocaleFromPath } from '../../lib/i18n/localePath';
 
 const EuropeRouteMap = lazy(() => import('../logistics/EuropeRouteMap'));
 
@@ -11,7 +13,7 @@ const ContactCTA = () => {
   const { pathname } = useLocation();
   const { t } = useTranslation('common');
 
-  if (HIDDEN_ON.includes(pathname)) {
+  if (HIDDEN_ON.includes(stripLocaleFromPath(pathname))) {
     return null;
   }
 

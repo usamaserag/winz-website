@@ -1,5 +1,5 @@
 import { useState, useMemo } from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from '../../components/routing';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
   BookOpen, Search, X, FileText, ExternalLink, 

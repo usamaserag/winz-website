@@ -1,4 +1,5 @@
-import { useParams, Link } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
+import { Link } from '../../components/routing';
 import { motion } from 'framer-motion';
 import { 
   ArrowLeft, FileText, ExternalLink, Calendar, 

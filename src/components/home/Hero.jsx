@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
+import { Link } from '../routing';
 import { ArrowRight, ShieldCheck, Truck } from 'lucide-react';
 import usePageTitle from '../../hooks/usePageTitle';
 import LogisticsGridPattern from '../logistics/LogisticsGridPattern';

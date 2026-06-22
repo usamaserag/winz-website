@@ -10,12 +10,12 @@ const BASE = process.env.LH_BASE_URL || 'http://localhost:4173';
 const OUT_DIR = 'lighthouse-reports';
 
 const ROUTES = [
-  { path: '/', name: 'home' },
-  { path: '/about', name: 'about' },
-  { path: '/services', name: 'services' },
-  { path: '/blog', name: 'blog' },
-  { path: '/faq', name: 'faq' },
-  { path: '/contact', name: 'contact' },
+  { path: '/en', name: 'home' },
+  { path: '/en/about', name: 'about' },
+  { path: '/en/services', name: 'services' },
+  { path: '/en/blog', name: 'blog' },
+  { path: '/en/faq', name: 'faq' },
+  { path: '/en/contact', name: 'contact' },
 ];
 
 mkdirSync(OUT_DIR, { recursive: true });

@@ -1,10 +1,14 @@
 import { useEffect, useRef, useState } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { ChevronDown, Globe } from 'lucide-react';
 import { LANGUAGES } from '../../lib/i18n/languages';
+import { localizePath, stripLocaleFromPath } from '../../lib/i18n/localePath';
 
 const LanguageSwitcher = ({ useHeroNav = false }) => {
   const { i18n, t } = useTranslation('common');
+  const navigate = useNavigate();
+  const location = useLocation();
   const [open, setOpen] = useState(false);
   const rootRef = useRef(null);
 
@@ -21,6 +25,13 @@ const LanguageSwitcher = ({ useHeroNav = false }) => {
     document.addEventListener('click', handler);
     return () => document.removeEventListener('click', handler);
   }, [open]);
+
+  const switchLanguage = (code) => {
+    const pathWithoutLocale = stripLocaleFromPath(location.pathname);
+    const nextPath = localizePath(pathWithoutLocale, code);
+    navigate(`${nextPath}${location.search}${location.hash}`);
+    setOpen(false);
+  };
 
   const triggerClass = useHeroNav
     ? 'text-slate-200 hover:text-white hover:bg-white/10 border-white/20'
@@ -70,10 +81,7 @@ const LanguageSwitcher = ({ useHeroNav = false }) => {
               <li key={code} role="option" aria-selected={active}>
                 <button
                   type="button"
-                  onClick={() => {
-                    i18n.changeLanguage(code);
-                    setOpen(false);
-                  }}
+                  onClick={() => switchLanguage(code)}
                   className={`flex w-full items-center justify-between px-4 py-2.5 text-sm transition-colors ${itemClass(active)}`}
                 >
                   <span>{nativeLabel}</span>

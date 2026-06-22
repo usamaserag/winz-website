@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Link } from 'react-router-dom';
+import { Link } from '../../components/routing';
 import {
   Search, MapPin, Package, Clock, CheckCircle2, Truck,
   Zap, Bell, History, ChevronRight, ArrowRight

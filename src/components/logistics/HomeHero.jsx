@@ -1,5 +1,5 @@
 import { lazy, Suspense } from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from '../routing';
 import { useTranslation } from 'react-i18next';
 import { ArrowRight, Truck, MapPin, ShieldCheck } from 'lucide-react';
 import LogisticsGridPattern from './LogisticsGridPattern';

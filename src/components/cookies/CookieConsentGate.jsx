@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useCookieConsent } from '../../context/CookieContext';
 import { useBodyScrollLock } from '../../hooks/useBodyScrollLock';
+import { stripLocaleFromPath } from '../../lib/i18n/localePath';
 
 const CookieConsentManager = lazy(() => import('./CookieConsentManager'));
 
@@ -15,7 +16,7 @@ const CookieConsentGate = ({ children }) => {
   const { pathname } = useLocation();
   const contentRef = useRef(null);
 
-  const isLegalRoute = LEGAL_ROUTES.includes(pathname);
+  const isLegalRoute = LEGAL_ROUTES.includes(stripLocaleFromPath(pathname));
   const blockApp = requiresConsent && !isLegalRoute;
   const showCookieUi = showBanner || isPreferencesOpen;
 

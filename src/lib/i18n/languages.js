@@ -1,4 +1,5 @@
 export const LANGUAGE_STORAGE_KEY = 'winz-language';
+export const DEFAULT_LANGUAGE = 'en';
 
 export const LANGUAGES = [
   { code: 'en', label: 'English', nativeLabel: 'English' },

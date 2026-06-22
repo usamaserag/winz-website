@@ -1,3 +1,5 @@
+import { stripLocaleFromPath } from './i18n/localePath';
+
 /** Routes whose top section uses the dark navy hero (navbar blends with hero). */
 const DARK_HERO_EXACT = new Set([
   '/',
@@ -12,6 +14,7 @@ const DARK_HERO_EXACT = new Set([
   '/warehouse',
   '/tracking',
   '/resources',
+  '/categories',
 ]);
 
 /** Routes with a custom light hero at the top — keep white navbar. */
@@ -22,9 +25,13 @@ const LIGHT_HERO_EXACT = new Set(['/import']);
  * @returns {boolean}
  */
 export function pageHasDarkHero(pathname) {
-  if (LIGHT_HERO_EXACT.has(pathname)) return false;
-  if (DARK_HERO_EXACT.has(pathname)) return true;
-  if (pathname.startsWith('/blog/')) return true;
+  const path = stripLocaleFromPath(pathname);
+  if (LIGHT_HERO_EXACT.has(path)) return false;
+  if (DARK_HERO_EXACT.has(path)) return true;
+  if (path.startsWith('/blog/')) return true;
+  if (path.startsWith('/faq/')) return true;
+  if (path.startsWith('/categories')) return true;
+  if (path.startsWith('/subcategories')) return true;
   return false;
 }
 

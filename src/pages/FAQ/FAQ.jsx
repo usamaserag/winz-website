@@ -1,7 +1,7 @@
 import { useState, useMemo, useCallback, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Link } from 'react-router-dom';
+import { Link } from '../../components/routing';
 import { HelpCircle, Search, X, ChevronDown, ArrowRight } from 'lucide-react';
 import { communityService } from '../../services/communityService';
 import { SEOMeta } from '../../components/common/SEOMeta';

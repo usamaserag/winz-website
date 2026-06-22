@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from '../routing';
 import logoColoredWebp from '../../assets/images/logo-colored.webp';
 import logoColoredPng from '../../assets/images/WhatsApp_Image_2026-05-13_at_12.54.03_AM-removebg-preview.png';
 import logoWhiteWebp from '../../assets/images/logo-white.webp';

@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
+import { Link } from '../../components/routing';
 import {
   Truck, Globe, Zap, Package, FileCheck, BarChart3,
   ArrowRight, ClipboardList, CalendarCheck, Radio, ShieldCheck

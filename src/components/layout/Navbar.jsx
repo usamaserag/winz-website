@@ -1,7 +1,9 @@
 import { useState, useEffect, useRef } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Menu, X, ChevronDown, PackagePlus, PackageOpen, Route, BookOpen, HelpCircle, FolderOpen } from 'lucide-react';
+import { Link } from '../routing';
+import { usePathWithoutLocale } from '../../hooks/useLocale';
 import Logo from '../common/Logo';
 import LanguageSwitcher from '../common/LanguageSwitcher';
 import LogisticsGridPattern from '../logistics/LogisticsGridPattern';
@@ -30,6 +32,7 @@ const Navbar = () => {
   const servicesDropdownRef = useRef(null);
   const communityDropdownRef = useRef(null);
   const location = useLocation();
+  const pathWithoutLocale = usePathWithoutLocale();
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
@@ -63,11 +66,11 @@ const Navbar = () => {
     setMobileCommunityOpen(false);
   }, [location.pathname]);
 
-  const isActive = (path) => location.pathname === path;
+  const isActive = (path) => pathWithoutLocale === path;
   const isBlogActive =
-    location.pathname === '/blog' || location.pathname.startsWith('/blog/');
-  const isServicesActive = ['/services', '/import', '/export', '/transit', '/transport', '/warehouse'].includes(location.pathname);
-  const isCommunityActive = isBlogActive || location.pathname === '/faq' || location.pathname.startsWith('/categories');
+    pathWithoutLocale === '/blog' || pathWithoutLocale.startsWith('/blog/');
+  const isServicesActive = ['/services', '/import', '/export', '/transit', '/transport', '/warehouse'].includes(pathWithoutLocale);
+  const isCommunityActive = isBlogActive || pathWithoutLocale === '/faq' || pathWithoutLocale.startsWith('/categories');
 
   const onDarkHero = pageHasDarkHero(location.pathname);
   const useHeroNav = onDarkHero && !scrolled;
