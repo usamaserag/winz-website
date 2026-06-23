@@ -31,7 +31,7 @@ const Footer = () => {
                 {t("footer.description")}
               </p>
             </div>
-
+            {/* Social Links */}
             {/* Quick Links */}
             <div>
               <h3 className="text-slate-900 font-semibold text-lg mb-6">
