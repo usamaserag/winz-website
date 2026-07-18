@@ -66,6 +66,7 @@ function manualChunks(id) {
 }
 
 export default defineConfig({
+  base: '/',
   plugins: [
     react(),
     csvPlugin(),
