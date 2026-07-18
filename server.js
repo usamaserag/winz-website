@@ -147,7 +147,7 @@ export async function createServer(
   });
 
   // --- SSR Render Endpoint ---
-  app.use('*', async (req, res) => {
+  app.use(async (req, res, next) => {
     try {
       const url = req.originalUrl;
 
@@ -169,12 +169,12 @@ export async function createServer(
       }
 
       const helmetHead = helmet
-        ? \`
-          \${helmet.title.toString()}
-          \${helmet.meta.toString()}
-          \${helmet.link.toString()}
-          \${helmet.script.toString()}
-        \`
+        ? `
+          ${helmet.title.toString()}
+          ${helmet.meta.toString()}
+          ${helmet.link.toString()}
+          ${helmet.script.toString()}
+        `
         : '';
 
       const html = template

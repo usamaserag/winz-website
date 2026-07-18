@@ -65,7 +65,7 @@ function manualChunks(id) {
   return 'vendor-misc';
 }
 
-export default defineConfig({
+export default defineConfig(({ isSsrBuild }) => ({
   base: '/',
   plugins: [
     react(),
@@ -86,10 +86,10 @@ export default defineConfig({
     minify: 'esbuild',
     rollupOptions: {
       output: {
-        manualChunks,
-        chunkFileNames: 'assets/[name]-[hash].js',
-        entryFileNames: 'assets/[name]-[hash].js',
-        assetFileNames: 'assets/[name]-[hash][extname]',
+        manualChunks: isSsrBuild ? undefined : manualChunks,
+        chunkFileNames: isSsrBuild ? '[name].js' : 'assets/[name]-[hash].js',
+        entryFileNames: isSsrBuild ? '[name].js' : 'assets/[name]-[hash].js',
+        assetFileNames: isSsrBuild ? '[name][extname]' : 'assets/[name]-[hash][extname]',
       },
     },
     chunkSizeWarningLimit: 400,
@@ -97,4 +97,4 @@ export default defineConfig({
   esbuild: {
     legalComments: 'none',
   },
-});
+}));

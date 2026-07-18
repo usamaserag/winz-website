@@ -45,13 +45,13 @@ export function localizePath(path, locale = DEFAULT_LANGUAGE) {
  */
 export function getPreferredLanguage() {
   try {
-    const stored = localStorage.getItem(LANGUAGE_STORAGE_KEY);
+    const stored = typeof window !== 'undefined' ? localStorage.getItem(LANGUAGE_STORAGE_KEY) : null;
     if (stored && SUPPORTED_LANGUAGE_CODES.includes(stored)) return stored;
   } catch {
     /* private browsing */
   }
 
-  const browser = navigator.language?.slice(0, 2).toLowerCase();
+  const browser = typeof navigator !== 'undefined' ? navigator.language?.slice(0, 2).toLowerCase() : null;
   if (browser && SUPPORTED_LANGUAGE_CODES.includes(browser)) return browser;
 
   return DEFAULT_LANGUAGE;
