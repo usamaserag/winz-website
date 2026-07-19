@@ -37,22 +37,6 @@ function preloadAssetsPlugin() {
   };
 }
 
-function manualChunks(id) {
-  if (!id.includes('node_modules')) return undefined;
-  if (
-    id.includes('react-dom') ||
-    id.includes('react-router') ||
-    id.includes('/scheduler') ||
-    /node_modules\/react\//.test(id)
-  ) {
-    return 'vendor-react';
-  }
-  if (id.includes('framer-motion')) return 'vendor-motion';
-  if (id.includes('i18next') || id.includes('react-i18next')) return 'vendor-i18n';
-  if (id.includes('lucide-react')) return 'vendor-icons';
-  return 'vendor-misc';
-}
-
 export default defineConfig({
   base: '/',
   plugins: [
@@ -73,7 +57,6 @@ export default defineConfig({
     minify: 'esbuild',
     rollupOptions: {
       output: {
-        manualChunks,
         chunkFileNames: 'assets/[name]-[hash].js',
         entryFileNames: 'assets/[name]-[hash].js',
         assetFileNames: 'assets/[name]-[hash][extname]',
