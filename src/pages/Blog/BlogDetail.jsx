@@ -13,9 +13,9 @@ import { SEOMeta } from '../../components/common/SEOMeta';
 import PageHeroShell from '../../components/logistics/PageHeroShell';
 import PageLoader from '../../components/common/PageLoader';
 import ErrorState from '../../components/common/ErrorState';
+import { getSiteOrigin, resolveMediaUrl } from '../../lib/site';
 
 // ─── Helpers ────────────────────────────────────────────────────────────────
-const API_BASE_URL = (import.meta.env.VITE_API_BASE_URL || '').replace(/\/$/, '');
 
 const clean = (str) => (str || '').trim().replace(/:+$/, '');
 const isUrl = (str) => typeof str === 'string' && str.trim().startsWith('http');
@@ -169,7 +169,7 @@ export default function BlogDetail() {
   const htmlContent = post ? post.content : null;
   const segments = post && !htmlContent ? (parseContent(rawStruct) || generateArticleContent(title, t)) : [];
 
-  const canonicalUrl = post?.seo?.canonical_url || (post ? `${(typeof window !== 'undefined' ? window.location.origin : 'https://trucway.com')}/blog/${post.slug || slug}` : (typeof window !== 'undefined' ? window.location.href : 'https://trucway.com' + (typeof location !== 'undefined' ? location.pathname : '')));
+  const canonicalUrl = post?.seo?.canonical_url || (post ? `${getSiteOrigin()}/blog/${post.slug || slug}` : (typeof window !== 'undefined' ? window.location.href : 'https://winz.be' + (typeof location !== 'undefined' ? location.pathname : '')));
   const description = post?.seo?.description || (post
     ? (post.description || post.summary || post.excerpt || t('detail.seoDescription', {
         title,
@@ -192,7 +192,7 @@ export default function BlogDetail() {
     publisher: {
       '@type': 'Organization',
       name: 'WINZ Logistics',
-      logo: { '@type': 'ImageObject', url: `${(typeof window !== 'undefined' ? window.location.origin : 'https://trucway.com')}/logo.png` },
+      logo: { '@type': 'ImageObject', url: `${getSiteOrigin()}/favicon.png` },
     },
     datePublished: post.created_at || post.datePublished || post.createdAt || '2026-04-19',
     dateModified: post.updated_at || post.dateModified || post.updatedAt || '2026-05-19',
@@ -202,8 +202,8 @@ export default function BlogDetail() {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: t('detail.breadcrumbs.home'), item: (typeof window !== 'undefined' ? window.location.origin : 'https://trucway.com') },
-      { '@type': 'ListItem', position: 2, name: t('detail.breadcrumbs.blog'), item: `${(typeof window !== 'undefined' ? window.location.origin : 'https://trucway.com')}/blog` },
+      { '@type': 'ListItem', position: 1, name: t('detail.breadcrumbs.home'), item: getSiteOrigin() },
+      { '@type': 'ListItem', position: 2, name: t('detail.breadcrumbs.blog'), item: `${getSiteOrigin()}/blog` },
       { '@type': 'ListItem', position: 3, name: title, item: canonicalUrl },
     ],
   } : null;
@@ -275,7 +275,7 @@ export default function BlogDetail() {
         canonical: canonicalUrl,
         ogTitle: post?.seo?.title || post.seoOgTitle || t('detail.seoOgTitle', { title }),
         ogDescription: description,
-        ogImage: post.image ? `${API_BASE_URL}${post.image}` : `${(typeof window !== 'undefined' ? window.location.origin : 'https://trucway.com')}/logo.png`,
+        ogImage: post.image ? resolveMediaUrl(post.image) : `${getSiteOrigin()}/favicon.png`,
         ogUrl: canonicalUrl,
         ogType: 'article',
         twitterCard: 'summary_large_image',
@@ -334,7 +334,7 @@ export default function BlogDetail() {
             className="mb-8 overflow-hidden rounded-3xl shadow-sm border border-gray-100 bg-white"
           >
             <img 
-              src={`${API_BASE_URL}${post.image}`} 
+              src={resolveMediaUrl(post.image)} 
               alt={post.image_alt || title}
               className="w-full h-auto max-h-[500px] object-cover"
             />

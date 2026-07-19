@@ -10,6 +10,7 @@ import PageHero from '../../components/logistics/PageHero';
 import SkeletonCard from '../../components/common/SkeletonCard';
 import EmptyState from '../../components/common/EmptyState';
 import ErrorState from '../../components/common/ErrorState';
+import { getSiteOrigin } from '../../lib/site';
 
 const clean = (str) => (str || '').trim().replace(/:+$/, '');
 const isUrl = (str) => typeof str === 'string' && str.trim().startsWith('http');
@@ -80,11 +81,11 @@ export default function Blog() {
         title: t('meta.title'),
         description: t('seo.description'),
         keywords: 'customs clearance blog, import logistics europe, container transport belgium, fiscal representation netherlands',
-        canonical: `${(typeof window !== 'undefined' ? window.location.origin : 'https://trucway.com')}/blog`,
+        canonical: `${getSiteOrigin()}/blog`,
         ogTitle: t('seo.ogTitle'),
         ogDescription: t('seo.ogDescription'),
-        ogImage: `${(typeof window !== 'undefined' ? window.location.origin : 'https://trucway.com')}/logo.png`,
-        ogUrl: `${(typeof window !== 'undefined' ? window.location.origin : 'https://trucway.com')}/blog`,
+        ogImage: `${getSiteOrigin()}/favicon.png`,
+        ogUrl: `${getSiteOrigin()}/blog`,
         ogType: 'website',
       }} />
       <PageHero

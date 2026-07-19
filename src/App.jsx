@@ -28,6 +28,7 @@ const CategoryDetail = lazy(() => import('./pages/Categories/CategoryDetail'));
 const SubcategoryDetail = lazy(() => import('./pages/Categories/SubcategoryDetail'));
 const PrivacyPolicy = lazy(() => import('./pages/Legal/PrivacyPolicy'));
 const CookiesPolicy = lazy(() => import('./pages/Legal/CookiesPolicy'));
+const NotFound = lazy(() => import('./pages/NotFound'));
 
 function AppRoutes() {
   return (
@@ -55,6 +56,7 @@ function AppRoutes() {
             <Route path="contact" element={<Contact />} />
             <Route path="privacy-policy" element={<PrivacyPolicy />} />
             <Route path="cookies-policy" element={<CookiesPolicy />} />
+            <Route path="*" element={<NotFound />} />
           </Route>
         </Route>
 

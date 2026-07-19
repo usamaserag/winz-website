@@ -18,9 +18,12 @@ const LocaleLayout = () => {
 
   if (!isValidLocale) {
     const preferred = getPreferredLanguage();
+    // Drop the invalid first segment (e.g. /xx/about → /about), then prefix preferred lang.
+    const rest = location.pathname.replace(/^\/[^/]+/, '') || '/';
+    const suffix = rest === '/' ? '' : rest;
     return (
       <Navigate
-        to={`/${preferred}${location.pathname}${location.search}${location.hash}`}
+        to={`/${preferred}${suffix}${location.search}${location.hash}`}
         replace
       />
     );

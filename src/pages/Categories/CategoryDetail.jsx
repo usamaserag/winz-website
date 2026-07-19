@@ -9,8 +9,8 @@ import { SEOMeta } from '../../components/common/SEOMeta';
 import PageHeroShell from '../../components/logistics/PageHeroShell';
 import PageLoader from '../../components/common/PageLoader';
 import ErrorState from '../../components/common/ErrorState';
+import { getSiteOrigin, resolveMediaUrl } from '../../lib/site';
 
-const API_BASE_URL = (import.meta.env.VITE_API_BASE_URL || '').replace(/\/$/, '');
 const clean = (str) => (str || '').trim().replace(/:+$/, '');
 
 export default function CategoryDetail() {
@@ -42,7 +42,7 @@ export default function CategoryDetail() {
   const description = category ? clean(category.content || '') : '';
   const relatedItems = category?.subcategories || [];
 
-  const canonicalUrl = category?.seo?.canonical_url || (category ? `${(typeof window !== 'undefined' ? window.location.origin : 'https://trucway.com')}/categories/${category.slug || slug}` : (typeof window !== 'undefined' ? window.location.href : 'https://trucway.com' + (typeof location !== 'undefined' ? location.pathname : '')));
+  const canonicalUrl = category?.seo?.canonical_url || (category ? `${getSiteOrigin()}/categories/${category.slug || slug}` : (typeof window !== 'undefined' ? window.location.href : 'https://winz.be' + (typeof location !== 'undefined' ? location.pathname : '')));
   const seoDescription = category?.seo?.description || (category
     ? (category.seoDescription || description || t('categories.seoDescription', { defaultValue: 'Explore our community category.' }))
     : t('meta.title'));
@@ -88,7 +88,7 @@ export default function CategoryDetail() {
         canonical: canonicalUrl,
         ogTitle: category?.seo?.title || category.seoOgTitle || title,
         ogDescription: seoDescription,
-        ogImage: category.image ? `${API_BASE_URL}${category.image}` : `${(typeof window !== 'undefined' ? window.location.origin : 'https://trucway.com')}/logo.png`,
+        ogImage: category.image ? resolveMediaUrl(category.image) : `${getSiteOrigin()}/favicon.png`,
         ogUrl: canonicalUrl,
         ogType: 'website',
       } : null} />
@@ -106,7 +106,7 @@ export default function CategoryDetail() {
             {category.image ? (
               <div className="w-24 h-24 rounded-2xl overflow-hidden backdrop-blur-sm border border-white/20 shadow-xl">
                 <img 
-                  src={`${API_BASE_URL}${category.image}`} 
+                  src={resolveMediaUrl(category.image)} 
                   alt={category.image_alt || title}
                   className="w-full h-full object-cover"
                 />
@@ -159,7 +159,7 @@ export default function CategoryDetail() {
                       {row.image && (
                         <div className="mb-4 aspect-[16/9] w-full overflow-hidden rounded-2xl bg-gray-100">
                           <img 
-                            src={`${API_BASE_URL}${row.image}`} 
+                            src={resolveMediaUrl(row.image)} 
                             alt={row.image_alt || itemTitle}
                             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                           />

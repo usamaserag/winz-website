@@ -12,6 +12,7 @@ import { SEOMeta } from '../../components/common/SEOMeta';
 import PageHeroShell from '../../components/logistics/PageHeroShell';
 import PageLoader from '../../components/common/PageLoader';
 import ErrorState from '../../components/common/ErrorState';
+import { getSiteOrigin, resolveMediaUrl } from '../../lib/site';
 
 const clean = (str) => (str || '').trim().replace(/:+$/, '');
 
@@ -44,7 +45,7 @@ export default function FAQDetail() {
   const answer = faq ? clean(faq.answer || faq.content || faq['content structurs']) : '';
   const keywords = faq ? clean(faq.keywords || faq.category || '') : '';
 
-  const canonicalUrl = faq?.seo?.canonical_url || (faq ? `${(typeof window !== 'undefined' ? window.location.origin : 'https://trucway.com')}/faq/${faq.slug || slug}` : (typeof window !== 'undefined' ? window.location.href : 'https://trucway.com' + (typeof location !== 'undefined' ? location.pathname : '')));
+  const canonicalUrl = faq?.seo?.canonical_url || (faq ? `${getSiteOrigin()}/faq/${faq.slug || slug}` : (typeof window !== 'undefined' ? window.location.href : 'https://winz.be' + (typeof location !== 'undefined' ? location.pathname : '')));
   const description = faq?.seo?.description || (faq
     ? (faq.description || t('seo.description'))
     : t('meta.title'));
@@ -68,8 +69,8 @@ export default function FAQDetail() {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: t('dynamicTemplates.breadcrumbs.home', { defaultValue: 'Home' }), item: (typeof window !== 'undefined' ? window.location.origin : 'https://trucway.com') },
-      { '@type': 'ListItem', position: 2, name: t('hero.title', { defaultValue: 'FAQ' }), item: `${(typeof window !== 'undefined' ? window.location.origin : 'https://trucway.com')}/faq` },
+      { '@type': 'ListItem', position: 1, name: t('dynamicTemplates.breadcrumbs.home', { defaultValue: 'Home' }), item: getSiteOrigin() },
+      { '@type': 'ListItem', position: 2, name: t('hero.title', { defaultValue: 'FAQ' }), item: `${getSiteOrigin()}/faq` },
       { '@type': 'ListItem', position: 3, name: question, item: canonicalUrl },
     ],
   } : null;
@@ -116,7 +117,7 @@ export default function FAQDetail() {
         canonical: canonicalUrl,
         ogTitle: faq?.seo?.title || faq.seoOgTitle || question,
         ogDescription: description,
-        ogImage: faq.image || `${(typeof window !== 'undefined' ? window.location.origin : 'https://trucway.com')}/logo.png`,
+        ogImage: resolveMediaUrl(faq.image),
         ogUrl: canonicalUrl,
         ogType: 'article',
         twitterCard: 'summary_large_image',

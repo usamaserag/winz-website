@@ -1,4 +1,6 @@
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || '';
+import { getApiBaseUrl } from '../lib/site';
+
+const API_BASE_URL = getApiBaseUrl();
 
 const getHeaders = (lang) => {
   const headers = {

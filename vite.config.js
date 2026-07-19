@@ -1,24 +1,7 @@
+/* global process */
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import { visualizer } from 'rollup-plugin-visualizer';
-import { fileURLToPath } from 'node:url';
-import { dirname } from 'node:path';
-
-const __dirname = dirname(fileURLToPath(import.meta.url));
-
-function csvPlugin() {
-  return {
-    name: 'vite-plugin-csv-to-string',
-    transform(code, id) {
-      if (id.endsWith('.csv')) {
-        return {
-          code: `export default ${JSON.stringify(code)};`,
-          map: null,
-        };
-      }
-    },
-  };
-}
 
 /** Inject preload hints for LCP-critical assets and JS chunks. */
 function preloadAssetsPlugin() {
@@ -56,7 +39,12 @@ function preloadAssetsPlugin() {
 
 function manualChunks(id) {
   if (!id.includes('node_modules')) return undefined;
-  if (id.includes('react-dom') || id.includes('react-router') || id.includes('/react/')) {
+  if (
+    id.includes('react-dom') ||
+    id.includes('react-router') ||
+    id.includes('/scheduler') ||
+    /node_modules\/react\//.test(id)
+  ) {
     return 'vendor-react';
   }
   if (id.includes('framer-motion')) return 'vendor-motion';
@@ -65,15 +53,14 @@ function manualChunks(id) {
   return 'vendor-misc';
 }
 
-export default defineConfig(({ isSsrBuild }) => ({
+export default defineConfig({
   base: '/',
   plugins: [
     react(),
-    csvPlugin(),
     preloadAssetsPlugin(),
     process.env.ANALYZE === 'true' &&
       visualizer({
-        filename: 'dist/bundle-stats.html',
+        filename: 'dist/client/bundle-stats.html',
         gzipSize: true,
         brotliSize: true,
         open: false,
@@ -86,10 +73,10 @@ export default defineConfig(({ isSsrBuild }) => ({
     minify: 'esbuild',
     rollupOptions: {
       output: {
-        manualChunks: isSsrBuild ? undefined : manualChunks,
-        chunkFileNames: isSsrBuild ? '[name].js' : 'assets/[name]-[hash].js',
-        entryFileNames: isSsrBuild ? '[name].js' : 'assets/[name]-[hash].js',
-        assetFileNames: isSsrBuild ? '[name][extname]' : 'assets/[name]-[hash][extname]',
+        manualChunks,
+        chunkFileNames: 'assets/[name]-[hash].js',
+        entryFileNames: 'assets/[name]-[hash].js',
+        assetFileNames: 'assets/[name]-[hash][extname]',
       },
     },
     chunkSizeWarningLimit: 400,
@@ -97,4 +84,4 @@ export default defineConfig(({ isSsrBuild }) => ({
   esbuild: {
     legalComments: 'none',
   },
-}));
+});

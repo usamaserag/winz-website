@@ -12,8 +12,6 @@ const DARK_HERO_EXACT = new Set([
   '/transit',
   '/transport',
   '/warehouse',
-  '/tracking',
-  '/resources',
   '/categories',
 ]);
 

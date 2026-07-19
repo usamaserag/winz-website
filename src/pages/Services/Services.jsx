@@ -29,15 +29,14 @@ const serviceColors = [
 ];
 
 const processIcons = [
-  <ClipboardList  className="w-6 h-6 text-white" />,
-  <CalendarCheck  className="w-6 h-6 text-white" />,
-  <Radio          className="w-6 h-6 text-white" />,
-  <ShieldCheck    className="w-6 h-6 text-white" />,
+  ClipboardList,
+  CalendarCheck,
+  Radio,
+  ShieldCheck,
 ];
 
 const Services = () => {
-  const { t, i18n } = useTranslation(['services', 'common']);
-  const isRTL = i18n.language === 'ar';
+  const { t } = useTranslation(['services', 'common']);
   usePageTitle(t('common:nav.services'));
 
   const serviceKeys = ['local', 'international', 'express', 'warehousing', 'customs', 'supply'];
@@ -60,7 +59,7 @@ const Services = () => {
           className="inline-flex items-center gap-2 bg-primary-500 hover:bg-primary-600 text-white font-semibold px-8 py-3.5 rounded-lg transition-colors"
         >
           {t('common:buttons.getQuote')}
-          <ArrowRight className={`w-5 h-5 ${isRTL ? 'rotate-180' : ''}`} />
+          <ArrowRight className="w-5 h-5" />
         </Link>
       </PageHero>
 
@@ -125,7 +124,9 @@ const Services = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 relative">
             <motion.div className="hidden lg:block absolute top-8 left-[12.5%] right-[12.5%] h-0.5 bg-primary-100 z-0" />
 
-            {processKeys.map((key, i) => (
+            {processKeys.map((key, i) => {
+              const ProcessIcon = processIcons[i];
+              return (
               <motion.div
                 key={key}
                 initial="hidden" whileInView="visible" viewport={{ once: true }}
@@ -135,7 +136,7 @@ const Services = () => {
               >
                 <div className="flex justify-center mb-6">
                   <div className="w-16 h-16 rounded-full bg-primary-500 flex items-center justify-center ring-4 ring-white shadow-sm">
-                    {processIcons[i]}
+                    <ProcessIcon className="w-6 h-6 text-white" />
                   </div>
                 </div>
                 <div className="bg-slate-50 rounded-xl p-6 border border-slate-200">
@@ -150,7 +151,8 @@ const Services = () => {
                   </p>
                 </div>
               </motion.div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>

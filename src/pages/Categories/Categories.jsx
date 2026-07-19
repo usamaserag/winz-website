@@ -10,6 +10,7 @@ import PageHero from '../../components/logistics/PageHero';
 import SkeletonCard from '../../components/common/SkeletonCard';
 import EmptyState from '../../components/common/EmptyState';
 import ErrorState from '../../components/common/ErrorState';
+import { getSiteOrigin } from '../../lib/site';
 
 const API_BASE_URL = (import.meta.env.VITE_API_BASE_URL || '').replace(/\/$/, '');
 const clean = (str) => (str || '').trim().replace(/:+$/, '');
@@ -56,11 +57,11 @@ export default function Categories() {
       <SEOMeta meta={{
     title: t('nav.categories', { defaultValue: 'Categories - Community' }),
     description: t('categories.seoDescription', { defaultValue: 'Explore our community categories for the latest blogs, guides, and FAQs.' }),
-    canonical: `${(typeof window !== 'undefined' ? window.location.origin : 'https://trucway.com')}/categories`,
+    canonical: `${getSiteOrigin()}/categories`,
     ogTitle: t('nav.categories', { defaultValue: 'Categories' }),
     ogDescription: t('categories.seoDescription', { defaultValue: 'Explore our community categories.' }),
-    ogImage: `${(typeof window !== 'undefined' ? window.location.origin : 'https://trucway.com')}/logo.png`,
-    ogUrl: `${(typeof window !== 'undefined' ? window.location.origin : 'https://trucway.com')}/categories`,
+    ogImage: `${getSiteOrigin()}/favicon.png`,
+    ogUrl: `${getSiteOrigin()}/categories`,
     ogType: 'website',
   }} />
 {loading && (

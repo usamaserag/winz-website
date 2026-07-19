@@ -9,8 +9,8 @@ import { SEOMeta } from '../../components/common/SEOMeta';
 import PageHeroShell from '../../components/logistics/PageHeroShell';
 import PageLoader from '../../components/common/PageLoader';
 import ErrorState from '../../components/common/ErrorState';
+import { getSiteOrigin, resolveMediaUrl } from '../../lib/site';
 
-const API_BASE_URL = (import.meta.env.VITE_API_BASE_URL || '').replace(/\/$/, '');
 const clean = (str) => (str || '').trim().replace(/:+$/, '');
 
 export default function SubcategoryDetail() {
@@ -42,7 +42,7 @@ export default function SubcategoryDetail() {
   const description = subcategory ? clean(subcategory.content || '') : '';
   const relatedItems = subcategory?.blogs || subcategory?.items || [];
 
-  const canonicalUrl = subcategory?.seo?.canonical_url || (subcategory ? `${(typeof window !== 'undefined' ? window.location.origin : 'https://trucway.com')}/subcategories/${subcategory.slug || slug}` : (typeof window !== 'undefined' ? window.location.href : 'https://trucway.com' + (typeof location !== 'undefined' ? location.pathname : '')));
+  const canonicalUrl = subcategory?.seo?.canonical_url || (subcategory ? `${getSiteOrigin()}/subcategories/${subcategory.slug || slug}` : (typeof window !== 'undefined' ? window.location.href : 'https://winz.be' + (typeof location !== 'undefined' ? location.pathname : '')));
   const seoDescription = subcategory?.seo?.description || (subcategory
     ? (subcategory.seoDescription || description || t('categories.seoDescription', { defaultValue: 'Explore our community subcategory.' }))
     : t('meta.title'));
@@ -88,7 +88,7 @@ export default function SubcategoryDetail() {
         canonical: canonicalUrl,
         ogTitle: subcategory?.seo?.title || subcategory.seoOgTitle || title,
         ogDescription: seoDescription,
-        ogImage: subcategory.image ? `${API_BASE_URL}${subcategory.image}` : `${(typeof window !== 'undefined' ? window.location.origin : 'https://trucway.com')}/logo.png`,
+        ogImage: subcategory.image ? resolveMediaUrl(subcategory.image) : `${getSiteOrigin()}/favicon.png`,
         ogUrl: canonicalUrl,
         ogType: 'website',
       } : null} />
@@ -106,7 +106,7 @@ export default function SubcategoryDetail() {
             {subcategory.image ? (
               <div className="w-24 h-24 rounded-2xl overflow-hidden backdrop-blur-sm border border-white/20 shadow-xl">
                 <img 
-                  src={`${API_BASE_URL}${subcategory.image}`} 
+                  src={resolveMediaUrl(subcategory.image)} 
                   alt={subcategory.image_alt || title}
                   className="w-full h-full object-cover"
                 />
@@ -166,7 +166,7 @@ export default function SubcategoryDetail() {
                       {row.image && (
                         <div className="mb-4 aspect-[16/9] w-full overflow-hidden rounded-2xl bg-gray-100">
                           <img 
-                            src={`${API_BASE_URL}${row.image}`} 
+                            src={resolveMediaUrl(row.image)} 
                             alt={row.image_alt || itemTitle}
                             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                           />

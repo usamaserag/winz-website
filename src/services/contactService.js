@@ -1,8 +1,7 @@
 import { getResponseMessage } from '../lib/apiMessage';
+import { getApiBaseUrl } from '../lib/site';
 
-const API_BASE_URL = (
-  import.meta.env.VITE_API_BASE_URL || ''
-).replace(/\/$/, '');
+const API_BASE_URL = getApiBaseUrl();
 
 const CONTACT_US_URL = `${API_BASE_URL}/api/contact-us/`;
 

@@ -9,6 +9,7 @@ import usePageTitle from '../../hooks/usePageTitle';
 import PageHero from '../../components/logistics/PageHero';
 import EmptyState from '../../components/common/EmptyState';
 import ErrorState from '../../components/common/ErrorState';
+import { getSiteOrigin } from '../../lib/site';
 
 const clean = (str) => (str || '').trim().replace(/:+$/, '');
 const isUrl = (str) => typeof str === 'string' && str.trim().startsWith('http');
@@ -119,11 +120,11 @@ export default function FAQ() {
         title: t('meta.title'),
         description: t('seo.description'),
         keywords: 'customs faq, import documents, export clearance belgium, transit customs europe, customs process rotterdam',
-        canonical: `${(typeof window !== 'undefined' ? window.location.origin : 'https://trucway.com')}/faq`,
+        canonical: `${getSiteOrigin()}/faq`,
         ogTitle: t('seo.ogTitle'),
         ogDescription: t('seo.ogDescription'),
-        ogImage: `${(typeof window !== 'undefined' ? window.location.origin : 'https://trucway.com')}/logo.png`,
-        ogUrl: `${(typeof window !== 'undefined' ? window.location.origin : 'https://trucway.com')}/faq`,
+        ogImage: `${getSiteOrigin()}/favicon.png`,
+        ogUrl: `${getSiteOrigin()}/faq`,
         ogType: 'website',
         faqSchema,
       }} />

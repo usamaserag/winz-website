@@ -8,8 +8,7 @@ import './fonts.css';
 import './index.css';
 import './translations/i18n';
 
-const container = document.getElementById('root');
-const app = (
+ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <HelmetProvider>
       <BrowserRouter>
@@ -20,10 +19,3 @@ const app = (
     </HelmetProvider>
   </React.StrictMode>
 );
-
-// Hydrate only when SSR markup exists; on static hosts (Netlify/Vercel) render from scratch.
-if (container.firstElementChild) {
-  ReactDOM.hydrateRoot(container, app);
-} else {
-  ReactDOM.createRoot(container).render(app);
-}
