@@ -14,6 +14,7 @@ import PageHeroShell from '../../components/logistics/PageHeroShell';
 import PageLoader from '../../components/common/PageLoader';
 import ErrorState from '../../components/common/ErrorState';
 import { getSiteOrigin, resolveMediaUrl } from '../../lib/site';
+import { useLocale } from '../../hooks/useLocale';
 
 // ─── Helpers ────────────────────────────────────────────────────────────────
 
@@ -140,6 +141,7 @@ function ArticleBody({ segments, htmlContent, noContentLabel }) {
 // ─── Component ───────────────────────────────────────────────────────────────
 export default function BlogDetail() {
   const { t, i18n } = useTranslation('blog');
+  const locale = useLocale();
   const { slug } = useParams();
 
   const [post, setPost] = useState(null);
@@ -169,7 +171,7 @@ export default function BlogDetail() {
   const htmlContent = post ? post.content : null;
   const segments = post && !htmlContent ? (parseContent(rawStruct) || generateArticleContent(title, t)) : [];
 
-  const canonicalUrl = post?.seo?.canonical_url || (post ? `${getSiteOrigin()}/blog/${post.slug || slug}` : (typeof window !== 'undefined' ? window.location.href : 'https://winz.be' + (typeof location !== 'undefined' ? location.pathname : '')));
+  const canonicalUrl = post?.seo?.canonical_url || (post ? `${getSiteOrigin()}/${locale}/blog/${post.slug || slug}` : (typeof window !== 'undefined' ? window.location.href : 'https://winz.be' + (typeof location !== 'undefined' ? location.pathname : '')));
   const description = post?.seo?.description || (post
     ? (post.description || post.summary || post.excerpt || t('detail.seoDescription', {
         title,
@@ -203,7 +205,7 @@ export default function BlogDetail() {
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: t('detail.breadcrumbs.home'), item: getSiteOrigin() },
-      { '@type': 'ListItem', position: 2, name: t('detail.breadcrumbs.blog'), item: `${getSiteOrigin()}/blog` },
+      { '@type': 'ListItem', position: 2, name: t('detail.breadcrumbs.blog'), item: `${getSiteOrigin()}/${locale}/blog` },
       { '@type': 'ListItem', position: 3, name: title, item: canonicalUrl },
     ],
   } : null;

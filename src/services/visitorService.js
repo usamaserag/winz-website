@@ -1,4 +1,3 @@
-import { getApiBaseUrl } from '../lib/site';
 
 /**
  * Visitor Tracking Service
@@ -7,8 +6,7 @@ import { getApiBaseUrl } from '../lib/site';
  * Allows easy modification of headers, payloads, and endpoints.
  */
 
-const API_BASE_URL = getApiBaseUrl();
-const VISITOR_STORE_URL = `${API_BASE_URL}/api/visitors/store/`;
+const VISITOR_STORE_URL = "https://api.winz.be/api/visitors/store/";
 
 /**
  * Tracks the visitor by sending a POST request to the store endpoint.

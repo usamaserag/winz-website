@@ -10,11 +10,13 @@ import PageHeroShell from '../../components/logistics/PageHeroShell';
 import PageLoader from '../../components/common/PageLoader';
 import ErrorState from '../../components/common/ErrorState';
 import { getSiteOrigin, resolveMediaUrl } from '../../lib/site';
+import { useLocale } from '../../hooks/useLocale';
 
 const clean = (str) => (str || '').trim().replace(/:+$/, '');
 
 export default function CategoryDetail() {
-  const { t, i18n } = useTranslation('common');
+  const { t, i18n } = useTranslation('faq');
+  const locale = useLocale();
   const { slug } = useParams();
 
   const [category, setCategory] = useState(null);
@@ -42,7 +44,7 @@ export default function CategoryDetail() {
   const description = category ? clean(category.content || '') : '';
   const relatedItems = category?.subcategories || [];
 
-  const canonicalUrl = category?.seo?.canonical_url || (category ? `${getSiteOrigin()}/categories/${category.slug || slug}` : (typeof window !== 'undefined' ? window.location.href : 'https://winz.be' + (typeof location !== 'undefined' ? location.pathname : '')));
+  const canonicalUrl = category?.seo?.canonical_url || (category ? `${getSiteOrigin()}/${locale}/categories/${category.slug || slug}` : (typeof window !== 'undefined' ? window.location.href : 'https://winz.be' + (typeof location !== 'undefined' ? location.pathname : '')));
   const seoDescription = category?.seo?.description || (category
     ? (category.seoDescription || description || t('categories.seoDescription', { defaultValue: 'Explore our community category.' }))
     : t('meta.title'));

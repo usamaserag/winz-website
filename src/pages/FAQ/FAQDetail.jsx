@@ -13,11 +13,13 @@ import PageHeroShell from '../../components/logistics/PageHeroShell';
 import PageLoader from '../../components/common/PageLoader';
 import ErrorState from '../../components/common/ErrorState';
 import { getSiteOrigin, resolveMediaUrl } from '../../lib/site';
+import { useLocale } from '../../hooks/useLocale';
 
 const clean = (str) => (str || '').trim().replace(/:+$/, '');
 
 export default function FAQDetail() {
   const { t, i18n } = useTranslation('faq');
+  const locale = useLocale();
   const { slug } = useParams();
 
   const [faq, setFaq] = useState(null);
@@ -45,7 +47,7 @@ export default function FAQDetail() {
   const answer = faq ? clean(faq.answer || faq.content || faq['content structurs']) : '';
   const keywords = faq ? clean(faq.keywords || faq.category || '') : '';
 
-  const canonicalUrl = faq?.seo?.canonical_url || (faq ? `${getSiteOrigin()}/faq/${faq.slug || slug}` : (typeof window !== 'undefined' ? window.location.href : 'https://winz.be' + (typeof location !== 'undefined' ? location.pathname : '')));
+  const canonicalUrl = faq?.seo?.canonical_url || (faq ? `${getSiteOrigin()}/${locale}/faq/${faq.slug || slug}` : (typeof window !== 'undefined' ? window.location.href : 'https://winz.be' + (typeof location !== 'undefined' ? location.pathname : '')));
   const description = faq?.seo?.description || (faq
     ? (faq.description || t('seo.description'))
     : t('meta.title'));
@@ -70,7 +72,7 @@ export default function FAQDetail() {
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: t('dynamicTemplates.breadcrumbs.home', { defaultValue: 'Home' }), item: getSiteOrigin() },
-      { '@type': 'ListItem', position: 2, name: t('hero.title', { defaultValue: 'FAQ' }), item: `${getSiteOrigin()}/faq` },
+      { '@type': 'ListItem', position: 2, name: t('hero.title', { defaultValue: 'FAQ' }), item: `${getSiteOrigin()}/${locale}/faq` },
       { '@type': 'ListItem', position: 3, name: question, item: canonicalUrl },
     ],
   } : null;

@@ -11,6 +11,7 @@ import SkeletonCard from '../../components/common/SkeletonCard';
 import EmptyState from '../../components/common/EmptyState';
 import ErrorState from '../../components/common/ErrorState';
 import { getSiteOrigin } from '../../lib/site';
+import { useLocale } from '../../hooks/useLocale';
 
 const clean = (str) => (str || '').trim().replace(/:+$/, '');
 const isUrl = (str) => typeof str === 'string' && str.trim().startsWith('http');
@@ -39,6 +40,7 @@ const API_BASE_URL = (import.meta.env.VITE_API_BASE_URL || '').replace(/\/$/, ''
 export default function Blog() {
   const { t, i18n } = useTranslation('blog');
   usePageTitle(t('blog:meta.title'));
+  const locale = useLocale();
   const [searchTerm, setSearchTerm] = useState('');
 
   const [blogs, setBlogs] = useState([]);
@@ -81,11 +83,11 @@ export default function Blog() {
         title: t('meta.title'),
         description: t('seo.description'),
         keywords: 'customs clearance blog, import logistics europe, container transport belgium, fiscal representation netherlands',
-        canonical: `${getSiteOrigin()}/blog`,
+        canonical: `${getSiteOrigin()}/${locale}/blog`,
         ogTitle: t('seo.ogTitle'),
         ogDescription: t('seo.ogDescription'),
         ogImage: `${getSiteOrigin()}/favicon.png`,
-        ogUrl: `${getSiteOrigin()}/blog`,
+        ogUrl: `${getSiteOrigin()}/${locale}/blog`,
         ogType: 'website',
       }} />
       <PageHero

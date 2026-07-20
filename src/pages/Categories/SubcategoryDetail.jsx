@@ -10,11 +10,13 @@ import PageHeroShell from '../../components/logistics/PageHeroShell';
 import PageLoader from '../../components/common/PageLoader';
 import ErrorState from '../../components/common/ErrorState';
 import { getSiteOrigin, resolveMediaUrl } from '../../lib/site';
+import { useLocale } from '../../hooks/useLocale';
 
 const clean = (str) => (str || '').trim().replace(/:+$/, '');
 
 export default function SubcategoryDetail() {
-  const { t, i18n } = useTranslation('common');
+  const { t, i18n } = useTranslation('faq');
+  const locale = useLocale();
   const { slug } = useParams();
 
   const [subcategory, setSubcategory] = useState(null);
@@ -42,7 +44,7 @@ export default function SubcategoryDetail() {
   const description = subcategory ? clean(subcategory.content || '') : '';
   const relatedItems = subcategory?.blogs || subcategory?.items || [];
 
-  const canonicalUrl = subcategory?.seo?.canonical_url || (subcategory ? `${getSiteOrigin()}/subcategories/${subcategory.slug || slug}` : (typeof window !== 'undefined' ? window.location.href : 'https://winz.be' + (typeof location !== 'undefined' ? location.pathname : '')));
+  const canonicalUrl = subcategory?.seo?.canonical_url || (subcategory ? `${getSiteOrigin()}/${locale}/subcategories/${subcategory.slug || slug}` : (typeof window !== 'undefined' ? window.location.href : 'https://winz.be' + (typeof location !== 'undefined' ? location.pathname : '')));
   const seoDescription = subcategory?.seo?.description || (subcategory
     ? (subcategory.seoDescription || description || t('categories.seoDescription', { defaultValue: 'Explore our community subcategory.' }))
     : t('meta.title'));
@@ -97,7 +99,9 @@ export default function SubcategoryDetail() {
           <nav className="flex items-center justify-center gap-2 text-xs text-white/60 mb-6" aria-label="Breadcrumb">
             <Link to="/" className="hover:text-white transition-colors">Home</Link>
             <ChevronRight className="w-3 h-3 opacity-50" />
-            <Link to="/categories" className="hover:text-white transition-colors">{t('nav.categories', { defaultValue: 'Categories' })}</Link>
+            <Link to="/categories" className="hover:text-white transition-colors">
+              {t('nav.categories', { defaultValue: 'Categories' })}
+            </Link>
             <ChevronRight className="w-3 h-3 opacity-50" />
             <span className="text-white/80 line-clamp-1 max-w-[200px]">{title}</span>
           </nav>

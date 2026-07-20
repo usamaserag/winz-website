@@ -10,6 +10,7 @@ import PageHero from '../../components/logistics/PageHero';
 import EmptyState from '../../components/common/EmptyState';
 import ErrorState from '../../components/common/ErrorState';
 import { getSiteOrigin } from '../../lib/site';
+import { useLocale } from '../../hooks/useLocale';
 
 const clean = (str) => (str || '').trim().replace(/:+$/, '');
 const isUrl = (str) => typeof str === 'string' && str.trim().startsWith('http');
@@ -17,6 +18,7 @@ const isUrl = (str) => typeof str === 'string' && str.trim().startsWith('http');
 export default function FAQ() {
   const { t, i18n } = useTranslation('faq');
   usePageTitle(t('faq:meta.title'));
+  const locale = useLocale();
 
   const [searchTerm, setSearchTerm] = useState('');
   const [expandedIndex, setExpandedIndex] = useState(null);
@@ -120,11 +122,11 @@ export default function FAQ() {
         title: t('meta.title'),
         description: t('seo.description'),
         keywords: 'customs faq, import documents, export clearance belgium, transit customs europe, customs process rotterdam',
-        canonical: `${getSiteOrigin()}/faq`,
+        canonical: `${getSiteOrigin()}/${locale}/faq`,
         ogTitle: t('seo.ogTitle'),
         ogDescription: t('seo.ogDescription'),
         ogImage: `${getSiteOrigin()}/favicon.png`,
-        ogUrl: `${getSiteOrigin()}/faq`,
+        ogUrl: `${getSiteOrigin()}/${locale}/faq`,
         ogType: 'website',
         faqSchema,
       }} />
