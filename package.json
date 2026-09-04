@@ -8,7 +8,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "node scripts/optimize-images.mjs && vite build --outDir dist/client",
+    "build": "node scripts/optimize-images.mjs && vite build --outDir dist/client && node scripts/seo-build.mjs",
     "build:client": "npm run build",
     "build:analyze": "ANALYZE=true npm run build",
     "lighthouse": "node scripts/lighthouse-audit.mjs",

@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
 
+# Do not crawl internal search results or tracking parameters if they exist
+Disallow: /*?q=*
+Disallow: /*?search=*
+
 Sitemap: https://winz.be/sitemap.xml

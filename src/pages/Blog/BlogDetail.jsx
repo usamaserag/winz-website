@@ -333,12 +333,15 @@ export default function BlogDetail() {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.35 }}
-            className="mb-8 overflow-hidden rounded-3xl shadow-sm border border-gray-100 bg-white"
+            className="mb-8 overflow-hidden rounded-3xl shadow-sm border border-gray-100 bg-white aspect-[16/9]"
           >
             <img 
               src={resolveMediaUrl(post.image)} 
               alt={post.image_alt || title}
-              className="w-full h-auto max-h-[500px] object-cover"
+              width="1200"
+              height="675"
+              loading="eager"
+              className="w-full h-full object-cover"
             />
           </motion.div>
         )}
