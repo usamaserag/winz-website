@@ -1,15 +1,15 @@
 import { lazy, Suspense } from 'react';
 import { Link } from '../routing';
 import { useTranslation } from 'react-i18next';
-import { ArrowRight, Truck, MapPin, ShieldCheck } from 'lucide-react';
+import { ArrowRight, Award, Globe, MapPin } from 'lucide-react';
 import LogisticsGridPattern from './LogisticsGridPattern';
 
 const EuropeRouteMap = lazy(() => import('./EuropeRouteMap'));
 
 const HIGHLIGHT_KEYS = [
-  { key: 'haulage', Icon: Truck },
+  { key: 'expertise', Icon: Award },
+  { key: 'countries', Icon: Globe },
   { key: 'ports', Icon: MapPin },
-  { key: 'compliance', Icon: ShieldCheck },
 ];
 
 const HomeHero = () => {

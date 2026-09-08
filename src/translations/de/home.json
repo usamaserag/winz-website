@@ -1,101 +1,140 @@
 {
   "meta": {
-    "title": "Startseite"
+    "title": "EU-Zollabfertigung Belgien — WINZ Logistics",
+    "description": "WINZ übernimmt Import, Export, Transit und Zolllagerung in den Häfen von Antwerpen, Rotterdam und am Flughafen Brüssel. Über 50 Länder. Angebot anfordern."
   },
   "hero": {
     "badge": "Europäische Logistik & Zoll",
-    "titlePrefix": "Vertrauenspartner für",
-    "titleHighlight": "grenzüberschreitende Fracht",
-    "description": "14 Jahre Zollabfertigung, Containertransport und Lagerung in Europa — entwickelt für Geschwindigkeit, Compliance und Zuverlässigkeit.",
+    "titlePrefix": "EU-Zollabfertigung",
+    "titleHighlight": "Belgien",
+    "description": "14 Jahre Erfahrung in Zollabfertigung, Containertransport und Lagerung in ganz Europa — für Geschwindigkeit, Compliance und Zuverlässigkeit.",
     "ctaPrimary": "Angebot anfordern",
-    "ctaSecondary": "Unsere Leistungen",
+    "ctaSecondary": "Unsere Dienstleistungen",
     "highlights": {
-      "haulage": {
-        "label": "Inlandtransport",
-        "value": "EU-weit"
+      "expertise": {
+        "label": "14+ Jahre",
+        "value": "EU-Zollexpertise"
+      },
+      "countries": {
+        "label": "50+",
+        "value": "Herkunftsländer"
       },
       "ports": {
-        "label": "Hafenabdeckung",
-        "value": "Alle großen Häfen"
-      },
-      "compliance": {
-        "label": "Compliance",
-        "value": "100 % EU"
+        "label": "Alle",
+        "value": "Europäischen Häfen"
       }
     }
   },
-  "stats": {
-    "experience": "Jahre Erfahrung",
-    "compliance": "EU-Compliance",
-    "ports": "Europäische Häfen"
-  },
   "aboutPreview": {
     "badge": "Wer wir sind",
-    "title": "Winz Logistics — Ihr vertrauenswürdiger europäischer Zollpartner",
-    "description": "Für den europäischen Markt verbinden wir globale Lieferanten mit der EU. Mit über 14 Jahren Erfahrung übernehmen wir alle Zollformalitäten in jedem europäischen Seehafen und Grenzübergang — damit Sie sich auf Ihr Kerngeschäft konzentrieren können.",
+    "title": "WINZ Logistics — EU-Zollagent mit Sitz in Belgien",
+    "description1": "Mit Sitz in Zele unterstützt WINZ Logistics Importeure, Exporteure und Spediteure bei der EU-Zollabfertigung, gestützt auf über 14 Jahre Erfahrung. Wir erledigen Zollformalitäten für Sendungen, die auf dem See-, Luft- und Landweg ankommen — unter anderem über Antwerpen, Rotterdam und den Flughafen Brüssel.",
+    "description2": "Unser Team übernimmt die HS-Code-Klassifizierung, die Einreichung von Erklärungen sowie die Berechnung von Zöllen und Mehrwertsteuer und koordiniert den Abfertigungsprozess bis zur Freigabe der Fracht. Wir helfen Unternehmen bei der Erstellung korrekter Dokumente und der Einhaltung von Compliance-Anforderungen, um vermeidbare Verzögerungen zu reduzieren.",
     "cta": "Unsere Geschichte entdecken"
   },
-  "services": {
-    "badge": "Unsere Leistungen",
-    "title": "Jeder Schritt auf dem Weg Ihrer Fracht",
-    "description": "Von der Zollabfertigung über den Inlandtransport bis zur sicheren Lagerung — wir steuern jede Phase, damit Ihre Lieferkette nie stockt.",
-    "cards": {
-      "import": {
-        "title": "Import",
-        "badge": "Zollabfertigung",
-        "desc": "Nahtlose Importzollabfertigung in allen europäischen Seehäfen und Grenzübergängen — vollständig konform und vollständig betreut."
-      },
-      "export": {
-        "title": "Export",
-        "badge": "Zollabfertigung",
-        "desc": "Dual-Use-Kontrollen, präferenzielle Ursprünge und MwSt.-Ausfuhrnachweise mit professioneller Exportabfertigung meistern."
-      },
-      "transit": {
-        "title": "Transit",
-        "badge": "Zollabfertigung",
-        "desc": "Ununterbrochene grenzüberschreitende Bewegung mit T1/T2-Erklärungen und NCTS-Digitalanmeldung von Anfang bis Ende."
-      },
-      "transport": {
-        "title": "Transport",
-        "badge": "Inlandlogistik",
-        "desc": "Containertransport für 20-, 40- und 45-Fuß-Container — vom Hafenterminal bis vor Ihre Tür."
-      },
-      "warehouse": {
-        "title": "Lager",
-        "badge": "Lagerung & Mehrwertdienste",
-        "desc": "Zollager, Kurz- und Langzeitlagerung, Pick-and-Pack, Palettierung und Zollstundung — alles aus einer Hand."
-      }
-    },
-    "cta": "Mehr erfahren"
-  },
   "whyChoose": {
-    "badge": "Warum uns wählen",
+    "badge": "Warum wir",
     "title": "Warum Unternehmen Winz Logistics vertrauen",
     "pillars": {
       "expertise": {
-        "title": "Über 14 Jahre Expertise",
-        "desc": "Tiefes Wissen über EU-Zollgesetzgebung und grenzüberschreitende Verfahren."
+        "title": "Über 14 Jahre EU-Zollexpertise",
+        "desc": "Verwaltung von Zollabfertigung und grenzüberschreitender Compliance in allen 27 EU-Mitgliedstaaten seit über 14 Jahren."
       },
       "compliance": {
-        "title": "Volle Compliance garantiert",
-        "desc": "Jede Sendung wird nach höchsten regulatorischen Standards bearbeitet — ohne Ausnahme."
+        "title": "100% EU-Compliance garantiert",
+        "desc": "Jede Anmeldung erfüllt die vollständigen EU-Vorschriften. Null-Toleranz bei Dokumentenfehlern. Keine Ausnahmen."
       },
       "network": {
         "title": "Paneuropäisches Netzwerk",
-        "desc": "Das umfangreichste neutrale Zollnetzwerk der Region an jedem Hafen und Grenzübergang."
+        "desc": "Alle wichtigen EU-Seehäfen und belgischen Grenzübergänge abgedeckt — Antwerpen, Rotterdam, Hamburg und Flughafen Brüssel."
       },
       "cargo": {
         "title": "Alle Frachtarten",
-        "desc": "Von verderblichen Lebensmitteln bis zu allgemeiner Ware und übergroßer Fracht."
+        "desc": "Stückgut, verderbliche Waren, Kühlcontainer, Straßenfracht, Luftfracht, FCL und LCL — alles gemanagt."
       },
       "solutions": {
-        "title": "End-to-End-Lösungen",
-        "desc": "Zollabfertigung, Transport und Lagerung — vollständig integriert bei einem Partner."
+        "title": "End-to-End Lösungen",
+        "desc": "Zollabfertigung, Transport und Lagerung — vollständig unter einem Partner integriert."
       },
       "team": {
         "title": "Dedizierte Spezialisten",
         "desc": "Ein Team von Zollexperten, das Ihr Konto persönlich betreut."
       }
     }
+  },
+  "services": {
+    "badge": "Unsere Dienstleistungen",
+    "title": "EU-Zolldienstleistungen",
+    "description": "WINZ steuert die gesamte Zoll-Compliance-Kette für Fracht, die in Belgien ankommt und dieses verlässt — von der Vorabanmeldung über die Zahlung der Zölle bis hin zur Freigabe der Fracht und der Lieferung im Inland.",
+    "cards": {
+      "import": {
+        "title": "Importabfertigung",
+        "badge": "Zollabfertigung",
+        "desc": "Wir erledigen in Ihrem Auftrag alle Einfuhrzollformalitäten — Abgabe der Zollanmeldung, HS-Code-Klassifizierung, Berechnung von Zöllen und Mehrwertsteuer sowie Frachtfreigabe. Jede Sendung wird präzise und pünktlich bearbeitet, während ein dedizierter Spezialist Ihr Konto durchgehend betreut."
+      },
+      "export": {
+        "title": "Exportabfertigung",
+        "badge": "Zollabfertigung",
+        "desc": "Wir kümmern uns um den gesamten Exportanmeldeprozess, einschließlich AES-Anmeldung, EUR.1-Präferenzursprungszeugnissen, Kontrollen von Dual-Use-Gütern und Compliance für den Mehrwertsteuer-Ausgangsnachweis. Ihre Fracht verlässt Belgien jedes Mal mit vollständigen und korrekten Dokumenten."
+      },
+      "transit": {
+        "title": "Transitabfertigung",
+        "badge": "Zollabfertigung",
+        "desc": "T1- und T2-Transitanmeldungen, digitale NCTS-Einreichung und Abdeckung von Garantieeinrichtungen für grenzüberschreitende Bewegungen in den EU-Mitgliedstaaten — alles im Rahmen einer Servicevereinbarung. Ihre Fracht bewegt sich ohne Verzögerungen an jedem Grenzübergang."
+      },
+      "transport": {
+        "title": "Containertransport",
+        "badge": "Binnenlogistik",
+        "desc": "Inlandstransport nach der Abfertigung für 20-Fuß-, 40-Fuß- und High-Cube-Container vom Hafenterminal zur endgültigen Lieferadresse. Der Transport wird direkt parallel zum Abfertigungsprozess organisiert — sowohl als Kühl- als auch als Trockenfracht möglich."
+      },
+      "warehouse": {
+        "title": "Zolllager",
+        "badge": "Lagerung",
+        "desc": "Aufschub von Einfuhrzöllen und Mehrwertsteuer durch unser Zolllager in Belgien; Lagerung, Pick-and-Pack, Palettierung, Umetikettierung und Containerentladung werden in einer vollständig zollkonformen Umgebung abgewickelt."
+      },
+      "air_freight": {
+        "title": "Luftfrachtabfertigung",
+        "badge": "Zollabfertigung",
+        "desc": "Zollabfertigung für Luftfracht am Flughafen Brüssel Zaventem und Amsterdam Schiphol — einschließlich ICS2-Vorabanmeldung, Einreichung der Zollanmeldung und Zahlung der Zölle. Freigabe am selben Tag möglich für Sendungen, deren vollständige Dokumente vor der Ankunft eingereicht wurden."
+      },
+      "road_freight": {
+        "title": "Straßenfrachtabfertigung",
+        "badge": "Zollabfertigung",
+        "desc": "CMR-Dokumentation, Grenzübergangsverfahren und Compliance-Management für Lkw und Kühlfahrzeuge, die aus der Türkei, Osteuropa, dem Nahen Osten und Nordafrika nach Belgien einreisen. Sowohl Standard- als auch temperaturgeführte Straßenfracht wird abgedeckt."
+      },
+      "hs_code": {
+        "title": "HS-Code Klassifizierung",
+        "badge": "Compliance",
+        "desc": "Korrekte HS-Code-Klassifizierung gemäß der Kombinierten Nomenklatur der EU und der TARIC-Datenbank vor Abgabe einer Anmeldung. Der angewandte Code bestimmt Zollsatz, Mehrwertsteuerbehandlung und Handelsbeschränkungen — Fehleinstufungen führen zu Strafen und Frachtstopps."
+      },
+      "fast_track": {
+        "title": "Fast Track Abfertigung",
+        "badge": "Geschwindigkeit",
+        "desc": "Vor der Ankunft der Fracht eingereichte Anmeldungen reduzieren die Liegezeiten im Hafen und verhindern Lagerkosten für verzögerte Sendungen. Freigabe am selben Tag im Hafen von Antwerpen und am Flughafen Brüssel für zeitkritische Sendungen möglich."
+      },
+      "fcl": {
+        "title": "FCL Zollabfertigung",
+        "badge": "Container",
+        "desc": "Zollabfertigung für Komplettladungen (FCL) von 20-Fuß- und 40-Fuß-Containern im Hafen von Antwerpen und Rotterdam — Freigabe von Konnossementen, Einreichung von Zollanmeldungen, Zahlung von Zöllen und Terminalfreigabe, ohne dass der Importeur sich mit mehreren Parteien abstimmen muss."
+      },
+      "lcl": {
+        "title": "LCL Zollabfertigung",
+        "badge": "Container",
+        "desc": "Konsolidierte Fracht, die über belgische und niederländische Häfen ankommt, wird individuell abgefertigt — die Waren jedes Empfängers werden im Dekonsolidierungslager getrennt, unter dem korrekten HS-Code angemeldet und mit vollständigen Zolldokumenten freigegeben."
+      },
+      "consulting": {
+        "title": "Zollberatung",
+        "badge": "Beratung",
+        "desc": "Beratung zu EU-Import- und Exportvorschriften, Auswahl der Incoterms 2020, Zolloptimierung, AEO-Anträgen und CBAM/MACF-Compliance. Unternehmen, die erstmals in den EU-Markt eintreten, erhalten eine umfassende Überprüfung der Zoll-Compliance, bevor ihre erste Sendung bewegt wird."
+      }
+    },
+    "cta": "Mehr erfahren",
+    "viewAllCta": "Alle Dienstleistungen anzeigen"
+  },
+  "finalCta": {
+    "title": "Klarieren Sie Ihre Fracht durch den belgischen Zoll mit WINZ",
+    "description": "Kontaktieren Sie WINZ für Zollabfertigung, Containertransport, Lagerung und maßgeschneiderte Logistiklösungen für Ihr Unternehmen.",
+    "button1": "Kontaktieren Sie uns",
+    "button2": "FAQs ansehen"
   }
 }

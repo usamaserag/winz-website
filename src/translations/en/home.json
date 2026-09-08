@@ -1,92 +1,56 @@
 {
   "meta": {
-    "title": "Home"
+    "title": "EU Customs Clearance Belgium — WINZ Logistics",
+    "description": "WINZ handles import, export, transit, and bonded warehousing at Port of Antwerp, Rotterdam, and Brussels Airport. 50+ countries. Get a quote."
   },
   "hero": {
     "badge": "European Logistics & Customs",
-    "titlePrefix": "Trusted partner for",
-    "titleHighlight": "cross-border cargo",
+    "titlePrefix": "EU Customs Clearance",
+    "titleHighlight": "Belgium",
     "description": "14 years of customs clearance, container transport, and warehousing across Europe — built for speed, compliance, and reliability.",
     "ctaPrimary": "Get a Quote",
     "ctaSecondary": "Our Services",
     "highlights": {
-      "haulage": {
-        "label": "Inland haulage",
-        "value": "EU-wide"
+      "expertise": {
+        "label": "14+ Years",
+        "value": "EU Customs Expertise"
+      },
+      "countries": {
+        "label": "50+",
+        "value": "Countries of Origin"
       },
       "ports": {
-        "label": "Port coverage",
-        "value": "All major"
-      },
-      "compliance": {
-        "label": "Compliance",
-        "value": "100% EU"
+        "label": "All",
+        "value": "European Ports"
       }
     }
   },
-  "stats": {
-    "experience": "Years of Experience",
-    "compliance": "EU Compliance",
-    "ports": "European Ports"
-  },
   "aboutPreview": {
     "badge": "Who We Are",
-    "title": "Winz Logistics — Your Trusted European Customs Partner",
-    "description": "Headquartered to serve the European market, we specialise in bridging the gap between global suppliers and the EU. With over 14 years of experience, we handle all customs formalities at every European seaport and border crossing — so you can focus on your core business.",
+    "title": "WINZ Logistics — Belgium-Based EU Customs Clearance Broker",
+    "description1": "Based in Zele, WINZ Logistics supports importers, exporters, and freight forwarders with EU customs clearance backed by over 14 years of experience. We handle customs formalities for shipments arriving by sea, air, and road — including through Antwerp, Rotterdam, and Brussels Airport.",
+    "description2": "Our team manages HS code classification, declaration filing, and duty and VAT calculations, coordinating the clearance process through to cargo release. We help businesses prepare accurate documentation and meet compliance requirements to reduce avoidable delays.",
     "cta": "Discover Our Story"
-  },
-  "services": {
-    "badge": "Our Services",
-    "title": "Every Step of Your Cargo's Journey",
-    "description": "From customs clearance to inland haulage and secure storage — we manage every stage so your supply chain never skips a beat.",
-    "cards": {
-      "import": {
-        "title": "Import",
-        "badge": "Customs Clearance",
-        "desc": "Seamless import customs clearance across all European seaports and border crossings — fully compliant, fully managed."
-      },
-      "export": {
-        "title": "Export",
-        "badge": "Customs Clearance",
-        "desc": "Navigate dual-use controls, preferential origin, and VAT proof-of-exit with expert export clearance support."
-      },
-      "transit": {
-        "title": "Transit",
-        "badge": "Customs Clearance",
-        "desc": "Uninterrupted cross-border movement with T1/T2 declarations and NCTS digital filing handled end-to-end."
-      },
-      "transport": {
-        "title": "Transport",
-        "badge": "Inland Logistics",
-        "desc": "Full-scale container haulage for 20ft, 40ft, and 45ft containers — from port terminal to your doorstep."
-      },
-      "warehouse": {
-        "title": "Warehouse",
-        "badge": "Storage & Value-Added",
-        "desc": "Bonded storage, short & long-term solutions, pick-and-pack, palletising, and duty deferral — all under one roof."
-      }
-    },
-    "cta": "Learn More"
   },
   "whyChoose": {
     "badge": "Why Choose Us",
     "title": "Why Businesses Trust Winz Logistics",
     "pillars": {
       "expertise": {
-        "title": "14+ Years Expertise",
-        "desc": "Deep knowledge of EU customs legislation and cross-border procedures."
+        "title": "14+ Years EU Customs Expertise",
+        "desc": "Managing customs clearance and cross-border compliance across all 27 EU member states for over 14 years."
       },
       "compliance": {
-        "title": "Full Compliance Guaranteed",
-        "desc": "Every shipment processed to the highest regulatory standards — no exceptions."
+        "title": "100% EU Compliance Guaranteed",
+        "desc": "Every declaration meets full EU regulatory requirements. Zero documentation error policy. No exceptions."
       },
       "network": {
         "title": "Pan-European Network",
-        "desc": "The region's most extensive neutral customs network at every port and crossing."
+        "desc": "All major EU seaports and Belgian border crossings covered — Antwerp, Rotterdam, Hamburg, and Brussels Airport."
       },
       "cargo": {
-        "title": "All Cargo Types",
-        "desc": "From perishable food to general merchandise and oversized freight."
+        "title": "All Cargo Types Handled",
+        "desc": "General merchandise, perishables, refrigerated containers, road freight, air freight, FCL, and LCL — all managed."
       },
       "solutions": {
         "title": "End-to-End Solutions",
@@ -97,5 +61,80 @@
         "desc": "A team of customs experts assigned to manage your account personally."
       }
     }
+  },
+  "services": {
+    "badge": "Our Services",
+    "title": "EU Customs Clearance Services",
+    "description": "WINZ manages the full customs compliance chain for cargo entering and leaving Belgium — from pre-lodgement declaration through duty payment, cargo release, and inland delivery.",
+    "cards": {
+      "import": {
+        "title": "Import Clearance",
+        "badge": "Customs Clearance",
+        "desc": "We handle all import customs formalities on your behalf — declaration filing, HS code classification, duty and VAT calculation, and cargo release. Every shipment is processed accurately and on time, with a dedicated specialist managing your account throughout."
+      },
+      "export": {
+        "title": "Export Clearance",
+        "badge": "Customs Clearance",
+        "desc": "We manage the full export declaration process, including AES filing, EUR.1 preferential origin certificates, dual-use goods controls, and VAT proof-of-exit compliance. Your cargo leaves Belgium with complete, accurate documentation every time."
+      },
+      "transit": {
+        "title": "Transit Clearance",
+        "badge": "Customs Clearance",
+        "desc": "T1 and T2 transit declarations, NCTS digital filing, and guarantee facility coverage for cross-border movements across EU member states — all handled under one service agreement. Your cargo moves without delays at any border crossing."
+      },
+      "transport": {
+        "title": "Container Haulage",
+        "badge": "Inland Logistics",
+        "desc": "Post-clearance inland transport for 20ft, 40ft, and High Cube containers from port terminal to final delivery address. Haulage is arranged directly alongside the clearance process — refrigerated and dry van options both available."
+      },
+      "warehouse": {
+        "title": "Bonded Warehousing",
+        "badge": "Storage",
+        "desc": "Import duty and VAT deferral through our bonded warehouse in Belgium, with storage, pick-and-pack, palletising, re-labelling, and container unloading all handled in a fully compliant customs environment."
+      },
+      "air_freight": {
+        "title": "Air Freight Clearance",
+        "badge": "Customs Clearance",
+        "desc": "Customs clearance for air cargo at Brussels Airport Zaventem and Amsterdam Schiphol — covering ICS2 pre-lodgement, declaration filing, and duty payment. Same-day release available for shipments with complete documentation submitted before arrival."
+      },
+      "road_freight": {
+        "title": "Road Freight Clearance",
+        "badge": "Customs Clearance",
+        "desc": "CMR documentation, border crossing procedures, and compliance management for trucks and refrigerated vehicles entering Belgium from Turkey, Eastern Europe, the Middle East, and North Africa. Standard and temperature-controlled road cargo both covered."
+      },
+      "hs_code": {
+        "title": "HS Code Classification",
+        "badge": "Compliance",
+        "desc": "Correct HS code classification against the EU Combined Nomenclature and TARIC database before any declaration is filed. The applied code determines duty rate, VAT treatment, and trade restrictions — misclassification leads to penalties and cargo holds."
+      },
+      "fast_track": {
+        "title": "Fast Track Clearance",
+        "badge": "Speed",
+        "desc": "Declarations pre-lodged before cargo arrival, cutting port dwell time and preventing storage charges on delayed consignments. Same-day release available at Port of Antwerp and Brussels Airport for time-sensitive shipments."
+      },
+      "fcl": {
+        "title": "FCL Customs Clearance",
+        "badge": "Containers",
+        "desc": "Full container load clearance for 20ft and 40ft containers at Port of Antwerp and Rotterdam — bill of lading release, declaration filing, duty payment, and terminal release handled without requiring the importer to coordinate with multiple parties."
+      },
+      "lcl": {
+        "title": "LCL Customs Clearance",
+        "badge": "Containers",
+        "desc": "Consolidated cargo arriving through Belgian and Dutch ports cleared individually — each consignee's goods separated at the deconsolidation warehouse, declared under the correct HS code, and released with full duty documentation."
+      },
+      "consulting": {
+        "title": "Customs Consulting",
+        "badge": "Advisory",
+        "desc": "Guidance on EU import and export regulations, Incoterms 2020 selection, duty optimisation, AEO applications, and CBAM/MACF compliance. Businesses entering the EU market for the first time receive a full customs compliance review before their first shipment moves."
+      }
+    },
+    "cta": "Learn More",
+    "viewAllCta": "View All Services"
+  },
+  "finalCta": {
+    "title": "Clear Your Cargo Through Belgian Customs With WINZ",
+    "description": "Contact WINZ for customs clearance, container transport, warehousing, and tailored logistics solutions for your business.",
+    "button1": "Contact Us",
+    "button2": "View FAQs"
   }
 }

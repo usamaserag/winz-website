@@ -29,6 +29,7 @@ const SubcategoryDetail = lazy(() => import('./pages/Categories/SubcategoryDetai
 const PrivacyPolicy = lazy(() => import('./pages/Legal/PrivacyPolicy'));
 const CookiesPolicy = lazy(() => import('./pages/Legal/CookiesPolicy'));
 const NotFound = lazy(() => import('./pages/NotFound'));
+const CommercialModel = lazy(() => import('./pages/CommercialModel/CommercialModel'));
 
 function AppRoutes() {
   return (
@@ -54,6 +55,7 @@ function AppRoutes() {
             <Route path="categories/:slug" element={<CategoryDetail />} />
             <Route path="subcategories/:slug" element={<SubcategoryDetail />} />
             <Route path="contact" element={<Contact />} />
+            <Route path="commercial-model" element={<CommercialModel />} />
             <Route path="privacy-policy" element={<PrivacyPolicy />} />
             <Route path="cookies-policy" element={<CookiesPolicy />} />
             <Route path="*" element={<NotFound />} />

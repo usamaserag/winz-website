@@ -1,101 +1,140 @@
 {
   "meta": {
-    "title": "Accueil"
+    "title": "Dédouanement UE Belgique — WINZ Logistics",
+    "description": "WINZ gère l'import, l'export, le transit et l'entreposage sous douane au port d'Anvers, de Rotterdam et à l'aéroport de Bruxelles. Plus de 50 pays. Demander un devis."
   },
   "hero": {
-    "badge": "Logistique & douane européennes",
-    "titlePrefix": "Partenaire de confiance pour",
-    "titleHighlight": "le fret transfrontalier",
-    "description": "14 ans de dédouanement, transport de conteneurs et entreposage en Europe — conçus pour la rapidité, la conformité et la fiabilité.",
+    "badge": "Logistique et Douanes Européennes",
+    "titlePrefix": "Dédouanement UE",
+    "titleHighlight": "Belgique",
+    "description": "14 ans d'expérience en dédouanement, transport de conteneurs et entreposage à travers l'Europe — synonymes de rapidité, conformité et fiabilité.",
     "ctaPrimary": "Demander un devis",
-    "ctaSecondary": "Nos services",
+    "ctaSecondary": "Nos Services",
     "highlights": {
-      "haulage": {
-        "label": "Transport intérieur",
-        "value": "Dans toute l'UE"
+      "expertise": {
+        "label": "14+ Ans",
+        "value": "d'Expertise Douanière UE"
+      },
+      "countries": {
+        "label": "50+",
+        "value": "Pays d'Origine"
       },
       "ports": {
-        "label": "Couverture portuaire",
-        "value": "Tous les grands ports"
-      },
-      "compliance": {
-        "label": "Conformité",
-        "value": "100 % UE"
+        "label": "Tous",
+        "value": "Les Ports Européens"
       }
     }
   },
-  "stats": {
-    "experience": "Années d'expérience",
-    "compliance": "Conformité UE",
-    "ports": "Ports européens"
-  },
   "aboutPreview": {
-    "badge": "Qui sommes-nous",
-    "title": "Winz Logistics — Votre partenaire douane de confiance en Europe",
-    "description": "Au service du marché européen, nous faisons le lien entre les fournisseurs mondiaux et l'Union européenne. Avec plus de 14 ans d'expérience, nous gérons toutes les formalités douanières dans chaque port et passage frontalier européen — pour que vous puissiez vous concentrer sur votre cœur de métier.",
-    "cta": "Découvrir notre histoire"
-  },
-  "services": {
-    "badge": "Nos services",
-    "title": "Chaque étape du parcours de votre marchandise",
-    "description": "Du dédouanement au transport intérieur et au stockage sécurisé — nous gérons chaque phase pour que votre chaîne d'approvisionnement ne connaisse aucune interruption.",
-    "cards": {
-      "import": {
-        "title": "Import",
-        "badge": "Dédouanement",
-        "desc": "Dédouanement import fluide dans tous les ports et passages frontaliers européens — entièrement conforme et entièrement géré."
-      },
-      "export": {
-        "title": "Export",
-        "badge": "Dédouanement",
-        "desc": "Maîtrisez les contrôles dual-use, l'origine préférentielle et la preuve de sortie TVA avec un accompagnement expert."
-      },
-      "transit": {
-        "title": "Transit",
-        "badge": "Dédouanement",
-        "desc": "Mouvement transfrontalier ininterrompu avec déclarations T1/T2 et dépôt NCTS numérique gérés de bout en bout."
-      },
-      "transport": {
-        "title": "Transport",
-        "badge": "Logistique intérieure",
-        "desc": "Transport de conteneurs 20, 40 et 45 pieds — du terminal portuaire à votre porte."
-      },
-      "warehouse": {
-        "title": "Entrepôt",
-        "badge": "Stockage & services à valeur ajoutée",
-        "desc": "Stockage sous douane, solutions court et long terme, pick-and-pack, palettisation et report de droits — le tout sous un même toit."
-      }
-    },
-    "cta": "En savoir plus"
+    "badge": "Qui nous sommes",
+    "title": "WINZ Logistics — Courtier en dédouanement européen basé en Belgique",
+    "description1": "Basé à Zele, WINZ Logistics accompagne les importateurs, exportateurs et transitaires dans le dédouanement au sein de l'UE, fort de plus de 14 ans d'expérience. Nous gérons les formalités douanières pour les expéditions arrivant par voie maritime, aérienne et routière — notamment via Anvers, Rotterdam et l'aéroport de Bruxelles.",
+    "description2": "Notre équipe gère la classification des codes SH, le dépôt des déclarations, ainsi que le calcul des droits et de la TVA, coordonnant le processus de dédouanement jusqu'à la mainlevée des marchandises. Nous aidons les entreprises à préparer des documents précis et à respecter les exigences de conformité pour réduire les retards évitables.",
+    "cta": "Découvrez notre histoire"
   },
   "whyChoose": {
     "badge": "Pourquoi nous choisir",
     "title": "Pourquoi les entreprises font confiance à Winz Logistics",
     "pillars": {
       "expertise": {
-        "title": "Plus de 14 ans d'expertise",
-        "desc": "Connaissance approfondie de la législation douanière UE et des procédures transfrontalières."
+        "title": "Plus de 14 ans d'expertise douanière UE",
+        "desc": "Gestion du dédouanement et de la conformité transfrontalière dans les 27 États membres de l'UE depuis plus de 14 ans."
       },
       "compliance": {
-        "title": "Conformité totale garantie",
-        "desc": "Chaque envoi traité selon les normes réglementaires les plus strictes — sans exception."
+        "title": "Conformité UE 100% garantie",
+        "desc": "Chaque déclaration répond pleinement aux exigences réglementaires de l'UE. Politique zéro erreur de documentation. Aucune exception."
       },
       "network": {
-        "title": "Réseau paneuropéen",
-        "desc": "Le réseau douanier neutre le plus étendu de la région, à chaque port et passage frontalier."
+        "title": "Réseau Paneuropéen",
+        "desc": "Couverture de tous les grands ports maritimes de l'UE et passages frontaliers belges — Anvers, Rotterdam, Hambourg et l'aéroport de Bruxelles."
       },
       "cargo": {
-        "title": "Tous types de marchandises",
-        "desc": "Des denrées périssables aux marchandises générales et au fret surdimensionné."
+        "title": "Tous types de fret pris en charge",
+        "desc": "Marchandises générales, denrées périssables, conteneurs réfrigérés, fret routier, fret aérien, FCL et LCL — tout est géré."
       },
       "solutions": {
         "title": "Solutions de bout en bout",
-        "desc": "Dédouanement, transport et entreposage — entièrement intégrés sous un seul partenaire."
+        "desc": "Dédouanement, transport et entreposage — entièrement intégrés avec un seul partenaire."
       },
       "team": {
         "title": "Spécialistes dédiés",
-        "desc": "Une équipe d'experts douaniers assignée à la gestion personnalisée de votre compte."
+        "desc": "Une équipe d'experts en douane chargée de gérer votre compte personnellement."
       }
     }
+  },
+  "services": {
+    "badge": "Nos Services",
+    "title": "Services de dédouanement UE",
+    "description": "WINZ gère l'ensemble de la chaîne de conformité douanière pour le fret entrant et sortant de Belgique — de la déclaration préalable jusqu'au paiement des droits, à la mainlevée des marchandises et à la livraison intérieure.",
+    "cards": {
+      "import": {
+        "title": "Dédouanement à l'import",
+        "badge": "Dédouanement",
+        "desc": "Nous prenons en charge toutes les formalités douanières d'importation en votre nom — dépôt de la déclaration, classification du code SH, calcul des droits et de la TVA, et mainlevée des marchandises. Chaque expédition est traitée avec précision et dans les délais, avec un spécialiste dédié gérant votre compte de bout en bout."
+      },
+      "export": {
+        "title": "Dédouanement à l'export",
+        "badge": "Dédouanement",
+        "desc": "Nous gérons l'ensemble du processus de déclaration à l'exportation, y compris le dépôt AES, les certificats d'origine préférentielle EUR.1, les contrôles des biens à double usage et la conformité des preuves de sortie TVA. Votre cargaison quitte la Belgique avec des documents complets et exacts à chaque fois."
+      },
+      "transit": {
+        "title": "Dédouanement de transit",
+        "badge": "Dédouanement",
+        "desc": "Déclarations de transit T1 et T2, dépôt numérique NCTS et couverture de la facilité de garantie pour les mouvements transfrontaliers dans les États membres de l'UE — le tout géré sous un seul accord de service. Votre cargaison se déplace sans délai à n'importe quel passage frontalier."
+      },
+      "transport": {
+        "title": "Transport de conteneurs",
+        "badge": "Logistique intérieure",
+        "desc": "Transport intérieur post-dédouanement pour conteneurs 20 pieds, 40 pieds et High Cube, du terminal portuaire jusqu'à l'adresse de livraison finale. Le transport est organisé directement en parallèle du processus de dédouanement — des options réfrigérées et pour fret sec sont toutes deux disponibles."
+      },
+      "warehouse": {
+        "title": "Entreposage sous douane",
+        "badge": "Stockage",
+        "desc": "Report des droits d'importation et de la TVA via notre entrepôt sous douane en Belgique, avec le stockage, le prélèvement et l'emballage (pick-and-pack), la palettisation, le réétiquetage et le déchargement de conteneurs, le tout géré dans un environnement douanier entièrement conforme."
+      },
+      "air_freight": {
+        "title": "Dédouanement du fret aérien",
+        "badge": "Dédouanement",
+        "desc": "Dédouanement pour le fret aérien à l'aéroport de Bruxelles-Zaventem et d'Amsterdam-Schiphol — couvrant la déclaration préalable ICS2, le dépôt de la déclaration et le paiement des droits. Mainlevée le jour même disponible pour les expéditions avec documents complets soumis avant l'arrivée."
+      },
+      "road_freight": {
+        "title": "Dédouanement du fret routier",
+        "badge": "Dédouanement",
+        "desc": "Documentation CMR, procédures de passage des frontières et gestion de la conformité pour les camions et véhicules frigorifiques entrant en Belgique en provenance de Turquie, d'Europe de l'Est, du Moyen-Orient et d'Afrique du Nord. Le fret routier standard et sous température dirigée est pris en charge."
+      },
+      "hs_code": {
+        "title": "Classification des codes SH",
+        "badge": "Conformité",
+        "desc": "Classification correcte du code SH selon la Nomenclature Combinée de l'UE et la base de données TARIC avant le dépôt de toute déclaration. Le code appliqué détermine le taux de droit, le traitement de la TVA et les restrictions commerciales — une classification erronée entraîne des pénalités et le blocage des marchandises."
+      },
+      "fast_track": {
+        "title": "Dédouanement Fast Track",
+        "badge": "Rapidité",
+        "desc": "Déclarations déposées avant l'arrivée du fret, réduisant le temps de séjour au port et évitant les frais de stockage pour les envois retardés. Mainlevée le jour même disponible au port d'Anvers et à l'aéroport de Bruxelles pour les expéditions urgentes."
+      },
+      "fcl": {
+        "title": "Dédouanement FCL",
+        "badge": "Conteneurs",
+        "desc": "Dédouanement de conteneurs complets (FCL) pour les conteneurs 20 pieds et 40 pieds au port d'Anvers et de Rotterdam — mainlevée du connaissement, dépôt de déclaration, paiement des droits et mainlevée au terminal gérés sans que l'importateur ait à se coordonner avec de multiples parties."
+      },
+      "lcl": {
+        "title": "Dédouanement LCL",
+        "badge": "Conteneurs",
+        "desc": "Les cargaisons de groupage (LCL) arrivant par les ports belges et néerlandais sont dédouanées individuellement — les marchandises de chaque destinataire sont séparées à l'entrepôt de dégroupage, déclarées sous le code SH correct et libérées avec des documents douaniers complets."
+      },
+      "consulting": {
+        "title": "Conseil en douane",
+        "badge": "Conseil",
+        "desc": "Conseils sur les réglementations d'import/export de l'UE, le choix des Incoterms 2020, l'optimisation des droits, les demandes OEA (AEO) et la conformité CBAM/MACF. Les entreprises entrant sur le marché de l'UE pour la première fois bénéficient d'un examen complet de la conformité douanière avant le mouvement de leur première expédition."
+      }
+    },
+    "cta": "En savoir plus",
+    "viewAllCta": "Voir tous les services"
+  },
+  "finalCta": {
+    "title": "Dédouanez votre fret via les douanes belges avec WINZ",
+    "description": "Contactez WINZ pour le dédouanement, le transport de conteneurs, l'entreposage et des solutions logistiques sur mesure pour votre entreprise.",
+    "button1": "Nous contacter",
+    "button2": "Voir les FAQ"
   }
 }

@@ -1,0 +1,44 @@
+{
+  "hero": {
+    "badge": "Commercial Model",
+    "title": "Our Commercial Model",
+    "subtitle": "Discover how our flexible commercial solutions can power your logistics."
+  },
+  "brandSignals": {
+    "expertise": "14+ Years Expertise",
+    "portCoverage": "Port Coverage All Major EU Ports",
+    "inlandHaulage": "Inland Haulage EU-Wide",
+    "compliance": "Compliance 100% EU Guaranteed",
+    "countries": "50+ Countries of Origin",
+    "customs": "Dedicated Customs Specialist"
+  },
+  "content": {
+    "opening": "Welcome to our commercial model overview. We focus on providing transparent and scalable solutions for businesses of all sizes.",
+    "section1Title": "Why Choose Us",
+    "section1Text": "Our business structure is designed to optimize costs and improve efficiency.",
+    "section1List1": "Transparent pricing model.",
+    "section1List2": "Flexible terms and conditions.",
+    "section1List3": "Dedicated support team."
+  },
+  "faq": {
+    "q1": {
+      "question": "What is included in the commercial model?",
+      "answer": "Our model includes full end-to-end support for customs clearance and logistics."
+    },
+    "q2": {
+      "question": "Are there any hidden fees?",
+      "answer": "No, all pricing is transparent and provided upfront."
+    },
+    "q3": {
+      "question": "How long does it take to get started?",
+      "answer": "You can be onboarded within a matter of days."
+    },
+    "q4": {
+      "question": "Do you offer custom models for large enterprises?",
+      "answer": "Yes, we tailor our solutions for high-volume enterprise clients."
+    }
+  },
+  "related": {
+    "title": "Related Services"
+  }
+}

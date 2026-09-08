@@ -16,6 +16,7 @@ import enTransport from './en/transport.json';
 import enWarehouse from './en/warehouse.json';
 import enBlog from './en/blog.json';
 import enFaq from './en/faq.json';
+import enCommercial from './en/commercial.json';
 
 const NAMESPACES = [
   'common',
@@ -31,6 +32,7 @@ const NAMESPACES = [
   'warehouse',
   'blog',
   'faq',
+  'commercial',
 ];
 
 /** English bundled synchronously for instant first paint; other languages lazy-loaded. */
@@ -48,6 +50,7 @@ const EN_RESOURCES = {
   warehouse: enWarehouse,
   blog: enBlog,
   faq: enFaq,
+  commercial: enCommercial,
 };
 
 const lazyLoadBackend = {

@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
+import { Link } from '../../components/routing';
 import {
   ShieldCheck, Globe, Truck, Warehouse, Package,
   CheckCircle2, Snowflake, FileText,
@@ -98,7 +99,12 @@ const About = () => {
                 {t('about:welcome.paragraph1')}
               </p>
               <p className="text-gray-600 leading-relaxed text-lg">
-                {t('about:welcome.paragraph2')}
+                <Trans
+                  i18nKey="about:welcome.paragraph2"
+                  components={{
+                    1: <Link to="/import" className="text-primary-600 font-semibold hover:underline" />
+                  }}
+                />
               </p>
             </motion.div>
 

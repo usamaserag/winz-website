@@ -1,101 +1,140 @@
 {
   "meta": {
-    "title": "Home"
+    "title": "EU Douane-inklaring België — WINZ Logistics",
+    "description": "WINZ verzorgt import, export, transit en douane-entrepotdiensten in de havens van Antwerpen, Rotterdam en de luchthaven van Brussel. Meer dan 50 landen. Vraag een offerte aan."
   },
   "hero": {
-    "badge": "Europese logistiek & douane",
-    "titlePrefix": "Betrouwbare partner voor",
-    "titleHighlight": "grensoverschrijdend vrachtvervoer",
-    "description": "14 jaar douane-inklearing, containertransport en opslag in Europa — gebouwd voor snelheid, compliance en betrouwbaarheid.",
+    "badge": "Europese Logistiek & Douane",
+    "titlePrefix": "EU Douane-inklaring",
+    "titleHighlight": "België",
+    "description": "14 jaar ervaring in douane-inklaring, containertransport en opslag in heel Europa — gebouwd voor snelheid, naleving en betrouwbaarheid.",
     "ctaPrimary": "Offerte aanvragen",
-    "ctaSecondary": "Onze diensten",
+    "ctaSecondary": "Onze Diensten",
     "highlights": {
-      "haulage": {
-        "label": "Binnenlands vervoer",
-        "value": "EU-breed"
+      "expertise": {
+        "label": "14+ Jaar",
+        "value": "EU Douane-expertise"
+      },
+      "countries": {
+        "label": "50+",
+        "value": "Landen van Herkomst"
       },
       "ports": {
-        "label": "Havendekking",
-        "value": "Alle grote havens"
-      },
-      "compliance": {
-        "label": "Compliance",
-        "value": "100 % EU"
+        "label": "Alle",
+        "value": "Europese Havens"
       }
     }
-  },
-  "stats": {
-    "experience": "Jaar ervaring",
-    "compliance": "EU-compliance",
-    "ports": "Europese havens"
   },
   "aboutPreview": {
     "badge": "Wie wij zijn",
-    "title": "Winz Logistics — Uw betrouwbare Europese douanepartner",
-    "description": "Wij bedienen de Europese markt en verbinden wereldwijde leveranciers met de EU. Met meer dan 14 jaar ervaring regelen wij alle douaneformaliteiten in elke Europese zeehaven en grensovergang — zodat u zich op uw kernactiviteit kunt richten.",
+    "title": "WINZ Logistics — In België gevestigde EU-douane-expediteur",
+    "description1": "Gevestigd in Zele ondersteunt WINZ Logistics importeurs, exporteurs en expediteurs met EU-douane-inklaring, gesteund door meer dan 14 jaar ervaring. Wij regelen douaneformaliteiten voor zendingen die aankomen over zee, door de lucht en over de weg — waaronder via Antwerpen, Rotterdam en de luchthaven van Brussel.",
+    "description2": "Ons team beheert de HS-code classificatie, het indienen van aangiften, en de berekening van douanerechten en btw, en coördineert het inklaringsproces tot aan de vrijgave van de lading. We helpen bedrijven nauwkeurige documentatie voor te bereiden en te voldoen aan compliance-vereisten om onnodige vertragingen te verminderen.",
     "cta": "Ontdek ons verhaal"
   },
-  "services": {
-    "badge": "Onze diensten",
-    "title": "Elke stap in de reis van uw vracht",
-    "description": "Van douane-inklearing tot binnenlands vervoer en veilige opslag — wij beheren elke fase zodat uw supply chain nooit stilvalt.",
-    "cards": {
-      "import": {
-        "title": "Import",
-        "badge": "Douane-inklearing",
-        "desc": "Naadloze importinklearing in alle Europese zeehavens en grensovergangen — volledig conform en volledig beheerd."
-      },
-      "export": {
-        "title": "Export",
-        "badge": "Douane-inklearing",
-        "desc": "Navigeer dual-use controles, preferentiële oorsprong en BTW-uitvoerbewijzen met professionele exportinklearing."
-      },
-      "transit": {
-        "title": "Transit",
-        "badge": "Douane-inklearing",
-        "desc": "Ononderbroken grensoverschrijdend vervoer met T1/T2-aangiften en NCTS-digitale indiening van begin tot eind."
-      },
-      "transport": {
-        "title": "Transport",
-        "badge": "Binnenlandse logistiek",
-        "desc": "Containervervoer voor 20-, 40- en 45-voets containers — van haventerminal tot aan uw deur."
-      },
-      "warehouse": {
-        "title": "Magazijn",
-        "badge": "Opslag & meerwaardediensten",
-        "desc": "Douane-opslag, korte en lange termijn oplossingen, pick-and-pack, palletiseren en rechtenuitstel — alles onder één dak."
-      }
-    },
-    "cta": "Meer info"
-  },
   "whyChoose": {
-    "badge": "Waarom kiezen voor ons",
-    "title": "Waarom bedrijven Winz Logistics vertrouwen",
+    "badge": "Waarom wij",
+    "title": "Waarom bedrijven op Winz Logistics vertrouwen",
     "pillars": {
       "expertise": {
-        "title": "Meer dan 14 jaar expertise",
-        "desc": "Diepgaande kennis van EU-douanewetgeving en grensoverschrijdende procedures."
+        "title": "14+ Jaar EU Douane-expertise",
+        "desc": "Al meer dan 14 jaar beheren we de douane-inklaring en grensoverschrijdende naleving in alle 27 EU-lidstaten."
       },
       "compliance": {
-        "title": "Volledige compliance gegarandeerd",
-        "desc": "Elke zending verwerkt volgens de hoogste regelgevingsnormen — zonder uitzondering."
+        "title": "100% EU Compliance Gegarandeerd",
+        "desc": "Elke aangifte voldoet aan de volledige wettelijke vereisten van de EU. Zero documentatie-foutbeleid. Geen uitzonderingen."
       },
       "network": {
-        "title": "Paneuropees netwerk",
-        "desc": "Het meest uitgebreide neutrale douanenetwerk in de regio, op elke haven en grensovergang."
+        "title": "Pan-Europees Netwerk",
+        "desc": "Alle grote EU-zeehavens en Belgische grensovergangen gedekt — Antwerpen, Rotterdam, Hamburg en luchthaven Brussel."
       },
       "cargo": {
-        "title": "Alle vrachttypes",
-        "desc": "Van bederfelijke voeding tot algemene goederen en oversized vracht."
+        "title": "Alle soorten vracht",
+        "desc": "Stukgoed, bederfelijke waren, koelcontainers, wegvervoer, luchtvracht, FCL en LCL — allemaal beheerd."
       },
       "solutions": {
-        "title": "End-to-end oplossingen",
-        "desc": "Douane-inklearing, vervoer en opslag — volledig geïntegreerd bij één partner."
+        "title": "End-to-End Oplossingen",
+        "desc": "Douane-inklaring, transport en opslag — volledig geïntegreerd onder één partner."
       },
       "team": {
-        "title": "Toegewijde specialisten",
-        "desc": "Een team douane-experts dat uw account persoonlijk beheert."
+        "title": "Toegewijde Specialisten",
+        "desc": "Een team van douane-experts toegewezen om uw account persoonlijk te beheren."
       }
     }
+  },
+  "services": {
+    "badge": "Onze Diensten",
+    "title": "EU Douanediensten",
+    "description": "WINZ beheert de volledige douane-nalevingsketen voor vracht die België binnenkomt en verlaat — van voorafgaande aangifte via de betaling van rechten, vrijgave van de lading, tot binnenlandse levering.",
+    "cards": {
+      "import": {
+        "title": "Importinklaring",
+        "badge": "Douane-inklaring",
+        "desc": "Wij regelen alle douane-importformaliteiten namens u — indiening van de aangifte, HS-code classificatie, berekening van rechten en btw, en vrijgave van de lading. Elke zending wordt accuraat en op tijd verwerkt, waarbij een toegewijde specialist uw account gedurende het hele proces beheert."
+      },
+      "export": {
+        "title": "Exportinklaring",
+        "badge": "Douane-inklaring",
+        "desc": "Wij beheren het volledige exportaangifteproces, inclusief AES-aangifte, EUR.1-certificaten van preferentiële oorsprong, controles op goederen voor tweeërlei gebruik, en naleving van het btw-bewijs van uitgang. Uw vracht verlaat België elke keer met volledige en correcte documentatie."
+      },
+      "transit": {
+        "title": "Transitinklaring",
+        "badge": "Douane-inklaring",
+        "desc": "T1- en T2-transitaangiften, digitale NCTS-indiening en dekking van garantiefaciliteiten voor grensoverschrijdende verplaatsingen in EU-lidstaten — allemaal afgehandeld onder één serviceovereenkomst. Uw vracht verplaatst zich zonder vertragingen aan elke grensovergang."
+      },
+      "transport": {
+        "title": "Containertransport",
+        "badge": "Binnenlandse Logistiek",
+        "desc": "Inlandtransport na de inklaring voor 20ft, 40ft en High Cube containers van de haventerminal naar het definitieve leveradres. Vervoer wordt direct naast het inklaringsproces geregeld — koel- en droge vrachtopties zijn beide beschikbaar."
+      },
+      "warehouse": {
+        "title": "Douane-entrepot",
+        "badge": "Opslag",
+        "desc": "Uitstel van invoerrechten en btw via ons douane-entrepot in België, met opslag, pick-and-pack, palletiseren, heretiketteren en lossen van containers die allemaal worden beheerd in een volledig conforme douaneomgeving."
+      },
+      "air_freight": {
+        "title": "Luchtvracht Inklaring",
+        "badge": "Douane-inklaring",
+        "desc": "Douane-inklaring voor luchtvracht op de luchthavens Brussel Zaventem en Amsterdam Schiphol — met inbegrip van de ICS2-aangifte vooraf, de indiening van de douaneaangifte en de betaling van invoerrechten. Vrijgave op dezelfde dag mogelijk voor zendingen met volledige documentatie die vóór aankomst wordt ingediend."
+      },
+      "road_freight": {
+        "title": "Wegvervoer Inklaring",
+        "badge": "Douane-inklaring",
+        "desc": "CMR-documentatie, grensovergangsprocedures en nalevingsbeheer voor vrachtwagens en koelvoertuigen die België binnenkomen vanuit Turkije, Oost-Europa, het Midden-Oosten en Noord-Afrika. Zowel standaard als temperatuurgecontroleerde wegvracht wordt gedekt."
+      },
+      "hs_code": {
+        "title": "HS-code Classificatie",
+        "badge": "Naleving",
+        "desc": "Correcte HS-code classificatie tegen de gecombineerde nomenclatuur van de EU en de TARIC-database voordat een aangifte wordt ingediend. De toegepaste code bepaalt het tarief, de btw-behandeling en handelsbeperkingen — verkeerde classificatie leidt tot boetes en vasthouden van de lading."
+      },
+      "fast_track": {
+        "title": "Fast Track Inklaring",
+        "badge": "Snelheid",
+        "desc": "Aangiften die voorafgaand aan de aankomst van de lading zijn ingediend, waardoor de verblijftijd in de haven wordt verkort en opslagkosten voor vertraagde zendingen worden voorkomen. Vrijgave op dezelfde dag beschikbaar in de haven van Antwerpen en op de luchthaven van Brussel voor tijdgevoelige zendingen."
+      },
+      "fcl": {
+        "title": "FCL Douane-inklaring",
+        "badge": "Containers",
+        "desc": "Douane-inklaring van volle containers (FCL) voor 20ft en 40ft containers in de haven van Antwerpen en Rotterdam — vrijgave van cognossement, indiening van de douaneaangifte, betaling van rechten en vrijgave op de terminal worden afgehandeld zonder dat de importeur met meerdere partijen hoeft te coördineren."
+      },
+      "lcl": {
+        "title": "LCL Douane-inklaring",
+        "badge": "Containers",
+        "desc": "Gepalletiseerde en groupagevracht (LCL) die via Belgische en Nederlandse havens aankomt, wordt individueel ingeklaard — de goederen van elke geadresseerde worden in het deconsolidatiemagazijn gescheiden, onder de correcte HS-code gedeclareerd en vrijgegeven met volledige douanedocumentatie."
+      },
+      "consulting": {
+        "title": "Douane Advies",
+        "badge": "Advies",
+        "desc": "Advies over de import- en exportregelgeving van de EU, selectie van Incoterms 2020, douaneoptimalisatie, AEO-aanvragen en CBAM/MACF-compliance. Bedrijven die voor het eerst de EU-markt betreden, krijgen een volledige beoordeling van de douane-compliance voordat hun eerste zending beweegt."
+      }
+    },
+    "cta": "Meer lezen",
+    "viewAllCta": "Alle Diensten Bekijken"
+  },
+  "finalCta": {
+    "title": "Klaar uw lading door de Belgische douane met WINZ",
+    "description": "Neem contact op met WINZ voor douane-inklaring, containertransport, opslag en op maat gemaakte logistieke oplossingen voor uw bedrijf.",
+    "button1": "Neem contact op",
+    "button2": "Bekijk FAQ"
   }
 }
