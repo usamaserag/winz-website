@@ -1,50 +1,231 @@
 {
   "meta": {
-    "title": "Importinklearing"
+    "title": "Import Customs Clearance Belgium | Winz",
+    "description": "Winz supports Belgian import customs clearance with IDMS filing, HS code checks, duty and VAT calculation, document review, and release coordination."
   },
   "hero": {
-    "badge": "Uitmuntendheid in inbound logistiek",
-    "title": "Beheers Europese importcompliance met",
-    "highlight": "Winz Logistics",
-    "description": "Optimaliseer uw supply chain met deskundige douaneoplossingen.",
+    "badge": "Import Customs Clearance",
+    "title": "Import Customs Clearance",
+    "highlight": "Belgium",
+    "description": "Winz supports customs clearance for imports in Belgium for importers, freight forwarders, logistics companies, SMEs, and cross-border sellers moving commercial goods from outside the EU.",
+    "intro1": "Belgian import clearance covers declaration filing, document review, HS code classification, customs valuation, duty calculation, import VAT, inspection support, and customs release coordination.",
+    "intro2": "Common shipment contexts include FCL containers, LCL cargo, reefer shipments, air freight, and road freight. Winz clears customs for these shipments. Winz does not provide air freight delivery, road transport, or container shipping services.",
     "stats": {
-      "headline": "14+ jaar",
-      "subline": "gespecialiseerde expertise"
+      "headline": "14+ Years",
+      "subline": "of specialised expertise",
+      "footerLabel": "Shipment flow efficiency"
     }
   },
-  "landscape": {
-    "badge": "Importinklearing",
-    "title": "Navigeren door het Europese importlandschap",
-    "paragraph1": "Het Europese importlandschap navigeren is vaak een complexe opgave. Tussen ingewikkelde EU-regelgevingskaders, strenge documentatiestandaarden en de nuances van nationale procedures lopen bedrijven regelmatig risico op kostbare vertragingen en complianceproblemen.",
-    "paragraph2": "Winz Logistics neemt deze drempels weg en biedt naadloze importinklearingsdiensten in heel Europa."
+  "process": {
+    "badge": "Clearance Process",
+    "title": "Belgium Import Clearance Process",
+    "description": "Import customs clearance in Belgium follows six main stages. The process starts with pre-arrival data and ends when customs releases the goods into free circulation.",
+    "stages": [
+      {
+        "title": "Stage 1 — Pre-Arrival Data",
+        "desc": "The carrier files an Entry Summary Declaration (ENS) through ICS2 before arrival. Incorrect or missing data may delay clearance."
+      },
+      {
+        "title": "Stage 2 — IDMS Import Declaration",
+        "desc": "Winz files the Belgian import declaration through IDMS with shipment, product, value, origin, and importer details. Customs then issues a Movement Reference Number (MRN)."
+      },
+      {
+        "title": "Stage 3 — HS Code Classification",
+        "desc": "Correct HS, CN, and TARIC codes determine duties, restrictions, licences, and trade measures. Winz can help with HS code classification."
+      },
+      {
+        "title": "Stage 4 — Duty and VAT Calculation",
+        "desc": "Import duty depends on the goods’ value, classification, origin, and applicable trade measures. Belgium’s standard import VAT rate is 21%. Preferential rates require qualifying origin and valid proof, such as EUR.1 or an origin statement."
+      },
+      {
+        "title": "Stage 5 — Customs Control",
+        "desc": "Customs may check documents, values, classification, origin, or licences. Physical inspections may also take place. Regulated goods may require checks by other authorities."
+      },
+      {
+        "title": "Stage 6 — Customs Release",
+        "desc": "Goods are released after customs approval and payment or securing of duties and VAT. The importer or logistics provider then arranges collection or onward transport."
+      }
+    ]
   },
-  "features": {
-    "compliance": {
-      "title": "Volledige EU-naleving",
-      "desc": "Volledige naleving van EU-regelgevingskaders en nationale procedures."
+  "documents": {
+    "badge": "Documentation",
+    "title": "Required Import Documents",
+    "description": "Belgian import clearance requires the following documents and data, depending on the goods, origin, transport mode, and customs procedure.",
+    "headers": ["Document or Information", "Customs Purpose"],
+    "items": [
+      { "doc": "Commercial invoice", "purpose": "Confirms parties, value, currency, Incoterm, and goods" },
+      { "doc": "Packing list", "purpose": "Lists quantities, packages, and weights" },
+      { "doc": "Transport document", "purpose": "Records shipment, consignee, and transport details" },
+      { "doc": "EORI number", "purpose": "Identifies the importer or representative" },
+      { "doc": "CN or TARIC code", "purpose": "Determines duties, controls, and trade measures" },
+      { "doc": "Customs value data", "purpose": "Supports declared value and required additions" },
+      { "doc": "Origin information", "purpose": "Establishes origin and supports preferential claims" },
+      { "doc": "Broker authorisation", "purpose": "Authorises direct or indirect customs representation" },
+      { "doc": "Import licence or permit", "purpose": "Meets requirements for controlled goods" },
+      { "doc": "Health or phytosanitary document", "purpose": "Supports clearance of relevant regulated goods" }
+    ],
+    "note": "Shipment documents must contain consistent details. Use specific product descriptions: vague terms such as \"parts\" or \"accessories\" can trigger customs questions."
+  },
+  "sections": {
+    "hs_codes": {
+      "title": "HS Codes and Import Duty",
+      "p1": "HS code classification is one of the most sensitive parts of Belgian import clearance.",
+      "p2": "Electronics, machinery parts, chemicals, textiles, food products, and mixed-material goods can require detailed classification work. Similar products may fall under different tariff headings because of their material, function, processing stage, or technical design.",
+      "p3": "The EU TARIC database connects each classification with the applicable customs measures. These can include standard duty, preferential duty, anti-dumping duty, tariff quotas, safeguards, suspensions, and import restrictions.",
+      "p4": "Belgian customs can review the code during clearance or after release. An incorrect code can lead to additional duty, VAT adjustments, interest, declaration amendments, or penalties.",
+      "p5": "Winz checks the classification together with the customs value and origin evidence before filing where complete product information is available."
     },
-    "speed": {
-      "title": "Snelle verwerking",
-      "desc": "Minimaliseer vertragingen met onze gestroomlijnde digitale douaneworkflows."
+    "customs_value": {
+      "title": "Customs Value and Origin",
+      "p1": "Customs value is not always the same as the invoice total.",
+      "p2": "The calculation can include transport and insurance costs up to the relevant EU border point. It may also include royalties, licence fees, tooling, materials supplied by the buyer, or proceeds paid back to the seller.",
+      "p3": "Discounts, related-party transactions, free-of-charge goods, samples, and transfer prices can require additional evidence.",
+      "p4": "Origin is also separate from the country of dispatch. Goods shipped from the UAE may still have a Chinese origin. Goods shipped from Turkey may have Turkish, EU, or another non-preferential origin.",
+      "p5": "The correct origin determines whether trade restrictions, anti-dumping measures, or preferential tariff rates apply."
     },
-    "network": {
-      "title": "Paneuropees netwerk",
-      "desc": "Het meest uitgebreide neutrale douanenetwerk in de regio tot uw dienst."
+    "regulated_goods": {
+      "title": "Regulated Goods Checks",
+      "p1": "Regulated goods need customs clearance and the approvals required by the responsible authority.",
+      "p2": "Animals, animal products, plants, food, and certain feed products can require pre-notification, health certificates, phytosanitary certificates, or Border Control Post procedures.",
+      "p3": "Medicines, chemicals, dual-use products, firearms-related items, waste, cultural goods, and excise products can require licences or specific controls.",
+      "p4": "Temperature-sensitive cargo does not automatically require an official border-control procedure. The requirement depends on the commodity and its regulatory classification.",
+      "p5": "Winz reviews the available import documents and coordinates the customs side of the declaration. The importer remains responsible for obtaining the licences, certificates, registrations, or product approvals required for the goods."
     },
-    "accuracy": {
-      "title": "Documentnauwkeurigheid",
-      "desc": "Foutloze documentatiestandaarden die uw vracht in beweging houden."
+    "incoterms": {
+      "title": "Incoterms and Import Responsibility",
+      "p1": "Incoterms allocate costs, delivery obligations, and risks between buyers and sellers. They do not replace Belgian or EU customs rules.",
+      "p2": "Under EXW, FOB, and CIF, the buyer normally handles import clearance. EXW also places transport responsibility on the buyer; CIF includes seller-paid freight and insurance.",
+      "p3": "Under DDP, the seller normally handles import clearance, duty, and VAT. Non-EU sellers must still arrange a valid importer role, EORI, VAT treatment, and customs representation.",
+      "p4": "Freight and insurance affect customs value, whether included in the invoice or added separately."
+    },
+    "customs_rep": {
+      "title": "Customs Representation in Belgium",
+      "p1": "A customs broker can act through direct or indirect representation.",
+      "p2": "Under direct representation, the customs representative files in the name and on behalf of the importer. The importer remains the declarant and normally carries the customs debt responsibility.",
+      "p3": "Under indirect representation, the representative files in its own name on behalf of the importer. The representative and importer can share responsibility for the customs debt.",
+      "p4": "The available representation method depends on the importer’s establishment, EORI status, VAT position, transaction structure, and the representative’s acceptance criteria.",
+      "p5": "Winz checks the intended importer of record, representation method, and customs authorisation before filing. Non-EU businesses should resolve these points before shipping goods to Belgium."
+    },
+    "non_eu_importers": {
+      "title": "Non-EU Importers and VAT",
+      "p1": "Non-EU businesses can import goods into Belgium when the importer role, customs representation, EORI status, and VAT treatment are correctly arranged.",
+      "p2": "A Belgian VAT number or fiscal representative may be required when the business acts as importer of record or makes taxable supplies in Belgium.",
+      "p3": "The exact requirement depends on the sales model, consignee role, Incoterm, ownership transfer, stock location, and onward distribution plan.",
+      "p4": "Eligible Belgian VAT-registered businesses can apply for an ET 14000 authorisation. This arrangement allows approved importers to account for import VAT through the periodic VAT return instead of paying it immediately at customs.",
+      "p5": "ET 14000 does not remove the VAT liability. It changes when and how the VAT is accounted for. The Belgian VAT number must also be correctly connected with the customs setup.",
+      "p6": "Winz provides customs consulting and coordinates fiscal representation support for qualifying non-EU businesses."
+    }
+  },
+  "tables": {
+    "clearance_times": {
+      "title": "Belgium Clearance Times",
+      "description": "Complete declarations may receive same-day release without customs controls. Timing depends on document accuracy, customs workload, cargo type, and required checks.",
+      "headers": ["Clearance Situation", "Planning Expectation"],
+      "items": [
+        { "situation": "Complete declaration without control", "expectation": "Same-day release may be possible" },
+        { "situation": "Documentary control", "expectation": "One or more working days" },
+        { "situation": "Physical examination or scanning", "expectation": "Depends on inspection scheduling" },
+        { "situation": "Missing or inconsistent documents", "expectation": "Delayed until corrected" },
+        { "situation": "Regulated goods", "expectation": "Subject to permits and authority approval" },
+        { "situation": "Port or terminal release mismatch", "expectation": "Collection waits for all releases" }
+      ],
+      "note": "Before arrival, confirm classification, values, EORI details, licences, origin evidence, and broker authorisation to reduce avoidable delays."
+    },
+    "clearance_costs": {
+      "title": "Customs Clearance Costs",
+      "description": "Belgian clearance costs include broker fees, applicable duty and import VAT, plus any inspection, storage, or guarantee charges.",
+      "headers": ["Cost Type", "What It Covers"],
+      "items": [
+        { "type": "Customs broker fee", "covers": "Document review, declaration filing, and follow-up" },
+        { "type": "Import duty", "covers": "Based on classification, customs value, and origin" },
+        { "type": "Belgian import VAT", "covers": "Standard rate of 21% on the taxable import base" },
+        { "type": "Inspection charges", "covers": "Handling, scanning, sampling, or examination" },
+        { "type": "Storage charges", "covers": "Terminal or warehouse storage" },
+        { "type": "Guarantee costs", "covers": "Transit, duty suspension, or customs guarantees" },
+        { "type": "Licence support costs", "covers": "Administration for controlled goods" }
+      ],
+      "note": "Classification errors, missing licences, and unsupported values can add storage costs, duty corrections, and delays."
     }
   },
   "benefits": {
-    "title": "Waarom Winz voor import",
+    "badge": "Why Winz",
+    "title": "Why Businesses Choose Winz",
+    "description": "Winz supports importers, freight forwarders, logistics companies, and cross-border sellers with compliance-focused Belgian customs clearance.",
+    "intro": "Winz clearance support includes:",
     "items": [
-      "Verkorting van douaneverwerkingstijd",
-      "Volledige naleving van EU-importvoorschriften",
-      "Toegewijde douanespecialist voor uw account",
-      "Realtime updates van zendingstatus",
-      "Naadloze coördinatie met EU-havenautoriteiten",
-      "Kostenoptimalisatie van rechten en belastingen"
+      "IDMS import declaration preparation and filing",
+      "Document review before customs submission",
+      "HS and CN code classification checks",
+      "Customs value, duty, and VAT calculation",
+      "Origin and preferential-proof review",
+      "Import licence and permit checks",
+      "Customs control and inspection response",
+      "Direct or indirect representation review",
+      "Fiscal representation coordination",
+      "Customs release and status follow-up",
+      "Support in English, French, Dutch, and German"
+    ],
+    "footer": "Winz also supports export customs clearance and transit customs clearance for commercial goods moving out of or through Belgium."
+  },
+  "faqs": {
+    "badge": "FAQs",
+    "title": "Import Clearance FAQs",
+    "items": [
+      {
+        "q": "What documents are required for Belgian import customs clearance?",
+        "a": "The core documents are a commercial invoice, packing list, transport document, EORI number, classification data, customs value information, and origin details. Licences, preferential-origin proof, health certificates, or phytosanitary documents may also apply."
+      },
+      {
+        "q": "What is IDMS in Belgium?",
+        "a": "IDMS is Belgium’s Import Declaration Management System. It processes import declarations and supports the customs review, MRN, payment, control, and release process."
+      },
+      {
+        "q": "Is PLDA still used for Belgian imports?",
+        "a": "Belgian imports normally use IDMS. PLDA may remain available for limited fallback arrangements or specific exceptions during the customs-system transition."
+      },
+      {
+        "q": "How long does import clearance take?",
+        "a": "Complete declarations can receive release on the same working day when customs does not select the goods for control. Documentary checks, inspections, missing documents, or authority approvals can extend the process."
+      },
+      {
+        "q": "What duties and VAT apply in Belgium?",
+        "a": "Import duty depends on the TARIC classification, customs value, origin, and trade measures. Belgian import VAT is normally 21% and applies to the taxable import base."
+      },
+      {
+        "q": "Do importers need a customs broker?",
+        "a": "A customs broker is not mandatory in every case. Businesses commonly appoint one when they lack system access, classification expertise, Belgian representation, or internal customs resources."
+      },
+      {
+        "q": "What causes customs delays?",
+        "a": "Common causes include incorrect classifications, missing EORI details, invoice mismatches, vague descriptions, unsupported customs values, missing licences, incomplete origin evidence, and release-status mismatches."
+      },
+      {
+        "q": "Can non-EU companies import into Belgium?",
+        "a": "Non-EU companies can import when the importer role, EORI number, VAT position, customs representation, and fiscal requirements are correctly arranged."
+      },
+      {
+        "q": "Who files the ICS2 declaration?",
+        "a": "The carrier, shipping line, airline, freight forwarder, or other responsible transport party normally files the ICS2 Entry Summary Declaration. The customs import declaration is a separate filing."
+      },
+      {
+        "q": "Can Winz clear goods at Antwerp?",
+        "a": "Winz supports import customs clearance at the Port of Antwerp through declaration filing, document checks, classification review, duty and VAT calculation, customs follow-up, and release coordination."
+      }
     ]
+  },
+  "cta": {
+    "title": "Request Import Clearance Support",
+    "description": "Winz supports Belgian import customs clearance from initial document review to declaration filing and customs release. Send the shipment file before arrival, where possible.",
+    "intro": "The initial review should include:",
+    "items": [
+      "Commercial invoice and packing list",
+      "Bill of lading, airway bill, or CMR",
+      "EORI and importer details",
+      "Product descriptions and classifications",
+      "Origin and preferential-proof documents",
+      "Incoterm and delivery structure",
+      "Import licences or certificates where applicable"
+    ],
+    "contact": "Contact Winz for customs clearance support when your business imports commercial cargo into Belgium through FCL, LCL, reefer, air freight, or road freight shipment channels."
   }
 }

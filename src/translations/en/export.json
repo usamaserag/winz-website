@@ -1,54 +1,148 @@
 {
   "meta": {
-    "title": "Export Customs Clearance"
+    "title": "Export Customs Clearance Belgium | Winz",
+    "description": "Winz supports Belgian export customs clearance with AES filing, dual-use screening, origin evidence, proof-of-exit follow-up, and direct or indirect representation."
   },
   "hero": {
-    "badge": "Outbound Operations",
-    "title": "Secure Your Global Reach with",
-    "highlight": "Winz Logistics",
-    "description": "Empowering European businesses to export with confidence, compliance, and zero friction."
+    "badge": "Export Customs Clearance",
+    "title": "Export Customs Clearance",
+    "highlight": "Belgium",
+    "description": "Winz supports exporters, freight forwarders, and logistics companies with AES filing, document checks, dual-use screening, origin evidence, and proof-of-exit follow-up.",
+    "intro1": "Export customs clearance in Belgium requires an electronic declaration, a valid EORI number, accurate documents, and proof that the goods left the EU. The procedure applies when Union goods leave Belgium for a non-EU destination.",
+    "intro2": "Winz does not provide transport services. Winz helps businesses complete customs clearance Belgium for air freight, road freight, and container shipments.",
+    "stats": {
+      "headline": "Compliance",
+      "subline": "Zero Error Policy",
+      "footerLabel": "Seamless border transition"
+    }
   },
-  "risk": {
-    "title": "The Cost of Non-Compliance:",
-    "description": "A minor documentation error can quickly escalate into stranded shipments. Choose Winz to ensure your cargo remains compliant and schedules stay on track."
+  "process": {
+    "badge": "Clearance Stages",
+    "title": "Five Export Clearance Stages",
+    "description": "The Belgian export process normally covers declaration filing, customs release, movement to the exit point, physical departure, and exit confirmation.",
+    "stages": [
+      {
+        "title": "Stage 1 — AES Export Declaration",
+        "desc": "Winz submits the electronic export declaration through Belgium's Automated Export System (AES) before goods leave the EU. The declaration includes exporter, consignee, EORI, product, value, currency, destination, Incoterm, packaging, weight, procedure, and transport details."
+      },
+      {
+        "title": "Stage 2 — Export Control Checks",
+        "desc": "EU export regulations and dual-use controls require authorisation for certain goods. Winz reviews classification, technical specifications, destination, consignee, and intended use for export-control risks."
+      },
+      {
+        "title": "Stage 3 — Origin and Trade Documents",
+        "desc": "Winz reviews origin evidence against destination requirements and applicable trade agreements. Preferential duty requires goods to meet product-specific origin rules, using evidence like EUR.1 certificates or REX registration."
+      },
+      {
+        "title": "Stage 4 — Customs Office of Exit",
+        "desc": "The customs office of export processes and releases the declaration. The office of exit supervises departure and returns the exit result. These offices may be in different EU countries."
+      },
+      {
+        "title": "Stage 5 — Proof of Exit",
+        "desc": "Proof of exit confirms that goods left the EU and supports export records and VAT treatment. Winz monitors export status and follows up on missing confirmation."
+      }
+    ]
   },
-  "clearance": {
-    "badge": "Export Clearance",
-    "title": "The Path to Global Markets",
-    "description": "Every successful export is a milestone of growth. However, the path is often obstructed by a complex maze of dual-use controls, preferential origin requirements, and strict VAT proof-of-exit regulations."
+  "documents": {
+    "badge": "Documentation",
+    "title": "Export Documents",
+    "description": "Export documents support customs, tax, commercial, and transport requirements. Missing or inconsistent details can delay clearance and increase audit risk.",
+    "headers": ["Document or Information", "Main Purpose"],
+    "items": [
+      { "doc": "Commercial invoice", "purpose": "Confirms parties, goods, value, currency, and Incoterm" },
+      { "doc": "Packing list", "purpose": "Lists contents, packages, weights, and dimensions" },
+      { "doc": "AES export declaration", "purpose": "Declares goods for export" },
+      { "doc": "EORI number", "purpose": "Identifies the exporter or representative" },
+      { "doc": "Export licence", "purpose": "Authorises exports subject to licensing" },
+      { "doc": "CMR, bill of lading, or airway bill", "purpose": "Records road, sea, or air shipment details" },
+      { "doc": "Origin evidence", "purpose": "Supports eligible preferential tariff claims" },
+      { "doc": "A.TR certificate", "purpose": "Confirms eligible EU–Türkiye free-circulation status" }
+    ],
+    "note": "Road shipments require a CMR consignment note road freight as the legally required transport document on all cross-border truck departures from Belgium."
   },
-  "features": {
-    "dualUse": {
-      "title": "Dual-Use Controls",
-      "desc": "Expert handling of dual-use goods regulations and licensing requirements."
+  "sections": {
+    "document_checks": {
+      "title": "Export Document Checks",
+      "p1": "Winz checks export documents before filing to reduce customs delays, VAT exposure, and compliance errors.",
+      "p2": "Each file is compared with the commercial invoice, packing list, export declaration data, transport document, origin evidence, and licence requirements. The review can identify incorrect HS codes, missing EORI numbers, value differences, and incomplete destination details.",
+      "p3": "The declaration data must reflect the commercial transaction and physical shipment. Customs may stop the filing when the package counts, weights, values, or goods descriptions do not match.",
+      "p4": "Proof of exit also needs attention. Belgian exporters require reliable export evidence to support the VAT treatment of goods sold outside the EU."
     },
-    "origin": {
-      "title": "Preferential Origin",
-      "desc": "Accurate preferential origin documentation to unlock trade agreement benefits."
+    "direct_indirect": {
+      "title": "Direct and Indirect Exports",
+      "p1": "A direct export leaves the EU through the same member state where the export declaration is processed. For example, goods declared in Belgium may leave through the Port of Antwerp.",
+      "p2": "An indirect export leaves through another EU member state. A Belgian declaration may therefore close after the goods depart through Rotterdam, Hamburg, Amsterdam Airport Schiphol, or another EU exit point.",
+      "p3": "Indirect exports require accurate communication between the office of export and office of exit. The MRN must remain connected to the goods throughout the movement.",
+      "p4": "Errors in the exit reference, carrier reporting, or arrival message can delay closure. Exporters should check the movement status instead of assuming that physical departure automatically closes the declaration."
     },
-    "presence": {
-      "title": "Pan-European Presence",
-      "desc": "Comprehensive coverage across all EU member states and beyond."
+    "definitions": {
+      "title": "Declaration, EAD, MRN, and Exit Proof",
+      "p1": "An export declaration is the electronic customs filing used to place Union goods under the export procedure.",
+      "p2": "The MRN is the unique reference assigned to the accepted customs movement. It allows customs offices and authorised operators to identify and track the filing.",
+      "p3": "The Export Accompanying Document contains key declaration and MRN information. Its use depends on the export movement and the digital process followed by the customs offices and operators.",
+      "p4": "Proof of exit is the confirmation that the goods left the EU customs territory.",
+      "p5": "These records serve different purposes. The declaration starts the procedure. The MRN identifies the movement. The EAD supports movement control. The exit result closes the export process and supports the exporter's records."
     },
-    "digital": {
-      "title": "Digital Infrastructure",
-      "desc": "Advanced digital systems for real-time customs tracking and reporting."
+    "exporter_purposes": {
+      "title": "Exporter for Customs Purposes",
+      "p1": "The exporter is the party identified as responsible for the export under EU customs rules.",
+      "p2": "For a business transaction, the exporter normally needs to be established in the EU customs territory. The business must also have the power to determine, and must have determined, that the goods will leave the EU.",
+      "p3": "Where those conditions do not apply, an EU-established party to the export contract may qualify under the customs definition. A non-EU business cannot simply appear as the exporter because it owns or sells the goods. Contractual arrangements must identify an eligible EU-established exporter.",
+      "p4": "Incoterms such as EXW, FOB, CIF, and DDP affect commercial costs, risks, and responsibilities. They do not independently determine who qualifies as the exporter under customs law.",
+      "p5": "The exporter and customs declarant can also be different parties. A customs representative may file directly in the exporter's name or indirectly in its own name, depending on the agreed representation and legal requirements."
+    },
+    "delays": {
+      "title": "Common Export Delays",
+      "p1": "Belgian export delays usually result from declaration errors, missing licences, customs controls, or unclosed exit movements.",
+      "listIntro": "The 10 most common causes include:",
+      "items": [
+        "Incorrect HS or CN code",
+        "Missing or invalid EORI number",
+        "Invoice and packing list differences",
+        "Incorrect customs value or currency",
+        "Missing a dual-use or export licence",
+        "Unsupported preferential origin claim",
+        "Incorrect office of exit information",
+        "Carrier delay in reporting arrival or departure",
+        "Customs inspection at export or exit",
+        "Missing exit confirmation"
+      ]
+    },
+    "cost_factors": {
+      "title": "Export Clearance Cost Factors",
+      "p1": "Export clearance costs depend on declaration type, product controls, document requirements, destination, and customs follow-up level.",
+      "items": [
+        "Declaration type — standard export, re-export, and transit-linked exports each follow different procedures",
+        "Product type — chemicals, electronics, machinery, and controlled goods require additional checks",
+        "Origin evidence — EUR.1, statements on origin, and A.TR each require different review",
+        "Transport context — road, air, and container exports use different movement and exit documents",
+        "Licence requirements — controlled goods need technical checks and authorisation support",
+        "Customs inspection — scanning or physical examination increases coordination work",
+        "Exit follow-up — an open movement may require status checks and alternative proof"
+      ],
+      "p2": "Winz confirms required customs work before filing so exporters know which declarations, documents, and checks apply."
     }
   },
   "benefits": {
-    "title": "Export With Certainty",
-    "subtitle": "Why industry leaders trust Winz Logistics.",
+    "badge": "Why Winz",
+    "title": "Why Exporters Work With Winz",
+    "description": "Winz supports Belgian exporters with structured customs filing, document verification, and export-status follow-up.",
+    "intro": "Winz export support includes:",
     "items": [
-      "VAT proof-of-exit compliance guaranteed",
-      "Zero documentation errors policy",
-      "Preferred customs partner status at key EU ports",
-      "Proactive regulatory change management",
-      "Full audit trail for every export transaction",
-      "Strategic advice on export licensing"
-    ]
+      "AES export and re-export declarations",
+      "EORI and customs data checks",
+      "HS code and product-description review",
+      "Dual-use and licence-risk screening",
+      "Origin-document guidance",
+      "MRN and exit-status monitoring",
+      "T1 or T2 transit coordination where required",
+      "English, French, Dutch, and German support"
+    ],
+    "footer": "Businesses also receive a clear contact point for questions, missing documents, customs requests, and exit follow-up."
   },
   "cta": {
-    "title": "Grow Without Borders",
-    "description": "We provide the strategic expertise required to navigate shifting standards. Your cargo stays compliant, your schedules stay on track."
+    "title": "Ready for your next shipment?",
+    "description": "Winz provides customs clearance and compliance support for shipments moving by road, air, or container.",
+    "contact": "Request an export clearance quote for your next shipment."
   }
 }
