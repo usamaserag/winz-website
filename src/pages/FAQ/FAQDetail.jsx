@@ -14,6 +14,7 @@ import PageLoader from '../../components/common/PageLoader';
 import ErrorState from '../../components/common/ErrorState';
 import { getSiteOrigin, resolveMediaUrl } from '../../lib/site';
 import { useLocale } from '../../hooks/useLocale';
+import NotFound from '../NotFound';
 
 const clean = (str) => (str || '').trim().replace(/:+$/, '');
 
@@ -94,18 +95,7 @@ export default function FAQDetail() {
   if (!faq) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-gray-50 px-4">
-        <div className="max-w-md w-full text-center py-12 px-6 bg-white border border-gray-100 rounded-3xl shadow-sm">
-          <AlertCircle className="h-12 w-12 text-gray-400 mx-auto mb-4" />
-          <h3 className="text-lg font-bold text-gray-900 mb-2">{t('emptyState.title', { defaultValue: 'FAQ Not Found' })}</h3>
-          <p className="text-sm text-gray-500 mb-6">{t('emptyState.description', { defaultValue: 'The FAQ you are looking for does not exist or has been removed.' })}</p>
-          <Link
-            to="/faq"
-            className="inline-flex items-center gap-2 px-5 py-2.5 bg-primary-600 hover:bg-primary-700 text-white rounded-xl font-medium shadow-md transition-colors"
-          >
-            <ArrowLeft className="h-4 w-4" />
-            Back to FAQs
-          </Link>
-        </div>
+        <NotFound />
       </div>
     );
   }

@@ -1,8 +1,26 @@
 User-agent: *
-Allow: /
-
-# Do not crawl internal search results or tracking parameters if they exist
-Disallow: /*?q=*
-Disallow: /*?search=*
-
+Allow: /en/
+Allow: /fr/
+Allow: /de/
+Allow: /nl/
+Disallow: /admin/
+Disallow: /api/
+Disallow: /login/
+Disallow: /dashboard/
+Disallow: /staging/
+Disallow: /dev/
+Disallow: /?
+Disallow: /search/
+Disallow: /cart/
+Disallow: /checkout/
+User-agent: Googlebot
+Allow: /en/
+Allow: /fr/
+Allow: /de/
+Allow: /nl/
+User-agent: Bingbot
+Allow: /en/
+Allow: /fr/
+Allow: /de/
+Allow: /nl/
 Sitemap: https://winz.be/sitemap.xml

@@ -4,6 +4,7 @@ import Navbar from '../components/layout/Navbar';
 import Footer from '../components/layout/Footer';
 import DeferredMount from '../components/common/DeferredMount';
 import { ToastProvider } from '../context/ToastContext';
+import { SEOMeta } from '../components/common/SEOMeta';
 
 const ContactCTA = lazy(() => import('../components/common/ContactCTA'));
 const WhatsAppFloat = lazy(() => import('../components/common/WhatsAppFloat'));
@@ -11,6 +12,7 @@ const WhatsAppFloat = lazy(() => import('../components/common/WhatsAppFloat'));
 const MainLayout = () => {
   return (
     <ToastProvider>
+      <SEOMeta />
       <div className="flex flex-col min-h-screen overflow-x-hidden">
         <Navbar />
         <main className="flex-grow">

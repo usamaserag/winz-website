@@ -171,6 +171,9 @@ export default function Blog() {
                           <img 
                             src={`${API_BASE_URL}${row.image}`} 
                             alt={row.image_alt || title}
+                            width="640"
+                            height="360"
+                            loading="lazy"
                             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                           />
                         </div>
