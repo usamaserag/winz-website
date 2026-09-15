@@ -1,0 +1,231 @@
+{
+  "meta": {
+    "title": "Importing from Nigeria to EU: Customs Guide",
+    "description": "Nigerian cocoa, sesame, seafood, cashew, and crude oil imports need correct EU customs documents, EUDR checks, SPS controls, IUU certificates, and VAT planning."
+  },
+  "hero": {
+    "title": "Importing from Nigeria to EU",
+    "subtitle": "Importing from Nigeria to the EU requires accurate customs documents, HS code classification, product compliance checks, and import VAT planning before goods reach an EU entry point."
+  },
+  "intro": {
+    "p1": "This guide covers EU-wide requirements using Belgium and the Port of Antwerp as the main operational example. Customs systems, VAT arrangements, and border-control procedures vary between member states.",
+    "p2": "Antwerp is a major entry point for Nigerian cocoa, sesame, cashew, seafood, crude petroleum, and mineral products. Its Border Control Posts handle consignments subject to sanitary, phytosanitary, food, feed, or animal-product controls. Crude oil and mineral cargo require customs clearance but not automatic BCP processing.",
+    "p3": "Winz supports <1>EU import customs clearance for Nigerian goods</1> for importers, exporters, freight forwarders, and logistics companies. Winz does not provide air freight delivery, truck transport, or container shipping services."
+  },
+  "risks": {
+    "title": "Main Nigeria–EU Compliance Risks",
+    "p1": "Nigeria–EU imports face 3 connected risks: missing compliance evidence, incorrect tariff classification, and inconsistent pre-arrival data — causing document holds, inspections, storage charges, and refusal of controlled goods.",
+    "p2": "The clearance review should start before cargo leaves Lagos. The invoice, packing list, bill of lading, EORI number, HS code, Incoterm, goods description, and product certificates must all describe the same transaction.",
+    "p3": "A complete Entry Summary Declaration is required through ICS2 before EU arrival. The carrier normally submits the ENS, but importers and freight forwarders must provide accurate shipment data for pre-arrival risk analysis.",
+    "p4": "Agricultural and seafood shipments carry additional risks. Cocoa requires EUDR preparation. Selected food and feed products may require CHED pre-notification and official controls. Wild-caught fishery products require IUU catch documentation."
+  },
+  "tradeTreatment": {
+    "title": "EU–Nigeria Trade Treatment",
+    "p1": "Nigeria has no applied trade agreement with the EU and has not ratified the EU–West Africa EPA. Nigerian goods generally rely on the EU's Standard GSP where product and origin rules allow preference.",
+    "p2": "The EU adopted a renewed GSP framework in June 2026, applying from 1 January 2027. Importers should recheck eligibility and origin requirements for declarations made after that date.",
+    "sub1": "Standard GSP Rules",
+    "p3": "Standard GSP can reduce duty on qualifying Nigerian products with a positive MFN rate. It is more relevant to selected processed foods, textiles, hides, leather, and prepared fish than to raw commodities already entering at zero MFN duty.",
+    "p4": "Cocoa beans, crude petroleum, sesame seeds, shelled cashew nuts, and several ores may already carry zero or low MFN rates. Importers must check the live TARIC measure for the exact 10-digit code on the declaration date.",
+    "p5": "GSP preference requires qualifying origin and valid proof. A registered Nigerian exporter issues a statement on origin on an invoice or commercial document. REX is now the applicable certification method — Form A is no longer issued for new claims.",
+    "p6": "For wider planning, review the <1>certificate of origin Nigerian exports EU</1> before the supplier prepares commercial documents.",
+    "sub2": "EPA Status",
+    "p7": "Nigeria's EPA position may change. Importers must not claim EPA preference unless the agreement is applied and the relevant origin proof is legally accepted. Classify the product, check TARIC, confirm the origin arrangement, and retain supporting records with the customs file."
+  },
+  "preDeparture": {
+    "title": "Checks Before Goods Leave Nigeria",
+    "p1": "Pre-departure checks reduce corrections after cargo reaches the EU. Before loading at Apapa Port, Tin Can Island Port, or another Nigerian export point, complete 8 checks:",
+    "list": [
+      "Confirm the EU importer of record and its valid EORI number.",
+      "Classify every product line under the correct HS and CN code.",
+      "Check live TARIC duties, restrictions, quotas, and trade measures.",
+      "Confirm the Incoterm and costs included in the invoice value.",
+      "Prepare a valid REX statement on origin where GSP preference applies.",
+      "Identify EUDR, food-safety, plant-health, veterinary, CBAM, or fisheries controls.",
+      "Complete required TRACES NT, EUDR, or CATCH data before departure.",
+      "Send the final document set to the customs broker before arrival."
+    ],
+    "p2": "Mixed consignments need separate checks per commodity. Cocoa, sesame, cashew, groundnuts, seafood, and mineral products can follow different control routes in one container."
+  },
+  "customsValue": {
+    "title": "Customs Value and Import VAT",
+    "p1": "EU customs valuation starts with the transaction value, subject to required additions. For sea freight, customs value includes transport and insurance to the EU customs border. FOB invoices require freight and insurance to be added. CIF invoices normally include them. The same cost must not be counted twice.",
+    "p2": "Belgium's standard VAT rate is 21%. Import VAT also includes customs duty and qualifying incidental costs in its taxable base. Eligible businesses can use ET 14.000 to postpone Belgian import VAT to the periodic VAT return, requiring a linked Belgian VAT number and EORI number. ET 14.000 removes pre-financing at customs but not the tax obligation."
+  },
+  "duties": {
+    "title": "Duties on Common Nigerian Goods",
+    "table": [
+      {
+        "code": "HS 1801",
+        "desc": "Cocoa beans, raw or roasted",
+        "duty": "Often 0% MFN; verify TARIC",
+        "risk": "EUDR traceability"
+      },
+      {
+        "code": "HS 2709",
+        "desc": "Crude petroleum oils",
+        "duty": "Often 0% MFN; verify TARIC",
+        "risk": "Valuation and quantity data"
+      },
+      {
+        "code": "HS 1207.40",
+        "desc": "Sesame seeds",
+        "duty": "Often 0% MFN; verify TARIC",
+        "risk": "Salmonella controls"
+      },
+      {
+        "code": "HS 0801.32",
+        "desc": "Shelled cashew nuts",
+        "duty": "Often 0% MFN; verify TARIC",
+        "risk": "Food safety and origin"
+      },
+      {
+        "code": "HS 2607/2609",
+        "desc": "Lead or tin ores",
+        "duty": "Check live TARIC",
+        "risk": "Classification and assay data"
+      }
+    ],
+    "p1": "The table does not replace a TARIC check. One incorrect digit can change the duty rate, certificate requirement, inspection pathway, or trade-policy measure. Where composition or processing is unclear, laboratory analysis, product specifications, or Binding Tariff Information may be relevant."
+  },
+  "cbam": {
+    "title": "CBAM and Covered Goods",
+    "p1": "CBAM entered its definitive phase on 1 January 2026. It has limited relevance to common Nigerian cocoa, petroleum, sesame, cashew, and seafood imports because those goods are outside the principal CBAM sectors.",
+    "p2": "CBAM can apply when the exact CN code covers cement, iron and steel, aluminium, fertilisers, electricity, or hydrogen. Importers must confirm authorisation, registry, emissions data, and declarant obligations before importing covered goods."
+  },
+  "documents": {
+    "title": "Required Import Documents",
+    "p1": "Nigerian imports require standard customs documents and, where applicable, product-specific certificates. The exact file depends on the HS code, origin, Incoterm, importer role, food-safety status, and customs procedure.",
+    "table": [
+      {
+        "doc": "EORI number",
+        "purpose": "Identifies the importer or declarant",
+        "use": "EU customs declarations"
+      },
+      {
+        "doc": "Commercial invoice",
+        "purpose": "Confirms value, currency, Incoterm, and goods",
+        "use": "All commercial shipments"
+      },
+      {
+        "doc": "Packing list",
+        "purpose": "Confirms packages, marks, weights, and dimensions",
+        "use": "Physical cargo"
+      },
+      {
+        "doc": "Bill of lading",
+        "purpose": "Supports transport and cargo-release data",
+        "use": "Lagos–Antwerp shipments"
+      },
+      {
+        "doc": "HS code evidence",
+        "purpose": "Supports classification and control checks",
+        "use": "Every product line"
+      },
+      {
+        "doc": "REX statement on origin",
+        "purpose": "Supports a qualifying GSP claim",
+        "use": "Eligible originating goods"
+      },
+      {
+        "doc": "EUDR DDS reference",
+        "purpose": "Connects goods to EUDR due diligence",
+        "use": "Covered goods after application dates"
+      },
+      {
+        "doc": "CHED-P, CHED-PP, or CHED-D",
+        "purpose": "Records TRACES NT pre-notification and controls",
+        "use": "Controlled goods"
+      },
+      {
+        "doc": "Catch certificate",
+        "purpose": "Supports legal-harvest verification",
+        "use": "Covered wild-caught fishery products"
+      }
+    ],
+    "p2": "CHED-P applies to products of animal origin and related consignments. CHED-PP applies to plants and plant products. CHED-D applies to controlled food and feed of non-animal origin. The correct form depends on the product and legal control route."
+  },
+  "responsibilities": {
+    "title": "Importer and Broker Responsibilities",
+    "p1": "The importer of record must be confirmed before filing. The importer remains responsible for the commercial data, customs value, classification evidence, origin claim, and compliance documents supplied for the declaration.",
+    "p2": "Under direct representation, the broker acts in the importer's name and on the importer's behalf. Under indirect representation, the broker acts in its own name on the importer's behalf and becomes a declarant with potential joint liability for the customs debt.",
+    "p3": "The representation type should be agreed before filing because it affects liability, records, guarantees, and post-clearance questions."
+  },
+  "process": {
+    "title": "Antwerp Customs Clearance Process",
+    "p1": "Antwerp customs clearance for Nigerian imports normally follows 5 connected stages. Controlled food, feed, plants, animal products, cocoa, and seafood may require additional authority checks.",
+    "list": [
+      "Stage 1 — Pre-loading review: The broker checks HS codes, descriptions, EORI details, values, Incoterms, origin evidence, and product certificates. Mixed consignments require separate checks for every product line.",
+      "Stage 2 — Pre-arrival preparation: The importer assembles the invoice, packing list, bill of lading, origin proof, and compliance documents. The responsible ENS filer submits accurate ICS2 data. Controlled consignments are pre-notified in TRACES NT.",
+      "Stage 3 — Import declaration: The customs broker files the Belgian import declaration through the applicable system. The declaration must match the transport documents, customs value, and product-control records.",
+      "Stage 4 — Customs and BCP controls: Customs may conduct document or physical checks. Controlled agri-food consignments can face documentary, identity, physical, sampling, or laboratory controls at a designated BCP or control point. Failed results can lead to refusal, re-export, treatment, or destruction.",
+      "Stage 5 — Duty, VAT, and release: After customs and any required BCP release, goods can enter free circulation. They may instead move under a T1 transit declaration to another authorised customs destination."
+    ],
+    "p2": "Port of Antwerp customs clearance support helps importers coordinate declaration timing, customs questions, BCP records, and release documents. Transport from the port remains the responsibility of the importer, freight forwarder, or logistics provider."
+  },
+  "productRisks": {
+    "title": "Product-Specific Clearance Risks",
+    "p1": "3 product groups create significant compliance work: cocoa, controlled food and feed, and fishery products. Each follows a different document pathway.",
+    "sub1": "EUDR Rules for Cocoa",
+    "p2": "Cocoa is covered by the EU Deforestation Regulation. Under the current timetable, EUDR applies from 30 December 2026 to large and medium operators and to micro and small operators already covered by the EU Timber Regulation. It applies from 30 June 2027 to other micro and small operators.",
+    "p3": "Covered cocoa requires supply-chain information, production-country data, plot geolocation, legality evidence, risk assessment records, and a due diligence statement through the EUDR information system.",
+    "p4": "Aggregation creates the main operational risk. One container can contain cocoa from many farms or agents. Missing plot data can block due diligence even when the invoice and bill of lading are correct.",
+    "p5": "Importers should complete EUDR customs compliance checks before loading. Customs records and EUDR evidence must describe the same goods, quantities, and supply chain.",
+    "sub2": "Food and Feed Controls",
+    "p6": "Selected Nigerian food and feed products are subject to increased controls when their code, origin, and identified hazard appear in the current annexes to Regulation (EU) 2019/1793.",
+    "p7": "Nigeria-origin sesame may be controlled for microbiological risk, including Salmonella. Nigerian groundnuts, egusi products, or other listed goods may face aflatoxin or other hazard controls. The annexes and control frequencies change, so importers must verify the current version before departure.",
+    "p8": "Official controls can include document checks, identity checks, physical inspection, sampling, and laboratory testing. A private supplier certificate cannot replace an official BCP decision.",
+    "sub3": "IUU Rules for Seafood",
+    "p9": "Wild-caught fishery products require a valid catch certificate under the EU IUU system. From 10 January 2026, EU importers and authorities must use CATCH for fishery-product import documentation.",
+    "p10": "Importers should confirm species, vessel details, fishing area, processing information, establishment approval, and certificate validation before departure from Nigeria.",
+    "p11": "Aquaculture products do not always follow the same catch-certificate route. They can still require veterinary certification, approved establishment status, CHED-P pre-notification, and BCP controls.",
+    "p12": "For broader regional planning, see <1>West Africa to EU customs clearance</1>."
+  },
+  "support": {
+    "title": "Winz Clearance Support",
+    "p1": "Winz supports Nigerian exporters, EU importers, freight forwarders, and logistics companies with customs clearance and compliance preparation. Winz does not provide air freight delivery, truck transport, or container shipping services.",
+    "listTitle": "Winz support for Nigeria–EU customs files includes:",
+    "list": [
+      "Reviewing HS codes before filing.",
+      "Checking EORI details and importer roles.",
+      "Reviewing invoices and packing lists.",
+      "Checking REX statements for GSP claims.",
+      "Coordinating EUDR customs data for cocoa.",
+      "Supporting CHED and TRACES NT documentation.",
+      "Reviewing catch-certificate data for seafood.",
+      "Filing Belgian import declarations.",
+      "Coordinating ET 14.000 VAT treatment.",
+      "Preparing T1 transit declarations where required."
+    ],
+    "p2": "Every file is reviewed before filing to reduce avoidable holds and corrections. Winz communicates in English, French, Dutch, and German.",
+    "p3": "For Nigerian cocoa, sesame, cashew, seafood, or mixed agricultural consignments, <1>customs consulting Belgium</1> for West African trade helps importers check the file before cargo leaves Nigeria."
+  },
+  "faq": {
+    "title": "FAQ — Importing from Nigeria to EU",
+    "questions": [
+      {
+        "q": "Does Nigeria have an EU trade agreement?",
+        "a": "No applied EU–Nigeria trade agreement is currently in force. Nigeria has not signed or ratified the regional EPA. Qualifying goods may receive Standard GSP treatment when product and origin rules are met."
+      },
+      {
+        "q": "Which Nigerian goods enter Belgium?",
+        "a": "Common imports include cocoa beans, crude petroleum, sesame seeds, cashew nuts, seafood, and mineral products. Each product needs its own HS code, customs-value review, and compliance check."
+      },
+      {
+        "q": "Which documents does cocoa need?",
+        "a": "Cocoa normally needs an invoice, packing list, bill of lading, EORI number, HS code, and relevant origin evidence. EUDR data and a due diligence reference become necessary under the applicable timetable."
+      },
+      {
+        "q": "Why is sesame held at Antwerp?",
+        "a": "Sesame can be held when it is listed for increased controls, documents do not match, CHED-D pre-notification is incomplete, or sampling is required for microbiological risks."
+      },
+      {
+        "q": "How does ET 14.000 work?",
+        "a": "ET 14.000 allows eligible businesses filing periodic Belgian VAT returns to postpone import VAT to the VAT return instead of pre-financing it at customs."
+      },
+      {
+        "q": "How long does clearance take?",
+        "a": "Routine files may clear within 24 to 72 hours after declaration acceptance when documents are complete and no control intervenes. Sampling, laboratory testing, value queries, or certificate problems can extend the process."
+      }
+    ]
+  }
+}

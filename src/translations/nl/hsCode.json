@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "title": "HS Code Classificatie België | Winz",
+    "description": "Winz bepaalt en vult de juiste GN-code in op Belgische douaneaangiften. Berekening van invoerrechten, CBAM-blootstelling, BTI-richtlijnen en het risico van verkeerde classificatie worden gecontroleerd voordat de goederen worden aangegeven.",
+    "keywords": "HS Code Classificatie"
+  },
+  "hero": {
+    "title": "HS Code Classificatie België — Tariefcode en Rechtenberekening Service",
+    "subtitle": "Een HS-code is een numerieke productclassificatiecode die door douaneautoriteiten wordt gebruikt om goederen te identificeren, invoerrechten te berekenen en handelsmaatregelen toe te passen."
+  },
+  "intro": {
+    "p1": "Voor de volledige reikwijdte van de douanediensten van Winz, zie <1>douaneafhandeling België</1>.",
+    "p2": "In België vereist elke via PLDA ingediende invoeraangifte een GN-code van minimaal 8 cijfers. De internationale 6-cijferige HS-code alleen is niet voldoende voor Belgische douaneaangiften.",
+    "p3": "Onjuiste classificatie kan leiden tot naheffing van rechten, rente, boetes, vertragingen in verzendingen en risico's bij controles achteraf.",
+    "p4": "Winz bepaalt de juiste GN-code voordat elke aangifte wordt ingediend. Importeurs hoeven zelf geen codes te onderzoeken, te verifiëren of aan te leveren. Classificatie is geïntegreerd in het <1>EU importafhandeling</1> proces zonder extra kosten."
+  },
+  "structure": {
+    "title": "HS-code, GN-code en TARIC — Hoe de Drie-niveaustructuur Werkt in België",
+    "intro": "België gebruikt een tariefcodestructuur met 3 niveaus. Elk niveau heeft een andere functie op een douaneaangifte.",
+    "table": [
+      { "level": "6-cijferige HS-code", "usedFor": "Internationale productbasis", "requirement": "Niet genoeg op zichzelf" },
+      { "level": "8-cijferige GN-code", "usedFor": "EU douaneclassificatie", "requirement": "Vereist voor PLDA" },
+      { "level": "10-cijferige TARIC-code", "usedFor": "EU handelsmaatregelen", "requirement": "Gebruikt waar maatregelen van toepassing zijn" }
+    ],
+    "definitions": [
+      "<1>6-cijferige HS-code</1> — de internationaal geharmoniseerde basis beheerd door de Werelddouaneorganisatie (WDO). Het identificeert het hoofdstuk, de post en de onderverdeling in meer dan 200 douanegebieden.",
+      "<1>8-cijferige GN-code</1> — de EU-uitbreiding van de HS-code. Het is vereist voor Belgische import- en exportaangiften.",
+      "<1>10-cijferige TARIC-code</1> — de volledige code op EU-niveau die wordt gebruikt voor antidumpingrechten, tariefschorsingen, quota, vrijwaringsmaatregelen en CBAM-gerelateerde maatregelen. De volledige EU-tarieflijst valt onder <2>TARIC gecombineerde nomenclatuur België</2>."
+    ],
+    "outro": "Het indienen van een 6-cijferige code wanneer een 8-cijferige GN-code vereist is, leidt tot een aangiftefout."
+  },
+  "dutyRate": {
+    "title": "Hoe de GN-code het Tarief van Invoerrechten Bepaalt",
+    "text": "De GN-code die op een PLDA-aangifte wordt ingevoerd, is de directe input voor de EU TARIC-database. TARIC retourneert het standaard EU-invoerrechtentarief, eventuele preferentiële invoerrechten, antidumping- of compenserende rechten, tariefquota of -schorsingen, en importbeperkingen of licentievereisten. Hetzelfde fysieke product kan verschillende rechten aantrekken afhankelijk van de GN-code en oorsprong. Een mismatch tussen productclassificatie en aangegeven oorsprong is een van de meest voorkomende oorzaken van te weinig betaalde rechten bij de Belgische douane.",
+    "links": [
+      "Volledige berekeningsmethode: <1>hoe importheffingen worden berekend</1>",
+      "CBAM-verplichtingen per GN-post vanaf 2026: <2>CBAM en HS-codes België 2026</2>"
+    ]
+  },
+  "determination": {
+    "title": "Hoe de Douane de Juiste HS-code Bepaalt",
+    "intro": "Douaneclassificatie is gebaseerd op de objectieve kenmerken van het product op het moment van invoer. De Belgische douane classificeert goederen niet alleen op merknaam of commerciële beschrijving. Classificatie hangt meestal af van:",
+    "list": [
+      "<1>Materiaalsamenstelling</1> — staal, aluminium, plastic, katoen",
+      "<1>Productfunctie</1> — gereedschap, machineonderdeel, kledingstuk, verpakking",
+      "<1>Bewerkingsstaat</1> — ruw, halffabricaat, afgewerkt",
+      "<1>Aangeboden vorm</1> — set, onderdeel, component, accessoire",
+      "<1>Land van oorsprong</1> — rechten of handelsmaatregelen verbonden aan oorsprong",
+      "<1>Beoogd gebruik</1> — medisch, industrieel, consument, voedselveilig"
+    ],
+    "outro": "Winz controleert productbeschrijvingen, technische fiches, compositiedetails, foto's, facturen en leveranciersdocumenten voordat de GN-code wordt geselecteerd."
+  },
+  "rules": {
+    "title": "Algemene Regels voor Interpretatie (GIR)",
+    "intro": "De Algemene Regels voor Interpretatie begeleiden HS- en GN-classificatie wanneer producten moeilijk te classificeren zijn. Deze regels helpen de douane beslissen waar een product thuishoort in de tariefstructuur.",
+    "subtitle": "Belangrijkste regels zijn:",
+    "list": [
+      "<1>GIR 1</1> — classificatie begint met afdelingsaantekeningen, hoofdstukaantekeningen en de tekst van de posten",
+      "<1>GIR 2</1> — Incomplete of onvoltooide goederen kunnen nog steeds worden geclassificeerd als afgewerkte goederen",
+      "<1>GIR 3</1> — samengestelde goederen worden geclassificeerd op wezenlijk kenmerk indien nodig",
+      "<1>GIR 4</1> — Goederen die niet duidelijk zijn gedekt, worden geclassificeerd met de meest vergelijkbare goederen"
+    ],
+    "outro": "Samengestelde producten creëren vaak een classificatierisico. Voorbeelden zijn meubels van gemengd materiaal, textiel-plastic goederen, machinekits en accessoires verpakt bij hoofdproducten."
+  },
+  "examples": {
+    "title": "Veelvoorkomende Voorbeelden van Productclassificatie",
+    "intro": "Productvoorbeelden helpen importeurs begrijpen waarom classificatie een technische beoordeling vereist.",
+    "table": [
+      { "type": "Katoenen T-shirts", "area": "Hoofdstuk 61", "risk": "Vezelsamenstelling beïnvloedt post" },
+      { "type": "Aluminium profielen", "area": "Hoofdstuk 76", "risk": "Antidumpingmaatregelen kunnen van toepassing zijn" },
+      { "type": "Plastic verpakking", "area": "Hoofdstuk 39", "risk": "Voedselcontact kan controles beïnvloeden" },
+      { "type": "Stalen bevestigingsmiddelen", "area": "Hoofdstuk 73", "risk": "Oorsprong kan extra rechten veroorzaken" },
+      { "type": "Elektrische bedieningseenheden", "area": "Hoofdstuk 85", "risk": "Functie beïnvloedt post" },
+      { "type": "Machineonderdelen", "area": "Hoofdstukken 84/85", "risk": "Onderdeel vs complete machine kwestie" }
+    ],
+    "outro": "Deze voorbeelden zijn geen vaste juridische classificaties. De juiste GN-code hangt af van productsamenstelling, functie en presentatie."
+  },
+  "sections": {
+    "misclassification": {
+      "title": "Verkeerde Classificatie — Wat het Kost",
+      "text": "Een verkeerde GN-code op een Belgische aangifte kan leiden tot naheffing van te weinig betaalde rechten. De Belgische douane kan ook rente en administratieve boetes opleggen wanneer de aangifte een tekort aan rechten veroorzaakte. Audits achteraf kunnen eerdere aangiften ingediend onder dezelfde GN-code beoordelen. Eén verkeerde classificatie kan daardoor meerdere zendingen beïnvloeden. Te veel betalen is ook een risico. Een code met een hoger tarief verhoogt de importkosten. Het terugvorderen van te veel betaalde rechten vereist een correctieprocedure die veel importeurs missen. Winz verifieert de nauwkeurigheid van de GN-code op basis van productsamenstelling, bewerkingsstaat en aangegeven oorsprong voordat een aangifte wordt ingediend. Details over boeterisico: <1>douaneboetes voor verkeerde HS-classificatie België</1>."
+    },
+    "cbam": {
+      "title": "CBAM en HS-code Classificatie",
+      "text": "CBAM-blootstelling is gekoppeld aan GN-posten. Vanaf 2026 moeten importeurs van getroffen goederen GN-classificatie behandelen als een nalevingscontrole, niet alleen als een stap in de berekening van rechten. CBAM kan van toepassing zijn op staal, cement, aluminium, meststoffen, waterstof en elektriciteit. Een verkeerde GN-code kan een CBAM-verplichting verbergen of onnodige rapportageverplichtingen creëren. Winz controleert de relevantie van CBAM voordat de aangifte wordt ingediend wanneer goederen in de buurt vallen van getroffen GN-posten."
+    },
+    "bti": {
+      "title": "Bindende Tariefinlichting (BTI) — De Officiële Classificatiebeslissing",
+      "text": "Bindende Tariefinlichting is een officiële EU-classificatiebeslissing. Een BTI-beslissing is bindend voor douaneautoriteiten in alle EU-lidstaten gedurende 3 jaar vanaf de datum van afgifte.",
+      "subtitle": "BTI-aanvragen zijn nuttig voor:",
+      "list": [
+        "Nieuwe productcategorieën",
+        "Samengestelde goederen",
+        "Hoogwaardige zendingen",
+        "Herhaalde importen",
+        "Producten met onduidelijke tariefposten",
+        "Goederen blootgesteld aan antidumpingrechten of CBAM"
+      ],
+      "outro": "De verwerkingstijd bij de FOD Financiën bedraagt doorgaans 30 tot 90 dagen."
+    },
+    "howWinzClassifies": {
+      "title": "Hoe Winz Classificeert",
+      "text": "Winz bepaalt de GN-code voor elke zending op basis van productbeschrijving, materiaalsamenstelling, bewerkings- of productiestaat, aangegeven land van oorsprong en enige toepasselijke EU-handelsovereenkomst of handelsmaatregel. Klanten geven de productdetails, en Winz identificeert de juiste code. Er is geen aparte opzoeking nodig van de kant van de importeur. Voor ambigue productcategorieën adviseert Winz of een BTI-aanvraag nodig is voordat de eerste zending wordt ingediend. Complexe tariefstrategie en rechtenoptimalisatie vallen onder <1>EU douaneadvies</1>.",
+      "links": [
+        "Waar de GN-code verschijnt op een ingediende aangifte: <1>hoe lees je een douaneaangifte</1>.",
+        "Belangrijke tarieftermen die worden gebruikt in Belgische douaneaangiften zijn gedefinieerd onder <2>EU douaneterminologie</2>."
+      ]
+    }
+  },
+  "cta": {
+    "title": "Vraag HS-Classificatie Bijstand Aan in België",
+    "text": "Winz classificeert GN-codes, dient PLDA-aangiften in en beheert tariefnauwkeurigheid voor importeurs en expediteurs op alle Belgische binnenkomstpunten.",
+    "subtext": "Winz ondersteunt douaneafhandeling voor zeevracht, wegtransport, luchtvracht, containerzendingen en landgrensovergangen.",
+    "button": "Vraag HS-classificatie assistentie België aan"
+  },
+  "faq": {
+    "title": "Veelgestelde Vragen",
+    "questions": [
+      {
+        "q": "Kan ik de HS-code gebruiken die mijn leverancier op de commerciële factuur heeft gezet?",
+        "a": "Leveranciers-HS-codes kunnen als referentie worden gebruikt, maar mogen niet worden behandeld als een bevestigde EU-classificatie. Leverancierscodes weerspiegelen vaak het tariefsysteem van het exportland. België vereist de correcte 8-cijferige GN-code voor PLDA-aangiften."
+      },
+      {
+        "q": "Veranderen HS-codes, en wat gebeurt er met bestaande aangiften als dat zo is?",
+        "a": "Het Geharmoniseerd Systeem wordt elke 5 jaar herzien. De huidige editie is HS 2022. Wanneer posten veranderen, kunnen GN-codes ook veranderen. Aangiften die zijn ingediend onder verouderde codes na een herzieningsdatum, kunnen als verkeerd geclassificeerd worden beschouwd."
+      },
+      {
+        "q": "Wat is het verschil tussen de GN-code die wordt gebruikt voor import en export in België?",
+        "a": "Importaangiften vereisen de correcte 8-cijferige GN-code. Exportaangiften gebruiken dezelfde GN-basis, maar exportbeperkingen, regels voor tweeërlei gebruik (dual-use) of licentievereisten kunnen diepere controles op TARIC-niveau vereisen."
+      },
+      {
+        "q": "Kan een antidumpingrecht worden geactiveerd door een verkeerde GN-code?",
+        "a": "Ja. Antidumpingrechten zijn gekoppeld aan specifieke GN-codes en landen van oorsprong. Een verkeerde GN-code kan goederen verwijderen uit de correcte antidumpingpost of ze plaatsen in een post die niet van toepassing is."
+      },
+      {
+        "q": "Krijgt hetzelfde product altijd dezelfde GN-code, ongeacht de leverancier?",
+        "a": "Nee. Classificatie hangt af van samenstelling, bewerkingsstaat, functie en gepresenteerde vorm. Twee vergelijkbare producten kunnen onder verschillende GN-posten vallen als materiaalpercentages, gebruik of fysieke presentatie verschillen."
+      },
+      {
+        "q": "Wordt de GN-code classificatie als een aparte dienst in rekening gebracht bij Winz?",
+        "a": "Classificatie is inbegrepen in de standaard douaneaangifteservice bij Winz. Uitgebreid onderzoek, BTI-aanvragen of strategische rechtenoptimalisatie over een productreeks vallen onder douaneadvies."
+      },
+      {
+        "q": "Wat is de EU TARIC database?",
+        "a": "TARIC is de geïntegreerde tariefdatabase van de EU. Het koppelt GN-codes aan tarieven, preferentiële tarieven, antidumpingrechten, tariefquota, restricties en CBAM-gerelateerde maatregelen. Winz gebruikt TARIC als primaire referentie voor Belgische douaneaangiften."
+      }
+    ]
+  }
+}

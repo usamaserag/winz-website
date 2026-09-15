@@ -1,0 +1,193 @@
+{
+  "meta": {
+    "title": "Customs Clearance Brussels Airport | Winz",
+    "description": "Winz supports IDMS import and AES export clearance at Brussels Airport. AWB checks, SPS documents, duties, and BRUcargo release coordination."
+  },
+  "hero": {
+    "title": "Customs Clearance Brussels Airport",
+    "subtitle": "Air freight customs clearance at Brussels Airport (BRU) is a PLDA import or export declaration filed with Belgian FPS Finance for cargo arriving at or departing from the BRU cargo zone in Zaventem."
+  },
+  "intro": {
+    "p1": "The Air Waybill (AWB) is the primary air cargo transport document. It replaces the bill of lading used for sea freight.",
+    "p2": "Unlike a bill of lading, the AWB is non-negotiable. No original surrender is required before customs release.",
+    "p3": "Winz files PLDA declarations for <1>air cargo clearance</1> and <2>clearing goods through Belgian customs</2> at BRUcargo. This covers standard cargo, perishables, pharmaceutical cargo, and dangerous goods under one customs clearance account.",
+    "contact": "+32 496 32 24 67 | info@winz.be"
+  },
+  "systems": {
+    "title": "Customs Systems at BRUcargo",
+    "p1": "Belgian customs uses separate systems at Brussels Airport: IDMS for imports, AES for exports, and NCTS for transit, including T1 procedures to authorised customs locations.",
+    "p2": "Presentation and temporary storage data confirm goods have arrived and are available for customs supervision.",
+    "p3": "After accepting a declaration, the system assigns a Movement Reference Number (MRN). It identifies the declaration but does not confirm release. Customs release follows document checks, risk assessment, duty payment, regulatory controls, or physical inspection, where applicable.",
+    "p4": "For consolidated air cargo, the House Air Waybill identifies the individual freight-forwarder shipment, while the Master Air Waybill covers the consolidated airline movement.",
+    "p5": "Winz checks HAWB and MAWB details against the invoice, packing list, EORI number, HS or CN code, origin, and customs value.",
+    "p6": "Complete data allows declaration preparation before aircraft arrival. Pre-lodgement reduces processing time but does not prevent customs or regulatory controls. Winz supports <1>fast track air cargo clearance Belgium</1> when documentation is complete before arrival."
+  },
+  "documents": {
+    "title": "Required Air Cargo Documents",
+    "intro": "Correct documents reduce the risk of customs delays, value disputes, and cargo holds at Brussels Airport.",
+    "list": [
+      "AWB, HAWB, or MAWB",
+      "Commercial invoice",
+      "Packing list",
+      "EORI number",
+      "HS or CN code",
+      "Origin evidence",
+      "Import licence or permit",
+      "SPS or CHED document",
+      "Dangerous Goods Declaration"
+    ],
+    "outro1": "The invoice, packing list, and AWB must describe the goods consistently. Differences in quantities, weights, values, or product descriptions can stop declaration processing.",
+    "outro2": "The importer should also provide the correct Incoterms. EXW, FOB, CIF, and DDP affect which costs must be included in the customs value.",
+    "outro3": "An Incoterm does not automatically decide who acts as the legal importer. The importer of record and customs representative must be confirmed separately."
+  },
+  "release": {
+    "title": "How BRUcargo Release Works",
+    "p1": "BRUcargo is the dedicated cargo and logistics area at Brussels Airport in Zaventem, where airlines, freight forwarders, cargo handlers, customs representatives, businesses, and authorities operate.",
+    "p2": "BRUcloud supports data exchange and coordination between stakeholders by sharing cargo status and airport process information.",
+    "p3": "Customs release and physical availability are separate events. Customs release confirms the goods are no longer held under the declared procedure, but the cargo handler must still make them available for collection or handover.",
+    "availabilityTitle": "Availability may depend on:",
+    "availabilityList": [
+      "Cargo unloading and breakdown",
+      "Handler processing",
+      "Outstanding terminal charges",
+      "Security or regulatory checks",
+      "Collection instructions",
+      "Warehouse opening times"
+    ],
+    "outro1": "Correctly documented cargo may receive customs release on arrival day when pre-lodged and not selected for controls. However, no fixed timeline applies. Cargo type, risk selection, document quality, duty payment, and handler availability affect release time.",
+    "outro2": "Winz coordinates declaration status with the importer, freight forwarder, and handler but does not operate the airline, cargo terminal, or collection service."
+  },
+  "steps": {
+    "title": "Customs Clearance Steps",
+    "intro": "The Brussels Airport customs process normally follows six stages.",
+    "table": [
+      { "step": "1", "action": "AWB, invoice, packing list, and EORI checked", "result": "Shipment data confirmed" },
+      { "step": "2", "action": "HS code, origin, and customs value reviewed", "result": "Duties and controls identified" },
+      { "step": "3", "action": "Import, export, or transit declaration filed", "result": "MRN assigned after acceptance" },
+      { "step": "4", "action": "Goods presented to customs", "result": "Risk and control decision completed" },
+      { "step": "5", "action": "Duties, VAT, or guarantees settled", "result": "Financial conditions completed" },
+      { "step": "6", "action": "Customs release confirmed", "result": "The handler can complete the cargo handover" }
+    ],
+    "outro1": "Pre-lodgement can shorten the time between aircraft arrival and customs processing. It cannot remove an inspection, SPS control, security check, or dangerous goods acceptance requirement.",
+    "outro2": "A physical customs inspection can add several hours or multiple working days. The additional time depends on cargo availability, authority scheduling, document corrections, sampling, and laboratory testing."
+  },
+  "dutyVAT": {
+    "title": "Duties and Import VAT",
+    "p1": "Customs duty and import VAT are calculated before goods enter free circulation in Belgium.",
+    "p2": "Customs value normally begins with the transaction value. Freight, insurance, royalties, assists, and other adjustments may be added under EU customs valuation rules.",
+    "p3": "The HS or CN code determines the duty rate and trade measures, including anti-dumping duties, tariff quotas, licences, or product controls. Origin also affects duty. Preferential rates may apply when goods meet the origin rules and valid evidence is available.",
+    "p4": "Belgian import VAT is generally calculated on the customs value plus duty and certain additional costs. The standard rate is 21%, although other rates or reliefs may apply.",
+    "p5": "Importers may use an authorised deferment arrangement or approved VAT mechanism where available. The payment method should be confirmed before arrival.",
+    "p6": "Winz checks the declared value, HS code, Incoterm, and origin documents before filing, reducing the risk of incorrect payments and post-clearance corrections."
+  },
+  "cargoTypes": {
+    "sps": {
+      "title": "SPS and Food Controls",
+      "p1": "Some food, plant, animal, and agricultural products require additional controls before customs release. Requirements depend on the product, CN code, origin, and EU rules.",
+      "p2": "Applicable consignments may require TRACES NT pre-notification and a Common Health Entry Document:",
+      "list": [
+        "CHED-A for certain live animals",
+        "CHED-P for certain animal-origin products",
+        "CHED-PP for regulated plants and plant products",
+        "CHED-D for certain non-animal food and feed"
+      ],
+      "p3": "The relevant CHED must be submitted before the Border Control Post completes its checks.",
+      "p4": "Customs clearance and SPS approval are separate. A correct IDMS declaration cannot release goods held for veterinary, food-safety, or plant-health controls.",
+      "p5": "Winz coordinates customs documentation and declaration timing with the importer, freight forwarder, handler, and competent authority. The importer remains responsible for valid certificates, permits, product details, and regulatory information."
+    },
+    "dangerous": {
+      "title": "Dangerous Goods Requirements",
+      "p1": "Dangerous goods require consistent information across the AWB, commercial documents, customs declaration, and Dangerous Goods Declaration.",
+      "p2": "IATA Dangerous Goods Regulations govern air transport compliance but do not replace the customs declaration. The shipper normally remains responsible for correct classification, packing, marking, labelling, and declaration.",
+      "listTitle": "The Dangerous Goods Declaration should match:",
+      "list": [
+        "UN number",
+        "Proper shipping name",
+        "Hazard class",
+        "Packing group",
+        "Package quantity",
+        "AWB description"
+      ],
+      "p3": "The airline and handler perform acceptance checks under applicable transport rules.",
+      "p4": "Winz checks consistency between the customs description, HS code, invoice, AWB, and dangerous goods data but does not replace the shipper, airline, or authorised specialist. Incorrect classification may delay airline acceptance, handler processing, and customs clearance."
+    },
+    "pharma": {
+      "title": "Pharmaceutical Cargo Clearance",
+      "p1": "Pharmaceutical cargo follows standard import, export, or transit customs procedures. Additional requirements may cover product authorisations, temperature control, security, handling, and Good Distribution Practice.",
+      "p2": "Permits or regulatory controls may depend on the product, active ingredient, origin, destination, and intended use.",
+      "p3": "Winz reviews customs documents and cargo descriptions before filing. Temperature-controlled handling and GDP storage remain the responsibility of the appointed logistics and handling parties."
+    }
+  },
+  "options": {
+    "title": "Customs Warehousing Options",
+    "p1": "Air cargo can move from Brussels Airport to an authorised customs warehouse under the correct customs procedure.",
+    "p2": "A T1 transit declaration may move non-Union goods from BRUcargo to another authorised location without paying import duty and VAT at the airport.",
+    "p3": "The goods can then enter customs warehousing. Duty and import VAT remain suspended while the goods stay under that procedure.",
+    "p4": "Payment becomes due when the goods are released for free circulation, unless another relief or authorised arrangement applies.",
+    "p5": "Winz supports the transit, customs warehousing, and release documentation. Winz can also coordinate customs status with the importer and warehouse operator.",
+    "p6": "Winz does not provide physical warehousing or road transport."
+  },
+  "routing": {
+    "title": "Brussels and Schiphol Routing",
+    "p1": "Winz supports customs coordination for cargo routed through Brussels Airport and Amsterdam Schiphol.",
+    "p2": "A shipment arriving at Schiphol and destined for Belgium can enter free circulation in the Netherlands or move to Belgium under a T1 transit procedure.",
+    "p3": "The correct option depends on the importer's setup, VAT position, cargo type, destination, and customs authorisations.",
+    "p4": "Using one customs contact for both airports can reduce duplicated communication for importers, exporters, freight forwarders, and logistics companies.",
+    "p5": "The airline schedule or transport route does not change the need for accurate customs documents and a valid EU customs procedure."
+  },
+  "delays": {
+    "title": "Common Delay Causes",
+    "intro": "Four issues cause many avoidable air cargo delays at Brussels Airport:",
+    "list": [
+      "Mismatched HAWB, MAWB, invoice, or arrival data",
+      "Incorrect HS codes causing duty errors, licence queries, or customs controls",
+      "Missing SPS pre-notification for regulated food, plant, or animal consignments",
+      "Incomplete dangerous goods data delaying airline or handler acceptance"
+    ],
+    "outro1": "Other causes include invalid EORI numbers, unclear product descriptions, missing origin evidence, incorrect customs values, and unpaid duties or VAT.",
+    "outro2": "Winz checks these points before filing when complete documents are available."
+  },
+  "cta": {
+    "title": "Request Customs Clearance",
+    "text": "Winz supports IDMS import declarations, AES export declarations, NCTS transit movements, duty calculations, and BRUcargo customs coordination. Support is available for general cargo, perishables, pharmaceutical products, and dangerous goods customs documentation.",
+    "subtext": "Send the AWB, commercial invoice, packing list, EORI number, cargo description, and arrival details before the aircraft lands. Early document review helps identify HS code errors, missing permits, value issues, and regulatory requirements before the goods reach Brussels Airport.",
+    "button": "Contact Winz"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "questions": [
+      {
+        "q": "Does Belgium Use IDMS or PLDA?",
+        "a": "Belgian import declarations are normally processed through IDMS. AES handles export declarations, while NCTS manages customs transit. PLDA may remain available for limited fallback or transitional situations. Winz selects the active declaration system and procedure based on the shipment type and current Belgian customs requirements."
+      },
+      {
+        "q": "What Is Pre-Clearance?",
+        "a": "Pre-clearance means preparing and lodging the customs declaration before the aircraft arrives. Customs can review the declaration data earlier when complete transport and commercial documents are available. Release still depends on arrival, presentation, risk selection, payment, and any regulatory controls."
+      },
+      {
+        "q": "What Does the Handler Do?",
+        "a": "The cargo handler unloads, stores, and makes the consignment physically available at BRUcargo. Customs release does not automatically confirm immediate collection. The handler may still need to complete cargo breakdown, security, payment, or warehouse procedures before handover."
+      },
+      {
+        "q": "What Triggers an Inspection?",
+        "a": "Belgian customs uses risk analysis to select shipments for document checks or physical inspection. Selection can relate to the goods, origin, value, trader history, route, documents, or legal control requirements. Inspection time depends on cargo access, authority availability, sampling, and any requested corrections."
+      },
+      {
+        "q": "When Are Duties Paid?",
+        "a": "Import duty and VAT are normally settled before goods are released for free circulation. Payment may use a direct payment, guarantee, deferment account, or another authorised arrangement. Transit and customs warehousing can suspend payment until the goods enter the EU market."
+      },
+      {
+        "q": "Does Winz Handle Exports?",
+        "a": "Winz files Belgian export declarations through AES for air cargo departing Brussels Airport. The accepted declaration receives an MRN. The goods must then be presented and exit the EU customs territory. Exit confirmation supports the exporter’s evidence that the goods left the EU."
+      },
+      {
+        "q": "Can Cargo Enter Bonded Storage?",
+        "a": "Yes. Non-Union goods can move under transit to an authorised customs warehouse or enter another suitable customs procedure. Duty and import VAT remain suspended until the goods are released for free circulation or placed under another approved procedure."
+      },
+      {
+        "q": "Can Schiphol Cargo Move to Belgium?",
+        "a": "Yes. Goods arriving at Amsterdam Schiphol can move to Belgium under a T1 transit declaration. They may also be imported in the Netherlands, where the importer structure and VAT arrangements support that option. The correct route depends on the shipment and customs setup."
+      }
+    ]
+  }
+}

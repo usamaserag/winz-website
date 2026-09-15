@@ -5,7 +5,6 @@ import { Link } from '../../components/routing';
 import { HelpCircle, Search, X, ChevronDown, ArrowRight } from 'lucide-react';
 import { communityService } from '../../services/communityService';
 import { SEOMeta } from '../../components/common/SEOMeta';
-import usePageTitle from '../../hooks/usePageTitle';
 import PageHero from '../../components/logistics/PageHero';
 import EmptyState from '../../components/common/EmptyState';
 import ErrorState from '../../components/common/ErrorState';
@@ -17,7 +16,6 @@ const isUrl = (str) => typeof str === 'string' && str.trim().startsWith('http');
 
 export default function FAQ() {
   const { t, i18n } = useTranslation('faq');
-  usePageTitle(t('faq:meta.title'));
   const locale = useLocale();
 
   const [searchTerm, setSearchTerm] = useState('');
@@ -119,9 +117,9 @@ export default function FAQ() {
   return (
     <div className="flex flex-col min-h-screen bg-gray-50/50">
       <SEOMeta meta={{
-        title: t('meta.title'),
-        description: t('seo.description'),
-        keywords: 'customs faq, import documents, export clearance belgium, transit customs europe, customs process rotterdam',
+        title: t('faq:meta.title'),
+        description: t('faq:meta.description'),
+        keywords: i18n.exists('faq:meta.keywords') ? t('faq:meta.keywords') : undefined,
         canonical: `${getSiteOrigin()}/${locale}/faq`,
         ogTitle: t('seo.ogTitle'),
         ogDescription: t('seo.ogDescription'),

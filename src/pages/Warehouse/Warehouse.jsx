@@ -10,7 +10,7 @@ import {
   RefreshCw,
   Box,
 } from 'lucide-react';
-import usePageTitle from '../../hooks/usePageTitle';
+import { SEOMeta } from '../../components/common/SEOMeta';
 import PageHero from '../../components/logistics/PageHero';
 import { fadeUp, fadeLeft, fadeRight } from '../../components/logistics/motionVariants';
 
@@ -26,13 +26,17 @@ const SERVICE_ICONS = {
 };
 
 const WarehousePage = () => {
-  const { t } = useTranslation('warehouse');
-  usePageTitle(t('warehouse:meta.title'));
+  const { t, i18n } = useTranslation(['warehouse', 'common']);
 
   const benefits = t('benefits.items', { returnObjects: true });
 
   return (
     <div className="flex flex-col min-h-screen overflow-x-hidden">
+      <SEOMeta meta={{
+        title: t('warehouse:meta.title'),
+        description: t('warehouse:meta.description'),
+        keywords: i18n.exists('warehouse:meta.keywords') ? t('warehouse:meta.keywords') : undefined
+      }} />
       <PageHero
         badge={t('hero.badge')}
         title={t('hero.title')}

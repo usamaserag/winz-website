@@ -1,0 +1,209 @@
+{
+  "meta": {
+    "title": "Customs Clearance Amsterdam Schiphol | Winz",
+    "description": "Customs clearance at Amsterdam Schiphol for commercial air cargo. Winz supports DMS declarations, T1 transit, duties, VAT, and regulated goods."
+  },
+  "hero": {
+    "title": "Customs Clearance Amsterdam Schiphol",
+    "subtitle": "Amsterdam Airport Schiphol is a major entry point for commercial air cargo entering the EU. Winz supports importers and freight forwarders with customs clearance for goods arriving at Schiphol and continuing to Belgium or another EU destination."
+  },
+  "intro": {
+    "p1": "The procedure depends on where goods enter free circulation. Cargo may be cleared in the Netherlands or moved under T1 transit for Belgian import clearance.",
+    "p2": "Winz coordinates declarations, document checks, HS code classification, duty calculations, transit formalities, and release status as part of its wider <1>customs clearance Belgium</1> services."
+  },
+  "options": {
+    "title": "Clearance Options at Schiphol",
+    "intro": "Belgium-bound cargo arriving at Schiphol can follow Dutch import clearance or T1 transit to an approved customs destination in Belgium.",
+    "p1": "The appropriate option depends on the importer’s VAT setup, customs representation, delivery plan, and commercial transaction.",
+    "dutch": {
+      "title": "Dutch Import Clearance",
+      "p1": "Goods can be released into free circulation in the Netherlands through the Dutch Customs Declaration Management System (DMS).",
+      "p2": "Dutch Customs assesses the declaration, customs value, commodity code, origin, duty liability, and import restrictions. Duties and import VAT are handled under the approved Dutch arrangement.",
+      "p3": "Once released, the goods obtain Union status and can move to Belgium without a T1 declaration. This movement remains subject to VAT, invoicing, and evidence requirements, potentially involving fiscal representation, Article 23, or an intra-Community supply structure."
+    },
+    "t1": {
+      "title": "T1 Transit to Belgium",
+      "p1": "T1 transit applies when non-Union goods move from Schiphol to Belgium before import clearance.",
+      "p2": "Winz prepares or coordinates the transit declaration through NCTS. The procedure suspends import duties and VAT while goods move between approved customs locations.",
+      "p3": "Transit ends at the declared customs office or authorised consignee in Belgium. A Belgian import declaration is then required for free circulation.",
+      "p4": "Businesses planning an <1>EU import customs</1> filing may use this route when Belgian clearance better suits their VAT, representation, or distribution arrangements."
+    }
+  },
+  "process": {
+    "title": "Schiphol Clearance Process",
+    "intro": "Clearance begins before aircraft arrival when the required shipment data is available.",
+    "listTitle": "A typical process includes:",
+    "list": [
+      "Winz checks the Air Waybill, invoice, packing list, importer details, origin, and product description.",
+      "The correct CN or TARIC classification is confirmed.",
+      "Customs value, duty, import VAT, and trade measures are reviewed.",
+      "The DMS import or NCTS transit declaration is prepared.",
+      "Dutch Customs accepts the declaration and assigns an MRN.",
+      "Customs may release the shipment, request documents, or order inspection.",
+      "Winz coordinates status with the importer, carrier, handler, and authorities.",
+      "The goods receive import release or permission to move under transit."
+    ],
+    "outro1": "Customs release does not confirm completion of terminal procedures. The airline or handler may still require payment, warehouse release, or collection instructions.",
+    "outro2": "Winz coordinates customs clearance but does not provide air freight or road transport services."
+  },
+  "documents": {
+    "title": "Documents and Shipment Data",
+    "p1": "There is no universal five-document set for every shipment. The required documents depend on the goods, customs procedure, origin, value, and regulatory controls.",
+    "list1Title": "Most commercial air cargo declarations require the following core information:",
+    "list1": [
+      "Air Waybill",
+      "Commercial invoice",
+      "Packing list",
+      "Importer’s EORI number",
+      "Seller and buyer details",
+      "Accurate product descriptions",
+      "CN or TARIC codes",
+      "Country of origin",
+      "Customs value information",
+      "Incoterms",
+      "Package count and gross weight",
+      "Import VAT details"
+    ],
+    "p2": "The commercial invoice should show the transaction value, currency, payment terms, freight charges, insurance costs, and Incoterms. These details support the customs value calculation.",
+    "p3": "The packing list should show the number of packages, contents, net weight, and gross weight. Information across the invoice, packing list, and Air Waybill must remain consistent.",
+    "list2Title": "Additional documents may apply to regulated or preferential goods, including:",
+    "list2": [
+      "Proof of preferential origin",
+      "Import licence",
+      "Health certificate",
+      "Phytosanitary certificate",
+      "Common Health Entry Document",
+      "Certificate of analysis",
+      "End-use authorisation",
+      "Anti-dumping documentation",
+      "Quota evidence",
+      "Product conformity documents"
+    ],
+    "outro": "Missing, vague, or conflicting information can lead to questions from Dutch Customs. Errors in the product description, customs value, origin, or HS code can also cause delays and additional duty assessments."
+  },
+  "ics2": {
+    "title": "ICS2 and Advanced Data",
+    "p1": "Air cargo entering the EU is subject to advanced safety and security requirements under the Import Control System 2.",
+    "p2": "The carrier normally submits the Entry Summary Declaration before arrival. Freight forwarders, importers, consignees, or other supply-chain parties may also need to provide data under a multiple-filing arrangement.",
+    "p3": "ICS2 is not a replacement for the DMS import declaration. It is a separate pre-arrival security filing.",
+    "p4": "Shipment data provided for ICS2 should remain consistent with the Air Waybill, invoice, packing list, and customs declaration. Incomplete descriptions such as “parts,” “samples,” or “general goods” may trigger data requests or intervention.",
+    "p5": "Winz checks the available cargo information before customs filing and identifies inconsistencies that could affect clearance."
+  },
+  "times": {
+    "title": "Clearance Times at Schiphol",
+    "p1": "Clearance time depends on document readiness, declaration type, cargo category, Customs controls, terminal handling, and the availability of supporting certificates.",
+    "p2": "Document-complete general cargo may receive a customs decision on the same working day. Pre-arrival preparation reduces unnecessary waiting after the aircraft lands.",
+    "listTitle": "Longer processing can occur when:",
+    "list": [
+      "The declaration contains incomplete information",
+      "The HS code requires verification",
+      "Customs requests proof of value or origin",
+      "The shipment requires a physical inspection",
+      "Duties or import VAT remain unpaid",
+      "A licence or certificate is missing",
+      "NVWA or another authority must inspect the goods",
+      "The T1 guarantee or destination details are incomplete",
+      "The shipment arrives outside operational cut-off times"
+    ],
+    "outro1": "Physical inspections and regulatory controls can extend the process by one or more working days. Complex cases may take longer.",
+    "outro2": "Businesses comparing expected processing periods can review <1>how long customs clearance takes Schiphol</1> before planning warehouse collection or onward movement.",
+    "outro3": "All quoted timelines are operational estimates. Customs authorities make the final decision on controls and release."
+  },
+  "comparison": {
+    "title": "Schiphol or Brussels Airport",
+    "p1": "Schiphol and Brussels Airport both handle commercial air cargo for businesses importing into Belgium.",
+    "p2": "The better entry point depends on the flight route, importer setup, cargo type, final customs procedure, and local handling arrangements.",
+    "table": [
+      { "factor": "Customs authority", "schiphol": "Dutch Customs", "brussels": "Belgian Customs" },
+      { "factor": "Import system", "schiphol": "DMS", "brussels": "Belgian import declaration system" },
+      { "factor": "Belgium-bound uncleared cargo", "schiphol": "T1 transit required", "brussels": "Direct Belgian clearance" },
+      { "factor": "Goods cleared locally", "schiphol": "Union goods after release", "brussels": "Union goods after release" },
+      { "factor": "Import VAT location", "schiphol": "Netherlands", "brussels": "Belgium" },
+      { "factor": "Common use", "schiphol": "International hub connections", "brussels": "Direct Belgian imports" },
+      { "factor": "Transit step", "schiphol": "Required only before Belgian clearance", "brussels": "Normally not required" }
+    ],
+    "outro1": "Schiphol can be practical when the airline route already connects through Amsterdam. It also offers access to extensive air cargo handling facilities.",
+    "outro2": "Brussels Airport can simplify the process when the importer wants direct Belgian customs clearance without opening a T1 movement from another EU entry point.",
+    "outro3": "Winz also supports <1>air freight customs Brussels</1>, through the same customs-focused team. The decision should be based on the complete customs and VAT structure, not only the flight price."
+  },
+  "cargoTypes": {
+    "title": "Cargo Types at Schiphol",
+    "intro": "Winz supports customs clearance for general cargo, regulated products, perishables, machinery, industrial components, and cross-border e-commerce consignments.",
+    "p1": "Each category follows the same basic customs framework, but document and control requirements can differ.",
+    "general": {
+      "title": "General Air Cargo",
+      "p1": "General cargo includes products such as electronics, machinery parts, textiles, tools, packaging, and commercial consumer goods.",
+      "p2": "These shipments normally require standard customs documents, accurate classification, origin information, and a complete customs value.",
+      "p3": "Additional controls can still apply. Electronics may require product compliance documents. Machinery may contain restricted components. Textiles may qualify for preferential duty treatment when valid origin evidence is available.",
+      "p4": "Winz reviews each product line instead of relying on a single general description for the complete shipment."
+    },
+    "perishable": {
+      "title": "Perishable and Controlled Cargo",
+      "p1": "Temperature-sensitive cargo does not always require a Border Control Post procedure. General goods may only need customs clearance and suitable storage coordination. However, animals, animal products, plants, certain foods, and regulated feed may require NVWA pre-notification, TRACES NT registration, the correct CHED, health or phytosanitary certificates, and documentary, identity, or physical checks. Pre-notification should be completed before arrival because missing certificates can prevent EU entry.",
+      "p2": "Full requirements for <1>perishable goods air freight Schiphol</1> should be checked before the airline accepts the cargo at origin."
+    },
+    "asian": {
+      "title": "Southeast Asian Routes",
+      "p1": "Schiphol handles regular cargo connections from China, Indonesia, Malaysia, Singapore, Thailand, and other Asian markets.",
+      "p2": "Common imports include electronics, garments, machinery parts, food products, furniture components, and e-commerce goods.",
+      "p3": "These routes can involve specific origin documents, preferential trade arrangements, anti-dumping measures, product controls, or detailed valuation checks.",
+      "p4": "Winz verifies the customs requirements for each commodity and trade route. Businesses using <1>importing from Indonesia to EU via Schiphol</1> procedures should prepare classification, origin, value, and product-control documents before departure."
+    }
+  },
+  "dutyCosts": {
+    "title": "Duties and Import VAT",
+    "p1": "EU customs duty rates follow the Common Customs Tariff and remain consistent across Schiphol, Brussels, Rotterdam, and Antwerp. Final liability depends on TARIC classification, customs value, origin, quotas, anti-dumping measures, suspensions, end-use relief, and product rules. Import VAT depends on where goods enter free circulation. Winz checks the importer’s EORI, VAT setup, invoices, fiscal representation, and onward-movement evidence before filing.",
+    "costsTitle": "Clearance Costs at Schiphol",
+    "c1": "Customs clearance costs depend on the declaration type, number of commodity codes, cargo controls, and required procedures. Charges may include import declaration handling, T1 transit preparation, customs guarantee use, extra HS code lines, document corrections, inspection coordination, NVWA or Border Control Post procedures, certificate or licence checks, fiscal representation support, and after-hours handling.",
+    "c2": "Customs duties and import VAT are separate from customs broker fees. Airline, terminal, storage, demurrage, and transport charges are also separate.",
+    "c3": "A simple shipment with one commodity code normally requires less work than a controlled shipment with several product lines and government inspections.",
+    "c4": "Businesses can review the main factors affecting <1>customs clearance costs Schiphol Belgium</1>, before requesting a shipment-specific quote."
+  },
+  "support": {
+    "title": "Winz Customs Support",
+    "p1": "Winz supports importers, exporters, freight forwarders, and logistics companies with customs procedures at Amsterdam Schiphol. Support includes document checks, HS code classification, customs value reviews, duty and VAT calculations, DMS coordination, T1 transit preparation, NCTS updates, regulated cargo documentation, inspection support, and release coordination.",
+    "p2": "Early review reduces missing information, customs delays, and storage risks. Winz provides customs clearance, documentation, and compliance support only. Transport and final delivery remain with the appointed carrier."
+  },
+  "cta": {
+    "text": "To arrange customs clearance for commercial cargo arriving at Amsterdam Schiphol, ",
+    "linkText": "request Schiphol customs clearance",
+    "outro": " from Winz. We support DMS declarations, T1 transit, Belgian import clearance, document checks, duty calculations, and customs compliance."
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "questions": [
+      {
+        "q": "Is DMS used at Schiphol?",
+        "a": "Yes. Dutch Customs uses the Customs Declaration Management System, known as DMS, for import declarations. AGS was the previous Dutch declaration system. Schiphol cargo released into free circulation in the Netherlands is now processed through the applicable DMS procedure and supporting Dutch customs systems."
+      },
+      {
+        "q": "When is T1 transit required?",
+        "a": "T1 transit is required when non-Union goods move from Schiphol to Belgium before import clearance. The procedure suspends duties and import VAT during the movement. The T1 ends at an approved Belgian customs destination, where a Belgian import declaration releases the goods into free circulation."
+      },
+      {
+        "q": "Can cleared goods move to Belgium?",
+        "a": "Yes. Goods released into free circulation in the Netherlands obtain Union status and can move to Belgium without a T1 declaration. The business must still meet the applicable VAT, invoicing, evidence, and reporting requirements for the movement between the Netherlands and Belgium."
+      },
+      {
+        "q": "Who files the ICS2 declaration?",
+        "a": "The carrier normally files the Entry Summary Declaration through ICS2. Other parties may provide parts of the required information under a multiple-filing arrangement. Importers and freight forwarders should ensure that cargo descriptions, consignee details, routing information, and shipment data are accurate before departure."
+      },
+      {
+        "q": "Where is import VAT paid?",
+        "a": "Import VAT is handled in the country where the goods enter free circulation. Dutch import clearance creates a Dutch import VAT procedure. Goods moving under T1 to Belgium remain uncleared until the Belgian import declaration is accepted, after which Belgian import VAT rules apply."
+      },
+      {
+        "q": "Can Winz handle Dutch declarations?",
+        "a": "Winz supports Schiphol customs clearance through the required Dutch customs representation arrangement. The exact setup depends on the importer, declaration type, VAT structure, and goods. Winz confirms the representation route before accepting the declaration instructions."
+      },
+      {
+        "q": "What causes Schiphol delays?",
+        "a": "Common causes include missing invoices, incorrect HS codes, unclear descriptions, valuation questions, origin checks, unpaid duties, missing licences, physical inspections, and regulatory controls. Pre-arrival document checks reduce avoidable delays, but Customs and other authorities decide whether additional controls are required."
+      },
+      {
+        "q": "Do perishables require pre-notification?",
+        "a": "Only certain regulated products require official pre-notification. Animals, animal products, plants, and listed food or feed may require TRACES NT, a CHED, and NVWA controls. Temperature-sensitive general cargo does not automatically require a Border Control Post procedure."
+      }
+    ]
+  }
+}

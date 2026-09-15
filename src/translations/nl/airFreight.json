@@ -1,0 +1,192 @@
+{
+  "meta": {
+    "title": "Luchtvracht Douaneafhandeling België | Winz",
+    "description": "Winz ondersteunt luchtvracht douaneafhandeling in België met IDMS importdeclaraties, AES exportaangiften, ICS2 coördinatie, AWB controles en HS-code beoordeling.",
+    "keywords": "Luchtvracht Douaneafhandeling"
+  },
+  "hero": {
+    "title": "Luchtvracht Douaneafhandeling België",
+    "subtitle": "Luchtvracht douaneafhandeling in België vereist nauwkeurige gegevens, vroege documentcontroles en de juiste aangifte."
+  },
+  "intro": {
+    "p1": "Import wordt normaal gesproken verwerkt via IDMS, terwijl PLDA beperkt is tot goedgekeurde noodprocedures. Winz verzorgt <1>EU importdeclaratie service</1> voor importeurs, exporteurs, expediteurs en logistieke bedrijven die een conforme luchtvrachtafhandeling nodig hebben zonder vertragingen op de luchthaven. Voor algemene douaneprocessen, zie <2>douaneafhandeling België</2>.",
+    "p2": "Wij bereiden de aangiften voor, controleren documenten, coördineren douanevragen en bevestigen de vrijgave. Het luchthaventransport en de eindaflevering blijven de verantwoordelijkheid van de importeur of logistieke dienstverlener."
+  },
+  "howItClears": {
+    "title": "Hoe Luchtvracht door de Douane gaat",
+    "intro": "Luchtvrachtafhandeling omvat de veiligheidsaangifte voorafgaand aan het laden, importdeclaratie, douanecontrole en vrijgave. Vroege voorbereiding van documenten kan vertragingen verminderen, maar inspecties, magazijnprocedures en de afhandeling door luchtvaartmaatschappijen vallen buiten de controle van de douane-expediteur.",
+    "ics2": {
+      "title": "ICS2 Pre-Loading Aangifte",
+      "text": "Luchtvracht die de EU binnenkomt of transiteert vereist ICS2 veiligheids- en beveiligingsgegevens. De vervoerder, expediteur of een andere partij in de toeleveringsketen kan dit indienen. Ontbrekende gegevens van de geadresseerde, vage goederenomschrijvingen of onvolledige zendingsgegevens kunnen vertragingen veroorzaken."
+    },
+    "idms": {
+      "title": "IDMS Importdeclaratie",
+      "text": "Winz bereidt de Belgische importdeclaratie voor (of dient deze vooraf in) met behulp van de luchtvrachtbrief, HS-code, douanewaarde, EORI-nummer, oorsprong, procedure, rechten en btw-gegevens. IDMS verwerkt standaard aangiften, terwijl PLDA beperkt is tot goedgekeurde noodprocedures."
+    },
+    "control": {
+      "title": "Douanecontrole",
+      "text": "De Belgische douane kan goederen elektronisch vrijgeven, een documentaire of fysieke inspectie uitvoeren, of aanvullende informatie opvragen. De beslissing hangt af van risicoanalyse, productcontroles, oorsprong, route en aangiftegegevens."
+    },
+    "release": {
+      "title": "Vrijgave of Tijdelijke Opslag",
+      "text": "Goederen worden vrijgegeven nadat aan alle douane-, rechten-, btw-, garantie- en inspectievereisten is voldaan. Winz bevestigt de vrijgave, terwijl de afhandelaar van de luchtvaartmaatschappij of logistiek dienstverlener het afhalen beheert. Niet-vrijgegeven goederen kunnen in tijdelijke opslag blijven of in transit gaan, in een douane-entrepot worden geplaatst, onder tijdelijke invoer vallen, of een andere goedgekeurde procedure ondergaan."
+    }
+  },
+  "documents": {
+    "title": "Vereiste Luchtvracht Documenten",
+    "intro": "De luchtvrachtbrief (AWB) identificeert de transportroute, afzender, geadresseerde, luchthavens en goederen. Een Master Air Waybill (MAWB) dekt de geconsolideerde zending van de luchtvaartmaatschappij, terwijl elke House Air Waybill (HAWB) een individuele zending identificeert die mogelijk een aparte douaneaangifte vereist.",
+    "table": [
+      { "doc": "Luchtvrachtbrief (AWB)", "purpose": "Identificeert de zending en transportreferentie" },
+      { "doc": "Commerciële factuur", "purpose": "Bevestigt de waarde, valuta, goederen en Incoterm" },
+      { "doc": "Paklijst", "purpose": "Toont colli, gewichten en vrachtdetails" },
+      { "doc": "Goederencode (HS)", "purpose": "Bepaalt invoerrechten en productcontroles" },
+      { "doc": "EORI-nummer", "purpose": "Identificeert de douanepartij" },
+      { "doc": "Bewijs van oorsprong", "purpose": "Ondersteunt preferentiële tariefbehandeling" },
+      { "doc": "Licenties of certificaten", "purpose": "Bevestigen naleving voor gereguleerde goederen" }
+    ],
+    "postTable": "Alle documenten moeten consistente hoeveelheden, gewichten, waarden, partijen en productdetails tonen. Vage beschrijvingen zoals \"onderdelen\" of \"apparatuur\" moeten aangeven wat de goederen zijn, van welk materiaal ze zijn gemaakt en het gebruik ervan. Voor de volledige documentenset die vereist is voor luchtvracht, zie <1>douanedocumenten luchtvracht België</1>.",
+    "brusselsSupport": "Winz verzorgt luchtvracht douaneafhandeling op Brussels Airport voor Belgische commerciële import en export."
+  },
+  "whatWeNeed": {
+    "title": "Wat Winz Nodig Heeft om te Starten",
+    "intro": "Vroege indiening van documenten geeft Winz de tijd om ontbrekende gegevens te identificeren voordat de vracht arriveert. De exacte vereisten zijn afhankelijk van de goederen, oorsprong, douaneprocedure en structuur van de importeur.",
+    "subtitle": "Gelieve het volgende aan te leveren:",
+    "list": [
+      "De MAWB en alle relevante HAWB's",
+      "De commerciële factuur en paklijst",
+      "EORI- en btw-gegevens van de importeur",
+      "De goederencode, indien al bevestigd",
+      "Het land van oorsprong en het land van verzending",
+      "De overeengekomen Incoterm",
+      "De luchthaven van aankomst en de verwachte aankomsttijd",
+      "Gegevens van de importeur, exporteur en geadresseerde",
+      "Bewijs van oorsprong, licenties of certificaten waar van toepassing",
+      "Instructies voor invoerrechten, btw, uitstel van betaling of het gebruik van een garantie"
+    ],
+    "outro": "Winz kan aanvullende informatie vragen wanneer de factuur de aangegeven douanewaarde of goederenclassificatie niet ondersteunt."
+  },
+  "duties": {
+    "title": "Invoerrechten, Btw en Douanewaarde",
+    "text": "Invoerrechten zijn afhankelijk van de goederencode, douanewaarde, oorsprong en tariefpreferentie. Het standaard btw-tarief in België is 21%, hoewel er uitzonderingen zijn. In aanmerking komende bedrijven kunnen import-btw verleggen via ET 14000. Winz controleert de toepasselijke rechten en btw."
+  },
+  "representation": {
+    "title": "Douanevertegenwoordiging",
+    "text": "Directe vertegenwoordiging betekent dat de expediteur handelt in naam van de handelaar. Bij indirecte vertegenwoordiging handelt de expediteur in eigen naam en kan hij de douaneschuld delen. Winz bevestigt de geschikte optie en de vereiste machtiging. Niet-EU bedrijven hebben mogelijk ook een EU-importeur of fiscale structuur nodig."
+  },
+  "airports": {
+    "title": "Douanedekking op Belgische Luchthavens",
+    "intro": "Winz ondersteunt commerciële luchtvrachtdeclaraties via Belgische en nabijgelegen Europese luchthavens.",
+    "brussels": {
+      "title": "Brussels Airport",
+      "text": "Winz bereidt import- en <1>exportdeclaratie België</1> voor voor luchtvrachtzendingen, controleert luchtvrachtbrieven en facturen, en coördineert douanevragen voor farmaceutische, express- en algemene vracht. Luchthavenafhandelaars beheren de beschikbaarheid, afhandeling en vrijgave van de vracht."
+    },
+    "liege": {
+      "title": "Liège Airport",
+      "text": "Waar serviceafspraken beschikbaar zijn, ondersteunt Winz import, export, doorvoer en documentatie voor express, e-commerce, bederfelijke waren en algemene vracht. Stuur MAWB, HAWB, facturen, paklijsten en aankomstdetails door voor de landing."
+    },
+    "schiphol": {
+      "title": "Grensoverschrijdende Afhandeling Schiphol",
+      "text": "Zendingen via <1>douaneafhandeling Amsterdam Schiphol</1> gebruiken de Nederlandse douanesystemen. Goederen kunnen in het vrije verkeer worden gebracht in Nederland of onder douanevervoer reizen voor afhandeling elders. Winz bevestigt de route, EORI-vereisten en btw-behandeling voordat de aangifte wordt ingediend."
+    },
+    "perishable": {
+      "title": "Bederfelijke en Gecontroleerde Lading",
+      "text": "<1>Bederfelijke goederen luchtvracht België</1> vereist vroege coördinatie, maar alleen specifieke gereguleerde goederen vereisen controles door grensinspectieposten. Deze hebben mogelijk een voorafgaande kennisgeving, TRACES-verwerking, een Gemeenschappelijk Gezondheidsdocument (CHED), certificaten of inspectie nodig. Winz verzorgt douane-aangiften. Importeurs of gespecialiseerde agenten beheren gezondheidsdocumentatie en inspectie-afspraken. Douanevrijgave vervangt geen andere goedkeuringen van autoriteiten."
+    },
+    "dangerous": {
+      "title": "Ondersteuning voor Gevaarlijke Goederen",
+      "text": "Batterijen, chemicaliën, spuitbussen, gassen en bepaalde medische producten kunnen speciale verpakking, etiketten en transportdocumenten vereisen. De classificatie- en verpakkingsvereisten voor <1>gevaarlijke goederen luchtvracht IATA België</1> moeten vóór het laden op de plaats van herkomst worden bevestigd. Winz controleert douanegegevens. Verzenders en gekwalificeerde transportpartijen behandelen de classificatie van gevaarlijke goederen, de verpakking en de acceptatie door de luchtvaartmaatschappij. Correcte douanecodes bevestigen geen conformiteit met het luchtvervoer."
+    }
+  },
+  "export": {
+    "title": "Luchtvracht Exportaangiften",
+    "text": "Winz bereidt AES exportaangiften voor en controleert verzenddocumenten, goederencodes, exporteursgegevens, waarde, bestemming en procedure. De vrijgave voor export staat vertrek toe; de uitgangsbevestiging ondersteunt de btw- en nalevingsadministratie. Een afzonderlijke summiere aangifte bij uitgang kan vereist zijn als de toepasselijke veiligheids- en beveiligingsgegevens niet op een andere manier worden gedekt."
+  },
+  "delays": {
+    "title": "Veelvoorkomende Oorzaken van Vertragingen",
+    "intro": "Veel problemen met de afhandeling op luchthavens beginnen met onvolledige of inconsistente commerciële gegevens. Het corrigeren van informatie vóór aankomst is meestal makkelijker dan het wijzigen ervan nadat de douane de zending voor controle heeft geselecteerd. Zendingen die <1>prioriteit douaneafhandeling België</1> vereisen, moeten worden ingediend voordat de vlucht arriveert om vrijgavevertragingen te voorkomen.",
+    "subtitle": "Veelvoorkomende oorzaken zijn:",
+    "list": [
+      "Vage of onvolledige factuurbeschrijvingen",
+      "Verschillende gewichten op de AWB en de paklijst",
+      "Ontbrekende of ongeldige EORI-informatie",
+      "Onjuiste gegevens van importeur of geadresseerde",
+      "Niet-ondersteunde douanewaarden",
+      "Onjuiste goederencodes",
+      "Ontbrekend preferentieel oorsprongsbewijs",
+      "Onvolledige house-level ICS2 gegevens",
+      "Ontbrekende licenties of gezondheidscertificaten",
+      "Onduidelijke betalingsinstructies voor rechten of btw",
+      "Lading niet beschikbaar voor inspectie",
+      "Vrijgavebeperkingen van de luchtvaartafhandelaar of het magazijn"
+    ],
+    "outro": "Winz bekijkt de beschikbare documenten en legt uit welke correcties nodig zijn. De acceptatie door de douane en beslissingen over inspectie blijven bij de betreffende douaneautoriteit. Importeurs die willen begrijpen <1>hoe lang douaneafhandeling luchtvracht duurt</1> moeten rekening houden met het inspectierisico, het soort goed en de volledigheid van de documenten."
+  },
+  "whyWinz": {
+    "title": "Waarom Bedrijven voor Winz Kiezen",
+    "intro": "Winz ondersteunt importeurs, exporteurs, expediteurs en logistieke bedrijven die nauwkeurige luchtvrachtaangiften en duidelijke douanecommunicatie nodig hebben. Onze ondersteuning bij afhandeling omvat:",
+    "list": [
+      "Belgische IDMS import- en AES exportaangiften",
+      "ICS2 gegevenscoördinatie met vervoerders en expediteurs",
+      "Beheer van PLDA-noodprocedures waar officieel geaccepteerd",
+      "Controles van MAWB, HAWB, factuur en paklijst",
+      "Beoordeling van goederencode, douanewaarde, EORI en importeursgegevens",
+      "Instructies voor invoerrechten en btw",
+      "Douane-ondersteuning in Brussel, Luik en Schiphol",
+      "Communicatie in het Engels, Frans, Nederlands en Duits"
+    ],
+    "outro1": "Het doel is simpel: minder vertragingen veroorzaakt door ontbrekende gegevens, verkeerde classificaties of niet-overeenkomende documenten.",
+    "outro2": "Winz verzorgt de douaneafhandeling. Afhandeling op de luchthaven, transport en levering worden apart geregeld, tenzij anders afgesproken."
+  },
+  "cta": {
+    "title": "Vraag een Luchtvracht Offerte aan",
+    "text": "Winz ondersteunt de douaneafhandeling van luchtvracht op Brussels Airport, Liège Airport en Amsterdam Airport Schiphol.",
+    "services": "Onze diensten omvatten IDMS importdeclaraties, AES exportaangiften, ICS2 coördinatie, AWB controles, goederencode beoordelingen, douanewaarde controles en douanecommunicatie.",
+    "action": "Stuur de luchtvrachtbrief, commerciële factuur, paklijst, aankomstdetails, EORI-nummer en goedereninformatie voor beoordeling.",
+    "button": "Vraag een offerte aan voor luchtvrachtafhandeling"
+  },
+  "faq": {
+    "title": "Veelgestelde Vragen Luchtvracht Douane",
+    "questions": [
+      {
+        "q": "Wat is luchtvracht douaneafhandeling?",
+        "a": "Het is het proces dat wordt gebruikt om geïmporteerde of geëxporteerde luchtvracht bij de douane aan te geven. Dit kan veiligheidsaangiften, documentcontroles, beoordeling van rechten en btw, licenties, douanecontroles en vrijgave omvatten."
+      },
+      {
+        "q": "Wat is het verschil tussen ICS2 en IDMS?",
+        "a": "ICS2 verwerkt veiligheids- en beveiligingsgegevens voordat goederen de EU binnenkomen of erdoorheen reizen. IDMS is het Belgische systeem dat wordt gebruikt om standaard douaneaangiften voor invoer in te dienen."
+      },
+      {
+        "q": "Gebruikt België nog steeds PLDA?",
+        "a": "België gebruikt IDMS voor standaard importdeclaraties waar mogelijk. PLDA blijft alleen beschikbaar voor beperkte noodprocedures, bekende technische problemen of uitzonderingen die door de Belgische douane worden geaccepteerd."
+      },
+      {
+        "q": "Welke documenten zijn vereist?",
+        "a": "De meeste zendingen vereisen een luchtvrachtbrief, commerciële factuur, paklijst, EORI-nummer, goederencode en oorsprongsinformatie. Voor gecontroleerde goederen kunnen ook licenties, certificaten of gezondheidsdocumenten nodig zijn."
+      },
+      {
+        "q": "Wat is het verschil tussen MAWB en HAWB?",
+        "a": "Een MAWB dekt de geconsolideerde zending van de luchtvaartmaatschappij. Een HAWB identificeert een individuele zending binnen een geconsolideerde lading. Elke HAWB kan een aparte douaneaangifte vereisen."
+      },
+      {
+        "q": "Hoe lang duurt de afhandeling?",
+        "a": "Er is geen vaste afhandelingstijd. De timing is afhankelijk van de kwaliteit van de documenten, douanecontroles, presentatie van de goederen, afspraken over rechten en btw, licenties en magazijnprocedures op de luchthaven."
+      },
+      {
+        "q": "Kunnen goederen in een douane-entrepot worden opgeslagen?",
+        "a": "Ja. Luchtvracht mag in tijdelijke opslag blijven of overgaan naar een geautoriseerd douane-entrepot nadat de juiste aangifte of transitprocedure is voltooid."
+      },
+      {
+        "q": "Wat gebeurt er tijdens een inspectie?",
+        "a": "De goederen moeten aan de douane worden gepresenteerd. De douane kan de goederen, factuur, luchtvrachtbrief, goederencode, oorsprong, hoeveelheid en aangegeven waarde controleren voordat de vrijgave wordt bevestigd."
+      },
+      {
+        "q": "Kan Winz levering vanaf de luchthaven regelen?",
+        "a": "Winz richt zich op de douaneafhandeling. Het afhalen op de luchthaven en de verdere levering worden normaal gesproken geregeld door de importeur, expediteur of logistieke dienstverlener."
+      },
+      {
+        "q": "Kan Winz goederen afhandelen vóór aankomst?",
+        "a": "De aangifte kan vóór aankomst worden voorbereid of ingediend als de benodigde gegevens beschikbaar zijn en de douaneprocedure dit toelaat. De definitieve vrijgave is nog steeds afhankelijk van aankomst en presentatie."
+      }
+    ]
+  }
+}

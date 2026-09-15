@@ -1,0 +1,297 @@
+{
+  "meta": {
+    "title": "Importing from UAE to Belgium: Customs Guide",
+    "description": "Importing from UAE to Belgium requires MFN duty, 21% VAT, origin checks, CBAM review, and IDMS clearance. Winz supports Belgian importers."
+  },
+  "hero": {
+    "title": "Importing from UAE to Belgium",
+    "subtitle": "Importing goods from the UAE to Belgium requires correct EU classification, origin, customs value, import VAT, and an IDMS declaration. UAE-origin goods currently receive standard EU third-country tariff treatment because no preferential EU–UAE trade agreement is in force."
+  },
+  "intro": {
+    "p1": "Belgian importers must also check product controls before shipment. Aluminium may fall within CBAM. Refined petroleum products can require crude-feedstock evidence. Gold may receive enhanced valuation, provenance, and sanctions checks.",
+    "p2": "Winz supports <1>importing from the UAE through Belgian customs</1> for importers, exporters, freight forwarders, and logistics companies. Transport remains arranged by the importer or its logistics provider."
+  },
+  "requirements": {
+    "title": "Importer Requirements",
+    "p1": "An EORI number is mandatory for EU customs clearance. It identifies the business in import, export, and transit declarations.",
+    "p2": "The importer must also confirm who will act as importer of record. This party accepts responsibility for the declaration, duty, VAT, product compliance, and customs records.",
+    "p3": "A UAE seller using DDP terms must not assume that the Belgian buyer or customs broker automatically becomes importer. The VAT structure, establishment position, contract, and representation must support the arrangement.",
+    "p4": "Direct representation means the broker acts in the importer's name. Indirect representation means the representative acts in its own name for the importer and can share customs-debt liability.",
+    "p5": "Before dispatch, confirm the EORI number, importer identity, Belgian VAT position, customs representation, and product-specific registrations."
+  },
+  "tradeStatus": {
+    "title": "UAE–EU Trade Status",
+    "p1": "No preferential EU–UAE free trade agreement is currently in force. The EU and UAE formally launched bilateral negotiations on 28 May 2025. Negotiations continued during 2026, but no tariff preference applies until an agreement enters into force.",
+    "p2": "UAE-origin goods therefore enter Belgium under the EU Common Customs Tariff. The rate depends on the product's classification, origin, and measures active on the declaration date.",
+    "p3": "Importers moving goods from Jebel Ali to Antwerp should confirm duty, origin, VAT, and product controls before departure.",
+    "sub1": "MFN Duty Rules",
+    "p4": "UAE-origin goods normally receive EU most-favoured-nation tariff treatment. The standard third-country rate applies unless the tariff line is duty-free or another measure changes the result.",
+    "p5": "An EUR.1 certificate or preferential statement on origin cannot be used to claim reduced duty for UAE goods.",
+    "p6": "Duty is determined through the 8-digit Combined Nomenclature code and 10-digit TARIC code. TARIC can also show quotas, suspensions, trade-defence duties, restrictions, and document codes.",
+    "p7": "A four-digit HS heading is not enough for a final landed-cost calculation. Winz provides HS code classification support before declaration filing.",
+    "sub2": "Origin Proof",
+    "p8": "Non-preferential origin affects MFN treatment, trade measures, sanctions screening, quotas, and origin marking. The country of dispatch does not automatically become the customs origin.",
+    "p9": "EU customs authorities do not normally require a third-country non-preferential Certificate of Origin in every case. A certificate may support the file or become necessary under a specific arrangement.",
+    "p10": "Importers should retain manufacturing records, supplier declarations, production details, and other evidence supporting the declared origin.",
+    "p11": "Goods re-exported through Jebel Ali Free Zone or Dubai Airport Free Zone need careful review. Storage, relabelling, repacking, and consolidation normally do not create UAE origin.",
+    "p12": "For a comparison of Gulf origin and MFN rules, see <1>importing from Saudi Arabia to EU</1>."
+  },
+  "customsValue": {
+    "title": "Customs Value",
+    "p1": "EU customs value normally starts with the transaction value. Customs then adds or deducts qualifying costs under Union Customs Code rules.",
+    "p2": "Under FOB terms, freight and insurance to the EU border usually need to be added. Under CIF terms, these costs may already be included. Under EXW terms, origin-side and international transport costs may need to be added.",
+    "p3": "Under DDP terms, separately identified EU duty, VAT, and post-entry costs may need to be deducted. The Incoterm alone does not determine customs value.",
+    "p4": "Related-party sales, free supplies, assists, royalties, or unusual payment terms need additional review. Winz checks the invoice, currency, Incoterm, freight allocation, and valuation adjustments before IDMS filing."
+  },
+  "dutyVAT": {
+    "title": "Duty, VAT, and CBAM",
+    "p1": "UAE imports can create customs duty, Belgian import VAT, and CBAM liability for covered goods. Each calculation follows different rules.",
+    "p2": "The rates below are general examples, not binding quotations. The current 10-digit TARIC code and declaration date determine the final result.",
+    "table": [
+      {
+        "heading": "2709",
+        "goods": "Crude petroleum",
+        "duty": "Often 0%",
+        "check": "Exact code and sanctions"
+      },
+      {
+        "heading": "2710",
+        "goods": "Refined petroleum",
+        "duty": "Varies",
+        "check": "Product and feedstock origin"
+      },
+      {
+        "heading": "7108",
+        "goods": "Gold",
+        "duty": "Generally 0%",
+        "check": "Value, provenance, sanctions"
+      },
+      {
+        "heading": "7601",
+        "goods": "Unwrought aluminium",
+        "duty": "Commonly 6% for many lines",
+        "check": "TARIC and CBAM"
+      },
+      {
+        "heading": "3901/3902",
+        "goods": "Polyethylene and polypropylene",
+        "duty": "Often 6.5%",
+        "check": "Polymer sub-classification"
+      },
+      {
+        "heading": "8517",
+        "goods": "Telecom apparatus",
+        "duty": "Many lines are 0%",
+        "check": "Technical function"
+      }
+    ],
+    "p3": "Belgian import VAT is normally 21%. Its base includes customs value, duty, other import taxes, and qualifying incidental costs to the first known destination.",
+    "p4": "Businesses filing Belgian periodic VAT returns may apply for ET 14.000. This moves import VAT to the periodic return and avoids pre-financing it at customs. The EORI number must be linked to the Belgian VAT number.",
+    "p5": "Non-EU businesses may need Belgian VAT registration and a fiscal representative, depending on their structure and activities.",
+    "p6": "Landed cost is wider than customs value. It can include the goods price, international freight, insurance, customs duty, import VAT, customs clearance fees, terminal charges, inspections, and CBAM certificate costs. Importers should separate each cost before agreeing a sales price or DDP quotation."
+  },
+  "compliance": {
+    "title": "Product Compliance Checks",
+    "p1": "Customs release does not automatically confirm that goods may be placed on the EU market. The importer remains responsible for applicable product rules.",
+    "p2": "Machinery and electrical goods may require CE marking, technical files, and declarations of conformity. Chemicals can fall under REACH and CLP rules. Food, plants, and animal products can require sanitary or phytosanitary documents.",
+    "p3": "Telecom equipment, medicines, medical devices, dual-use goods, waste, cultural goods, and wildlife products may require further licences or approvals.",
+    "p4": "The exact controls depend on the TARIC code, product, intended use, and importer role. Product documents should be checked before departure from the UAE."
+  },
+  "cbam": {
+    "title": "UAE Aluminium and CBAM",
+    "p1": "Covered UAE aluminium entered the definitive CBAM phase on 1 January 2026. Importers must confirm whether the exact CN code falls within CBAM and whether the annual 50-tonne threshold exemption applies.",
+    "p2": "EU importers or eligible indirect representatives importing more than 50 tonnes of covered mass-based CBAM goods annually need authorised CBAM declarant status. The customs declaration requires the CBAM account number or accepted application reference where applicable.",
+    "listTitle": "CBAM compliance includes 5 duties:",
+    "list": [
+      "Confirm the CBAM code and annual imported mass.",
+      "Obtain authorised declarant status when required.",
+      "Collect embedded-emissions data from the UAE producer.",
+      "Keep shipment records for the annual declaration.",
+      "Purchase and surrender certificates by the deadline."
+    ],
+    "p3": "The first declaration for 2026 imports is due by 30 September 2027. The corresponding certificates are surrendered by the same date.",
+    "p4": "Verified actual emissions can reduce exposure when they are lower than default values. Importers should request emissions data before purchase."
+  },
+  "process": {
+    "title": "Antwerp Clearance Process",
+    "p1": "Belgian import declarations are filed mainly through IDMS. The system has been in production since October 2024. PLDA remains a temporary fallback for operational problems and specific situations.",
+    "p2": "Sea freight commonly enters through the Port of Antwerp-Bruges. Air cargo may enter through Brussels Airport or Liège Airport. Winz clears customs for these shipments but does not provide transport or inland haulage.",
+    "sub1": "ICS2 Safety Filing",
+    "p3": "The carrier or another responsible party submits the ICS2 Entry Summary Declaration. The supplier and importer must provide accurate commercial data.",
+    "p4": "The ENS can include commodity codes, cargo descriptions, party details, transport data, and EORI information. Poor data can trigger information requests or arrival controls.",
+    "p5": "Winz coordinates customs data with the responsible filing party. ICS2 collects safety and security data before goods enter the EU.",
+    "sub2": "Document Preparation",
+    "p6": "The importer prepares the commercial invoice, packing list, transport document, and supporting compliance records.",
+    "p7": "Conditional documents can include origin evidence, licences, CBAM references, product certificates, valuation records, and sanctions evidence.",
+    "p8": "Pre-arrival review allows classification, value, origin, and VAT errors to be corrected before arrival.",
+    "sub3": "IDMS Declaration",
+    "p9": "Winz checks the TARIC code, origin, customs value, VAT treatment, representation, and document codes before submitting the IDMS declaration.",
+    "p10": "Pre-arrival filing can reduce avoidable dwell time. It cannot guarantee release because customs can request documents, inspect goods, or take samples.",
+    "sub4": "Customs Assessment",
+    "p11": "Belgian customs assesses value, duty, VAT, origin, and compliance data.",
+    "p12": "Aluminium can require CBAM checks. Petroleum may require feedstock evidence. Gold can receive valuation, provenance, sanctions, or payment-document review.",
+    "p13": "Customs can release the goods, request documents, or order a physical inspection.",
+    "sub5": "Release Coordination",
+    "p14": "Winz confirms customs release and shares the information with the importer, forwarder, carrier, or terminal.",
+    "p15": "The transport provider then handles collection and inland movement. Customs release does not replace terminal or carrier release."
+  },
+  "documents": {
+    "title": "Required Documents",
+    "p1": "Standard clearance starts with the commercial invoice, packing list, and relevant transport document. Other records depend on the product and procedure.",
+    "table": [
+      {
+        "doc": "Commercial invoice",
+        "purpose": "Confirms parties, value, Incoterm, and goods",
+        "when": "Commercial imports"
+      },
+      {
+        "doc": "Packing list",
+        "purpose": "Confirms packages, weights, and quantities",
+        "when": "Most shipments"
+      },
+      {
+        "doc": "Bill of lading or sea waybill",
+        "purpose": "Confirms sea transport",
+        "when": "Sea freight"
+      },
+      {
+        "doc": "Air waybill",
+        "purpose": "Confirms air transport",
+        "when": "Air freight"
+      },
+      {
+        "doc": "EORI and VAT details",
+        "purpose": "Identify importer and tax position",
+        "when": "Declaration"
+      },
+      {
+        "doc": "Representation authorisation",
+        "purpose": "Allows broker filing",
+        "when": "Broker declarations"
+      },
+      {
+        "doc": "Origin evidence",
+        "purpose": "Supports declared origin",
+        "when": "When relevant"
+      },
+      {
+        "doc": "CBAM account or reference",
+        "purpose": "Supports covered imports",
+        "when": "CBAM goods"
+      },
+      {
+        "doc": "Product certificates or licences",
+        "purpose": "Support regulated goods",
+        "when": "When applicable"
+      },
+      {
+        "doc": "Valuation evidence",
+        "purpose": "Supports price adjustments",
+        "when": "Complex values"
+      },
+      {
+        "doc": "Provenance or sanctions records",
+        "purpose": "Support source checks",
+        "when": "Higher-risk goods"
+      },
+      {
+        "doc": "Feedstock evidence",
+        "purpose": "Supports petroleum compliance",
+        "when": "Relevant HS 2710 goods"
+      }
+    ],
+    "p2": "The invoice, packing list, transport document, and declaration should show matching quantities, values, descriptions, origin, weights, and package counts.",
+    "p3": "The seller, buyer, importer, consignee, currency, Incoterm, and payment terms must also align. Incorrect commodity codes and inconsistent documents can cause delays."
+  },
+  "risks": {
+    "title": "Key Compliance Risks",
+    "p1": "UAE–Belgium imports require extra care when goods pass through free zones, involve high-value commodities, or enter sanctions-sensitive supply chains.",
+    "sub1": "Gold Valuation and Provenance",
+    "p2": "Gold under HS 7108 may have zero customs duty, but it still needs an accurate transaction value and defensible commercial evidence.",
+    "p3": "Customs may review invoices, payment records, counterparties, origin, refinery information, and provenance documents. Unusual discounts or unclear ownership can lead to additional checks.",
+    "p4": "Separate anti-money-laundering duties may apply to regulated dealers, banks, refiners, and other parties. These duties are separate from the customs declaration.",
+    "sub2": "Free Zone Origin",
+    "p5": "A UAE free-zone address does not establish UAE origin.",
+    "p6": "Goods manufactured elsewhere and only stored, sorted, relabelled, repacked, or consolidated in the UAE normally retain their earlier origin.",
+    "p7": "Origin errors can change duty, anti-dumping measures, sanctions checks, quotas, product controls, and marking requirements.",
+    "sub3": "Russian Crude Rules",
+    "p8": "From 21 January 2026, EU sanctions prohibit certain HS 2710 petroleum products produced in third countries from Russian-origin crude. This can affect refined products exported from the UAE.",
+    "p9": "The rule is not a general ban on all UAE petroleum. The result depends on the product, refinery, crude source, supply chain, and any exemption.",
+    "p10": "Importers should retain supplier statements, refinery declarations, batch records, or other accepted evidence about crude origin.",
+    "p11": "For the wider regional compliance context, see <1>Middle East Belgium customs clearance MENA</1>."
+  },
+  "support": {
+    "title": "Winz Clearance Support",
+    "p1": "Winz supports UAE import clearance through Belgium's IDMS system. The service covers document review, declaration preparation, customs communication, and release coordination.",
+    "listTitle": "Winz can:",
+    "list": [
+      "Review invoices, packing lists, transport documents, and importer data.",
+      "Check CN and TARIC classifications.",
+      "Assess origin and free-zone re-export risks.",
+      "Review customs value under EXW, FOB, CIF, and DDP.",
+      "Coordinate ICS2 data with the filing party.",
+      "File IDMS import declarations.",
+      "Calculate duty and Belgian import VAT.",
+      "Coordinate ET 14.000 treatment.",
+      "Check CBAM status for aluminium.",
+      "Review customs evidence for gold and petroleum.",
+      "Share release information with logistics parties."
+    ],
+    "p2": "Winz works with importers, exporters, freight forwarders, and logistics companies. Support is available in English, French, Dutch, and German.",
+    "p3": "For urgent air cargo, Winz provides <1>fast track customs clearance Belgium</1> for UAE air cargo when documents are complete. Customs controls and release decisions remain with Belgian customs.",
+    "cta": "Contact Winz before the goods leave the UAE. Early checks can prevent classification, origin, valuation, and compliance delays."
+  },
+  "faq": {
+    "title": "FAQ — Importing from UAE to Belgium",
+    "questions": [
+      {
+        "q": "What is UAE import duty?",
+        "a": "UAE-origin goods normally pay the EU standard third-country rate. The exact duty depends on the 10-digit TARIC code and measures active on the declaration date."
+      },
+      {
+        "q": "Is Belgian VAT 21?",
+        "a": "Belgian import VAT is normally 21%. Its base includes customs value, duty, import taxes, and qualifying costs to the first known destination."
+      },
+      {
+        "q": "Is an EORI required?",
+        "a": "Yes. An EORI number is mandatory for businesses carrying out customs operations in the European Union."
+      },
+      {
+        "q": "Is a certificate of origin mandatory?",
+        "a": "A non-preferential Certificate of Origin is not required for every UAE shipment. Customs can still request evidence supporting the declared origin."
+      },
+      {
+        "q": "Who files the ICS2 ENS?",
+        "a": "The carrier or another responsible filing party normally submits the ICS2 Entry Summary Declaration. The supplier and importer provide the shipment data."
+      },
+      {
+        "q": "Does CBAM cover aluminium?",
+        "a": "CBAM covers specified aluminium codes. Importers must check product scope, annual volume, declarant status, emissions data, and deadlines."
+      },
+      {
+        "q": "Can free-zone goods claim UAE origin?",
+        "a": "Only goods meeting EU non-preferential origin rules can claim UAE origin. Storage, repacking, or relabelling normally does not change origin."
+      },
+      {
+        "q": "Can UAE sellers use DDP?",
+        "a": "Yes, but the importer, VAT, representation, and product-compliance structure must work in Belgium before shipment."
+      },
+      {
+        "q": "How long does clearance take?",
+        "a": "Complete declarations can clear quickly when no control is required. Document checks, inspections, sampling, or missing data can add hours or days."
+      },
+      {
+        "q": "How does freight affect cost?",
+        "a": "Freight and insurance to the EU border can form part of customs value. Landed cost can also include duty, VAT, clearance fees, terminal charges, inspections, and CBAM costs where applicable."
+      },
+      {
+        "q": "Which goods need extra checks?",
+        "a": "Aluminium, petroleum, gold, food, chemicals, machinery, medical products, dual-use goods, and other regulated commodities can require extra customs or product-compliance evidence."
+      },
+      {
+        "q": "Is there a trade deal?",
+        "a": "No preferential EU–UAE trade agreement is currently in force. UAE-origin goods continue to receive standard EU third-country tariff treatment."
+      }
+    ]
+  }
+}

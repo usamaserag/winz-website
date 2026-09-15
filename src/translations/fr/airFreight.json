@@ -1,0 +1,192 @@
+{
+  "meta": {
+    "title": "Dédouanement Fret Aérien Belgique | Winz",
+    "description": "Winz gère le dédouanement du fret aérien en Belgique avec les déclarations d'importation IDMS, l'exportation AES, la coordination ICS2, les contrôles LTA et la révision des codes SH.",
+    "keywords": "Dédouanement Fret Aérien"
+  },
+  "hero": {
+    "title": "Dédouanement du Fret Aérien en Belgique",
+    "subtitle": "Le dédouanement du fret aérien en Belgique nécessite des données précises, un contrôle préalable des documents et une déclaration correcte."
+  },
+  "intro": {
+    "p1": "Les importations sont normalement traitées via IDMS, tandis que le système PLDA est limité aux cas de secours approuvés. Winz gère le <1>service de déclaration d'importation UE</1> pour les importateurs, exportateurs, transitaires et sociétés de logistique qui ont besoin d'un dédouanement conforme sans retards à l'aéroport. Pour les processus douaniers généraux, voir <2>dédouanement Belgique</2>.",
+    "p2": "Nous préparons les déclarations, vérifions les documents, coordonnons les requêtes douanières et confirmons la mainlevée. Le transport aéroportuaire et la livraison finale restent à la charge de l'importateur ou du prestataire logistique."
+  },
+  "howItClears": {
+    "title": "Comment le Fret Aérien est Dédouané",
+    "intro": "Le dédouanement du fret aérien comprend le dépôt de sécurité avant chargement, la déclaration d'importation, le contrôle douanier et la mainlevée. La préparation anticipée des documents peut réduire les retards, mais les inspections, les procédures d'entrepôt et la manutention par les compagnies aériennes échappent au contrôle du courtier en douane.",
+    "ics2": {
+      "title": "Dépôt Préalable ICS2",
+      "text": "Le fret aérien entrant ou transitant par l'UE nécessite des données de sécurité et de sûreté ICS2. Le transporteur, le transitaire ou une autre partie de la chaîne d'approvisionnement peut le déposer. Les détails du destinataire manquants, les descriptions de marchandises vagues ou les données d'expédition partielles peuvent causer des retards."
+    },
+    "idms": {
+      "title": "Déclaration d'Importation IDMS",
+      "text": "Winz prépare ou dépose à l'avance la déclaration d'importation belge en utilisant la lettre de transport aérien, le code SH, la valeur en douane, le numéro EORI, l'origine, la procédure, les droits et les détails de la TVA. L'IDMS gère les déclarations standard, tandis que le PLDA est limité aux cas de secours approuvés."
+    },
+    "control": {
+      "title": "Contrôle Douanier",
+      "text": "Les douanes belges peuvent donner la mainlevée électronique des marchandises, effectuer une inspection documentaire ou physique, ou demander des informations supplémentaires. La décision dépend de l'analyse des risques, des contrôles des produits, de l'origine, de l'itinéraire et des données de déclaration."
+    },
+    "release": {
+      "title": "Mainlevée ou Stockage Temporaire",
+      "text": "La cargaison est libérée une fois que les exigences de douane, de droits, de TVA, de garantie et d'inspection sont complètes. Winz confirme la mainlevée, tandis que l'agent de la compagnie aérienne ou le prestataire logistique gère l'enlèvement. Les marchandises non libérées peuvent rester en stockage temporaire ou entrer en transit, en entrepôt douanier, en admission temporaire ou autre procédure approuvée."
+    }
+  },
+  "documents": {
+    "title": "Documents Requis pour le Fret Aérien",
+    "intro": "La lettre de transport aérien (LTA) identifie l'itinéraire d'expédition, l'expéditeur, le destinataire, les aéroports et les marchandises. Une Master Air Waybill (MAWB) couvre l'envoi groupé de la compagnie aérienne, tandis que chaque House Air Waybill (HAWB) identifie un envoi individuel pouvant nécessiter une déclaration en douane distincte.",
+    "table": [
+      { "doc": "Lettre de transport aérien", "purpose": "Identifie l'expédition et la référence de transport" },
+      { "doc": "Facture commerciale", "purpose": "Confirme la valeur, la devise, les biens et l'Incoterm" },
+      { "doc": "Liste de colisage", "purpose": "Indique les colis, les poids et les détails de la cargaison" },
+      { "doc": "Code de marchandise (SH)", "purpose": "Détermine les droits et les contrôles des produits" },
+      { "doc": "Numéro EORI", "purpose": "Identifie la partie douanière" },
+      { "doc": "Preuve d'origine", "purpose": "Soutient le traitement tarifaire préférentiel" },
+      { "doc": "Licences ou certificats", "purpose": "Confirment la conformité pour les biens réglementés" }
+    ],
+    "postTable": "Tous les documents doivent montrer des quantités, poids, valeurs, parties et détails de produits cohérents. Les descriptions vagues telles que \"pièces\" ou \"équipement\" doivent préciser de quoi il s'agit, leur matériau et leur utilisation. Pour l'ensemble complet des documents requis pour le fret aérien, voir <1>documents douaniers fret aérien Belgique</1>.",
+    "brusselsSupport": "Winz gère le dédouanement du fret aérien à l'aéroport de Bruxelles pour les importations et exportations commerciales belges."
+  },
+  "whatWeNeed": {
+    "title": "Ce Dont Winz a Besoin pour Commencer",
+    "intro": "La soumission anticipée des documents permet à Winz d'identifier les données manquantes avant l'arrivée de la cargaison. Les exigences exactes dépendent de la marchandise, de l'origine, de la procédure douanière et de la structure de l'importateur.",
+    "subtitle": "Veuillez fournir :",
+    "list": [
+      "La MAWB et toutes les HAWB pertinentes",
+      "La facture commerciale et la liste de colisage",
+      "Les détails EORI et TVA de l'importateur",
+      "Le code de marchandise, si déjà confirmé",
+      "Le pays d'origine et le pays d'expédition",
+      "L'Incoterm convenu",
+      "L'aéroport d'arrivée et l'heure d'arrivée prévue",
+      "Détails de l'importateur, de l'exportateur et du destinataire",
+      "Preuve d'origine, licences ou certificats le cas échéant",
+      "Instructions pour les droits, la TVA, le report ou l'utilisation de la garantie"
+    ],
+    "outro": "Winz peut demander des informations supplémentaires lorsque la facture ne soutient pas la valeur en douane déclarée ou la classification des marchandises."
+  },
+  "duties": {
+    "title": "Droits, TVA et Valeur en Douane",
+    "text": "Les droits d'importation dépendent du code de marchandise, de la valeur en douane, de l'origine et de la préférence tarifaire. Le taux de TVA standard en Belgique est de 21 %, bien que des exceptions s'appliquent. Les entreprises éligibles peuvent comptabiliser la TVA à l'importation via l'ET 14000. Winz vérifie les droits et la TVA applicables."
+  },
+  "representation": {
+    "title": "Représentation Douanière",
+    "text": "La représentation directe signifie que le courtier agit au nom du commerçant. En représentation indirecte, le courtier agit en son propre nom et peut partager la responsabilité de la dette douanière. Winz confirme l'option appropriée et l'autorisation requise. Les entreprises non européennes peuvent également avoir besoin d'un importateur ou d'une structure fiscale européenne."
+  },
+  "airports": {
+    "title": "Couverture Douanière des Aéroports Belges",
+    "intro": "Winz soutient les déclarations commerciales de fret aérien via les aéroports belges et européens voisins.",
+    "brussels": {
+      "title": "Aéroport de Bruxelles",
+      "text": "Winz prépare la déclaration d'importation et d'<1>exportation Belgique</1> pour les envois aériens, vérifie les lettres de transport aérien et les factures, et coordonne les requêtes douanières pour le fret pharmaceutique, express et général. Les manutentionnaires d'aéroport gèrent la disponibilité, la manutention et la mainlevée des marchandises."
+    },
+    "liege": {
+      "title": "Aéroport de Liège",
+      "text": "Lorsque des accords de service sont disponibles, Winz soutient l'importation, l'exportation, le transit et la documentation pour le fret express, e-commerce, périssable et général. Envoyez la MAWB, HAWB, factures, listes de colisage et détails d'arrivée avant l'atterrissage."
+    },
+    "schiphol": {
+      "title": "Dédouanement Transfrontalier à Schiphol",
+      "text": "Les expéditions via le <1>dédouanement Amsterdam Schiphol</1> utilisent les systèmes douaniers néerlandais. Les marchandises peuvent entrer en libre pratique aux Pays-Bas ou circuler sous transit pour un dédouanement ailleurs. Winz confirme l'itinéraire, les exigences EORI et le traitement de la TVA avant le dépôt."
+    },
+    "perishable": {
+      "title": "Cargaison Périssable et Contrôlée",
+      "text": "Le <1>fret aérien de marchandises périssables Belgique</1> nécessite une coordination précoce, mais seules des marchandises réglementées spécifiques nécessitent des contrôles au poste d'inspection frontalier. Celles-ci peuvent nécessiter une notification préalable, un traitement TRACES, un document de santé commun (CHED), des certificats ou une inspection. Winz gère les déclarations douanières. Les importateurs ou les agents spécialisés gèrent la documentation sanitaire et les arrangements d'inspection. La mainlevée douanière ne remplace pas les autres approbations des autorités."
+    },
+    "dangerous": {
+      "title": "Support des Marchandises Dangereuses",
+      "text": "Les batteries, les produits chimiques, les aérosols, les gaz et certains produits médicaux peuvent nécessiter un emballage, des étiquettes et des documents de transport spécialisés. Les exigences de classification et d'emballage pour les <1>marchandises dangereuses fret aérien IATA Belgique</1> doivent être confirmées avant le chargement à l'origine. Winz vérifie les données douanières. Les expéditeurs et les transporteurs qualifiés gèrent la classification des marchandises dangereuses, l'emballage et l'acceptation par la compagnie aérienne. Des codes douaniers corrects n'établissent pas la conformité du transport aérien."
+    }
+  },
+  "export": {
+    "title": "Déclarations d'Exportation de Fret Aérien",
+    "text": "Winz prépare les déclarations d'exportation AES et vérifie les documents d'expédition, les codes de marchandises, les détails de l'exportateur, la valeur, la destination et la procédure. La mainlevée à l'exportation permet le départ ; la confirmation de sortie soutient la TVA et les registres de conformité. Une déclaration sommaire de sortie distincte peut être requise lorsque les données de sécurité et de sûreté applicables ne sont pas autrement couvertes."
+  },
+  "delays": {
+    "title": "Causes Communes de Retards",
+    "intro": "De nombreux problèmes de dédouanement à l'aéroport commencent par des données commerciales incomplètes ou incohérentes. Corriger les informations avant l'arrivée est généralement plus facile que de les modifier après que la douane a sélectionné l'expédition pour contrôle. Les envois nécessitant un <1>dédouanement prioritaire Belgique</1> doivent être déposés avant l'arrivée du vol pour éviter les retards de mainlevée.",
+    "subtitle": "Les causes communes incluent :",
+    "list": [
+      "Descriptions de facture vagues ou incomplètes",
+      "Poids différents sur la LTA et la liste de colisage",
+      "Informations EORI manquantes ou invalides",
+      "Détails de l'importateur ou du destinataire incorrects",
+      "Valeurs douanières non étayées",
+      "Codes de marchandises incorrects",
+      "Preuve d'origine préférentielle manquante",
+      "Données ICS2 incomplètes au niveau de la House",
+      "Licences ou certificats sanitaires manquants",
+      "Instructions de paiement des droits ou de la TVA peu claires",
+      "Marchandise non disponible pour l'inspection",
+      "Restrictions de libération de la compagnie aérienne ou de l'entrepôt"
+    ],
+    "outro": "Winz examine les documents disponibles et explique quelles corrections sont nécessaires. L'acceptation douanière et les décisions d'inspection incombent à l'autorité douanière compétente. Les importateurs qui souhaitent comprendre <1>combien de temps prend le dédouanement du fret aérien</1> doivent tenir compte du risque d'inspection, du type de marchandise et de l'exhaustivité des documents."
+  },
+  "whyWinz": {
+    "title": "Pourquoi les Entreprises Choisissent Winz",
+    "intro": "Winz soutient les importateurs, les exportateurs, les transitaires et les sociétés de logistique qui ont besoin de déclarations de fret aérien précises et d'une communication douanière claire. Notre support au dédouanement couvre :",
+    "list": [
+      "Déclarations d'importation IDMS belges et d'exportation AES",
+      "Coordination des données ICS2 avec les transporteurs et les transitaires",
+      "Gestion des cas de secours PLDA là où officiellement acceptés",
+      "Vérifications des MAWB, HAWB, factures et listes de colisage",
+      "Examen du code des marchandises, de la valeur en douane, de l'EORI et des données de l'importateur",
+      "Instructions pour les droits et la TVA à l'importation",
+      "Support douanier à Bruxelles, Liège et Schiphol",
+      "Communication en anglais, français, néerlandais et allemand"
+    ],
+    "outro1": "L'objectif est simple : réduire les retards causés par des données manquantes, de mauvaises classifications ou des documents incompatibles.",
+    "outro2": "Winz gère le dédouanement. La manutention à l'aéroport, le transport et la livraison sont organisés séparément, sauf accord contraire."
+  },
+  "cta": {
+    "title": "Demander un Devis de Fret Aérien",
+    "text": "Winz gère le dédouanement du fret aérien à l'aéroport de Bruxelles, l'aéroport de Liège et l'aéroport d'Amsterdam Schiphol.",
+    "services": "Nos services incluent les déclarations d'importation IDMS, l'exportation AES, la coordination ICS2, les contrôles de LTA, l'examen du code des marchandises, les vérifications de la valeur en douane et la communication douanière.",
+    "action": "Envoyez la lettre de transport aérien, la facture commerciale, la liste de colisage, les détails d'arrivée, le numéro EORI et les informations sur les marchandises pour examen.",
+    "button": "Demander un devis de dédouanement aérien"
+  },
+  "faq": {
+    "title": "FAQ sur le Dédouanement du Fret Aérien",
+    "questions": [
+      {
+        "q": "Qu'est-ce que le dédouanement du fret aérien ?",
+        "a": "C'est le processus utilisé pour déclarer le fret aérien importé ou exporté aux douanes. Il peut inclure les dépôts de sécurité, les vérifications documentaires, l'évaluation des droits et de la TVA, les licences, les contrôles douaniers et la mainlevée."
+      },
+      {
+        "q": "Quelle est la différence entre ICS2 et IDMS ?",
+        "a": "ICS2 traite les données de sécurité avant que les marchandises n'entrent ou ne transitent par l'UE. IDMS est le système belge utilisé pour soumettre les déclarations d'importation standard."
+      },
+      {
+        "q": "La Belgique utilise-t-elle toujours le PLDA ?",
+        "a": "La Belgique utilise IDMS pour les déclarations d'importation standard dans la mesure du possible. PLDA n'est disponible que pour des cas de secours limités, des problèmes techniques connus ou des exceptions acceptées par les douanes belges."
+      },
+      {
+        "q": "Quels documents sont requis ?",
+        "a": "La plupart des expéditions nécessitent une lettre de transport aérien, une facture commerciale, une liste de colisage, un numéro EORI, un code de marchandise et des informations sur l'origine. Les marchandises contrôlées peuvent également nécessiter des licences, des certificats ou des documents sanitaires."
+      },
+      {
+        "q": "Quelle est la différence entre MAWB et HAWB ?",
+        "a": "Une MAWB couvre l'envoi groupé de la compagnie aérienne. Une HAWB identifie un envoi individuel au sein d'un chargement consolidé. Chaque HAWB peut nécessiter une déclaration douanière distincte."
+      },
+      {
+        "q": "Combien de temps prend le dédouanement ?",
+        "a": "Il n'y a pas de temps de dédouanement fixe. Le délai dépend de la qualité des documents, des contrôles douaniers, de la présentation de la marchandise, des arrangements pour les droits et la TVA, des licences et des procédures d'entrepôt de l'aéroport."
+      },
+      {
+        "q": "Les marchandises peuvent-elles entrer en entrepôt sous douane ?",
+        "a": "Oui. Le fret aérien peut rester en stockage temporaire ou être transféré dans un entrepôt douanier autorisé une fois la déclaration ou la procédure de transit appropriée complétée."
+      },
+      {
+        "q": "Que se passe-t-il lors d'une inspection ?",
+        "a": "La marchandise doit être présentée à la douane. Les douanes peuvent vérifier les marchandises, la facture, la LTA, le code des marchandises, l'origine, la quantité et la valeur déclarée avant de confirmer la mainlevée."
+      },
+      {
+        "q": "Winz peut-il organiser la livraison depuis l'aéroport ?",
+        "a": "Winz se concentre sur le dédouanement. La collecte à l'aéroport et la livraison finale sont normalement organisées par l'importateur, le transitaire ou le prestataire logistique."
+      },
+      {
+        "q": "Winz peut-il dédouaner la cargaison avant l'arrivée ?",
+        "a": "La déclaration peut être préparée ou déposée avant l'arrivée lorsque les données requises sont disponibles et que la procédure douanière le permet. La mainlevée finale dépend toujours de l'arrivée et de la présentation."
+      }
+    ]
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "meta": {
+    "title": "Straßenfracht Verzollung Belgien | Winz",
+    "description": "Winz übernimmt die Zollabfertigung von Straßenfracht in Belgien, einschließlich CMR-Prüfungen, IDMS-Einfuhranmeldungen, ENS-Support, HS-Codes, Zollberechnung und MRN-Koordination.",
+    "keywords": "Straßenfracht Verzollung"
+  },
+  "hero": {
+    "title": "Straßenfracht Zollabfertigung in Belgien",
+    "subtitle": "Die Zollabfertigung von Straßenfracht in Belgien hängt vom Zollstatus der Waren, dem ersten EU-Eintrittspunkt und dem endgültigen Zollbestimmungsort ab."
+  },
+  "intro": {
+    "p1": "Der CMR-Frachtbrief muss auch mit der Handelsrechnung, der Packliste und der Zollanmeldung übereinstimmen. Siehe <1>Zollabfertigung Belgien</1> für den vollen Umfang der Winz-Zolldienstleistungen.",
+    "p2": "Winz prüft diese Dokumente vor der Anmeldung. Wir unterstützen belgische Einfuhr-, Ausfuhr-, Versand- und Sicherheitsanmeldungen für Standard-Lkw und temperaturgeführte Kühlfracht.",
+    "p3": "Winz bietet Unterstützung bei der Zollabfertigung, Dokumentation und Compliance. Der Spediteur oder Frachtführer organisiert den physischen Lkw-Transport."
+  },
+  "requirements": {
+    "title": "Anforderungen an Straßenfracht",
+    "p1": "Nicht-Unionswaren, die in Belgien ankommen, erfordern eine Einfuhranmeldung oder ein gültiges Versandverfahren. Unionswaren, die sich zwischen EU-Mitgliedstaaten bewegen, erfordern normalerweise keine Einfuhrabfertigung, ausgenommen bestimmte verbrauchsteuerpflichtige oder kontrollierte Produkte.",
+    "p2": "Belgische Einfuhranmeldungen verwenden IDMS, während PLDA für genehmigte Ausnahmen und Ausweichfälle verfügbar bleibt. Nicht-EU-Straßenfracht erfordert zudem eine summarische Eingangsanmeldung (ENS) über ICS2, bevor sie ihren ersten EU-Eintrittspunkt erreicht.",
+    "table": [
+      { "movement": "Erster EU-Eintritt in Belgien", "treatment": "ENS plus Einfuhr- oder Versandanmeldung" },
+      { "movement": "Eintritt über ein anderes EU-Land", "treatment": "ENS beim Eintritt, gefolgt von Versand oder Einfuhrfreigabe" },
+      { "movement": "Ankunft in Belgien unter T1", "treatment": "NCTS-Bestimmungsformalitäten" },
+      { "movement": "Unionswaren innerhalb der EU", "treatment": "Normalerweise keine Einfuhranmeldung" },
+      { "movement": "Unionswaren, die Belgien verlassen", "treatment": "Ausfuhranmeldung und Ausgangsbestätigung" }
+    ],
+    "postTable": "Überprüfen Sie die <1>Zollanmeldung für Importe Belgien</1>, bevor Sie einen Straßentransport arrangieren."
+  },
+  "documents": {
+    "title": "Dokumente für die Lkw-Abfertigung",
+    "intro": "Sendungsdetails müssen über alle Dokumente hinweg übereinstimmen. Inkonsistente Parteien, Waren, Gewichte, Routen oder Zollstatus können die Freigabe verzögern.",
+    "list": [
+      "CMR-Frachtbrief",
+      "Handelsrechnung",
+      "Packliste",
+      "EORI und Vollmacht",
+      "Zollanmeldung",
+      "ENS-Daten",
+      "HS- oder TARIC-Code",
+      "Ursprungsnachweis"
+    ],
+    "post1": "CMR- und Rechnungslayouts können abweichen, aber Summen und Kerndetails müssen übereinstimmen, mit nachvollziehbaren Rechnungsreferenzen. Siehe das <1>CMR-Dokument Straßenfracht</1>.",
+    "post2": "Präferenzansprüche erfordern abkommensspezifische Nachweise wie ein EUR.1 oder eine Ursprungserklärung. Kühl- und kontrollierte Fracht erfordert möglicherweise auch Temperaturaufzeichnungen, Gesundheits- oder Pflanzengesundheitszeugnisse, Gemeinsame Gesundheitseingangsdokumente oder Lizenzen."
+  },
+  "process": {
+    "title": "Der Straßen-Abfertigungsprozess",
+    "intro": "Winz beginnt mit den Zollprüfungen, bevor der Lkw das Zollamt erreicht, was Zeit lässt, um Fehler zu korrigieren.",
+    "list": [
+      "<1>Route bestätigen:</1> Identifizieren Sie den EU-Eintrittspunkt, den Zollstandort, das Ziel und die Ankunftszeit.",
+      "<1>Dokumente sammeln:</1> Beschaffen Sie CMR, Rechnung, Packliste, EORI-Details und Zertifikate.",
+      "<1>Daten prüfen:</1> Überprüfen Sie Parteien, Waren, Gewichte, Werte, Incoterms, Ursprung und HS-Codes.",
+      "<1>ENS-Verantwortung klären:</1> Vereinbaren Sie, wer vor dem EU-Eintritt die Anmeldung einreicht.",
+      "<1>Anmeldung einreichen:</1> Übermitteln Sie die erforderlichen Import-, Export- oder Versanddaten.",
+      "<1>Kontrollen managen:</1> Koordinieren Sie Korrekturen, Dokumentenanfragen und Inspektionen.",
+      "<1>Ergebnis bestätigen:</1> Teilen Sie den Freigabestatus oder die Versandanweisungen mit."
+    ],
+    "outro": "Ein MRN bestätigt die Annahme der Anmeldung, nicht die Zollfreigabe. Risikobewertungen, Dokumentenprüfungen oder Inspektionen können weiterhin erforderlich sein."
+  },
+  "delays": {
+    "title": "Häufige Ursachen für Verzögerungen",
+    "intro": "Die meisten Verzögerungen bei Straßenfracht beginnen mit unvollständigen oder inkonsistenten Daten. Winz prüft die Anmeldungsunterlagen vor dem Einreichen und spricht fehlende Informationen mit dem verantwortlichen Unternehmen ab. Für eine detaillierte Aufschlüsselung der Verzögerungsursachen siehe <1>Zollverzögerungen an belgischen Landesgrenzen</1>.",
+    "list": [
+      "<1>CMR-Abweichung:</1> Empfänger, Waren, Packstückzahl, Gewicht oder Route weichen von anderen Dokumenten ab.",
+      "<1>Verspätete ENS-Daten:</1> Sicherheitsinformationen sind vor der Einreichungsfrist unvollständig.",
+      "<1>Falscher HS-Code:</1> Die Klassifizierung führt zu einem falschen Zollsatz oder übersieht eine Beschränkung.",
+      "<1>Fehlender Ursprungsnachweis:</1> Präferenzzölle werden ohne gültigen unterstützenden Nachweis beansprucht.",
+      "<1>Unvollständige Genehmigungen:</1> Kontrollierten Waren fehlen die erforderlichen Zertifikate oder Lizenzen.",
+      "<1>Falsches Zollamt:</1> Der deklarierte Bestimmungsort stimmt nicht mit der tatsächlichen Lkw-Route überein."
+    ],
+    "outro": "Der Zoll kann auch eine vorschriftsmäßige Sendung zur Kontrolle auswählen. Eine Vorabanmeldung reduziert vermeidbare Wartezeiten, hebt jedoch nicht das Recht der Behörde auf, Waren zu inspizieren."
+  },
+  "sections": {
+    "transit": {
+      "title": "Wann der T1-Versand Anwendung findet",
+      "text": "Eine T1-Anmeldung bewegt Nicht-Unionswaren zwischen Zollämtern, während Zölle und MwSt ausgesetzt bleiben. NCTS verwaltet den Versand durch die EU- und gemeinsamen Versandländer. Die Waren müssen den deklarierten Bestimmungsort innerhalb der zugelassenen Frist erreichen, damit das T1-Verfahren erledigt wird."
+    },
+    "export": {
+      "title": "Ausfuhrabfertigung für Lkw",
+      "text": "Waren, die Belgien in ein Nicht-EU-Land verlassen, erfordern eine elektronische Ausfuhranmeldung, die über das EU Automated Export System eingereicht wird, welches die Ausfuhr- und Ausgangsformalitäten zwischen der Ausfuhrzollstelle und der Ausgangszollstelle verwaltet. Der Zoll weist nach Annahme der Anmeldung eine Export-MRN zu. Die Ausgangszollstelle erfasst das Ausgangsergebnis, sobald die Waren das Zollgebiet der EU verlassen. In der kaufmännischen Praxis wird die Anmeldung oft als EX1 bezeichnet. Die MRN und das erfasste Ausgangsergebnis dienen als offizielle Zolldokumente und unterstützen den Mehrwertsteuernachweis des Exporteurs. Winz verwaltet die <1>EU-Ausfuhrabfertigung</1> und koordiniert die Exportdaten mit dem CMR."
+    },
+    "reefer": {
+      "title": "Kühlfracht und kontrollierte Güter",
+      "text": "Kühl-Lkw folgen demselben grundlegenden Zollverfahren wie Standard-Lkw. Die Frachtart bestimmt, ob zusätzliche Zertifikate, Vorabbenachrichtigungen oder behördliche Kontrollen gelten. Für kühlfrachtspezifische Zollanforderungen siehe <1>Zollabfertigung für Kühl-Lkw Belgien</1>. Eine Temperaturaufzeichnung ist keine universelle Zollanforderung. Sie kann durch Vertrag, Produktregeln, Qualitätskontrollen oder eine zuständige Behörde vorgeschrieben sein. Tiere, tierische Produkte, Pflanzen sowie bestimmte Lebens- oder Futtermittel können eine TRACES-Vorabbenachrichtigung und ein Gemeinsames Gesundheitseingangsdokument erfordern. Der verantwortliche Unternehmer reicht das CHED an der Grenzkontrollstelle ein, an der die Waren in die EU gelangen – was außerhalb Belgiens liegen kann, wenn der Lkw zuerst durch einen anderen Mitgliedstaat fährt. Winz prüft die Route, bevor der erforderliche Kontrollort bestätigt wird."
+    },
+    "costs": {
+      "title": "Kosten für Straßenfrachtabfertigung",
+      "text": "Die Zollkosten für Straßenfracht können die Anmeldegebühr, Einfuhrzölle, belgische MwSt, Versandverwaltung, Garantiekosten, Inspektionen und Wartezeiten Dritter umfassen. Die Einfuhrzölle hängen von der TARIC-Code, dem Zollwert, dem Ursprung und handelsrechtlichen Maßnahmen ab. Ein präferenzieller Ursprung kann Zölle reduzieren, wenn ein gültiger Nachweis vorliegt. Die belgische MwSt beträgt 21 % (für bestimmte Waren gelten ermäßigte Sätze), berechnet auf den Zollwert, Zölle und Nebenkosten. Versandkosten variieren nach Sendungswert, Route, Garantie, Warenlinien und Zollorten. Kontrollierte Waren können Labor-, Grenzkontrollstellen- oder Zertifikatsgebühren verursachen. Winz bestätigt den Zollumfang vor der Einreichung. Transport, Wartezeit, Parken, Fähre und Lieferkosten verbleiben beim Frachtführer. Siehe <1>Zollabfertigungskosten Straßenfracht Belgien</1> für eine vollständige Aufschlüsselung."
+    }
+  },
+  "whyWinz": {
+    "title": "Warum Spediteure Winz wählen",
+    "intro": "Winz bietet einen einzigen Zoll-Ansprechpartner für die Anmeldung, die unterstützenden Dokumente und den Zollstatus – und hilft so Spediteuren und Importeuren, Datenprobleme zu lösen, bevor der Lkw den Zoll erreicht.",
+    "list": [
+      "Abgleich von CMR, Rechnung und Packliste",
+      "Abdeckung der IDMS-, NCTS-, AES- und ENS-Systeme",
+      "HS-Code-Prüfungen vor Zoll- und Steuerberechnungen",
+      "Routenspezifische Dokumentenprüfungen für Kühl- und sensible Fracht",
+      "Updates zu MRN, Kontroll-, Versand- und Freigabestatus",
+      "Unterstützung auf Englisch, Französisch, Niederländisch und Deutsch"
+    ],
+    "outro": "Winz unterstützt die Straßenfracht-Zollabfertigung für Verkehre mit dem Vereinigten Königreich, der Türkei, der Ukraine, Marokko, Ägypten und anderen Nicht-EU-Korridoren. Für ENS-Vorabanforderungen siehe <1>EU-Importvorschriften Straßenfracht Belgien</1>."
+  },
+  "cta": {
+    "title": "Zollangebot anfordern",
+    "text": "Senden Sie Winz den CMR-Entwurf, die Handelsrechnung, die Packliste, die Route, die voraussichtliche Ankunftszeit, die EORI-Details, die Warenbeschreibung und die verfügbaren Zertifikate.",
+    "subtext": "Winz prüft das Verfahren vor der Einreichung und bestätigt, ob die Bewegung eine Einfuhranmeldung, T1-Versand, Ausfuhranmeldung oder ENS-Unterstützung erfordert.",
+    "button": "Kontaktieren Sie Winz für Straßenfracht Verzollung"
+  },
+  "faq": {
+    "title": "Häufig Gestellte Fragen",
+    "questions": [
+      {
+        "q": "Kann ein Lkw ohne Zollabfertigung einreisen?",
+        "a": "Ein Lkw kann aus einem anderen EU-Mitgliedstaat ohne neue belgische Einfuhranmeldung nach Belgien einreisen, wenn die Waren bereits den Unionsstatus besitzen. Nicht-Unionswaren benötigen vor der Freigabe ein gültiges Einfuhr- oder Versandverfahren."
+      },
+      {
+        "q": "Was legt der Fahrer vor?",
+        "a": "Der Fahrer führt in der Regel den CMR und die für diese Bewegung erforderlichen Zollreferenzen mit sich. Eine T1-Bewegung kann ein Versandbegleitdokument oder eine MRN-Referenz erfordern."
+      },
+      {
+        "q": "Wie unterscheidet sich T1 vom Import?",
+        "a": "Eine Einfuhranmeldung überlässt die Waren dem zollrechtlich freien Verkehr und macht Zölle und Einfuhrumsatzsteuer fällig. T1 hält Nicht-Unionswaren unter zollamtlicher Überwachung, während sie zu einem anderen zugelassenen Bestimmungsort transportiert werden."
+      },
+      {
+        "q": "Wer reicht die ENS ein?",
+        "a": "Der Frachtführer, Spediteur, Importeur oder Zollvertreter kann die ENS einreichen, abhängig von der Transportvereinbarung und den verfügbaren Daten. Winz unterstützt bei der Einreichung, sofern vereinbart."
+      },
+      {
+        "q": "Können Waren in ein Zolllager eingelagert werden?",
+        "a": "Ja. Nicht-Unionswaren können im Versandverfahren transportiert und in ein zugelassenes Zolllager eingelagert werden. Einfuhrzölle und MwSt bleiben ausgesetzt, bis die Waren freigegeben oder in ein anderes Verfahren überführt werden."
+      },
+      {
+        "q": "Fertigt Winz Kühlfracht ab?",
+        "a": "Ja. Winz unterstützt die Zollabfertigung von Kühl-Lkw und prüft, ob die Waren Temperaturaufzeichnungen, TRACES-Dokumente, ein CHED, Gesundheitszeugnisse oder andere Kontrollen erfordern."
+      },
+      {
+        "q": "Benötigt der Fahrer eine EORI?",
+        "a": "Der Importeur, Exporteur oder Zollanmelder benötigt die entsprechende EORI-Nummer. Der Fahrer benötigt normalerweise keine persönliche EORI für die Sendung."
+      },
+      {
+        "q": "Ist eine Zollabfertigung am selben Tag möglich?",
+        "a": "Eine Abfertigung am selben Tag ist möglich, wenn Dokumente früh eintreffen, die Anmeldung vorab eingereicht ist, Zölle gedeckt sind und der Zoll die Sendung nicht für zusätzliche Kontrollen auswählt. Berechtigte Eiltransporte können die Express-Zollabfertigung Belgien (Fast Track) nutzen."
+      }
+    ]
+  }
+}

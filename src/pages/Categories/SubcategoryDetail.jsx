@@ -81,6 +81,7 @@ export default function SubcategoryDetail() {
         ogTitle: subcategory?.seo?.title || subcategory.seoOgTitle || title,
         ogDescription: seoDescription,
         ogImage: subcategory.image ? resolveMediaUrl(subcategory.image) : `${getSiteOrigin()}/favicon.png`,
+        ogImageAlt: subcategory?.seo?.image_alt || subcategory.image_alt || subcategory.title || subcategory.name,
         ogUrl: canonicalUrl,
         ogType: 'website',
       } : null} />

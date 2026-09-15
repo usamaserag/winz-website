@@ -1,0 +1,225 @@
+{
+  "meta": {
+    "title": "Dédouanement FCL Belgique | Winz",
+    "description": "Winz gère le dédouanement FCL pour les conteneurs de 20 pieds, 40 pieds, High Cube et reefer entrant en Belgique via Anvers ou Rotterdam.",
+    "keywords": "Dédouanement FCL"
+  },
+  "hero": {
+    "title": "Dédouanement FCL Belgique",
+    "subtitle": "Le dédouanement FCL en Belgique couvre la déclaration et la mainlevée des marchandises arrivant en conteneur complet. La déclaration enregistre chaque ligne de produit, sa classification, sa valeur, son origine et les mesures d'importation."
+  },
+  "intro": {
+    "p1": "Voir <1>dédouanement Belgique</1> pour les services douaniers de Winz.",
+    "p2": "La plupart des déclarations d'importation belges utilisent IDMS, qui remplace PLDA. PLDA peut encore s'appliquer à des exceptions. Winz vérifie la route et les données correctes avant soumission.",
+    "p3": "La mainlevée douanière n'autorise pas automatiquement la collecte au terminal. La douane, la compagnie maritime, le terminal et le transporteur contrôlent différentes étapes.",
+    "p4": "Winz coordonne la déclaration, le statut de la mainlevée et l'état de préparation à la collecte avec l'importateur, le transitaire et le transporteur. Winz fournit une assistance douanière mais ne vend pas de transport."
+  },
+  "howItWorks": {
+    "title": "Comment Fonctionne le Dédouanement FCL",
+    "intro": "Le dédouanement FCL suit un processus structuré, de l'examen des documents à la mainlevée du terminal. Les étapes principales sont :",
+    "steps": [
+      "<1>Examen des documents :</1> Winz reçoit la facture, la liste de colisage, le connaissement, le numéro EORI, les données du produit et l'Incoterm.",
+      "<1>Vérifications :</1> Chaque produit est vérifié (classification, origine, valeur en douane, restrictions).",
+      "<1>Soumission :</1> La déclaration d'importation est soumise ou pré-déposée via le système douanier belge.",
+      "<1>Évaluation :</1> La douane effectue son évaluation des risques et peut demander des documents ou une inspection physique.",
+      "<1>Mainlevée :</1> La mainlevée est confirmée après que les conditions douanières, financières, commerciales et du terminal soient remplies."
+    ],
+    "outro": "Une déclaration acceptée reçoit un MRN (Movement Reference Number). Le MRN identifie la déclaration et permet de suivre son statut. Le pré-dépôt peut réduire le traitement après l'arrivée, mais n'annule pas les contrôles douaniers."
+  },
+  "coverage": {
+    "title": "Portée de la Déclaration FCL",
+    "intro": "Une déclaration FCL peut contenir plusieurs articles de la même expédition. Chacun nécessite sa propre classification, description, valeur et origine.",
+    "p2": "Des produits comme les textiles, les machines ou l'électronique ne peuvent pas partager une seule classification. Un conteneur de 40 produits peut nécessiter 40 articles, chacun avec des droits différents.",
+    "subtitle": "Un conteneur peut nécessiter plusieurs déclarations s'il comprend :",
+    "list": [
+      "Différents importateurs ou destinataires",
+      "Des procédures ou envois douaniers séparés",
+      "Des marchandises contrôlées et non contrôlées",
+      "Des représentants différents",
+      "Des autorisations séparées"
+    ],
+    "outro": "Winz vérifie la structure de l'expédition pour s'assurer que la déclaration reflète le bon importateur. Le conteneur reste normalement scellé, bien que la douane puisse exiger une inspection."
+  },
+  "importerResp": {
+    "title": "Responsabilités de l'Importateur",
+    "text": "L'importateur doit fournir des détails précis sur les marchandises, y compris leur composition, utilisation, valeur, origine et certificats. Des descriptions incomplètes peuvent causer de mauvaises classifications.",
+    "p2": "L'importateur nécessite un numéro EORI valide de l'UE. La représentation en douane peut être :",
+    "list": [
+      "<1>Directe :</1> Le représentant agit au nom et pour le compte de l'importateur.",
+      "<1>Indirecte :</1> Le représentant agit en son propre nom pour le compte de l'importateur, créant une responsabilité solidaire."
+    ],
+    "outro": "Winz confirme les détails de l'importateur, la procédure et l'accord de représentation avant de soumettre la déclaration."
+  },
+  "documents": {
+    "title": "Documents et Données d'Expédition",
+    "intro": "Les documents doivent être complets avant le dépôt, car les incohérences retardent l'acceptation.",
+    "table": [
+      { "doc": "Facture commerciale", "purpose": "Confirme les parties, produits, quantités et prix de transaction" },
+      { "doc": "Liste de colisage", "purpose": "Confirme les colis, poids, dimensions et contenus" },
+      { "doc": "Connaissement", "purpose": "Identifie le conteneur, le transporteur, le destinataire et l'itinéraire" },
+      { "doc": "Classification", "purpose": "Détermine les droits, restrictions, licences et mesures" },
+      { "doc": "Origine", "purpose": "Soutient un traitement préférentiel ou non" },
+      { "doc": "Numéro EORI", "purpose": "Identifie l'importateur ou le déclarant" },
+      { "doc": "Incoterm", "purpose": "Aide à déterminer les ajustements de la valeur en douane" },
+      { "doc": "Détails d'arrivée", "purpose": "Confirme le navire, le terminal et l'arrivée prévue" }
+    ],
+    "post": [
+      "La facture doit lister chaque produit et valeur. La liste de colisage doit correspondre à la facture.",
+      "Les mainlevées de la compagnie maritime et de la douane sont séparées. Voir <1>connaissement fret maritime FCL</1>.",
+      "L'origine préférentielle peut nécessiter un EUR.1, une déclaration REX, ou une autre preuve acceptée.",
+      "Les marchandises contrôlées peuvent nécessiter des licences, des certificats sanitaires ou des documents d'inspection."
+    ]
+  },
+  "classification": {
+    "title": "Classification des Produits",
+    "intro": "Chaque article nécessite une classification douanière précise. La nomenclature de l'UE utilise des codes NC à 8 chiffres. Le TARIC ajoute des chiffres pour les mesures d'importation.",
+    "subtitle": "Le TARIC peut identifier :",
+    "list": [
+      "Droit de douane standard",
+      "Droit préférentiel",
+      "Droit antidumping",
+      "Quotas tarifaires",
+      "Suspensions de droits",
+      "Licences d'importation",
+      "Mesures de surveillance",
+      "Restrictions de produits"
+    ],
+    "post": "Winz soutient la classification du code SH en utilisant les informations techniques de l'importateur. Une description vague comme \"pièces de machine\" est insuffisante.",
+    "bti": "Les importateurs peuvent également demander un Renseignement Tarifaire Contraignant (RTC), juridiquement contraignant dans l'UE."
+  },
+  "release": {
+    "title": "Mainlevée de Conteneur à Anvers",
+    "intro": "La mainlevée au terminal d'Anvers implique plus que l'approbation douanière. Plusieurs conditions doivent s'aligner.",
+    "table": [
+      { "condition": "Mainlevée douanière", "confirms": "La douane a libéré les marchandises pour la procédure déclarée" },
+      { "condition": "Statut de garantie", "confirms": "Les droits et taxes sont payés ou couverts" },
+      { "condition": "Mainlevée commerciale", "confirms": "La compagnie maritime a libéré le conteneur" },
+      { "condition": "Disponibilité au terminal", "confirms": "Le conteneur est déchargé et disponible" },
+      { "condition": "Droits d'enlèvement", "confirms": "L'opérateur autorisé détient le droit de collecte numérique" },
+      { "condition": "Statut d'inspection", "confirms": "Aucun contrôle douanier non résolu ne subsiste" }
+    ],
+    "post1": "Un statut douanier positif ne confirme pas que chaque condition est remplie. La plateforme IRP soutient l'échange de données dans les ports belges.",
+    "post2": "Certified Pick up contrôle les droits d'enlèvement sécurisés à Anvers. Après la mainlevée douanière, le <1>transport routier depuis Anvers</1> déplace le conteneur.",
+    "blockedTitle": "Un conteneur peut rester bloqué après la mainlevée douanière si :",
+    "blockedList": [
+      "La compagnie maritime n'a pas émis de mainlevée commerciale",
+      "Les frais de terminal restent impayés",
+      "Le conteneur n'est pas encore déchargé",
+      "Les droits d'enlèvement sont incomplets",
+      "Une inspection douanière reste ouverte",
+      "Le terminal a appliqué un autre blocage opérationnel"
+    ],
+    "outro": "Winz surveille le statut douanier et partage les informations avec l'importateur. Pour la séquence complète, voir <1>mainlevée de conteneurs douane Belgique</1>."
+  },
+  "dutyVAT": {
+    "title": "Droits d'Importation et TVA",
+    "intro": "Le droit d'importation est calculé par article. Il n'est pas facturé comme un pourcentage forfaitaire sur l'ensemble du conteneur. Le taux de TVA standard est de 21% en Belgique.",
+    "table": [
+      { "element": "Valeur en douane", "basis": "Valeur de transaction avec les ajustements requis" },
+      { "element": "Droit d'importation", "basis": "Taux TARIC appliqué à la valeur en douane" },
+      { "element": "Droits supplémentaires", "basis": "Antidumping ou autres mesures applicables" },
+      { "element": "TVA à l'importation", "basis": "Taux de TVA appliqué à la base TVA pertinente" }
+    ],
+    "outro": "La base TVA peut inclure la valeur en douane, le droit de douane, et d'autres dépenses admissibles jusqu'à la destination. Cet exemple explique uniquement la méthode.",
+    "link": "La méthode complète est expliquée dans le guide sur <1>les droits d'importation des expéditions FCL</1>."
+  },
+  "incoterms": {
+    "title": "Incoterms et Responsabilité",
+    "text": "Les Incoterms définissent les responsabilités de livraison, de coût et de risque. Ils ne remplacent pas les règles douanières de l'UE.",
+    "details": [
+      "<1>Sous CIF</1>, le vendeur organise le fret maritime et l'assurance. L'acheteur gère généralement le dédouanement à l'importation.",
+      "<1>Sous FOB</1>, le vendeur livre les marchandises à bord. L'acheteur contrôle le transport principal et l'importation.",
+      "<1>Sous EXW</1>, l'acheteur porte une responsabilité plus large depuis les locaux du vendeur.",
+      "<1>Sous DDP</1>, le vendeur accepte des obligations étendues de livraison et d'importation."
+    ],
+    "outro": "Winz vérifie l'Incoterm car il affecte la valeur en douane et la responsabilité des documents."
+  },
+  "sections": {
+    "reefer": {
+      "title": "Exigences FCL Reefer",
+      "text": "Les conteneurs frigorifiques suivent la même structure de déclaration de base que les conteneurs secs FCL. Des contrôles supplémentaires dépendent des marchandises.",
+      "list": [
+        "Pré-notification TRACES NT",
+        "Documents Sanitaires Communs d'Entrée (DSCE)",
+        "Certificats vétérinaires",
+        "Certificats phytosanitaires",
+        "Contrôles au Poste d'Inspection Frontalier",
+        "Relevés de température",
+        "Licences d'importation",
+        "Échantillonnage en laboratoire"
+      ],
+      "outro": "La mainlevée douanière peut rester bloquée pendant qu'une autre autorité effectue ses contrôles. Les entreprises peuvent consulter les procédures <1>douane conteneur complet reefer Belgique</1> avant l'expédition."
+    },
+    "rotterdam": {
+      "title": "De Rotterdam à la Belgique",
+      "text": "Un conteneur FCL arrivant à Rotterdam peut se déplacer vers une destination belge sous la bonne disposition douanière. Les marchandises peuvent être importées aux Pays-Bas, ou circuler sous transit T1.",
+      "subtitle": "L'itinéraire correct dépend de :",
+      "list": [
+        "Établissement de l'importateur",
+        "Enregistrement TVA",
+        "Détails EORI",
+        "Représentation en douane",
+        "Accords de report de droits",
+        "Garanties de transit",
+        "Lieu de livraison",
+        "Procédure douanière prévue"
+      ],
+      "outro": "Winz soutient la planification douanière pour les conteneurs entrant via Rotterdam. Winz ne fournit pas de transport routier depuis Rotterdam."
+    },
+    "howWinzSupports": {
+      "title": "Comment Winz Gère les Importations FCL",
+      "text": "Un spécialiste en douane Winz gère le dossier de la réception des documents jusqu'à la confirmation de mainlevée. Winz s'occupe de :",
+      "list": [
+        "Conteneurs secs de 20 pieds",
+        "Conteneurs secs de 40 pieds",
+        "Conteneurs 40 pieds High Cube",
+        "Conteneurs reefer de 20 pieds",
+        "Conteneurs reefer de 40 pieds"
+      ],
+      "outro": "L'assistance pour Anvers comprend le dépôt des déclarations, le suivi douanier et la coordination. L'assistance pour Rotterdam couvre la planification douanière et la coordination du transit T1."
+    }
+  },
+  "cta": {
+    "title": "Demander un Dédouanement FCL",
+    "text": "Winz gère le dédouanement des conteneurs secs et frigorifiques entrant en Belgique via Anvers ou Rotterdam.",
+    "subtext": "Le service comprend l'examen des documents, les vérifications de classification, le calcul de la valeur, la déclaration et le suivi.",
+    "button": "Demander un devis de dédouanement FCL"
+  },
+  "faq": {
+    "title": "Questions Fréquemment Posées",
+    "questions": [
+      {
+        "q": "Quel système gère les importations belges ?",
+        "a": "La plupart des déclarations d'importation belges sont soumises via IDMS, qui remplace PLDA. PN/TS gère les notifications de présentation et de stockage temporaire."
+      },
+      {
+        "q": "Un conteneur peut-il nécessiter plusieurs déclarations ?",
+        "a": "Oui. Un conteneur FCL peut nécessiter plusieurs déclarations s'il contient des marchandises pour différents importateurs ou des procédures douanières distinctes."
+      },
+      {
+        "q": "Le dédouanement peut-il commencer avant l'arrivée ?",
+        "a": "Une déclaration FCL peut souvent être pré-déposée avant l'arrivée du navire. La mainlevée finale dépend toujours des messages d'arrivée et des conditions du terminal."
+      },
+      {
+        "q": "Qu'est-ce qui retarde la sortie du terminal d'Anvers ?",
+        "a": "La sortie (gate-out) d'Anvers peut être retardée par des contrôles douaniers, des frais de terminal impayés, ou des droits d'enlèvement (Certified Pick up) incomplets."
+      },
+      {
+        "q": "Quand commence le temps libre (free time) du conteneur ?",
+        "a": "Le temps libre suit les règles de la compagnie maritime et du terminal. Une préparation douanière anticipée réduit les retards évitables mais ne garantit pas une protection contre les surestaries."
+      },
+      {
+        "q": "Que se passe-t-il lors d'une inspection ?",
+        "a": "Le conteneur reste bloqué pendant que la douane effectue le contrôle requis (vérification des documents, scan, prélèvement d'échantillons ou examen physique)."
+      },
+      {
+        "q": "Le FCL est-il plus rapide que le LCL ?",
+        "a": "Le FCL peut éviter l'étape de dégroupage (deconsolidation) requise pour le LCL. Les délais douaniers réels dépendent toujours de la qualité des documents et de la disponibilité du terminal."
+      },
+      {
+        "q": "Que faut-il pour obtenir un devis ?",
+        "a": "Winz a besoin de la facture commerciale, de la liste de colisage, des détails du connaissement, du numéro EORI, du code SH et de la procédure douanière prévue."
+      }
+    ]
+  }
+}

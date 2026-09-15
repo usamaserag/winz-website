@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "title": "HS-Code Klassifizierung Belgien | Winz",
+    "description": "Winz ermittelt und deklariert den korrekten KN-Code auf belgischen Zollanmeldungen. Zollberechnung, CBAM-Risiko, vZTA-Richtlinien und Falschtarifierungsrisiken werden vor der Anmeldung der Waren geprüft.",
+    "keywords": "HS-Code Klassifizierung"
+  },
+  "hero": {
+    "title": "HS-Code Klassifizierung Belgien — Tarifcode- und Zollberechnungsservice",
+    "subtitle": "Ein HS-Code ist ein numerischer Produktklassifizierungscode, der von Zollbehörden verwendet wird, um Waren zu identifizieren, Einfuhrzölle zu berechnen und handelsrechtliche Maßnahmen anzuwenden."
+  },
+  "intro": {
+    "p1": "Für den gesamten Umfang der Winz-Zolldienstleistungen siehe <1>Zollabfertigung Belgien</1>.",
+    "p2": "In Belgien erfordert jede über PLDA eingereichte Einfuhranmeldung einen mindestens 8-stelligen KN-Code. Der 6-stellige internationale HS-Code allein reicht für belgische Zollanmeldungen nicht aus.",
+    "p3": "Eine falsche Klassifizierung kann zu Zollnachforderungen, Zinsen, Strafen, Versandverzögerungen und Risiken bei nachträglichen Prüfungen führen.",
+    "p4": "Winz ermittelt vor jeder Anmeldung den korrekten KN-Code. Importeure müssen Codes nicht selbst recherchieren, überprüfen oder bereitstellen. Die Klassifizierung ist ohne separate Berechnung in den Prozess der <1>EU-Einfuhrabfertigung</1> integriert."
+  },
+  "structure": {
+    "title": "HS-Code, KN-Code und TARIC — Wie die 3-stufige Struktur in Belgien funktioniert",
+    "intro": "Belgien verwendet eine dreistufige Tarifcodestruktur. Jede Stufe hat eine andere Funktion auf einer Zollanmeldung.",
+    "table": [
+      { "level": "6-stelliger HS-Code", "usedFor": "Internationale Produktbasis", "requirement": "Allein nicht ausreichend" },
+      { "level": "8-stelliger KN-Code", "usedFor": "EU-Zollklassifizierung", "requirement": "Erforderlich für PLDA" },
+      { "level": "10-stelliger TARIC-Code", "usedFor": "EU-Handelsmaßnahmen", "requirement": "Verwendet, wenn Maßnahmen gelten" }
+    ],
+    "definitions": [
+      "<1>6-stelliger HS-Code</1> — die international harmonisierte Basis, die von der Weltzollorganisation (WZO) verwaltet wird. Er identifiziert das Kapitel, die Position und die Unterposition in über 200 Zollgebieten.",
+      "<1>8-stelliger KN-Code</1> — die EU-Erweiterung des HS-Codes. Er ist für belgische Einfuhr- und Ausfuhranmeldungen erforderlich.",
+      "<1>10-stelliger TARIC-Code</1> — der vollständige Code auf EU-Ebene, der für Antidumpingzölle, Zollaussetzungen, Kontingente, Schutzmaßnahmen und CBAM-bezogene Maßnahmen verwendet wird. Der vollständige EU-Zolltarif fällt unter <2>Kombinierte Nomenklatur TARIC Belgien</2>."
+    ],
+    "outro": "Die Übermittlung eines 6-stelligen Codes, wenn ein 8-stelliger KN-Code erforderlich ist, führt zu einem Anmeldungsfehler."
+  },
+  "dutyRate": {
+    "title": "Wie der KN-Code den Zollsatz festlegt",
+    "text": "Der in eine PLDA-Anmeldung eingegebene KN-Code ist die direkte Eingabe in die EU-TARIC-Datenbank. TARIC liefert den EU-Standardeinfuhrzollsatz, jeglichen Präferenzzollsatz, Antidumping- oder Ausgleichszölle, Zollkontingente oder -aussetzungen sowie Einfuhrbeschränkungen oder Lizenzanforderungen. Dasselbe physische Produkt kann je nach KN-Code und Ursprung unterschiedliche Zollsätze nach sich ziehen. Eine Diskrepanz zwischen Produktklassifizierung und deklariertem Ursprung ist eine der häufigsten Ursachen für zu wenig gezahlte Zölle beim belgischen Zoll.",
+    "links": [
+      "Vollständige Berechnungsmethode: <1>wie Einfuhrzölle berechnet werden</1>",
+      "CBAM-Verpflichtungen nach KN-Position ab 2026: <2>CBAM und HS-Codes Belgien 2026</2>"
+    ]
+  },
+  "determination": {
+    "title": "Wie der Zoll den korrekten HS-Code bestimmt",
+    "intro": "Die zolltarifliche Einreihung basiert auf den objektiven Merkmalen des Produkts zum Zeitpunkt der Einfuhr. Der belgische Zoll klassifiziert Waren nicht allein nach Markenname, Lieferantentext oder handelsüblicher Beschreibung. Die Klassifizierung hängt in der Regel ab von:",
+    "list": [
+      "<1>Materialzusammensetzung</1> — Stahl, Aluminium, Kunststoff, Baumwolle",
+      "<1>Produktfunktion</1> — Werkzeug, Maschinenteil, Kleidungsstück, Verpackung",
+      "<1>Bearbeitungszustand</1> — roh, halbfertig, fertig",
+      "<1>Aufmachung</1> — Set, Teil, Komponente, Zubehör",
+      "<1>Ursprungsland</1> — ursprungsbezogene Zölle oder Handelsmaßnahmen",
+      "<1>Verwendungszweck</1> — medizinisch, industriell, Verbraucher, lebensmittelecht"
+    ],
+    "outro": "Winz prüft Produktbeschreibungen, technische Datenblätter, Zusammensetzungsdetails, Fotos, Rechnungen und Lieferantendokumente, bevor der KN-Code ausgewählt wird."
+  },
+  "rules": {
+    "title": "Allgemeine Vorschriften für die Auslegung (AV)",
+    "intro": "Die Allgemeinen Vorschriften (AV) leiten die HS- und KN-Klassifizierung, wenn Produkte schwer einzureihen sind. Diese Regeln helfen dem Zoll bei der Entscheidung, wo ein Produkt in die Tarifstruktur gehört.",
+    "subtitle": "Zu den wichtigsten Regeln gehören:",
+    "list": [
+      "<1>AV 1</1> — Die Einreihung beginnt mit den Anmerkungen zu den Abschnitten, Kapiteln und dem Wortlaut der Positionen",
+      "<1>AV 2</1> — Unvollständige oder unfertige Waren können dennoch als fertige Waren eingereiht werden",
+      "<1>AV 3</1> — Zusammengesetzte Waren werden bei Bedarf nach ihrem wesentlichen Charakter eingereiht",
+      "<1>AV 4</1> — Waren, die nicht eindeutig erfasst sind, werden mit den ähnlichsten Waren eingereiht"
+    ],
+    "outro": "Zusammengesetzte Produkte bergen oft ein Klassifizierungsrisiko. Beispiele sind Möbel aus gemischten Materialien, Textil-Kunststoff-Waren, Maschinenbausätze und Zubehör, das zusammen mit Hauptprodukten verpackt ist."
+  },
+  "examples": {
+    "title": "Häufige Beispiele für Produktklassifizierungen",
+    "intro": "Produktbeispiele helfen Importeuren zu verstehen, warum die Klassifizierung eine technische Überprüfung erfordert.",
+    "table": [
+      { "type": "Baumwoll-T-Shirts", "area": "Kapitel 61", "risk": "Faserzusammensetzung beeinflusst Position" },
+      { "type": "Aluminiumprofile", "area": "Kapitel 76", "risk": "Antidumpingmaßnahmen können gelten" },
+      { "type": "Kunststoffverpackung", "area": "Kapitel 39", "risk": "Lebensmittelkontakt kann Prüfungen beeinflussen" },
+      { "type": "Stahlbefestigungen", "area": "Kapitel 73", "risk": "Ursprung kann zusätzliche Zölle auslösen" },
+      { "type": "Elektrische Steuergeräte", "area": "Kapitel 85", "risk": "Funktion beeinflusst Position" },
+      { "type": "Maschinenteile", "area": "Kapitel 84/85", "risk": "Problem: Teil vs. komplette Maschine" }
+    ],
+    "outro": "Diese Beispiele sind keine verbindlichen rechtlichen Klassifizierungen. Der korrekte KN-Code hängt von der Produktzusammensetzung, Funktion und Aufmachung ab."
+  },
+  "sections": {
+    "misclassification": {
+      "title": "Falschtarifierung — Was es kostet",
+      "text": "Ein falscher KN-Code auf einer belgischen Anmeldung kann eine Nachzahlung von zu wenig entrichteten Zöllen auslösen. Der belgische Zoll kann auch Zinsen und Verwaltungsstrafen verhängen, wenn die Anmeldung zu einem Zollausfall geführt hat. Nachträgliche Prüfungen können frühere Anmeldungen unter demselben KN-Code überprüfen. Eine falsche Klassifizierung kann sich daher auf mehrere Sendungen auswirken. Auch eine Überzahlung ist ein Risiko. Ein Code mit einem höheren Zollsatz erhöht die Importkosten. Die Rückforderung zu viel gezahlter Zölle erfordert ein Korrekturverfahren, das viele Importeure verpassen. Winz verifiziert die Genauigkeit des KN-Codes anhand von Produktzusammensetzung, Bearbeitungszustand und deklariertem Ursprung, bevor eine Anmeldung eingereicht wird. Details zum Strafrisiko: <1>Zollstrafen für falsche HS-Klassifizierung Belgien</1>."
+    },
+    "cbam": {
+      "title": "CBAM und HS-Code-Klassifizierung",
+      "text": "Die CBAM-Pflicht ist an KN-Positionen gekoppelt. Ab 2026 müssen Importeure betroffener Waren die KN-Klassifizierung als Compliance-Kontrolle betrachten, nicht nur als Schritt zur Zollberechnung. CBAM kann für Stahl, Zement, Aluminium, Düngemittel, Wasserstoff und Strom gelten. Ein falscher KN-Code kann eine CBAM-Verpflichtung verbergen oder eine unnötige Meldepflicht schaffen. Winz prüft die CBAM-Relevanz vor Einreichung der Anmeldung, wenn Waren in die Nähe betroffener KN-Positionen fallen."
+    },
+    "bti": {
+      "title": "Verbindliche Zolltarifauskunft (vZTA) — Die offizielle Einreihungsentscheidung",
+      "text": "Die Verbindliche Zolltarifauskunft ist eine offizielle EU-Klassifizierungsentscheidung. Eine vZTA-Entscheidung ist für Zollbehörden in allen EU-Mitgliedstaaten 3 Jahre ab Ausstellungsdatum bindend.",
+      "subtitle": "vZTA-Anträge sind nützlich für:",
+      "list": [
+        "Neue Produktkategorien",
+        "Zusammengesetzte Waren",
+        "Hochwertige Sendungen",
+        "Wiederholte Importe",
+        "Produkte mit unklaren Tarifpositionen",
+        "Waren, die Antidumpingzöllen oder CBAM unterliegen"
+      ],
+      "outro": "Die Bearbeitungszeit beim belgischen FÖD Finanzen beträgt in der Regel 30 bis 90 Tage."
+    },
+    "howWinzClassifies": {
+      "title": "Wie Winz klassifiziert",
+      "text": "Winz ermittelt den KN-Code für jede Sendung anhand von Produktbeschreibung, Materialzusammensetzung, Bearbeitungs- oder Herstellungszustand, deklariertem Ursprungsland und geltenden EU-Handelsabkommen oder -maßnahmen. Kunden geben die Produktdetails an, und Winz identifiziert den richtigen Code. Auf Seiten des Importeurs ist keine separate Suche erforderlich. Bei unklaren Produktkategorien berät Winz, ob ein vZTA-Antrag erforderlich ist, bevor die erste Sendung eingereicht wird. Komplexe Tarifstrategien und Zolloptimierungen fallen unter <1>EU-Zollberatung</1>.",
+      "links": [
+        "Wo der KN-Code auf einer eingereichten Anmeldung erscheint: <1>wie man eine Zollanmeldung liest</1>.",
+        "Wichtige Tarifbegriffe in belgischen Zollanmeldungen sind unter <2>EU-Zollterminologie</2> definiert."
+      ]
+    }
+  },
+  "cta": {
+    "title": "Unterstützung bei der HS-Klassifizierung anfordern",
+    "text": "Winz klassifiziert KN-Codes, reicht PLDA-Anmeldungen ein und verwaltet die Tarifgenauigkeit für Importeure und Spediteure an allen belgischen Eintrittspunkten.",
+    "subtext": "Winz unterstützt die Zollabfertigung für Seefracht, Straßenfracht, Luftfracht, Containersendungen und Landgrenzenverkehre.",
+    "button": "Unterstützung bei der HS-Klassifizierung Belgien anfordern"
+  },
+  "faq": {
+    "title": "Häufig Gestellte Fragen",
+    "questions": [
+      {
+        "q": "Kann ich den HS-Code verwenden, den mein Lieferant auf die Handelsrechnung gesetzt hat?",
+        "a": "HS-Codes von Lieferanten können als Referenz dienen, sollten aber nicht als bestätigte EU-Klassifizierung behandelt werden. Lieferantencodes spiegeln oft das Tarifsystem des Exportlandes wider. Belgien verlangt für PLDA-Anmeldungen den korrekten 8-stelligen KN-Code."
+      },
+      {
+        "q": "Ändern sich HS-Codes, und was passiert dann mit bestehenden Anmeldungen?",
+        "a": "Das Harmonisierte System wird alle 5 Jahre überarbeitet. Die aktuelle Ausgabe ist HS 2022. Wenn sich Positionen ändern, können sich auch KN-Codes ändern. Anmeldungen, die nach einem Revisionsdatum unter veralteten Codes eingereicht wurden, können als falsch klassifiziert gelten."
+      },
+      {
+        "q": "Was ist der Unterschied zwischen dem KN-Code für Importe und Exporte in Belgien?",
+        "a": "Einfuhranmeldungen erfordern den korrekten 8-stelligen KN-Code. Ausfuhranmeldungen verwenden dieselbe KN-Basis, aber Exportbeschränkungen, Dual-Use-Regeln oder Lizenzanforderungen können tiefere Prüfungen auf TARIC-Ebene erfordern."
+      },
+      {
+        "q": "Kann ein Antidumpingzoll durch einen falschen KN-Code ausgelöst werden?",
+        "a": "Ja. Antidumpingzölle sind an bestimmte KN-Codes und Ursprungsländer gebunden. Ein falscher KN-Code kann Waren aus der korrekten Antidumpingposition entfernen oder sie in eine Position einordnen, die nicht zutrifft."
+      },
+      {
+        "q": "Erhält das gleiche Produkt unabhängig vom Lieferanten immer denselben KN-Code?",
+        "a": "Nein. Die Klassifizierung hängt von Zusammensetzung, Bearbeitungszustand, Funktion und Aufmachung ab. Zwei ähnliche Produkte können unter verschiedene KN-Positionen fallen, wenn sich Materialanteile, Verwendung oder physische Präsentation unterscheiden."
+      },
+      {
+        "q": "Wird die KN-Code-Klassifizierung bei Winz als separater Service berechnet?",
+        "a": "Die Klassifizierung ist im Standard-Zollanmeldungsservice bei Winz enthalten. Ausführliche Recherchen, vZTA-Anträge oder strategische Zolloptimierungen über eine Produktpalette hinweg fallen unter Zollberatung."
+      },
+      {
+        "q": "Was ist die EU-TARIC-Datenbank?",
+        "a": "TARIC ist der integrierte Zolltarif der EU. Er verknüpft KN-Codes mit Zollsätzen, Präferenzsätzen, Antidumpingzöllen, Zollkontingenten, Beschränkungen und CBAM-bezogenen Maßnahmen. Winz nutzt TARIC als primäre Referenz für belgische Zollanmeldungen."
+      }
+    ]
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "meta": {
+    "title": "Fast Track Customs Clearance Belgium — Urgent Shipments | Winz",
+    "description": "Winz supports fast-track customs clearance in Belgium with pre-lodged PLDA declarations, HS code checks, release coordination, and document review before arrival.",
+    "keywords": "Fast Track Customs Clearance"
+  },
+  "hero": {
+    "title": "Fast Track Customs Clearance Belgium — Urgent Shipments",
+    "subtitle": "Fast-track customs clearance in Belgium starts before arrival. Winz checks documents, verifies HS codes, prepares customs data, and submits eligible PLDA pre-lodgement for Antwerp sea freight."
+  },
+  "intro": {
+    "p1": "For air and road freight, the same approach supports MRN readiness and release coordination. Early preparation helps importers avoid delays, missed slots, storage costs, and demurrage. Belgian customs can still inspect any shipment regardless of pre-lodgement status. See <1>customs clearance Belgium</1> for the full scope of Winz services.",
+    "p2": "Winz supports importers, exporters, freight forwarders, and logistics companies with <1>Belgium import clearance service</1>, pre-arrival document checks, release coordination, HS code verification, and customs compliance support for urgent shipments entering Belgium.",
+    "contact": "+32 496 32 24 67 | info@winz.be"
+  },
+  "preLodgement": {
+    "title": "How Pre-Lodgement Works",
+    "text": "A pre-lodged customs declaration is submitted before cargo arrives, allowing advance data review. This can speed up release once goods are presented and customs, carrier, and terminal requirements are complete.",
+    "p2": "Winz prepares Antwerp import files before vessel arrival and checks documents early for <1>air cargo clearance Belgium</1> through Brussels and Amsterdam airports. Road freight data is checked before arrival where applicable.",
+    "p3": "Pre-lodgement depends on accurate documents. Incorrect values, unclear descriptions, or missing HS codes can still delay clearance.",
+    "outro": "For port-specific guidance, see <1>Antwerp port pre-clearance procedures</1>."
+  },
+  "shipmentTypes": {
+    "title": "Shipment Types Covered",
+    "intro": "Pre-arrival customs preparation supports different shipment types handled through Belgian and nearby EU entry points.",
+    "list": [
+      "<1>FCL sea freight</1> — 20 ft, 40 ft, and 40 ft HC containers arriving at Antwerp, Rotterdam, or another EU port. Early declaration preparation reduces waiting time after vessel discharge when the file is complete.",
+      "<1>LCL sea freight</1> — Cargo must be deconsolidated before individual consignee goods can be cleared. Fast-track support reduces declaration processing time after deconsolidation but cannot remove the deconsolidation step itself.",
+      "<1>Air freight</1> — Short arrival windows require air waybill data, invoice details, packing lists, HS codes, and consignee information checked before arrival. Especially important for spare parts, samples, medical goods, and time-sensitive cargo.",
+      "<1>Road freight</1> — CMR details, invoice data, EORI numbers, and HS codes must match before the declaration is filed."
+    ],
+    "outro": "Fast-track clearance requires complete documents at the time of filing. A shipment becomes fast when documents are early, correct, and accepted by customs — not simply because they were sent early."
+  },
+  "comparison": {
+    "title": "Fast Track vs Standard Clearance",
+    "intro": "Fast-track clearance reduces declaration waiting time for qualifying shipments. It does not guarantee release when customs inspection, carrier holds, unpaid charges, missing licences, or terminal issues exist.",
+    "table": [
+      { "situation": "Pre-lodged file, correct documents, no inspection", "impact": "Release can move within a short terminal window" },
+      { "situation": "Standard clearance filed on arrival", "impact": "Usually slower — processing starts after arrival" },
+      { "situation": "Document verification required", "impact": "Additional hours or 1 working day may be needed" },
+      { "situation": "Physical inspection selected", "impact": "Often 24–48 hours or longer" },
+      { "situation": "Missing or incorrect documents", "impact": "3–5 working days in complex cases" }
+    ],
+    "postTable": "Pre-lodged declarations remove the processing queue at the declaration stage but do not remove customs authority. Belgian customs can still select any shipment for inspection based on risk, origin, commodity, value, importer history, or document inconsistencies.",
+    "costs": "Fast track carries a higher coordination requirement than standard clearance. The cost depends on urgency, shipment type, product lines, document quality, HS code complexity, and entry point. For most urgent cargo, the coordination cost is lower than demurrage, storage, or missed delivery slots.",
+    "links": [
+      "For timeline reference, see <1>standard customs clearance timelines Belgium</1>.",
+      "For pricing context, see <2>urgent shipment clearance costs Belgium</2>."
+    ]
+  },
+  "whatMustBeReady": {
+    "title": "What Must Be Ready",
+    "intro": "Fast-track clearance only works when customs data is accurate before filing. One mismatch can turn an urgent file into a delayed file.",
+    "list": [
+      "<1>Commercial invoice</1> — Must show seller, buyer, consignee, goods description, quantity, value, currency, Incoterm, and country of origin. Values must match the shipment and supporting documents.",
+      "<1>Packing list</1> — Must show itemised goods, weights, dimensions, package count, and product references.",
+      "<1>Transport document</1> — Bill of Lading for sea freight, Air Waybill for air freight, CMR consignment note for road freight.",
+      "<1>HS or CN code</1> — Must be confirmed before lodgement. Wrong classification affects duty rates, import VAT, controls, licences, and inspection risk.",
+      "<1>EORI number</1> — A valid EORI number is required. Without one, the declaration cannot move correctly through EU customs systems."
+    ],
+    "outro": "Winz cross-checks the invoice, packing list, transport document, EORI number, and HS code before filing. Most fast-track failures start from document errors that existed before the file reached the customs specialist.",
+    "link": "For common risk points, see <1>causes of customs delays Belgium</1>."
+  },
+  "sections": {
+    "whoQualifies": {
+      "title": "Who Qualifies for Fast Track",
+      "text": "Fast-track clearance suits businesses with urgent shipments and complete customs data before arrival. It works best for importers, exporters, freight forwarders, and logistics companies that can send accurate documents early. A qualifying shipment has a valid EORI number, complete commercial invoice, matching packing list, correct Bill of Lading, AWB or CMR, and a confirmed HS or CN code. Consignee details must match across all documents. The shipment must also be free from carrier holds, terminal blocks, unpaid freight release issues, and missing compliance documents. Goods subject to SPS controls, CBAM, dual-use checks, origin requirements, or product licences need additional document checks before pre-arrival filing. Fast-track clearance is strongest when the importer sends documents before arrival. Early review gives Winz time to correct errors before the shipment reaches customs."
+    },
+    "whenItFails": {
+      "title": "When Fast Track Fails",
+      "text": "Fast-track clearance fails when the customs file is early but not correct. Belgian customs systems process declarations based on the data submitted. Wrong or incomplete data creates holds, amendments, or inspection risk. Common failure points include wrong HS codes, unclear product descriptions, missing invoice values, inconsistent consignee names, incorrect origin details, and mismatched weights between the invoice, packing list, and transport document. LCL cargo can also face delays when the consolidated container has not been split at the Container Freight Station. The declaration may be ready, but the individual goods are not yet available for release. Restricted or regulated goods need additional checks. Food products, chemicals, medical goods, electronics, steel, aluminium, and dual-use items may require certificates, licences, test reports, or CBAM data. Fast track reduces avoidable waiting time. It does not override missing documents, customs controls, or legal import requirements."
+    },
+    "cbam": {
+      "title": "CBAM Pre-Arrival Checks",
+      "text": "CBAM affects importers of covered goods entering the EU from non-EU countries. From 2026, stronger obligations apply to cement, iron and steel, aluminium, fertilisers, electricity, and hydrogen. For urgent shipments, CBAM data must be reviewed before arrival where goods fall within scope. Missing CBAM information can slow customs processing and create compliance risk for the importer or indirect customs representative. Pre-arrival preparation helps importers identify CBAM exposure before the shipment reaches Belgium, giving the customs broker time to check product classification, origin, declarant responsibility, and supporting data. Winz supports CBAM-related customs preparation by checking whether declared goods fall within CBAM scope and whether additional importer action is needed before release. For more details, see <1>CBAM urgent customs filings 2026</1>."
+    },
+    "aeo": {
+      "title": "AEO and Inspection Risk",
+      "text": "AEO status can support faster and more predictable customs clearance for eligible businesses, potentially reducing the frequency of controls and strengthening the importer's compliance profile. Fast-track clearance and AEO status serve different purposes. Fast-track moves declaration preparation before arrival. AEO builds customs trust and can reduce the likelihood of document-based or physical controls. The two work best together. AEO does not guarantee release. Belgian customs can still inspect AEO shipments when risk rules, product controls, origin concerns, or document issues apply. Winz helps businesses understand how AEO status, document quality, HS code accuracy, and importer history affect customs clearance planning."
+    }
+  },
+  "howWinzCoordinates": {
+    "title": "How Winz Coordinates Clearance",
+    "intro": "Winz coordinates the fast-track customs process from document intake to release follow-up. One customs specialist reviews the file, verifies the HS code, submits the customs entry, and monitors release status.",
+    "list": [
+      "<1>Sea freight</1> — Winz coordinates with the importer, freight forwarder, terminal, carrier, and nominated haulier to align customs release with terminal readiness and collection planning.",
+      "<1>Air freight</1> — AWB, invoice, packing list, consignee data, and commodity details are checked before arrival to avoid delays in short airport handling windows.",
+      "<1>Road freight</1> — CMR, invoice, HS code, EORI number, and customs instruction are verified before the truck reaches the customs point, where applicable."
+    ],
+    "outro": "Winz does not replace customs authority, carrier release, or terminal control. Winz helps businesses prepare the customs file correctly, submit it on time, and coordinate release information with the parties involved."
+  },
+  "cta": {
+    "title": "Request Fast Track Clearance",
+    "text": "Winz supports fast-track customs clearance in Belgium through early document review, PLDA declaration preparation, HS code verification, customs release tracking, and coordination with freight forwarders, terminals, carriers, and nominated hauliers.",
+    "subtext": "Send the documents before arrival to reduce avoidable customs delays and improve release planning.",
+    "button": "request fast track clearance Belgium"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "questions": [
+      {
+        "q": "Does fast-track customs clearance guarantee same-day release?",
+        "a": "Fast-track customs clearance does not guarantee same-day release. Same-day release is possible when documents are complete, the declaration is accepted, carrier and terminal data are clear, and customs does not select the shipment for inspection. Belgian customs can inspect any shipment regardless of declaration timing. Inspection can extend clearance by 24–48 hours or longer, depending on the case."
+      },
+      {
+        "q": "What is the difference between Fast Track and AEO?",
+        "a": "Fast-track clearance is a timing process. The customs declaration is prepared and submitted before the shipment arrives, so customs processing can start earlier. AEO is a customs authorisation that reflects a business's compliance status. It may reduce some document checks and physical controls. Fast track reduces queue time. AEO can reduce inspection exposure for qualifying businesses."
+      },
+      {
+        "q": "What happens if customs selects the shipment?",
+        "a": "The shipment cannot be released until customs completes the required check. This may involve document review, scanner control, physical inspection, sampling, or additional questions. Pre-lodgement still helps because the declaration is already in the system. However, the release code is withheld until the customs control is completed."
+      },
+      {
+        "q": "How early should documents be sent?",
+        "a": "Documents should be sent as early as possible before arrival. For sea freight at Antwerp, early document review is especially useful because corrections can be made before the vessel reaches the port. Winz needs the commercial invoice, packing list, transport document, EORI number, and HS code information before filing. Regulated goods may need extra certificates or licences."
+      },
+      {
+        "q": "Does Winz support Rotterdam and Brussels Airport?",
+        "a": "Yes. Winz supports customs clearance coordination for shipments moving through Rotterdam, Brussels Airport, Amsterdam Airport, and Belgian entry points where relevant. The exact process depends on the shipment mode, customs system, entry point, and importer's responsibility. Sea freight, air freight, and road freight have different operational requirements."
+      },
+      {
+        "q": "Can fast track be used for exports?",
+        "a": "Yes. Export clearance can also be prepared before the cargo reaches the point of departure. Export declarations use export customs systems rather than the same import process. Early export filing helps reduce document waiting time before cargo leaves Belgium or another EU country. It is useful for urgent air freight, container exports, and road freight departures."
+      },
+      {
+        "q": "Is fast track available for road freight?",
+        "a": "Yes, road freight can benefit from early customs preparation. The declaration data, CMR, invoice, HS code, and importer details can be checked before the truck reaches the customs point. The speed depends on the route, declaration type, border process, and whether customs requires extra checks."
+      },
+      {
+        "q": "Can LCL cargo use fast-track clearance?",
+        "a": "Yes, but LCL cargo has an extra step. The consolidated container must be deconsolidated before the individual consignee's goods can be released. Fast-track clearance can reduce the declaration processing time after deconsolidation. It does not remove the physical deconsolidation process."
+      }
+    ]
+  }
+}

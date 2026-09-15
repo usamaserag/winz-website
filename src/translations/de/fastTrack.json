@@ -1,0 +1,135 @@
+{
+  "meta": {
+    "title": "Schnelle Zollabfertigung Belgien — Eiltransporte | Winz",
+    "description": "Winz unterstützt die schnelle Zollabfertigung in Belgien mit vorab eingereichten PLDA-Anmeldungen, HS-Code-Prüfungen und Dokumentenprüfungen vor der Ankunft.",
+    "keywords": "Schnelle Zollabfertigung, Fast Track"
+  },
+  "hero": {
+    "title": "Schnelle Zollabfertigung Belgien — Eiltransporte",
+    "subtitle": "Die schnelle Zollabfertigung in Belgien beginnt vor der Ankunft. Winz prüft Dokumente, verifiziert HS-Codes, bereitet Zolldaten vor und reicht zulässige PLDA-Anmeldungen vorab für Seefracht in Antwerpen ein."
+  },
+  "intro": {
+    "p1": "Für Luft- und Straßenfracht unterstützt derselbe Ansatz die MRN-Bereitschaft und die Freigabekoordination. Eine frühzeitige Vorbereitung hilft Importeuren, Verzögerungen, verpasste Zeitfenster, Lagerkosten und Liegegelder zu vermeiden. Der belgische Zoll kann jede Sendung unabhängig vom Vorabanmeldungsstatus inspizieren. Siehe <1>Zollabfertigung Belgien</1> für den gesamten Umfang der Winz-Dienstleistungen.",
+    "p2": "Winz unterstützt Importeure, Exporteure, Spediteure und Logistikunternehmen mit <1>Einfuhrabfertigungsservice Belgien</1>, Dokumentenprüfungen vor Ankunft, Freigabekoordination, HS-Code-Verifizierung und Zoll-Compliance-Support für Eilsendungen.",
+    "contact": "+32 496 32 24 67 | info@winz.be"
+  },
+  "preLodgement": {
+    "title": "Wie die Vorabanmeldung (Pre-Lodgement) funktioniert",
+    "text": "Eine Vorab-Zollanmeldung wird eingereicht, bevor die Fracht eintrifft, was eine frühzeitige Datenprüfung ermöglicht. Dies kann die Freigabe beschleunigen, sobald die Waren gestellt sind und alle Anforderungen von Zoll, Spediteur und Terminal erfüllt sind.",
+    "p2": "Winz bereitet Antwerper Importakten vor Ankunft des Schiffes vor und prüft Dokumente frühzeitig für die <1>Luftfrachtabfertigung Belgien</1> über die Flughäfen Brüssel und Amsterdam. Straßenfrachtdaten werden gegebenenfalls vor Ankunft geprüft.",
+    "p3": "Die Vorabanmeldung hängt von genauen Dokumenten ab. Falsche Werte, unklare Beschreibungen oder fehlende HS-Codes können die Abfertigung dennoch verzögern.",
+    "outro": "Für hafenspezifische Richtlinien siehe <1>Hafen Antwerpen Vorabfertigungsverfahren</1>."
+  },
+  "shipmentTypes": {
+    "title": "Abgedeckte Sendungsarten",
+    "intro": "Die Zollvorbereitung vor Ankunft unterstützt verschiedene Sendungsarten, die über belgische und nahe gelegene EU-Eintrittspunkte abgewickelt werden.",
+    "list": [
+      "<1>FCL Seefracht</1> — 20-Fuß-, 40-Fuß- und 40-Fuß-HC-Container, die in Antwerpen, Rotterdam oder einem anderen EU-Hafen ankommen. Eine frühzeitige Vorbereitung der Anmeldung verkürzt die Wartezeit nach der Entladung des Schiffes.",
+      "<1>LCL Seefracht</1> — Fracht muss dekonsolidiert werden, bevor die Waren einzelner Empfänger freigegeben werden können. Der Fast-Track-Support reduziert die Bearbeitungszeit der Anmeldung nach der Dekonsolidierung.",
+      "<1>Luftfracht</1> — Kurze Ankunftsfenster erfordern, dass Luftfrachtbriefdaten, Rechnungsdetails, Packlisten und HS-Codes vor Ankunft geprüft werden. Besonders wichtig für eilige Waren.",
+      "<1>Straßenfracht</1> — CMR-Details, Rechnungsdaten, EORI-Nummern und HS-Codes müssen übereinstimmen, bevor die Anmeldung eingereicht wird."
+    ],
+    "outro": "Die Fast-Track-Abfertigung erfordert zum Zeitpunkt der Einreichung vollständige Dokumente. Eine Sendung wird schnell abgewickelt, wenn Dokumente früh, korrekt und vom Zoll akzeptiert sind — nicht einfach, weil sie früh gesendet wurden."
+  },
+  "comparison": {
+    "title": "Fast Track vs. Standardabfertigung",
+    "intro": "Die schnelle Zollabfertigung reduziert die Wartezeit für anspruchsberechtigte Sendungen. Sie garantiert keine Freigabe, wenn Zollinspektionen, Spediteursblockaden, unbezahlte Gebühren oder Terminalprobleme bestehen.",
+    "table": [
+      { "situation": "Vorab eingereichte Akte, korrekte Dokumente, keine Inspektion", "impact": "Freigabe kann innerhalb eines kurzen Terminalfensters erfolgen" },
+      { "situation": "Standardabfertigung bei Ankunft eingereicht", "impact": "Meistens langsamer — Bearbeitung beginnt nach Ankunft" },
+      { "situation": "Dokumentenprüfung erforderlich", "impact": "Zusätzliche Stunden oder 1 Arbeitstag können benötigt werden" },
+      { "situation": "Physische Inspektion ausgewählt", "impact": "Oft 24–48 Stunden oder länger" },
+      { "situation": "Fehlende oder falsche Dokumente", "impact": "3–5 Arbeitstage in komplexen Fällen" }
+    ],
+    "postTable": "Vorabanmeldungen beseitigen die Warteschlange in der Anmeldungsphase, beseitigen jedoch nicht die Zollautorität. Der belgische Zoll kann dennoch jede Sendung basierend auf Risiko, Ursprung oder Ware für eine Inspektion auswählen.",
+    "costs": "Fast Track bringt einen höheren Koordinationsaufwand mit sich als die Standardabfertigung. Für die meisten eiligen Frachten sind die Koordinationskosten niedriger als Liegegelder oder Lagerkosten.",
+    "links": [
+      "Für einen Zeitplan siehe <1>Standard-Zollabfertigungszeiten Belgien</1>.",
+      "Für Preise siehe <2>Kosten für Eilsendungsabfertigung Belgien</2>."
+    ]
+  },
+  "whatMustBeReady": {
+    "title": "Was vorbereitet sein muss",
+    "intro": "Die schnelle Abfertigung funktioniert nur, wenn die Zolldaten vor dem Einreichen genau sind. Eine einzige Abweichung kann eine eilige Akte in eine verzögerte verwandeln.",
+    "list": [
+      "<1>Handelsrechnung</1> — Muss Verkäufer, Käufer, Empfänger, Warenbeschreibung, Menge, Wert, Währung, Incoterm und Ursprung anzeigen.",
+      "<1>Packliste</1> — Muss aufgeschlüsselte Waren, Gewichte, Abmessungen und Packstückanzahl anzeigen.",
+      "<1>Transportdokument</1> — Konnossement für Seefracht, Luftfrachtbrief für Luftfracht, CMR für Straßenfracht.",
+      "<1>HS- oder KN-Code</1> — Muss vor der Anmeldung bestätigt werden. Falsche Klassifizierung beeinflusst Zölle und Steuern.",
+      "<1>EORI-Nummer</1> — Eine gültige EORI-Nummer ist zwingend erforderlich, um die Anmeldung durch die EU-Zollsysteme zu leiten."
+    ],
+    "outro": "Winz gleicht Rechnung, Packliste, Transportdokument, EORI-Nummer und HS-Code vor der Einreichung ab.",
+    "link": "Für häufige Risikopunkte siehe <1>Ursachen für Zollverzögerungen Belgien</1>."
+  },
+  "sections": {
+    "whoQualifies": {
+      "title": "Wer für Fast Track in Frage kommt",
+      "text": "Die schnelle Abfertigung eignet sich für Unternehmen mit Eilsendungen und vollständigen Zolldaten vor Ankunft. Eine berechtigte Sendung hat eine gültige EORI-Nummer, eine vollständige Handelsrechnung, eine passende Packliste, das richtige Transportdokument und einen bestätigten HS- oder KN-Code. Die Sendung muss zudem frei von Blockaden des Beförderers, unbezahlten Frachtfreigabeproblemen und fehlenden Compliance-Dokumenten sein. Waren, die SPS-Kontrollen, CBAM, Dual-Use-Prüfungen oder Ursprungsanforderungen unterliegen, benötigen zusätzliche Dokumentenprüfungen. Fast Track ist am stärksten, wenn der Importeur Dokumente weit vor der Ankunft sendet."
+    },
+    "whenItFails": {
+      "title": "Wann Fast Track fehlschlägt",
+      "text": "Fast Track schlägt fehl, wenn die Zollakte früh, aber nicht korrekt ist. Die belgischen Zollsysteme verarbeiten Anmeldungen basierend auf den übermittelten Daten. Falsche oder unvollständige Daten erzeugen Blockaden, Änderungen oder Inspektionsrisiken. Häufige Fehlerquellen sind falsche HS-Codes, unklare Produktbeschreibungen, fehlende Rechnungswerte, inkonsistente Empfängernamen und abweichende Gewichte. LCL-Fracht kann ebenfalls Verzögerungen erleiden, wenn der Container an der Station nicht gesplittet wurde. Fast Track reduziert vermeidbare Wartezeiten. Es setzt jedoch keine fehlenden Dokumente, Zollkontrollen oder rechtlichen Einfuhranforderungen außer Kraft."
+    },
+    "cbam": {
+      "title": "CBAM-Prüfungen vor Ankunft",
+      "text": "CBAM betrifft Importeure von abgedeckten Waren, die aus Nicht-EU-Ländern in die EU gelangen. Ab 2026 gelten strengere Pflichten für Zement, Eisen und Stahl, Aluminium, Düngemittel, Strom und Wasserstoff. Für Eilsendungen müssen CBAM-Daten vor Ankunft geprüft werden. Fehlende CBAM-Informationen können die Zollabwicklung verlangsamen und Compliance-Risiken schaffen. Die Vorbereitung vor Ankunft hilft Importeuren, das CBAM-Risiko zu identifizieren, bevor die Sendung Belgien erreicht. Weitere Details finden Sie unter <1>CBAM eilige Zollanmeldungen 2026</1>."
+    },
+    "aeo": {
+      "title": "AEO und Inspektionsrisiko",
+      "text": "Der AEO-Status kann eine schnellere und vorhersehbarere Zollabfertigung für berechtigte Unternehmen unterstützen, indem er die Häufigkeit von Kontrollen potenziell reduziert. Fast-Track-Abfertigung und AEO-Status dienen unterschiedlichen Zwecken. Fast Track verlagert die Vorbereitung der Anmeldung auf die Zeit vor der Ankunft. AEO baut Zollvertrauen auf und kann die Wahrscheinlichkeit physischer Kontrollen verringern. Beide funktionieren am besten zusammen. AEO garantiert keine Freigabe. Der belgische Zoll kann AEO-Sendungen dennoch inspizieren, wenn Risikoregeln oder Dokumentenprobleme zutreffen. Winz hilft Unternehmen zu verstehen, wie sich AEO, Dokumentenqualität und HS-Code-Genauigkeit auf die Planung der Zollabfertigung auswirken."
+    }
+  },
+  "howWinzCoordinates": {
+    "title": "Wie Winz die Abfertigung koordiniert",
+    "intro": "Winz koordiniert den Fast-Track-Zollprozess von der Dokumentenannahme bis zum Follow-up der Freigabe. Ein Zollspezialist überprüft die Akte, verifiziert den HS-Code, reicht die Zollanmeldung ein und überwacht den Freigabestatus.",
+    "list": [
+      "<1>Seefracht</1> — Winz stimmt sich mit dem Importeur, Spediteur, Terminal, Beförderer und Frachtführer ab, um die Zollfreigabe an die Terminalbereitschaft anzupassen.",
+      "<1>Luftfracht</1> — AWB, Rechnung und Packliste werden vor der Ankunft geprüft, um Verzögerungen in kurzen Flughafen-Abfertigungsfenstern zu vermeiden.",
+      "<1>Straßenfracht</1> — CMR, Rechnung, HS-Code und EORI-Nummer werden verifiziert, bevor der Lkw den Zollpunkt erreicht."
+    ],
+    "outro": "Winz ersetzt nicht die Zollbehörde oder Terminalkontrolle. Winz hilft Unternehmen, die Zollakte korrekt und rechtzeitig vorzubereiten."
+  },
+  "cta": {
+    "title": "Schnelle Zollabfertigung anfordern",
+    "text": "Winz unterstützt die schnelle Zollabfertigung in Belgien durch frühzeitige Dokumentenprüfung, PLDA-Anmeldungsvorbereitung, HS-Code-Verifizierung und Verfolgung der Zollfreigabe.",
+    "subtext": "Senden Sie die Dokumente vor der Ankunft, um vermeidbare Zollverzögerungen zu reduzieren und die Freigabeplanung zu verbessern.",
+    "button": "Schnelle Zollabfertigung Belgien anfordern"
+  },
+  "faq": {
+    "title": "Häufig Gestellte Fragen",
+    "questions": [
+      {
+        "q": "Garantiert eine schnelle Zollabfertigung (Fast Track) eine Freigabe am selben Tag?",
+        "a": "Fast Track garantiert keine Freigabe am selben Tag. Eine Freigabe am selben Tag ist möglich, wenn Dokumente vollständig sind, die Anmeldung akzeptiert ist und der Zoll die Sendung nicht für eine Inspektion auswählt. Der Zoll kann jede Sendung inspizieren, was die Abfertigung um 24–48 Stunden oder länger verlängern kann."
+      },
+      {
+        "q": "Was ist der Unterschied zwischen Fast Track und AEO?",
+        "a": "Die schnelle Abfertigung ist ein Zeitprozess. Die Zollanmeldung wird vorbereitet und eingereicht, bevor die Sendung eintrifft. AEO ist eine Zollbewilligung, die den Compliance-Status eines Unternehmens widerspiegelt und Kontrollen reduzieren kann."
+      },
+      {
+        "q": "Was passiert, wenn der Zoll die Sendung auswählt?",
+        "a": "Die Sendung kann nicht freigegeben werden, bis der Zoll die erforderliche Prüfung abgeschlossen hat (Dokumentenprüfung, Scanner, physische Inspektion). Die Vorabanmeldung hilft dennoch, da sich die Anmeldung bereits im System befindet, der Freigabecode jedoch zurückgehalten wird."
+      },
+      {
+        "q": "Wie früh sollten Dokumente gesendet werden?",
+        "a": "Dokumente sollten so früh wie möglich vor der Ankunft gesendet werden. Bei Seefracht in Antwerpen ist eine frühzeitige Prüfung besonders nützlich, da Korrekturen vorgenommen werden können, bevor das Schiff den Hafen erreicht."
+      },
+      {
+        "q": "Unterstützt Winz Rotterdam und den Flughafen Brüssel?",
+        "a": "Ja. Winz unterstützt die Koordinierung der Zollabfertigung für Sendungen, die über Rotterdam, den Flughafen Brüssel, den Flughafen Amsterdam und relevante belgische Eintrittspunkte laufen."
+      },
+      {
+        "q": "Kann Fast Track für Exporte genutzt werden?",
+        "a": "Ja. Die Exportabfertigung kann auch vorbereitet werden, bevor die Fracht den Abgangsort erreicht. Eine frühzeitige Einreichung beim Export hilft, die Wartezeit auf Dokumente zu reduzieren."
+      },
+      {
+        "q": "Ist Fast Track für Straßenfracht verfügbar?",
+        "a": "Ja, Straßenfracht kann von einer frühzeitigen Zollvorbereitung profitieren. Anmeldedaten, CMR, Rechnung, HS-Code und Importeurdetails können geprüft werden, bevor der Lkw den Zollpunkt erreicht."
+      },
+      {
+        "q": "Kann LCL-Fracht Fast-Track-Abfertigung nutzen?",
+        "a": "Ja, aber LCL-Fracht hat einen zusätzlichen Schritt. Der konsolidierte Container muss dekonsolidiert werden, bevor die Waren freigegeben werden können. Fast Track reduziert die Bearbeitungszeit der Anmeldung nach der Dekonsolidierung."
+      }
+    ]
+  }
+}

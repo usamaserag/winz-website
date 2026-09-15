@@ -5,7 +5,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { FolderOpen, ArrowRight, LayoutGrid } from 'lucide-react';
 import { communityService } from '../../services/communityService';
 import { SEOMeta } from '../../components/common/SEOMeta';
-import usePageTitle from '../../hooks/usePageTitle';
 import PageHero from '../../components/logistics/PageHero';
 import SkeletonCard from '../../components/common/SkeletonCard';
 import EmptyState from '../../components/common/EmptyState';
@@ -18,7 +17,6 @@ const clean = (str) => (str || '').trim().replace(/:+$/, '');
 
 export default function Categories() {
   const { t, i18n } = useTranslation('common');
-  usePageTitle(t('nav.categories', { defaultValue: 'Categories' }));
   const locale = useLocale();
 
   const [categories, setCategories] = useState([]);
@@ -46,6 +44,11 @@ export default function Categories() {
 
   return (
     <div className="flex flex-col min-h-screen bg-gray-50/50">
+      <SEOMeta meta={{
+        title: t('categories.meta.title', { defaultValue: t('nav.categories', { defaultValue: 'Categories' }) }),
+        description: t('categories.meta.description'),
+        keywords: i18n.exists('categories.meta.keywords') ? t('categories.meta.keywords') : undefined
+      }} />
       <PageHero
         size="compact"
         badge={t('nav.yourCommunity', { defaultValue: 'Your Community' })}

@@ -1,0 +1,146 @@
+{
+  "meta": {
+    "title": "Road Freight Customs Clearance Belgium | Winz",
+    "description": "Winz handles road freight customs clearance in Belgium, including CMR checks, IDMS import filing, ENS support, HS codes, duty calculation, and MRN coordination.",
+    "keywords": "Road Freight Customs Clearance"
+  },
+  "hero": {
+    "title": "Road Freight Customs Clearance in Belgium",
+    "subtitle": "Road freight customs clearance in Belgium depends on the goods' customs status, first EU entry point, and final customs destination."
+  },
+  "intro": {
+    "p1": "The CMR must also align with the commercial invoice, packing list, and customs declaration. See <1>customs clearance Belgium</1> for the full scope of Winz customs services.",
+    "p2": "Winz checks these documents before filing. We support Belgian import, export, transit, and safety declarations for dry trucks and temperature-controlled reefer cargo.",
+    "p3": "Winz provides customs clearance, documentation, and compliance support. The haulier or freight forwarder manages the physical truck movement."
+  },
+  "requirements": {
+    "title": "Road Freight Requirements",
+    "p1": "Non-Union goods arriving in Belgium require an import declaration or valid transit procedure. Union goods moving between EU Member States normally require no import clearance, except certain excise or controlled products.",
+    "p2": "Belgian import declarations use IDMS, while PLDA remains available for approved exceptions and fallback cases. Non-EU road freight also requires an Entry Summary Declaration through ICS2 before reaching its first EU entry point.",
+    "table": [
+      { "movement": "First EU entry in Belgium", "treatment": "ENS plus import or transit declaration" },
+      { "movement": "Entry through another EU country", "treatment": "ENS at entry, followed by transit or import release" },
+      { "movement": "Arrival in Belgium under T1", "treatment": "NCTS destination formalities" },
+      { "movement": "Union goods moving within the EU", "treatment": "Normally no import declaration" },
+      { "movement": "Union goods leaving Belgium", "treatment": "Export declaration and exit confirmation" }
+    ],
+    "postTable": "Review <1>customs declaration for imports Belgium</1> before arranging a road shipment."
+  },
+  "documents": {
+    "title": "Documents for Truck Clearance",
+    "intro": "Shipment details must reconcile across documents. Inconsistent parties, goods, weights, routes, or customs status can delay release.",
+    "list": [
+      "CMR consignment note",
+      "Commercial invoice",
+      "Packing list",
+      "EORI and authorisation",
+      "Customs declaration",
+      "ENS data",
+      "HS or TARIC code",
+      "Origin evidence"
+    ],
+    "post1": "CMR and invoice layouts may differ, but totals and core details must match, with traceable invoice references. See the <1>CMR document road freight</1>.",
+    "post2": "Preferential claims require agreement-specific proof, such as EUR.1 or an origin declaration. Reefer and controlled cargo may also require temperature records, health or phytosanitary certificates, Common Health Entry Documents, or licences."
+  },
+  "process": {
+    "title": "The Road Clearance Process",
+    "intro": "Winz begins customs checks before the truck reaches the customs office, allowing time to correct errors.",
+    "list": [
+      "<1>Confirm the route:</1> Identify the EU entry point, customs location, destination, and arrival time.",
+      "<1>Collect documents:</1> Obtain the CMR, invoice, packing list, EORI details, and certificates.",
+      "<1>Verify data:</1> Check the parties, goods, weights, values, Incoterms, origin, and HS codes.",
+      "<1>Confirm ENS responsibility:</1> Agree on the filing party before EU entry.",
+      "<1>File the declaration:</1> Submit the required import, export, or transit data.",
+      "<1>Manage controls:</1> Coordinate corrections, document requests, and inspections.",
+      "<1>Confirm the outcome:</1> Share the release status or transit instructions."
+    ],
+    "outro": "An MRN confirms declaration acceptance, not customs release. Risk assessment, document checks, or inspection may still be required."
+  },
+  "delays": {
+    "title": "Common Causes of Delays",
+    "intro": "Most road freight delays begin with incomplete or inconsistent data. Winz checks the declaration package before submission and raises missing information with the responsible business. For a full breakdown of delay causes, see <1>customs delays at Belgian land borders</1>.",
+    "list": [
+      "<1>CMR mismatch:</1> The consignee, goods, package count, weight, or route differs from other documents.",
+      "<1>Late ENS data:</1> Safety and security information is incomplete before the filing deadline.",
+      "<1>Wrong HS code:</1> The classification produces an incorrect duty rate or misses a restriction.",
+      "<1>Missing origin proof:</1> Preferential duty is claimed without valid supporting evidence.",
+      "<1>Incomplete permits:</1> Controlled goods lack the required certificates or licences.",
+      "<1>Wrong customs office:</1> The declared destination does not match the actual truck route."
+    ],
+    "outro": "Customs can still select a compliant shipment for control. Pre-filing reduces avoidable waiting but cannot remove the authority's right to inspect goods."
+  },
+  "sections": {
+    "transit": {
+      "title": "When T1 Transit Applies",
+      "text": "A T1 declaration moves non-Union goods between customs offices while duty and VAT remain suspended. NCTS manages transit across EU and Common Transit countries. The goods must reach the declared destination within the permitted period for the T1 movement to be discharged."
+    },
+    "export": {
+      "title": "Export Clearance for Trucks",
+      "text": "Goods leaving Belgium for a non-EU country require an electronic export declaration filed through the EU Automated Export System, which manages export and exit formalities between the customs office of export and the customs office of exit. Customs assigns an export MRN after accepting the declaration. The office of exit records the exit result once goods leave EU customs territory. The declaration is commonly called an EX1 in commercial practice. The MRN and recorded exit result serve as official customs records and support the exporter's VAT evidence. Winz manages <1>EU export clearance</1> and coordinates export data with the CMR."
+    },
+    "reefer": {
+      "title": "Reefer and Controlled Cargo",
+      "text": "Reefer trucks follow the same core customs procedure as dry trucks. The cargo type determines whether additional certificates, pre-notifications, or official controls apply. For reefer-specific customs requirements, see <1>reefer truck clearance Belgium</1>. A temperature record is not a universal customs requirement. It may be required by contract, product rules, quality controls, or a competent authority. Animals, animal products, plants, and certain food or feed products may require TRACES pre-notification and a Common Health Entry Document. The responsible operator submits the CHED to the Border Control Post where goods enter the EU — which may be outside Belgium when the truck first enters through another Member State. Winz checks the route before confirming the required control location."
+    },
+    "costs": {
+      "title": "Road Freight Clearance Costs",
+      "text": "Road freight customs costs can include the declaration fee, import duty, Belgian VAT, transit administration, guarantee costs, inspections, and third-party waiting charges. Import duty depends on the TARIC code, customs value, origin, and trade measures. Preferential origin can reduce duty when valid proof is available. Belgian VAT is 21% (reduced rates apply to specific goods), calculated on the customs value, duty, and incidental costs. Transit costs vary by shipment value, route, guarantee, commodity lines, and customs locations. Controlled goods may add laboratory, Border Control Post, or certificate charges. Winz confirms the customs scope before filing. Transport, waiting time, parking, ferry, and delivery costs remain with the haulier. See <1>customs clearance costs road freight Belgium</1> for a full breakdown."
+    }
+  },
+  "whyWinz": {
+    "title": "Why Freight Forwarders Choose Winz",
+    "intro": "Winz provides one customs contact for the declaration, supporting documents, and customs status — helping freight forwarders and importers resolve data issues before the truck reaches customs.",
+    "list": [
+      "CMR, invoice, and packing list reconciliation",
+      "IDMS, NCTS, AES, and ENS system coverage",
+      "HS code checks before duty and tax calculations",
+      "Route-specific document checks for reefer and sensitive cargo",
+      "MRN, control, transit, and release status updates",
+      "English, French, Dutch, and German support"
+    ],
+    "outro": "Winz supports road freight customs clearance for movements linked to the United Kingdom, Türkiye, Ukraine, Morocco, Egypt, and other non-EU corridors. For ENS pre-arrival requirements, see <1>EU road cargo import regulations Belgium</1>."
+  },
+  "cta": {
+    "title": "Request a Customs Quote",
+    "text": "Send Winz the CMR draft, commercial invoice, packing list, route, expected arrival time, EORI details, goods description, and available certificates.",
+    "subtext": "Winz checks the procedure before filing and confirms whether the movement requires an import declaration, T1 transit, export declaration, or ENS support.",
+    "button": "Contact Winz for road freight customs clearance"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "questions": [
+      {
+        "q": "Can a truck enter without clearance?",
+        "a": "A truck can enter Belgium from another EU Member State without a new Belgian import declaration when the goods already hold Union status. Non-Union goods need a valid import or transit procedure before release."
+      },
+      {
+        "q": "What does the driver present?",
+        "a": "The driver normally carries the CMR and the customs references required for that movement. A T1 movement may require a Transit Accompanying Document or MRN reference."
+      },
+      {
+        "q": "How does T1 differ from import?",
+        "a": "An import declaration releases goods for free circulation and makes duty and import VAT payable. T1 keeps non-Union goods under customs supervision while they move to another approved destination."
+      },
+      {
+        "q": "Who files the ENS?",
+        "a": "The carrier, freight forwarder, importer, or customs representative may file the ENS, depending on the transport arrangement and available data. Winz supports filing where agreed."
+      },
+      {
+        "q": "Can goods enter bonded storage?",
+        "a": "Yes. Non-Union goods can move under transit and enter an authorised customs warehouse. Import duty and VAT remain suspended until the goods are released or placed under another procedure."
+      },
+      {
+        "q": "Does Winz clear reefer cargo?",
+        "a": "Yes. Winz supports reefer customs clearance and checks whether the goods require temperature records, TRACES documents, a CHED, health certificates, or other controls."
+      },
+      {
+        "q": "Does the driver need an EORI?",
+        "a": "The importer, exporter, or customs declarant needs the relevant EORI number. The driver does not normally need a personal EORI for the shipment."
+      },
+      {
+        "q": "Is same-day clearance possible?",
+        "a": "Same-day clearance is possible when documents arrive early, the declaration is pre-filed, duties are covered, and customs does not select the shipment for additional control. Eligible urgent movements can use fast track customs clearance Belgium."
+      }
+    ]
+  }
+}

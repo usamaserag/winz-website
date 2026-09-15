@@ -1,0 +1,238 @@
+{
+  "meta": {
+    "title": "Importing from Turkey to Belgium | Winz Customs",
+    "description": "Importing from Turkey to Belgium? Learn A.TR rules, duties, VAT, ICS2, IDMS, and required documents. Winz supports Belgian customs clearance."
+  },
+  "hero": {
+    "title": "Importing from Turkey to Belgium",
+    "subtitle": "Eligible goods can enter Belgium at 0% import duty under the EU–Türkiye Customs Union when a valid A.TR movement certificate supports the claim."
+  },
+  "intro": {
+    "p1": "Every commercial shipment still requires customs clearance, correct HS code classification, an EORI number, customs valuation, import VAT treatment, and pre-arrival ICS2 safety data. Belgian import declarations are filed through IDMS.",
+    "p2": "Winz supports importers, exporters, freight forwarders, and logistics companies with customs declarations, document checks, duty calculations, and compliance coordination. Winz does not provide physical transport.",
+    "p3": "Contact Winz before goods leave Türkiye for <1>clearing Turkish imports through Belgian customs</1>."
+  },
+  "rules": {
+    "title": "EU–Türkiye Customs Union Rules",
+    "p1": "The EU–Türkiye Customs Union covers industrial products and processed agricultural products. It does not cover standard agricultural products or coal and steel products under the same framework. These product categories follow separate trade rules.",
+    "p2": "Türkiye is not an EU Member State. Every commercial shipment entering Belgium from Türkiye remains subject to full EU import formalities regardless of Customs Union coverage.",
+    "p3": "A valid A.TR movement certificate confirms that qualifying goods are in free circulation within the Customs Union. It can support a 0% ordinary customs duty rate. It does not remove import VAT, customs declarations, product controls, or ICS2 safety and security filings.",
+    "p4": "Belgian customs can verify the invoice, goods description, customs value, commodity code, EORI number, transport document, and A.TR certificate on any shipment."
+  },
+  "coveredGoods": {
+    "title": "Goods Covered by the Customs Union",
+    "p1": "The Customs Union covers most manufactured products. Examples include machinery, electrical equipment, automotive parts, textiles, chemicals, plastics, furniture, and consumer goods.",
+    "p2": "Processed agricultural products can also qualify. Eligibility must be confirmed against the correct EU commodity code and current TARIC trade measure.",
+    "p3": "Classification starts with the six-digit HS code. The EU Combined Nomenclature extends this to eight digits. TARIC measures can apply at ten-digit level."
+  },
+  "outsideGoods": {
+    "title": "Goods Outside the Customs Union",
+    "p1": "Standard agricultural goods follow separate trade arrangements. Fresh food, plants, animals, and animal products can also require sanitary, phytosanitary, veterinary, or health certificates.",
+    "p2": "Coal and steel products are not covered under the same rules as industrial goods. Some products face quotas, safeguards, anti-dumping duties, origin requirements, licences, or other trade measures.",
+    "p3": "A valid A.TR certificate does not remove these requirements. Importers must check TARIC measures and applicable border controls before dispatch."
+  },
+  "atr": {
+    "title": "A.TR Certificate and Product Origin",
+    "p1": "An A.TR movement certificate proves free-circulation status within the Customs Union. It is not a general certificate of Turkish origin.",
+    "p2": "This distinction matters when Belgian customs applies measures based on actual product origin. Non-preferential origin can affect anti-dumping duties, quotas, embargoes, product marking requirements, and commercial-policy controls.",
+    "p3": "Goods produced outside Türkiye can sometimes enter Turkish free circulation after Turkish import formalities. An A.TR may then support Customs Union duty treatment, while separate origin-based measures can still apply upon arrival in Belgium.",
+    "table": [
+      {
+        "Document": "A.TR movement certificate",
+        "Main Purpose": "Confirms free-circulation status",
+        "Typical Use": "Eligible Customs Union goods"
+      },
+      {
+        "Document": "EUR.1 certificate",
+        "Main Purpose": "Supports preferential origin",
+        "Typical Use": "Goods under separate trade arrangements"
+      },
+      {
+        "Document": "Certificate of origin",
+        "Main Purpose": "Confirms product origin",
+        "Typical Use": "Quotas, licences, trade measures, or buyer requirements"
+      }
+    ],
+    "p4": "Winz reviews the required certificate type before the Belgian import declaration is prepared."
+  },
+  "preShipment": {
+    "title": "Pre-Shipment Checks for Turkish Imports",
+    "p1": "Importers should complete main customs checks before goods leave Türkiye. Corrections become harder once a truck reaches an EU land border or cargo enters a port terminal.",
+    "listTitle": "The pre-shipment review should cover 6 areas:",
+    "list": [
+      "Confirm the Belgian importer's EORI number and VAT registration details.",
+      "Classify each product under the correct CN and TARIC code.",
+      "Verify whether A.TR, EUR.1, or other origin evidence applies.",
+      "Check duties, quotas, safeguards, anti-dumping measures, and required licences.",
+      "Confirm responsibility for the ICS2 Entry Summary Declaration.",
+      "Match the commercial invoice, packing list, origin certificate, and transport document."
+    ],
+    "p2": "Mixed consignments need extra care. A single shipment can contain products at different duty rates, with different origin rules and different document requirements."
+  },
+  "dutyVAT": {
+    "title": "Duties, VAT, and Customs Value",
+    "p1": "Belgian customs calculates ad valorem duty from the declared customs value. The primary method is transaction value — the price paid or payable for the goods, adjusted by required additions and deductions. Other valuation methods apply when transaction value cannot be used.",
+    "p2": "Transport costs, insurance, royalties, commissions, and other charges can affect the declared customs value depending on the contract Incoterm and invoice structure.",
+    "p3": "Eligible goods receive a 0% ordinary customs duty rate when an accepted A.TR certificate is presented. Without valid origin evidence, Belgian customs applies the standard EU tariff rate for the commodity code.",
+    "p4": "A.TR status does not remove anti-dumping duties, countervailing duties, safeguards, quota restrictions, CBAM obligations, or product-specific controls.",
+    "p5": "Belgian import VAT is 21%. The VAT base includes the customs value, import duty, and relevant incidental costs. A taxable base of €200,000 produces €42,000 in import VAT at the standard rate. Additional duty and costs increase the final amount.",
+    "p6": "Belgian importers holding an ET 14.000 authorisation can defer import VAT to their periodic VAT return, removing the need to pre-finance VAT at the point of customs clearance.",
+    "p7": "Incoterms define responsibility. Under DAP, the seller arranges carriage to the named destination and the buyer handles import clearance. Under DDP, the seller assumes all import responsibilities including Belgian customs, duties, and VAT.",
+    "p8": "Winz provides HS code classification for Turkish machinery, automotive parts, textiles, steel products, chemicals, and electrical equipment before IDMS submission."
+  },
+  "cbam": {
+    "title": "CBAM Rules for Turkish Goods",
+    "p1": "The EU Carbon Border Adjustment Mechanism entered its definitive phase on 1 January 2026. It covers selected CN codes across 6 product sectors: cement, iron and steel, aluminium, fertilisers, electricity, and hydrogen. Exact coverage depends on the precise commodity code.",
+    "p2": "Importers or their indirect representatives exceeding the 50-tonne annual mass threshold for covered cement, iron and steel, aluminium, or fertiliser goods require the relevant CBAM authorisation or application reference before import. Electricity and hydrogen do not use the same mass threshold.",
+    "listTitle": "Belgian importers should verify 5 things before shipping covered goods from Türkiye:",
+    "list": [
+      "CN-code coverage under the current CBAM product list.",
+      "Annual mass imported across all consignments.",
+      "CBAM account registration and authorisation status.",
+      "Embedded emissions data for the goods.",
+      "Representative responsibilities — direct or indirect."
+    ],
+    "p3": "The first CBAM declaration covering 2026 imports is due by 31 May 2027. Certificate purchases for 2026 imports begin from February 2027. Turkish steel shipments can also require safeguard checks, quota verification, and additional origin document review before departure."
+  },
+  "process": {
+    "title": "Belgian Customs Clearance Process for Turkish Goods",
+    "p1": "Turkish goods arrive in Belgium by road, sea, or air. Road freight commonly enters the EU through a land border crossing and continues under T1 customs transit. Sea cargo typically arrives through the Port of Antwerp-Bruges. Air cargo arrives through Brussels Airport.",
+    "p2": "Winz supports the clearance process for all 3 arrival modes. Winz does not provide trucking, air cargo delivery, or container transport services.",
+    "listTitle": "The clearance process follows 5 stages:",
+    "steps": [
+      {
+        "action": "Document and ICS2 review:",
+        "desc": "The commercial invoice, packing list, A.TR certificate, EORI number, commodity codes, and transport documents are checked. The responsible economic operator files the Entry Summary Declaration through ICS2 before EU entry."
+      },
+      {
+        "action": "Transit coordination:",
+        "desc": "Road shipments move under T1 transit before Belgian import clearance. The transit reference, financial guarantee, seals, route, and office of destination must match the physical movement."
+      },
+      {
+        "action": "IDMS declaration:",
+        "desc": "The Belgian import declaration is submitted through IDMS. IDMS has operated since October 2024. From 30 September 2025, operators are expected to use IDMS wherever possible. PLDA remains available for limited fallback situations."
+      },
+      {
+        "action": "Customs assessment:",
+        "desc": "Belgian customs checks classification, customs value, A.TR eligibility, duty calculation, VAT treatment, CBAM data where applicable, and product controls. Customs releases the goods or selects the consignment for documentary or physical inspection."
+      },
+      {
+        "action": "Release coordination:",
+        "desc": "Winz shares release confirmation with the importer, carrier, freight forwarder, or terminal. The appointed transport provider handles physical delivery."
+      }
+    ],
+    "p3": "Complete files can typically be processed within 1 to 2 business days after presentation and declaration acceptance. This is an operational estimate, not a customs guarantee. Inspections, controls, or data queries extend clearance time.",
+    "p4": "Importers shipping through the broader MENA and CIS region can review the additional origin and documentation considerations covered for <1>Middle East to Belgium customs clearance</1>."
+  },
+  "documents": {
+    "title": "Required Import Documents for Turkish Shipments",
+    "p1": "7 core documents support standard Turkish import clearance in Belgium. Additional documents depend on product classification, origin evidence type, transport mode, and applicable product controls.",
+    "table": [
+      {
+        "Document": "A.TR movement certificate",
+        "Purpose": "Supports Customs Union duty treatment",
+        "Required For": "Eligible goods claiming A.TR treatment"
+      },
+      {
+        "Document": "Commercial invoice",
+        "Purpose": "Confirms parties, price, currency, Incoterm, and goods description",
+        "Required For": "All commercial shipments"
+      },
+      {
+        "Document": "Packing list",
+        "Purpose": "Records packages, weights, dimensions, and shipping marks",
+        "Required For": "Most commercial shipments"
+      },
+      {
+        "Document": "EORI number",
+        "Purpose": "Identifies the importer or customs representative",
+        "Required For": "All EU import declarations"
+      },
+      {
+        "Document": "CMR consignment note",
+        "Purpose": "Records road shipment and carrier details",
+        "Required For": "Road freight arrivals"
+      },
+      {
+        "Document": "T1 transit declaration",
+        "Purpose": "Covers goods moving under transit before final import clearance",
+        "Required For": "Relevant transit movements"
+      },
+      {
+        "Document": "Bill of lading or air waybill",
+        "Purpose": "Records sea or air shipment details",
+        "Required For": "Sea and air freight"
+      }
+    ],
+    "p2": "The import declaration also requires accurate customs value, procedure codes, country of origin data, and references to supporting documents.",
+    "p3": "Food products, plants, chemicals, medical goods, and controlled products require additional licences or certificates. Examples include phytosanitary certificates, veterinary health certificates, conformity documentation, and specific import approvals.",
+    "p4": "EU Member States accept qualifying electronic A.TR certificates issued by Turkish authorities with a QR code and without a wet-ink signature. This applies to certificates issued from 8 July 2024. The QR code does not guarantee duty relief. Belgian customs can still verify authenticity, eligibility, commodity code, and other applicable trade measures."
+  },
+  "problems": {
+    "title": "Common Customs Problems for Turkey–Belgium Shipments",
+    "sub1": "A.TR Certificate Errors",
+    "p1": "Belgian customs refuses A.TR treatment when the certificate is incomplete, unreadable, invalid, or inconsistent with the accompanying shipment documents.",
+    "p2": "Common mismatches involve goods descriptions, invoice references, quantities, package details, and validation data. Rejection causes the standard EU tariff rate to apply.",
+    "p3": "A 10% duty rate on a €100,000 customs value produces €10,000 in unexpected duty. The actual rate depends on TARIC classification. Higher rates apply to textiles, ceramics, and some agricultural products.",
+    "p4": "Winz checks the A.TR certificate against the commercial invoice, packing list, commodity code, and transport document before IDMS filing.",
+    "sub2": "ICS2 Filing Holds",
+    "p5": "Weak goods descriptions, incomplete consignee details, incorrect commodity codes, and mismatched package data trigger ICS2 queries or holds.",
+    "p6": "ENS data must match the commercial invoice and transport documents. Generic descriptions such as \"parts,\" \"samples,\" or \"equipment\" do not provide sufficient detail for risk screening.",
+    "p7": "For road freight, an unresolved ENS issue stops EU entry at the border. For sea or air cargo, it delays arrival handling and customs presentation at the Belgian terminal.",
+    "sub3": "T1 Transit Errors",
+    "p8": "Turkish road freight moves under T1 transit before Belgian import clearance. Errors involving the movement reference number, CMR consignment note, seal details, financial guarantee, route, or destination customs office can prevent correct transit discharge.",
+    "p9": "Goods remain under customs supervision until transit is properly closed. Corrections require coordination between the carrier, guarantee holder, declarant, and both origin and destination customs offices.",
+    "p10": "Importers comparing transit requirements for neighbouring CIS corridors can also review <1>importing from Ukraine to Belgium</1>."
+  },
+  "service": {
+    "title": "Winz Turkey Import Clearance Service",
+    "p1": "Winz supports businesses importing Turkish goods into Belgium and the wider EU market. Customs support covers pre-shipment preparation, IDMS declaration, compliance checks, and release documentation.",
+    "listTitle": "For Turkey–Belgium shipments, Winz provides:",
+    "list": [
+      "A.TR certificate verification against invoices and commodity codes.",
+      "ICS2 Entry Summary Declaration preparation and filing coordination.",
+      "Belgian IDMS import declaration submission.",
+      "HS code review, customs value calculation, and import duty assessment.",
+      "CBAM product scope check, quota, safeguard, and product control verification.",
+      "ET 14.000 import VAT deferral coordination for eligible importers.",
+      "Customs release document sharing with carriers, freight forwarders, and terminals."
+    ],
+    "p2": "Every file is reviewed before submission. Winz works with importers, exporters, freight forwarders, and logistics companies in English, French, Dutch, and German.",
+    "p3": "Winz also provides customs compliance audits for businesses with repeated A.TR errors, classification disputes, VAT exposure, CBAM risks, or incomplete declaration records.",
+    "p4": "Complex shipments can be reviewed through <1>duty optimisation for Turkish trade routes Belgium</1> before goods leave Türkiye. The review covers A.TR eligibility, origin evidence, HS code classification, customs value, VAT, CBAM obligations, and full document set.",
+    "cta": "Contact Winz for customs clearance support before the goods leave Türkiye."
+  },
+  "faq": {
+    "title": "FAQ — Importing from Turkey to Belgium",
+    "questions": [
+      {
+        "q": "Does the EU–Türkiye Customs Union remove the need for customs clearance?",
+        "a": "No. The Customs Union can reduce the import duty rate to 0% for eligible industrial goods, but it does not remove the requirement for Belgian customs clearance. Every commercial shipment from Türkiye requires an IDMS import declaration, EORI registration, ICS2 safety filing, and correct HS code classification."
+      },
+      {
+        "q": "What is an A.TR movement certificate and when is it required?",
+        "a": "An A.TR movement certificate confirms that goods are in free circulation within the EU–Türkiye Customs Union. It supports a 0% ordinary customs duty rate for eligible industrial products. The certificate is required at the time of Belgian customs clearance. Electronic A.TR certificates with QR codes are accepted for shipments issued from 8 July 2024."
+      },
+      {
+        "q": "Does A.TR status cover anti-dumping duties and CBAM?",
+        "a": "No. An accepted A.TR certificate removes ordinary customs duty for qualifying goods only. Anti-dumping duties, countervailing measures, safeguard tariffs, quota restrictions, and CBAM certificate obligations apply independently. Each measure must be checked against the TARIC code before shipment."
+      },
+      {
+        "q": "What is IDMS and how does it affect Turkish import declarations in Belgium?",
+        "a": "IDMS is Belgium's current customs declaration system, in operation since October 2024. Belgian import declarations for Turkish goods — including classification, customs value, and A.TR references — are submitted through IDMS. PLDA remains available for limited fallback situations only."
+      },
+      {
+        "q": "What documents are required for Turkish road freight arriving in Belgium?",
+        "a": "Standard road freight from Türkiye requires a commercial invoice, packing list, A.TR movement certificate where applicable, CMR consignment note, T1 transit declaration, EORI number, and accurate TARIC classification. Controlled, food, or regulated products require additional certificates. ICS2 Entry Summary Declaration data must be filed before EU entry."
+      },
+      {
+        "q": "Can Winz handle CBAM compliance for Turkish steel and aluminium shipments?",
+        "a": "Yes. Winz reviews CN-code coverage, annual mass thresholds, CBAM account status, embedded emissions data, and representative responsibilities for Turkish steel, aluminium, and cement shipments entering Belgium. The first CBAM declaration for 2026 imports is due 31 May 2027."
+      },
+      {
+        "q": "How long does customs clearance take for Turkish imports in Belgium?",
+        "a": "Complete files submitted through IDMS with all documents correct are typically processed within 1 to 2 business days after declaration acceptance. Shipments selected for documentary or physical inspection, or with ICS2 holds, take longer. Winz provides clearance status updates throughout the process."
+      }
+    ]
+  }
+}

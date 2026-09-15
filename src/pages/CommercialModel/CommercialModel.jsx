@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from '../../components/routing';
 import { ArrowRight, ChevronDown, CheckCircle2, Truck, Globe, FileCheck } from 'lucide-react';
-import usePageTitle from '../../hooks/usePageTitle';
+import { SEOMeta } from '../../components/common/SEOMeta';
 import PageHero from '../../components/logistics/PageHero';
 import SectionBadge from '../../components/logistics/SectionBadge';
 import { fadeUp } from '../../components/logistics/motionVariants';
@@ -22,8 +22,7 @@ const serviceColors = [
 ];
 
 const CommercialModel = () => {
-  const { t } = useTranslation(['commercial', 'common', 'services']);
-  usePageTitle(t('commercial:hero.title'));
+  const { t, i18n } = useTranslation(['commercial', 'common', 'services']);
 
   const [expandedIndex, setExpandedIndex] = useState(null);
 
@@ -39,8 +38,13 @@ const CommercialModel = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.35 }}
-      className="flex flex-col min-h-screen"
+      className="flex flex-col min-h-screen overflow-x-hidden bg-slate-50"
     >
+      <SEOMeta meta={{
+        title: t('commercial:meta.title', { defaultValue: t('commercial:hero.title') }),
+        description: t('commercial:meta.description'),
+        keywords: i18n.exists('commercial:meta.keywords') ? t('commercial:meta.keywords') : undefined
+      }} />
       <PageHero
         badge={t('commercial:hero.badge')}
         title={t('commercial:hero.title')}

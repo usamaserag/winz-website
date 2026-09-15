@@ -81,6 +81,7 @@ export default function CategoryDetail() {
         ogTitle: category?.seo?.title || category.seoOgTitle || title,
         ogDescription: seoDescription,
         ogImage: category.image ? resolveMediaUrl(category.image) : `${getSiteOrigin()}/favicon.png`,
+        ogImageAlt: category?.seo?.image_alt || category.image_alt || category.title || category.name,
         ogUrl: canonicalUrl,
         ogType: 'website',
       } : null} />

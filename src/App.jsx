@@ -31,6 +31,31 @@ const CookiesPolicy = lazy(() => import('./pages/Legal/CookiesPolicy'));
 const NotFound = lazy(() => import('./pages/NotFound'));
 const CommercialModel = lazy(() => import('./pages/CommercialModel/CommercialModel'));
 
+// Specialized Services & Solutions
+const AirFreight = lazy(() => import('./pages/Services/AirFreight'));
+const RoadFreight = lazy(() => import('./pages/Services/RoadFreight'));
+const FCLClearance = lazy(() => import('./pages/Services/FCL'));
+const LCLClearance = lazy(() => import('./pages/Services/LCLClearance'));
+const FastTrack = lazy(() => import('./pages/Services/FastTrack'));
+const HSCode = lazy(() => import('./pages/Services/HSCode'));
+
+// Ports & Airports
+const PortAntwerp = lazy(() => import('./pages/Services/PortAntwerp'));
+const PortRotterdam = lazy(() => import('./pages/Services/PortRotterdam'));
+const BrusselsAirport = lazy(() => import('./pages/Services/BrusselsAirport'));
+const PortHamburg = lazy(() => import('./pages/Services/PortHamburg'));
+const AmsterdamSchiphol = lazy(() => import('./pages/Services/AmsterdamSchiphol'));
+const Zele = lazy(() => import('./pages/Services/Zele'));
+const ImportTurkey = lazy(() => import('./pages/Services/ImportTurkey'));
+const ImportChina = lazy(() => import('./pages/Services/ImportChina'));
+const ImportUae = lazy(() => import('./pages/Services/ImportUae'));
+const ImportNigeria = lazy(() => import('./pages/Services/ImportNigeria'));
+const ImportSouthAfrica = lazy(() => import('./pages/Services/ImportSouthAfrica'));
+const ImportEgypt = lazy(() => import('./pages/Services/ImportEgypt'));
+const ImportUkraine = lazy(() => import('./pages/Services/ImportUkraine'));
+const ImportBrazil = lazy(() => import('./pages/Services/ImportBrazil'));
+const ImportSaudi = lazy(() => import('./pages/Services/ImportSaudi'));
+
 function AppRoutes() {
   return (
     <Suspense fallback={<PageLoader />}>
@@ -45,6 +70,31 @@ function AppRoutes() {
             <Route path="import" element={<Import />} />
             <Route path="export" element={<Export />} />
             <Route path="transit" element={<Transit />} />
+            
+            <Route path="air-freight-customs-clearance" element={<AirFreight />} />
+            <Route path="road-freight-customs-clearance" element={<RoadFreight />} />
+            <Route path="fcl-customs-clearance" element={<FCLClearance />} />
+            <Route path="lcl-customs-clearance" element={<LCLClearance />} />
+            <Route path="fast-track-customs-clearance" element={<FastTrack />} />
+            <Route path="hs-code-classification" element={<HSCode />} />
+
+            <Route path="customs-clearance-port-of-antwerp" element={<PortAntwerp />} />
+            <Route path="customs-clearance-rotterdam-port" element={<PortRotterdam />} />
+            <Route path="customs-clearance-brussels-airport" element={<BrusselsAirport />} />
+            <Route path="customs-clearance-port-of-hamburg" element={<PortHamburg />} />
+            <Route path="customs-clearance-amsterdam-schiphol" element={<AmsterdamSchiphol />} />
+            
+            <Route path="customs-broker-zele-belgium" element={<Zele />} />
+            <Route path="importing-from-turkey-to-belgium" element={<ImportTurkey />} />
+            <Route path="importing-from-china-to-belgium" element={<ImportChina />} />
+            <Route path="importing-from-uae-to-belgium" element={<ImportUae />} />
+            <Route path="importing-from-nigeria-to-eu" element={<ImportNigeria />} />
+            <Route path="importing-from-south-africa-to-eu" element={<ImportSouthAfrica />} />
+            <Route path="importing-from-egypt-to-eu" element={<ImportEgypt />} />
+            <Route path="importing-from-ukraine-to-belgium" element={<ImportUkraine />} />
+            <Route path="importing-from-brazil-to-belgium" element={<ImportBrazil />} />
+            <Route path="importing-from-saudi-arabia-to-eu" element={<ImportSaudi />} />
+
             <Route path="transport" element={<Transport />} />
             <Route path="warehouse" element={<WarehousePage />} />
             <Route path="blog" element={<Blog />} />

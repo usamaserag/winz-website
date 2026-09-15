@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { Menu, X, ChevronDown, PackagePlus, PackageOpen, Route, BookOpen, HelpCircle, FolderOpen } from 'lucide-react';
+import { Menu, X, ChevronDown, PackagePlus, PackageOpen, Route, BookOpen, HelpCircle, FolderOpen, Plane, Truck, Container, Package, Zap, FileSearch, Anchor, MapPin } from 'lucide-react';
 import { Link } from '../routing';
 import { usePathWithoutLocale } from '../../hooks/useLocale';
 import Logo from '../common/Logo';
@@ -9,10 +9,37 @@ import LanguageSwitcher from '../common/LanguageSwitcher';
 import LogisticsGridPattern from '../logistics/LogisticsGridPattern';
 import { pageHasDarkHero, HERO_NAV_BG } from '../../lib/pageHasDarkHero';
 
-const CLEARANCE_SERVICES = [
+const CORE_CLEARANCE = [
   { key: 'import', path: '/import', Icon: PackagePlus },
   { key: 'export', path: '/export', Icon: PackageOpen },
   { key: 'transit', path: '/transit', Icon: Route },
+  { key: 'airFreight', path: '/air-freight-customs-clearance', Icon: Plane },
+  { key: 'roadFreight', path: '/road-freight-customs-clearance', Icon: Truck },
+  { key: 'fcl', path: '/fcl-customs-clearance', Icon: Container },
+  { key: 'lcl', path: '/lcl-customs-clearance', Icon: Package },
+  { key: 'fastTrack', path: '/fast-track-customs-clearance', Icon: Zap },
+  { key: 'hsCode', path: '/hs-code-classification', Icon: FileSearch },
+];
+
+const LOCATIONS = [
+  { key: 'antwerp', path: '/customs-clearance-port-of-antwerp', Icon: Anchor },
+  { key: 'rotterdam', path: '/customs-clearance-rotterdam-port', Icon: Anchor },
+  { key: 'brussels', path: '/customs-clearance-brussels-airport', Icon: Plane },
+  { key: 'hamburg', path: '/customs-clearance-port-of-hamburg', Icon: Anchor },
+  { key: 'amsterdam', path: '/customs-clearance-amsterdam-schiphol', Icon: Plane },
+  { key: 'zele', path: '/customs-broker-zele-belgium', Icon: MapPin },
+];
+
+const IMPORT_ROUTES = [
+  { key: 'turkey', path: '/importing-from-turkey-to-belgium', Icon: Route },
+  { key: 'china', path: '/importing-from-china-to-belgium', Icon: Route },
+  { key: 'uae', path: '/importing-from-uae-to-belgium', Icon: Route },
+  { key: 'nigeria', path: '/importing-from-nigeria-to-eu', Icon: Route },
+  { key: 'southAfrica', path: '/importing-from-south-africa-to-eu', Icon: Route },
+  { key: 'egypt', path: '/importing-from-egypt-to-eu', Icon: Route },
+  { key: 'ukraine', path: '/importing-from-ukraine-to-belgium', Icon: Route },
+  { key: 'brazil', path: '/importing-from-brazil-to-belgium', Icon: Route },
+  { key: 'saudi', path: '/importing-from-saudi-arabia-to-eu', Icon: Route },
 ];
 
 const COMMUNITY_LINKS = [
@@ -69,7 +96,7 @@ const Navbar = () => {
   const isActive = (path) => pathWithoutLocale === path;
   const isBlogActive =
     pathWithoutLocale === '/blog' || pathWithoutLocale.startsWith('/blog/');
-  const isServicesActive = ['/services', '/import', '/export', '/transit', '/transport', '/warehouse'].includes(pathWithoutLocale);
+  const isServicesActive = false;
   const isCommunityActive = isBlogActive || pathWithoutLocale === '/faq' || pathWithoutLocale.startsWith('/categories');
 
   const onDarkHero = pageHasDarkHero(location.pathname);
@@ -101,14 +128,14 @@ const Navbar = () => {
   }`;
 
   const servicesChevronClass = `w-4 h-4 transition-transform duration-200 ${
-    useHeroNav ? 'text-primary-400' : 'text-primary-500'
+    useHeroNav ? 'opacity-80' : 'opacity-70'
   } ${servicesOpen ? 'rotate-180' : ''}`;
 
   const communityChevronClass = `w-4 h-4 transition-transform duration-200 ${
-    useHeroNav ? 'text-primary-400' : 'text-primary-500'
+    useHeroNav ? 'opacity-80' : 'opacity-70'
   } ${communityOpen ? 'rotate-180' : ''}`;
 
-  const dropdownPanelClass = `absolute top-full z-[60] mt-3 left-0 min-w-[15rem] w-60 rounded-2xl shadow-xl overflow-hidden border ${
+  const dropdownPanelClass = `absolute top-full z-[60] mt-3 left-0 rounded-2xl shadow-xl overflow-hidden border ${
     useHeroNav
       ? 'bg-navy-900 border-white/10 shadow-black/30'
       : 'bg-white border-gray-100 shadow-gray-200/60'
@@ -171,20 +198,69 @@ const Navbar = () => {
                 </button>
 
                 {servicesOpen && (
-                  <div className={`${dropdownPanelClass} animate-dropdown-in`}>
-                    {CLEARANCE_SERVICES.map(({ key, path, Icon }) => (
-                      <Link
-                        key={path}
-                        to={path}
-                        onClick={() => setServicesOpen(false)}
-                        className={`flex items-center gap-3 px-5 py-3.5 text-sm font-medium transition-colors ${dropdownLinkClass(isActive(path))}`}
-                      >
-                        <span className={dropdownIconClass(isActive(path))}>
-                          <Icon className="w-5 h-5" aria-hidden="true" />
-                        </span>
-                        {t(`nav.clearance.${key}`)}
-                      </Link>
-                    ))}
+                  <div className={`${dropdownPanelClass} animate-dropdown-in w-max p-4 flex gap-6`}>
+                    <div className="flex-1">
+                      <h4 className={`text-xs font-bold uppercase tracking-wider mb-3 px-3 ${useHeroNav ? 'text-white/40' : 'text-gray-400'}`}>
+                        {t('nav.servicesAndSolutions', { defaultValue: 'Services & Solutions' })}
+                      </h4>
+                      <div className="grid grid-cols-2 gap-x-2 gap-y-1">
+                        {CORE_CLEARANCE.map(({ key, path, Icon }) => (
+                          <Link
+                            key={path}
+                            to={path}
+                            onClick={() => setServicesOpen(false)}
+                            className={`flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium transition-colors ${dropdownLinkClass(isActive(path))}`}
+                          >
+                            <span className={dropdownIconClass(isActive(path))}>
+                              <Icon className="w-5 h-5" aria-hidden="true" />
+                            </span>
+                            {t(`nav.clearance.${key}`, { defaultValue: key })}
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                    <div className={`w-px ${useHeroNav ? 'bg-white/10' : 'bg-gray-100'}`}></div>
+                    <div className="w-56">
+                      <h4 className={`text-xs font-bold uppercase tracking-wider mb-3 px-3 ${useHeroNav ? 'text-white/40' : 'text-gray-400'}`}>
+                        {t('nav.portsAndAirports', { defaultValue: 'Ports & Airports' })}
+                      </h4>
+                      <div className="flex flex-col gap-y-1">
+                        {LOCATIONS.map(({ key, path, Icon }) => (
+                          <Link
+                            key={path}
+                            to={path}
+                            onClick={() => setServicesOpen(false)}
+                            className={`flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium transition-colors ${dropdownLinkClass(isActive(path))}`}
+                          >
+                            <span className={dropdownIconClass(isActive(path))}>
+                              <Icon className="w-5 h-5" aria-hidden="true" />
+                            </span>
+                            {t(`nav.locations.${key}`, { defaultValue: key })}
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                    <div className={`w-px ${useHeroNav ? 'bg-white/10' : 'bg-gray-100'}`}></div>
+                    <div className="w-[28rem]">
+                      <h4 className={`text-xs font-bold uppercase tracking-wider mb-3 px-3 ${useHeroNav ? 'text-white/40' : 'text-gray-400'}`}>
+                        {t('nav.tradeRoutes', { defaultValue: 'Trade Routes' })}
+                      </h4>
+                      <div className="grid grid-cols-2 gap-x-2 gap-y-1">
+                        {IMPORT_ROUTES.map(({ key, path, Icon }) => (
+                          <Link
+                            key={path}
+                            to={path}
+                            onClick={() => setServicesOpen(false)}
+                            className={`flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium transition-colors ${dropdownLinkClass(isActive(path))}`}
+                          >
+                            <span className={dropdownIconClass(isActive(path))}>
+                              <Icon className="w-5 h-5" aria-hidden="true" />
+                            </span>
+                            {t(`nav.routes.${key}`, { defaultValue: key.charAt(0).toUpperCase() + key.slice(1) })}
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
                   </div>
                 )}
               </div>
@@ -215,7 +291,7 @@ const Navbar = () => {
                 </button>
 
                 {communityOpen && (
-                  <div className={`${dropdownPanelClass} animate-dropdown-in`}>
+                  <div className={`${dropdownPanelClass} animate-dropdown-in min-w-[15rem] w-60`}>
                     {COMMUNITY_LINKS.map(({ key, path, Icon }) => {
                       const active = key === 'blog' ? isBlogActive : isActive(path);
                       return (
@@ -318,31 +394,60 @@ const Navbar = () => {
                   >
                     {t('nav.customsClearance')}
                     <ChevronDown
-                      className={`w-4 h-4 transition-transform ${useHeroNav ? 'text-primary-400' : 'text-primary-500'} ${mobileServicesOpen ? 'rotate-180' : ''}`}
+                      className={`w-4 h-4 transition-transform ${useHeroNav ? 'opacity-80' : 'opacity-70'} ${mobileServicesOpen ? 'rotate-180' : ''}`}
                     />
                   </button>
 
                   {mobileServicesOpen && (
-                    <div className="overflow-hidden">
-                      {CLEARANCE_SERVICES.map(({ key, path, Icon }) => (
-                        <Link
-                          key={path}
-                          to={path}
-                          onClick={() => setIsOpen(false)}
-                          className={`flex items-center gap-3 pl-7 pr-3 py-2.5 text-sm font-medium rounded-md transition-colors ${
-                            isActive(path)
-                              ? useHeroNav
-                                ? 'text-primary-400 bg-white/10 font-semibold'
-                                : 'text-primary-600 bg-primary-50 font-semibold'
-                              : useHeroNav
-                                ? 'text-slate-200 hover:text-white hover:bg-white/10'
-                                : 'text-slate-600 hover:text-primary-500 hover:bg-primary-50/50'
-                          }`}
-                        >
-                          <Icon className="w-5 h-5 shrink-0" aria-hidden="true" />
-                          {t(`nav.clearance.${key}`)}
-                        </Link>
-                      ))}
+                    <div className="overflow-hidden mt-1 space-y-4 pl-3">
+                      <div>
+                        <h4 className={`text-xs font-bold uppercase tracking-wider mb-2 pl-4 ${useHeroNav ? 'text-white/40' : 'text-gray-400'}`}>
+                          {t('nav.servicesAndSolutions', { defaultValue: 'Services & Solutions' })}
+                        </h4>
+                        {CORE_CLEARANCE.map(({ key, path, Icon }) => (
+                          <Link
+                            key={path}
+                            to={path}
+                            onClick={() => setIsOpen(false)}
+                            className={`flex items-center gap-3 pl-4 pr-3 py-2 text-sm font-medium rounded-md transition-colors ${
+                              isActive(path)
+                                ? useHeroNav
+                                  ? 'text-primary-400 bg-white/10 font-semibold'
+                                  : 'text-primary-600 bg-primary-50 font-semibold'
+                                : useHeroNav
+                                  ? 'text-slate-200 hover:text-white hover:bg-white/10'
+                                  : 'text-slate-600 hover:text-primary-500 hover:bg-primary-50/50'
+                            }`}
+                          >
+                            <Icon className="w-4 h-4 shrink-0" aria-hidden="true" />
+                            {t(`nav.clearance.${key}`, { defaultValue: key })}
+                          </Link>
+                        ))}
+                      </div>
+                      <div>
+                        <h4 className={`text-xs font-bold uppercase tracking-wider mb-2 pl-4 ${useHeroNav ? 'text-white/40' : 'text-gray-400'}`}>
+                          {t('nav.portsAndAirports', { defaultValue: 'Ports & Airports' })}
+                        </h4>
+                        {LOCATIONS.map(({ key, path, Icon }) => (
+                          <Link
+                            key={path}
+                            to={path}
+                            onClick={() => setIsOpen(false)}
+                            className={`flex items-center gap-3 pl-4 pr-3 py-2 text-sm font-medium rounded-md transition-colors ${
+                              isActive(path)
+                                ? useHeroNav
+                                  ? 'text-primary-400 bg-white/10 font-semibold'
+                                  : 'text-primary-600 bg-primary-50 font-semibold'
+                                : useHeroNav
+                                  ? 'text-slate-200 hover:text-white hover:bg-white/10'
+                                  : 'text-slate-600 hover:text-primary-500 hover:bg-primary-50/50'
+                            }`}
+                          >
+                            <Icon className="w-4 h-4 shrink-0" aria-hidden="true" />
+                            {t(`nav.locations.${key}`, { defaultValue: key })}
+                          </Link>
+                        ))}
+                      </div>
                     </div>
                   )}
                 </div>
@@ -364,7 +469,7 @@ const Navbar = () => {
                   >
                     {t('nav.yourCommunity')}
                     <ChevronDown
-                      className={`w-4 h-4 transition-transform ${useHeroNav ? 'text-primary-400' : 'text-primary-500'} ${mobileCommunityOpen ? 'rotate-180' : ''}`}
+                      className={`w-4 h-4 transition-transform ${useHeroNav ? 'opacity-80' : 'opacity-70'} ${mobileCommunityOpen ? 'rotate-180' : ''}`}
                     />
                   </button>
 

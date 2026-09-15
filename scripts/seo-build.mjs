@@ -11,7 +11,17 @@ const SITE_URL = 'https://winz.be';
 const STATIC_ROUTES = [
   '/', '/about', '/services', '/import', '/export', '/transit',
   '/transport', '/warehouse', '/blog', '/faq', '/categories',
-  '/contact', '/privacy-policy', '/cookies-policy'
+  '/contact', '/privacy-policy', '/cookies-policy',
+  '/customs-broker-zele-belgium',
+  '/importing-from-turkey-to-belgium',
+  '/importing-from-china-to-belgium',
+  '/importing-from-uae-to-belgium',
+  '/importing-from-nigeria-to-eu',
+  '/importing-from-south-africa-to-eu',
+  '/importing-from-egypt-to-eu',
+  '/importing-from-ukraine-to-belgium',
+  '/importing-from-brazil-to-belgium',
+  '/importing-from-saudi-arabia-to-eu'
 ];
 
 async function fetchFromApi(endpoint) {
@@ -99,17 +109,41 @@ async function run() {
     }
   });
 
+  const getRouteMeta = (routePath) => {
+    const p = routePath.split('/').filter(Boolean)[1] || '';
+    switch (p) {
+      case '':
+        return { changefreq: 'daily', priority: '1.0' };
+      case 'blog':
+        return { changefreq: 'daily', priority: '0.9' };
+      case 'services':
+        return { changefreq: 'weekly', priority: '0.9' };
+      case 'faq':
+      case 'categories':
+      case 'subcategories':
+        return { changefreq: 'weekly', priority: '0.8' };
+      case 'privacy-policy':
+      case 'cookies-policy':
+        return { changefreq: 'yearly', priority: '0.3' };
+      default:
+        return { changefreq: 'monthly', priority: '0.8' };
+    }
+  };
+
   let sitemapContent = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n`;
   
   routes.forEach(route => {
+    const meta = getRouteMeta(route.path);
     sitemapContent += `  <url>\n    <loc>${escapeXml(SITE_URL + route.path)}</loc>\n`;
+    sitemapContent += `    <changefreq>${meta.changefreq}</changefreq>\n`;
+    sitemapContent += `    <priority>${meta.priority}</priority>\n`;
     // Add alternates
     for (const altLang of ['en', 'fr', 'de', 'nl']) {
-      if (altLang !== route.path.split('/')[1]) {
-        const altPath = route.path.replace(/^\/(en|fr|de|nl)/, `/${altLang}`);
-        sitemapContent += `    <xhtml:link rel="alternate" hreflang="${altLang}" href="${escapeXml(SITE_URL + altPath)}" />\n`;
-      }
+      const altPath = route.path.replace(/^\/(en|fr|de|nl)/, `/${altLang}`);
+      sitemapContent += `    <xhtml:link rel="alternate" hreflang="${altLang}" href="${escapeXml(SITE_URL + altPath)}" />\n`;
     }
+    const defaultPath = route.path.replace(/^\/(en|fr|de|nl)/, `/en`);
+    sitemapContent += `    <xhtml:link rel="alternate" hreflang="x-default" href="${escapeXml(SITE_URL + defaultPath)}" />\n`;
     sitemapContent += `  </url>\n`;
   });
   sitemapContent += `</urlset>`;

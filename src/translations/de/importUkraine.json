@@ -1,0 +1,246 @@
+{
+  "meta": {
+    "title": "Importing from Ukraine to Belgium: Customs Guide",
+    "description": "Importing from Ukraine to Belgium requires origin proof, tariff checks, transit records, Belgian IDMS filing, and product-specific customs compliance."
+  },
+  "hero": {
+    "title": "Importing from Ukraine to Belgium: Customs Clearance Guide",
+    "subtitle": "Importing from Ukraine to Belgium requires accurate customs documents, correct tariff classification, valid origin proof, and a Belgian IDMS declaration. Importers must also check transit, sanctions, VAT, quotas, and product controls before dispatch."
+  },
+  "intro": {
+    "p1": "The upgraded EU–Ukraine DCFTA entered into force on 29 October 2025. Preferential duty remains available for qualifying goods but is not automatic. Main risks include invalid origin proof, exhausted agricultural quotas, incorrect customs value, CBAM exposure, steel safeguards, and restricted territorial origin.",
+    "p2": "Winz supports <1>Ukraine to Belgium import clearance</1> by checking origin proof, HS codes, duty rates, and IDMS declaration data before filing."
+  },
+  "rules": {
+    "title": "Updated EU–Ukraine Trade Rules",
+    "p1": "The upgraded EU–Ukraine DCFTA gives qualifying Ukrainian goods preferential EU market access. Preferential duty applies only when origin rules are met and valid proof is available. The EU's temporary Autonomous Trade Measures ended 5 June 2025, after which sensitive agricultural products returned to the DCFTA quota framework. The upgraded DCFTA took effect 29 October 2025.",
+    "p2": "ATM-era document routines can create unexpected duty. Preference may be rejected when origin proof is missing, invalid, or inconsistent with the declaration. A EUR.1 certificate or accepted origin declaration may support the claim depending on consignment value and exporter status.",
+    "sub1": "Goods Eligible for Preference",
+    "p3": "Industrial goods — machinery, electrical equipment, chemicals, manufactured products, and qualifying iron or steel — are largely liberalised under the DCFTA. Agricultural exports including cereals, oilseeds, sunflower oil, honey, poultry, eggs, and dairy products follow separate rules, with some receiving preference only within a tariff-rate quota.",
+    "p4": "A valid origin document does not guarantee zero duty. The importer must verify the CN code, TARIC measures, quota position, safeguards, and product controls.",
+    "sub2": "Agricultural Tariff Quota Rules",
+    "p5": "Ukrainian agri-food products — wheat, maize, sugar, eggs, poultry, honey, and certain dairy — may be subject to tariff-rate quotas. Within-quota duty may be reduced or zero; over-quota quantities face the standard EU MFN rate, which can be significant for large consignments.",
+    "p6": "Quota administration varies by product. First-come-first-served quotas follow the declaration acceptance date; others require an import licence. Importers should check quota availability before dispatch and before declaration acceptance, and contracts should allocate over-quota duty risk.",
+    "sub3": "EUR.1 and Origin Declarations",
+    "p7": "A EUR.1 movement certificate is commonly used to prove Ukrainian preferential origin, issued or endorsed by Ukrainian customs. An origin declaration may replace EUR.1 where rules allow — approved exporters may use it under their authorisation; others may use it for qualifying low-value consignments.",
+    "p8": "Origin proof must match the invoice, packing list, exporter, goods description, quantities, and tariff code. Goods shipped from Ukraine are not automatically Ukrainian-origin — non-originating materials or insufficient processing can affect eligibility.",
+    "p9": "For wider corridor requirements, see <1>EU import regulations Belgium Ukraine 2025</1>."
+  },
+  "importer": {
+    "title": "Importer and EORI Requirements",
+    "p1": "The Belgian declaration requires a valid EORI number and correct VAT and representation arrangements. An EU-established importer can use direct or indirect representation — indirect representation can create joint liability. A Ukrainian company without EU establishment normally needs an EU importer structure and may require a Belgian fiscal representative.",
+    "p2": "Before dispatch, parties should identify the importer of record, EORI holder, VAT treatment, customs representative, and party responsible for duties and compliance records. The Incoterm does not determine customs origin, tariff classification, or declaration accuracy."
+  },
+  "duties": {
+    "title": "Duties, VAT, and Tariff Codes",
+    "p1": "Import duty depends on tariff classification, preferential origin, quota status, customs value, and TARIC measures. Belgian import VAT normally applies in addition to customs duty. EU classification uses the 6-digit HS code, 8-digit CN code, and 10-digit TARIC code.",
+    "table": [
+      {
+        "area": "CN 1512",
+        "goods": "Sunflower-seed oil",
+        "treatment": "Preference may apply with valid origin",
+        "risk": "Wrong subheading, processing details, or quota treatment"
+      },
+      {
+        "area": "CN 1001 and 1005",
+        "goods": "Wheat and maize",
+        "treatment": "Within-quota or over-quota treatment",
+        "risk": "Quota changes before declaration acceptance"
+      },
+      {
+        "area": "CN Chapter 72",
+        "goods": "Iron and steel",
+        "treatment": "DCFTA, safeguard, and CBAM checks",
+        "risk": "Quota, melt-and-pour evidence, and emissions data"
+      },
+      {
+        "area": "CN 1205 and 1206",
+        "goods": "Rapeseed and sunflower seeds",
+        "treatment": "Product-specific preferential treatment",
+        "risk": "Origin proof and agricultural controls"
+      },
+      {
+        "area": "Selected CN Chapter 44",
+        "goods": "Wood and timber products",
+        "treatment": "DCFTA and possible EUDR controls",
+        "risk": "Incorrect scope assessment or missing traceability data"
+      }
+    ],
+    "p2": "Customs value normally starts with the transaction value including transport and insurance to the EU entry point — for road freight via Poland, this means costs to the Polish border. The import VAT base can also include duty, other taxes, and incidental expenses. ET 14.000 authorisation allows eligible importers to account for Belgian import VAT through the periodic VAT return."
+  },
+  "cbam": {
+    "title": "Steel Safeguards and CBAM",
+    "p1": "DCFTA preference does not remove safeguard or CBAM obligations. From 1 July 2026, the updated EU steel safeguard regime uses product and country quotas, requires melt-and-pour evidence, and can impose 50% out-of-quota duty. Importers must check the CN code, steel category, quota, and origin records.",
+    "p2": "CBAM applies separately from 1 January 2026 to covered iron and steel goods. The general exemption applies where annual covered imports remain at or below 50 tonnes; above that threshold, authorised CBAM declarant status is normally required. The importer must obtain emissions data and use correct CBAM references."
+  },
+  "eudr": {
+    "title": "Timber and EUDR Checks",
+    "p1": "EUDR applies to wood and derived products listed under specific CN codes in the regulation's product annex — not every product in HS Chapter 44. Most large and medium operators apply EUDR from 30 December 2026; qualifying micro and small operators generally follow from 30 June 2027. Covered importers need supplier, production-location, geolocation, legality, and risk-assessment records. DCFTA preference does not reduce EUDR responsibility."
+  },
+  "sanctions": {
+    "title": "Sanctions and Origin Screening",
+    "p1": "Importers must screen the production territory, supplier, ownership chain, and goods against current EU sanctions. The EU restricts imports originating in Crimea, Sevastopol, and specified non-government-controlled areas of Donetsk, Luhansk, Kherson, and Zaporizhzhia. An invoice or dispatch address does not resolve territorial-origin risk. Steel importers should also check Russian or Belarusian input exposure.",
+    "p2": "Importers comparing CIS corridor customs requirements can also review <1>importing from Turkey to Belgium</1>."
+  },
+  "transit": {
+    "title": "Transit From Ukraine to Belgium",
+    "p1": "Road and rail goods can move from Ukraine to Belgium under the Common Transit Convention, which Ukraine joined on 1 October 2022. NCTS assigns a Movement Reference Number covering movement from a Ukrainian customs office through Poland and Germany to Belgium. Common crossings include Medyka–Shehyni, Korczowa–Krakovets, Dorohusk–Yahodyn, and Hrebenne–Rava-Ruska.",
+    "p2": "The transit declaration suspends import duty and VAT until goods reach the authorised destination. The CMR, invoice, transit data, seals, vehicle details, guarantee information, and destination office must remain consistent. Transit ends after the Belgian destination office records arrival and NCTS confirms discharge.",
+    "p3": "Winz supports <1>transit customs clearance Belgium for Ukrainian cross-border cargo</1> by checking transit references, destination details, guarantee information, and discharge requirements before final import clearance."
+  },
+  "process": {
+    "title": "Belgian Import Clearance Process",
+    "table": [
+      {
+        "stage": "Stage 1 — ENS Filing",
+        "action": "Entry Summary Declaration required before road or rail goods enter the EU, including goods descriptions, tariff data, consignor and consignee details, and EORI numbers. From 1 June 2026, road and rail operators provide safety and security data through ICS2."
+      },
+      {
+        "stage": "Stage 2 — Common Transit",
+        "action": "Transit declaration moves non-Union goods under customs control to the Belgian destination, suspending duty and VAT. Common errors include incorrect seals, weak goods descriptions, missing guarantee values, and wrong destination offices."
+      },
+      {
+        "stage": "Stage 3 — IDMS Declaration",
+        "action": "Belgian IDMS receives the import declaration with CN and TARIC codes, customs value, origin, preference, VAT treatment, Incoterm, costs, and document references. Steel and EUDR entries need relevant safeguard, CBAM, melt-and-pour, or due diligence data."
+      },
+      {
+        "stage": "Stage 4 — Customs Assessment",
+        "action": "Belgian customs assesses duty, VAT, quotas, restrictions, and product controls. Food, plants, animal products, chemicals, timber, and steel can require additional checks."
+      },
+      {
+        "stage": "Stage 5 — Release and Handover",
+        "action": "After release, goods move to the delivery address. Winz coordinates customs records and handover communication. Transport is arranged by the importer or logistics provider."
+      }
+    ]
+  },
+  "documents": {
+    "title": "Required Customs Clearance Documents",
+    "p1": "8 core records normally support Ukraine-to-Belgium customs clearance. The exact set depends on the product, route, Incoterm, origin claim, and regulatory controls.",
+    "table": [
+      {
+        "doc": "Commercial invoice",
+        "purpose": "Confirms seller, buyer, value, currency, Incoterm, and goods",
+        "use": "All commercial imports"
+      },
+      {
+        "doc": "Packing list",
+        "purpose": "Confirms packages, weights, dimensions, and marks",
+        "use": "Most commercial imports"
+      },
+      {
+        "doc": "CMR or rail document",
+        "purpose": "Records the transport movement and responsible parties",
+        "use": "Road or rail consignments"
+      },
+      {
+        "doc": "EUR.1 or origin declaration",
+        "purpose": "Supports the DCFTA preference claim",
+        "use": "Imports claiming preference"
+      },
+      {
+        "doc": "EORI and importer details",
+        "purpose": "Identifies the importer and declarant",
+        "use": "All customs declarations"
+      },
+      {
+        "doc": "ENS and transit references",
+        "purpose": "Links safety, security, and transit movements",
+        "use": "Goods entering under transit"
+      },
+      {
+        "doc": "Product certificates",
+        "purpose": "Supports sanitary, phytosanitary, CBAM, EUDR, or other controls",
+        "use": "Commodity-specific imports"
+      },
+      {
+        "doc": "Value and payment records",
+        "purpose": "Supports transaction value and cost additions",
+        "use": "Valuation checks and audits"
+      }
+    ],
+    "p2": "The invoice, packing list, transport record, origin proof, ENS, transit declaration, and IDMS entry must describe the same goods.",
+    "listTitle": "A pre-clearance review should confirm 8 items:",
+    "list": [
+      "Confirm the 8-digit CN code and 10-digit TARIC code.",
+      "Verify the product-specific DCFTA origin rule.",
+      "Obtain a valid EUR.1 or accepted origin declaration.",
+      "Check tariff quotas, safeguards, and additional duties.",
+      "Confirm EORI, VAT, importer, and representation details.",
+      "Match the invoice, packing list, CMR, ENS, and transit data.",
+      "Prepare product licences, certificates, and regulatory references.",
+      "Review customs value, transport costs, duty, and import VAT."
+    ]
+  },
+  "risks": {
+    "title": "Common Import Clearance Problems",
+    "sub1": "Invalid Origin Proof",
+    "p1": "Missing or invalid origin proof removes the DCFTA preferential rate. Importers previously relying on ATM routines may still use outdated supplier processes. Corrections after arrival can delay release and create storage or full-duty exposure. Winz identifies missing references, inconsistent descriptions, and unsupported claims before IDMS filing.",
+    "sub2": "Cereal Quota Exposure",
+    "p2": "Wheat, maize, and other sensitive goods can face quota uncertainty. First-come-first-served quota availability depends on the declaration-acceptance date, not the loading date. Contracts should allocate additional duty risk when quota access changes.",
+    "sub3": "Steel Compliance Gaps",
+    "p3": "Ukrainian steel can involve DCFTA preference, steel safeguards, sanctions screening, and CBAM simultaneously. Missing emissions data, incorrect safeguard category, absent melt-and-pour evidence, or invalid CBAM status can delay release. Confirm the CN code before dispatch.",
+    "sub4": "Transit Data Mismatches",
+    "p4": "CMR, transit, seal, invoice, and destination-office mismatches can prevent discharge and create guarantee claims. Winz coordinates transit reference checks, guarantee handling, and discharge requirements before Belgian clearance."
+  },
+  "support": {
+    "title": "Winz Import Clearance Support",
+    "p1": "Winz supports Ukraine-to-Belgium imports through customs clearance, document review, tariff classification, duty and VAT checks, transit coordination, and compliance preparation, including:",
+    "list": [
+      "DCFTA origin and EUR.1 checks",
+      "CN and TARIC classification review",
+      "Agricultural quota and safeguard checks",
+      "ICS2 ENS data preparation",
+      "Common transit and NCTS coordination",
+      "Belgian IDMS import declarations",
+      "Customs value and import VAT review",
+      "CBAM and steel-data checks",
+      "EUDR document coordination",
+      "ET 14.000 VAT treatment coordination",
+      "Release records and cargo-status communication"
+    ],
+    "p2": "Winz works with importers, exporters, freight forwarders, and logistics companies. Support is available in English, French, Dutch, and German.",
+    "p3": "Early file review helps identify missing origin proof, incorrect tariff codes, valuation gaps, quota exposure, and product controls before arrival.",
+    "cta": "Contact Winz for customs clearance support when importing commercial goods from Ukraine into Belgium."
+  },
+  "faq": {
+    "title": "FAQ — Importing from Ukraine to Belgium",
+    "questions": [
+      {
+        "q": "Did Ukraine's ATM regime end?",
+        "a": "Yes. The EU's temporary Autonomous Trade Measures ended on 5 June 2025. From 6 June 2025, sensitive products again followed the DCFTA preference and quota framework."
+      },
+      {
+        "q": "What is the upgraded DCFTA?",
+        "a": "The upgraded EU–Ukraine DCFTA entered into force on 29 October 2025. It updates preferential access while retaining controls for sensitive agricultural goods."
+      },
+      {
+        "q": "Which origin proof is accepted?",
+        "a": "A EUR.1 certificate or accepted origin declaration may support the claim, depending on value, exporter status, and the origin protocol."
+      },
+      {
+        "q": "Does every Ukrainian product qualify?",
+        "a": "No. The product must satisfy the relevant origin rule. The importer must also check TARIC, quotas, safeguards, sanctions, and product-specific restrictions."
+      },
+      {
+        "q": "What happens when a quota exhausts?",
+        "a": "Over-quota duty can apply when a first-come-first-served quota is unavailable for the accepted declaration. Licence-managed quotas follow their own allocation rules."
+      },
+      {
+        "q": "Does CBAM apply to Ukrainian steel?",
+        "a": "Yes, covered Ukrainian steel can create CBAM obligations. DCFTA preference does not remove authorised declarant, emissions-data, or certificate requirements where they apply."
+      },
+      {
+        "q": "Does EUDR cover Ukrainian timber?",
+        "a": "EUDR can cover Ukrainian wood products listed under relevant CN codes. Importers must confirm scope, operator status, data, and application dates."
+      },
+      {
+        "q": "Can transit begin in Ukraine?",
+        "a": "Yes. Ukraine participates in the Common Transit Convention. An NCTS common transit movement can begin in Ukraine and continue to a Belgian customs office of destination."
+      },
+      {
+        "q": "Does Winz transport the goods?",
+        "a": "No. Winz provides customs clearance, customs documentation, transit coordination, and compliance support. The importer, freight forwarder, or logistics provider arranges physical transport."
+      }
+    ]
+  }
+}

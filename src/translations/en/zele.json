@@ -1,0 +1,208 @@
+{
+  "meta": {
+    "title": "Customs Broker in Zele, Belgium | Winz",
+    "description": "Winz supports businesses in Zele with import, export, and transit declarations, HS code checks, duty and VAT review, and customs compliance."
+  },
+  "hero": {
+    "title": "Customs Broker in Zele, Belgium | Winz",
+    "subtitle": "Winz supports importers, exporters, freight forwarders, and logistics companies from its office in Zele, East Flanders."
+  },
+  "intro": {
+    "p1": "The office is located at Gentsesteenweg 102 D4, 9240 Zele, Belgium. This location provides a central contact point for businesses using Belgian ports, airports, and European road freight routes.",
+    "p2": "Winz prepares customs documents, checks declaration data, and coordinates customs filings under the applicable representation arrangements. Support covers imports, exports, transit movements, HS code classification, customs valuation, duty calculations, and import VAT review.",
+    "p3": "Belgian import declarations are generally submitted through IDMS. Export declarations use AES, while transit movements use NCTS. PLDA remains available only for defined transitional or fallback cases during Belgium’s customs system migration.",
+    "p4": "A broker’s physical location does not determine the customs duty rate or customs value. These depend on the goods, origin, customs procedure, transaction details, and applicable EU trade measures.",
+    "p5": "East Flanders businesses contact the Zele office for <1>import clearance under EU customs rules</1>, export declarations, transit documents, HS code checks, duty and VAT calculation, and <2>trade compliance consulting Belgium</2>.",
+    "contact": "+32 496 32 24 67 | info@winz.be"
+  },
+  "services": {
+    "title": "Customs Services from Zele",
+    "intro": "Winz supports eight main customs service areas from Zele. Each service focuses on customs documentation, compliance, declaration filing, or release coordination.",
+    "list": [
+      "Import customs clearance — Import declaration preparation, IDMS filing coordination, HS code checks, customs valuation, duty calculation, and import VAT review.",
+      "Export customs clearance — AES export declarations, export accompanying documents, exit confirmation, and proof-of-export support for VAT records.",
+      "Transit customs clearance — T1 and T2 transit declarations for goods moving under customs control through Belgium or other EU countries.",
+      "HS code classification — CN code checks, TARIC verification, product-description review, and identification of applicable restrictions or trade measures.",
+      "Customs consulting — Compliance reviews, duty planning, customs valuation support, CBAM preparation, and guidance on customs authorisations.",
+      "Bonded warehousing support — Customs storage documentation and release coordination through authorised warehouse operators.",
+      "Container clearance support — Customs coordination for 20ft, 40ft, 40ft HC, LCL, and reefer container shipments.",
+      "Road freight clearance — Customs document checks for standard trucks, groupage movements, and temperature-controlled road freight."
+    ],
+    "outro1": "Winz provides customs clearance and compliance support for these shipment types. The appointed carrier or logistics provider remains responsible for freight transport and delivery.",
+    "outro2": "Service fees depend on the procedure, commodity count, shipment complexity, representation type, and inspection requirements. Review the factors affecting <1>customs clearance pricing Belgium</1>."
+  },
+  "process": {
+    "title": "How Customs Clearance Works",
+    "intro": "Winz follows a three-stage process for most import, export, and transit files. Every stage reduces the risk of declaration errors and avoidable customs delays.",
+    "steps": [
+      {
+        "step": "1",
+        "action": "Document and mandate review",
+        "why": "Winz checks the invoice, packing list, transport document, EORI number, origin information, Incoterm, and customs representation mandate."
+      },
+      {
+        "step": "2",
+        "action": "Declaration preparation",
+        "why": "The correct commodity code, customs procedure, customs value, origin status, and supporting documents are entered in the declaration."
+      },
+      {
+        "step": "3",
+        "action": "Customs release coordination",
+        "why": "Winz monitors customs responses, duty and VAT requirements, document controls, inspections, and release messages."
+      }
+    ],
+    "outro1": "A customs declaration may be accepted without immediate release. Customs can request additional documents, examine the cargo, verify the declared value, or check the product classification.",
+    "outro2": "Pre-arrival preparation helps reduce these delays. Winz checks the data before filing and identifies missing information while the shipment is still moving.",
+    "outro3": "Common problems include an invalid EORI number, an incomplete product description, a wrong CN code, an unsupported preferential origin, and differences between the invoice and packing list."
+  },
+  "documents": {
+    "title": "Documents Required for Clearance",
+    "intro": "Most standard customs files begin with six core documents or data points. Regulated goods may require additional licences, certificates, registrations, or official controls.",
+    "list": [
+      "Commercial invoice",
+      "Packing list",
+      "Transport document",
+      "EORI number",
+      "CN or TARIC code",
+      "Origin evidence"
+    ],
+    "p1": "Winz may also request freight costs, insurance costs, assists, licence details, or a signed representation mandate. These details can affect the customs value or the legal basis for filing.",
+    "p2": "The commercial invoice must contain enough information to identify the goods. Generic descriptions such as “parts,” “samples,” or “equipment” are often insufficient.",
+    "p3": "A useful description explains the product, material, function, model, and intended use. Accurate descriptions support classification and reduce questions from customs authorities."
+  },
+  "systems": {
+    "title": "Belgian Customs Declaration Systems",
+    "p1": "Belgian customs uses different systems according to the declaration and movement type.",
+    "p2": "IDMS is the primary system for import declarations and must be used where the required functionality is available. PLDA remains a temporary fallback for specific transitional or unresolved cases.",
+    "p3": "AES handles export declarations, while NCTS manages Union and common transit movements, including T1 and T2 procedures. Belgium continues updating these systems under its customs IT roadmap.",
+    "p4": "Customs declaration systems differ from port or cargo-community platforms. Customs systems process official declarations, while port platforms support terminal communication, cargo release, and operational coordination.",
+    "p5": "For example, an Antwerp container may require both a Belgian customs declaration and separate terminal-release steps before collection."
+  },
+  "entryPoints": {
+    "title": "European Entry Points Supported",
+    "intro": "Winz coordinates customs files involving major Belgian and neighbouring European entry points. Filing depends on the country, procedure, representation mandate, and place of presentation.",
+    "table": [
+      {
+        "point": "Port of Antwerp-Bruges",
+        "environment": "Belgian IDMS, AES, or NCTS, depending on the procedure",
+        "distance": "50 km"
+      },
+      {
+        "point": "Port of Rotterdam",
+        "environment": "Dutch customs systems and port coordination",
+        "distance": "120 km"
+      },
+      {
+        "point": "Brussels Airport",
+        "environment": "Belgian customs systems and airport cargo coordination",
+        "distance": "55 km"
+      },
+      {
+        "point": "Port of Hamburg",
+        "environment": "German ATLAS environment and port coordination",
+        "distance": "490 km"
+      },
+      {
+        "point": "Amsterdam Airport Schiphol",
+        "environment": "Dutch customs systems and airport cargo coordination",
+        "distance": "200 km"
+      }
+    ],
+    "p1": "Distances are approximate and vary by terminal, warehouse, cargo facility, route, and road conditions.",
+    "p2": "Cross-border support remains subject to national filing and representation arrangements. A Belgian office does not automatically have direct filing authority in every EU Member State.",
+    "p3": "Port selection can affect handling, inspection planning, storage exposure, transit time, and release coordination. However, it does not change the legal duty rate for identical goods under the same origin and procedure.",
+    "p4": "Businesses can review the wider framework in <1>EU customs regulations Belgium importers</1>."
+  },
+  "dutyVAT": {
+    "title": "How Duty and VAT Work",
+    "p1": "EU customs duty follows the Common Customs Tariff. Treatment depends on classification, origin, customs value, quantity, and applicable trade measures.",
+    "p2": "The CN provides the EU’s eight-digit classification. TARIC adds measures such as preferences, quotas, suspensions, anti-dumping and countervailing duties, restrictions, and agricultural measures.",
+    "p3": "The entry point alone does not determine the tariff. Treatment may change with origin, classification, procedure, or preference eligibility.",
+    "p4": "Customs value generally begins with the transaction value. Freight, insurance, assists, royalties, commissions, and other additions may affect the final amount.",
+    "p5": "Import VAT is calculated separately. Its treatment can depend on the country of import, VAT position, fiscal representation, and procedure. The VAT base may include customs value, duty, and certain additional costs.",
+    "p6": "Winz reviews duty and VAT data before filing to help identify unexpected liabilities."
+  },
+  "compliance": {
+    "title": "Customs Representation and Compliance",
+    "p1": "Customs representation must be confirmed before filing. Under direct representation, the representative acts in the business’s name and on its behalf. Under indirect representation, it acts in its own name on behalf of the business.",
+    "p2": "The arrangement depends on the importer or exporter, establishment status, customs procedure, and national requirements. Winz reviews the mandate and conditions before accepting a file.",
+    "p3": "Businesses must provide accurate product descriptions, transaction values, origin, Incoterms, and supporting records. Errors may cause additional duty, VAT, interest, penalties, or post-clearance recovery.",
+    "p4": "Winz supports document retention, declaration corrections, customs queries, and compliance reviews when included in the agreed assignment."
+  },
+  "warehousing": {
+    "title": "Bonded Warehousing Support",
+    "p1": "Customs warehousing allows non-Union goods to remain under customs control without immediate payment of import duty or VAT. Public warehouses may store goods for different businesses, while private warehouses are limited to the authorisation holder.",
+    "p2": "Winz supports warehousing declarations, inventory references, release procedures, and onward transit. Storage depends on availability and approval by the authorised operator. It may suit goods awaiting documentation, sale, processing, re-export, or EU market release."
+  },
+  "contactDetails": {
+    "title": "Winz Zele Contact Details",
+    "p1": "Winz operates from Zele as a customs clearance and compliance partner for businesses trading with Europe.",
+    "p2": "The team supports importers, exporters, freight forwarders, logistics companies, SMEs, and cross-border sellers. Services are available in English, French, Dutch, and German.",
+    "p3": "Multilingual support helps reduce differences between commercial documents, transport records, and customs declarations. It is especially useful when several businesses or authorities are involved in one shipment.",
+    "p4": "Learn more <1>about Winz Logistics Belgium</1>."
+  },
+  "cta": {
+    "title": "Request a Customs Quote",
+    "intro": "Winz supports import, export, transit, HS code classification, duty calculation, VAT review, and bonded warehousing customs procedures from Zele.",
+    "listTitle": "A complete quote request should include:",
+    "list": [
+      "Origin and destination countries",
+      "Detailed cargo description",
+      "CN or TARIC code, when available",
+      "Invoice value and currency",
+      "Incoterm and transport mode",
+      "Entry point and expected arrival date",
+      "Importer or consignee EORI number",
+      "Number of products or commodity codes"
+    ],
+    "outro": "Early document submission gives Winz time to identify missing information before the goods reach the border.",
+    "address": "Gentsesteenweg 102 D4, 9240 Zele, Belgium",
+    "contact": "+32 496 32 24 67 | info@winz.be",
+    "linkText": "request a quote customs broker Zele"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "questions": [
+      {
+        "q": "What is the Winz address in Zele?",
+        "a": "Winz operates from Gentsesteenweg 102 D4, 9240 Zele, Belgium. The office supports customs documentation, declaration preparation, and compliance coordination for businesses moving goods across EU borders."
+      },
+      {
+        "q": "How far is Zele from Antwerp?",
+        "a": "Zele is approximately 50 km from the Port of Antwerp-Bruges by road. The exact distance depends on the terminal, warehouse, and route used for the shipment."
+      },
+      {
+        "q": "Does Winz handle imports and exports?",
+        "a": "Winz supports import, export, and transit customs procedures. Services include declaration preparation, HS code checks, customs valuation, duty and VAT review, and customs release coordination."
+      },
+      {
+        "q": "Which system handles Belgian imports?",
+        "a": "IDMS is Belgium’s main import declaration system. PLDA remains available only for approved fallback and transitional cases where the required IDMS functionality is not yet available."
+      },
+      {
+        "q": "Can Winz support Rotterdam and Hamburg files?",
+        "a": "Winz coordinates customs files involving Rotterdam, Hamburg, Schiphol, Antwerp, and Brussels Airport. Support remains subject to the applicable national representation, authorisation, and filing arrangements."
+      },
+      {
+        "q": "Does Winz support bonded warehousing?",
+        "a": "Winz supports customs warehousing documentation through authorised warehouse operators. This can include placing goods under customs control, duty and VAT suspension, inventory references, and release coordination."
+      },
+      {
+        "q": "Does Winz clear road freight?",
+        "a": "Winz supports customs clearance for trucks and temperature-controlled road freight. The CMR, invoice, packing list, EORI data, classification, and origin information are checked before filing."
+      },
+      {
+        "q": "Is Winz a customs broker in Belgium?",
+        "a": "Winz provides customs clearance, customs documentation, and representation support for Belgian and EU trade under the applicable customs representation arrangements."
+      },
+      {
+        "q": "What causes customs delays?",
+        "a": "Delays commonly result from wrong commodity codes, incomplete invoices, unsupported origin claims, missing EORI numbers, valuation errors, or differences between commercial and transport documents."
+      },
+      {
+        "q": "How can I request a quote?",
+        "a": "Provide the origin, destination, product description, CN code, invoice value, Incoterm, transport mode, entry point, number of commodity codes, and consignee EORI number."
+      }
+    ]
+  }
+}

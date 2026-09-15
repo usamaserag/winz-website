@@ -1,0 +1,432 @@
+{
+  "meta": {
+    "title": "Importing from China to Belgium: Customs Guide",
+    "description": "Importing from China to Belgium requires HS codes, EU duty checks, Belgian VAT, origin documents, ICS2 data, and IDMS customs clearance."
+  },
+  "hero": {
+    "title": "Importing from China to Belgium",
+    "subtitle": "Importing from China to Belgium requires correct HS codes, customs valuation, Belgian import VAT, complete documents, and an accurate IDMS declaration."
+  },
+  "intro": {
+    "p1": "Most Chinese goods enter Belgium under the EU Common External Tariff with no preferential duty agreement. Importers should verify duty rates, product controls, origin evidence, and supplier documents before goods leave China to avoid corrections, holds, and unexpected costs.",
+    "p2": "Winz handles import customs clearance for Chinese cargo by container, air, rail, or road — managing declarations, documentation, classification, and compliance. Transport is arranged by the importer or carrier.",
+    "p3": "A landed-cost estimate includes customs value, duty, VAT, clearance fees, terminal charges, and compliance costs."
+  },
+  "tariffStatus": {
+    "title": "China's EU Tariff Status",
+    "p1": "Chinese goods normally receive Most-Favoured-Nation treatment under the EU Common External Tariff. The applicable rate depends on the product's TARIC classification.",
+    "p2": "MFN treatment does not mean that every Chinese product pays duty. Some electronics and information-technology products carry a 0% tariff. Other goods, including clothing, footwear, vehicles, batteries, and steel products, may attract customs duty.",
+    "p3": "Trade-defence measures can also apply. These include anti-dumping duties, countervailing duties, safeguards, and exporter-specific additional codes.",
+    "sub1": "MFN Duty Rules",
+    "p4": "The importer pays the standard EU tariff unless a specific suspension, quota, exemption, or other tariff measure applies.",
+    "p5": "A Chinese certificate of origin does not create preferential EU duty treatment for normal industrial goods. The document confirms origin but does not replace correct TARIC classification.",
+    "listTitle": "The HS code determines:",
+    "list": [
+      "The standard customs duty rate",
+      "Anti-dumping or countervailing measures",
+      "Import licences and product controls",
+      "CBAM exposure",
+      "Required supporting document codes"
+    ],
+    "p6": "Winz checks HS code classification before declaration filing. This reduces the risk of using the wrong duty rate or missing an additional measure.",
+    "sub2": "Chinese Origin Documents",
+    "p7": "A Chinese supplier may provide a non-preferential Certificate of Origin issued or certified through the China Council for the Promotion of International Trade, known as CCPIT.",
+    "p8": "The certificate identifies the declared country of origin. CCPIT operates an electronic system for issuing Chinese origin certificates.",
+    "listTitle2": "A CCPIT certificate may support:",
+    "list2": [
+      "Non-preferential origin checks",
+      "Bank or letter-of-credit requirements",
+      "Buyer and tender requirements",
+      "Anti-dumping investigations",
+      "Import restrictions or origin marking"
+    ],
+    "p9": "The certificate does not automatically prove eligibility for a reduced EU tariff. Belgian customs can request production records, supplier declarations, invoices, or other evidence where origin affects a trade measure.",
+    "sub3": "Geographical Indications",
+    "p10": "The EU–China Geographical Indications Agreement protects selected agricultural products, food names, wines, spirits, and regional products.",
+    "p11": "It does not reduce customs duty on Chinese electronics, machinery, tools, clothing, batteries, vehicles, or steel products. These goods remain subject to TARIC classification and any active trade measures."
+  },
+  "setup": {
+    "title": "Belgian Importer Setup",
+    "p1": "The importer should confirm its customs and VAT position before placing the purchase order. Correct setup prevents delays when the goods reach the EU.",
+    "listTitle": "A Belgian import file commonly requires:",
+    "list": [
+      "EORI number: Identifies the business in EU customs systems.",
+      "VAT registration: Supports Belgian import VAT reporting and deduction.",
+      "Customs representation: Defines whether the broker acts directly or indirectly.",
+      "Power of attorney: Authorises the customs representative to submit declarations.",
+      "ET 14.000 authorisation: Allows eligible businesses to defer Belgian import VAT.",
+      "Product authorisations: Cover regulated goods such as food, chemicals, medical products, or dual-use items.",
+      "CBAM status: Applies where annual imports exceed the relevant CBAM threshold.",
+      "Guarantee arrangements: May be needed for transit, deferment, or special procedures."
+    ],
+    "p2": "The importer named on the customs declaration must have a valid legal and tax structure. A delivery address in Belgium does not automatically make the receiving company the importer of record.",
+    "p3": "Non-EU businesses may need an EU-established indirect representative, Belgian VAT registration, fiscal representation, or another compliant import structure."
+  },
+  "customsValue": {
+    "title": "EU Customs Value",
+    "p1": "EU customs duty is normally calculated using the transaction value. This is the price paid or payable for goods sold for export to the EU, with required additions and deductions.",
+    "p2": "The transaction-value method applies to most EU imports. Freight, insurance, royalties, assists, commissions, and related-party arrangements can affect the declared amount.",
+    "p3": "Calling the value \"CIF value\" is a useful commercial shortcut, but it is not the full legal valuation rule. Customs value depends on the sales transaction and the adjustments required under the Union Customs Code.",
+    "sub1": "Incoterms and Valuation",
+    "p4": "EXW, FOB, CIF, DAP, and DDP affect which costs appear on the commercial invoice. They do not replace EU customs valuation rules.",
+    "table": [
+      {
+        "incoterm": "EXW",
+        "risk": "China inland and export costs may be missing",
+        "action": "Add relevant inland transport, loading, export handling, freight, and insurance"
+      },
+      {
+        "incoterm": "FOB",
+        "risk": "International freight and insurance may be missing",
+        "action": "Add transport and insurance to the EU entry point"
+      },
+      {
+        "incoterm": "CIF",
+        "risk": "Freight and insurance normally appear in the price",
+        "action": "Check whether all declared costs are accurate"
+      },
+      {
+        "incoterm": "DAP",
+        "risk": "EU inland transport may be included",
+        "action": "Separate deductible post-entry costs where allowed and clearly itemised"
+      },
+      {
+        "incoterm": "DDP",
+        "risk": "Importer identity and duty payment may be unclear",
+        "action": "Confirm who acts as importer and who retains the customs documents"
+      }
+    ],
+    "p5": "Importers using EXW terms carry a larger valuation burden. See <1>EXW ex works customs responsibilities</1> for a detailed explanation.",
+    "sub2": "DDP Import Risks",
+    "p6": "DDP can appear simple because the Chinese seller accepts broad delivery obligations. However, the customs structure often requires closer review.",
+    "p7": "A Chinese seller may not have the EORI number, VAT registration, representation, or establishment needed to act as importer in Belgium.",
+    "listTitle": "The Belgian buyer should confirm:",
+    "list": [
+      "Who appears as importer on the declaration.",
+      "Which EORI and VAT numbers are used.",
+      "Who pays duty and import VAT.",
+      "Whether the declared value matches the actual transaction.",
+      "Who receives the import declaration and VAT evidence."
+    ],
+    "p8": "A supplier's statement that \"all taxes are included\" does not prove compliant customs clearance. The importer needs records that support duty calculation, VAT recovery, and customs audits."
+  },
+  "dutyVAT": {
+    "title": "Import Duty and VAT",
+    "p1": "Chinese import duty in Belgium depends on the TARIC code, product description, origin, customs value, and active trade measures.",
+    "table": [
+      {
+        "chapter": "HS 87",
+        "goods": "Battery electric passenger vehicles",
+        "tariff": "10% standard duty plus exporter-specific countervailing duty",
+        "check": "Verify producer and additional TARIC code"
+      },
+      {
+        "chapter": "HS 85",
+        "goods": "Smartphones and selected telecom equipment",
+        "tariff": "Often 0%",
+        "check": "Confirm the exact product function"
+      },
+      {
+        "chapter": "HS 85",
+        "goods": "Lithium-ion batteries",
+        "tariff": "Rate varies by sub-classification",
+        "check": "Check battery type, use, capacity, and measures"
+      },
+      {
+        "chapter": "HS 84",
+        "goods": "Laptops and selected computing hardware",
+        "tariff": "Often 0%",
+        "check": "Confirm WTO information-technology coverage"
+      },
+      {
+        "chapter": "HS 61/62",
+        "goods": "Clothing and apparel",
+        "tariff": "Commonly around 8% to 12%",
+        "check": "Check fabric, construction, gender, and garment type"
+      }
+    ],
+    "p2": "These examples are not filing rates. Importers should verify the live TARIC entry for the exact product before shipment.",
+    "sub1": "Belgian Import VAT",
+    "p3": "Belgian import VAT is normally 21% for commercial goods unless a reduced rate or specific exemption applies.",
+    "p4": "The VAT base normally includes the customs value, customs duty, other import taxes, and taxable incidental expenses not already included in the customs value.",
+    "p5": "For example, goods with a customs value of €50,000 and a 4% duty rate create €2,000 in customs duty. Import VAT is then calculated on the duty-paid base plus other taxable import charges.",
+    "sub2": "ET 14.000 Deferral",
+    "p6": "An ET 14.000 authorisation allows eligible Belgian importers to report import VAT through the periodic VAT return instead of paying it immediately at customs.",
+    "p7": "The authorisation improves cash flow. It does not remove the VAT liability or the importer's reporting obligations.",
+    "p8": "Without ET 14.000, import VAT is normally paid during clearance and recovered later through the VAT return, subject to deduction rules.",
+    "sub3": "Trade Defence Duties",
+    "p9": "Anti-dumping and countervailing duties apply in addition to the standard EU tariff.",
+    "p10": "Chinese steel products, fasteners, electric vehicles, wood products, chemicals, and other goods can fall under active EU trade-defence measures.",
+    "listTitle": "The applicable amount can depend on:",
+    "list": [
+      "The exact TARIC code",
+      "The Chinese producer or exporter",
+      "The additional TARIC code",
+      "The country of manufacture",
+      "The shipment date",
+      "The investigation or review status"
+    ],
+    "p11": "Importers should check these measures before the goods are loaded in China. Discovering an additional duty after arrival can make the import commercially unviable.",
+    "sub4": "Electric Vehicle Duties",
+    "p12": "Battery electric passenger vehicles manufactured in China can attract a standard 10% customs duty and an additional exporter-specific countervailing duty.",
+    "p13": "The European Commission reports definitive countervailing rates ranging from 7.8% to 35.3%, depending on the producer and applicable treatment.",
+    "p14": "The customs declaration must use the correct producer details and additional TARIC code. A generic vehicle description is not enough."
+  },
+  "cbam": {
+    "title": "CBAM Goods from China",
+    "p1": "CBAM applies to selected iron and steel, aluminium, cement, fertilisers, electricity, hydrogen, and certain related products.",
+    "p2": "The definitive CBAM regime began on 1 January 2026. Importers bringing more than the annual 50-tonne threshold of covered goods generally need authorised CBAM declarant status. Hydrogen and electricity follow different threshold rules.",
+    "p3": "Customs checks depend on the CN code. Not every steel fastener, aluminium component, or downstream product is automatically covered.",
+    "listTitle": "Importers should confirm:",
+    "list": [
+      "Whether the CN code appears in the CBAM scope.",
+      "Annual imported mass across all consignments.",
+      "Authorised declarant status and CBAM account or application reference.",
+      "Embedded-emissions data from the Chinese producer.",
+      "Records of any carbon price paid in China."
+    ],
+    "p4": "CBAM screening should take place before purchase. Obtaining reliable emissions data after arrival can be difficult."
+  },
+  "process": {
+    "title": "Belgian Clearance Process",
+    "p1": "China–Belgium customs clearance normally includes 5 connected stages: pre-arrival filing, document review, IDMS declaration, customs assessment, and release.",
+    "p2": "Sea freight commonly arrives at Antwerp or Zeebrugge. Air cargo may arrive at Brussels Airport or Liège Airport. Rail cargo can enter the EU through Poland or Germany before continuing to Belgium.",
+    "p3": "Winz supports Port of Antwerp customs clearance for Chinese container shipments. The customs review covers classification, valuation, origin, duty exposure, documents, and declaration data.",
+    "sub1": "ICS2 ENS Filing",
+    "p4": "An Entry Summary Declaration provides safety and security data before goods enter the EU.",
+    "p5": "ICS2 requirements cover air, maritime, inland waterway, road, and rail movements. All consignments entering the EU require valid ENS data, subject to limited legal exceptions and specific filing arrangements.",
+    "p6": "The carrier normally holds the main filing responsibility. House-level freight forwarders or other parties may need to provide part of the data under multiple-filing arrangements.",
+    "listTitle": "Required data can include:",
+    "list": [
+      "Six-digit HS codes",
+      "Accurate goods descriptions",
+      "Shipper and consignee details",
+      "Buyer and seller information",
+      "EORI numbers",
+      "Transport and routing data"
+    ],
+    "p7": "Descriptions such as \"parts,\" \"samples,\" \"accessories,\" or \"electronics\" are too vague. Accurate descriptions support risk analysis and reduce requests for clarification.",
+    "sub2": "Document Review",
+    "p8": "The importer, Chinese supplier, freight forwarder, and customs representative should assemble the clearance file before arrival.",
+    "p9": "The invoice and packing list must describe the same transaction. Package counts, weights, values, currency, Incoterms, and product descriptions should remain consistent.",
+    "p10": "Origin evidence, licences, compliance files, and freight invoices should also be available where relevant.",
+    "sub3": "IDMS Declaration",
+    "p11": "Belgian import declarations are submitted through the Import Declaration Management System, known as IDMS.",
+    "p12": "IDMS replaced PLDA for most Belgian import declarations and applies EU common customs data requirements. PLDA remains available only for approved fallback situations and limited exceptions.",
+    "listTitle2": "The IDMS declaration includes:",
+    "list2": [
+      "TARIC classification",
+      "Customs procedure",
+      "Customs value",
+      "Country of origin",
+      "Incoterms",
+      "Importer and representative details",
+      "VAT information",
+      "Supporting document codes",
+      "Additional duty measures"
+    ],
+    "p13": "Winz checks the commercial invoice, packing list, EORI number, customs value, origin, and duty exposure before submitting the declaration.",
+    "sub4": "Customs Assessment",
+    "p14": "Belgian customs assesses duty, VAT, trade-defence measures, CBAM status, and product restrictions.",
+    "p15": "The declaration can receive automatic release, documentary control, scanning, sampling, or physical inspection.",
+    "p16": "Pre-filed declarations can reduce avoidable delays. They do not guarantee immediate release. Customs controls, port availability, missing certificates, or inconsistent documents can extend the process.",
+    "sub5": "Release Coordination",
+    "p17": "After customs release, Winz confirms the clearance status to the importer, carrier, or freight forwarder.",
+    "p18": "The importer's transport provider then arranges terminal collection and inland movement.",
+    "p19": "Winz provides customs clearance, documentation, compliance, and brokerage support. Winz does not sell container shipping, air freight delivery, rail transport, or truck transport services."
+  },
+  "transit": {
+    "title": "Transit to Belgium",
+    "p1": "Chinese goods do not always enter the EU through Belgium.",
+    "p2": "Rail shipments may first enter through Poland or Germany. Sea cargo may arrive in Rotterdam before moving to Belgium. Air cargo can also land at an airport in another EU country.",
+    "listTitle": "The importer must decide whether the goods will:",
+    "list": [
+      "Clear customs at the first EU entry location.",
+      "Move under T1 transit to a Belgian customs office.",
+      "Enter a special procedure before release for free circulation."
+    ],
+    "p3": "A T1 movement keeps non-Union goods under customs supervision. Import duty and VAT remain suspended until the transit movement is discharged and the next customs procedure begins.",
+    "p4": "The first EU entry point, place of presentation, transit office, and final import office must remain clear in the shipping instructions.",
+    "p5": "Winz supports road freight customs clearance where Chinese goods reach Belgium after an EU transit movement."
+  },
+  "documents": {
+    "title": "China Import Documents",
+    "p1": "8 documents commonly support Chinese import clearance in Belgium. The exact file depends on the product, transport mode, customs procedure, and regulatory controls.",
+    "table": [
+      {
+        "doc": "Commercial invoice",
+        "purpose": "Shows value, currency, Incoterms, seller, buyer, and goods",
+        "use": "All commercial imports"
+      },
+      {
+        "doc": "Packing list",
+        "purpose": "Confirms packages, weights, dimensions, and shipping marks",
+        "use": "All commercial imports"
+      },
+      {
+        "doc": "Origin evidence",
+        "purpose": "Supports declared non-preferential origin",
+        "use": "Origin and trade-measure checks"
+      },
+      {
+        "doc": "Bill of lading",
+        "purpose": "Provides sea transport and cargo details",
+        "use": "Container and LCL shipments"
+      },
+      {
+        "doc": "Air waybill",
+        "purpose": "Provides air cargo transport details",
+        "use": "Air freight"
+      },
+      {
+        "doc": "CIM consignment note",
+        "purpose": "Supports international rail movement",
+        "use": "Rail cargo"
+      },
+      {
+        "doc": "Transit document",
+        "purpose": "Supports movement under customs control",
+        "use": "T1, road, or rail transit"
+      },
+      {
+        "doc": "Compliance documents",
+        "purpose": "Support EU product requirements",
+        "use": "Regulated goods"
+      }
+    ],
+    "p2": "Additional documents may include freight invoices, insurance records, purchase contracts, licences, test reports, inspection certificates, health certificates, declarations of conformity, and CBAM data.",
+    "p3": "For a wider checklist, see <1>customs documents for China imports</1> before the shipment leaves China.",
+    "p4": "Air cargo leaves little time for document correction. Winz supports air freight customs clearance for Chinese shipments arriving at Belgian airports."
+  },
+  "compliance": {
+    "title": "Product Compliance Checks",
+    "p1": "Customs clearance and product compliance are separate but connected requirements.",
+    "p2": "A customs declaration can be accurate while the goods still fail an EU market-compliance check.",
+    "table": [
+      {
+        "group": "Electrical products",
+        "areas": "CE marking, EMC, low-voltage rules, RoHS, technical files"
+      },
+      {
+        "group": "Machinery",
+        "areas": "CE documentation, risk assessment, instructions, conformity assessment"
+      },
+      {
+        "group": "Toys",
+        "areas": "CE marking, safety testing, warnings, traceability"
+      },
+      {
+        "group": "Chemicals",
+        "areas": "REACH, CLP, safety data, restricted substances"
+      },
+      {
+        "group": "Batteries",
+        "areas": "Product rules, labelling, due diligence, EPR, dangerous-goods records"
+      },
+      {
+        "group": "Food and plants",
+        "areas": "Health, veterinary, phytosanitary, labelling, and entry controls"
+      },
+      {
+        "group": "Textiles",
+        "areas": "Fibre composition, labelling, safety, and origin marking"
+      },
+      {
+        "group": "Dual-use goods",
+        "areas": "Export controls, end use, sanctions, and licence requirements"
+      }
+    ],
+    "p3": "The exact requirements depend on the product's design, intended use, composition, and market role.",
+    "p4": "A CE mark printed on the product or packaging is not enough. Importers should confirm the EU Declaration of Conformity, technical documentation, responsible economic operator, test evidence, and required labels."
+  },
+  "risks": {
+    "title": "Common Import Risks",
+    "p1": "Chinese imports into Belgium frequently face valuation questions, incomplete ICS2 data, origin problems, classification errors, and product-compliance failures.",
+    "sub1": "Customs Value Checks",
+    "p2": "Belgian customs can question a declared value where the price appears unusually low or the commercial records do not support the transaction.",
+    "listTitle": "Importers should retain:",
+    "list": [
+      "Purchase orders and contracts",
+      "Supplier invoices",
+      "Payment evidence",
+      "Freight and insurance invoices",
+      "Royalty or licence agreements",
+      "Related-party pricing records",
+      "Incoterm calculations",
+      "Credit notes and rebates"
+    ],
+    "p3": "Customs may reject the transaction value where the legal conditions are not met. Another valuation method may then apply.",
+    "sub2": "ICS2 Data Errors",
+    "p4": "Common ICS2 errors include vague descriptions, missing HS codes, invalid EORI numbers, and incomplete buyer or seller details.",
+    "p5": "\"Lithium-ion battery pack for an electric scooter\" provides stronger data than \"battery.\"",
+    "p6": "\"Men's knitted cotton T-shirt\" provides stronger data than \"clothes.\"",
+    "p7": "The supplier's product description should support both the ENS and the final customs declaration.",
+    "sub3": "Classification Errors",
+    "p8": "A supplier-provided HS code is not automatically correct for EU import.",
+    "p9": "Chinese export codes and EU TARIC codes do not always match at the required level. Product materials, functions, technical specifications, and intended use can change the classification.",
+    "p10": "A wrong code can create underpaid duty, penalties, post-clearance demands, or missed product controls.",
+    "sub4": "Compliance Failures",
+    "p11": "Missing CE files, incorrect labels, absent safety records, or invalid test reports can lead to detention, corrective action, refusal of release, re-export, or destruction.",
+    "p12": "Importers should review regulated products before production and again before dispatch.",
+    "p13": "A customs compliance audit can identify classification, valuation, origin, document, and authorisation gaps before a customs review."
+  },
+  "support": {
+    "title": "Winz Import Support",
+    "p1": "Winz helps importers, exporters, freight forwarders, and logistics companies clear Chinese goods through Belgian customs.",
+    "listTitle": "China–Belgium customs support includes:",
+    "list": [
+      "Commercial invoice and packing-list checks",
+      "EORI and importer-data verification",
+      "TARIC and HS code validation",
+      "Customs-value review",
+      "Origin-document checks",
+      "Anti-dumping and countervailing-duty screening",
+      "CBAM classification checks",
+      "IDMS import declaration filing",
+      "ET 14.000 coordination",
+      "Customs control communication",
+      "Release confirmation to carriers and forwarders"
+    ],
+    "p2": "Winz reviews each customs file before declaration submission. Support is available in English, French, Dutch, and German.",
+    "p3": "Winz also supports <1>FCL full container clearance Belgium</1> for China shipments arriving at Belgian ports.",
+    "p4": "Importers can use customs consulting before placing the purchase order where goods involve trade-defence duties, CBAM, unusual valuation, regulated products, or importer-of-record risks.",
+    "cta": "Contact Winz for China–Belgium customs clearance support when your shipment requires accurate documents, duty checks, IDMS filing, or customs compliance review."
+  },
+  "faq": {
+    "title": "FAQ — Importing from China to Belgium",
+    "questions": [
+      {
+        "q": "What does importing from China cost?",
+        "a": "The total cost includes the purchase price, international freight, insurance, customs duty, Belgian VAT, customs clearance fees, terminal charges, storage, and product-compliance costs. Winz does not provide freight transport. Winz handles customs clearance for container, air, rail, and road shipments arranged by the importer or logistics provider."
+      },
+      {
+        "q": "What duty applies to Chinese goods?",
+        "a": "The duty depends on the complete TARIC code, customs value, origin, and active trade measures. Some electronics carry a 0% tariff. Clothing commonly attracts duty. Electric vehicles and selected steel products can also attract additional trade-defence duties."
+      },
+      {
+        "q": "Does a CCPIT certificate reduce duty?",
+        "a": "A CCPIT Certificate of Origin confirms Chinese non-preferential origin. It does not create a reduced EU duty rate for ordinary industrial goods. The certificate may still be needed for customs checks, banks, buyers, tenders, or trade-defence measures."
+      },
+      {
+        "q": "Which import documents are required?",
+        "a": "The core documents are the commercial invoice, packing list, origin evidence, and transport document. Regulated goods may also require licences, test reports, CE documentation, health certificates, CBAM data, or additional TARIC codes."
+      },
+      {
+        "q": "Who files the ICS2 ENS?",
+        "a": "The carrier normally files the main ENS. Freight forwarders, house-level filers, or other supply-chain parties may provide part of the data under multiple-filing arrangements. The importer and supplier must provide accurate product, buyer, seller, and classification data."
+      },
+      {
+        "q": "Can Belgian import VAT be deferred?",
+        "a": "Eligible Belgian importers can use an ET 14.000 authorisation to report import VAT through the periodic VAT return. The authorisation improves cash flow but does not remove VAT reporting or deduction requirements."
+      },
+      {
+        "q": "Does CBAM apply to Chinese imports?",
+        "a": "CBAM applies where the imported CN code falls within the covered product scope. Importers exceeding the general annual 50-tonne threshold need authorised CBAM declarant status. Electricity and hydrogen follow different rules."
+      },
+      {
+        "q": "What changed for parcels under €150?",
+        "a": "Since 1 July 2026, the EU applies a temporary €3 customs duty to qualifying low-value consignments. The duty is charged by item category rather than once per parcel. VAT and customs data requirements continue to apply. The temporary system is scheduled to operate until 1 July 2028."
+      }
+    ]
+  }
+}

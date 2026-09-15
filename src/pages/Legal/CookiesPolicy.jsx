@@ -1,15 +1,23 @@
 import { Link } from '../../components/routing';
 import { useTranslation } from 'react-i18next';
-import usePageTitle from '../../hooks/usePageTitle';
+import { SEOMeta } from '../../components/common/SEOMeta';
 import { useCookieConsent } from '../../context/CookieContext';
 
 const CookiesPolicy = () => {
-  const { t } = useTranslation('common');
+  const { t, i18n } = useTranslation('common');
   const { openPreferences } = useCookieConsent();
-  usePageTitle(t('cookies.legal.cookies.pageTitle'));
 
   return (
     <div className="bg-slate-50">
+      <SEOMeta
+        meta={{
+          title: t('cookies.legal.cookies.pageTitle'),
+          description: t('cookies.legal.cookies.intro'),
+          keywords: i18n.exists('cookies.legal.cookies.keywords')
+            ? t('cookies.legal.cookies.keywords')
+            : undefined,
+        }}
+      />
       <section className="bg-gradient-to-br from-navy-950 via-navy-900 to-navy-800 py-16 text-white">
         <div className="mx-auto max-w-4xl px-4 sm:px-6">
           <p className="text-sm font-semibold uppercase tracking-wider text-primary-300">

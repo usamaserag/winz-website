@@ -3,15 +3,14 @@ import { useTranslation } from 'react-i18next';
 import { 
   PackageOpen, CheckCircle2, AlertTriangle, ListChecks, ArrowUpToLine
 } from 'lucide-react';
-import usePageTitle from '../../hooks/usePageTitle';
+import { SEOMeta } from '../../components/common/SEOMeta';
 import LogisticsGridPattern from '../../components/logistics/LogisticsGridPattern';
 import LogisticsStatsCard from '../../components/logistics/LogisticsStatsCard';
 import SectionBadge from '../../components/logistics/SectionBadge';
 import { fadeUp, staggerContainer } from '../../components/logistics/motionVariants';
 
 const Export = () => {
-  const { t } = useTranslation('export');
-  usePageTitle(t('meta.title'));
+  const { t, i18n } = useTranslation('export');
 
   const stages = t('process.stages', { returnObjects: true });
   const documents = t('documents.items', { returnObjects: true });
@@ -26,6 +25,11 @@ const Export = () => {
       transition={{ duration: 0.35 }}
       className="flex flex-col min-h-screen bg-slate-50 overflow-x-hidden"
     >
+      <SEOMeta meta={{
+        title: t('meta.title'),
+        description: t('meta.description'),
+        keywords: i18n.exists('meta.keywords') ? t('meta.keywords') : undefined
+      }} />
       {/* Hero Section */}
       <section className="relative pt-32 pb-24 lg:pt-40 lg:pb-32 overflow-hidden bg-white border-b border-slate-200">
         <LogisticsGridPattern variant="light" />

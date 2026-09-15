@@ -1,0 +1,146 @@
+{
+  "meta": {
+    "title": "Dédouanement Fret Routier Belgique | Winz",
+    "description": "Winz gère le dédouanement du fret routier en Belgique, y compris les contrôles CMR, les dépôts d'importation IDMS, le support ENS, les codes SH, le calcul des droits et la coordination MRN.",
+    "keywords": "Dédouanement Fret Routier"
+  },
+  "hero": {
+    "title": "Dédouanement du Fret Routier en Belgique",
+    "subtitle": "Le dédouanement du fret routier en Belgique dépend du statut douanier des marchandises, du premier point d'entrée dans l'UE et de la destination douanière finale."
+  },
+  "intro": {
+    "p1": "La CMR doit également correspondre à la facture commerciale, à la liste de colisage et à la déclaration en douane. Voir <1>dédouanement Belgique</1> pour la portée complète des services douaniers de Winz.",
+    "p2": "Winz vérifie ces documents avant le dépôt. Nous prenons en charge les déclarations d'importation, d'exportation, de transit et de sécurité en Belgique pour les camions secs et les cargaisons frigorifiques sous température contrôlée.",
+    "p3": "Winz fournit un soutien en matière de dédouanement, de documentation et de conformité. Le transporteur ou le transitaire gère le mouvement physique du camion."
+  },
+  "requirements": {
+    "title": "Exigences du Fret Routier",
+    "p1": "Les marchandises non Union arrivant en Belgique nécessitent une déclaration d'importation ou une procédure de transit valide. Les marchandises de l'Union circulant entre les États membres de l'UE ne nécessitent normalement aucun dédouanement à l'importation, à l'exception de certains produits soumis à accises ou contrôlés.",
+    "p2": "Les déclarations d'importation belges utilisent IDMS, tandis que PLDA reste disponible pour les exceptions approuvées et les cas de secours. Le fret routier hors UE nécessite également une déclaration sommaire d'entrée via ICS2 avant d'atteindre son premier point d'entrée dans l'UE.",
+    "table": [
+      { "movement": "Première entrée dans l'UE en Belgique", "treatment": "ENS plus déclaration d'importation ou de transit" },
+      { "movement": "Entrée par un autre pays de l'UE", "treatment": "ENS à l'entrée, suivie d'une mainlevée de transit ou d'importation" },
+      { "movement": "Arrivée en Belgique sous T1", "treatment": "Formalités de destination NCTS" },
+      { "movement": "Marchandises de l'Union circulant au sein de l'UE", "treatment": "Normalement pas de déclaration d'importation" },
+      { "movement": "Marchandises de l'Union quittant la Belgique", "treatment": "Déclaration d'exportation et confirmation de sortie" }
+    ],
+    "postTable": "Passez en revue la <1>déclaration en douane pour les importations Belgique</1> avant d'organiser une expédition par route."
+  },
+  "documents": {
+    "title": "Documents pour le Dédouanement des Camions",
+    "intro": "Les détails de l'expédition doivent correspondre d'un document à l'autre. Des incohérences concernant les parties, les marchandises, les poids, les itinéraires ou le statut douanier peuvent retarder la mainlevée.",
+    "list": [
+      "Lettre de voiture CMR",
+      "Facture commerciale",
+      "Liste de colisage",
+      "EORI et autorisation",
+      "Déclaration en douane",
+      "Données ENS",
+      "Code SH ou TARIC",
+      "Preuve d'origine"
+    ],
+    "post1": "Les formats de la CMR et de la facture peuvent différer, mais les totaux et les détails principaux doivent correspondre, avec des références de facture traçables. Voir le <1>document CMR fret routier</1>.",
+    "post2": "Les demandes préférentielles nécessitent une preuve spécifique à l'accord, telle qu'un EUR.1 ou une déclaration d'origine. Les cargaisons frigorifiques et contrôlées peuvent également nécessiter des relevés de température, des certificats sanitaires ou phytosanitaires, des documents sanitaires communs d'entrée ou des licences."
+  },
+  "process": {
+    "title": "Le Processus de Dédouanement Routier",
+    "intro": "Winz commence les contrôles douaniers avant que le camion n'atteigne le bureau de douane, laissant ainsi le temps de corriger les erreurs.",
+    "list": [
+      "<1>Confirmer l'itinéraire :</1> Identifier le point d'entrée de l'UE, le lieu de dédouanement, la destination et l'heure d'arrivée.",
+      "<1>Rassembler les documents :</1> Obtenir la CMR, la facture, la liste de colisage, les détails EORI et les certificats.",
+      "<1>Vérifier les données :</1> Contrôler les parties, marchandises, poids, valeurs, Incoterms, origine et codes SH.",
+      "<1>Confirmer la responsabilité ENS :</1> Convenir de la partie déposante avant l'entrée dans l'UE.",
+      "<1>Déposer la déclaration :</1> Soumettre les données d'importation, d'exportation ou de transit requises.",
+      "<1>Gérer les contrôles :</1> Coordonner les corrections, les demandes de documents et les inspections.",
+      "<1>Confirmer le résultat :</1> Partager le statut de mainlevée ou les instructions de transit."
+    ],
+    "outro": "Un MRN confirme l'acceptation de la déclaration, pas la mainlevée douanière. Une évaluation des risques, des contrôles documentaires ou une inspection peuvent toujours être nécessaires."
+  },
+  "delays": {
+    "title": "Causes Courantes de Retards",
+    "intro": "La plupart des retards du fret routier commencent par des données incomplètes ou incohérentes. Winz vérifie le dossier de déclaration avant soumission et signale les informations manquantes à l'entreprise responsable. Pour une ventilation complète des causes de retard, voir <1>retards douaniers aux frontières terrestres belges</1>.",
+    "list": [
+      "<1>Non-concordance CMR :</1> Le destinataire, les marchandises, le nombre de colis, le poids ou l'itinéraire diffèrent des autres documents.",
+      "<1>Données ENS en retard :</1> Les informations de sécurité et de sûreté sont incomplètes avant la date limite de dépôt.",
+      "<1>Code SH incorrect :</1> La classification produit un taux de droit incorrect ou omet une restriction.",
+      "<1>Preuve d'origine manquante :</1> Un droit préférentiel est réclamé sans preuve justificative valide.",
+      "<1>Permis incomplets :</1> Les marchandises contrôlées manquent des certificats ou licences requis.",
+      "<1>Bureau de douane incorrect :</1> La destination déclarée ne correspond pas à l'itinéraire réel du camion."
+    ],
+    "outro": "La douane peut toujours sélectionner une expédition conforme pour un contrôle. Le dépôt préalable réduit les attentes évitables mais ne supprime pas le droit de l'autorité d'inspecter les marchandises."
+  },
+  "sections": {
+    "transit": {
+      "title": "Quand le Transit T1 s'applique",
+      "text": "Une déclaration T1 déplace les marchandises non Union entre les bureaux de douane pendant que les droits et la TVA restent suspendus. Le NCTS gère le transit à travers l'UE et les pays de Transit Commun. Les marchandises doivent atteindre la destination déclarée dans le délai imparti pour que le mouvement T1 soit apuré."
+    },
+    "export": {
+      "title": "Dédouanement à l'Exportation pour les Camions",
+      "text": "Les marchandises quittant la Belgique pour un pays non-UE nécessitent une déclaration d'exportation électronique déposée via le Système de Contrôle des Exportations de l'UE (AES), qui gère les formalités d'exportation et de sortie entre le bureau de douane d'exportation et le bureau de douane de sortie. La douane attribue un MRN d'exportation après avoir accepté la déclaration. Le bureau de sortie enregistre le résultat de la sortie une fois que les marchandises quittent le territoire douanier de l'UE. La déclaration est communément appelée EX1 dans la pratique commerciale. Le MRN et le résultat de sortie enregistré servent de documents douaniers officiels et soutiennent la preuve de TVA de l'exportateur. Winz gère le <1>dédouanement à l'exportation UE</1> et coordonne les données d'exportation avec la CMR."
+    },
+    "reefer": {
+      "title": "Cargaison Frigorifique et Contrôlée",
+      "text": "Les camions frigorifiques suivent la même procédure douanière de base que les camions secs. Le type de cargaison détermine si des certificats supplémentaires, des pré-notifications ou des contrôles officiels s'appliquent. Pour les exigences douanières spécifiques aux conteneurs frigorifiques, voir <1>dédouanement de camions frigorifiques Belgique</1>. Un relevé de température n'est pas une exigence douanière universelle. Il peut être requis par contrat, par les règles du produit, par les contrôles de qualité ou par une autorité compétente. Les animaux, produits animaux, plantes et certains produits alimentaires ou aliments pour animaux peuvent nécessiter une pré-notification TRACES et un Document Sanitaire Commun d'Entrée. L'opérateur responsable soumet le CHED au Poste d'Inspection Frontalier où les marchandises entrent dans l'UE — ce qui peut être en dehors de la Belgique lorsque le camion entre d'abord par un autre État membre. Winz vérifie l'itinéraire avant de confirmer le lieu de contrôle requis."
+    },
+    "costs": {
+      "title": "Coûts de Dédouanement du Fret Routier",
+      "text": "Les frais douaniers du fret routier peuvent inclure les frais de déclaration, les droits d'importation, la TVA belge, l'administration du transit, les frais de garantie, les inspections et les frais d'attente de tiers. Les droits d'importation dépendent du code TARIC, de la valeur en douane, de l'origine et des mesures commerciales. Une origine préférentielle peut réduire les droits lorsqu'une preuve valide est disponible. La TVA belge est de 21 % (des taux réduits s'appliquent à des biens spécifiques), calculée sur la valeur en douane, les droits et les frais accessoires. Les coûts de transit varient selon la valeur de l'expédition, l'itinéraire, la garantie, les lignes de produits et les lieux de dédouanement. Les marchandises contrôlées peuvent ajouter des frais de laboratoire, de poste d'inspection frontalier ou de certificat. Winz confirme l'étendue douanière avant le dépôt. Le transport, le temps d'attente, le stationnement, le ferry et les frais de livraison restent à la charge du transporteur. Voir <1>coûts de dédouanement fret routier Belgique</1> pour une ventilation complète."
+    }
+  },
+  "whyWinz": {
+    "title": "Pourquoi les Transitaires Choisissent Winz",
+    "intro": "Winz fournit un point de contact douanier unique pour la déclaration, les documents justificatifs et le statut douanier — aidant les transitaires et les importateurs à résoudre les problèmes de données avant que le camion n'atteigne la douane.",
+    "list": [
+      "Réconciliation de la CMR, de la facture et de la liste de colisage",
+      "Couverture des systèmes IDMS, NCTS, AES et ENS",
+      "Contrôles du code SH avant le calcul des droits et taxes",
+      "Contrôles de documents spécifiques à l'itinéraire pour le fret frigorifique et sensible",
+      "Mises à jour du statut MRN, de contrôle, de transit et de mainlevée",
+      "Assistance en anglais, français, néerlandais et allemand"
+    ],
+    "outro": "Winz soutient le dédouanement du fret routier pour les mouvements liés au Royaume-Uni, à la Turquie, à l'Ukraine, au Maroc, à l'Égypte et à d'autres corridors non-UE. Pour les exigences ENS avant l'arrivée, voir <1>réglementations d'importation de fret routier UE Belgique</1>."
+  },
+  "cta": {
+    "title": "Demander un Devis de Dédouanement",
+    "text": "Envoyez à Winz le brouillon de la CMR, la facture commerciale, la liste de colisage, l'itinéraire, l'heure d'arrivée prévue, les détails EORI, la description des marchandises et les certificats disponibles.",
+    "subtext": "Winz vérifie la procédure avant le dépôt et confirme si le mouvement nécessite une déclaration d'importation, un transit T1, une déclaration d'exportation ou un support ENS.",
+    "button": "Contacter Winz pour le dédouanement du fret routier"
+  },
+  "faq": {
+    "title": "Questions Fréquemment Posées",
+    "questions": [
+      {
+        "q": "Un camion peut-il entrer sans dédouanement ?",
+        "a": "Un camion peut entrer en Belgique depuis un autre État membre de l'UE sans nouvelle déclaration d'importation belge lorsque les marchandises ont déjà le statut de l'Union. Les marchandises non Union nécessitent une procédure d'importation ou de transit valide avant la mainlevée."
+      },
+      {
+        "q": "Que présente le chauffeur ?",
+        "a": "Le chauffeur transporte normalement la CMR et les références douanières requises pour ce mouvement. Un mouvement T1 peut nécessiter un Document d'Accompagnement de Transit ou une référence MRN."
+      },
+      {
+        "q": "En quoi le T1 diffère-t-il de l'importation ?",
+        "a": "Une déclaration d'importation libère les marchandises pour la libre pratique et rend les droits et la TVA à l'importation exigibles. Le T1 maintient les marchandises non Union sous surveillance douanière pendant leur déplacement vers une autre destination approuvée."
+      },
+      {
+        "q": "Qui dépose l'ENS ?",
+        "a": "Le transporteur, le transitaire, l'importateur ou le représentant en douane peut déposer l'ENS, selon l'accord de transport et les données disponibles. Winz prend en charge le dépôt lorsque convenu."
+      },
+      {
+        "q": "Les marchandises peuvent-elles entrer en entrepôt sous douane ?",
+        "a": "Oui. Les marchandises non Union peuvent circuler sous transit et entrer dans un entrepôt douanier autorisé. Les droits d'importation et la TVA restent suspendus jusqu'à ce que les marchandises soient libérées ou placées sous une autre procédure."
+      },
+      {
+        "q": "Winz dédouane-t-il les cargaisons frigorifiques ?",
+        "a": "Oui. Winz prend en charge le dédouanement des camions frigorifiques et vérifie si les marchandises nécessitent des relevés de température, des documents TRACES, un CHED, des certificats sanitaires ou d'autres contrôles."
+      },
+      {
+        "q": "Le chauffeur a-t-il besoin d'un EORI ?",
+        "a": "L'importateur, l'exportateur ou le déclarant en douane a besoin du numéro EORI pertinent. Le chauffeur n'a normalement pas besoin d'un EORI personnel pour l'expédition."
+      },
+      {
+        "q": "Le dédouanement le jour même est-il possible ?",
+        "a": "Le dédouanement le jour même est possible lorsque les documents arrivent tôt, que la déclaration est pré-déposée, que les droits sont couverts et que la douane ne sélectionne pas l'expédition pour un contrôle supplémentaire. Les mouvements urgents éligibles peuvent utiliser le dédouanement rapide en Belgique (fast track)."
+      }
+    ]
+  }
+}

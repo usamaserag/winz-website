@@ -1,0 +1,180 @@
+{
+  "meta": {
+    "title": "Importing from Saudi Arabia to the EU: Customs Guide",
+    "description": "Import Saudi goods into the EU with correct HS codes, MFN duties, customs value, REACH, CBAM, VAT, origin documents, and customs clearance."
+  },
+  "hero": {
+    "title": "Importing from Saudi Arabia to the EU",
+    "subtitle": "Saudi Arabia to EU customs clearance Belgium requires correct HS codes, non-preferential origin treatment, customs valuation, import VAT, and product compliance checks. No EU–Saudi Arabia or EU–GCC free trade agreement currently gives Saudi-origin goods preferential EU duty treatment."
+  },
+  "intro": {
+    "p1": "Saudi petroleum, chemicals, plastics, aluminium, fertilisers, machinery, and industrial goods enter the EU as non-Union goods. Belgian importers must check TARIC measures, customs value, import VAT, REACH obligations, CBAM status, and supporting documents before arrival.",
+    "p2": "This guide is for importers, exporters, freight forwarders, logistics companies, and SMEs moving Saudi goods into Europe. Belgium and Antwerp are used as practical examples because Winz supports Saudi import customs clearance through Belgian customs."
+  },
+  "tradeStatus": {
+    "title": "EU–Saudi Trade Status",
+    "p1": "Saudi-origin goods enter the EU under the Common Customs Tariff and applicable third-country measures. EU–GCC free trade negotiations started in 1990 but were suspended in 2008. No agreement currently provides preferential EU duty treatment for Saudi-origin goods.",
+    "p2": "Importers should calculate landed costs using the applicable third-country TARIC rate. A zero rate can still apply where the tariff classification carries 0% duty — this is a general EU tariff treatment, not a Saudi preference.",
+    "p3": "Saudi origin is declared as non-preferential. A Saudi Chamber of Commerce certificate of origin may support the declared origin when requested, but is not automatically required for every EU import declaration.",
+    "p4": "Winz supports <1>Saudi Arabia to EU customs clearance Belgium</1> by checking origin proof, HS codes, customs value, REACH data, and import VAT treatment before the IDMS declaration is filed.",
+    "sub1": "EUR.1 Does Not Apply",
+    "p5": "EUR.1 certificates do not provide preferential treatment for Saudi-origin goods as no EU–Saudi preferential trade agreement is in force. An incorrect preferential claim can result in additional duty, declaration corrections, and delayed release."
+  },
+  "customsValue": {
+    "title": "Saudi Customs Value",
+    "p1": "EU customs valuation normally starts with the transaction value under Article 70 of the Union Customs Code. Required additions and deductions are then considered under the relevant valuation rules.",
+    "p2": "The customs value generally includes the price paid or payable plus qualifying costs incurred before the goods reach the EU customs territory. Freight, insurance, loading, handling, assists, royalties, and certain commissions can affect the final value.",
+    "p3": "Incoterms help explain which costs are already included in the invoice. They do not replace EU customs valuation rules.",
+    "p4": "Under CIF Antwerp, international freight and insurance are normally included in the seller's price to Antwerp. Under FOB or EXW, additional freight and insurance costs usually need to be considered when establishing the customs value.",
+    "p5": "DAP and DDP invoices may contain EU inland transport, import duty, VAT, brokerage, or delivery charges. Post-entry costs can generally be excluded from customs value where they are separately identified and meet the legal conditions.",
+    "p6": "The invoice, Incoterm, freight invoice, insurance evidence, and payment records should therefore support the declared amount.",
+    "p7": "Saudi Arabia and the UAE have similar non-preferential tariff treatment in the absence of an EU free trade agreement. See <1>importing from UAE to Belgium</1> for a GCC corridor comparison covering origin, customs valuation, VAT, and CBAM."
+  },
+  "dutyRates": {
+    "title": "Saudi Import Duty Rates",
+    "p1": "Saudi goods are subject to the EU Common Customs Tariff and any additional TARIC measures that apply to the exact commodity code.",
+    "p2": "Importers should never calculate duty from an HS chapter alone. The final rate depends on the complete CN or TARIC classification, product characteristics, origin, quota status, suspensions, anti-dumping measures, and other trade measures.",
+    "table": [
+      {
+        "chapter": "HS 27",
+        "exports": "Crude petroleum and refined mineral oils",
+        "position": "Crude petroleum under CN 2709 has 0% third-country duty; refined products require code-level checks"
+      },
+      {
+        "chapter": "HS 29",
+        "exports": "Organic chemicals",
+        "position": "Rates vary; some aromatic chemicals carry 0% duty"
+      },
+      {
+        "chapter": "HS 39",
+        "exports": "Plastics and polymers",
+        "position": "Rates vary by polymer; some ethylene polymer classifications carry 6.5%"
+      },
+      {
+        "chapter": "HS 84",
+        "exports": "Machinery and industrial equipment",
+        "position": "Many machinery classifications are 0%; other lines remain duty-bearing"
+      },
+      {
+        "chapter": "HS 76",
+        "exports": "Aluminium",
+        "position": "Rates vary; some unwrought aluminium classifications carry 3% or 6%"
+      },
+      {
+        "chapter": "HS 31",
+        "exports": "Fertilisers",
+        "position": "Duty and trade measures depend on composition and exact classification"
+      }
+    ],
+    "p3": "These rates are examples only. Importers should check the live TARIC measure for the exact 10-digit code before confirming landed costs.",
+    "p4": "Certain Saudi-origin chemical products can face additional anti-dumping duties. Definitive EU anti-dumping measures introduced in 2026 affect Saudi-origin 1,4-butanediol.",
+    "p5": "Standard Belgian VAT is 21%, calculated on the customs value plus customs duty and other qualifying costs. Eligible Belgian VAT-registered importers can use the ET 14.000 system to account for import VAT through their VAT return instead of paying at import."
+  },
+  "cbam": {
+    "title": "CBAM for Saudi Goods",
+    "p1": "Saudi aluminium and fertilisers can fall within the Carbon Border Adjustment Mechanism, which currently covers aluminium, iron and steel, cement, fertilisers, electricity, and hydrogen. The exact CN code determines coverage.",
+    "p2": "From 2026, businesses exceeding the applicable 50-tonne annual threshold generally need authorised CBAM declarant status and must comply with emissions reporting and certificate requirements. The first annual CBAM declaration covering 2026 imports is due in 2027.",
+    "p3": "CBAM and customs duty are separate obligations. Importers should check the CN code, annual CBAM volume, declarant status, embedded emissions data, and supplier information before shipment."
+  },
+  "process": {
+    "title": "Saudi Customs Clearance Process",
+    "p1": "Saudi imports clear EU customs through pre-arrival data, document review, declaration filing, compliance checks, duty assessment, and release.",
+    "list": [
+      "Stage 1 — Pre-arrival Data: The carrier submits ICS2 Entry Summary Declaration data within the applicable deadline. Cargo descriptions must be specific; vague terms such as 'chemicals' or 'parts' can trigger additional data requests.",
+      "Stage 2 — Document Review: The importer prepares the commercial invoice, packing list, transport document, EORI details, and origin information, plus product-specific evidence for chemicals, aluminium, fertilisers, or machinery.",
+      "Stage 3 — IDMS Declaration: The customs broker submits the Belgian import declaration including commodity code, origin, customs value, duty treatment, and VAT details. No Saudi preferential origin claim is made without a valid agreement.",
+      "Stage 4 — Customs Checks: Belgian customs can request documents, perform a documentary check, or select the shipment for inspection covering classification, valuation, REACH, CBAM, licensing, or product conformity.",
+      "Stage 5 — Duty and Release: Customs calculates duty and applies Belgian import VAT treatment. Winz coordinates customs status with the importer, carrier, terminal, and freight forwarder."
+    ]
+  },
+  "documents": {
+    "title": "Saudi Import Documents",
+    "listTitle": "A standard Saudi import file includes:",
+    "list": [
+      "Commercial invoice showing seller, buyer, currency, Incoterm, goods description, quantity, and price.",
+      "Packing list showing package count, weights, marks, and cargo details.",
+      "Bill of lading or air waybill identifying the shipment and transport movement.",
+      "EORI number identifying the EU importer or declarant.",
+      "Origin evidence where customs measures or commercial requirements require proof.",
+      "REACH, CBAM, CE, licence, or other product-specific evidence where applicable."
+    ],
+    "p1": "A Saudi import checklist should cover the EORI number, TARIC code, customs value, invoice, packing list, transport document, origin information, VAT treatment, importer-of-record details, and product compliance status."
+  },
+  "problems": {
+    "title": "Common Saudi Import Problems",
+    "p1": "Saudi import delays often result from classification errors, unsupported customs values, incorrect origin claims, incomplete chemical compliance data, or missing CBAM information. These issues can increase terminal storage, demurrage, inspection costs, and customs processing time.",
+    "sub1": "Incorrect Origin Claims",
+    "p2": "Saudi-origin goods do not currently qualify for general EU preferential treatment under an EU–Saudi or EU–GCC free trade agreement. An EUR.1 should therefore not be used to claim reduced duty for standard Saudi-origin imports.",
+    "p3": "The importer should declare Saudi Arabia as the non-preferential origin where supported by the origin rules and retain evidence for customs. Winz reviews origin documents before IDMS filing to reduce incorrect preference claims and corrections.",
+    "sub2": "REACH Registration Gaps",
+    "p4": "REACH can apply when chemical substances are imported into the EU at one tonne or more annually unless exempt. Importers should confirm registration before shipment leaves Saudi Arabia.",
+    "p5": "A non-EU manufacturer can appoint an EU-based Only Representative, transferring specified REACH registration responsibilities from individual EU importers.",
+    "p6": "Polymers require separate analysis. Although polymers are generally exempt from registration, their monomers or other substances can create obligations.",
+    "p7": "Saudi benzene, toluene, chemical feedstocks, additives, and other industrial substances should be reviewed before import. Missing compliance can cause customs questions, market-access restrictions, detention, re-export risk, or commercial delays.",
+    "sub3": "CBAM Declaration Errors",
+    "p8": "CBAM-covered Saudi aluminium and fertiliser imports require correct CN classification and CBAM status. Importers approaching or exceeding the applicable annual threshold should confirm their authorised CBAM declarant position before importing additional goods.",
+    "p9": "Customs duty and CBAM remain separate. Zero or reduced duty does not remove CBAM requirements. Incorrect information can disrupt declaration processing and create compliance or penalty exposure.",
+    "p10": "Regional origins have different trade agreements and tariff treatments. See <1>Middle East Belgium customs clearance</1> for regional customs requirements and documentation guidance."
+  },
+  "support": {
+    "title": "Winz Saudi Import Support",
+    "p1": "Winz reviews available documents before submitting Saudi import declarations through IDMS.",
+    "listTitle": "Support includes:",
+    "list": [
+      "Verifying Saudi origin evidence and HS, CN, and TARIC classification.",
+      "Reviewing customs value, Incoterms, chemical REACH status, and CBAM coverage.",
+      "Filing Belgian IDMS declarations and coordinating relevant ICS2 information.",
+      "Supporting required T1 transit movements.",
+      "Reviewing available machinery and electrical-goods conformity documents.",
+      "Coordinating ET 14.000 treatment for eligible Belgian importers.",
+      "Coordinating status with carriers, terminals, and appointed freight forwarders."
+    ],
+    "p2": "Winz communicates with importers, exporters, freight forwarders, and logistics companies in English, French, Dutch, and German.",
+    "cta": "For urgent shipments, <1>fast track clearance Belgium for Saudi Arabian air and sea freight</1> can support pre-arrival preparation for time-sensitive air cargo and containerised imports. Clearance remains subject to customs controls, inspections, document completeness, and regulatory checks."
+  },
+  "faq": {
+    "title": "FAQs",
+    "questions": [
+      {
+        "q": "Does the EU trade with Saudi Arabia?",
+        "a": "Yes. The EU trades with Saudi Arabia in petroleum, petrochemicals, plastics, aluminium, fertilisers, machinery, and industrial goods. However, no EU–Saudi Arabia or EU–GCC free trade agreement currently provides general preferential EU duty treatment for Saudi-origin goods."
+      },
+      {
+        "q": "Is Saudi Arabia in the EU?",
+        "a": "No. Saudi Arabia is outside the EU, EEA, and EU customs territory. Saudi goods entering Belgium are treated as non-Union goods until they are placed under an appropriate customs procedure or released for free circulation."
+      },
+      {
+        "q": "What documents are required?",
+        "a": "Most commercial imports require an invoice, packing list, transport document, EORI information, and customs declaration data. Additional origin, REACH, CBAM, conformity, licence, or certificate requirements depend on the goods and TARIC measures."
+      },
+      {
+        "q": "Is a Saudi certificate of origin mandatory?",
+        "a": "Not for every EU import. Saudi origin must be correctly declared, but a third-country non-preferential certificate of origin is normally required only where customs measures, authorities, banks, buyers, or other commercial arrangements require supporting proof."
+      },
+      {
+        "q": "Does Saudi Arabia get EU duty preference?",
+        "a": "No general Saudi preference currently applies. Importers normally use the EU third-country tariff rate shown in TARIC. Some goods still have a 0% tariff because the tariff classification carries a general zero rate."
+      },
+      {
+        "q": "Does REACH apply to Saudi chemicals?",
+        "a": "Yes, REACH can apply to chemical substances imported from Saudi Arabia. The importer should check the substance, annual tonnage, exemptions, registration status, and any Only Representative arrangement before import."
+      },
+      {
+        "q": "Does CBAM apply to Saudi aluminium?",
+        "a": "Yes. Saudi aluminium falls under CBAM when its CN code is within the regulated scope. Importers must also check the annual threshold, authorised declarant requirements, embedded emissions information, and CBAM reporting obligations."
+      },
+      {
+        "q": "Can machinery require extra documents?",
+        "a": "Yes. Customs clearance does not automatically confirm EU market compliance. Machinery and electrical equipment can require CE marking, technical documentation, conformity assessment, importer identification, or other product-specific evidence before being placed on the EU market."
+      },
+      {
+        "q": "What happens if the HS code is wrong?",
+        "a": "An incorrect HS or TARIC code can change the duty rate, CBAM status, trade defence measures, licences, and product controls. Customs can correct the classification and assess additional duty, interest, penalties, or supporting-document requirements."
+      },
+      {
+        "q": "What if an EU–GCC FTA starts?",
+        "a": "A future EU–GCC agreement could change tariff treatment if it enters into force and Saudi goods satisfy its origin rules. Until an agreement becomes legally applicable, importers should use current EU third-country treatment and should not claim preferential origin without valid entitlement."
+      }
+    ]
+  }
+}

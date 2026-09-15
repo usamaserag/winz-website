@@ -1,0 +1,192 @@
+{
+  "meta": {
+    "title": "Luftfracht Verzollung Belgien | Winz",
+    "description": "Winz unterstützt die Luftfracht-Zollabfertigung in Belgien mit IDMS-Einfuhranmeldungen, AES-Ausfuhranmeldungen, ICS2-Koordination, AWB-Prüfungen und Überprüfung des HS-Codes.",
+    "keywords": "Luftfracht Verzollung"
+  },
+  "hero": {
+    "title": "Luftfracht Zollabfertigung Belgien",
+    "subtitle": "Die Luftfracht-Zollabfertigung in Belgien erfordert genaue Daten, frühzeitige Dokumentenprüfungen und die korrekte Anmeldung."
+  },
+  "intro": {
+    "p1": "Einfuhren werden normalerweise über IDMS abgewickelt, während PLDA auf genehmigte Ausweichverfahren beschränkt ist. Winz übernimmt den <1>EU-Einfuhranmeldungsservice</1> für Importeure, Exporteure, Spediteure und Logistikunternehmen, die eine konforme Luftfrachtabfertigung ohne Verzögerungen am Flughafen benötigen. Für allgemeine Zollprozesse siehe <2>Zollabfertigung Belgien</2>.",
+    "p2": "Wir erstellen Anmeldungen, prüfen Dokumente, koordinieren Zollanfragen und bestätigen die Freigabe. Der Flughafentransport und die Endlieferung bleiben in der Verantwortung des Importeurs oder Logistikdienstleisters."
+  },
+  "howItClears": {
+    "title": "Wie Luftfracht verzollt wird",
+    "intro": "Die Luftfrachtabfertigung umfasst die Sicherheitsanmeldung vor der Verladung, die Einfuhranmeldung, die Zollkontrolle und die Freigabe. Die frühzeitige Erstellung von Dokumenten kann Verzögerungen reduzieren, aber Inspektionen, Lagerverfahren und die Abwicklung durch die Fluggesellschaften liegen außerhalb der Kontrolle des Zollagenten.",
+    "ics2": {
+      "title": "ICS2 Pre-Loading Anmeldung",
+      "text": "Luftfracht, die in die EU gelangt oder durch sie transportiert wird, erfordert ICS2-Sicherheitsdaten. Der Beförderer, Spediteur oder ein anderer Beteiligter der Lieferkette kann sie einreichen. Fehlende Empfängerdaten, vage Warenbeschreibungen oder unvollständige Sendungsdaten können zu Verzögerungen führen."
+    },
+    "idms": {
+      "title": "IDMS Einfuhranmeldung",
+      "text": "Winz bereitet die belgische Einfuhranmeldung vor oder reicht sie im Voraus ein, basierend auf dem Luftfrachtbrief, HS-Code, Zollwert, EORI-Nummer, Ursprung, Verfahren, Zöllen und Mehrwertsteuerdetails. IDMS wickelt Standardanmeldungen ab, während PLDA auf genehmigte Ausweichfälle beschränkt ist."
+    },
+    "control": {
+      "title": "Zollkontrolle",
+      "text": "Der belgische Zoll kann die Waren elektronisch freigeben, eine dokumentarische oder physische Inspektion durchführen oder zusätzliche Informationen anfordern. Die Entscheidung hängt von Risikoanalysen, Produktkontrollen, Ursprung, Routing und Anmeldungsdaten ab."
+    },
+    "release": {
+      "title": "Freigabe oder vorübergehende Verwahrung",
+      "text": "Die Fracht wird freigegeben, nachdem die Anforderungen für Zoll, Zölle, MwSt, Garantie und Inspektion erfüllt sind. Winz bestätigt die Freigabe, während der Abfertiger der Fluggesellschaft oder der Logistikdienstleister die Abholung organisiert. Nicht freigegebene Waren können in vorübergehender Verwahrung bleiben oder in ein Versandverfahren, ein Zolllager, eine vorübergehende Verwendung oder ein anderes genehmigtes Verfahren überführt werden."
+    }
+  },
+  "documents": {
+    "title": "Erforderliche Luftfrachtdokumente",
+    "intro": "Der Luftfrachtbrief identifiziert die Transportroute, den Absender, den Empfänger, die Flughäfen und die Waren. Ein Master Air Waybill (MAWB) deckt die konsolidierte Sendung der Fluggesellschaft ab, während jeder House Air Waybill (HAWB) eine individuelle Sendung kennzeichnet, für die möglicherweise eine separate Zollanmeldung erforderlich ist.",
+    "table": [
+      { "doc": "Luftfrachtbrief", "purpose": "Identifiziert die Sendung und die Transportreferenz" },
+      { "doc": "Handelsrechnung", "purpose": "Bestätigt Wert, Währung, Waren und Incoterm" },
+      { "doc": "Packliste", "purpose": "Zeigt Packstücke, Gewichte und Frachtdetails" },
+      { "doc": "Warennummer (HS-Code)", "purpose": "Bestimmt Zölle und Produktkontrollen" },
+      { "doc": "EORI-Nummer", "purpose": "Identifiziert die Zollpartei" },
+      { "doc": "Ursprungsnachweis", "purpose": "Unterstützt eine präferenzielle Zollbehandlung" },
+      { "doc": "Lizenzen oder Zertifikate", "purpose": "Bestätigen die Konformität regulierter Güter" }
+    ],
+    "postTable": "Alle Dokumente müssen einheitliche Mengen, Gewichte, Werte, Parteien und Produktdetails aufweisen. Vage Beschreibungen wie \"Teile\" oder \"Ausrüstung\" sollten angeben, um welche Waren es sich handelt, aus welchem Material sie bestehen und wofür sie verwendet werden. Die vollständigen Dokumente für Luftfracht finden Sie unter <1>Zolldokumente Luftfracht Belgien</1>.",
+    "brusselsSupport": "Winz übernimmt die Luftfracht-Zollabfertigung am Flughafen Brüssel für belgische gewerbliche Importe und Exporte."
+  },
+  "whatWeNeed": {
+    "title": "Was Winz für den Start benötigt",
+    "intro": "Die frühzeitige Einreichung von Dokumenten gibt Winz Zeit, fehlende Daten zu identifizieren, bevor die Fracht eintrifft. Die genauen Anforderungen hängen von der Ware, dem Ursprung, dem Zollverfahren und der Struktur des Importeurs ab.",
+    "subtitle": "Bitte stellen Sie zur Verfügung:",
+    "list": [
+      "Den MAWB und alle relevanten HAWBs",
+      "Die Handelsrechnung und Packliste",
+      "Die EORI- und MwSt-Daten des Importeurs",
+      "Die Warennummer, falls bereits bestätigt",
+      "Das Ursprungs- und Versendungsland",
+      "Den vereinbarten Incoterm",
+      "Den Ankunftsflughafen und die erwartete Ankunftszeit",
+      "Daten des Importeurs, Exporteurs und Empfängers",
+      "Ursprungsnachweise, Lizenzen oder Zertifikate, falls anwendbar",
+      "Anweisungen zur Nutzung von Zöllen, MwSt, Aufschub oder Garantien"
+    ],
+    "outro": "Winz kann zusätzliche Informationen anfordern, wenn die Rechnung den deklarierten Zollwert oder die Warenklassifizierung nicht stützt."
+  },
+  "duties": {
+    "title": "Zölle, MwSt und Zollwert",
+    "text": "Die Einfuhrzölle hängen von der Warennummer, dem Zollwert, dem Ursprung und den Zollpräferenzen ab. Der Standard-MwSt-Satz in Belgien beträgt 21 %, wobei Ausnahmen gelten. Berechtigte Unternehmen können die Einfuhrumsatzsteuer über ET 14000 abrechnen. Winz überprüft die anwendbaren Zölle und Steuern."
+  },
+  "representation": {
+    "title": "Zollvertretung",
+    "text": "Direkte Vertretung bedeutet, dass der Agent im Namen des Händlers handelt. Bei der indirekten Vertretung handelt der Agent in eigenem Namen und kann die Zollschuldhaftung teilen. Winz bestätigt die geeignete Option und die erforderliche Genehmigung. Nicht-EU-Unternehmen benötigen möglicherweise auch einen EU-Importeur oder eine steuerliche Struktur."
+  },
+  "airports": {
+    "title": "Zollabfertigung an Belgischen Flughäfen",
+    "intro": "Winz unterstützt gewerbliche Luftfrachtanmeldungen über belgische und nahe gelegene europäische Luftdrehkreuze.",
+    "brussels": {
+      "title": "Flughafen Brüssel",
+      "text": "Winz erstellt Einfuhr- und <1>Ausfuhranmeldung Belgien</1> für Luftfracht, prüft Luftfrachtbriefe und Rechnungen und koordiniert Zollanfragen für Pharma-, Express- und allgemeine Fracht. Flughafenabfertiger verwalten die Verfügbarkeit, das Handling und die Abholung der Fracht."
+    },
+    "liege": {
+      "title": "Flughafen Lüttich",
+      "text": "Wenn Servicevereinbarungen bestehen, unterstützt Winz Import, Export, Versand und Dokumentation für Express-, E-Commerce-, verderbliche und allgemeine Fracht. Senden Sie MAWB, HAWB, Rechnungen, Packlisten und Ankunftsdaten vor der Landung."
+    },
+    "schiphol": {
+      "title": "Grenzüberschreitende Abfertigung Schiphol",
+      "text": "Sendungen über die <1>Zollabfertigung Amsterdam Schiphol</1> nutzen die niederländischen Zollsysteme. Waren können in den freien Verkehr der Niederlande überführt werden oder unter Versandverfahren für die Abfertigung anderswo weitertransportiert werden. Winz bestätigt die Route, EORI-Anforderungen und MwSt-Behandlung vor der Anmeldung."
+    },
+    "perishable": {
+      "title": "Verderbliche und Kontrollierte Fracht",
+      "text": "<1>Verderbliche Güter Luftfracht Belgien</1> erfordern eine frühzeitige Koordination, aber nur bestimmte regulierte Güter benötigen Kontrollen an Grenzkontrollstellen. Diese erfordern möglicherweise eine Vorabbenachrichtigung, TRACES-Bearbeitung, ein Gemeinsames Gesundheitseingangsdokument (CHED), Zertifikate oder Inspektionen. Winz übernimmt Zollanmeldungen. Importeure oder spezialisierte Agenten kümmern sich um Gesundheitsdokumentation und Inspektionsvereinbarungen. Die zollrechtliche Freigabe ersetzt keine anderen behördlichen Genehmigungen."
+    },
+    "dangerous": {
+      "title": "Unterstützung für Gefahrgut",
+      "text": "Batterien, Chemikalien, Aerosole, Gase und bestimmte medizinische Produkte erfordern möglicherweise spezielle Verpackungen, Etiketten und Transportdokumente. Die Anforderungen an Klassifizierung und Verpackung für <1>Gefahrgut Luftfracht IATA Belgien</1> müssen vor der Verladung am Ursprungsort bestätigt werden. Winz prüft die Zolldaten. Versender und qualifizierte Transportparteien kümmern sich um die Gefahrgutklassifizierung, Verpackung und Akzeptanz durch die Fluggesellschaft. Korrekte Zollcodes bestätigen nicht die Einhaltung der Luftverkehrsvorschriften."
+    }
+  },
+  "export": {
+    "title": "Luftfracht Ausfuhranmeldungen",
+    "text": "Winz erstellt AES-Ausfuhranmeldungen und prüft Versanddokumente, Warennummern, Exporteursdaten, Wert, Bestimmungsort und Verfahren. Die Ausfuhrfreigabe erlaubt den Abflug; die Ausgangsbestätigung unterstützt die Mehrwertsteuer- und Konformitätsaufzeichnungen. Eine separate summarische Ausgangsanmeldung (EXS) kann erforderlich sein, wenn anwendbare Sicherheitsdaten nicht anderweitig abgedeckt sind."
+  },
+  "delays": {
+    "title": "Häufige Ursachen für Verzögerungen",
+    "intro": "Viele Probleme bei der Abfertigung am Flughafen beginnen mit unvollständigen oder inkonsistenten Geschäftsdaten. Die Korrektur der Informationen vor der Ankunft ist in der Regel einfacher als die Änderung, nachdem der Zoll die Sendung zur Kontrolle ausgewählt hat. Sendungen, die eine <1>bevorzugte Zollabfertigung Belgien</1> erfordern, sollten vor der Ankunft des Fluges angemeldet werden, um Verzögerungen bei der Freigabe zu vermeiden.",
+    "subtitle": "Häufige Ursachen sind:",
+    "list": [
+      "Vage oder unvollständige Rechnungsbeschreibungen",
+      "Unterschiedliche Gewichte auf AWB und Packliste",
+      "Fehlende oder ungültige EORI-Informationen",
+      "Falsche Importeur- oder Empfängerangaben",
+      "Nicht unterstützte Zollwerte",
+      "Falsche Warennummern",
+      "Fehlender präferenzieller Ursprungsnachweis",
+      "Unvollständige ICS2-Daten auf House-Ebene",
+      "Fehlende Lizenzen oder Gesundheitszeugnisse",
+      "Unklare Zahlungsanweisungen für Zölle oder MwSt",
+      "Fracht nicht für Inspektion verfügbar",
+      "Freigabebeschränkungen des Abfertigers oder Lagers"
+    ],
+    "outro": "Winz prüft die verfügbaren Dokumente und erklärt, welche Korrekturen erforderlich sind. Die Annahme durch den Zoll und Inspektionsentscheidungen liegen bei der zuständigen Zollbehörde. Importeure, die wissen möchten, <1>wie lange die Luftfracht-Verzollung dauert</1>, sollten das Inspektionsrisiko, die Art der Ware und die Vollständigkeit der Dokumente berücksichtigen."
+  },
+  "whyWinz": {
+    "title": "Warum Unternehmen sich für Winz entscheiden",
+    "intro": "Winz unterstützt Importeure, Exporteure, Spediteure und Logistikunternehmen, die genaue Luftfrachtanmeldungen und klare Zollkommunikation benötigen. Unser Support bei der Zollabfertigung umfasst:",
+    "list": [
+      "Belgische IDMS-Einfuhr- und AES-Ausfuhranmeldungen",
+      "ICS2-Datenkoordination mit Frachtführern und Spediteuren",
+      "Abwicklung von PLDA-Ausweichverfahren, wo offiziell akzeptiert",
+      "Prüfung von MAWB, HAWB, Rechnung und Packliste",
+      "Überprüfung von Warennummer, Zollwert, EORI und Importeurdaten",
+      "Anweisungen für Zölle und Einfuhrumsatzsteuer",
+      "Zollunterstützung in Brüssel, Lüttich und Schiphol",
+      "Kommunikation auf Englisch, Französisch, Niederländisch und Deutsch"
+    ],
+    "outro1": "Das Ziel ist einfach: Weniger Verzögerungen durch fehlende Daten, falsche Klassifizierungen oder abweichende Dokumente.",
+    "outro2": "Winz kümmert sich um die Zollabfertigung. Flughafenabfertigung, Transport und Lieferung werden separat arrangiert, sofern nicht anders vereinbart."
+  },
+  "cta": {
+    "title": "Fordern Sie ein Angebot für Luftfracht an",
+    "text": "Winz unterstützt die Zollabfertigung von Luftfracht am Flughafen Brüssel, Flughafen Lüttich und Flughafen Amsterdam Schiphol.",
+    "services": "Unsere Dienstleistungen umfassen IDMS-Einfuhranmeldungen, AES-Ausfuhranmeldungen, ICS2-Koordination, AWB-Prüfungen, Überprüfung von Warennummern, Zollwertkontrollen und Zollkommunikation.",
+    "action": "Senden Sie uns den Luftfrachtbrief, die Handelsrechnung, die Packliste, die Ankunftsdetails, die EORI-Nummer und die Wareninformationen zur Prüfung.",
+    "button": "Angebot für Luftfrachtzoll anfordern"
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen (FAQ) zur Luftfracht-Zollabfertigung",
+    "questions": [
+      {
+        "q": "Was ist Luftfracht-Zollabfertigung?",
+        "a": "Es ist der Prozess zur Anmeldung von importierter oder exportierter Luftfracht beim Zoll. Dies kann Sicherheitsanmeldungen, Dokumentenprüfungen, die Festsetzung von Zöllen und MwSt, Lizenzen, Zollkontrollen und die Freigabe umfassen."
+      },
+      {
+        "q": "Was ist der Unterschied zwischen ICS2 und IDMS?",
+        "a": "ICS2 befasst sich mit Sicherheitsdaten, bevor Waren in die EU gelangen oder durch sie transportiert werden. IDMS ist das belgische System zur Einreichung von Standard-Zolleinfuhranmeldungen."
+      },
+      {
+        "q": "Nutzt Belgien noch PLDA?",
+        "a": "Belgien nutzt IDMS für Standard-Einfuhranmeldungen, wo immer möglich. PLDA steht nur noch für begrenzte Ausweichverfahren, bekannte technische Probleme oder vom belgischen Zoll akzeptierte Ausnahmen zur Verfügung."
+      },
+      {
+        "q": "Welche Dokumente werden benötigt?",
+        "a": "Die meisten Sendungen erfordern einen Luftfrachtbrief, eine Handelsrechnung, eine Packliste, eine EORI-Nummer, eine Warennummer und Ursprungsinformationen. Für kontrollierte Waren können auch Lizenzen, Zertifikate oder Gesundheitsdokumente erforderlich sein."
+      },
+      {
+        "q": "Was ist der Unterschied zwischen MAWB und HAWB?",
+        "a": "Ein MAWB deckt die Hauptsendung der Fluggesellschaft ab. Ein HAWB identifiziert eine einzelne Sendung innerhalb einer konsolidierten Ladung. Für jeden HAWB kann eine separate Zollanmeldung erforderlich sein."
+      },
+      {
+        "q": "Wie lange dauert die Verzollung?",
+        "a": "Es gibt keine feste Abfertigungszeit. Der Zeitaufwand hängt ab von der Qualität der Dokumente, Zollkontrollen, der Bereitstellung der Fracht, Regelungen für Zölle und MwSt, Lizenzen und den Lagerverfahren des Flughafens."
+      },
+      {
+        "q": "Können Waren in ein Zolllager gebracht werden?",
+        "a": "Ja. Luftfracht kann in vorübergehender Verwahrung bleiben oder in ein zugelassenes Zolllager überführt werden, nachdem die entsprechende Anmeldung oder das Versandverfahren abgeschlossen ist."
+      },
+      {
+        "q": "Was passiert während einer Inspektion?",
+        "a": "Die Ware muss dem Zoll vorgeführt werden. Der Zoll kann die Waren, die Rechnung, den Luftfrachtbrief, die Warennummer, den Ursprung, die Menge und den deklarierten Wert prüfen, bevor er die Freigabe bestätigt."
+      },
+      {
+        "q": "Kann Winz die Lieferung ab Flughafen organisieren?",
+        "a": "Winz konzentriert sich auf die Zollabfertigung. Die Abholung am Flughafen und der Weitertransport werden in der Regel vom Importeur, Spediteur oder Logistikdienstleister organisiert."
+      },
+      {
+        "q": "Kann Winz die Fracht vor Ankunft verzollen?",
+        "a": "Die Anmeldung kann vor der Ankunft vorbereitet oder eingereicht werden, wenn die erforderlichen Daten verfügbar sind und das Zollverfahren dies zulässt. Die endgültige Freigabe hängt weiterhin von der Ankunft und der Vorführung ab."
+      }
+    ]
+  }
+}

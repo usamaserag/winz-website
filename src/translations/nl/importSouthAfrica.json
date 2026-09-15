@@ -1,0 +1,201 @@
+{
+  "meta": {
+    "title": "Importing from South Africa to EU: Customs Guide",
+    "description": "Importing cars, citrus, wine, or steel from South Africa to the EU requires valid origin proof, correct TARIC codes, and product compliance checks."
+  },
+  "hero": {
+    "title": "Importing from South Africa to the EU",
+    "subtitle": "Importing from South Africa to the EU requires valid origin proof, correct TARIC classification, accurate customs value, and product-specific compliance checks. Qualifying goods may receive reduced or zero duty under the EU-SADC Economic Partnership Agreement."
+  },
+  "intro": {
+    "p1": "Importers commonly use a EUR.1 certificate or approved exporter declaration to claim preference. Vehicles, citrus, wine, platinum, and steel also require specific documents and controls.",
+    "p2": "Belgian importers moving South African goods through Antwerp can use <1>South Africa to EU customs clearance Belgium</1> to check documents, origin proof, duty exposure, and release requirements before filing."
+  },
+  "requirements": {
+    "title": "EU Importer Requirements",
+    "p1": "The EU importer must be established, identified, and able to meet customs and product obligations attached to the goods.",
+    "p2": "An EORI number is required for customs activities in the EU. The importer also needs a valid commercial identity, customs representation arrangement, and VAT treatment matching the member state of import.",
+    "p3": "The importer of record remains responsible for the TARIC code, customs value, origin claim, licences, and supporting certificates. Direct or indirect representation must match the importer's EU establishment and VAT position.",
+    "p4": "DDP shipments require a workable EU importer, EORI, VAT, and customs representation arrangement — confirm these before finalising the sales contract and shipping documents."
+  },
+  "epa": {
+    "title": "EU-SADC EPA Rules",
+    "p1": "The EU-SADC EPA gives qualifying South African goods preferential EU access when the product meets the agreement's rules of origin. It applies to vehicles, auto parts, citrus, wine, and selected industrial products. Preferential duty is not automatic — the importer must claim it in the declaration and hold valid supporting proof.",
+    "p2": "For consignments not exceeding €6,000, any exporter can use an origin declaration. Higher-value consignments normally require a EUR.1 movement certificate or approved exporter declaration.",
+    "listTitle": "Before shipment, importers should complete 3 steps:",
+    "list": [
+      "Confirm the product meets the relevant EU-SADC product-specific origin rule",
+      "Match the EUR.1 or origin declaration with the invoice, goods description, and tariff classification",
+      "Enter the preference claim and supporting document code correctly in the import declaration"
+    ],
+    "sub1": "Goods Eligible for Preference",
+    "p3": "Passenger motor vehicles under HS 8703 commonly face 10% EU MFN duty. A qualifying vehicle may receive a lower or zero preferential rate when the correct TARIC line and EU-SADC origin rule are satisfied. Auto parts under HS 8708 can also qualify, but rates and origin requirements vary by component. Citrus and wine may benefit from preference, while seasonal rates, quotas, and product certificates can still apply.",
+    "p4": "Platinum under HS 7110 often has a zero MFN rate, so an EPA claim may not reduce the duty amount. Origin information can still matter for customs records, statistics, and trade measures.",
+    "sub2": "Quotas and Product Limits",
+    "p5": "Sensitive agricultural goods, sugar, ethanol, canned fruit, wine, and other quota-controlled products can face standard duties when the preference quota is exhausted. Importers must check quota availability against the exact TARIC line and import date.",
+    "p6": "Citrus may qualify for tariff preference, but plant-health requirements remain separate. A EUR.1 does not replace a phytosanitary certificate, treatment record, or official inspection.",
+    "p7": "EPA preference does not remove other EU obligations. Iron and steel can fall within CBAM and steel quota controls. Timber and relevant derived products may fall within EUDR requirements, with phased application dates from 30 December 2026.",
+    "sub3": "EUR.1 Certificate Rules",
+    "p8": "The EUR.1 certificate proves preferential origin under the EU-SADC EPA and is validated by SARS before export. It must match the exporter, consignee, invoice, goods, and origin details. Consignments up to €6,000 may use an origin declaration. Higher-value shipments normally need a EUR.1 or approved exporter declaration. Proof is generally valid for 10 months. REX statements are not interchangeable with EUR.1 certificates under this agreement.",
+    "p9": "For a broader breakdown of EU origin documents, see <1>certificate of origin SADC EU</1>."
+  },
+  "customsValue": {
+    "title": "Incoterms and Customs Value",
+    "table": [
+      {
+        "term": "FOB",
+        "treatment": "Freight and insurance must be added to reach EU border value"
+      },
+      {
+        "term": "CIF",
+        "treatment": "Freight and insurance normally already included"
+      },
+      {
+        "term": "DAP / DDP",
+        "treatment": "May include inland transport, duty, VAT, and delivery costs — post-entry costs excluded when shown separately"
+      }
+    ],
+    "p1": "The declared value must match the Incoterm, invoice, freight, insurance, and payment records."
+  },
+  "process": {
+    "title": "Antwerp Import Clearance Process",
+    "p1": "South African imports cleared at Antwerp normally follow a document-first customs process.",
+    "p2": "Deep-sea containers can arrive from Durban or Cape Town. Ro-Ro vehicles may use specialised terminals. Citrus and fresh produce need additional coordination because plant-health controls can delay customs release.",
+    "listTitle": "The Antwerp process has 5 main stages:",
+    "list": [
+      "Stage 1 — Entry Data: The carrier or responsible filer submits safety and security data through ICS2 within the applicable deadline. Accurate descriptions, routing, party details, EORI data, and commodity information reduce filing problems.",
+      "Stage 2 — Document Assembly: The importer collects the invoice, packing list, bill of lading, proof of origin, and product certificates. Citrus files may need phytosanitary and treatment records. Steel files may need CBAM data and quota checks.",
+      "Stage 3 — Import Declaration: The customs broker files the Belgian import declaration, normally through IDMS. It records the TARIC code, customs value, origin, preference claim, duty, VAT, and document references. Classification and valuation questions should be resolved before filing.",
+      "Stage 4 — Customs Control: Belgian customs can request documents, scan the cargo, or order a physical inspection. Citrus and controlled food products may also require checks by the relevant Belgian authority before release.",
+      "Stage 5 — Release Coordination: Customs release removes the customs hold, although terminal, carrier, or product-control holds may remain. Winz coordinates release status with the importer, freight forwarder, terminal, and nominated carrier. Winz does not provide transport services."
+    ]
+  },
+  "documents": {
+    "title": "Required Import Documents",
+    "p1": "The required file depends on the goods, Incoterm, origin claim, and EU controls. Most commercial imports need the following documents or customs data.",
+    "table": [
+      {
+        "doc": "Commercial invoice",
+        "purpose": "Confirms seller, buyer, value, Incoterm, and goods",
+        "application": "All commercial imports"
+      },
+      {
+        "doc": "Packing list",
+        "purpose": "Confirms packages, weights, marks, and packing details",
+        "application": "Container, Ro-Ro, and air cargo"
+      },
+      {
+        "doc": "Bill of lading",
+        "purpose": "Identifies the sea shipment and supports cargo release",
+        "application": "Container and Ro-Ro shipments"
+      },
+      {
+        "doc": "EORI and VAT data",
+        "purpose": "Identifies the EU customs party and tax arrangement",
+        "application": "All import declarations"
+      },
+      {
+        "doc": "TARIC classification",
+        "purpose": "Determines duty, VAT, quotas, certificates, and controls",
+        "application": "All imported goods"
+      },
+      {
+        "doc": "EUR.1 or origin declaration",
+        "purpose": "Supports an EU-SADC preference claim",
+        "application": "Qualifying goods claiming preference"
+      },
+      {
+        "doc": "Phytosanitary certificate",
+        "purpose": "Supports plant-health entry requirements",
+        "application": "Citrus and controlled plant products"
+      },
+      {
+        "doc": "CBAM information",
+        "purpose": "Supports emissions and authorisation obligations",
+        "application": "Covered iron, steel, and other CBAM goods"
+      },
+      {
+        "doc": "Product licences or permits",
+        "purpose": "Supports product-specific legal entry",
+        "application": "Controlled food, wine, chemicals, or regulated goods"
+      }
+    ],
+    "p2": "The importer should complete the review before the vessel arrives. The invoice, packing list, bill of lading, proof of origin, and tariff code must describe the same goods and quantities."
+  },
+  "risks": {
+    "title": "Common Customs Compliance Problems",
+    "p1": "South African imports commonly face delays because of origin errors, product-control checks, incorrect tariff codes, valuation gaps, or quota and CBAM issues.",
+    "sub1": "Citrus Plant Health Checks",
+    "p2": "South African citrus can be subject to strict plant-health controls before customs release.",
+    "p3": "False Codling Moth and Citrus Black Spot controls can affect relevant fruit, production areas, and treatment routes. Temperature records, treatment data, phytosanitary wording, container details, and traceability records must support the selected compliance option.",
+    "p4": "Missing or incorrect evidence can lead to inspection, detention, re-export, destruction, or another official measure.",
+    "p5": "Winz reviews the customs and document side of the file before filing. This includes certificate consistency and coordination of inspection timing with the importer, freight forwarder, terminal, and competent authority.",
+    "sub2": "Vehicle Origin Checks",
+    "p6": "Vehicles can trigger origin verification when the EUR.1 data does not match the invoice, vehicle details, tariff code, or production history.",
+    "p7": "Belgian customs can suspend preferential treatment when declared origin is unclear. The case can move to administrative verification between EU customs and SARS. The importer may need to provide production records or additional exporter evidence.",
+    "p8": "Passenger cars commonly face a 10% MFN duty. On a €500,000 customs value, a rejected zero-duty preference claim can create €50,000 in additional duty before VAT effects. The EUR.1 must match the invoice, vehicle details, origin rule, and tariff classification.",
+    "sub3": "Steel Quota Risks",
+    "p9": "Steel imports can face quota pressure even when an EPA preference reduces the normal customs duty.",
+    "p10": "Quota treatment depends on the product category, origin allocation, quota period, and declaration date. Importers should check the CN code, quota order number, CBAM position, and origin proof before departure to limit storage and duty exposure.",
+    "p11": "The wider regional corridor includes different origin rules and certificate systems. See <1>Central and Southern Africa to EU customs</1> for related requirements."
+  },
+  "support": {
+    "title": "Winz Clearance Support",
+    "p1": "Winz supports imports from South Africa with customs clearance, document checks, tariff classification, origin verification, and compliance coordination.",
+    "p2": "Winz is based in Belgium and supports importers, exporters, freight forwarders, and logistics companies moving commercial goods into the EU. The focus is customs clearance and customs documentation. Winz does not sell freight transport or container shipping.",
+    "listTitle": "For South African corridor shipments, Winz can:",
+    "list": [
+      "Review EUR.1 certificates and origin declarations before import filing.",
+      "Validate HS, CN, and TARIC classifications against product details.",
+      "Check customs value against Incoterms and supporting cost records.",
+      "Prepare and file Belgian import declarations.",
+      "Review citrus documents for customs and plant-health coordination.",
+      "Coordinate CBAM and steel quota information with the relevant parties.",
+      "Support Belgian import VAT deferment where the importer is eligible.",
+      "Communicate customs release status to terminals and nominated carriers."
+    ],
+    "p3": "Every file should be checked before submission. Early review reduces the risk of incorrect tariff codes, unsupported preference claims, missing certificates, and avoidable customs delays.",
+    "p4": "Complex origin, CBAM, citrus, vehicle, or steel files may benefit from <1>SADC preferential origin consulting Belgium</1> before the first shipment is filed."
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "questions": [
+      {
+        "q": "What does South Africa export to the EU?",
+        "a": "South Africa exports vehicles, platinum group metals, citrus fruit, wine, grapes, iron, steel, machinery, and auto parts to the EU. Customs treatment depends on the TARIC code, origin proof, quotas, and product controls."
+      },
+      {
+        "q": "What is the EU-SADC EPA?",
+        "a": "The EU-SADC Economic Partnership Agreement provides preferential trade between the EU and participating Southern African states. Qualifying South African goods can receive reduced or zero duty when the origin rules and declaration requirements are met."
+      },
+      {
+        "q": "Is an EORI number required?",
+        "a": "Yes. An EU EORI number is required for the importer or customs party lodging import declarations. The EORI must match the legal entity, VAT arrangement, and representation model used for clearance."
+      },
+      {
+        "q": "How long is EUR.1 valid?",
+        "a": "Proof of origin under the EU-SADC EPA is generally valid for 10 months. The importer must present it within the permitted period and keep the supporting customs records."
+      },
+      {
+        "q": "What is the duty on South African cars?",
+        "a": "Passenger motor cars under HS 8703 commonly face a 10% EU MFN duty. A qualifying vehicle can receive a lower or zero EPA rate when the exact TARIC line and origin rule are satisfied."
+      },
+      {
+        "q": "What documents are required for citrus?",
+        "a": "Citrus imports normally require a commercial invoice, packing list, bill of lading, TARIC classification, phytosanitary certificate, treatment or traceability evidence, and EUR.1 when EPA preference is claimed."
+      },
+      {
+        "q": "Does CBAM apply to South African steel?",
+        "a": "CBAM can apply to covered South African iron and steel. The importer must check the CN code, annual threshold, authorised declarant position, embedded-emissions data, and certificate obligations."
+      },
+      {
+        "q": "Can a South African seller use DDP?",
+        "a": "A DDP sale requires a workable EU importer, EORI, VAT, and customs representation structure. The contract should identify who acts as importer of record before shipment."
+      },
+      {
+        "q": "Can Winz arrange transport from Antwerp?",
+        "a": "Winz supports customs clearance, documentation, and release coordination. Winz does not provide trucking, air freight, or container shipping. The importer or freight forwarder appoints the transport provider after release."
+      }
+    ]
+  }
+}

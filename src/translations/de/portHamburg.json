@@ -1,0 +1,199 @@
+{
+  "meta": {
+    "title": "Customs Clearance Port of Hamburg | Winz",
+    "description": "Winz coordinates ATLAS customs clearance at Hamburg Port, including import, export, and T1 NCTS transit to Belgium across major container terminals."
+  },
+  "hero": {
+    "title": "Customs Clearance at Hamburg Port",
+    "subtitle": "Customs clearance at the Port of Hamburg uses ATLAS, Germany's electronic customs system for import, export, and transit procedures."
+  },
+  "intro": {
+    "p1": "Winz supports importers, exporters, freight forwarders, and logistics companies with Hamburg customs declarations, document checks, HS code classification, duty calculations, customs status monitoring, and T1 transit to Belgium.",
+    "p2": "Hamburg is often the first EU port of call for cargo from Asia, North America, Africa, and the Middle East. Arrival in Hamburg does not mean goods must enter free circulation in Germany. Non-Union goods can be cleared in Germany, placed under another customs procedure, or moved under T1 transit to an authorised destination customs office.",
+    "p3": "Winz handles Hamburg clearance for <1>import clearance and release</1> and <2>EU export customs</2> clients under one account alongside Antwerp and Rotterdam."
+  },
+  "atlas": {
+    "title": "ATLAS and DAKOSY Process",
+    "p1": "ATLAS is the electronic customs system used by German Customs. It processes import and export declarations, transit messages, customs decisions, and duty assessments.",
+    "p2": "Germany uses ATLAS. Belgium uses IDMS for imports and AES for exports. The Netherlands uses DMS. All apply the Union Customs Code and common EU data requirements.",
+    "p3": "Winz checks shipment data before submission and coordinates the declaration through the applicable representation arrangement. German Customs can accept the declaration, request documents, select goods for control, or release them under the declared procedure.",
+    "p4": "DAKOSY operates the Port Community System for Hamburg. Its Import Management Platform connects carriers, terminals, freight forwarders, customs processes, authorities, and transport companies.",
+    "p5": "Customs release is only one part of terminal collection. A container may also require:",
+    "list": [
+      "Carrier release",
+      "Terminal release status",
+      "A valid digital pickup right",
+      "Required security authorisation",
+      "A confirmed truck slot",
+      "Settlement of applicable terminal or carrier charges"
+    ],
+    "outro1": "Hamburg uses the German Ports Secure Release Order for digital container pickup rights. HHLA terminals require advance notification and a valid slot booking. Customs approval does not guarantee gate-out while another release condition remains open.",
+    "outro2": "For delivery window planning, see <1>how long customs clearance takes Hamburg Belgium</1>."
+  },
+  "steps": {
+    "title": "Steps From Arrival to Release",
+    "intro": "Hamburg customs clearance follows a connected 9-step customs and terminal process.",
+    "list": [
+      "The carrier or responsible party submits pre-arrival safety and security data through ICS2 where required.",
+      "The shipment arrives and is presented to customs under the applicable port process.",
+      "Goods remain under temporary storage until they enter a customs procedure.",
+      "Winz checks the commercial and customs documents.",
+      "The ATLAS declaration is submitted under the agreed representation model.",
+      "German Customs reviews the declaration and may request documents or inspect the goods.",
+      "Customs releases the goods or authorises the selected transit or special procedure.",
+      "DAKOSY, the carrier, and the terminal update the relevant release statuses.",
+      "The collecting transport company uses the required digital pickup right and terminal booking."
+    ],
+    "outro": "Processing time depends on document quality, customs controls, terminal status, and other authority requirements. Customs controls the final release decision."
+  },
+  "documents": {
+    "title": "Required Clearance Documents",
+    "intro": "Hamburg customs clearance requires complete and consistent shipment data. Missing values, vague descriptions, or mismatched transport references can delay declaration acceptance and cargo release.",
+    "p1": "The standard document set includes:",
+    "list": [
+      "Commercial invoice",
+      "Packing list",
+      "Bill of lading",
+      "Importer or exporter EORI number",
+      "CN or TARIC code for each product line",
+      "Country of origin details",
+      "Preferential origin proof where applicable",
+      "Arrival notice and shipment references",
+      "Customs representation authorisation",
+      "Import or export licences for controlled goods",
+      "Product certificates where required"
+    ],
+    "outro1": "The invoice should show the parties, goods, quantity, price, currency, Incoterm, and payment terms. The packing list must match the invoice and transport document. Vague descriptions such as \"parts\" or \"equipment\" rarely support accurate classification.",
+    "outro2": "Winz compares the invoice, packing list, bill of lading, origin data, and product details before filing. This reduces the risk of declaration rejection, incorrect customs value, and post-clearance correction."
+  },
+  "representation": {
+    "title": "Customs Representation and Liability",
+    "p1": "Customs representation determines who submits the declaration and carries specific responsibilities. Direct representation means acting in the importer's or exporter's name. Indirect representation means acting in the representative's own name for another business and can create joint customs-debt liability.",
+    "p2": "The importer remains responsible for accurate product, value, origin, and licensing information.",
+    "p3": "Winz confirms the representation model, EORI details, power of attorney, and declaration responsibilities before submission. Businesses should not assume that the same representation model applies to every EU country or customs procedure."
+  },
+  "hsCodes": {
+    "title": "HS Codes for Hamburg Imports",
+    "p1": "HS code classification determines customs duty, trade measures, licence requirements, and the control route for goods entering through Hamburg.",
+    "p2": "The six-digit Harmonized System code provides the international basis. EU declarations use additional Combined Nomenclature and TARIC digits, while German imports may require the complete national code used in ATLAS.",
+    "p3": "TARIC identifies standard or preferential duties, anti-dumping measures, quotas, suspensions, restrictions, surveillance measures, and certificate codes.",
+    "p4": "Winz reviews the product description, material, composition, function, intended use, processing level, and technical documents before classification. Mixed consignments require a separate classification for each product line. Errors can cause incorrect duty, missing licences, customs holds, penalties, or reassessment."
+  },
+  "dutyVAT": {
+    "title": "Hamburg Duty and Import VAT",
+    "p1": "Customs duty and import VAT depend on customs value, classification, origin, and procedure.",
+    "p2": "Customs value generally starts with the transaction value. Freight, insurance, assists, royalties, commissions, and other required costs may be added. The Incoterm indicates which costs are already included.",
+    "p3": "The CN or TARIC code determines the duty rate, while origin determines whether standard or preferential duty applies. Preference requires valid proof and compliance with origin rules.",
+    "p4": "German release normally creates German import VAT treatment. T1 transit suspends duty and VAT during movement to Belgium. After discharge, goods enter a subsequent procedure, often an IDMS import declaration. Procedure 42 may apply when its legal and VAT conditions are met.",
+    "p5": "T1 discharge does not place goods into free circulation. The destination procedure determines when duty and VAT become payable.",
+    "p6": "Importers can review <1>EU import regulations</1> before choosing Hamburg clearance or T1 transit to Belgium."
+  },
+  "inspections": {
+    "title": "Hamburg Customs Inspections",
+    "p1": "German Customs can select goods for documentary review, scanning, sampling, or physical inspection.",
+    "p2": "A documentary control can examine invoice values, product descriptions, origin evidence, licences, classification, and transport references. A scanner control examines the container without a full unloading. A physical inspection may require the terminal to position and open the container.",
+    "p3": "8 common causes of inspection delays include:",
+    "list": [
+      "Invoice and bill of lading mismatches",
+      "Incomplete product descriptions",
+      "Incorrect or unsupported CN codes",
+      "Missing origin evidence",
+      "Unclear customs value adjustments",
+      "Missing licences or certificates",
+      "Inconsistent weights or quantities",
+      "Unresolved terminal release conditions"
+    ],
+    "p4": "Food, animal products, plants, chemicals, dangerous goods, dual-use items, and CBAM goods can require additional documents or authority checks.",
+    "p5": "Winz monitors customs and port status and identifies whether action is required from customs, the terminal, the carrier, or the business."
+  },
+  "routes": {
+    "title": "Hamburg-to-Belgium Customs Routes",
+    "intro": "Cargo arriving in Hamburg for delivery to Belgium normally follows one of 2 main customs routes.",
+    "german": {
+      "title": "German Import Clearance",
+      "p1": "The goods enter free circulation in Germany through ATLAS. After release, they have Union status and can move to Belgium without T1 transit. German duty, import VAT, accounting, and any onward-supply obligations must be handled correctly."
+    },
+    "t1": {
+      "title": "T1 Transit to Belgium",
+      "p1": "Winz supports <1>transit Hamburg to Belgium NCTS</1> for importers moving goods under customs supervision.",
+      "p2": "T1 requires a transit declaration, guarantee coverage, seals where required, and presentation at the destination office or authorised consignee. After discharge, Belgian import clearance is submitted through IDMS where required. Duty and Belgian import VAT follow that declaration."
+    },
+    "centralised": {
+      "p1": "Cross-border centralised clearance may be possible for authorised businesses under specific EU arrangements. It is not a standard alternative for every Hamburg shipment."
+    }
+  },
+  "incoterms": {
+    "title": "Incoterms and Customs Value",
+    "p1": "Incoterms allocate costs, risk, and customs responsibilities. They do not replace customs law or determine who Customs accepts as an importer.",
+    "p2": "EXW can leave the buyer responsible for obtaining export and transport data from the seller. FOB usually places export formalities with the seller and can provide a clearer export document trail.",
+    "p3": "CIF includes cost, insurance, and freight to the named port. These amounts can affect customs value because some transport and insurance costs are already included in the invoice.",
+    "p4": "DDP places broad delivery, duty, and tax responsibilities on the seller. However, DDP does not remove EORI, representation, VAT, or importer requirements. The seller must be able to meet the legal conditions in the country of import.",
+    "p5": "Winz checks the Incoterm against the invoice, customs value, representation model, and destination procedure before filing."
+  },
+  "terminals": {
+    "title": "Hamburg Terminals and Cargo",
+    "p1": "Winz supports customs clearance for commercial cargo handled through Hamburg's main container terminals.",
+    "p2": "The 3 HHLA container terminals are:",
+    "list": [
+      "Container Terminal Altenwerder (CTA)",
+      "Container Terminal Burchardkai (CTB)",
+      "Container Terminal Tollerort (CTT)"
+    ],
+    "p3": "Eurogate Container Terminal Hamburg is another major container facility in the port.",
+    "p4": "Winz supports customs procedures for FCL shipments, LCL shipments, 20 ft containers, 40 ft containers, 40 ft HC containers, reefer containers, mixed commercial consignments, and controlled goods where required documents are available.",
+    "p5": "A customs declaration is based on the consignment, declarant, goods, and procedure. One container can contain several consignments, while one consignment can also require several declaration lines.",
+    "p6": "LCL cargo is often declared by the consignee or house shipment under the applicable deconsolidation and customs arrangement.",
+    "p7": "Export goods leaving Hamburg are declared through the German ATLAS export process. Export release must be followed by proper exit confirmation so the export procedure can be completed.",
+    "p8": "Winz provides customs clearance and compliance support for these shipment types. Winz does not sell container transport, air freight delivery, or road haulage."
+  },
+  "threePorts": {
+    "title": "Three Ports, One Account",
+    "p1": "Winz gives importers, exporters, freight forwarders, and logistics companies one customs contact for Hamburg, Antwerp, and Rotterdam.",
+    "p2": "Hamburg uses ATLAS, Belgium uses IDMS and AES, and the Netherlands uses DMS. Winz coordinates document checks, declarations, transit planning, status updates, and post-clearance support across these systems.",
+    "p3": "For pricing context, see <1>customs costs Hamburg</1>."
+  },
+  "cta": {
+    "title": "Request Hamburg Customs Clearance",
+    "text": "Winz coordinates ATLAS import and export declarations, T1 NCTS transit, document checks, HS code classification, duty calculations, and customs status monitoring for cargo moving through Hamburg. Support covers FCL, LCL, 20 ft, 40 ft, 40 ft HC, reefer, and mixed commercial shipments for customs clearance purposes.",
+    "subtext": "Send the commercial invoice, packing list, bill of lading, EORI number, product details, origin information, Incoterm, and expected arrival data before the vessel arrives.",
+    "linkText": "request Hamburg customs clearance",
+    "outro": " to reduce document errors, customs delays, and post-clearance corrections."
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "questions": [
+      {
+        "q": "What Is ATLAS in Germany?",
+        "a": "ATLAS is the electronic system used by German Customs for import, export, transit, and related customs messages. Hamburg customs declarations are processed through ATLAS under the applicable procedure and representation model."
+      },
+      {
+        "q": "What Is DAKOSY in Hamburg?",
+        "a": "DAKOSY operates Hamburg’s Port Community System. It connects customs, carriers, terminals, freight forwarders, transport companies, and authorities through digital import, export, release, status, and pickup processes."
+      },
+      {
+        "q": "Which Documents Are Required?",
+        "a": "Standard documents include the commercial invoice, packing list, bill of lading, EORI number, product codes, origin data, shipment references, and representation authorisation. Controlled goods may require licences or certificates."
+      },
+      {
+        "q": "How Long Does Clearance Take?",
+        "a": "Clearance time depends on document quality, declaration type, customs workload, inspections, authority controls, and terminal readiness. A complete pre-arrival file reduces avoidable delays, but Customs controls the release decision."
+      },
+      {
+        "q": "Can Cargo Move Under T1?",
+        "a": "Yes. Non-Union goods can move from Hamburg to an authorised Belgian destination under T1 NCTS transit. The movement requires guarantee coverage and must be discharged correctly before the next customs procedure begins."
+      },
+      {
+        "q": "Does T1 Include Import Clearance?",
+        "a": "No. T1 discharge ends the transit movement. The goods must then enter another customs procedure, such as release for free circulation through a Belgian IDMS import declaration."
+      },
+      {
+        "q": "Can Cargo Use Customs Warehousing?",
+        "a": "Yes. Eligible goods can enter an authorised customs warehouse or move under transit to another approved facility. Customs warehousing suspends duty and import VAT until the goods enter a following procedure."
+      },
+      {
+        "q": "What Causes Customs Delays?",
+        "a": "Common causes include data mismatches, vague product descriptions, incorrect CN codes, missing origin proof, absent licences, customs inspections, carrier-release issues, and incomplete digital pickup requirements."
+      }
+    ]
+  }
+}

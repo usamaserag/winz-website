@@ -1,0 +1,180 @@
+{
+  "meta": {
+    "title": "Customs Clearance Port of Antwerp | Winz",
+    "description": "Winz handles import, export, and transit customs clearance at the Port of Antwerp, including IDMS, AES, NCTS, document checks, and release coordination."
+  },
+  "hero": {
+    "title": "Customs Clearance at Port of Antwerp",
+    "subtitle": "Customs clearance at the Port of Antwerp requires the correct declaration, supporting documents, and release data before cargo can leave the terminal or continue under another customs procedure."
+  },
+  "intro": {
+    "p1": "See <1>customs clearance Belgium</1> for the full scope of Winz customs services.",
+    "p2": "Belgian imports use IDMS. Exports use AES, while transit movements use NCTS. PN/TS, the Inbound Release Platform, and Certified Pick up support arrival and secure release.",
+    "p3": "The Port of Antwerp is a major EU entry point for containerised, breakbulk, reefer, project, and transit cargo. Every movement must follow the Union Customs Code, Belgian customs rules, and any product-specific controls.",
+    "p4": "Winz supports importers, exporters, freight forwarders, and logistics companies with declarations, document checks, HS code review, duty and VAT preparation, and customs release coordination. Winz files declarations and coordinates customs release for <1>EU import declaration service</1> and <2>NCTS transit clearance</2> for cargo across Antwerp terminals."
+  },
+  "howItWorks": {
+    "title": "How Antwerp Clearance Works",
+    "intro": "Antwerp clearance involves more than submitting one declaration. The customs system, terminal, shipping line, and port release platform must show matching data before cargo can move. The standard sequence is:",
+    "steps": [
+      "The carrier or responsible filer submits the required pre-arrival security data.",
+      "Arrival and temporary storage data are recorded in the relevant Belgian systems.",
+      "Winz checks the invoice, packing list, Bill of Lading, EORI number, HS code, origin, and procedure.",
+      "The import, export, or transit declaration is submitted through the correct system.",
+      "Belgian Customs releases, queries, scans, or inspects the shipment after risk analysis.",
+      "Duties, import VAT, guarantees, or special procedure requirements are handled where applicable.",
+      "Customs release is matched with the shipping line, terminal, and port release status."
+    ],
+    "outro": "An accepted declaration does not always mean the container can leave immediately. A carrier hold, terminal mismatch, customs hold, or missing pickup right can still block gate-out. Winz monitors the customs process and coordinates release information with the importer, freight forwarder, terminal party, or haulage provider. For the full pre-clearance workflow, see <1>Port of Antwerp customs procedures PLDA</1>."
+  },
+  "systems": {
+    "title": "Antwerp Customs Systems",
+    "intro": "Several digital systems support Antwerp clearance. Each system covers a different stage of the cargo journey.",
+    "idms": {
+      "title": "IDMS for Imports",
+      "text": "IDMS is Belgium's standard system for import declarations. It covers release for free circulation and other import procedures. PLDA may still appear in limited fallback situations, but it is no longer the main system for most Belgian imports. IDMS generates an MRN after acceptance. It identifies the declaration and supports customs status checks, controls, and release processing."
+    },
+    "aes": {
+      "title": "AES for Exports",
+      "text": "AES handles Belgian export declarations. The declaration must be accepted and released before the goods leave under the export procedure. Businesses often call the export declaration EX1. The key references are the AES MRN, export release, and confirmation of EU exit."
+    },
+    "ncts": {
+      "title": "NCTS for Transit",
+      "text": "NCTS handles T1 and T2 transit movements. T1 normally covers non-Union goods under customs control. T2 applies to Union goods in eligible transit situations. Transit usually requires a valid guarantee unless an authorised waiver or exemption applies. The movement remains open until the destination office records arrival and discharges the procedure."
+    },
+    "pnts": {
+      "title": "PN/TS for Arrival Data",
+      "text": "PN/TS supports presentation notifications and temporary storage declarations for inbound goods. These records connect arriving cargo with the customs status required for the next procedure. Incorrect container, consignment, or Bill of Lading data can prevent the declaration from matching the arrival record."
+    },
+    "irp": {
+      "title": "IRP and Certified Pick Up",
+      "text": "The Inbound Release Platform supports inbound data exchange. Certified Pick up supports secure container release at participating Antwerp terminals. These platforms do not replace the customs declaration. Customs, carrier, terminal, forwarder, and pickup data must match before gate-out."
+    }
+  },
+  "cargoTypes": {
+    "title": "Cargo Types Winz Clears",
+    "intro": "Winz supports import, export, transit, and consolidated cargo at Antwerp. The setup depends on the procedure, consignments, product controls, and terminal workflow.",
+    "fcl": {
+      "title": "FCL Containers",
+      "text": "A Full Container Load may use one or several declarations. The correct setup depends on the consignments, importers, procedures, and commodity lines inside the container. Winz checks container numbers, seal details, Bill of Lading data, values, HS codes, and release references. The same controls apply to 20 ft, 40 ft, and 40 ft HC containers. For the full process, see <1>FCL customs clearance Antwerp</1>."
+    },
+    "lcl": {
+      "title": "LCL Shipments",
+      "text": "Less-than-Container Load cargo is usually handled per consignment or consignee. Declarations may follow deconsolidation or be prepared while the goods remain under temporary storage, depending on the CFS workflow. Each consignment requires accurate invoice data, packing details, weight, origin, HS code, and EORI information."
+    },
+    "exportTransit": {
+      "title": "Export and Transit Cargo",
+      "text": "Winz prepares AES export declarations for containerised, breakbulk, and consolidated cargo. The export MRN must match the goods, parties, transport data, and customs office details. Exit confirmation closes the export movement and supports VAT evidence. Winz also supports T1 and T2 transit declarations. The declaration must match the departure office, destination office, guarantee, transport identity, and seals where used."
+    },
+    "reeferProject": {
+      "title": "Reefer and Project Cargo",
+      "text": "Reefer, food, animal-origin, plant, pharmaceutical, and other controlled goods may require TRACES NT, CHED, health, phytosanitary, licence, or inspection documents. Project cargo and breakbulk shipments may require detailed classification, valuation, origin evidence, package references, and product-specific licences."
+    }
+  },
+  "requirements": {
+    "documents": {
+      "title": "Documents Required",
+      "intro": "Antwerp customs clearance requires complete shipment, value, origin, classification, and procedure data. Missing or inconsistent information can delay acceptance or trigger a customs query.",
+      "list": [
+        "Bill of Lading",
+        "Commercial invoice",
+        "Packing list",
+        "EORI number",
+        "HS or CN code",
+        "Origin evidence",
+        "Arrival notice",
+        "Licence or control document"
+      ],
+      "outro": "Before filing, Winz checks the invoice, packing list, Bill of Lading, HS code, customs value, origin, Incoterm, and procedure. Importers must also provide the arrival date, terminal, container number, and relevant customs references."
+    },
+    "representation": {
+      "title": "Representation and Customs Charges",
+      "text": "The declaration must identify the declarant and authorised representative. Under direct representation, the broker acts in the business's name. Indirect representation involves different legal responsibilities and may require additional approval. Winz confirms the representation setup, EORI number, authorisation, and supporting evidence before filing. Customs duty depends on TARIC classification, value, origin, and available preferences. Import VAT depends on the taxable amount and Belgian VAT treatment. Excise, anti-dumping, agricultural, or CBAM measures may also apply."
+    }
+  },
+  "delays": {
+    "ics2": {
+      "title": "ICS2 Before Arrival",
+      "text": "ICS2 manages safety and security data for goods entering the EU. Its Entry Summary Declaration is separate from the Belgian import declaration. The carrier usually files master-level data, while a freight forwarder, NVOCC, or house-level filer may have other responsibilities. Winz checks pre-arrival information against customs documents, as missing or conflicting ICS2 data can delay risk assessment or clearance. ICS2 does not calculate duty or VAT; IDMS handles the import declaration after the required arrival data becomes available."
+    },
+    "causes": {
+      "title": "Common Causes of Delay",
+      "intro": "Preventable delays often start with incomplete documents, incorrect classification, late filing, or mismatched release data. Customs inspection is only one possible cause.",
+      "list": [
+        "Wrong HS code",
+        "Missing EORI number",
+        "Invoice value mismatch",
+        "Bill of Lading mismatch",
+        "Incomplete packing details",
+        "Missing SPS pre-notification",
+        "Late declaration",
+        "Release mismatch",
+        "Missing guarantee"
+      ],
+      "outro": "Winz reduces these risks through document comparison, classification review, pre-filing checks, and status monitoring after submission."
+    }
+  },
+  "times": {
+    "title": "Indicative Clearance Times",
+    "intro": "Antwerp clearance time depends on filing time, data quality, customs controls, terminal status, and product requirements. No customs broker can guarantee release within a fixed period.",
+    "table": [
+      { "situation": "Pre-lodged declaration with complete matching data", "outcome": "Release may be available shortly after arrival" },
+      { "situation": "Standard declaration after complete document receipt", "outcome": "Processing may finish the same or the next working day" },
+      { "situation": "Documentary control", "outcome": "Timing depends on the requested evidence and review" },
+      { "situation": "Physical or SPS inspection", "outcome": "One or more working days may be required" },
+      { "situation": "Incorrect data, missing licence, or valuation query", "outcome": "Several working days may be required" }
+    ],
+    "outro1": "Pre-lodgement reduces avoidable waiting where filing before arrival is legally possible. It does not remove risk analysis, document checks, scanning, or physical inspection.",
+    "outro2": "Importers with a short free-time window should send documents before arrival. Demurrage, detention, and storage conditions depend on the shipping line, terminal, equipment, and agreement. For expected timelines, see <1>how long customs clearance takes at Antwerp</1>. For delay causes and prevention, see <2>customs delays Port of Antwerp</2>.",
+    "outro3": "For the container release sequence after customs approval, see <1>container release Port of Antwerp</1>."
+  },
+  "coverage": {
+    "title": "Antwerp Terminal Coverage",
+    "p1": "Winz supports customs clearance across major deep-sea and multipurpose terminal operations in Antwerp. This includes cargo handled through PSA Antwerp facilities, MSC PSA European Terminal, DP World Antwerp Gateway, and Noord Natie terminals, subject to the shipment setup.",
+    "p2": "Winz does not provide container shipping, road transport, or terminal handling. Winz provides customs clearance, documentation, compliance support, and release coordination.",
+    "p3": "After customs release, <1>port collection haulage</1> handles collection, delivery, and equipment return for the importer or freight forwarder. For the latest port digital integration requirements, see <2>EU customs updates 2026 Antwerp</2>."
+  },
+  "cta": {
+    "title": "Request Antwerp Customs Clearance",
+    "text": "Winz prepares import, export, and transit declarations, checks customs documents, reviews classification data, and coordinates customs release information for Antwerp cargo.",
+    "subtext": "Contact Winz before vessel arrival when your shipment has a short free-time window, controlled goods, several consignments, or a complex customs procedure.",
+    "button": "request customs clearance at Antwerp"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "questions": [
+      {
+        "q": "Are PLDA and ICS2 the same?",
+        "a": "No. ICS2 is the EU pre-arrival safety and security system. PLDA was Belgium’s former main declaration platform and may still appear in limited fallback cases. Current imports generally use IDMS, exports use AES, and transit movements use NCTS. One filing does not replace another."
+      },
+      {
+        "q": "When does demurrage start?",
+        "a": "The shipping line sets container free time and demurrage conditions. The period varies by line, terminal, equipment, and agreement. Importers should confirm the tariff before arrival. Early preparation reduces customs-related delay but cannot remove other holds."
+      },
+      {
+        "q": "Does Winz file ICS2 data?",
+        "a": "ICS2 responsibility depends on the transport chain and who holds each data set. Carriers usually file master data, while house-level filers may submit additional information. Winz can flag inconsistencies affecting the Belgian declaration."
+      },
+      {
+        "q": "Why can gate-out remain blocked?",
+        "a": "Gate-out can remain blocked when customs release, shipping line release, terminal status, Certified Pick up rights, or container data do not match. Winz checks the declaration and customs release, then coordinates with the relevant cargo party when a non-customs hold remains open."
+      },
+      {
+        "q": "Can Winz handle import and export?",
+        "a": "Yes. Winz prepares IDMS import declarations and AES export declarations for Antwerp cargo. Each declaration requires its own documents, procedure, MRN, and release status. Export cargo also needs correct exit processing so the movement closes after the goods leave the EU."
+      },
+      {
+        "q": "Can goods enter customs warehousing?",
+        "a": "Yes. Non-Union goods can move from temporary storage or transit into an authorised customs warehouse before release for free circulation. Import duty and import VAT remain suspended while the goods stay under the warehousing procedure. Winz supports customs documentation for eligible movements."
+      },
+      {
+        "q": "Why does customs inspect cargo?",
+        "a": "Belgian Customs uses risk analysis, legal control requirements, targeted controls, and random selection. A shipment may require document review, scanning, sampling, or physical inspection. Accurate documents and early filing improve readiness but do not remove the possibility of customs control."
+      },
+      {
+        "q": "Does Winz clear reefer cargo?",
+        "a": "Yes. Winz supports reefer containers, food cargo, project cargo, and breakbulk shipments. Additional documents may apply to animal-origin products, plants, pharmaceuticals, controlled goods, or temperature-sensitive cargo. Winz identifies missing customs documents where possible."
+      }
+    ]
+  }
+}

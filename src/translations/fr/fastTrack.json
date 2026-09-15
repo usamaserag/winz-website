@@ -1,0 +1,135 @@
+{
+  "meta": {
+    "title": "Dédouanement Rapide Belgique — Expéditions Urgentes | Winz",
+    "description": "Winz prend en charge le dédouanement rapide en Belgique avec des déclarations PLDA pré-déposées, des vérifications de codes SH et l'examen des documents avant l'arrivée.",
+    "keywords": "Dédouanement Rapide"
+  },
+  "hero": {
+    "title": "Dédouanement Rapide Belgique — Expéditions Urgentes",
+    "subtitle": "Le dédouanement rapide en Belgique commence avant l'arrivée. Winz vérifie les documents, les codes SH, prépare les données et soumet les déclarations PLDA anticipées pour le fret maritime d'Anvers."
+  },
+  "intro": {
+    "p1": "Pour le fret aérien et routier, la même approche permet de préparer le MRN et de coordonner la mainlevée. Une préparation anticipée aide les importateurs à éviter les retards, les frais de stockage et les surestaries. La douane belge peut toujours inspecter une expédition quel que soit le statut de pré-dépôt. Voir <1>dédouanement Belgique</1> pour la portée complète des services de Winz.",
+    "p2": "Winz soutient les importateurs, les exportateurs et les transitaires avec son <1>service de dédouanement à l'importation en Belgique</1>, l'examen des documents avant arrivée, la vérification des codes SH et le soutien à la conformité douanière pour les expéditions urgentes.",
+    "contact": "+32 496 32 24 67 | info@winz.be"
+  },
+  "preLodgement": {
+    "title": "Comment Fonctionne le Pré-Dépôt",
+    "text": "Une déclaration en douane pré-déposée est soumise avant l'arrivée de la cargaison, ce qui permet un examen anticipé des données. Cela peut accélérer la mainlevée une fois que les marchandises sont présentées et que les exigences de la douane, du transporteur et du terminal sont remplies.",
+    "p2": "Winz prépare les dossiers d'importation d'Anvers avant l'arrivée du navire et vérifie les documents tôt pour le <1>dédouanement du fret aérien en Belgique</1> via Bruxelles et Amsterdam. Les données du fret routier sont vérifiées avant l'arrivée si applicable.",
+    "p3": "Le pré-dépôt dépend de documents précis. Des valeurs incorrectes, des descriptions peu claires ou des codes SH manquants peuvent toujours retarder le dédouanement.",
+    "outro": "Pour des conseils spécifiques au port, voir les <1>procédures de pré-dédouanement du port d'Anvers</1>."
+  },
+  "shipmentTypes": {
+    "title": "Types d'Expéditions Couverts",
+    "intro": "La préparation douanière avant l'arrivée prend en charge différents types d'expéditions via les points d'entrée belges et de l'UE à proximité.",
+    "list": [
+      "<1>Fret maritime FCL</1> — Conteneurs de 20 pi, 40 pi et 40 pi HC arrivant à Anvers, Rotterdam ou un autre port de l'UE. La préparation anticipée réduit le temps d'attente après le déchargement.",
+      "<1>Fret maritime LCL</1> — La cargaison doit être dégroupée avant que les marchandises de chaque destinataire puissent être dédouanées. Le dédouanement rapide réduit le temps de traitement de la déclaration après le dégroupage.",
+      "<1>Fret aérien</1> — Des fenêtres d'arrivée courtes exigent que les données LTA, la facture, la liste de colisage et les codes SH soient vérifiés avant l'arrivée. Particulièrement important pour les marchandises urgentes.",
+      "<1>Fret routier</1> — Les détails CMR, la facture, les numéros EORI et les codes SH doivent correspondre avant le dépôt de la déclaration."
+    ],
+    "outro": "Le dédouanement rapide nécessite des documents complets au moment du dépôt. Une expédition devient rapide lorsque les documents sont précoces, corrects et acceptés par la douane — pas simplement parce qu'ils ont été envoyés tôt."
+  },
+  "comparison": {
+    "title": "Dédouanement Rapide vs Standard",
+    "intro": "Le dédouanement rapide réduit le temps d'attente de la déclaration pour les expéditions éligibles. Il ne garantit pas la mainlevée en cas d'inspection douanière, de blocages du transporteur, de frais impayés ou de licences manquantes.",
+    "table": [
+      { "situation": "Dossier pré-déposé, documents corrects, aucune inspection", "impact": "La mainlevée peut se faire dans une courte fenêtre de temps" },
+      { "situation": "Dédouanement standard déposé à l'arrivée", "impact": "Généralement plus lent — le traitement commence après l'arrivée" },
+      { "situation": "Vérification des documents requise", "impact": "Des heures supplémentaires ou 1 jour ouvrable peuvent être nécessaires" },
+      { "situation": "Inspection physique sélectionnée", "impact": "Souvent 24–48 heures ou plus" },
+      { "situation": "Documents manquants ou incorrects", "impact": "3–5 jours ouvrables dans les cas complexes" }
+    ],
+    "postTable": "Les déclarations pré-déposées suppriment la file d'attente au stade de la déclaration mais ne suppriment pas l'autorité douanière. La douane belge peut toujours sélectionner une expédition pour inspection en fonction du risque.",
+    "costs": "Le dédouanement rapide implique des coûts de coordination plus élevés que le dédouanement standard. Pour la plupart des cargaisons urgentes, le coût de coordination est inférieur aux surestaries ou aux frais de stockage.",
+    "links": [
+      "Pour référence, voir les <1>délais de dédouanement standard en Belgique</1>.",
+      "Pour les tarifs, voir <2>coûts de dédouanement des expéditions urgentes en Belgique</2>."
+    ]
+  },
+  "whatMustBeReady": {
+    "title": "Ce Qui Doit Être Prêt",
+    "intro": "Le dédouanement rapide ne fonctionne que lorsque les données douanières sont exactes avant le dépôt. Une seule incohérence peut transformer un dossier urgent en dossier retardé.",
+    "list": [
+      "<1>Facture commerciale</1> — Doit indiquer le vendeur, l'acheteur, le destinataire, la description des marchandises, la quantité, la valeur, la devise, l'Incoterm et l'origine.",
+      "<1>Liste de colisage</1> — Doit montrer les marchandises détaillées, les poids, les dimensions et le nombre de colis.",
+      "<1>Document de transport</1> — Connaissement pour le fret maritime, Lettre de Transport Aérien, CMR pour le fret routier.",
+      "<1>Code SH ou NC</1> — Doit être confirmé avant le dépôt. Une mauvaise classification affecte les droits et les taxes.",
+      "<1>Numéro EORI</1> — Un EORI valide est requis pour traiter la déclaration."
+    ],
+    "outro": "Winz vérifie la facture, la liste de colisage, le document de transport, l'EORI et le code SH avant le dépôt.",
+    "link": "Pour les points de risque courants, voir <1>causes des retards douaniers en Belgique</1>."
+  },
+  "sections": {
+    "whoQualifies": {
+      "title": "Qui est Éligible au Dédouanement Rapide",
+      "text": "Le dédouanement rapide convient aux entreprises ayant des expéditions urgentes et des données douanières complètes avant l'arrivée. Une expédition qualifiée a un numéro EORI valide, une facture complète, une liste de colisage correspondante, un document de transport correct et un code SH confirmé. L'expédition doit également être libre de tout blocage du transporteur, frais impayés et documents de conformité manquants. Les marchandises soumises aux contrôles SPS, au MACF ou aux règles de double usage nécessitent des vérifications supplémentaires. Le dédouanement rapide est le plus efficace lorsque l'importateur envoie les documents bien avant l'arrivée, donnant à Winz le temps de corriger les erreurs."
+    },
+    "whenItFails": {
+      "title": "Quand le Dédouanement Rapide Échoue",
+      "text": "Le dédouanement rapide échoue lorsque le dossier douanier est envoyé tôt mais n'est pas correct. Les systèmes douaniers belges traitent les déclarations en fonction des données soumises. Des données erronées ou incomplètes créent des blocages, des modifications ou des risques d'inspection. Les points d'échec courants incluent les mauvais codes SH, les descriptions de produits peu claires, les valeurs de facture manquantes ou les poids non concordants. Les marchandises réglementées ont besoin de vérifications supplémentaires. Le dédouanement rapide réduit le temps d'attente évitable, mais il n'annule pas les documents manquants, les contrôles douaniers ou les exigences légales d'importation."
+    },
+    "cbam": {
+      "title": "Vérifications MACF (CBAM) Avant l'Arrivée",
+      "text": "Le MACF affecte les importateurs de marchandises couvertes entrant dans l'UE depuis des pays tiers. Dès 2026, des obligations plus strictes s'appliquent au ciment, au fer et à l'acier, à l'aluminium, aux engrais, à l'électricité et à l'hydrogène. Pour les expéditions urgentes, les données MACF doivent être examinées avant l'arrivée. Des informations MACF manquantes peuvent ralentir le traitement douanier et créer un risque de conformité. La préparation anticipée aide les importateurs à identifier l'exposition au MACF avant que l'expédition n'atteigne la Belgique. Pour plus de détails, voir <1>dépôts douaniers urgents MACF 2026</1>."
+    },
+    "aeo": {
+      "title": "OEA (AEO) et Risque d'Inspection",
+      "text": "Le statut d'Opérateur Économique Agréé (OEA) peut favoriser un dédouanement plus rapide et plus prévisible pour les entreprises éligibles, en réduisant la fréquence des contrôles. Le dédouanement rapide et le statut OEA ont des objectifs différents. Le dédouanement rapide déplace la préparation de la déclaration avant l'arrivée. L'OEA renforce la confiance de la douane. Les deux fonctionnent mieux ensemble. Le statut OEA ne garantit pas la mainlevée ; la douane belge peut toujours inspecter les expéditions OEA si des règles de risque s'appliquent. Winz aide les entreprises à comprendre comment l'OEA, la qualité des documents et l'exactitude du code SH affectent la planification douanière."
+    }
+  },
+  "howWinzCoordinates": {
+    "title": "Comment Winz Coordonne le Dédouanement",
+    "intro": "Winz coordonne le processus de dédouanement rapide depuis la réception des documents jusqu'au suivi de la mainlevée. Un spécialiste en douane examine le dossier, vérifie le code SH, soumet la déclaration et surveille le statut.",
+    "list": [
+      "<1>Fret maritime</1> — Winz se coordonne avec l'importateur, le transitaire, le terminal, le transporteur et le camionneur pour aligner la mainlevée douanière avec la préparation du terminal.",
+      "<1>Fret aérien</1> — La LTA, la facture et la liste de colisage sont vérifiées avant l'arrivée pour éviter les retards dans les courtes fenêtres de manutention aéroportuaire.",
+      "<1>Fret routier</1> — La CMR, la facture, le code SH et le numéro EORI sont vérifiés avant que le camion n'atteigne le point de douane."
+    ],
+    "outro": "Winz ne remplace pas l'autorité douanière ni le terminal. Winz aide les entreprises à préparer le dossier correctement et à le soumettre à temps."
+  },
+  "cta": {
+    "title": "Demander un Dédouanement Rapide",
+    "text": "Winz prend en charge le dédouanement rapide en Belgique grâce à l'examen anticipé des documents, la préparation des déclarations PLDA, la vérification des codes SH et le suivi de la mainlevée.",
+    "subtext": "Envoyez les documents avant l'arrivée pour réduire les retards douaniers évitables et améliorer la planification des expéditions.",
+    "button": "demander un dédouanement rapide en Belgique"
+  },
+  "faq": {
+    "title": "Questions Fréquemment Posées",
+    "questions": [
+      {
+        "q": "Le dédouanement rapide garantit-il une mainlevée le jour même ?",
+        "a": "Non. Le dédouanement rapide ne garantit pas une mainlevée le jour même, bien que cela soit possible lorsque les documents sont complets, la déclaration acceptée et que la douane ne sélectionne pas l'expédition pour inspection. La douane peut inspecter n'importe quelle expédition, ce qui peut prolonger le dédouanement de 24 à 48 heures ou plus."
+      },
+      {
+        "q": "Quelle est la différence entre le Fast Track et l'OEA ?",
+        "a": "Le dédouanement rapide est un processus temporel : la déclaration est préparée avant l'arrivée. L'OEA est une autorisation douanière qui reflète la conformité d'une entreprise et peut réduire certains contrôles physiques."
+      },
+      {
+        "q": "Que se passe-t-il si la douane sélectionne l'expédition ?",
+        "a": "L'expédition ne peut pas être libérée tant que la douane n'a pas terminé la vérification requise (examen des documents, scanner, inspection physique). Le pré-dépôt aide tout de même car la déclaration est déjà dans le système, mais le code de mainlevée est retenu."
+      },
+      {
+        "q": "À quel moment les documents doivent-ils être envoyés ?",
+        "a": "Aussi tôt que possible avant l'arrivée. Pour le fret maritime à Anvers, l'examen anticipé permet de faire des corrections avant que le navire n'atteigne le port. Winz a besoin de la facture commerciale, de la liste de colisage, du document de transport, du numéro EORI et du code SH."
+      },
+      {
+        "q": "Winz prend-il en charge Rotterdam et l'Aéroport de Bruxelles ?",
+        "a": "Oui. Winz soutient la coordination du dédouanement pour les expéditions transitant par Rotterdam, Bruxelles-National, Amsterdam Schiphol et d'autres points d'entrée belges pertinents."
+      },
+      {
+        "q": "Le dédouanement rapide peut-il être utilisé pour les exportations ?",
+        "a": "Oui. Le dédouanement à l'exportation peut également être préparé avant que la cargaison n'atteigne le point de départ, ce qui permet de réduire le temps d'attente des documents avant que la cargaison ne quitte la Belgique ou l'UE."
+      },
+      {
+        "q": "Le dédouanement rapide est-il disponible pour le fret routier ?",
+        "a": "Oui, le fret routier peut bénéficier d'une préparation douanière anticipée. Les données de déclaration, la CMR, la facture et les détails de l'importateur peuvent être vérifiés avant que le camion n'atteigne le point de douane."
+      },
+      {
+        "q": "Les cargaisons LCL peuvent-elles utiliser le dédouanement rapide ?",
+        "a": "Oui, mais les cargaisons LCL comportent une étape supplémentaire. Le conteneur consolidé doit être dégroupé avant que les marchandises ne puissent être libérées. Le dédouanement rapide réduit le temps de traitement de la déclaration après le dégroupage."
+      }
+    ]
+  }
+}

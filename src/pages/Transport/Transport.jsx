@@ -1,35 +1,39 @@
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import { Truck, Container, MapPin, Clock, CheckCircle2, ShieldCheck, Globe } from 'lucide-react';
-import usePageTitle from '../../hooks/usePageTitle';
+import { Truck, Container, MapPin, Clock, CheckCircle2, ShieldCheck, Globe, FileText } from 'lucide-react';
+import { SEOMeta } from '../../components/common/SEOMeta';
 import PageHero from '../../components/logistics/PageHero';
 import { fadeUp, fadeLeft, fadeRight } from '../../components/logistics/motionVariants';
 
-const CONTAINER_KEYS = ['twenty', 'forty', 'fortyFive'];
-const FEATURE_KEYS = ['allTypes', 'doorDelivery', 'scheduling', 'security', 'network', 'management'];
+const CONTAINER_KEYS = ['twenty', 'forty', 'fortyhc', 'reefer', 'opentop', 'flatrack'];
+const FEATURE_KEYS = ['documents', 'antwerp', 'routes', 'reefer', 'freetime', 'warehousing'];
 
 const FEATURE_ICONS = {
-  allTypes: Truck,
-  doorDelivery: MapPin,
-  scheduling: Clock,
-  security: ShieldCheck,
-  network: Globe,
-  management: Container,
+  documents: FileText,
+  antwerp: MapPin,
+  routes: Globe,
+  reefer: ShieldCheck,
+  freetime: Clock,
+  warehousing: Container,
 };
 
 const Transport = () => {
-  const { t } = useTranslation('transport');
-  usePageTitle(t('transport:meta.title'));
+  const { t, i18n } = useTranslation('transport');
 
   const benefits = t('benefits.items', { returnObjects: true });
 
   return (
     <div className="flex flex-col min-h-screen overflow-x-hidden">
+      <SEOMeta meta={{
+        title: t('meta.title'),
+        description: t('meta.description'),
+        keywords: i18n.exists('transport:meta.keywords') ? t('meta.keywords') : undefined
+      }} />
       <PageHero
         badge={t('hero.badge')}
         title={t('hero.title')}
         highlight={t('hero.highlight')}
-        description={t('hero.description')}
+        description={<span dangerouslySetInnerHTML={{ __html: t('hero.description') }} />}
       />
 
       <section className="py-24 bg-white">
@@ -40,8 +44,8 @@ const Transport = () => {
                 {t('approach.badge')}
               </span>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">{t('approach.title')}</h2>
-              <p className="text-gray-600 leading-relaxed mb-5 text-lg">{t('approach.paragraph1')}</p>
-              <p className="text-gray-600 leading-relaxed text-lg">{t('approach.paragraph2')}</p>
+              <p className="text-gray-600 leading-relaxed mb-5 text-lg" dangerouslySetInnerHTML={{ __html: t('approach.paragraph1') }} />
+              <p className="text-gray-600 leading-relaxed text-lg" dangerouslySetInnerHTML={{ __html: t('approach.paragraph2') }} />
             </motion.div>
 
             <motion.div
@@ -110,7 +114,7 @@ const Transport = () => {
                     <Icon className="w-6 h-6 text-primary-500 group-hover:text-white transition-colors duration-300" />
                   </div>
                   <h3 className="text-lg font-bold text-gray-900 mb-2">{t(`features.${key}.title`)}</h3>
-                  <p className="text-gray-500 text-sm leading-relaxed">{t(`features.${key}.desc`)}</p>
+                  <p className="text-gray-500 text-sm leading-relaxed" dangerouslySetInnerHTML={{ __html: t(`features.${key}.desc`) }} />
                 </motion.div>
               );
             })}
@@ -148,6 +152,42 @@ const Transport = () => {
                 >
                   <CheckCircle2 className="w-5 h-5 text-primary-500 flex-shrink-0 mt-0.5" />
                   <span className="text-gray-700 font-medium text-sm">{item}</span>
+                </motion.div>
+              ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-24 bg-gray-50 border-t border-gray-100">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeUp}
+            className="text-center mb-16"
+          >
+            <span className="inline-block py-1 px-4 rounded-full bg-primary-50 text-primary-600 border border-primary-200 text-sm font-semibold tracking-wide mb-4">
+              {t('faqs.badge')}
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">{t('faqs.title')}</h2>
+            <div className="w-20 h-1 bg-primary-500 mx-auto rounded-full" />
+          </motion.div>
+
+          <div className="space-y-6">
+            {Array.isArray(t('faqs.items', { returnObjects: true })) &&
+              t('faqs.items', { returnObjects: true }).map((faq, i) => (
+                <motion.div
+                  key={i}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true }}
+                  variants={fadeUp}
+                  transition={{ delay: i * 0.05 }}
+                  className="bg-white rounded-2xl p-6 md:p-8 shadow-sm border border-gray-100"
+                >
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">{faq.q}</h3>
+                  <p className="text-gray-600 leading-relaxed">{faq.a}</p>
                 </motion.div>
               ))}
           </div>

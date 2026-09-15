@@ -268,6 +268,7 @@ export default function BlogDetail() {
         ogTitle: post?.seo?.title || post.seoOgTitle || t('detail.seoOgTitle', { title }),
         ogDescription: description,
         ogImage: post.image ? resolveMediaUrl(post.image) : `${getSiteOrigin()}/favicon.png`,
+        ogImageAlt: post?.seo?.image_alt || post.image_alt || title,
         ogUrl: canonicalUrl,
         ogType: 'article',
         twitterCard: 'summary_large_image',

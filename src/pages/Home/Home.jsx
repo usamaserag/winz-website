@@ -4,7 +4,7 @@ import {
   ArrowRight, Globe, ShieldCheck, PackagePlus, PackageOpen,
   Route, Truck, Warehouse, Award, Package, Users, Plane, FileSearch, Zap, Container, CheckSquare
 } from 'lucide-react';
-import usePageTitle from '../../hooks/usePageTitle';
+import { SEOMeta } from '../../components/common/SEOMeta';
 import HomeHero from '../../components/logistics/HomeHero';
 import SectionBadge from '../../components/logistics/SectionBadge';
 import LogisticsGridPattern from '../../components/logistics/LogisticsGridPattern';
@@ -56,11 +56,15 @@ const PILLAR_ICONS = {
 };
 
 const Home = () => {
-  const { t } = useTranslation(['home', 'common']);
-  usePageTitle(t('home:meta.title'));
+  const { t, i18n } = useTranslation(['home', 'common']);
 
   return (
     <div className="flex flex-col min-h-screen overflow-x-hidden">
+      <SEOMeta meta={{
+        title: t('home:meta.title'),
+        description: t('home:meta.description'),
+        keywords: i18n.exists('home:meta.keywords') ? t('home:meta.keywords') : undefined
+      }} />
       <HomeHero />
 
       <section className="py-24 bg-slate-50">

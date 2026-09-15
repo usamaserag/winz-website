@@ -1,0 +1,225 @@
+{
+  "meta": {
+    "title": "FCL Zollabfertigung Belgien | Winz",
+    "description": "Winz übernimmt die FCL-Zollabfertigung für 20-Fuß-, 40-Fuß-, High-Cube- und Kühlcontainer (Reefer), die über Antwerpen oder Rotterdam nach Belgien eingeführt werden.",
+    "keywords": "FCL Zollabfertigung, Vollcontainer"
+  },
+  "hero": {
+    "title": "FCL Zollabfertigung Belgien",
+    "subtitle": "Die FCL-Zollabfertigung in Belgien umfasst die Anmeldung und Freigabe von Waren, die als Vollcontainer (Full Container Load) ankommen. Die Anmeldung erfasst jede Produktlinie, Klassifizierung, Wert, Ursprung und Einfuhrmaßnahmen."
+  },
+  "intro": {
+    "p1": "Siehe <1>Zollabfertigung Belgien</1> für die Winz-Zolldienstleistungen.",
+    "p2": "Die meisten belgischen Einfuhranmeldungen nutzen IDMS (ersetzt PLDA). PLDA gilt möglicherweise noch für bestimmte Ausnahmen. Winz prüft die korrekte Route vor der Einreichung.",
+    "p3": "Die Zollfreigabe berechtigt nicht automatisch zur Abholung am Terminal. Zoll, Reederei, Terminal und Spediteur kontrollieren verschiedene Phasen.",
+    "p4": "Winz koordiniert die Anmeldung, den Freigabestatus und die Abholbereitschaft mit dem Importeur, Spediteur und Transporteur. Winz verkauft keinen Containertransport."
+  },
+  "howItWorks": {
+    "title": "Wie die FCL-Abfertigung funktioniert",
+    "intro": "Die FCL-Abfertigung folgt einem strukturierten Prozess, von der Dokumentenprüfung bis zur Terminalfreigabe. Die Hauptschritte sind:",
+    "steps": [
+      "<1>Dokumentenprüfung:</1> Winz erhält Rechnung, Packliste, Konnossement (B/L), EORI-Nummer, Produktdaten und Incoterm.",
+      "<1>Prüfung:</1> Jede Produktlinie wird auf Klassifizierung, Ursprung, Zollwert und Restriktionen geprüft.",
+      "<1>Einreichung:</1> Die Einfuhranmeldung wird über das belgische Zollsystem eingereicht oder vorab angemeldet.",
+      "<1>Bewertung:</1> Der belgische Zoll führt seine Risikobewertung durch und fordert möglicherweise Dokumente oder eine physische Inspektion an.",
+      "<1>Freigabe:</1> Die Freigabe wird bestätigt, nachdem zollrechtliche, finanzielle, kaufmännische und terminalbezogene Bedingungen erfüllt sind."
+    ],
+    "outro": "Eine akzeptierte Anmeldung erhält eine MRN (Movement Reference Number). Eine Vorabanmeldung (Pre-Lodgement) kann die Bearbeitung nach Ankunft reduzieren, hebt jedoch keine Zollkontrollen auf."
+  },
+  "coverage": {
+    "title": "Umfang der FCL-Anmeldung",
+    "intro": "Eine FCL-Anmeldung kann mehrere Warenpositionen derselben Sendung enthalten. Jede Position erfordert eine eigene Klassifizierung, Beschreibung und einen eigenen Wert.",
+    "p2": "Produkte wie Textilien oder Maschinen können nicht dieselbe Klassifizierung teilen, nur weil sie im selben Container reisen. Ein Container mit 40 Produktlinien kann 40 Warenpositionen erfordern.",
+    "subtitle": "Ein Container kann mehrere Anmeldungen erfordern, wenn er Folgendes enthält:",
+    "list": [
+      "Verschiedene Importeure oder Empfänger",
+      "Getrennte Zollverfahren oder Sendungen",
+      "Kontrollierte und nicht kontrollierte Waren",
+      "Verschiedene Vertreter",
+      "Separate Genehmigungen"
+    ],
+    "outro": "Winz prüft die Sendungsstruktur, um sicherzustellen, dass die Anmeldung den korrekten Importeur widerspiegelt. Der Container bleibt normalerweise versiegelt, obwohl der Zoll eine Inspektion verlangen kann."
+  },
+  "importerResp": {
+    "title": "Pflichten des Importeurs",
+    "text": "Der Importeur muss genaue Angaben zu den Waren machen (Zusammensetzung, Verwendung, Wert, Ursprung). Unvollständige Beschreibungen können zu falschen Klassifizierungen führen.",
+    "p2": "Der Importeur benötigt in der Regel eine gültige EU-EORI-Nummer. Die Zollvertretung kann wie folgt erfolgen:",
+    "list": [
+      "<1>Direkt:</1> Der Vertreter handelt im Namen und für Rechnung des Importeurs.",
+      "<1>Indirekt:</1> Der Vertreter handelt im eigenen Namen für Rechnung des Importeurs (gesamtschuldnerische Haftung)."
+    ],
+    "outro": "Winz bestätigt den Importeur, EORI-Details, Zollverfahren und Vertretungsvereinbarung vor der Einreichung."
+  },
+  "documents": {
+    "title": "Dokumente und Sendungsdaten",
+    "intro": "Dokumente müssen vor der Einreichung vollständig sein, da Abweichungen die Annahme verzögern.",
+    "table": [
+      { "doc": "Handelsrechnung", "purpose": "Bestätigt Parteien, Produkte, Mengen und Transaktionspreis" },
+      { "doc": "Packliste", "purpose": "Bestätigt Packstücke, Gewichte, Abmessungen und Inhalt" },
+      { "doc": "Konnossement (B/L)", "purpose": "Identifiziert Container, Frachtführer, Empfänger und Route" },
+      { "doc": "Produktklassifizierung", "purpose": "Bestimmt Zölle, Beschränkungen, Lizenzen und Maßnahmen" },
+      { "doc": "Ursprung", "purpose": "Unterstützt präferenzielle oder nicht-präferenzielle Behandlung" },
+      { "doc": "EORI-Nummer", "purpose": "Identifiziert den Importeur oder Anmelder" },
+      { "doc": "Incoterm", "purpose": "Hilft bei Zollwertanpassungen und Zuständigkeiten" },
+      { "doc": "Ankunftsdaten", "purpose": "Bestätigt Schiff, Terminal, Container und erwartete Ankunft" }
+    ],
+    "post": [
+      "Die Rechnung muss jedes Produkt auflisten. Fracht und Versicherung können den Zollwert beeinflussen.",
+      "Freigaben durch Reederei und Zoll sind separat. Siehe <1>Konnossement FCL Seefracht</1>.",
+      "Präferenzursprung kann eine EUR.1 oder andere anerkannte Nachweise erfordern.",
+      "Kontrollierte Waren erfordern möglicherweise Lizenzen oder Gesundheitsdokumente."
+    ]
+  },
+  "classification": {
+    "title": "Produktklassifizierung",
+    "intro": "Jede Ware erfordert eine genaue Zollklassifizierung (8-stellige KN-Codes). TARIC fügt weitere Ziffern für EU-Einfuhrmaßnahmen hinzu.",
+    "subtitle": "TARIC kann Folgendes identifizieren:",
+    "list": [
+      "Standard-Einfuhrzoll",
+      "Präferenzzoll",
+      "Antidumpingzoll",
+      "Zollkontingente",
+      "Zollaussetzungen",
+      "Einfuhrlizenzen",
+      "Überwachungsmaßnahmen",
+      "Produktbeschränkungen"
+    ],
+    "post": "Winz unterstützt die HS-Code-Klassifizierung mithilfe technischer Produktinformationen. Eine vage Beschreibung ist unzureichend.",
+    "bti": "Importeure können auch Verbindliche Zolltarifauskünfte (vZTA) beantragen, die EU-weit rechtsbindend sind."
+  },
+  "release": {
+    "title": "Antwerpen Container-Freigabe",
+    "intro": "Die Terminalfreigabe in Antwerpen umfasst mehr als nur die Zollgenehmigung. Mehrere Bedingungen müssen erfüllt sein.",
+    "table": [
+      { "condition": "Zollfreigabe", "confirms": "Zoll hat Waren für das angemeldete Verfahren freigegeben" },
+      { "condition": "Abgaben / Garantie", "confirms": "Zölle und Steuern sind bezahlt, gestundet oder gedeckt" },
+      { "condition": "Kaufmännische Freigabe", "confirms": "Die Reederei hat den Container freigegeben" },
+      { "condition": "Terminal-Verfügbarkeit", "confirms": "Der Container ist entladen und verfügbar" },
+      { "condition": "Abholrecht (Pick up)", "confirms": "Der autorisierte Akteur besitzt das digitale Abholrecht" },
+      { "condition": "Inspektionsstatus", "confirms": "Es stehen keine Zollkontrollen mehr aus" }
+    ],
+    "post1": "Ein positiver Zollstatus allein bestätigt nicht, dass die Terminalbedingungen erfüllt sind. Das Inbound Release Platform (IRP) unterstützt den Datenaustausch in belgischen Seehäfen.",
+    "post2": "Certified Pick up kontrolliert die digitalen Abholrechte am Terminal Antwerpen. Nach der Zollfreigabe bringt der <1>Straßentransport ab Antwerpen</1> den Container ans Ziel.",
+    "blockedTitle": "Ein Container kann nach der Zollfreigabe blockiert bleiben, wenn:",
+    "blockedList": [
+      "Die Reederei keine kaufmännische Freigabe erteilt hat",
+      "Terminalgebühren unbezahlt bleiben",
+      "Der Container noch nicht entladen ist",
+      "Abholrechte unvollständig sind",
+      "Eine Zollinspektion offen bleibt",
+      "Das Terminal eine andere operationelle Blockade verhängt hat"
+    ],
+    "outro": "Winz überwacht den Zollstatus. Für den vollständigen Ablauf siehe <1>Containerfreigabe Zoll Belgien</1>."
+  },
+  "dutyVAT": {
+    "title": "Einfuhrzoll und Mehrwertsteuer",
+    "intro": "Der Einfuhrzoll wird pro Artikel berechnet und nicht pauschal auf den Container. Der Standard-Mehrwertsteuersatz in Belgien beträgt 21%.",
+    "table": [
+      { "element": "Zollwert", "basis": "Transaktionswert mit erforderlichen Zuschlägen (z. B. Fracht)" },
+      { "element": "Einfuhrzoll", "basis": "TARIC-Satz angewendet auf den Zollwert" },
+      { "element": "Zusätzliche Zölle", "basis": "Antidumping oder andere anwendbare Maßnahmen" },
+      { "element": "Einfuhrumsatzsteuer", "basis": "MwSt-Satz angewendet auf die Bemessungsgrundlage" }
+    ],
+    "outro": "Die MwSt-Bemessungsgrundlage kann Zollwert, Zölle und Nebenkosten bis zum Bestimmungsort umfassen. Dieses Beispiel erklärt nur die Methode.",
+    "link": "Die Berechnungsmethode wird im Leitfaden für <1>Einfuhrzölle bei FCL-Sendungen</1> erläutert."
+  },
+  "incoterms": {
+    "title": "Incoterms und Verantwortung",
+    "text": "Incoterms definieren Liefer-, Kosten- und Risikoverantwortlichkeiten zwischen Käufer und Verkäufer.",
+    "details": [
+      "<1>Unter CIF</1> arrangiert der Verkäufer Seefracht und Versicherung. Der Käufer verwaltet meist die Einfuhr.",
+      "<1>Unter FOB</1> liefert der Verkäufer an Bord. Der Käufer kontrolliert den Haupttransport und die Einfuhr.",
+      "<1>Unter EXW</1> trägt der Käufer die Verantwortung ab dem Gelände des Verkäufers.",
+      "<1>Unter DDP</1> akzeptiert der Verkäufer umfassende Liefer- und Einfuhrpflichten."
+    ],
+    "outro": "Winz prüft den Incoterm, da dieser den Zollwert und die Dokumentenverantwortung beeinflusst."
+  },
+  "sections": {
+    "reefer": {
+      "title": "Reefer FCL-Anforderungen",
+      "text": "Kühlcontainer (Reefer) folgen der gleichen Anmeldestruktur wie trockene FCL-Container. Zusätzliche Kontrollen hängen von den Waren ab.",
+      "list": [
+        "TRACES NT Voranmeldung",
+        "Gemeinsames Gesundheitseingangsdokument (GGED)",
+        "Veterinärzertifikate",
+        "Pflanzengesundheitszeugnisse",
+        "Grenzkontrollstellen-Prüfungen",
+        "Temperaturaufzeichnungen",
+        "Einfuhrlizenzen",
+        "Laborproben"
+      ],
+      "outro": "Die Zollfreigabe kann blockiert bleiben, während eine andere Behörde ihre Kontrollen (SPS) abschließt. Unternehmen können sich vorab über die <1>Zollverfahren für Reefer-Vollcontainer in Belgien</1> informieren."
+    },
+    "rotterdam": {
+      "title": "Rotterdam nach Belgien",
+      "text": "Ein FCL-Container, der in Rotterdam ankommt, kann unter den richtigen Zollbestimmungen an ein belgisches Ziel gebracht werden. Er kann in den Niederlanden eingeführt werden oder im T1-Versandverfahren weiterreisen.",
+      "subtitle": "Die korrekte Route hängt ab von:",
+      "list": [
+        "Niederlassung des Importeurs",
+        "MwSt-Registrierung",
+        "EORI-Details",
+        "Zollvertretung",
+        "Regelungen zum Zollaufschub",
+        "Versandgarantien",
+        "Lieferort",
+        "Geplantes Zollverfahren"
+      ],
+      "outro": "Winz unterstützt die Zollplanung für Container über Rotterdam, bietet jedoch keinen Straßentransport von Rotterdam an."
+    },
+    "howWinzSupports": {
+      "title": "Wie Winz FCL-Importe unterstützt",
+      "text": "Ein Winz-Zollspezialist verwaltet die Akte von der Dokumentenannahme bis zur Freigabebestätigung. Winz übernimmt die Zollabfertigung für:",
+      "list": [
+        "20-Fuß-Trockencontainer",
+        "40-Fuß-Trockencontainer",
+        "40-Fuß-High-Cube-Container",
+        "20-Fuß-Reefer-Container",
+        "40-Fuß-Reefer-Container"
+      ],
+      "outro": "Die Unterstützung in Antwerpen umfasst die Anmeldung und Überwachung. Die Unterstützung in Rotterdam umfasst die Zollplanung und T1-Versandkoordination nach Belgien."
+    }
+  },
+  "cta": {
+    "title": "FCL Zollabfertigung anfordern",
+    "text": "Winz unterstützt die Zollabfertigung für Container, die über Antwerpen nach Belgien gelangen oder aus Rotterdam unter einem Zollverfahren weitergeleitet werden.",
+    "subtext": "Der Service umfasst Dokumentenprüfung, Klassifizierung, Zollwertermittlung, Anmeldung und Freigabekoordination.",
+    "button": "Angebot für FCL-Zollabfertigung anfordern"
+  },
+  "faq": {
+    "title": "Häufig Gestellte Fragen",
+    "questions": [
+      {
+        "q": "Welches System wickelt belgische Importe ab?",
+        "a": "Die meisten belgischen Einfuhranmeldungen werden über IDMS eingereicht (ersetzt PLDA). PN/TS verarbeitet Präsentations- und Verwahrungsmitteilungen."
+      },
+      {
+        "q": "Kann ein Container mehrere Anmeldungen erfordern?",
+        "a": "Ja. Ein FCL-Container kann mehrere Anmeldungen erfordern, wenn er Waren für verschiedene Importeure oder Zollverfahren enthält."
+      },
+      {
+        "q": "Kann die Abfertigung vor Ankunft beginnen?",
+        "a": "Eine FCL-Anmeldung kann oft vor Ankunft des Schiffes vorab eingereicht werden (Pre-Lodgement). Die Freigabe hängt von der Ankunft ab."
+      },
+      {
+        "q": "Was verzögert den Gate-out in Antwerpen?",
+        "a": "Der Gate-out kann durch Zollkontrollen, fehlende kaufmännische Freigabe, unbezahlte Terminalgebühren oder unvollständige Certified Pick up (CPu) Rechte verzögert werden."
+      },
+      {
+        "q": "Wann beginnt die freie Zeit (free time) des Containers?",
+        "a": "Die freie Zeit richtet sich nach Reederei- und Terminalverträgen. Eine frühzeitige Zollvorbereitung reduziert Verzögerungen, schützt aber nicht vor Liegegeldern."
+      },
+      {
+        "q": "Was passiert bei einer Inspektion?",
+        "a": "Der Container bleibt blockiert, bis der Zoll die erforderliche Kontrolle abschließt (Dokumentenprüfung, Scan oder physische Inspektion)."
+      },
+      {
+        "q": "Ist FCL schneller als LCL?",
+        "a": "FCL kann die für LCL-Sendungen erforderliche Dekonsolidierungsphase vermeiden. Die tatsächliche Zollzeit hängt von Dokumentenqualität und Terminalkapazität ab."
+      },
+      {
+        "q": "Was wird für ein Angebot benötigt?",
+        "a": "Winz benötigt die Handelsrechnung, Packliste, Konnossement-Details, EORI-Nummer, HS-Code und das geplante Zollverfahren."
+      }
+    ]
+  }
+}

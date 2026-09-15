@@ -1,0 +1,135 @@
+{
+  "meta": {
+    "title": "Snelle Douaneafhandeling België — Spoedzendingen | Winz",
+    "description": "Winz ondersteunt snelle douaneafhandeling in België met vooraf ingediende PLDA-aangiften, HS-codecontroles, vrijgavecoördinatie en documentcontrole vóór aankomst.",
+    "keywords": "Snelle Douaneafhandeling, Fast Track"
+  },
+  "hero": {
+    "title": "Snelle Douaneafhandeling België — Spoedzendingen",
+    "subtitle": "Snelle douaneafhandeling (Fast Track) in België begint al voor aankomst. Winz controleert documenten, verifieert HS-codes, bereidt douanegegevens voor en dient in aanmerking komende PLDA-aangiften vooraf in voor zeevracht in Antwerpen."
+  },
+  "intro": {
+    "p1": "Voor lucht- en wegvervoer ondersteunt dezelfde aanpak MRN-gereedheid en vrijgavecoördinatie. Vroege voorbereiding helpt importeurs vertragingen, gemiste slots, opslagkosten en overliggelden (demurrage) te voorkomen. De Belgische douane kan elke zending nog steeds inspecteren, ongeacht of de aangifte vooraf is ingediend. Zie <1>douaneafhandeling België</1> voor de volledige reikwijdte van Winz-diensten.",
+    "p2": "Winz ondersteunt importeurs, exporteurs, expediteurs en logistieke bedrijven met <1>België importafhandelingsservice</1>, documentcontroles vóór aankomst, coördinatie van vrijgave, HS-codeverificatie en douanenalevingsondersteuning voor spoedzendingen.",
+    "contact": "+32 496 32 24 67 | info@winz.be"
+  },
+  "preLodgement": {
+    "title": "Hoe Vooraf Indienen (Pre-Lodgement) Werkt",
+    "text": "Een vooraf ingediende douaneaangifte wordt verstuurd voordat de lading arriveert, waardoor gegevens vooraf beoordeeld kunnen worden. Dit kan de vrijgave versnellen zodra goederen worden aangeboden en aan douane-, vervoerders- en terminalvereisten is voldaan.",
+    "p2": "Winz bereidt Antwerpse importdossiers voor vóór aankomst van het schip en controleert documenten vroegtijdig voor <1>luchtvrachtafhandeling België</1> via de luchthavens van Brussel en Amsterdam. Wegtransportgegevens worden gecontroleerd voor aankomst waar van toepassing.",
+    "p3": "Vooraf indienen is afhankelijk van nauwkeurige documenten. Onjuiste waarden, onduidelijke beschrijvingen of ontbrekende HS-codes kunnen de afhandeling alsnog vertragen.",
+    "outro": "Voor specifieke havenrichtlijnen, zie <1>Antwerpen haven pre-clearance procedures</1>."
+  },
+  "shipmentTypes": {
+    "title": "Gedekte Zendingstypes",
+    "intro": "Douanevoorbereiding vóór aankomst ondersteunt verschillende zendingstypes die via Belgische en nabijgelegen EU-invoerpunt worden afgehandeld.",
+    "list": [
+      "<1>FCL zeevracht</1> — 20 ft, 40 ft, en 40 ft HC containers die aankomen in Antwerpen, Rotterdam of een andere EU-haven. Vroege voorbereiding van de aangifte verkort de wachttijd na het lossen van het schip.",
+      "<1>LCL zeevracht</1> — Lading moet worden gedesolideerd voordat individuele goederen kunnen worden vrijgegeven. Fast-track vermindert de verwerkingstijd na consolidatie, maar kan de deconsolidatiestap zelf niet verwijderen.",
+      "<1>Luchtvracht</1> — Korte aankomstramen vereisen dat luchtvrachtbriefgegevens, factuurdetails, paklijsten en HS-codes vóór aankomst worden gecontroleerd. Vooral belangrijk voor spoedeisende goederen.",
+      "<1>Wegtransport</1> — CMR-details, factuurgegevens, EORI-nummers en HS-codes moeten overeenkomen voordat de aangifte wordt ingediend."
+    ],
+    "outro": "Fast-track afhandeling vereist complete documenten op het moment van indiening. Een zending wordt 'snel' wanneer documenten vroeg, correct en geaccepteerd zijn door de douane — niet simpelweg omdat ze vroeg zijn verzonden."
+  },
+  "comparison": {
+    "title": "Fast Track vs Standaard Afhandeling",
+    "intro": "Snelle douaneafhandeling verkort de wachttijd voor in aanmerking komende zendingen. Het garandeert geen vrijgave wanneer er sprake is van douane-inspectie, blokkades van vervoerders, onbetaalde kosten of terminalproblemen.",
+    "table": [
+      { "situation": "Vooraf ingediend dossier, correcte documenten, geen inspectie", "impact": "Vrijgave kan binnen een kort terminalvenster plaatsvinden" },
+      { "situation": "Standaard afhandeling ingediend bij aankomst", "impact": "Meestal trager — verwerking start na aankomst" },
+      { "situation": "Documentverificatie vereist", "impact": "Extra uren of 1 werkdag kunnen nodig zijn" },
+      { "situation": "Fysieke inspectie geselecteerd", "impact": "Vaak 24–48 uur of langer" },
+      { "situation": "Ontbrekende of onjuiste documenten", "impact": "3–5 werkdagen in complexe gevallen" }
+    ],
+    "postTable": "Vooraf ingediende aangiften elimineren de verwerkingswachtrij in de aangiftefase, maar elimineren niet het douanegezag. De douane kan nog steeds elke zending selecteren voor inspectie.",
+    "costs": "Fast track brengt een hogere coördinatievereiste met zich mee dan standaardafhandeling. Voor de meeste urgente ladingen is de coördinatiekost lager dan overliggelden of opslagkosten.",
+    "links": [
+      "Voor tijdslijnreferentie, zie <1>standaard douaneafhandelingstijden België</1>.",
+      "Voor prijzen, zie <2>kosten voor spoedafhandeling België</2>."
+    ]
+  },
+  "whatMustBeReady": {
+    "title": "Wat Gereed Moet Zijn",
+    "intro": "Snelle afhandeling werkt alleen wanneer douanegegevens vóór indiening accuraat zijn. Één afwijking kan een spoeddossier veranderen in een vertraagd dossier.",
+    "list": [
+      "<1>Commerciële factuur</1> — Moet verkoper, koper, geadresseerde, goederenbeschrijving, hoeveelheid, waarde, munteenheid, Incoterm en oorsprong tonen.",
+      "<1>Paklijst</1> — Moet gespecificeerde goederen, gewichten, afmetingen en pakketaantal tonen.",
+      "<1>Vervoersdocument</1> — Bill of Lading voor zeevracht, Air Waybill voor luchtvracht, CMR voor wegtransport.",
+      "<1>HS- of GN-code</1> — Moet vóór indiening worden bevestigd. Verkeerde classificatie beïnvloedt de rechten.",
+      "<1>EORI-nummer</1> — Een geldig EORI-nummer is vereist. Zonder dit nummer kan de aangifte niet correct verwerkt worden."
+    ],
+    "outro": "Winz kruiscontroleert de factuur, paklijst, transportdocument, EORI-nummer en HS-code voor indiening.",
+    "link": "Voor veelvoorkomende risicopunten, zie <1>oorzaken van douanevertragingen België</1>."
+  },
+  "sections": {
+    "whoQualifies": {
+      "title": "Wie Kwalificeert voor Fast Track",
+      "text": "Snelle afhandeling past bij bedrijven met spoedzendingen en volledige douanegegevens vóór aankomst. Het werkt het beste voor importeurs, exporteurs, expediteurs en logistieke bedrijven die nauwkeurige documenten vroegtijdig kunnen verzenden. Een kwalificerende zending heeft een geldig EORI-nummer, volledige commerciële factuur, bijpassende paklijst, correcte vrachtbrief of CMR, en een bevestigde HS- of GN-code. De zending moet ook vrij zijn van vervoerdersblokkades, onbetaalde vrachtkosten en ontbrekende nalevingsdocumenten. Goederen die onderworpen zijn aan SPS-controles, CBAM, dual-use of oorsprongseisen hebben extra controles nodig."
+    },
+    "whenItFails": {
+      "title": "Wanneer Fast Track Faalt",
+      "text": "Snelle afhandeling mislukt wanneer het douanedossier vroeg is maar niet correct. Belgische douanesystemen verwerken aangiften op basis van de ingediende gegevens. Verkeerde of onvolledige gegevens creëren blokkades, wijzigingen of inspectierisico's. Veelvoorkomende faalpunten zijn onder meer verkeerde HS-codes, onduidelijke productbeschrijvingen, ontbrekende factuurwaarden, inconsistente namen van geadresseerden en niet-overeenkomende gewichten. LCL-lading kan ook vertraging oplopen wanneer de geconsolideerde container niet is gesplitst op het CFS."
+    },
+    "cbam": {
+      "title": "CBAM Pre-Arrival Controles",
+      "text": "CBAM treft importeurs van gedekte goederen die de EU binnenkomen vanuit niet-EU-landen. Vanaf 2026 gelden strengere verplichtingen voor cement, ijzer en staal, aluminium, meststoffen, elektriciteit en waterstof. Voor spoedzendingen moeten CBAM-gegevens vóór aankomst worden gecontroleerd. Ontbrekende CBAM-informatie kan de douaneverwerking vertragen en nalevingsrisico's opleveren. Voorbereiding vóór aankomst helpt importeurs om de CBAM-blootstelling te identificeren voordat de zending België bereikt. Voor meer details, zie <1>CBAM spoeddouane-indieningen 2026</1>."
+    },
+    "aeo": {
+      "title": "AEO en Inspectierisico",
+      "text": "De AEO-status kan zorgen voor snellere en meer voorspelbare douaneafhandeling voor in aanmerking komende bedrijven. Snelle afhandeling (Fast Track) en de AEO-status dienen verschillende doelen. Fast-track verplaatst de voorbereiding van de aangifte naar een moment vóór aankomst. AEO bouwt vertrouwen op en kan de kans op controles verkleinen. De twee werken het best samen. AEO garandeert geen vrijgave. De Belgische douane kan AEO-zendingen nog steeds inspecteren. Winz helpt bedrijven te begrijpen hoe AEO, documentkwaliteit en HS-code nauwkeurigheid de afhandeling beïnvloeden."
+    }
+  },
+  "howWinzCoordinates": {
+    "title": "Hoe Winz Afhandeling Coördineert",
+    "intro": "Winz coördineert het snelle douaneproces vanaf de documentintake tot de opvolging van de vrijgave. Eén douanespecialist beoordeelt het dossier, verifieert de HS-code, dient de douaneaanvraag in en bewaakt de vrijgavestatus.",
+    "list": [
+      "<1>Zeevracht</1> — Winz coördineert met de importeur, expediteur, terminal, vervoerder en chauffeur om douanevrijgave af te stemmen op terminalgereedheid.",
+      "<1>Luchtvracht</1> — AWB, factuur, paklijst en goederendetails worden voor aankomst gecontroleerd om vertragingen in korte afhandelingsvensters te voorkomen.",
+      "<1>Wegtransport</1> — CMR, factuur, HS-code en EORI-nummer worden geverifieerd voordat de vrachtwagen het douanepunt bereikt."
+    ],
+    "outro": "Winz vervangt geen douaneautoriteit of terminalcontrole, maar helpt het dossier correct en op tijd in te dienen."
+  },
+  "cta": {
+    "title": "Vraag Snelle Douaneafhandeling Aan",
+    "text": "Winz ondersteunt snelle douaneafhandeling in België via vroege documentcontrole, PLDA-aangiftevoorbereiding, HS-codeverificatie en coördinatie met de betrokken partijen.",
+    "subtext": "Stuur de documenten vóór aankomst door om vermijdbare douanevertragingen te verminderen en de vrijgaveplanning te verbeteren.",
+    "button": "vraag snelle douaneafhandeling België aan"
+  },
+  "faq": {
+    "title": "Veelgestelde Vragen",
+    "questions": [
+      {
+        "q": "Garandeert een snelle douaneafhandeling (Fast Track) vrijgave op dezelfde dag?",
+        "a": "Snelle douaneafhandeling garandeert geen vrijgave op dezelfde dag. Vrijgave op dezelfde dag is mogelijk wanneer documenten compleet zijn, de aangifte is geaccepteerd, de terminalgegevens duidelijk zijn en de douane de zending niet selecteert voor inspectie. Inspectie kan de afhandeling met 24-48 uur of langer verlengen."
+      },
+      {
+        "q": "Wat is het verschil tussen Fast Track en AEO?",
+        "a": "Snelle afhandeling is een tijdsproces waarbij de douaneaangifte wordt voorbereid en ingediend voordat de zending arriveert. AEO is een douanevergunning die de nalevingsstatus van een bedrijf weerspiegelt en de frequentie van fysieke controles kan verminderen."
+      },
+      {
+        "q": "Wat gebeurt er als de douane de zending selecteert voor controle?",
+        "a": "De zending kan niet worden vrijgegeven totdat de douane de vereiste controle voltooit (documentcontrole, scanner of fysieke inspectie). Vooraf indienen helpt nog steeds, maar de vrijgavecode wordt ingehouden totdat de controle is afgerond."
+      },
+      {
+        "q": "Hoe vroeg moeten documenten worden verstuurd?",
+        "a": "Documenten moeten zo vroeg mogelijk vóór aankomst worden verzonden. Voor zeevracht in Antwerpen is een vroege documentcontrole nuttig omdat correcties kunnen worden aangebracht voordat het schip de haven bereikt."
+      },
+      {
+        "q": "Ondersteunt Winz de luchthavens van Rotterdam en Brussel?",
+        "a": "Ja. Winz ondersteunt de douanecoördinatie voor zendingen via Rotterdam, Brussels Airport, Amsterdam Airport en relevante Belgische invoerpunt."
+      },
+      {
+        "q": "Kan Fast Track ook gebruikt worden voor export?",
+        "a": "Ja. De exportafhandeling kan ook worden voorbereid voordat de lading het vertrekpunt bereikt. Een vroege exportindiening helpt de wachttijd voor documenten te verkorten."
+      },
+      {
+        "q": "Is Fast Track beschikbaar voor wegvervoer?",
+        "a": "Ja, wegvervoer kan profiteren van vroege douanevoorbereiding. Aangiftegegevens, CMR, factuur en importeurgegevens kunnen worden gecontroleerd voordat de vrachtwagen het douanepunt bereikt."
+      },
+      {
+        "q": "Kan LCL-vracht gebruikmaken van snelle douaneafhandeling?",
+        "a": "Ja, maar LCL-vracht heeft een extra stap. De geconsolideerde container moet worden gesplitst voordat de goederen van de individuele geadresseerde kunnen worden vrijgegeven. Fast-track vermindert de verwerkingstijd van de aangifte na deconsolidatie."
+      }
+    ]
+  }
+}

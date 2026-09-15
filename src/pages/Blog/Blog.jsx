@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Search, X, ArrowRight, Tag } from 'lucide-react';
 import { communityService } from '../../services/communityService';
 import { SEOMeta } from '../../components/common/SEOMeta';
-import usePageTitle from '../../hooks/usePageTitle';
+// SEOMeta might already be imported, let's just add it if missing. Oh I'll just check later.
 import PageHero from '../../components/logistics/PageHero';
 import SkeletonCard from '../../components/common/SkeletonCard';
 import EmptyState from '../../components/common/EmptyState';
@@ -39,7 +39,6 @@ const API_BASE_URL = (import.meta.env.VITE_API_BASE_URL || '').replace(/\/$/, ''
 
 export default function Blog() {
   const { t, i18n } = useTranslation('blog');
-  usePageTitle(t('blog:meta.title'));
   const locale = useLocale();
   const [searchTerm, setSearchTerm] = useState('');
 
@@ -80,12 +79,9 @@ export default function Blog() {
   return (
     <div className="flex flex-col min-h-screen bg-gray-50/50">
       <SEOMeta meta={{
-        title: t('meta.title'),
-        description: t('seo.description'),
-        keywords: 'customs clearance blog, import logistics europe, container transport belgium, fiscal representation netherlands',
-        canonical: `${getSiteOrigin()}/${locale}/blog`,
-        ogTitle: t('seo.ogTitle'),
-        ogDescription: t('seo.ogDescription'),
+        title: t('blog:meta.title'),
+        description: t('blog:meta.description'),
+        keywords: i18n.exists('blog:meta.keywords') ? t('blog:meta.keywords') : undefined,
         ogImage: `${getSiteOrigin()}/favicon.png`,
         ogUrl: `${getSiteOrigin()}/${locale}/blog`,
         ogType: 'website',

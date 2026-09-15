@@ -1,0 +1,260 @@
+{
+  "meta": {
+    "title": "Importing from Brazil to Belgium: Customs Guide",
+    "description": "Importing from Brazil to Belgium requires origin proof, IDMS filing, VAT planning, CBAM checks, and EUDR preparation for covered goods."
+  },
+  "hero": {
+    "title": "Importing from Brazil to Belgium",
+    "subtitle": "Importing from Brazil to Belgium requires customs clearance, accurate HS codes, valid origin evidence, correct customs valuation, import VAT treatment, and product-specific compliance checks."
+  },
+  "intro": {
+    "p1": "The EU-Mercosur Interim Trade Agreement has applied provisionally since 1 May 2026. Qualifying Brazilian goods can receive preferential tariffs when the origin rules and documentary conditions are met.",
+    "p2": "The agreement does not remove customs formalities. Belgian importers still need an import declaration and any required environmental, food-safety, veterinary, plant-health, or product-compliance records.",
+    "p3": "This guide explains the process for Brazilian goods entering Belgium, including shipments arriving through the Port of Antwerp-Bruges. It is written for importers, exporters, freight forwarders, and logistics companies."
+  },
+  "requirements": {
+    "title": "Belgian Import Requirements",
+    "p1": "Brazilian goods remain non-Union goods until customs releases them for free circulation. The Belgian importer normally needs an EORI number and a valid basis for acting as importer and declarant.",
+    "listTitle": "3 checks should be completed before shipment leaves Brazil:",
+    "list": [
+      "Confirm the full CN or TARIC code, not only the four-digit HS heading.",
+      "Confirm whether goods qualify for EU-Mercosur preferential origin.",
+      "Confirm product certificates, licences, or reference numbers."
+    ],
+    "p2": "The representation model should be agreed before shipment. Under direct representation, the broker acts in the importer's name. Under indirect representation, the broker can become jointly liable for the customs debt. DDP does not create an EORI number, VAT registration, or customs representation.",
+    "p3": "Winz handles <1>Brazil to Belgium customs clearance process</1> including customs declarations, documentation, classification, and compliance review before goods arrive at Antwerp."
+  },
+  "mercosur": {
+    "title": "Mercosur Tariff Benefits",
+    "p1": "EU-Mercosur tariff benefits apply only to originating goods meeting product-specific rules. The agreement can create savings for roasted coffee, orange juice, leather footwear, and certain agricultural goods. Some Brazilian exports — iron ore, green coffee, soybeans, soy meal, and chemical wood pulp — already enter at zero normal duty, so preference creates no additional saving.",
+    "p2": "Sensitive agricultural goods can remain subject to tariff-rate quotas, phased reductions, seasonal rules, or specific duties. Beef and poultry need the correct tariff line, quota conditions, origin proof, and food-safety approval.",
+    "sub1": "Preference and Contract Risks",
+    "p3": "The agreement is applied provisionally. Supply contracts should state the price with preferential duty, the price with normal duty, and responsibility for missing origin evidence. Belgian customs can review the claim after release and request further evidence."
+  },
+  "originProof": {
+    "title": "Mercosur Origin Proof",
+    "p1": "Preferential duty requires origin evidence accepted under the EU-Mercosur origin protocol, connected clearly to the goods and commercial document. The applicable format depends on exporter status, transitional provisions, consignment value, and issue date. The evidence must match the invoice, goods description, quantity, tariff classification, and exporter details. Brazilian exporters should provide the document before arrival.",
+    "p2": "Importers calculating landed costs should review <1>FOB shipping terms Brazil Belgium imports</1> for a detailed explanation of how FOB valuation affects duty calculation."
+  },
+  "dutyVat": {
+    "title": "Duty and VAT Treatment",
+    "table": [
+      {
+        "goods": "Iron ore",
+        "heading": "2601",
+        "normal": "Commonly 0%",
+        "impact": "Usually no saving",
+        "issue": "CBAM generally excludes iron ore"
+      },
+      {
+        "goods": "Soybeans",
+        "heading": "1201",
+        "normal": "Commonly 0%",
+        "impact": "Usually no saving",
+        "issue": "EUDR preparation"
+      },
+      {
+        "goods": "Soy meal",
+        "heading": "2304",
+        "normal": "Commonly 0%",
+        "impact": "Usually no saving",
+        "issue": "EUDR traceability"
+      },
+      {
+        "goods": "Green coffee",
+        "heading": "0901.11",
+        "normal": "Commonly 0%",
+        "impact": "Usually no saving",
+        "issue": "EUDR preparation"
+      },
+      {
+        "goods": "Roasted coffee",
+        "heading": "0901.21",
+        "normal": "Often 7.5%",
+        "impact": "Preference may reduce duty",
+        "issue": "Origin proof"
+      },
+      {
+        "goods": "Beef",
+        "heading": "0201 or 0202",
+        "normal": "Mixed duties",
+        "impact": "Quota treatment may apply",
+        "issue": "Food-safety approval"
+      },
+      {
+        "goods": "Orange juice",
+        "heading": "2009",
+        "normal": "Varies",
+        "impact": "Phased reductions may apply",
+        "issue": "Full TARIC code"
+      },
+      {
+        "goods": "Leather footwear",
+        "heading": "6403",
+        "normal": "Often around 8%",
+        "impact": "Phased reductions may apply",
+        "issue": "Classification and origin"
+      }
+    ],
+    "p1": "Belgian import VAT is 21% as standard, calculated on customs value, customs duty, and specified incidental costs. Importers holding ET 14.000 authorisation can account for import VAT through the periodic VAT return. A Brazilian business without EU establishment may need a Belgian fiscal representative."
+  },
+  "customsValue": {
+    "title": "Customs Value and Incoterms",
+    "p1": "Belgian customs starts with the transaction value and applies required EU valuation additions or deductions. Under FOB, freight and insurance to the EU entry point may need to be added. Under CIF, those costs are normally included. DAP and DDP invoices can include post-entry transport, duty, VAT, and delivery costs, which may be excluded where separately identified. Related-party pricing, royalties, assists, and licence fees can also affect the declared value."
+  },
+  "cbam": {
+    "title": "CBAM Steel Rules",
+    "p1": "The definitive CBAM has applied since 1 January 2026, covering iron and steel, aluminium, cement, fertilisers, electricity, and hydrogen. Brazilian steel falls within CBAM where the full CN code is listed, covering semi-finished steel, flat-rolled products, pipes, tubes, and fasteners. Iron ore is not automatically covered.",
+    "p2": "A 50-tonne annual threshold generally applies. Where authorisation is required, the importer needs the correct CBAM status and declaration references. CBAM and tariff preference are separate obligations — a product can receive reduced customs duty and remain subject to CBAM. Importers should collect producer emissions data early."
+  },
+  "eudr": {
+    "title": "EUDR Requirements",
+    "p1": "The EU Deforestation Regulation covers cattle, cocoa, coffee, oil palm, rubber, soy, wood, and listed derived products. The main application date is 30 December 2026. Belgian importers should prepare supplier and traceability data — including geolocation, production dates, legality evidence, and quantities — before that date.",
+    "table": [
+      {
+        "party": "First EU operator",
+        "role": "Completes due diligence and submits the statement"
+      },
+      {
+        "party": "Downstream trader",
+        "role": "Retains and passes the statement reference"
+      },
+      {
+        "party": "Customs broker",
+        "role": "Uses the supplied reference where required"
+      },
+      {
+        "party": "Brazilian supplier",
+        "role": "Provides legality, plot, and traceability data"
+      }
+    ],
+    "p2": "Brazil is currently treated as a standard-risk country under the EU benchmarking system. Preparation is important for coffee, soy, cocoa, timber, cattle products, rubber, and relevant derivatives."
+  },
+  "controls": {
+    "title": "Food and Plant Controls",
+    "p1": "Products of animal origin may need a health certificate, approved Border Control Post, TRACES NT pre-notification, and a validated CHED-P. Regulated plants and plant products can require a phytosanitary certificate, TRACES NT pre-notification, and CHED-PP. Importers must confirm whether the exporting country, region, and establishment are authorised for the specific animal product.",
+    "p2": "From 3 September 2026, specified imports must meet applicable EU antimicrobial requirements. Customs release does not confirm compliance with all EU market rules — machinery, electrical equipment, chemicals, textiles, and consumer goods can require separate conformity or labelling records."
+  },
+  "process": {
+    "title": "Clearance Process",
+    "p1": "Origin evidence, customs value, CBAM data, SPS documents, EUDR references, and carrier-release details should be checked before IDMS filing.",
+    "sub1": "Pre-Arrival Filing",
+    "p2": "Sea shipments from Brazil require pre-arrival security data under ICS2. The ENS data must match commercial documents — vague descriptions, missing parties, or inconsistent weights can cause a security hold.",
+    "sub2": "IDMS Declaration",
+    "p3": "Belgian import declarations are filed through IDMS, including the EORI number, TARIC code, customs value, origin, preference claim, VAT treatment, and supporting references. A Mercosur preference claim must have valid origin evidence; customs applies the normal rate where the claim is unsupported.",
+    "sub3": "Customs and Agency Checks",
+    "p4": "Belgian customs can request documents, examine goods, or refer shipments for further controls. FASFC checks can run separately. Clearance time depends on risk selection, cargo type, document quality, sampling, and terminal availability.",
+    "sub4": "Release Coordination",
+    "p5": "The carrier may still require an original bill of lading, telex release, or electronic release after customs clearance. Winz coordinates customs release information, bill-of-lading status, and cargo tracking with the appointed carrier or freight forwarder. Winz does not provide container shipping or road transport services."
+  },
+  "documents": {
+    "title": "Required Documents",
+    "table": [
+      {
+        "doc": "Commercial invoice",
+        "purpose": "Shows value, currency, Incoterm, and goods",
+        "use": "All imports"
+      },
+      {
+        "doc": "Packing list",
+        "purpose": "Shows packages, weights, and marks",
+        "use": "Most imports"
+      },
+      {
+        "doc": "Transport document",
+        "purpose": "Confirms shipment and transport parties",
+        "use": "Sea or air freight"
+      },
+      {
+        "doc": "EORI number",
+        "purpose": "Identifies the EU importer or declarant",
+        "use": "Customs declaration"
+      },
+      {
+        "doc": "CN or TARIC code",
+        "purpose": "Determines duty and controls",
+        "use": "All imports"
+      },
+      {
+        "doc": "Origin evidence",
+        "purpose": "Supports Mercosur preference",
+        "use": "Preferential imports"
+      },
+      {
+        "doc": "Regulatory reference",
+        "purpose": "Supports CBAM, EUDR, or TRACES",
+        "use": "Covered goods"
+      },
+      {
+        "doc": "Power of attorney",
+        "purpose": "Authorises customs representation",
+        "use": "Broker declarations"
+      }
+    ],
+    "p1": "For B/L release guidance, importers can also review <1>sea freight bill of lading Brazil Belgium</1> before the vessel departs.",
+    "p2": "Animal products require a health certificate and CHED-P. Regulated plants require a phytosanitary certificate and CHED-PP. Other goods may require import licences, conformity documents, organic certificates, or CITES documents. Brazilian suppliers should send the complete file before arrival."
+  },
+  "delays": {
+    "title": "Common Clearance Delays",
+    "sub1": "EUDR Data Gaps",
+    "p1": "Before EUDR applies, the main risk is poor preparation. After the applicable date, a missing or invalid statement reference can prevent completion of required customs data. Coffee, soy, cocoa, timber, cattle products, rubber, and derivatives involve complex supply chains — data should be collected before booking.",
+    "sub2": "Animal-Product Controls",
+    "p2": "Animal products can be delayed where the establishment is not approved, the certificate is incorrect, or the shipment reaches an unsuitable entry point. Importers must check the current listing, approved establishment, certificate model, CHED requirement, and Border Control Post.",
+    "sub3": "CBAM Reference Errors",
+    "p3": "CBAM errors can stop processing where the declaration lacks the correct status, account reference, or threshold treatment. The broker should verify the CN code, annual imported mass, importer status, and document code before filing.",
+    "sub4": "Missing Origin Evidence",
+    "p4": "Goods without valid Mercosur origin evidence cannot receive preferential treatment. Customs applies the normal rate where the claim is unsupported. A retrospective claim may be possible where the agreement allows it and valid evidence is later obtained.",
+    "sub5": "Valuation Mismatches",
+    "p5": "Customs can question a value that does not match the invoice, Incoterm, freight cost, or payment records. Related-party pricing, royalties, and unexplained assists create additional review risk."
+  },
+  "support": {
+    "title": "Winz Clearance Support",
+    "p1": "Winz supports Brazil-to-Belgium imports through customs clearance, documentation, compliance review, and brokerage coordination. Winz reviews the customs file before IDMS submission, covering TARIC classification, customs value, origin evidence, VAT treatment, CBAM status, EUDR readiness, SPS documents, and carrier-release details.",
+    "listTitle": "Support includes:",
+    "list": [
+      "Reviewing Mercosur origin evidence and preference claims.",
+      "Filing Belgian IDMS import declarations.",
+      "Checking tariff classification and customs valuation.",
+      "Coordinating EUDR reference data after the rules apply.",
+      "Verifying CBAM status and customs references.",
+      "Coordinating FASFC, TRACES, and CHED documents.",
+      "Supporting ET 14.000 import VAT treatment.",
+      "Coordinating bill-of-lading and cargo-release information."
+    ],
+    "p2": "Winz works with importers, exporters, freight forwarders, and logistics companies. Support is available in English, French, Dutch, and German.",
+    "cta": "For complex origin, CBAM, EUDR, animal-origin, or machinery files, contact Winz for <1>Mercosur-EU trade customs consulting Belgium</1> before goods leave Brazil."
+  },
+  "faq": {
+    "title": "FAQ — Importing from Brazil to Belgium",
+    "questions": [
+      {
+        "q": "Is the trade agreement active?",
+        "a": "Yes. The EU-Mercosur Interim Trade Agreement has applied provisionally since 1 May 2026. Brazilian goods receive preferential duty only when they meet the origin rules and have acceptable evidence. Customs declarations, import VAT, and product controls still apply."
+      },
+      {
+        "q": "What duty applies to coffee?",
+        "a": "Green coffee commonly enters the EU at zero customs duty. Relevant roasted coffee lines can face a normal duty around 7.5%. Mercosur preference may reduce the rate where the exact tariff line and origin conditions are met. Coffee also falls within EUDR scope."
+      },
+      {
+        "q": "Which Brazilian goods can enter?",
+        "a": "Most Brazilian goods can enter Belgium when they meet EU customs, safety, and market-access rules. Common categories include coffee, soy products, orange juice, iron ore, steel, leather goods, pulp, machinery parts, and food products."
+      },
+      {
+        "q": "Who files the EUDR statement?",
+        "a": "The first EU operator normally completes the due diligence and submits the statement after the rules apply. A downstream business may retain and pass the reference where another operator completed the required process."
+      },
+      {
+        "q": "What happens without origin proof?",
+        "a": "Belgian customs applies the normal EU duty rate where origin evidence is missing or invalid. A later preference claim may be possible where the agreement allows it and valid evidence is obtained within the required period."
+      },
+      {
+        "q": "How does FOB affect duty?",
+        "a": "FOB Santos does not represent the complete customs value in Belgium. Customs normally adds relevant freight, insurance, and other dutiable costs to the EU entry point where those amounts are not already included."
+      },
+      {
+        "q": "When should IDMS be filed?",
+        "a": "The IDMS declaration should be prepared before arrival where the documents and regulatory references are complete. Pre-lodgement can support faster release, but it does not remove customs risk controls or agency inspections."
+      }
+    ]
+  }
+}

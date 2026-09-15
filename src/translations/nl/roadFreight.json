@@ -1,0 +1,146 @@
+{
+  "meta": {
+    "title": "Wegtransport Douaneafhandeling België | Winz",
+    "description": "Winz verzorgt de douaneafhandeling voor wegtransport in België, inclusief CMR-controles, IDMS importindiening, ENS-ondersteuning, HS-codes, berekening van rechten en MRN-coördinatie.",
+    "keywords": "Wegtransport Douaneafhandeling"
+  },
+  "hero": {
+    "title": "Wegtransport Douaneafhandeling in België",
+    "subtitle": "Douaneafhandeling voor wegtransport in België hangt af van de douanestatus van de goederen, de eerste plaats van binnenkomst in de EU en de uiteindelijke douanebestemming."
+  },
+  "intro": {
+    "p1": "De CMR moet ook overeenkomen met de commerciële factuur, paklijst en douaneaangifte. Zie <1>douaneafhandeling België</1> voor de volledige reikwijdte van de douanediensten van Winz.",
+    "p2": "Winz controleert deze documenten voorafgaand aan de indiening. Wij ondersteunen Belgische import-, export-, transit- en veiligheidsaangiften voor reguliere vrachtwagens en temperatuurgecontroleerde koelladingen.",
+    "p3": "Winz biedt douaneafhandeling, documentatie en nalevingsondersteuning. De vervoerder of expediteur beheert de fysieke verplaatsing van de vrachtwagen."
+  },
+  "requirements": {
+    "title": "Vereisten voor Wegtransport",
+    "p1": "Niet-Uniegoederen die in België aankomen, vereisen een invoeraangifte of een geldige transitprocedure. Uniegoederen die zich tussen EU-lidstaten verplaatsen, vereisen normaal gesproken geen invoerafhandeling, behalve bij bepaalde accijns- of gecontroleerde producten.",
+    "p2": "Belgische invoeraangiften gebruiken IDMS, terwijl PLDA beschikbaar blijft voor goedgekeurde uitzonderingen en noodprocedures. Niet-EU wegtransport vereist ook een Summiere Aangifte bij Binnenkomst via ICS2 voordat het zijn eerste EU-toegangspunt bereikt.",
+    "table": [
+      { "movement": "Eerste EU-binnenkomst in België", "treatment": "ENS plus import- of transitaangifte" },
+      { "movement": "Binnenkomst via een ander EU-land", "treatment": "ENS bij binnenkomst, gevolgd door transit of importvrijgave" },
+      { "movement": "Aankomst in België onder T1", "treatment": "NCTS bestemmingsformaliteiten" },
+      { "movement": "Uniegoederen die binnen de EU bewegen", "treatment": "Normaal gesproken geen importdeclaratie" },
+      { "movement": "Uniegoederen die België verlaten", "treatment": "Exportaangifte en uitgangsbevestiging" }
+    ],
+    "postTable": "Bekijk <1>douaneaangifte voor import België</1> voordat u een wegtransport regelt."
+  },
+  "documents": {
+    "title": "Documenten voor Vrachtwagenafhandeling",
+    "intro": "Zendinggegevens moeten op alle documenten overeenkomen. Inconsistente partijen, goederen, gewichten, routes of douanestatus kunnen de vrijgave vertragen.",
+    "list": [
+      "CMR-vrachtbrief",
+      "Commerciële factuur",
+      "Paklijst",
+      "EORI en machtiging",
+      "Douaneaangifte",
+      "ENS-gegevens",
+      "HS- of TARIC-code",
+      "Oorsprongsbewijs"
+    ],
+    "post1": "CMR- en factuurlay-outs kunnen verschillen, maar totalen en kerndetails moeten overeenkomen, met traceerbare factuurreferenties. Zie het <1>CMR document wegtransport</1>.",
+    "post2": "Preferentiële claims vereisen een verdragsspecifiek bewijs, zoals een EUR.1 of een oorsprongsverklaring. Koel- en gecontroleerde vracht kan ook temperatuurregistraties, gezondheids- of fytosanitaire certificaten, Gemeenschappelijke Gezondheidsdocumenten bij Binnenkomst, of licenties vereisen."
+  },
+  "process": {
+    "title": "Het Wegafhandelingsproces",
+    "intro": "Winz begint met douanecontroles voordat de vrachtwagen het douanekantoor bereikt, zodat er tijd is om fouten te corrigeren.",
+    "list": [
+      "<1>Bevestig de route:</1> Identificeer het EU-invoerpunt, de douanelocatie, de bestemming en de aankomsttijd.",
+      "<1>Verzamel documenten:</1> Zorg voor de CMR, factuur, paklijst, EORI-details en certificaten.",
+      "<1>Verifieer gegevens:</1> Controleer de partijen, goederen, gewichten, waarden, Incoterms, oorsprong en HS-codes.",
+      "<1>Bevestig ENS-verantwoordelijkheid:</1> Spreek af wie indient vóór de EU-binnenkomst.",
+      "<1>Dien de aangifte in:</1> Dien de vereiste import-, export- of transitgegevens in.",
+      "<1>Beheer controles:</1> Coördineer correcties, documentverzoeken en inspecties.",
+      "<1>Bevestig de uitkomst:</1> Deel de vrijgavestatus of transitinstructies."
+    ],
+    "outro": "Een MRN bevestigt de acceptatie van de aangifte, niet de douanevrijgave. Risicobeoordeling, documentcontroles of inspectie kunnen nog steeds nodig zijn."
+  },
+  "delays": {
+    "title": "Veelvoorkomende Oorzaken van Vertragingen",
+    "intro": "De meeste vertragingen in het wegvervoer beginnen met onvolledige of inconsistente gegevens. Winz controleert het aangiftepakket voor indiening en kaart ontbrekende informatie aan bij het verantwoordelijke bedrijf. Voor een volledig overzicht van de oorzaken van vertragingen, zie <1>douanevertragingen aan Belgische landgrenzen</1>.",
+    "list": [
+      "<1>CMR komt niet overeen:</1> De geadresseerde, goederen, het aantal colli, het gewicht of de route wijkt af van andere documenten.",
+      "<1>Late ENS-gegevens:</1> Veiligheids- en beveiligingsinformatie is onvolledig vóór de deadline voor indiening.",
+      "<1>Verkeerde HS-code:</1> De classificatie levert een onjuist tarief op of mist een restrictie.",
+      "<1>Ontbrekend oorsprongsbewijs:</1> Preferentiële rechten worden geclaimd zonder geldig ondersteunend bewijs.",
+      "<1>Onvolledige vergunningen:</1> Gecontroleerde goederen missen de vereiste certificaten of licenties.",
+      "<1>Verkeerd douanekantoor:</1> De aangegeven bestemming komt niet overeen met de daadwerkelijke route van de vrachtwagen."
+    ],
+    "outro": "De douane kan nog steeds een conforme zending selecteren voor controle. Vooraf indienen vermindert vermijdbare wachttijden, maar neemt het recht van de autoriteit om goederen te inspecteren niet weg."
+  },
+  "sections": {
+    "transit": {
+      "title": "Wanneer T1 Transit van Toepassing Is",
+      "text": "Een T1-aangifte verplaatst niet-Uniegoederen tussen douanekantoren terwijl rechten en btw geschorst blijven. NCTS beheert het douanevervoer binnen de EU en de landen van Gemeenschappelijk Douanevervoer. De goederen moeten de aangegeven bestemming binnen de toegestane periode bereiken om de T1-beweging af te sluiten."
+    },
+    "export": {
+      "title": "Exportafhandeling voor Vrachtwagens",
+      "text": "Goederen die België verlaten naar een niet-EU-land vereisen een elektronische uitvoeraangifte die is ingediend via het EU Automated Export System, dat de export- en uitgangsformaliteiten tussen het douanekantoor van uitvoer en het douanekantoor van uitgang beheert. De douane kent een export-MRN toe na acceptatie van de aangifte. Het kantoor van uitgang registreert het uitgangsresultaat zodra de goederen het EU-douanegebied verlaten. De aangifte wordt in de commerciële praktijk vaak een EX1 genoemd. Het MRN en het geregistreerde uitgangsresultaat dienen als officiële douanegegevens en ondersteunen het btw-bewijs van de exporteur. Winz beheert de <1>EU exportafhandeling</1> en coördineert de exportgegevens met de CMR."
+    },
+    "reefer": {
+      "title": "Koelvracht en Gecontroleerde Lading",
+      "text": "Koelwagens volgen dezelfde fundamentele douaneprocedure als standaard vrachtwagens. Het type lading bepaalt of er aanvullende certificaten, voorafgaande kennisgevingen of officiële controles van toepassing zijn. Voor douanevereisten specifiek voor koelwagens, zie <1>douaneafhandeling koelvrachtwagen België</1>. Een temperatuurregistratie is geen universele douanevereiste. Het kan vereist zijn door een contract, productregels, kwaliteitscontroles of een bevoegde autoriteit. Dieren, dierlijke producten, planten en bepaalde voedsel- of diervoederproducten kunnen TRACES-vooraanmelding en een Gemeenschappelijk Gezondheidsdocument van Binnenkomst vereisen. De verantwoordelijke exploitant dient het CHED in bij de Grensinspectiepost waar de goederen de EU binnenkomen — wat buiten België kan zijn als de vrachtwagen voor het eerst via een andere lidstaat binnenkomt. Winz controleert de route alvorens de vereiste controlelocatie te bevestigen."
+    },
+    "costs": {
+      "title": "Kosten voor Douaneafhandeling Wegtransport",
+      "text": "Douanekosten voor wegvervoer kunnen bestaan uit de declaratievergoeding, invoerrechten, Belgische btw, transitadministratie, garantiekosten, inspecties en wachtkosten van derden. Invoerrechten zijn afhankelijk van de TARIC-code, douanewaarde, oorsprong en handelsmaatregelen. Een preferentiële oorsprong kan de rechten verlagen wanneer een geldig bewijs beschikbaar is. De Belgische btw bedraagt 21% (verlaagde tarieven gelden voor specifieke goederen), berekend over de douanewaarde, rechten en bijkomende kosten. Transitkosten variëren per zendingswaarde, route, garantie, productlijnen en douanelocaties. Aan gecontroleerde goederen kunnen laboratorium-, grensinspectiepost- of certificaatkosten worden toegevoegd. Winz bevestigt de douane-omvang vóór de indiening. Transport, wachttijd, parkeren, veerboot en leveringskosten blijven bij de vervoerder. Zie <1>douanekosten wegtransport België</1> voor een volledig overzicht."
+    }
+  },
+  "whyWinz": {
+    "title": "Waarom Expediteurs voor Winz Kiezen",
+    "intro": "Winz biedt één douanecontactpunt voor de aangifte, ondersteunende documenten en douanestatus — om expediteurs en importeurs te helpen gegevensproblemen op te lossen voordat de vrachtwagen de douane bereikt.",
+    "list": [
+      "Reconciliatie van CMR, factuur en paklijst",
+      "Dekking van IDMS, NCTS, AES en ENS-systemen",
+      "HS-code controles voorafgaand aan de berekening van rechten en belastingen",
+      "Route-specifieke documentcontroles voor koelvracht en gevoelige lading",
+      "Updates over MRN, controle, transit en vrijgavestatus",
+      "Ondersteuning in het Engels, Frans, Nederlands en Duits"
+    ],
+    "outro": "Winz ondersteunt de douaneafhandeling van wegtransport voor bewegingen gekoppeld aan het Verenigd Koninkrijk, Turkije, Oekraïne, Marokko, Egypte en andere niet-EU-corridors. Voor ENS-vereisten vóór aankomst, zie <1>EU importregelgeving wegtransport België</1>."
+  },
+  "cta": {
+    "title": "Vraag een Douane-Offerte Aan",
+    "text": "Stuur Winz het concept van de CMR, commerciële factuur, paklijst, route, verwachte aankomsttijd, EORI-details, goederenbeschrijving en beschikbare certificaten.",
+    "subtext": "Winz controleert de procedure voor indiening en bevestigt of de beweging een importdeclaratie, T1 transit, exportaangifte of ENS-ondersteuning vereist.",
+    "button": "Neem contact op met Winz voor douaneafhandeling wegtransport"
+  },
+  "faq": {
+    "title": "Veelgestelde Vragen",
+    "questions": [
+      {
+        "q": "Kan een vrachtwagen zonder douaneafhandeling binnenkomen?",
+        "a": "Een vrachtwagen kan België binnenkomen vanuit een andere EU-lidstaat zonder een nieuwe Belgische importdeclaratie als de goederen al de Uniestatus hebben. Niet-Uniegoederen hebben een geldige import- of transitprocedure nodig voor vrijgave."
+      },
+      {
+        "q": "Wat legt de chauffeur voor?",
+        "a": "De chauffeur heeft normaal gesproken de CMR en de voor die beweging vereiste douanereferenties bij zich. Een T1-beweging kan een Begeleidend Douanedocument voor Transit of een MRN-referentie vereisen."
+      },
+      {
+        "q": "Hoe verschilt T1 van import?",
+        "a": "Een importdeclaratie geeft goederen vrij voor het vrije verkeer en maakt invoerrechten en btw verschuldigd. T1 houdt niet-Uniegoederen onder douanetoezicht terwijl ze naar een andere goedgekeurde bestemming reizen."
+      },
+      {
+        "q": "Wie dient de ENS in?",
+        "a": "De vervoerder, expediteur, importeur of douanevertegenwoordiger kan de ENS indienen, afhankelijk van de transportovereenkomst en beschikbare gegevens. Winz ondersteunt indiening waar overeengekomen."
+      },
+      {
+        "q": "Kunnen goederen in een douane-entrepot worden geplaatst?",
+        "a": "Ja. Niet-Uniegoederen kunnen onder transit reizen en in een geautoriseerd douane-entrepot worden geplaatst. Invoerrechten en btw blijven geschorst totdat de goederen worden vrijgegeven of onder een andere procedure worden geplaatst."
+      },
+      {
+        "q": "Handelt Winz koelvracht (reefer) af?",
+        "a": "Ja. Winz ondersteunt de douaneafhandeling van koelvracht en controleert of de goederen temperatuurregistraties, TRACES-documenten, een CHED, gezondheidscertificaten of andere controles vereisen."
+      },
+      {
+        "q": "Heeft de chauffeur een EORI nodig?",
+        "a": "De importeur, exporteur of douaneaangever heeft het relevante EORI-nummer nodig. De chauffeur heeft normaal gesproken geen persoonlijke EORI nodig voor de zending."
+      },
+      {
+        "q": "Is douaneafhandeling op dezelfde dag mogelijk?",
+        "a": "Douaneafhandeling op dezelfde dag is mogelijk wanneer documenten vroeg aankomen, de aangifte vooraf is ingediend, rechten zijn gedekt en de douane de zending niet selecteert voor extra controle. Kwalificerende spoedbewegingen kunnen gebruikmaken van fast track douaneafhandeling België."
+      }
+    ]
+  }
+}

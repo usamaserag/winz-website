@@ -1,0 +1,225 @@
+{
+  "meta": {
+    "title": "FCL Douaneafhandeling België | Winz",
+    "description": "Winz regelt FCL douaneafhandeling voor 20ft, 40ft, high cube en reefer containers die België binnenkomen via Antwerpen of Rotterdam.",
+    "keywords": "FCL Douaneafhandeling"
+  },
+  "hero": {
+    "title": "FCL Douaneafhandeling België",
+    "subtitle": "FCL douaneafhandeling in België omvat de aangifte en vrijgave van goederen die arriveren in een volle container (Full Container Load). De aangifte registreert elke productlijn, douaneclassificatie, waarde, oorsprong en toepasselijke invoermaatregelen."
+  },
+  "intro": {
+    "p1": "Zie <1>douaneafhandeling België</1> voor de douanediensten van Winz.",
+    "p2": "De meeste Belgische invoeraangiften gebruiken IDMS, dat PLDA vervangt. PLDA kan nog steeds van toepassing zijn op specifieke uitzonderingen. Winz controleert de juiste route en gegevens vóór indiening.",
+    "p3": "Douanevrijgave is geen automatische toestemming voor afhaling op de terminal. Douane, rederij, terminal en vervoerder beheren verschillende fasen.",
+    "p4": "Winz coördineert de aangifte, vrijgavestatus en afhaalbaarheid met de importeur, expediteur en vervoerder. Winz levert douanediensten maar verkoopt geen containertransport."
+  },
+  "howItWorks": {
+    "title": "Hoe FCL Afhandeling Werkt",
+    "intro": "FCL afhandeling volgt een gestructureerd proces van documentcontrole tot terminalvrijgave. Vroege voorbereiding vermindert de wachttijd. De belangrijkste stappen zijn:",
+    "steps": [
+      "<1>Documentcontrole:</1> Winz ontvangt de factuur, paklijst, vrachtbrief, EORI-nummer, productgegevens en Incoterm.",
+      "<1>Verificatie:</1> Elke productlijn wordt gecontroleerd op classificatie, oorsprong, douanewaarde en restricties.",
+      "<1>Indiening:</1> De invoeraangifte wordt ingediend of vooraf aangemeld via het Belgische douanesysteem.",
+      "<1>Beoordeling:</1> De Belgische douane voltooit haar risicobeoordeling en kan documenten of een fysieke inspectie vragen.",
+      "<1>Vrijgave:</1> Vrijgave wordt bevestigd nadat aan douane-, financiële, commerciële en terminalvoorwaarden is voldaan."
+    ],
+    "outro": "Een geaccepteerde aangifte krijgt een MRN (Movement Reference Number). Vooraf indienen (pre-lodgement) kan verwerking na aankomst verminderen, maar elimineert geen douanecontroles."
+  },
+  "coverage": {
+    "title": "FCL Aangifte Dekking",
+    "intro": "Eén FCL-aangifte kan meerdere goederen uit dezelfde zending bevatten. Elk item vereist een eigen classificatie, omschrijving en waarde.",
+    "p2": "Producten zoals textiel en elektronica kunnen niet één classificatie delen, simpelweg omdat ze in dezelfde container reizen. Een container met 40 productlijnen kan 40 items op de aangifte vereisen.",
+    "subtitle": "Eén container kan meerdere aangiften vereisen wanneer deze bevat:",
+    "list": [
+      "Verschillende importeurs of geadresseerden",
+      "Afzonderlijke douaneregelingen",
+      "Gecontroleerde en niet-gecontroleerde goederen",
+      "Verschillende vertegenwoordigers",
+      "Aparte vergunningen"
+    ],
+    "outro": "Winz controleert de zendingstructuur om ervoor te zorgen dat de aangifte de juiste importeur weerspiegelt. De container blijft normaal gesproken verzegeld, hoewel de douane inspectie kan eisen."
+  },
+  "importerResp": {
+    "title": "Verantwoordelijkheden Importeur",
+    "text": "De importeur moet nauwkeurige details verstrekken over de goederen, waaronder samenstelling, gebruik, waarde, oorsprong en certificaten. Onvolledige beschrijvingen kunnen onjuiste classificatie veroorzaken.",
+    "p2": "De importeur heeft normaal gesproken een geldig EU EORI-nummer nodig. Douanevertegenwoordiging kan zijn:",
+    "list": [
+      "<1>Direct:</1> De vertegenwoordiger handelt in naam en voor rekening van de importeur.",
+      "<1>Indirect:</1> De vertegenwoordiger handelt in eigen naam maar voor rekening van de importeur (hoofdelijke aansprakelijkheid)."
+    ],
+    "outro": "Winz bevestigt de importeur, EORI-details, douaneregeling en vertegenwoordiging voordat de aangifte wordt ingediend."
+  },
+  "documents": {
+    "title": "Documenten en Zendinggegevens",
+    "intro": "Documenten moeten compleet zijn vóór indiening; afwijkingen vertragen de acceptatie.",
+    "table": [
+      { "doc": "Commerciële factuur", "purpose": "Bevestigt partijen, producten, hoeveelheden en transactieprijs" },
+      { "doc": "Paklijst", "purpose": "Bevestigt pakketten, gewichten, afmetingen en inhoud" },
+      { "doc": "Bill of Lading", "purpose": "Identificeert de container, vervoerder, geadresseerde en route" },
+      { "doc": "Productclassificatie", "purpose": "Bepaalt rechten, restricties, licenties en handelsmaatregelen" },
+      { "doc": "Oorsprong", "purpose": "Ondersteunt preferentiële of niet-preferentiële behandeling" },
+      { "doc": "EORI-nummer", "purpose": "Identificeert de importeur of aangever" },
+      { "doc": "Incoterm", "purpose": "Helpt bij aanpassingen douanewaarde en verantwoordelijkheden" },
+      { "doc": "Aankomstgegevens", "purpose": "Bevestigt schip, terminal, container en verwachte aankomst" }
+    ],
+    "post": [
+      "De factuur moet elk product vermelden. Vracht, verzekering en andere kosten beïnvloeden de douanewaarde.",
+      "Commerciële- en douanevrijgaven staan los van elkaar. Zie <1>bill of lading FCL zeevracht</1>.",
+      "Preferentiële oorsprong vereist een EUR.1, oorsprongsverklaring of ander geaccepteerd bewijs.",
+      "Gecontroleerde goederen vereisen mogelijk licenties, conformiteits- of gezondheidscertificaten."
+    ]
+  },
+  "classification": {
+    "title": "Productclassificatie",
+    "intro": "Elk artikel vereist een nauwkeurige douaneclassificatie (8-cijferige GN-codes). TARIC voegt extra cijfers toe voor EU-invoermaatregelen.",
+    "subtitle": "TARIC kan het volgende identificeren:",
+    "list": [
+      "Standaard invoerrecht",
+      "Preferentieel recht",
+      "Antidumpingrecht",
+      "Tariefquota",
+      "Schorsingen van rechten",
+      "Invoercertificaten",
+      "Toezichtmaatregelen",
+      "Productrestricties"
+    ],
+    "post": "Winz ondersteunt HS-code classificatie op basis van technische productinformatie. Vage termen zoals \"machineonderdelen\" zijn onvoldoende.",
+    "bti": "Importeurs kunnen ook Bindende Tariefinlichting (BTI) aanvragen, die juridisch bindend is in de hele EU."
+  },
+  "release": {
+    "title": "Antwerpen Container Vrijgave",
+    "intro": "Terminalvrijgave in Antwerpen omvat meer dan alleen douanegoedkeuring. Meerdere voorwaarden moeten in orde zijn.",
+    "table": [
+      { "condition": "Douanevrijgave", "confirms": "Douane heeft goederen vrijgegeven voor de douaneregeling" },
+      { "condition": "Rechten / Garantie", "confirms": "Rechten en belastingen zijn betaald, uitgesteld of gedekt" },
+      { "condition": "Commerciële vrijgave", "confirms": "De rederij heeft de container vrijgegeven" },
+      { "condition": "Terminal beschikbaarheid", "confirms": "De container is gelost en beschikbaar" },
+      { "condition": "Afhaalrecht", "confirms": "De geautoriseerde partij heeft het digitale afhaalrecht" },
+      { "condition": "Inspectiestatus", "confirms": "Er staan geen douanecontroles meer open" }
+    ],
+    "post1": "Een positieve douanestatus betekent niet dat de terminal- en vervoerderscondities rond zijn. Het Inbound Release Platform (IRP) ondersteunt gegevensuitwisseling in Belgische havens.",
+    "post2": "Certified Pick up regelt de beveiligde digitale vrijgave in Antwerpen. Na douanevrijgave verplaatst <1>wegtransport vanuit Antwerpen</1> de container.",
+    "blockedTitle": "Een container kan na douanevrijgave geblokkeerd blijven als:",
+    "blockedList": [
+      "De rederij nog geen commerciële vrijgave heeft verleend",
+      "Terminalkosten onbetaald blijven",
+      "De container nog niet gelost is",
+      "Afhaalrechten (CPu) incompleet zijn",
+      "Een douane-inspectie openstaat",
+      "De terminal een andere operationele blokkade heeft toegepast"
+    ],
+    "outro": "Winz bewaakt de douanestatus. Voor de volledige vrijgavesequentie, zie <1>container vrijgave douane België</1>."
+  },
+  "dutyVAT": {
+    "title": "Invoerrechten en BTW",
+    "intro": "Invoerrechten worden berekend per artikel en niet als één vast percentage op de hele container. Het standaard Belgische BTW-tarief is 21%.",
+    "table": [
+      { "element": "Douanewaarde", "basis": "Transactiewaarde met verplichte toevoegingen (vracht, enz.)" },
+      { "element": "Invoerrechten", "basis": "TARIC-tarief toegepast op de douanewaarde" },
+      { "element": "Aanvullende rechten", "basis": "Antidumping of andere maatregelen waar van toepassing" },
+      { "element": "Invoer-BTW", "basis": "BTW-tarief toegepast op de BTW-maatstaf van heffing" }
+    ],
+    "outro": "De BTW-maatstaf omvat douanewaarde, rechten, en bijkomende kosten tot de bestemming. Dit voorbeeld legt enkel de methode uit.",
+    "link": "De berekeningsmethode staat in de gids voor <1>invoerrechten FCL zendingen</1>."
+  },
+  "incoterms": {
+    "title": "Incoterms en Verantwoordelijkheid",
+    "text": "Incoterms bepalen levering, kosten en risico tussen koper en verkoper. Ze vervangen de EU-douaneregels niet.",
+    "details": [
+      "<1>Onder CIF</1> regelt de verkoper zeevracht en verzekering. De koper beheert de invoerafhandeling.",
+      "<1>Onder FOB</1> levert de verkoper aan boord. De koper controleert het hoofdtransport en de invoer.",
+      "<1>Onder EXW</1> draagt de koper bredere verantwoordelijkheid vanaf het pand van de verkoper.",
+      "<1>Onder DDP</1> accepteert de verkoper uitgebreide leverings- en invoerverplichtingen."
+    ],
+    "outro": "Winz controleert de Incoterm omdat deze invloed heeft op douanewaarde en verantwoordelijkheid."
+  },
+  "sections": {
+    "reefer": {
+      "title": "Reefer FCL Vereisten",
+      "text": "Koelcontainers (reefers) volgen dezelfde basis aangiftestructuur als droge FCL containers. Extra controles hangen af van de goederen.",
+      "list": [
+        "TRACES NT vooraanmelding",
+        "Gemeenschappelijke Gezondheidsdocumenten van Binnenkomst (GGB)",
+        "Veterinaire certificaten",
+        "Fytosanitaire certificaten",
+        "Grenscontrolepost (GCP) checks",
+        "Temperatuurregistraties",
+        "Importlicenties",
+        "Laboratoriummonsters"
+      ],
+      "outro": "Douanevrijgave kan geblokkeerd blijven terwijl een andere autoriteit controles uitvoert (SPS). Bedrijven kunnen de <1>reefer full container douane België</1> procedures raadplegen."
+    },
+    "rotterdam": {
+      "title": "Rotterdam naar België",
+      "text": "Een FCL-container die in Rotterdam aankomt, kan onder de juiste douaneregeling naar een Belgische bestemming worden vervoerd. Goederen kunnen in Nederland worden geïmporteerd (als men een Nederlandse vertegenwoordiging/BTW heeft) of via T1-transit naar België worden verplaatst.",
+      "subtitle": "De juiste route is afhankelijk van:",
+      "list": [
+        "Vestiging van importeur",
+        "BTW-registratie",
+        "EORI details",
+        "Douanevertegenwoordiging",
+        "Vergunning verleggingsregeling",
+        "Transitgaranties",
+        "Leveringslocatie",
+        "Beoogde douaneregeling"
+      ],
+      "outro": "Winz ondersteunt douaneplanning voor containers via Rotterdam, maar biedt geen wegtransport vanuit Rotterdam."
+    },
+    "howWinzSupports": {
+      "title": "Hoe Winz FCL Import Ondersteunt",
+      "text": "Een Winz douanespecialist beheert het dossier vanaf documentintake tot vrijgavebevestiging. Winz verzorgt douaneafhandeling voor:",
+      "list": [
+        "20ft droge containers",
+        "40ft droge containers",
+        "40ft high cube containers",
+        "20ft reefer containers",
+        "40ft reefer containers"
+      ],
+      "outro": "Antwerpse ondersteuning omvat aangifte-indiening, statusbewaking en coördinatie. Rotterdamse ondersteuning dekt douaneplanning en T1-transitcoördinatie naar België."
+    }
+  },
+  "cta": {
+    "title": "Vraag FCL Douaneafhandeling Aan",
+    "text": "Winz regelt de douaneafhandeling voor droge en reefer containers die België binnenkomen via Antwerpen of Rotterdam.",
+    "subtext": "De service omvat documentcontrole, classificatie, waardeberekening, aangifte en vrijgavecoördinatie.",
+    "button": "Vraag FCL douaneafhandeling offerte aan"
+  },
+  "faq": {
+    "title": "Veelgestelde Vragen",
+    "questions": [
+      {
+        "q": "Welk systeem beheert Belgische invoer?",
+        "a": "De meeste Belgische invoeraangiften worden ingediend via IDMS, dat PLDA vervangt. PN/TS verwerkt presentatie- en tijdelijke opslagmeldingen."
+      },
+      {
+        "q": "Kan één container meerdere aangiften nodig hebben?",
+        "a": "Ja. Eén FCL-container kan meerdere aangiften vereisen wanneer deze goederen bevat voor verschillende importeurs of verschillende douaneregelingen."
+      },
+      {
+        "q": "Kan de afhandeling vóór aankomst beginnen?",
+        "a": "Een FCL-aangifte kan vaak vooraf worden ingediend (pre-lodged). De definitieve vrijgave blijft echter afhankelijk van aankomstberichten, terminalcondities en controles."
+      },
+      {
+        "q": "Wat vertraagt gate-out in Antwerpen?",
+        "a": "Gate-out kan worden vertraagd door douanecontroles, ontbrekende commerciële vrijgave, onbetaalde terminalkosten, of onvolledige Certified Pick up (CPu) rechten."
+      },
+      {
+        "q": "Wanneer start de containervrije tijd (free time)?",
+        "a": "Vrije tijd hangt af van de rederij en terminalcontracten. Vroege douanevoorbereiding vermindert vertragingen maar garandeert geen bescherming tegen overliggelden."
+      },
+      {
+        "q": "Wat gebeurt er tijdens een inspectie?",
+        "a": "De container blijft geblokkeerd totdat de douane de vereiste controle (documentencheck, scan of fysieke inspectie) afrondt."
+      },
+      {
+        "q": "Is FCL sneller dan LCL?",
+        "a": "FCL kan de consolidatiefase (deconsolidation) vermijden die voor LCL vereist is. Werkelijke douanevertragingen hangen af van documentkwaliteit en terminalbeschikbaarheid."
+      },
+      {
+        "q": "Wat is er nodig voor een offerte?",
+        "a": "Winz heeft doorgaans de commerciële factuur, paklijst, vrachtbriefgegevens, containernummer, HS-code, EORI-nummer en Incoterm nodig."
+      }
+    ]
+  }
+}

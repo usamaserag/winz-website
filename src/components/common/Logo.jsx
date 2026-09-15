@@ -30,7 +30,7 @@ const Logo = ({
           height={LOGO_SIZES.height}
           decoding="async"
           loading={priority ? 'eager' : 'lazy'}
-          fetchPriority={priority ? 'high' : 'auto'}
+          fetchpriority={priority ? 'high' : 'auto'}
           className={`${className} object-contain`}
         />
       </picture>

@@ -2,7 +2,7 @@ import { Link } from '../../components/routing';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { ArrowRight, Package, HelpCircle, ShieldCheck } from 'lucide-react';
-import usePageTitle from '../../hooks/usePageTitle';
+import { SEOMeta } from '../../components/common/SEOMeta';
 import PageHero from '../../components/logistics/PageHero';
 import SectionBadge from '../../components/logistics/SectionBadge';
 import ContactInfoCards from '../../components/contact/ContactInfoCards';
@@ -19,8 +19,7 @@ const SUPPORT_POINTS = [
 const MINI_FAQ_KEYS = ['customs', 'quote', 'response'];
 
 const Contact = () => {
-  const { t } = useTranslation(['contact', 'common']);
-  usePageTitle(t('contact:metaTitle'));
+  const { t, i18n } = useTranslation(['contact', 'common']);
 
   return (
     <motion.div
@@ -59,7 +58,12 @@ const Contact = () => {
       <section className="py-16 md:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-12">
-            <div className="lg:col-span-2">
+            <div className="min-h-screen bg-white">
+              <SEOMeta meta={{
+                title: t('contact:metaTitle'),
+                description: t('contact:metaDescription'),
+                keywords: i18n.exists('contact:metaKeywords') ? t('contact:metaKeywords') : undefined
+              }} />
               <ContactForm />
             </div>
 

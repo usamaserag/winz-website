@@ -6,7 +6,7 @@ import {
   CheckCircle2, Snowflake, FileText,
   Ship, Award, Clock
 } from 'lucide-react';
-import usePageTitle from '../../hooks/usePageTitle';
+import { SEOMeta } from '../../components/common/SEOMeta';
 import PageHero from '../../components/logistics/PageHero';
 import { fadeUp, fadeLeft, fadeRight } from '../../components/logistics/motionVariants';
 
@@ -54,11 +54,15 @@ const STATS = [
 
 /* ════════════════════════════════════ PAGE ════════════════════════════════════ */
 const About = () => {
-  const { t } = useTranslation('about');
-  usePageTitle(t('about:meta.title'));
+  const { t, i18n } = useTranslation(['about', 'common']);
 
   return (
     <div className="flex flex-col min-h-screen overflow-x-hidden">
+      <SEOMeta meta={{
+        title: t('about:meta.title'),
+        description: t('about:meta.description'),
+        keywords: i18n.exists('about:meta.keywords') ? t('about:meta.keywords') : undefined
+      }} />
 
       <PageHero
         badge={t('about:hero.badge')}

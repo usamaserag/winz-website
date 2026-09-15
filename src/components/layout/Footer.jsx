@@ -23,7 +23,7 @@ const Footer = () => {
 
       <footer className="bg-slate-50 pt-16 pb-8 border-t border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-6 gap-8 mb-12">
             {/* Brand */}
             <div className="space-y-6">
               <Logo className="h-12 w-auto" />
@@ -94,31 +94,82 @@ const Footer = () => {
               <h3 className="text-slate-900 font-semibold text-lg mb-6">
                 {t("nav.services")}
               </h3>
-              <ul className="space-y-4">
-                <li>
-                  <Link
-                    to="/import"
-                    className="text-slate-600 hover:text-primary-600 transition-colors"
-                  >
-                    {t("nav.clearance.import")}
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/export"
-                    className="text-slate-600 hover:text-primary-600 transition-colors"
-                  >
-                    {t("nav.clearance.export")}
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/transit"
-                    className="text-slate-600 hover:text-primary-600 transition-colors"
-                  >
-                    {t("nav.clearance.transit")}
-                  </Link>
-                </li>
+              <ul className="space-y-3">
+                {[
+                  { key: 'import', path: '/import' },
+                  { key: 'export', path: '/export' },
+                  { key: 'transit', path: '/transit' },
+                  { key: 'airFreight', path: '/air-freight-customs-clearance' },
+                  { key: 'roadFreight', path: '/road-freight-customs-clearance' },
+                  { key: 'fcl', path: '/fcl-customs-clearance' },
+                  { key: 'lcl', path: '/lcl-customs-clearance' },
+                  { key: 'fastTrack', path: '/fast-track-customs-clearance' },
+                  { key: 'hsCode', path: '/hs-code-classification' }
+                ].map(({ key, path }) => (
+                  <li key={key}>
+                    <Link
+                      to={path}
+                      className="text-slate-600 hover:text-primary-600 transition-colors text-sm"
+                    >
+                      {t(`nav.clearance.${key}`, { defaultValue: key })}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Ports & Gateways Links */}
+            <div>
+              <h3 className="text-slate-900 font-semibold text-lg mb-6">
+                {t("nav.portsAndAirports", { defaultValue: 'Ports & Airports' })}
+              </h3>
+              <ul className="space-y-3">
+                {[
+                  { key: 'antwerp', path: '/customs-clearance-port-of-antwerp' },
+                  { key: 'rotterdam', path: '/customs-clearance-rotterdam-port' },
+                  { key: 'brussels', path: '/customs-clearance-brussels-airport' },
+                  { key: 'hamburg', path: '/customs-clearance-port-of-hamburg' },
+                  { key: 'amsterdam', path: '/customs-clearance-amsterdam-schiphol' },
+                  { key: 'zele', path: '/customs-broker-zele-belgium' }
+                ].map(({ key, path }) => (
+                  <li key={key}>
+                    <Link
+                      to={path}
+                      className="text-slate-600 hover:text-primary-600 transition-colors text-sm"
+                    >
+                      {t(`nav.locations.${key}`, { defaultValue: key })}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Trade Routes Links */}
+            <div>
+              <h3 className="text-slate-900 font-semibold text-lg mb-6">
+                {t("nav.tradeRoutes", { defaultValue: 'Trade Routes' })}
+              </h3>
+              <ul className="space-y-3">
+                {[
+                  { key: 'turkey', path: '/importing-from-turkey-to-belgium' },
+                  { key: 'china', path: '/importing-from-china-to-belgium' },
+                  { key: 'uae', path: '/importing-from-uae-to-belgium' },
+                  { key: 'nigeria', path: '/importing-from-nigeria-to-eu' },
+                  { key: 'southAfrica', path: '/importing-from-south-africa-to-eu' },
+                  { key: 'egypt', path: '/importing-from-egypt-to-eu' },
+                  { key: 'ukraine', path: '/importing-from-ukraine-to-belgium' },
+                  { key: 'brazil', path: '/importing-from-brazil-to-belgium' },
+                  { key: 'saudi', path: '/importing-from-saudi-arabia-to-eu' },
+                ].map(({ key, path }) => (
+                  <li key={key}>
+                    <Link
+                      to={path}
+                      className="text-slate-600 hover:text-primary-600 transition-colors text-sm"
+                    >
+                      {t(`nav.routes.${key}`, { defaultValue: key.charAt(0).toUpperCase() + key.slice(1) })}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
 

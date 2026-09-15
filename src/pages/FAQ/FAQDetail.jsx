@@ -110,6 +110,7 @@ export default function FAQDetail() {
         ogTitle: faq?.seo?.title || faq.seoOgTitle || question,
         ogDescription: description,
         ogImage: resolveMediaUrl(faq.image),
+        ogImageAlt: faq?.seo?.image_alt || faq.image_alt || question,
         ogUrl: canonicalUrl,
         ogType: 'article',
         twitterCard: 'summary_large_image',

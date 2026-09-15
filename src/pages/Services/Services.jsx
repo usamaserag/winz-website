@@ -5,7 +5,7 @@ import {
   Truck, Globe, Zap, Package, FileCheck, BarChart3,
   ArrowRight, ClipboardList, CalendarCheck, Radio, ShieldCheck
 } from 'lucide-react';
-import usePageTitle from '../../hooks/usePageTitle';
+import { SEOMeta } from '../../components/common/SEOMeta';
 import PageHero from '../../components/logistics/PageHero';
 import SectionBadge from '../../components/logistics/SectionBadge';
 import { fadeUp } from '../../components/logistics/motionVariants';
@@ -36,8 +36,7 @@ const processIcons = [
 ];
 
 const Services = () => {
-  const { t } = useTranslation(['services', 'common']);
-  usePageTitle(t('common:nav.services'));
+  const { t, i18n } = useTranslation(['services', 'common']);
 
   const serviceKeys = ['local', 'international', 'express', 'warehousing', 'customs', 'supply'];
   const processKeys = ['step1', 'step2', 'step3', 'step4'];
@@ -49,6 +48,11 @@ const Services = () => {
       transition={{ duration: 0.35 }}
       className="flex flex-col min-h-screen"
     >
+      <SEOMeta meta={{
+        title: t('services:meta.title', { defaultValue: t('common:nav.services') }),
+        description: t('services:meta.description'),
+        keywords: i18n.exists('services:meta.keywords') ? t('services:meta.keywords') : undefined
+      }} />
       <PageHero
         badge={t('services:hero.badge')}
         title={t('services:hero.title')}
@@ -153,6 +157,48 @@ const Services = () => {
               </motion.div>
               );
             })}
+          </div>
+        </div>
+      </section>
+      
+      <section className="py-24 bg-slate-50 border-t border-slate-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}
+            className="text-center mb-12"
+          >
+            <SectionBadge label={t('services:specialized.badge', { defaultValue: 'Explore More' })} />
+            <h2 className="text-3xl md:text-4xl font-bold text-navy-900 mb-4">
+              {t('services:specialized.title', { defaultValue: 'Specialized Clearances & Locations' })}
+            </h2>
+            <p className="text-slate-600 max-w-2xl mx-auto">
+              {t('services:specialized.subtitle', { defaultValue: 'Discover our comprehensive port coverage and specific clearance services tailored for your cargo.' })}
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            {[
+              { path: '/air-freight-customs-clearance', label: 'nav.clearance.airFreight', defaultLabel: 'Air Freight' },
+              { path: '/road-freight-customs-clearance', label: 'nav.clearance.roadFreight', defaultLabel: 'Road Freight' },
+              { path: '/fcl-customs-clearance', label: 'nav.clearance.fcl', defaultLabel: 'FCL Clearance' },
+              { path: '/lcl-customs-clearance', label: 'nav.clearance.lcl', defaultLabel: 'LCL Clearance' },
+              { path: '/fast-track-customs-clearance', label: 'nav.clearance.fastTrack', defaultLabel: 'Fast Track Clearance' },
+              { path: '/hs-code-classification', label: 'nav.clearance.hsCode', defaultLabel: 'HS Code Classification' },
+              { path: '/customs-clearance-port-of-antwerp', label: 'nav.locations.antwerp', defaultLabel: 'Port of Antwerp' },
+              { path: '/customs-clearance-rotterdam-port', label: 'nav.locations.rotterdam', defaultLabel: 'Port of Rotterdam' },
+              { path: '/customs-clearance-brussels-airport', label: 'nav.locations.brussels', defaultLabel: 'Brussels Airport' },
+              { path: '/customs-clearance-port-of-hamburg', label: 'nav.locations.hamburg', defaultLabel: 'Port of Hamburg' },
+              { path: '/customs-clearance-amsterdam-schiphol', label: 'nav.locations.amsterdam', defaultLabel: 'Amsterdam Schiphol' }
+            ].map((link) => (
+              <Link
+                key={link.path}
+                to={link.path}
+                className="bg-white border border-slate-200 hover:border-primary-300 hover:shadow-sm px-5 py-4 rounded-xl flex items-center justify-between text-navy-900 font-medium transition-all group"
+              >
+                <span className="truncate">{t(`common:${link.label}`, { defaultValue: link.defaultLabel })}</span>
+                <ArrowRight className="w-4 h-4 shrink-0 text-primary-500 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />
+              </Link>
+            ))}
           </div>
         </div>
       </section>

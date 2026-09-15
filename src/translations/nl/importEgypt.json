@@ -1,0 +1,341 @@
+{
+  "meta": {
+    "title": "Importing from Egypt to the EU: Customs Guide",
+    "description": "Importing from Egypt to the EU requires correct origin proof, TARIC checks, CBAM review, and plant or food controls before customs release at EU borders."
+  },
+  "hero": {
+    "title": "Importing from Egypt to the EU",
+    "subtitle": "Importing from Egypt to the EU requires customs clearance, correct origin proof, accurate TARIC classification, and product-specific compliance checks."
+  },
+  "intro": {
+    "p1": "Many Egyptian industrial products can qualify for preferential customs duty under the EU–Egypt Association Agreement. The preference only applies when the goods meet the relevant origin rule and have valid proof of origin.",
+    "p2": "Fresh produce, fertilisers, aluminium, garments, plastics, and electrical goods each create different customs risks. Importers must check tariffs, import VAT, CBAM scope, plant health rules, and product conformity before shipment.",
+    "p3": "Winz supports <1>Egypt to EU import clearance Belgium</1> through customs documentation, HS code checks, IDMS filing, and compliance review before goods arrive at Antwerp."
+  },
+  "requirements": {
+    "title": "Key Import Requirements",
+    "p1": "Egyptian imports require confirmed tariff codes, customs value, origin status, and regulatory controls before arrival. Key steps:",
+    "list": [
+      "Confirm the complete 10-digit TARIC code before export.",
+      "Obtain valid EUR.1 or origin declaration documentation.",
+      "Check the importer's EORI and VAT details.",
+      "Review CBAM scope for fertilisers, aluminium, iron, and steel.",
+      "Prepare CHED-PP or CHED-D documentation where required.",
+      "Match the invoice, packing list, bill of lading, and certificates.",
+      "Confirm product safety, labelling, and conformity requirements."
+    ],
+    "p2": "Early checks reduce origin disputes, customs holds, storage costs, and unexpected duty assessments."
+  },
+  "agreement": {
+    "title": "EU–Egypt Trade Agreement",
+    "p1": "The EU–Egypt Association Agreement has applied since 2004, removing tariffs on industrial products and improving agricultural market access.",
+    "p2": "Not every Egyptian shipment is automatically duty-free. Goods must qualify as Egyptian-originating under applicable preferential origin rules. Belgian customs may reject a preference when origin proof is missing, invalid, or inconsistent with commercial documents, reverting to the standard EU tariff.",
+    "p3": "Importers should verify the origin position before goods leave Alexandria, Port Said, or Damietta, as correcting origin documents after departure can delay customs release.",
+    "sub1": "Industrial Goods",
+    "p4": "Qualifying Egyptian industrial products — fertilisers, aluminium, iron and steel, plastics, cables, garments, machinery, and electrical equipment — can receive preferential treatment under the Association Agreement.",
+    "p5": "Preferential treatment depends on the product-specific origin rule. Egyptian export alone does not prove Egyptian origin. Goods produced with imported materials must satisfy the required manufacturing, processing, value, or tariff-change rule. The invoice description, TARIC code, origin proof, and production records must all identify the same product.",
+    "sub2": "Agricultural Goods",
+    "p6": "Agricultural products follow separate tariff and control requirements. Preferential access may depend on the product, season, entry price, tariff quota, and origin documentation.",
+    "p7": "Egyptian oranges, strawberries, vegetables, and herbs may require phytosanitary documents, and some face increased food-safety controls for pesticide residues. A preferential tariff does not remove sanitary, phytosanitary, or food-safety requirements — customs release can remain blocked until border authority checks are complete.",
+    "p8": "Importers should check the current TARIC measure and EU control listing for the exact commodity code, as product lists and inspection frequencies can change."
+  },
+  "originProof": {
+    "title": "Preferential Origin Proof",
+    "p1": "The revised PEM rules use EUR.1 or an origin declaration as the main proofs for EU–Egypt trade. EUR-MED is no longer the standard document under this system.",
+    "p2": "Egyptian customs issue EUR.1 certificates. Approved exporters can use origin declarations, while any exporter can normally use one for originating goods worth up to €6,000.",
+    "p3": "For a full breakdown of EU origin documents for Egyptian goods, see <1>certificate of origin EU Egypt</1>.",
+    "p4": "Importers should verify product descriptions, origin rules, validity, cumulation, and required wording before shipment."
+  },
+  "eori": {
+    "title": "EORI and Representation",
+    "p1": "The customs declaration must correctly identify the importer, declarant, and representative.",
+    "p2": "An EU importer requires a valid EORI number aligned with the company name, VAT details, invoice buyer, and customs representation arrangement. A customs representative can act directly — in the importer's name and on their behalf — or indirectly, acting in its own name on behalf of the importer. The representation type affects responsibility for customs debt and declaration data. Non-EU businesses may require an EU-established indirect representative.",
+    "p3": "These details must be confirmed before cargo arrives. An invalid EORI or unclear representation mandate can prevent declaration acceptance."
+  },
+  "customsValue": {
+    "title": "Customs Value and Incoterms",
+    "p1": "Customs value determines the base for customs duty, using the transaction value when legal conditions are satisfied. It normally includes the goods price and certain costs to the EU entry point — freight, insurance, assists, royalties, or other required additions.",
+    "p2": "Incoterms affect how costs appear in commercial documents but do not replace customs valuation rules.",
+    "list": [
+      "CIF Antwerp — seller's price normally includes cost, insurance, and freight to Antwerp, which may already form part of the transaction value.",
+      "FOB Alexandria, Port Said, or Damietta — invoice excludes main international freight and insurance; the importer must provide these costs separately.",
+      "EXW — additional transport and handling costs may need to be added.",
+      "DDP — contract price may include duties, taxes, and destination costs requiring separate valuation treatment."
+    ],
+    "p3": "Importers should provide a clear freight breakdown when the invoice value includes costs beyond the EU entry point to avoid overvaluation."
+  },
+  "duties": {
+    "title": "Duties and Import VAT",
+    "p1": "The final duty depends on the complete 10-digit TARIC code, origin, declaration date, and measures in force.",
+    "table": [
+      {
+        "product": "Nitrogenous fertilisers",
+        "heading": "3102",
+        "position": "Reduced or zero rate may apply",
+        "checks": "Origin proof, CBAM, TARIC measures"
+      },
+      {
+        "product": "Unwrought aluminium",
+        "heading": "7601",
+        "position": "Reduced or zero rate may apply",
+        "checks": "Origin proof, CBAM, trade defence"
+      },
+      {
+        "product": "Plastic materials",
+        "heading": "3901",
+        "position": "Check exact subheading",
+        "checks": "Origin rule, product description"
+      },
+      {
+        "product": "Plastic articles",
+        "heading": "3920 or 3923",
+        "position": "Check exact subheading",
+        "checks": "Product use, material, dimensions"
+      },
+      {
+        "product": "Fresh oranges",
+        "heading": "0805.10",
+        "position": "Seasonal or preferential measures may apply",
+        "checks": "CHED-PP, possible CHED-D, entry price"
+      },
+      {
+        "product": "Woven garments",
+        "heading": "6203",
+        "position": "Preference may apply",
+        "checks": "Origin rule, textile labelling"
+      }
+    ],
+    "p2": "A zero preferential rate does not remove anti-dumping duties, countervailing duties, safeguards, agricultural measures, or tariff quotas.",
+    "p3": "Belgium's standard VAT rate is 21%, with reduced rates of 12%, 6%, or 0% applying to qualifying goods. The import VAT base includes customs value, customs duty, excise duty where applicable, and certain costs to the first destination. Eligible Belgian businesses can use ET 14.000 authorisation to move import VAT payment to the periodic VAT return, avoiding pre-financing at customs."
+  },
+  "cbam": {
+    "title": "CBAM Rules for 2026",
+    "p1": "CBAM applies separately from preferential customs duty. An Egyptian product can qualify for zero customs duty and still be subject to CBAM. The definitive phase started 1 January 2026, covering cement, iron and steel, aluminium, fertilisers, electricity, and hydrogen.",
+    "p2": "Importers bringing more than 50 tonnes of covered goods in a calendar year generally require authorised CBAM declarant status. The 50-tonne threshold does not apply to electricity or hydrogen. Egyptian aluminium, fertiliser, iron, and steel importers should confirm the exact CN code before shipment, as not every product within a broad chapter falls inside CBAM.",
+    "table": [
+      {
+        "req": "Definitive phase",
+        "pos": "Started 1 January 2026"
+      },
+      {
+        "req": "General annual threshold",
+        "pos": "More than 50 tonnes"
+      },
+      {
+        "req": "Authorised status",
+        "pos": "Required above the threshold"
+      },
+      {
+        "req": "First reporting year",
+        "pos": "2026 imports"
+      },
+      {
+        "req": "Certificate sales",
+        "pos": "Start 1 February 2027"
+      },
+      {
+        "req": "First annual declaration",
+        "pos": "Due 30 September 2027"
+      },
+      {
+        "req": "First certificate surrender",
+        "pos": "Due 30 September 2027"
+      }
+    ],
+    "p3": "Importers above the threshold must collect installation and embedded-emissions data for 2026 imports. The customs declaration must include correct CBAM references and document codes."
+  },
+  "plantHealth": {
+    "title": "Plant Health Controls",
+    "p1": "Regulated Egyptian plants and plant products may require a phytosanitary certificate and CHED-PP pre-notification through TRACES NT. The CHED-PP must match the certificate and commercial documents across CN code, origin, consignee, quantity, entry point, and reference numbers. Controls vary by commodity and intended use — confirm requirements before shipment."
+  },
+  "foodSafety": {
+    "title": "Food Safety Controls",
+    "p1": "CHED-D applies to food and feed of non-animal origin under increased controls or emergency measures and is separate from CHED-PP. An Egyptian produce shipment may require plant-health controls, food-safety controls, or both.",
+    "p2": "Food-safety checks cover pesticide residues, microbiological risks, contaminants, additives, and documentary compliance. EU maximum residue limits apply — compliance with Egyptian domestic limits does not automatically satisfy EU requirements. Pre-shipment testing reduces risk but does not replace official border controls."
+  },
+  "compliance": {
+    "title": "Product Compliance",
+    "p1": "Customs clearance does not confirm that goods can legally enter the EU market. Electrical goods may need CE marking. Chemicals and plastics may require REACH compliance. Garments need correct fibre labels. Fertilisers may face CBAM and environmental rules. Importers should verify product conformity before production and shipment."
+  },
+  "process": {
+    "title": "Antwerp Clearance Process",
+    "p1": "Egyptian sea cargo commonly reaches Belgium through the Port of Antwerp-Bruges. Winz supports Port of Antwerp container shipments carrying fertilisers, aluminium, plastics, garments, machinery, and eligible produce — covering customs clearance, documentation, and compliance support. Transport and delivery are arranged by the importer, freight forwarder, or logistics provider.",
+    "sub1": "ICS2 Cargo Data",
+    "p2": "The carrier normally lodges the Entry Summary Declaration through ICS2. Cargo descriptions, HS information, consignee details, and EORI data must be accurate. Differences between the ENS and import declaration can trigger questions.",
+    "sub2": "Document Review",
+    "p3": "The commercial invoice, packing list, bill of lading, origin proof, freight costs, and regulatory certificates should be checked before arrival. Missing data should be corrected before the declaration is lodged — early corrections are easier than amendments after customs selection.",
+    "sub3": "IDMS Declaration",
+    "p4": "Belgian import declarations are submitted through IDMS. The declaration includes the TARIC code, customs value, origin, procedure, VAT details, representation, and supporting document references. Customs acceptance depends on system validation, risk selection, inspection, and authority decisions.",
+    "sub4": "Border Controls",
+    "p5": "Fresh produce and regulated goods may require checks at an authorised border facility. The customs declaration cannot proceed normally while a required CHED remains pending. Importers should confirm the correct border entry point before loading — not every terminal can process every regulated commodity. Goods moving from Antwerp under customs suspension may require a T1 transit declaration."
+  },
+  "documents": {
+    "title": "Required Import Documents",
+    "table": [
+      {
+        "doc": "Commercial invoice",
+        "purpose": "Confirms price, seller, buyer, currency, Incoterm, and goods",
+        "use": "All commercial imports"
+      },
+      {
+        "doc": "Packing list",
+        "purpose": "Confirms packages, quantities, weights, and marks",
+        "use": "Most shipments"
+      },
+      {
+        "doc": "Bill of lading",
+        "purpose": "Identifies sea cargo, consignee, vessel, and container",
+        "use": "Container shipments"
+      },
+      {
+        "doc": "EUR.1",
+        "purpose": "Supports a preferential origin claim",
+        "use": "Eligible Egyptian originating goods"
+      },
+      {
+        "doc": "Origin declaration",
+        "purpose": "Supports a preferential claim",
+        "use": "Eligible consignments"
+      },
+      {
+        "doc": "Freight and insurance statement",
+        "purpose": "Supports customs valuation",
+        "use": "FOB, EXW, or unclear freight breakdowns"
+      },
+      {
+        "doc": "Phytosanitary certificate",
+        "purpose": "Confirms plant-health certification",
+        "use": "Regulated plants and plant products"
+      },
+      {
+        "doc": "CHED-PP",
+        "purpose": "Records plant-health entry controls",
+        "use": "Regulated plant consignments"
+      },
+      {
+        "doc": "CHED-D",
+        "purpose": "Records increased food or feed controls",
+        "use": "Listed non-animal food and feed"
+      },
+      {
+        "doc": "CBAM authorisation or reference",
+        "purpose": "Supports CBAM compliance",
+        "use": "Covered goods above the threshold"
+      },
+      {
+        "doc": "Product compliance documents",
+        "purpose": "Support EU market requirements",
+        "use": "Regulated industrial goods"
+      }
+    ],
+    "p1": "The invoice should contain a clear commercial description. Generic descriptions such as \"parts,\" \"chemicals,\" \"samples,\" or \"textiles\" are often insufficient.",
+    "p2": "The origin proof should match the goods shown on the invoice. The packing list and bill of lading should also support the declared quantities and weights."
+  },
+  "risks": {
+    "title": "Main Compliance Risks",
+    "p1": "Egyptian import files commonly face risks involving origin, tariff classification, plant or food controls, CBAM, and customs valuation.",
+    "sub1": "Origin Verification",
+    "p2": "Customs can verify whether the exported goods genuinely satisfy the preferential origin rule.",
+    "p3": "The preference may be refused when the certificate contains incorrect information or the producer cannot support the manufacturing rule.",
+    "p4": "Garments, plastics, aluminium products, and manufactured goods using imported materials require careful origin checks. Export from Egypt alone is not enough.",
+    "p5": "When customs refuses the claim, the importer may face standard duty, interest, delays, and post-clearance recovery.",
+    "sub2": "Classification Errors",
+    "p6": "A four-digit HS heading does not provide enough information for an EU import declaration. Customs duty and regulatory measures depend on the complete TARIC classification.",
+    "p7": "A wrong code can hide CBAM scope, plant controls, anti-dumping duty, licensing requirements, or product restrictions.",
+    "p8": "Classification should reflect the product's material, function, composition, manufacturing stage, and intended use.",
+    "sub3": "Pesticide Residues",
+    "p9": "Egyptian produce can face detention or rejection when laboratory results exceed an EU maximum residue limit.",
+    "p10": "Possible outcomes include additional sampling, delayed release, re-export, destruction, or corrective action.",
+    "p11": "The importer should obtain current product specifications, treatment records, and suitable test results before loading higher-risk produce.",
+    "sub4": "CHED Mismatches",
+    "p12": "CHED errors can block border clearance even when the commercial documents appear correct.",
+    "p13": "Common mismatches involve the CN code, commodity description, weight, package count, origin, consignee, entry point, or certificate number.",
+    "p14": "CHED-PP and CHED-D serve different purposes. Using the wrong document creates avoidable delays.",
+    "p15": "North African importers facing similar origin and produce-control issues can also review <1>importing from Morocco to EU</1>.",
+    "sub5": "CBAM Gaps",
+    "p16": "CBAM risk often begins with an incorrect CN code or misunderstanding of the annual threshold.",
+    "p17": "Importers should not assume that preferential duty removes CBAM. They should also avoid waiting until the annual declaration deadline to collect emissions data.",
+    "p18": "Supplier installation details and emissions records can be difficult to reconstruct after importation."
+  },
+  "checklist": {
+    "title": "Pre-Shipment Checklist",
+    "p1": "A complete pre-shipment review should take place before the container or air cargo leaves Egypt. Importers should complete 9 checks:",
+    "list": [
+      "Confirm the full 10-digit TARIC code.",
+      "Check the current EU–Egypt origin rule.",
+      "Obtain valid EUR.1 or origin declaration evidence.",
+      "Verify EORI, VAT, consignee, and representation details.",
+      "Identify CBAM scope and annual tonnage.",
+      "Check CHED-PP and CHED-D requirements.",
+      "Review product safety, labelling, and conformity rules.",
+      "Match the invoice, packing list, bill of lading, and certificates.",
+      "Send the customs file before arrival."
+    ],
+    "p2": "This review does not prevent customs inspections. It reduces errors that can be corrected before the shipment reaches the EU border."
+  },
+  "support": {
+    "title": "Winz Customs Support",
+    "p1": "Winz supports importers, exporters, freight forwarders, and logistics companies clearing Egyptian goods through Belgium.",
+    "p2": "The service focuses on customs clearance and related compliance. Winz does not provide sea freight, air freight delivery, road transport, or container shipping.",
+    "listTitle": "Customs support can include:",
+    "list": [
+      "Checking commercial and transport documents before arrival.",
+      "Reviewing EUR.1 and origin declaration details.",
+      "Confirming HS and TARIC classification.",
+      "Calculating customs duty and import VAT.",
+      "Reviewing CBAM scope and declaration references.",
+      "Checking CHED-PP and CHED-D document consistency.",
+      "Preparing Belgian IDMS import declarations.",
+      "Supporting T1 transit declarations where required.",
+      "Coordinating customs questions and release status.",
+      "Communicating in English, French, Dutch, and German."
+    ],
+    "p3": "Each declaration depends on complete and accurate information from the importer, supplier, carrier, and other parties.",
+    "cta": "Contact Winz for <1>EU-Egypt Association Agreement customs consulting Belgium</1> when an Egyptian shipment requires origin, tariff, CBAM, VAT, or border-control review."
+  },
+  "faq": {
+    "title": "FAQ — Importing from Egypt to the EU",
+    "questions": [
+      {
+        "q": "What is the EU–Egypt agreement?",
+        "a": "The EU–Egypt Association Agreement creates preferential trade conditions for qualifying goods. Industrial products can receive reduced or zero duty when they meet the origin rules and have accepted proof."
+      },
+      {
+        "q": "Can Egyptian goods enter duty-free?",
+        "a": "Qualifying Egyptian industrial goods can receive preferential treatment. The final result depends on the TARIC code, product-specific origin rule, proof of origin, and other measures in force."
+      },
+      {
+        "q": "Is EUR-MED still required?",
+        "a": "The revised PEM rules use EUR.1 or an origin declaration as the main proofs. Importers should check the current rules and cumulation matrix before export."
+      },
+      {
+        "q": "What can the EU import from Egypt?",
+        "a": "Common imports include fertilisers, aluminium, plastics, garments, electrical equipment, citrus, strawberries, vegetables, and manufactured goods. Each product follows its own tariff and compliance requirements."
+      },
+      {
+        "q": "Does Egypt belong to the EU?",
+        "a": "Egypt is outside the EU customs territory. Commercial goods entering the EU from Egypt normally require an import declaration and customs clearance."
+      },
+      {
+        "q": "Is an EORI number required?",
+        "a": "An EORI number is normally required for an EU business acting as the importer or customs declarant. The EORI data must match the declaration and representation arrangement."
+      },
+      {
+        "q": "Does CBAM apply to fertilisers?",
+        "a": "CBAM applies to fertilisers that fall within covered CN codes. Importers above the general annual 50-tonne threshold normally require authorised CBAM declarant status."
+      },
+      {
+        "q": "Does zero duty remove CBAM?",
+        "a": "No. Preferential customs duty and CBAM are separate systems. Goods can receive zero customs duty and remain subject to CBAM obligations."
+      },
+      {
+        "q": "Do Egyptian oranges require CHED-PP?",
+        "a": "Oranges can require phytosanitary certification and CHED-PP plant-health controls. They may also require CHED-D when listed under increased food-safety controls."
+      },
+      {
+        "q": "How can importers reduce delays?",
+        "a": "Importers can reduce avoidable delays by checking the TARIC code, origin proof, customs value, EORI data, CBAM status, regulatory documents, and ICS2 information before arrival."
+      }
+    ]
+  }
+}

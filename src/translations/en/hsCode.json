@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "title": "HS Code Classification Belgium | Winz",
+    "description": "Winz determines and files the correct CN code on Belgian customs declarations. Duty calculation, CBAM exposure, BTI guidance, and misclassification risk are checked before goods are declared.",
+    "keywords": "HS Code Classification"
+  },
+  "hero": {
+    "title": "HS Code Classification Belgium — Tariff Code and Duty Calculation Service",
+    "subtitle": "An HS code is a numerical product classification code used by customs authorities to identify goods, calculate import duties, and apply trade measures."
+  },
+  "intro": {
+    "p1": "For the full scope of Winz customs services, see <1>customs clearance Belgium</1>.",
+    "p2": "In Belgium, every import declaration filed through PLDA requires a minimum 8-digit CN code. The 6-digit international HS code alone is not enough for Belgian customs declarations.",
+    "p3": "Incorrect classification can trigger duty recovery, interest, penalties, shipment delays, and post-clearance audit exposure.",
+    "p4": "Winz determines the correct CN code before every declaration is submitted. Importers do not need to research, verify, or supply codes independently. Classification is integrated into the <1>EU import clearance</1> process at no separate charge."
+  },
+  "structure": {
+    "title": "HS Code, CN Code, and TARIC — How the Three-Level Structure Works in Belgium",
+    "intro": "Belgium uses a 3-level tariff code structure. Each level has a different function on a customs declaration.",
+    "table": [
+      { "level": "6-digit HS code", "usedFor": "International product base", "requirement": "Not enough alone" },
+      { "level": "8-digit CN code", "usedFor": "EU customs classification", "requirement": "Required for PLDA" },
+      { "level": "10-digit TARIC code", "usedFor": "EU trade measures", "requirement": "Used where measures apply" }
+    ],
+    "definitions": [
+      "<1>6-digit HS code</1> — the internationally harmonised base maintained by the World Customs Organization. It identifies the chapter, heading, and subheading across 200+ customs territories.",
+      "<1>8-digit CN code</1> — the EU extension of the HS code. It is required for Belgian import and export declarations.",
+      "<1>10-digit TARIC code</1> — the full EU-level code used for anti-dumping duties, tariff suspensions, quotas, safeguards, and CBAM-related measures. The full EU tariff schedule is covered under <2>TARIC combined nomenclature Belgium</2>."
+    ],
+    "outro": "Submitting a 6-digit code where an 8-digit CN code is required creates a declaration error."
+  },
+  "dutyRate": {
+    "title": "How the CN Code Sets the Duty Rate",
+    "text": "The CN code entered on a PLDA declaration is the direct input into the EU TARIC database. TARIC returns the standard EU import duty rate, any preferential duty rate, anti-dumping or countervailing duties, tariff quotas or suspensions, and import restrictions or licence requirements. The same physical product can attract different duty rates depending on the CN code and origin. A mismatch between product classification and declared origin is one of the most common causes of underpaid duty at Belgian customs.",
+    "links": [
+      "Full calculation method: <1>how import duty is calculated</1>",
+      "CBAM obligations by CN heading from 2026: <2>CBAM and HS codes Belgium 2026</2>"
+    ]
+  },
+  "determination": {
+    "title": "How Customs Determines the Correct HS Code",
+    "intro": "Customs classification is based on the product's objective characteristics at the time of import. Belgian customs does not classify goods by brand name, supplier wording, or commercial description alone. Classification usually depends on:",
+    "list": [
+      "<1>Material composition</1> — steel, aluminium, plastic, cotton",
+      "<1>Product function</1> — tool, machine part, garment, packaging",
+      "<1>Processing state</1> — raw, semi-finished, finished",
+      "<1>Presented form</1> — set, part, component, accessory",
+      "<1>Country of origin</1> — origin-linked duty or trade measures",
+      "<1>Intended use</1> — medical, industrial, consumer, food-grade"
+    ],
+    "outro": "Winz checks product descriptions, technical sheets, composition details, photos, invoices, and supplier documents before selecting the CN code."
+  },
+  "rules": {
+    "title": "General Rules for Interpretation",
+    "intro": "The General Rules for Interpretation guide HS and CN classification when products are difficult to classify. These rules help customs decide where a product belongs in the tariff structure.",
+    "subtitle": "Key rules include:",
+    "list": [
+      "<1>GIR 1</1> — classification starts with section notes, chapter notes, and heading wording",
+      "<1>GIR 2</1> — Incomplete or unfinished goods may still be classified as finished goods",
+      "<1>GIR 3</1> — composite goods are classified by essential character when needed",
+      "<1>GIR 4</1> — Goods not covered clearly are classified with the most similar goods"
+    ],
+    "outro": "Composite products often create classification risk. Examples include mixed-material furniture, textile-plastic goods, machine kits, and accessories packed with main products."
+  },
+  "examples": {
+    "title": "Common Product Classification Examples",
+    "intro": "Product examples help importers understand why classification requires technical review.",
+    "table": [
+      { "type": "Cotton T-shirts", "area": "Chapter 61", "risk": "Fibre composition affects heading" },
+      { "type": "Aluminium profiles", "area": "Chapter 76", "risk": "Anti-dumping measures may apply" },
+      { "type": "Plastic packaging", "area": "Chapter 39", "risk": "Food-contact use may affect checks" },
+      { "type": "Steel fasteners", "area": "Chapter 73", "risk": "Origin can trigger extra duties" },
+      { "type": "Electrical control units", "area": "Chapter 85", "risk": "Function affects heading" },
+      { "type": "Machinery parts", "area": "Chapters 84/85", "risk": "Part vs complete machine issue" }
+    ],
+    "outro": "These examples are not fixed legal classifications. The correct CN code depends on product composition, function, and presentation."
+  },
+  "sections": {
+    "misclassification": {
+      "title": "Misclassification — What It Costs",
+      "text": "A wrong CN code on a Belgian declaration can trigger back-payment of underpaid duty. Belgian customs may also apply interest and administrative penalties where the declaration caused a duty shortfall. Post-clearance audits can review previous declarations filed under the same CN code. One wrong classification can therefore affect multiple shipments. Overpayment is also a risk. A code with a higher duty rate increases import costs. Reclaiming overpaid duty requires a correction procedure that many importers miss. Winz verifies CN code accuracy against product composition, processing state, and declared origin before any declaration is submitted. Penalty exposure detail: <1>customs penalties HS misclassification Belgium</1>."
+    },
+    "cbam": {
+      "title": "CBAM and HS Code Classification",
+      "text": "CBAM exposure is linked to CN headings. From 2026, importers of affected goods must treat CN classification as a compliance control, not only a duty calculation step. CBAM can apply to steel, cement, aluminium, fertilisers, hydrogen, and electricity. A wrong CN code can hide a CBAM obligation or create unnecessary reporting exposure. Winz checks CBAM relevance before the declaration is lodged when goods fall near affected CN headings."
+    },
+    "bti": {
+      "title": "Binding Tariff Information — The Official Classification Ruling",
+      "text": "Binding Tariff Information is an official EU classification ruling. A BTI decision is binding on customs authorities across EU member states for 3 years from the issue date.",
+      "subtitle": "BTI applications are useful for:",
+      "list": [
+        "New product categories",
+        "Composite goods",
+        "High-value shipments",
+        "Repeated imports",
+        "Products with unclear tariff headings",
+        "Goods exposed to anti-dumping duty or CBAM"
+      ],
+      "outro": "Processing time with Belgian FPS Finance commonly runs 30 to 90 days."
+    },
+    "howWinzClassifies": {
+      "title": "How Winz Classifies",
+      "text": "Winz determines the CN code for every shipment based on product description, material composition, processing or manufacturing state, declared country of origin, and any applicable EU trade agreement or trade measure. Clients provide the product details, and Winz identifies the correct code. No separate lookup is needed on the importer's side. For ambiguous product categories, Winz advises whether a BTI application is needed before the first shipment is filed. Complex tariff strategy and duty optimisation fall under <1>EU customs advisory</1>.",
+      "links": [
+        "Where the CN code appears on a filed declaration: <1>how to read a customs declaration</1>.",
+        "Key tariff terms used in Belgian customs declarations are defined under <2>EU customs terminology</2>."
+      ]
+    }
+  },
+  "cta": {
+    "title": "Request HS Classification Assistance Belgium",
+    "text": "Winz classifies CN codes, files PLDA declarations, and manages tariff accuracy for importers and freight forwarders across Belgian entry points.",
+    "subtext": "Winz supports customs clearance for sea freight, road freight, air freight, container shipments, and land-border movements.",
+    "button": "request HS classification assistance Belgium"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "questions": [
+      {
+        "q": "Can I use the HS code my supplier put on the commercial invoice?",
+        "a": "Supplier HS codes can be used as a reference, but they should not be treated as a confirmed EU classification. Supplier codes often reflect the export country's tariff system. Belgium requires the correct 8-digit CN code for PLDA declarations."
+      },
+      {
+        "q": "Do HS codes change, and what happens to existing declarations when they do?",
+        "a": "The Harmonized System is revised every 5 years. The current edition is HS 2022. When headings change, CN codes can also change. Declarations filed under outdated codes after a revision date may be treated as misclassified."
+      },
+      {
+        "q": "What is the difference between the CN code used for imports and exports in Belgium?",
+        "a": "Import declarations require the correct 8-digit CN code. Export declarations use the same CN base, but export restrictions, dual-use rules, or licence requirements can require deeper TARIC-level checks."
+      },
+      {
+        "q": "Can an anti-dumping duty be triggered by a wrong CN code?",
+        "a": "Yes. Anti-dumping duties attach to specific CN codes and origin countries. A wrong CN code can remove goods from the correct anti-dumping heading or place them inside a heading that does not apply."
+      },
+      {
+        "q": "Does the same product always receive the same CN code regardless of the supplier?",
+        "a": "No. Classification depends on composition, processing state, function, and presented form. Two similar products can fall under different CN headings if material percentages, use, or physical presentation differ."
+      },
+      {
+        "q": "Is the CN code classification charged as a separate service at Winz?",
+        "a": "Classification is included in the standard customs declaration service at Winz. Extended research, BTI applications, or strategic duty optimisation across a product range fall under customs consulting."
+      },
+      {
+        "q": "What is the EU TARIC database?",
+        "a": "TARIC is the EU's integrated tariff database. It maps CN codes to duty rates, preferential rates, anti-dumping duties, tariff quotas, restrictions, and CBAM-related measures. Winz uses TARIC as the primary reference for Belgian customs declarations."
+      }
+    ]
+  }
+}

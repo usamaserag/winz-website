@@ -1,0 +1,225 @@
+{
+  "meta": {
+    "title": "Full Container Load Customs Clearance Belgium | Winz",
+    "description": "Winz handles FCL customs clearance for 20ft, 40ft, high cube, and reefer containers entering Belgium through Antwerp or Rotterdam.",
+    "keywords": "FCL Customs Clearance"
+  },
+  "hero": {
+    "title": "FCL Customs Clearance Belgium",
+    "subtitle": "FCL customs clearance in Belgium covers declaring and releasing goods arriving in a full container load. The declaration records each product line, customs classification, value, origin, quantity, and applicable import measures."
+  },
+  "intro": {
+    "p1": "See <1>customs clearance Belgium</1> for Winz’s customs services.",
+    "p2": "Most Belgian import declarations use IDMS, which is replacing PLDA. PLDA may still apply to specific exceptions or authorised fallback procedures. Winz verifies the correct route and data before submission.",
+    "p3": "Customs release does not automatically authorise terminal collection. Customs, the shipping line, terminal, and appointed haulier control different stages.",
+    "p4": "Winz coordinates the declaration, release status, and collection readiness with the importer, freight forwarder, and transport provider. It provides customs clearance and compliance support but does not sell container transport or road haulage."
+  },
+  "howItWorks": {
+    "title": "How FCL Clearance Works",
+    "intro": "FCL clearance follows a structured process from document review to terminal release. Early preparation can reduce waiting time when the goods arrive. The main steps are:",
+    "steps": [
+      "<1>Document review:</1> Winz receives the invoice, packing list, bill of lading details, EORI number, product data, and Incoterm.",
+      "<1>Checks:</1> Each product line is checked for classification, origin, customs value, restrictions, and duty exposure.",
+      "<1>Submission:</1> The import declaration is submitted or pre-lodged through the applicable Belgian customs system.",
+      "<1>Assessment:</1> Belgian customs completes its risk assessment and may request documents, scanning, sampling, or physical inspection.",
+      "<1>Release:</1> Release is confirmed after customs, financial, commercial, and terminal conditions are complete."
+    ],
+    "outro": "An accepted customs declaration receives a Movement Reference Number, or MRN. The MRN identifies the declaration and allows its customs status to be monitored. Pre-lodgement can reduce declaration processing after arrival. It does not remove customs controls or guarantee immediate release."
+  },
+  "coverage": {
+    "title": "FCL Declaration Coverage",
+    "intro": "One FCL declaration may contain several goods items from the same shipment. Each requires its own classification, description, value, origin, quantity, and supporting information.",
+    "p2": "Products such as textiles, machinery, electronics, food, and aluminium goods cannot share one classification simply because they travel in the same sealed container. A container with 40 product lines may require 40 goods items, each with different duty rates, licences, or trade measures.",
+    "subtitle": "One container may require multiple declarations when it includes:",
+    "list": [
+      "Different importers or consignees",
+      "Separate customs procedures or consignments",
+      "Controlled and non-controlled goods",
+      "Different representatives",
+      "Separate authorisations"
+    ],
+    "outro": "Winz checks the shipment structure to ensure the declaration reflects the correct importer, procedure, documents, and representation. The container normally remains sealed, although customs may require scanning, sampling, or physical examination."
+  },
+  "importerResp": {
+    "title": "Importer Responsibilities",
+    "text": "The importer must provide accurate details about the goods, including their composition, use, value, origin, quantity, and certificates. Winz uses this information to prepare the declaration and identify compliance risks. Incomplete descriptions may cause incorrect classification, duty calculations, or customs queries.",
+    "p2": "The importer normally requires a valid EU EORI number for customs declarations and communications. Customs representation may be:",
+    "list": [
+      "<1>Direct:</1> The representative acts in the importer’s name and on its behalf.",
+      "<1>Indirect:</1> The representative acts in its own name on the importer’s behalf, potentially creating joint liability for customs debt."
+    ],
+    "outro": "Winz confirms the importer, EORI details, customs procedure, and representation arrangement before submitting the declaration."
+  },
+  "documents": {
+    "title": "Documents and Shipment Data",
+    "intro": "Documents and declaration data must be complete before filing, as mismatches can delay acceptance or terminal release.",
+    "table": [
+      { "doc": "Commercial invoice", "purpose": "Confirms parties, products, quantities, and transaction price" },
+      { "doc": "Packing list", "purpose": "Confirms packages, weights, dimensions, and contents" },
+      { "doc": "Bill of lading", "purpose": "Identifies the container, carrier, consignee, and route" },
+      { "doc": "Product classification", "purpose": "Determines duties, restrictions, licences, and trade measures" },
+      { "doc": "Origin information", "purpose": "Supports preferential or non-preferential treatment" },
+      { "doc": "EORI number", "purpose": "Identifies the importer or declarant" },
+      { "doc": "Incoterm", "purpose": "Helps determine customs-value adjustments and responsibilities" },
+      { "doc": "Arrival details", "purpose": "Confirms the vessel, terminal, container, and expected arrival" }
+    ],
+    "post": [
+      "The invoice must list each product and value. Freight, insurance, royalties, and other adjustments may affect customs value. The packing list should match the invoice and shipping data.",
+      "Carrier and customs releases are separate. See <1>bill of lading FCL sea freight</1> for their interaction.",
+      "Preferential origin may require an EUR.1, statement on origin, REX-based statement, invoice declaration, or other accepted proof. A standard Certificate of Origin does not automatically qualify.",
+      "Controlled goods may require licences, conformity or health documents, inspection certificates, or Common Health Entry Documents."
+    ]
+  },
+  "classification": {
+    "title": "Product Classification",
+    "intro": "Every goods item requires an accurate customs classification. The EU Combined Nomenclature uses eight-digit CN codes. TARIC normally adds further digits and additional codes to apply EU import measures.",
+    "subtitle": "TARIC can identify:",
+    "list": [
+      "Standard customs duty",
+      "Preferential duty",
+      "Anti-dumping duty",
+      "Tariff quotas",
+      "Duty suspensions",
+      "Import licences",
+      "Surveillance measures",
+      "Product restrictions"
+    ],
+    "post": "Winz supports HS code classification using the importer's technical product information. Useful details include material composition, function, manufacturing method, dimensions, model number, and intended use. A vague description such as \"machine parts\" or \"electronic accessories\" is usually insufficient. Customs may request product sheets, catalogues, photographs, samples, or technical specifications when classification remains uncertain.",
+    "bti": "Importers handling recurring products can also apply for Binding Tariff Information. A valid BTI decision gives a legally binding EU classification for the specified goods and is generally valid for three years. The importer remains responsible for the accuracy of the commercial and technical information supplied for classification."
+  },
+  "release": {
+    "title": "Antwerp Container Release",
+    "intro": "Antwerp terminal release involves more than customs approval. Several separate conditions must align before the container can leave the port.",
+    "table": [
+      { "condition": "Customs release", "confirms": "Customs has released the goods for the declared procedure" },
+      { "condition": "Duty or guarantee status", "confirms": "Duties and taxes are paid, deferred, or covered" },
+      { "condition": "Commercial release", "confirms": "The shipping line has released the container" },
+      { "condition": "Terminal availability", "confirms": "The container is discharged and available" },
+      { "condition": "Pickup entitlement", "confirms": "The authorised operator holds the digital collection right" },
+      { "condition": "Inspection status", "confirms": "No unresolved customs control remains" }
+    ],
+    "post1": "A positive customs status alone does not confirm that every terminal, carrier, and pickup condition is complete. The Inbound Release Platform, or IRP, supports data exchange for incoming goods at Belgian seaports. It connects shipping agents, terminals, declarants, logistics parties, PN/TS, Certified Pick up, and relevant customs systems.",
+    "post2": "PN/TS handles presentation notifications and temporary-storage declarations. IDMS handles the import customs declaration. These systems perform different functions within the inbound process. Certified Pick up controls the secure digital release and pickup rights for containers at Antwerp container terminals. Its use is mandatory for the relevant parties in the container-release chain. After customs clearance is confirmed, <1>haulage from Antwerp</1> moves the container to its final destination.",
+    "blockedTitle": "A container may remain blocked after customs release when:",
+    "blockedList": [
+      "The shipping line has not issued commercial release",
+      "Terminal charges remain unpaid",
+      "The container is not yet discharged",
+      "Pickup rights are incomplete",
+      "A customs inspection remains open",
+      "The terminal has applied another operational block"
+    ],
+    "outro": "Winz monitors the customs status and shares release information with the importer, freight forwarder, and appointed haulier. Importers can send the invoice, packing list, bill of lading details, and product information to Winz for a pre-arrival customs review. For the full release sequence, see <1>container release Belgium customs</1>."
+  },
+  "dutyVAT": {
+    "title": "Import Duty and VAT",
+    "intro": "Import duty is calculated per goods item. It is not charged as one flat percentage on the full container. Each product line receives the duty rate and import measures linked to its TARIC classification and declared origin. The final duty can also depend on preference, quotas, anti-dumping measures, suspensions, and end-use conditions. Belgium's standard import VAT rate is normally 21%. Reduced or zero rates may apply to specific goods under Belgian VAT rules.",
+    "table": [
+      { "element": "Customs value", "basis": "Transaction value with required additions or adjustments" },
+      { "element": "Import duty", "basis": "TARIC rate applied to the customs value" },
+      { "element": "Additional duties", "basis": "Anti-dumping or other measures where applicable" },
+      { "element": "Import VAT", "basis": "VAT rate applied to the relevant import VAT base" }
+    ],
+    "outro": "The import VAT base can include the customs value, customs duty, other taxes, and eligible incidental expenses up to the relevant destination. For example, an importer purchases machinery for €40,000. Eligible freight and insurance costs to the EU border are €2,000. The customs value is €42,000 before any further adjustment. Assuming an illustrative duty rate of 4%, the customs duty would be €1,680. The VAT base may then include the €42,000 customs value, the €1,680 duty, and other eligible import costs. This example only explains the method. The actual duty depends on the TARIC code, origin, customs procedure, and applicable EU measures.",
+    "link": "The complete calculation method is explained in the guide to <1>import duty FCL shipments</1>. Contact Winz for a classification, customs-value, and duty review before the FCL declaration is filed."
+  },
+  "incoterms": {
+    "title": "Incoterms and Responsibility",
+    "text": "Incoterms define delivery, cost, and risk responsibilities between the seller and buyer. They do not replace EU customs rules or automatically determine who can act as the importer.",
+    "details": [
+      "<1>Under CIF</1>, the seller normally arranges sea freight and insurance to the named destination port. The buyer usually manages import clearance unless the contract states otherwise.",
+      "<1>Under FOB</1>, the seller delivers the goods on board at the export port. The buyer normally controls the main transport and Belgian import clearance.",
+      "<1>Under EXW</1>, the buyer carries wider responsibility from the seller's premises. Export formalities still require careful planning because the seller remains established in the export country.",
+      "<1>Under DDP</1>, the seller accepts extensive delivery and import obligations. However, the seller still needs a legally workable EORI, importer, VAT, and customs-representation structure."
+    ],
+    "outro": "Winz checks the Incoterm because it affects customs value, document responsibility, and the allocation of freight and insurance costs."
+  },
+  "sections": {
+    "reefer": {
+      "title": "Reefer FCL Requirements",
+      "text": "Reefer containers follow the same basic customs-declaration structure as dry FCL containers. Additional controls depend on the goods rather than the refrigerated equipment alone. Products of animal origin, plants, plant products, seafood, dairy goods, meat, pharmaceuticals, and temperature-sensitive chemicals may require extra procedures.",
+      "list": [
+        "TRACES NT pre-notification",
+        "Common Health Entry Documents",
+        "Veterinary certificates",
+        "Phytosanitary certificates",
+        "Border Control Post checks",
+        "Temperature records",
+        "Import licences",
+        "Laboratory sampling"
+      ],
+      "outro": "Not every food shipment follows the same SPS procedure. Requirements depend on the product, origin, CN or TARIC code, processing method, and applicable EU controls. Customs release can remain blocked while another competent authority completes its checks. An accepted customs declaration does not override veterinary, phytosanitary, food-safety, or product-compliance requirements. Winz handles the customs declaration and supporting customs documentation. Veterinary, phytosanitary, food-safety, and product controls remain subject to the relevant competent authority. Businesses importing controlled temperature cargo can review the <1>reefer full container customs Belgium</1> procedures before shipment."
+    },
+    "rotterdam": {
+      "title": "Rotterdam to Belgium",
+      "text": "An FCL container arriving at Rotterdam can move to a Belgian destination under the correct customs arrangement. The goods may be imported in the Netherlands when the importer has the required Dutch VAT, customs, and representation structure. Alternatively, non-Union goods may move under T1 transit to an authorised location in Belgium for final customs clearance. A Belgian delivery address does not automatically permit a Belgian import declaration at Rotterdam.",
+      "subtitle": "The correct route depends on:",
+      "list": [
+        "Importer establishment",
+        "VAT registration",
+        "EORI details",
+        "Customs representation",
+        "Duty deferment arrangements",
+        "Transit guarantees",
+        "Delivery location",
+        "Intended customs procedure"
+      ],
+      "outro": "Winz supports the customs planning for containers entering through Rotterdam. Dutch import clearance is available where an authorised arrangement exists. T1 transit may be used when the goods must remain under customs control until Belgian clearance. Winz does not provide road transport from Rotterdam. Customs information is coordinated with the importer's appointed freight forwarder or haulier."
+    },
+    "howWinzSupports": {
+      "title": "How Winz Supports FCL Imports",
+      "text": "A Winz customs specialist manages the file from document intake to release confirmation. Winz handles customs clearance for:",
+      "list": [
+        "20ft dry containers",
+        "40ft dry containers",
+        "40ft high cube containers",
+        "20ft reefer containers",
+        "40ft reefer containers"
+      ],
+      "outro": "The review covers the commercial invoice, packing list, bill of lading, classification, origin, customs value, EORI details, Incoterm, duty exposure, and import controls. Antwerp support includes declaration filing, customs-status monitoring, document responses, and coordination with the importer and appointed haulier. Rotterdam support covers customs planning, Dutch clearance where an authorised arrangement exists, and T1 transit coordination for final clearance in Belgium. The multilingual Winz team supports English, French, Dutch, and German customs documentation."
+    }
+  },
+  "cta": {
+    "title": "Request FCL Customs Clearance",
+    "text": "Winz supports customs clearance for 20ft, 40ft, high cube, dry, and reefer containers entering Belgium through Antwerp or moving from Rotterdam under an appropriate customs procedure.",
+    "subtext": "The service includes document review, classification checks, customs-value review, duty and VAT calculation, declaration filing, customs-status monitoring, and release coordination.",
+    "button": "request FCL customs clearance quote"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "questions": [
+      {
+        "q": "Which system handles Belgian imports?",
+        "a": "Most Belgian import declarations are submitted through IDMS. IDMS is replacing PLDA for imports, although PLDA may remain available for approved exceptions and operational fallback cases. PN/TS handles presentation and temporary-storage messages rather than the main import declaration."
+      },
+      {
+        "q": "Can one container need multiple declarations?",
+        "a": "Yes. One FCL container can require several declarations when it contains goods for different importers, procedures, commercial consignments, or representation arrangements. One declaration can still contain many goods items when the legal and procedural structure permits it."
+      },
+      {
+        "q": "Can clearance start before arrival?",
+        "a": "An FCL declaration can often be pre-lodged before the vessel arrives when sufficient shipment data is available. Final release still depends on arrival messaging, customs risk assessment, payment arrangements, possible controls, and terminal conditions."
+      },
+      {
+        "q": "What delays Antwerp gate-out?",
+        "a": "Antwerp gate-out can be delayed by customs controls, missing commercial release, unpaid terminal charges, incomplete Certified Pick up rights, or unavailable containers. Customs release and terminal collection are separate stages, so every release condition must be completed."
+      },
+      {
+        "q": "When does container free time start?",
+        "a": "Container free time follows the shipping line, terminal, equipment, route, and commercial contract. Importers should confirm the applicable period with the carrier. Early customs preparation reduces avoidable delays but does not guarantee protection from demurrage or detention."
+      },
+      {
+        "q": "What happens during inspection?",
+        "a": "The container remains blocked while customs completes the required control. Customs may order a document check, scan, sample, or physical examination. Timing depends on the control type, terminal capacity, document response, and involvement of other authorities."
+      },
+      {
+        "q": "Is FCL faster than LCL?",
+        "a": "FCL can avoid the deconsolidation stage required for many LCL shipments. Actual customs timing still depends on document quality, customs selection, product controls, terminal availability, and release conditions. For a full comparison, see FCL versus LCL customs clearance Belgium."
+      },
+      {
+        "q": "What is needed for a quote?",
+        "a": "Winz normally needs the commercial invoice, packing list, bill of lading details, container number, product descriptions, origin, Incoterm, EORI number, expected arrival date, and intended customs procedure. Controlled goods may require additional certificates or licences."
+      }
+    ]
+  }
+}

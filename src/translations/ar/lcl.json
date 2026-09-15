@@ -1,0 +1,190 @@
+{
+  "meta": {
+    "title": "LCL Customs Clearance Belgium | Winz",
+    "description": "Winz supports LCL customs clearance in Belgium with IDMS declarations, CN classification, duty calculations, and consignee-level release coordination.",
+    "keywords": "LCL Customs Clearance"
+  },
+  "hero": {
+    "title": "LCL Customs Clearance in Belgium",
+    "subtitle": "LCL customs clearance in Belgium is the process of declaring and releasing one importer's goods from a shared container. LCL means Less than Container Load. Several consignments travel inside the same container, but each importer remains responsible for their own goods."
+  },
+  "intro": {
+    "p1": "See <1>customs clearance Belgium</1> for the full scope of Winz customs services.",
+    "p2": "Different importers normally require separate declarations. Each accepted declaration receives its own Movement Reference Number, or MRN. An MRN identifies the declaration but does not confirm physical cargo availability.",
+    "p3": "LCL landed costs can include broker fees, CFS handling, storage, inspection charges, duty, and import VAT.",
+    "p4": "Winz supports importers, exporters, freight forwarders, and logistics companies with <1>customs declaration for imports</1>, document review, IDMS declaration preparation, CN classification, duty calculations, customs controls, and cargo release coordination."
+  },
+  "howItWorks": {
+    "title": "How LCL Clearance Works",
+    "intro": "A shared container usually travels under a master bill of lading issued to the carrier's contracting party. Each individual consignment is identified by a house bill of lading issued by the NVOCC or consolidating freight forwarder.",
+    "p2": "The house bill connects the cargo lot to its consignee. However, the consignee and the importer are not always the same legal entity. The declaration must identify the correct importer, declarant, representative, seller, buyer, and customs procedure.",
+    "p3": "A typical China-to-Antwerp container may contain textiles for one importer, electronics for another, and machinery parts for a third. Each lot can have different CN codes, origin rules, customs values, licences, and duty rates.",
+    "p4": "Belgium now uses IDMS for most import declarations. PLDA remains available only for limited exceptions and fallback situations. IDMS supports standard declarations, pre-lodged declarations, presentation notifications, amendments, and other import functions.",
+    "processTitle": "The normal process includes:",
+    "steps": [
+      "<1>Document receipt:</1> Winz receives the house bill, invoice, packing list, EORI details, and product data.",
+      "<1>Confirmation:</1> The importer and representation method are confirmed.",
+      "<1>Checks:</1> CN codes, origin, customs value, and applicable measures are checked.",
+      "<1>Filing:</1> The declaration is prepared or pre-lodged in IDMS.",
+      "<1>Arrival:</1> The goods arrive and are presented to customs.",
+      "<1>Deconsolidation:</1> The CFS identifies and separates the individual cargo lot.",
+      "<1>Assessment:</1> Customs completes its risk assessment and any required control.",
+      "<1>Release:</1> Customs release and CFS release are confirmed before collection."
+    ]
+  },
+  "roles": {
+    "title": "Importer and Declarant Roles",
+    "text": "The importer is responsible for placing the goods under the selected customs procedure. The declarant submits the declaration and is responsible for the declared data.",
+    "p2": "Winz may use direct or indirect customs representation, subject to valid authorisation and legal conditions. The method affects the named declarant and customs liability.",
+    "outro": "The importer's EORI, VAT details, establishment, and representation authority must match the chosen route. This matters because the house bill consignee is not always the legal importer."
+  },
+  "documents": {
+    "title": "Documents for Each Consignee",
+    "intro": "Five core documents normally start an LCL clearance file. Additional certificates or authorisations depend on the goods, origin, and customs procedure.",
+    "list": [
+      "<1>House bill of lading</1> — identifies the individual consignment within the shared container. The master bill or arrival reference may also be required. Full document set: <2>customs document checklist LCL Belgium</2>.",
+      "<1>Commercial invoice</1> — states the seller, buyer, goods, price, currency, Incoterm, and payment terms.",
+      "<1>Packing list</1> — shows package numbers, quantities, net weight, gross weight, and cargo dimensions.",
+      "<1>CN code data</1> — assigns the correct eight-digit Combined Nomenclature code to each product line.",
+      "<1>EORI number</1> — identifies the economic operator in EU customs systems."
+    ],
+    "post": [
+      "Conditional documents can include origin proof, licences, conformity records, veterinary or phytosanitary documents, freight evidence, insurance details, and representation authorisation.",
+      "Every document must describe the same transaction. Common problems include inconsistent company names, vague descriptions, missing weights, incorrect values, and unmatched house bill references.",
+      "Winz reviews these details before filing to reduce amendments, valuation questions, and avoidable storage exposure."
+    ]
+  },
+  "filing": {
+    "title": "IDMS Filing and Arrival",
+    "text": "An LCL declaration can be pre-lodged in Belgium's IDMS before deconsolidation when reliable data is available. However, customs accepts it only after the goods are presented or deemed presented.",
+    "p2": "Pre-lodgement does not remove the CFS stage. Cargo must still be identified under the correct house bill, and customs may request documents or inspection.",
+    "outro": "An MRN does not confirm complete release. The LCL customs clearance timeline in Belgium depends on vessel discharge, CFS workload, document readiness, customs controls, payment arrangements, and cargo identification."
+  },
+  "cfs": {
+    "title": "CFS Deconsolidation and Release",
+    "text": "LCL declarations are usually filed after the Container Freight Station physically unstuffs the shared container and separates each consignee's cargo. The vessel discharges the container at the terminal, the container moves to the CFS, the CFS operator unstuffs it, and each lot is identified against its house BoL reference.",
+    "p2": "Only then does Winz submit or finalise the individual IDMS entries with the correct consignee-level data.",
+    "p3": "This mandatory CFS stage commonly adds 24–72 hours to LCL clearance time relative to FCL. The timing depends on vessel discharge, CFS workload, document readiness, and customs control status. For full timeline detail by shipment type, see <1>LCL customs clearance timelines</1>.",
+    "eventsTitle": "At Antwerp and Rotterdam CFS facilities, the customs process depends on three linked events:",
+    "events": [
+      "Container arrival and transfer to the CFS",
+      "Deconsolidation and cargo identification by the house BoL",
+      "IDMS declaration, customs control, and release per consignee"
+    ],
+    "outro": "If customs selects one consignee's lot for document control or inspection, that does not automatically block every other consignee. Each declaration remains separate.",
+    "link": "For a full comparison of clearance differences, see <1>FCL versus LCL EU imports</1>"
+  },
+  "costs": {
+    "title": "Duties, VAT, and LCL Costs",
+    "intro": "Import duty is calculated for the goods in each declaration based on customs value, CN code, origin, and EU TARIC measures.",
+    "p2": "Belgium's standard VAT rate is 21%, with reduced rates of 12% or 6% and a zero rate for specific cases. Treatment depends on the product and applicable VAT rules.",
+    "p3": "Import VAT is generally based on the customs value plus duty, other import charges, and qualifying incidental expenses not already included.",
+    "listTitle": "LCL landed costs can include:",
+    "list": [
+      "Customs declaration fee for preparing and managing the individual entry.",
+      "CFS deconsolidation fee for separating and handling the lot.",
+      "Storage or inspection handling for additional time or movement.",
+      "Import duty based on the CN code, customs value, and origin.",
+      "Import VAT under the applicable Belgian treatment."
+    ],
+    "post": [
+      "Customs value normally starts with the transaction value. Freight, insurance, packing, assists, and other dutiable costs may be added.",
+      "CIF invoices may already include freight and insurance, while FOB or EXW files often require separate evidence. For LCL cargo, the importer's freight share needs a reasonable, supportable allocation method.",
+      "Preferential origin may reduce duty when valid proof is available and the goods meet the relevant rules. Without it, the standard third-country TARIC rate normally applies."
+    ],
+    "outro": "Full cost breakdown: <1>LCL customs clearance costs</1> — Duty methodology: <2>import duty per consignee LCL</2>."
+  },
+  "cnCodes": {
+    "title": "CN Codes and Compliance Risks",
+    "text": "CN code errors affect duty, VAT, licences, trade measures, and customs controls. Each product line must match the commercial description, composition, function, origin, and supporting documents.",
+    "listTitle": "Incorrect classification can cause:",
+    "list": [
+      "Underpaid or overpaid import duty",
+      "Incorrect import VAT calculations",
+      "Missing licences or product controls",
+      "Anti-dumping or safeguard duty exposure",
+      "Customs document checks or inspections",
+      "Post-clearance amendments and recovery action"
+    ],
+    "post": [
+      "One LCL declaration can contain several goods items. Each item needs a suitable CN code, customs value, origin, and quantity.",
+      "For example, one importer may receive plastic products, textile articles, and electronic accessories in the same LCL lot. These categories normally require separate tariff lines.",
+      "Winz reviews CN codes before filing so the declaration aligns with TARIC measures, commercial documents, origin data, and the actual goods."
+    ]
+  },
+  "ics2": {
+    "title": "ICS2 and the Import Declaration",
+    "text": "The Entry Summary Declaration is separate from the Belgian import declaration. ICS2 collects advance safety and security data before goods enter or transit through the EU.",
+    "p2": "The carrier normally lodges the ENS. Multiple filing may apply when another party holds required house-level data that the carrier does not have.",
+    "outro": "ICS2 does not replace the IDMS import declaration. The ENS supports pre-arrival security analysis, while IDMS places the goods under a Belgian customs procedure."
+  },
+  "howWinzHandles": {
+    "title": "How Winz Handles LCL Clearance",
+    "text": "Winz coordinates each LCL customs file around the importer, house bill, product lines, and selected customs procedure. Freight forwarders managing several importers can submit multiple house bill files for coordinated review.",
+    "listTitle": "Winz support includes:",
+    "list": [
+      "House bill, invoice, and packing list review",
+      "Importer, EORI, VAT, and representation checks",
+      "IDMS declaration preparation and tracking",
+      "CN code classification for each product line",
+      "Customs value, duty, and VAT calculations",
+      "Customs document-control responses",
+      "MRN and release-status coordination",
+      "CFS release communication after deconsolidation",
+      "Multilingual support in English, French, Dutch, and German"
+    ],
+    "outro": "Winz can coordinate customs release information with the importer's appointed carrier. After customs release is confirmed, <1>container delivery Belgium</1> moves the individual consignment to its final destination.",
+    "postOutro": "Winz provides customs clearance, customs documentation, compliance, and brokerage support. Winz does not sell ocean freight, container transport, or trucking services."
+  },
+  "cta": {
+    "title": "Request LCL Clearance Support",
+    "text": "Winz supports LCL customs clearance for consolidated imports arriving in Belgium and for Belgian importers using suitable customs routes through Rotterdam.",
+    "subtext": "Each file is reviewed at consignee and product-line level. Winz coordinates IDMS filing, CN classification, customs value, duty and VAT calculations, customs responses, and release status.",
+    "button": "request LCL customs clearance quote"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "questions": [
+      {
+        "q": "What is the difference between master and house bills?",
+        "a": "The master bill covers the consolidated container movement. The house bill identifies an individual consignment. Customs may require both references, but the house bill is central to matching the LCL cargo lot."
+      },
+      {
+        "q": "Does every consignee receive a separate MRN?",
+        "a": "Different importers normally require separate declarations, and each accepted declaration receives an MRN. One importer can declare several goods items when the shipment structure and procedure allow it."
+      },
+      {
+        "q": "Can LCL declarations be filed before deconsolidation?",
+        "a": "Yes. Winz can prepare or pre-lodge the declaration when sufficient data is available. Acceptance depends on presentation, while physical release depends on identification, customs controls, and CFS availability."
+      },
+      {
+        "q": "Why can LCL clearance take longer than FCL?",
+        "a": "LCL requires CFS transfer, opening, separation, and matching to each house bill. Missing documents, customs controls, congestion, or incorrect references can add further time."
+      },
+      {
+        "q": "Can one customs inspection delay other consignments?",
+        "a": "A control on one declaration does not automatically change another declaration’s status. However, shared handling, container controls, or CFS restrictions can delay access to other lots."
+      },
+      {
+        "q": "Can LCL goods enter customs warehousing?",
+        "a": "Yes. Eligible non-Union goods can be placed under customs warehousing after arrival and the required customs formalities. Duty and import VAT are generally suspended while the goods remain under that procedure."
+      },
+      {
+        "q": "Can Rotterdam LCL cargo clear for a Belgian importer?",
+        "a": "Goods may be imported in the Netherlands or moved under transit to Belgium. The correct route depends on the importer, VAT position, representation, destination, and customs authorisations."
+      },
+      {
+        "q": "How does ICS2 apply to consolidated cargo?",
+        "a": "ICS2 requires advance security data. The carrier usually files the ENS, but house-level parties may need to provide or file missing data under multiple filing."
+      },
+      {
+        "q": "Can one LCL lot contain different CN codes?",
+        "a": "Yes. One importer’s LCL lot can contain several product types. Each goods item requires the correct CN code, customs value, origin, quantity, and any applicable supporting document."
+      },
+      {
+        "q": "What commonly delays LCL clearance?",
+        "a": "Common causes include house bill errors, incomplete invoices, vague descriptions, missing origin proof, incorrect CN codes, customs controls, and CFS congestion."
+      }
+    ]
+  }
+}

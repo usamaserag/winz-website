@@ -1,0 +1,232 @@
+{
+  "meta": {
+    "title": "Customs Clearance Port of Rotterdam | Winz",
+    "description": "Winz coordinates Dutch customs declarations, Portbase release, and T1 transit to Belgium for FCL and LCL shipments arriving in Rotterdam."
+  },
+  "hero": {
+    "title": "Customs Clearance at Rotterdam Port",
+    "subtitle": "Customs clearance at the Port of Rotterdam uses Dutch Customs systems, mainly DMS. Portbase supports the exchange of customs and terminal release information across the port."
+  },
+  "intro": {
+    "p1": "See <1>customs clearance Belgium</1> for the full scope of Winz customs services.",
+    "p2": "Goods entering the European Union through Rotterdam need the correct customs procedure before leaving the terminal. Cargo can be released for free circulation in the Netherlands or moved to Belgium under T1 transit.",
+    "p3": "The correct route depends on the importer's VAT position, customs representation, final destination, and duty-planning requirements.",
+    "p4": "Rotterdam and Antwerp operate under the EU Union Customs Code. The same EU TARIC duty rate applies when the product classification, origin, customs value, and trade measures remain identical.",
+    "p5": "Winz coordinates Rotterdam clearance for <1>import clearance and duty service</1> clients and <2>customs transit</2> movements under one account alongside Antwerp."
+  },
+  "process": {
+    "title": "DMS and Portbase Process",
+    "intro": "DMS is the main Dutch system for processing import and export customs declarations. Winz reviews shipment documents and prepares the declaration before arrival when pre-arrival filing is available. This allows time to correct invoice, origin, classification, or consignee errors.",
+    "customsMay": {
+      "title": "Dutch Customs may:",
+      "list": [
+        "Release the declaration",
+        "Request documents",
+        "Select goods for scanning",
+        "Order a physical inspection",
+        "Refer controlled goods to another authority"
+      ]
+    },
+    "portbase": "Portbase connects shipping lines, terminals, customs representatives, freight forwarders, and transport operators. Customs release is only one part of the terminal process. The container may also require shipping-line release, customs-document prenotification, terminal availability, and valid pickup authorisation.",
+    "table": [
+      { "stage": "Document review", "action": "Invoice, packing list, EORI, origin, and CN codes are checked" },
+      { "stage": "Customs declaration", "action": "The import or transit declaration is submitted" },
+      { "stage": "Customs decision", "action": "Dutch Customs releases the goods or selects a control" },
+      { "stage": "Portbase notification", "action": "Customs documents and status reach connected parties" },
+      { "stage": "Commercial release", "action": "The shipping line or agent releases the cargo" },
+      { "stage": "Terminal release", "action": "The terminal confirms availability and pickup conditions" },
+      { "stage": "Gate-out", "action": "The appointed transport operator collects the cargo" }
+    ],
+    "outro": "Customs release does not always allow immediate collection if commercial or terminal release remains pending. Missing documents, incorrect HS codes, inspections, or Portbase data mismatches can extend the process. For expected processing times, see <1>how long customs clearance takes Rotterdam</1>."
+  },
+  "routes": {
+    "title": "Rotterdam-to-Belgium Customs Routes",
+    "intro": "Cargo arriving in Rotterdam for delivery in Belgium normally follows one of two routes.",
+    "t1": {
+      "title": "T1 Transit to Belgium",
+      "p1": "A T1 declaration allows non-Union goods to move from Rotterdam to Belgium while duties and import VAT remain suspended.",
+      "p2": "The movement is registered through NCTS and identifies the departure and destination offices, goods, transport details, seals, and transit guarantee. Goods must reach the declared destination within the permitted period, where the destination office records their arrival and customs status.",
+      "p3": "Closing the T1 does not release goods for free circulation. They may then be:",
+      "list": [
+        "Declared for import in Belgium",
+        "Placed in customs warehousing",
+        "Entered under inward processing",
+        "Assigned another permitted customs procedure"
+      ],
+      "p4": "Duty and VAT become payable upon release for free circulation unless deferment or relief applies.",
+      "p5": "T1 suits importers seeking Belgian customs processing, Belgian VAT treatment, or delivery to a Belgian customs facility before import. Incorrect seal, vehicle, destination, or arrival details can delay transit discharge."
+    },
+    "direct": {
+      "title": "Direct Import in Rotterdam",
+      "p1": "A direct import declaration releases goods for free circulation in the Netherlands. After customs approval and terminal release, they can travel to Belgium as Union goods without a T1.",
+      "p2": "This route may suit businesses with the appropriate Dutch VAT, fiscal representation, or import structure. Dutch Article 23 may allow qualifying importers to account for import VAT through their VAT return instead of paying it at import. Foreign businesses normally require the correct fiscal representation and tax setup.",
+      "p3": "Direct import can avoid a later Belgian declaration, but the VAT structure and delivery transaction must be reviewed before filing."
+    }
+  },
+  "representation": {
+    "title": "Representation and VAT Planning",
+    "p1": "Customs representation determines who submits the declaration and who carries legal responsibility for the information provided.",
+    "p2": "Under direct representation, the customs representative acts in the name and on behalf of the importer. The importer remains the declarant.",
+    "p3": "Under indirect representation, the representative acts in its own name on behalf of the importer. This structure can create joint responsibility for customs debt.",
+    "p4": "The correct arrangement depends on:",
+    "list": [
+      "Where the importer is established",
+      "Who holds the EORI number",
+      "The selected customs procedure",
+      "VAT registration and fiscal representation",
+      "The customs guarantee",
+      "The contractual Incoterm",
+      "The final destination of the goods"
+    ],
+    "outro": "Winz confirms the required representation structure before coordinating a Dutch import or transit declaration. Belgian import declarations generally use IDMS. PLDA may still appear in limited fallback or remaining customs workflows. Businesses moving cargo from Rotterdam to Belgium should therefore distinguish between Dutch DMS filing, T1 transit through NCTS, and Belgian import processing through IDMS."
+  },
+  "documents": {
+    "title": "Required Clearance Documents",
+    "intro": "Correct documents reduce customs queries, declaration amendments, and terminal delays. Winz checks the shipment file before customs submission.",
+    "list": [
+      "Bill of Lading",
+      "Commercial Invoice",
+      "Packing List",
+      "EORI Number",
+      "HS or CN Code",
+      "Certificate of Origin",
+      "Arrival Notice",
+      "Import Licence"
+    ],
+    "outro": "The commercial invoice must identify every product clearly. Generic descriptions such as \"parts,\" \"equipment,\" or \"samples\" can trigger customs questions. The packing list should match the invoice, Bill of Lading, package count, and gross weight. Preferential duty requires valid origin evidence. A country name on the invoice does not always prove preferential origin. Controlled goods can require additional documents. Examples include food certificates, plant-health documents, veterinary documents, conformity records, or import licences."
+  },
+  "duty": {
+    "title": "Customs Value and Duty",
+    "intro": "Import duty is calculated from the customs value and the applicable EU tariff measure. Customs value usually starts with the transaction value. It may also include eligible freight, insurance, royalties, assists, or other costs up to the EU entry point. The calculation follows this sequence:",
+    "list": [
+      "Confirm the customs value.",
+      "Classify each product under the correct CN code.",
+      "Confirm the non-preferential and preferential origin.",
+      "Check TARIC duties and additional measures.",
+      "Calculate import duty per product line.",
+      "Calculate import VAT using the applicable tax base."
+    ],
+    "outro1": "Anti-dumping duties, quotas, suspensions, excise duties, or agricultural measures can apply in addition to the standard customs duty.",
+    "outro2": "Rotterdam and Antwerp use the same EU tariff logic. However, VAT deferment and fiscal representation can create different cash-flow results.",
+    "outro3": "Businesses needing a broader Belgian calculation can review <1>customs clearance costs Rotterdam</1>."
+  },
+  "fclLcl": {
+    "title": "FCL and LCL Clearance",
+    "intro": "Winz supports customs clearance for cargo discharged at major Rotterdam container terminals. These include ECT Delta, ECT Euromax, APM Terminals Maasvlakte II, and Rotterdam World Gateway.",
+    "fcl": {
+      "title": "FCL Shipments",
+      "p1": "FCL refers to cargo transported in a full container. It does not determine the legal number of customs declarations.",
+      "p2": "One FCL container can contain several product lines under one declaration. Separate declarations may be required when the container includes different importers, consignees, procedures, or customs responsibilities.",
+      "p3": "A single declaration can also include goods linked to more than one container when the declaration structure and customs rules allow it.",
+      "p4": "The customs file must match the Bill of Lading, container number, invoice lines, origin data, and CN classification. For the full FCL process, see <1>FCL customs clearance Rotterdam Netherlands</1>.",
+      "p5": "For a comparison of how Rotterdam handles FCL versus LCL movements, see <1>FCL LCL comparison Rotterdam Belgium</1>."
+    },
+    "lcl": {
+      "title": "LCL Shipments",
+      "p1": "LCL cargo shares container space with consignments belonging to different businesses.",
+      "p2": "Each consignee normally needs a separate customs file based on the house Bill of Lading, commercial invoice, packing list, EORI number, and product classification.",
+      "p3": "Declaration preparation can start before deconsolidation. Physical release still depends on the cargo being unloaded, identified, presented, and made available at the Container Freight Station.",
+      "p4": "LCL clearance can take longer because it includes:",
+      "list": [
+        "Container discharge",
+        "Transfer to the CFS",
+        "Deconsolidation",
+        "House Bill of Lading matching",
+        "Individual customs declarations",
+        "Separate release for each consignee"
+      ],
+      "outro": "A customs hold affecting one consignee does not always block every consignment in the container. The result depends on the CFS process and customs control. Winz coordinates the customs side of FCL and LCL shipments. Winz does not sell sea freight, container transport, or trucking services."
+    }
+  },
+  "costs": {
+    "title": "Clearance Cost Factors",
+    "intro": "Rotterdam customs clearance costs depend on the declaration type, shipment structure, product data, and customs controls. A simple import declaration with one importer and a limited number of product lines usually requires fewer customs steps than a multi-consignee LCL shipment. Main cost factors include:",
+    "list": [
+      "Import or export declaration filing",
+      "Number of customs tariff lines",
+      "HS code classification review",
+      "Customs value calculation",
+      "Origin and preference checks",
+      "Portbase release coordination",
+      "T1 transit declaration",
+      "Transit guarantee requirements",
+      "Inspection or document-control support",
+      "LCL deconsolidation and consignee handling",
+      "Customs warehousing coordination"
+    ],
+    "outro": "Import duty and VAT are separate from customs broker fees. Terminal storage, demurrage, detention, CFS handling, and shipping-line charges are also separate. For a full cost breakdown, see <1>import duty Rotterdam</1>."
+  },
+  "delays": {
+    "title": "Common Clearance Delays",
+    "intro": "Rotterdam customs delays often result from missing information, data mismatches, controls, or incomplete release conditions. Common problems include:",
+    "list": [
+      "Missing or invalid EORI number",
+      "Incorrect HS or CN code",
+      "Invoice value mismatch",
+      "Vague product descriptions",
+      "Incorrect origin",
+      "Missing preference evidence",
+      "Unavailable import licence",
+      "Customs release not visible in Portbase",
+      "Shipping-line release blocked",
+      "Incorrectly discharged T1 transit",
+      "LCL cargo unavailable after deconsolidation"
+    ],
+    "outro1": "A correct declaration cannot override a commercial release block. The shipping line may still require payment, an original Bill of Lading, telex release, or other confirmation.",
+    "outro2": "Dutch Customs may select goods for document review, scanning, sampling, or physical examination. Controlled products may also require food, veterinary, plant-health, or product-safety checks.",
+    "outro3": "Winz reviews customs files before submission and coordinates corrections when declaration and Portbase data differ."
+  },
+  "support": {
+    "title": "Rotterdam and Antwerp Support",
+    "p1": "Winz coordinates Rotterdam declarations, T1 transit to Belgium, and Belgian import processing through one customs contact. This helps importers and freight forwarders avoid separate document instructions for each port.",
+    "p2": "Rotterdam suits goods discharged in the Netherlands before Belgian delivery, while Antwerp suits shipments arriving directly in Belgium.",
+    "p3": "Both ports follow the Union Customs Code, TARIC measures, and CN classification rules, but use different declaration systems, terminal platforms, VAT options, and operational processes."
+  },
+  "cta": {
+    "title": "Request Rotterdam Clearance",
+    "text": "Winz coordinates Dutch customs declarations, Portbase release checks, T1 transit, and Belgian customs processing for FCL and LCL shipments arriving in Rotterdam.",
+    "subtext": "Send the Bill of Lading, commercial invoice, packing list, EORI number, product descriptions, origin details, terminal information, and Belgian destination for review.",
+    "button": "Contact Winz for Rotterdam customs clearance support"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "questions": [
+      {
+        "q": "What is the difference between DMS and IDMS?",
+        "a": "DMS is the main Dutch customs declaration system used for import and export procedures. IDMS is Belgium’s system for standard import declarations. Rotterdam declarations follow the Dutch system. Belgian import declarations generally follow IDMS after a T1 movement or direct arrival in Belgium."
+      },
+      {
+        "q": "What is Portbase?",
+        "a": "Portbase is the digital port community system used across Rotterdam. It connects customs document information, terminals, shipping lines, customs representatives, freight forwarders, and transport operators. Customs release alone may not complete every Portbase or terminal release requirement."
+      },
+      {
+        "q": "Are Rotterdam and Antwerp duty rates the same?",
+        "a": "Yes. Both ports apply the EU Common Customs Tariff. The rate remains the same when the CN code, origin, customs value, date, and applicable trade measures are identical. VAT handling and import cash flow can still differ."
+      },
+      {
+        "q": "When should businesses use T1 transit?",
+        "a": "T1 transit is suitable when non-Union goods need to move from Rotterdam to Belgium before final import clearance. It keeps the duty and VAT suspended during the authorised movement. The importer must ensure correct arrival presentation and discharge at the destination."
+      },
+      {
+        "q": "Does T1 closure make the duty payable?",
+        "a": "Not automatically. T1 closure confirms that the transit movement ended correctly. Duty and import VAT normally become payable when the goods are later released for free circulation. Another customs procedure may follow instead."
+      },
+      {
+        "q": "Can LCL cargo move to Belgium?",
+        "a": "Yes. LCL cargo arriving in Rotterdam can be cleared in the Netherlands or moved under the correct customs procedure to Belgium. Each consignee needs a separate customs file. Physical release depends on deconsolidation, cargo availability, and customs status."
+      },
+      {
+        "q": "Does customs release allow immediate pickup?",
+        "a": "Not always. The container may still need shipping-line release, Portbase confirmation, terminal availability, and secure pickup authorisation. All required conditions must be complete before gate-out."
+      },
+      {
+        "q": "Is Rotterdam's free time longer than Antwerp's?",
+        "a": "Free time depends on the shipping line, terminal, equipment type, and commercial agreement. Neither port has a standard free-time period for every shipment. Importers should confirm the applicable terms before vessel arrival."
+      },
+      {
+        "q": "Can goods enter bonded warehousing?",
+        "a": "Yes. Non-Union goods can move to an authorised customs warehouse under the correct procedure. Customs warehousing can suspend duty and import VAT until the goods are released for free circulation or assigned to another permitted customs procedure."
+      }
+    ]
+  }
+}

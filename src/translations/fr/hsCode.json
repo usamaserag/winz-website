@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "title": "Classification Code SH Belgique | Winz",
+    "description": "Winz détermine et déclare le code NC correct sur les déclarations en douane belges. Le calcul des droits, l'exposition au MACF, les RTC et les risques de mauvaise classification sont vérifiés avant de déclarer.",
+    "keywords": "Classification Code SH"
+  },
+  "hero": {
+    "title": "Classification Code SH Belgique — Service de Code Tarifaire et Calcul des Droits",
+    "subtitle": "Un code SH est un code numérique de classification des produits utilisé par les douanes pour identifier les marchandises, calculer les droits d'importation et appliquer les mesures commerciales."
+  },
+  "intro": {
+    "p1": "Pour l'étendue complète des services douaniers de Winz, voir <1>dédouanement Belgique</1>.",
+    "p2": "En Belgique, chaque déclaration d'importation via PLDA nécessite un code NC d'au moins 8 chiffres. Le code SH international à 6 chiffres ne suffit pas pour les déclarations belges.",
+    "p3": "Une classification incorrecte peut entraîner des redressements de droits, des intérêts, des pénalités, des retards d'expédition et des risques d'audit a posteriori.",
+    "p4": "Winz détermine le code NC correct avant chaque soumission. Les importateurs n'ont pas besoin de chercher ou de vérifier les codes. La classification est intégrée dans le processus de <1>dédouanement à l'importation UE</1> sans frais supplémentaires."
+  },
+  "structure": {
+    "title": "Code SH, Code NC et TARIC — Comment Fonctionne la Structure à 3 Niveaux en Belgique",
+    "intro": "La Belgique utilise une structure de code tarifaire à 3 niveaux. Chaque niveau a une fonction différente sur la déclaration en douane.",
+    "table": [
+      { "level": "Code SH à 6 chiffres", "usedFor": "Base de produit internationale", "requirement": "Insuffisant seul" },
+      { "level": "Code NC à 8 chiffres", "usedFor": "Classification douanière UE", "requirement": "Requis pour PLDA" },
+      { "level": "Code TARIC à 10 chiffres", "usedFor": "Mesures commerciales UE", "requirement": "Utilisé si des mesures s'appliquent" }
+    ],
+    "definitions": [
+      "<1>Code SH à 6 chiffres</1> — la base harmonisée internationalement maintenue par l'OMD. Identifie le chapitre, la position et la sous-position dans plus de 200 territoires.",
+      "<1>Code NC à 8 chiffres</1> — l'extension UE du code SH. Il est requis pour les déclarations d'importation et d'exportation belges.",
+      "<1>Code TARIC à 10 chiffres</1> — le code complet de l'UE pour les droits antidumping, suspensions, quotas, sauvegardes et MACF. Retrouvez tout sur la <2>nomenclature combinée TARIC Belgique</2>."
+    ],
+    "outro": "Soumettre un code à 6 chiffres lorsqu'un code NC à 8 chiffres est requis crée une erreur de déclaration."
+  },
+  "dutyRate": {
+    "title": "Comment le Code NC Définit le Taux de Droit",
+    "text": "Le code NC sur une déclaration PLDA interroge la base TARIC de l'UE. TARIC renvoie le taux de droit standard, préférentiel, antidumping, les quotas, suspensions et restrictions. Un même produit peut attirer différents droits selon le code NC et l'origine. Une incohérence entre la classification et l'origine est une cause fréquente de droits sous-payés.",
+    "links": [
+      "Méthode de calcul complète : <1>comment les droits d'importation sont calculés</1>",
+      "Obligations MACF par position NC dès 2026 : <2>MACF et codes SH Belgique 2026</2>"
+    ]
+  },
+  "determination": {
+    "title": "Comment la Douane Détermine le Code SH Correct",
+    "intro": "La classification est basée sur les caractéristiques objectives du produit. La douane belge ne classe pas les marchandises par nom de marque ou description commerciale seule. Cela dépend de :",
+    "list": [
+      "<1>Composition matérielle</1> — acier, aluminium, plastique, coton",
+      "<1>Fonction du produit</1> — outil, pièce de machine, vêtement, emballage",
+      "<1>État de transformation</1> — brut, semi-fini, fini",
+      "<1>Forme de présentation</1> — ensemble, pièce, composant, accessoire",
+      "<1>Pays d'origine</1> — droits liés à l'origine ou mesures commerciales",
+      "<1>Usage prévu</1> — médical, industriel, consommation, alimentaire"
+    ],
+    "outro": "Winz vérifie les descriptions, fiches techniques, compositions, photos et factures avant de sélectionner le code NC."
+  },
+  "rules": {
+    "title": "Règles Générales pour l'Interprétation",
+    "intro": "Les RGI guident la classification SH et NC lorsque les produits sont difficiles à classer. Elles aident à décider où un produit appartient.",
+    "subtitle": "Règles clés :",
+    "list": [
+      "<1>RGI 1</1> — la classification commence par les notes de section, de chapitre et le libellé des positions",
+      "<1>RGI 2</1> — Les marchandises incomplètes peuvent être classées comme produits finis",
+      "<1>RGI 3</1> — les produits composites sont classés par caractère essentiel",
+      "<1>RGI 4</1> — Les marchandises non couvertes sont classées avec les plus similaires"
+    ],
+    "outro": "Les produits composites créent souvent un risque. Par exemple : meubles multimatières, plastiques-textiles, kits et accessoires emballés."
+  },
+  "examples": {
+    "title": "Exemples Courants de Classification",
+    "intro": "Ces exemples aident les importateurs à comprendre pourquoi une révision technique est nécessaire.",
+    "table": [
+      { "type": "T-shirts en coton", "area": "Chapitre 61", "risk": "La composition des fibres affecte la position" },
+      { "type": "Profilés en aluminium", "area": "Chapitre 76", "risk": "Des mesures antidumping peuvent s'appliquer" },
+      { "type": "Emballages plastiques", "area": "Chapitre 39", "risk": "L'usage alimentaire peut affecter les contrôles" },
+      { "type": "Fixations en acier", "area": "Chapitre 73", "risk": "L'origine peut déclencher des droits" },
+      { "type": "Unités de commande", "area": "Chapitre 85", "risk": "La fonction affecte la position" },
+      { "type": "Pièces de machines", "area": "Chap. 84/85", "risk": "Problème : pièce vs machine complète" }
+    ],
+    "outro": "Ces exemples ne sont pas des classifications légales fixes. Le code NC correct dépend de la composition, la fonction et la présentation."
+  },
+  "sections": {
+    "misclassification": {
+      "title": "Mauvaise Classification — Ce que cela Coûte",
+      "text": "Un code NC erroné sur une déclaration belge peut déclencher un rappel de droits, avec des intérêts et des pénalités administratives. Les audits a posteriori peuvent revoir les déclarations précédentes déposées sous le même code NC, affectant ainsi de multiples expéditions. Le trop-payé est aussi un risque, et récupérer des droits nécessite une procédure de correction que de nombreux importateurs manquent. Winz vérifie l'exactitude du code NC par rapport à la composition, l'état et l'origine avant toute déclaration. Détail des risques : <1>pénalités douanières mauvaise classification SH Belgique</1>."
+    },
+    "cbam": {
+      "title": "Classification Code NC et MACF (CBAM)",
+      "text": "L'exposition au MACF est liée aux positions NC. Dès 2026, les importateurs doivent traiter la classification NC comme un contrôle de conformité. Le MACF s'applique à l'acier, au ciment, à l'aluminium, aux engrais, à l'hydrogène et à l'électricité. Un mauvais code NC peut cacher une obligation MACF ou créer des obligations déclaratives inutiles. Winz vérifie la pertinence du MACF avant la déclaration."
+    },
+    "bti": {
+      "title": "Renseignement Tarifaire Contraignant — Décision Officielle",
+      "text": "Le Renseignement Tarifaire Contraignant (RTC) est une décision de classification officielle de l'UE. Une décision RTC lie les douanes dans tous les États membres pour 3 ans.",
+      "subtitle": "Les demandes RTC sont utiles pour :",
+      "list": [
+        "Nouvelles catégories de produits",
+        "Marchandises composites",
+        "Expéditions de grande valeur",
+        "Importations répétées",
+        "Produits avec des positions tarifaires incertaines",
+        "Marchandises exposées aux droits antidumping ou au MACF"
+      ],
+      "outro": "Le temps de traitement avec le SPF Finances belge est généralement de 30 à 90 jours."
+    },
+    "howWinzClassifies": {
+      "title": "Comment Winz Classe les Marchandises",
+      "text": "Winz détermine le code NC en fonction de la description, la composition, l'état de fabrication, l'origine déclarée et tout accord commercial. Les clients fournissent les détails, et Winz identifie le code. Aucune recherche n'est requise par l'importateur. Pour les produits ambigus, Winz conseille si une demande RTC est nécessaire. Les stratégies tarifaires complexes relèvent du <1>conseil en douane UE</1>.",
+      "links": [
+        "Où le code NC apparaît-il ? <1>comment lire une déclaration en douane</1>.",
+        "Termes douaniers clés : <2>terminologie douanière UE</2>."
+      ]
+    }
+  },
+  "cta": {
+    "title": "Demander une Assistance en Classification SH",
+    "text": "Winz classe les codes NC, dépose les déclarations PLDA et gère l'exactitude tarifaire pour les importateurs aux points d'entrée belges.",
+    "subtext": "Winz prend en charge le dédouanement pour le fret maritime, routier, aérien, les conteneurs et les frontières terrestres.",
+    "button": "Demander une assistance en classification SH Belgique"
+  },
+  "faq": {
+    "title": "Questions Fréquemment Posées",
+    "questions": [
+      {
+        "q": "Puis-je utiliser le code SH de mon fournisseur sur la facture commerciale ?",
+        "a": "Les codes SH des fournisseurs peuvent servir de référence, mais ne doivent pas être traités comme une classification UE confirmée. Les codes des fournisseurs reflètent souvent le système de leur pays. La Belgique exige le code NC à 8 chiffres pour PLDA."
+      },
+      {
+        "q": "Les codes SH changent-ils, et qu'arrive-t-il aux déclarations existantes ?",
+        "a": "Le Système Harmonisé est révisé tous les 5 ans (édition actuelle : SH 2022). Lorsque les positions changent, les codes NC peuvent changer. Les déclarations déposées sous des codes obsolètes peuvent être considérées comme mal classées."
+      },
+      {
+        "q": "Quelle est la différence entre le code NC pour l'import et l'export en Belgique ?",
+        "a": "Les importations nécessitent le code NC à 8 chiffres. Les exportations utilisent la même base, mais les restrictions, les biens à double usage ou les licences peuvent nécessiter des vérifications TARIC approfondies."
+      },
+      {
+        "q": "Un droit antidumping peut-il être déclenché par un mauvais code NC ?",
+        "a": "Oui. Les droits antidumping sont attachés à des codes NC et des origines spécifiques. Un mauvais code peut supprimer des marchandises de la bonne position ou les placer dans une position qui ne s'applique pas."
+      },
+      {
+        "q": "Le même produit reçoit-il toujours le même code NC ?",
+        "a": "Non. La classification dépend de la composition, l'état, la fonction et la forme présentée. Deux produits similaires peuvent tomber sous des positions NC différentes selon les pourcentages de matériaux ou l'usage."
+      },
+      {
+        "q": "La classification NC est-elle facturée comme service distinct par Winz ?",
+        "a": "La classification est incluse dans le service de déclaration en douane standard de Winz. Les recherches approfondies, les RTC ou l'optimisation des droits relèvent du conseil douanier."
+      },
+      {
+        "q": "Qu'est-ce que la base de données TARIC de l'UE ?",
+        "a": "TARIC est la base de données tarifaire intégrée de l'UE. Elle associe les codes NC aux taux de droits, préférences, antidumping, quotas, restrictions et MACF. Winz utilise TARIC comme référence principale."
+      }
+    ]
+  }
+}

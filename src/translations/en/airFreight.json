@@ -1,0 +1,192 @@
+{
+  "meta": {
+    "title": "Air Freight Customs Clearance Belgium | Winz",
+    "description": "Winz supports air freight customs clearance in Belgium with IDMS import declarations, AES export filing, ICS2 coordination, AWB checks, and HS code review.",
+    "keywords": "Air Freight Customs Clearance"
+  },
+  "hero": {
+    "title": "Air Freight Customs Clearance Belgium",
+    "subtitle": "Air freight customs clearance in Belgium requires accurate data, early document checks, and the correct declaration."
+  },
+  "intro": {
+    "p1": "Imports are normally processed through IDMS, while PLDA is limited to approved fallback cases. Winz handles <1>EU import declaration service</1> for importers, exporters, freight forwarders, and logistics companies that need compliant air cargo clearance without airport delays. For general customs processes, see <2>customs clearance Belgium</2>.",
+    "p2": "We prepare declarations, check documents, coordinate customs queries, and confirm release. Airport transport and final delivery remain the responsibility of the importer or logistics provider."
+  },
+  "howItClears": {
+    "title": "How Air Cargo Clears Customs",
+    "intro": "Air freight clearance includes pre-loading security filing, import declaration, customs control, and release. Early document preparation can reduce delays, but inspections, warehouse procedures, and airline handling remain outside the customs broker's control.",
+    "ics2": {
+      "title": "ICS2 Pre-Loading Filing",
+      "text": "Air cargo entering or transiting through the EU requires ICS2 safety and security data. The carrier, freight forwarder, or another supply-chain party may file it. Missing consignee details, vague goods descriptions, or incomplete house shipment data can cause delays."
+    },
+    "idms": {
+      "title": "IDMS Import Declaration",
+      "text": "Winz prepares or pre-lodges the Belgian import declaration using the air waybill, HS code, customs value, EORI number, origin, procedure, duty, and VAT details. IDMS handles standard declarations, while PLDA is limited to approved fallback cases."
+    },
+    "control": {
+      "title": "Customs Control",
+      "text": "Belgian customs may release the goods electronically, conduct a documentary or physical inspection, or request additional information. The decision depends on risk analysis, product controls, origin, routing, and declaration data."
+    },
+    "release": {
+      "title": "Release or Temporary Storage",
+      "text": "Cargo is released after customs, duty, VAT, guarantee, and inspection requirements are complete. Winz confirms release, while the airline handler or logistics provider manages collection. Unreleased goods may remain in temporary storage or enter transit, customs warehousing, temporary admission, or another approved procedure."
+    }
+  },
+  "documents": {
+    "title": "Air Freight Documents Required",
+    "intro": "The air waybill identifies the shipment route, consignor, consignee, airports, and goods. A Master Air Waybill (MAWB) covers the airline's consolidated consignment, while each House Air Waybill (HAWB) identifies an individual shipment that may require a separate customs declaration.",
+    "table": [
+      { "doc": "Air waybill", "purpose": "Identifies the shipment and transport reference" },
+      { "doc": "Commercial invoice", "purpose": "Confirms value, currency, goods, and Incoterm" },
+      { "doc": "Packing list", "purpose": "Shows packages, weights, and cargo details" },
+      { "doc": "Commodity code", "purpose": "Determines duties and product controls" },
+      { "doc": "EORI number", "purpose": "Identifies the customs party" },
+      { "doc": "Origin evidence", "purpose": "Supports preferential duty treatment" },
+      { "doc": "Licences or certificates", "purpose": "Confirm compliance for regulated goods" }
+    ],
+    "postTable": "All documents must show consistent quantities, weights, values, parties, and product details. Vague descriptions such as \"parts\" or \"equipment\" should state what the goods are, their material, and use. For the full document set required for air cargo, see <1>customs documents air freight Belgium</1>.",
+    "brusselsSupport": "Winz handles air freight customs clearance Brussels Airport for Belgian commercial imports and exports."
+  },
+  "whatWeNeed": {
+    "title": "What Winz Needs to Start",
+    "intro": "Early document submission gives Winz time to identify missing data before the cargo arrives. The exact requirements depend on the commodity, origin, customs procedure, and importer structure.",
+    "subtitle": "Please provide:",
+    "list": [
+      "The MAWB and all relevant HAWBs",
+      "The commercial invoice and packing list",
+      "The importer's EORI and VAT details",
+      "The commodity code, if already confirmed",
+      "The country of origin and dispatch country",
+      "The agreed Incoterm",
+      "The arrival airport and expected arrival time",
+      "Importer, exporter, and consignee details",
+      "Origin evidence, licences, or certificates where applicable",
+      "Instructions for duty, VAT, deferment, or guarantee use"
+    ],
+    "outro": "Winz may request additional information where the invoice does not support the declared customs value or commodity classification."
+  },
+  "duties": {
+    "title": "Duties, VAT, and Customs Value",
+    "text": "Import duty depends on the commodity code, customs value, origin, and tariff preference. Belgium's standard VAT rate is 21%, although exceptions apply. Eligible businesses may account for import VAT through ET 14000. Winz verifies the applicable duty and VAT."
+  },
+  "representation": {
+    "title": "Customs Representation",
+    "text": "Direct representation means the broker acts in the trader's name. Under indirect representation, the broker acts in its own name and may share customs-debt liability. Winz confirms the suitable option and required authorisation. Non-EU businesses may also need an EU importer or fiscal structure."
+  },
+  "airports": {
+    "title": "Belgian Airport Customs Coverage",
+    "intro": "Winz supports commercial air cargo declarations through Belgian and nearby European gateways.",
+    "brussels": {
+      "title": "Brussels Airport",
+      "text": "Winz prepares import and <1>export declaration Belgium</1> for air shipments, checks air waybills and invoices, and coordinates customs queries for pharmaceutical, express, and general cargo. Airport handlers manage cargo availability, handling, and collection release."
+    },
+    "liege": {
+      "title": "Liège Airport",
+      "text": "Where service arrangements are available, Winz supports import, export, transit, and documentation for express, e-commerce, perishable, and general cargo. Send MAWB, HAWB, invoices, packing lists, and arrival details before landing."
+    },
+    "schiphol": {
+      "title": "Schiphol Cross-Border Clearance",
+      "text": "Shipments via <1>customs clearance Amsterdam Schiphol</1> use Dutch customs systems. Goods may enter free circulation in the Netherlands or move under transit for clearance elsewhere. Winz confirms the route, EORI requirements, and VAT treatment before filing."
+    },
+    "perishable": {
+      "title": "Perishable and Controlled Cargo",
+      "text": "<1>Perishable goods air freight Belgium</1> needs early coordination, but only specific regulated goods require Border Control Post checks. These may need pre-notification, TRACES processing, a Common Health Entry Document, certificates, or inspection. Winz handles customs declarations. Importers or specialist agents manage health documentation and inspection arrangements. Customs release does not replace other authority approvals."
+    },
+    "dangerous": {
+      "title": "Dangerous Goods Support",
+      "text": "Batteries, chemicals, aerosols, gases, and certain medical products may require specialised packaging, labels, and transport documents. <1>Dangerous goods air freight IATA Belgium</1> classification and packaging requirements must be confirmed before loading at origin. Winz checks customs data. Shippers and qualified transport parties handle dangerous-goods classification, packaging, and airline acceptance. Correct customs codes do not establish air transport compliance."
+    }
+  },
+  "export": {
+    "title": "Air Freight Export Declarations",
+    "text": "Winz prepares AES export declarations and checks shipment documents, commodity codes, exporter details, value, destination, and procedure. Export release permits departure; exit confirmation supports VAT and compliance records. A separate Exit Summary Declaration may be required where applicable safety and security data is not otherwise covered."
+  },
+  "delays": {
+    "title": "Common Causes of Delays",
+    "intro": "Many airport clearance problems begin with incomplete or inconsistent commercial data. Correcting the information before arrival is usually easier than amending it after customs has selected the shipment for control. Shipments requiring <1>priority customs clearance Belgium</1> should be pre-lodged before the flight arrives to avoid release delays.",
+    "subtitle": "Common causes include:",
+    "list": [
+      "Vague or incomplete invoice descriptions",
+      "Different weights on the AWB and packing list",
+      "Missing or invalid EORI information",
+      "Incorrect importer or consignee details",
+      "Unsupported customs values",
+      "Incorrect commodity codes",
+      "Missing preferential origin evidence",
+      "Incomplete house-level ICS2 data",
+      "Missing licences or health certificates",
+      "Unclear duty or VAT payment instructions",
+      "Cargo not available for inspection",
+      "Airline handler or warehouse release restrictions"
+    ],
+    "outro": "Winz reviews the available documents and explains which corrections are needed. Customs acceptance and inspection decisions remain with the relevant customs authority. Importers who need to understand <1>how long air freight customs takes</1> should factor in inspection risk, commodity type, and document completeness."
+  },
+  "whyWinz": {
+    "title": "Why Businesses Choose Winz",
+    "intro": "Winz supports importers, exporters, freight forwarders, and logistics companies that need accurate air cargo declarations and clear customs communication. Our clearance support covers:",
+    "list": [
+      "Belgian IDMS import and AES export declarations",
+      "ICS2 data coordination with carriers and forwarders",
+      "PLDA fallback handling where officially accepted",
+      "MAWB, HAWB, invoice, and packing list checks",
+      "Commodity code, customs value, EORI, and importer data review",
+      "Duty and import VAT instructions",
+      "Brussels, Liège, and Schiphol customs support",
+      "English, French, Dutch, and German communication"
+    ],
+    "outro1": "The goal is simple: fewer delays caused by missing data, wrong classifications, or mismatched documents.",
+    "outro2": "Winz handles customs clearance. Airport handling, transport, and delivery are arranged separately unless agreed otherwise."
+  },
+  "cta": {
+    "title": "Request an Air Freight Quote",
+    "text": "Winz supports air cargo customs clearance at Brussels Airport, Liège Airport, and Amsterdam Airport Schiphol.",
+    "services": "Our services include IDMS import declarations, AES export filing, ICS2 coordination, air waybill checks, commodity code review, customs value checks, and customs communication.",
+    "action": "Send the air waybill, commercial invoice, packing list, arrival details, EORI number, and commodity information for review.",
+    "button": "Request an air freight customs quote"
+  },
+  "faq": {
+    "title": "Air Freight Customs FAQs",
+    "questions": [
+      {
+        "q": "What is air freight customs clearance?",
+        "a": "It is the process used to declare imported or exported air cargo to customs. It can include safety filings, document checks, duty and VAT assessment, licences, customs controls, and release."
+      },
+      {
+        "q": "What is the difference between ICS2 and IDMS?",
+        "a": "ICS2 handles safety and security data before goods enter or transit through the EU. IDMS is the Belgian system used to submit standard import customs declarations."
+      },
+      {
+        "q": "Does Belgium still use PLDA?",
+        "a": "Belgium uses IDMS for standard import declarations wherever possible. PLDA remains available only for limited fallback cases, known technical problems, or exceptions accepted by Belgian customs."
+      },
+      {
+        "q": "Which documents are required?",
+        "a": "Most shipments require an air waybill, commercial invoice, packing list, EORI number, commodity code, and origin information. Controlled goods may also require licences, certificates, or health documents."
+      },
+      {
+        "q": "What is the MAWB and HAWB difference?",
+        "a": "A MAWB covers the airline’s master consignment. A HAWB identifies an individual shipment inside a consolidated load. Each HAWB may require a separate customs declaration."
+      },
+      {
+        "q": "How long does clearance take?",
+        "a": "There is no fixed clearance time. Timing depends on document quality, customs controls, cargo presentation, duty and VAT arrangements, licences, and airport warehouse procedures."
+      },
+      {
+        "q": "Can goods enter bonded storage?",
+        "a": "Yes. Air cargo may remain in temporary storage or move into an authorised customs warehouse after the correct declaration or movement procedure has been completed."
+      },
+      {
+        "q": "What happens during an inspection?",
+        "a": "The cargo must be presented to customs. Customs may check the goods, invoice, air waybill, commodity code, origin, quantity, and declared value before confirming release."
+      },
+      {
+        "q": "Can Winz arrange airport delivery?",
+        "a": "Winz focuses on customs clearance. Airport collection and onward delivery are normally arranged by the importer, freight forwarder, or logistics provider."
+      },
+      {
+        "q": "Can Winz clear cargo before arrival?",
+        "a": "The declaration may be prepared or pre-lodged before arrival where the required data is available, and the customs procedure allows it. Final release still depends on arrival and presentation."
+      }
+    ]
+  }
+}
